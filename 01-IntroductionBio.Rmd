@@ -1,0 +1,106 @@
+# Immuno-biology of cancer {#intro} 
+\setcounter{page}{11}
+\renewcommand{\thepage}{\arabic{page}}
+\vspace*{\fill}
+ \begin{quote}
+ \emph{Suffering has been stronger than all other teaching, and has taught me to understand what your heart used to be. I have been bent and broken, but - I hope - into a better shape.}
+ \end{quote}
+ \vspace*{\fill}
+
+> *Suffering has been stronger than all other teaching, and has taught me to understand what your heart used to be. I have been bent and broken, but - I hope - into a better shape.*
+>
+> --- someone 
+
+
+This chapter will introduce basic topic of cancer and participation of stroma in cancer development, progression and response to treatment. It will also describe 
+
+## Cancer seen as complex environment
+
+For a long time studying tumor was focused on tumor cells, their reporogramming, mutations. It was seen as diseas of uncontrolled cells. Recent reseach moved research focus from tumor cells to tumor cells in their proper context : tumor micorenvironment. 
+
+### Our understanding of cancer over time
+
+cancer is a disease touching blah blah many ppl over the word. it has been known that blah blah and then types
+
+### Tumor micro environment : fiend or foe ? 
+
+what is tme : composition, roles 
+it was decided  the environment is bad for cancer 
+Tumors effectively supresses immune response : activates negative regulatory pathways ( checkpoints) 
+
+For ages we didn't know much  about how modulate tme
+Now we know it can do both
+- review hallmarks of cancer immuno
+
+### Cancer immune phenotypes
+
+There can be distinguished cancer phenotypes depending on immune infiltration
+how they are measure, defined, indexes, types of cancer, impact
+
+> In further support of a role for memory T cells in antitumour responses, tumour-infiltrating lymphocytes that express CD4 or CD8 extracted from experimental tumour models typically have the features of memory T cells and can possess an activated or exhausted phenotype, expressing markers such as PD-1, T-cell immunoglobulin and mucin-domain containing protein 3 (TIM-3) and lymphocyte activation gene 3 (LAG-3). (IMMUNE CANCER CIRCLE)
+
+> Anticancer immunity in humans can be segregated into three main phenotypes: the immune-desert phenotype (brown), the immune–excluded phenotype (blue) and the inflamed phenotype (red). (IMMUNE CANCER CIRCLE Fig 3)
+
+### Immune signatures
+
+definition of signature: marker genes, list of genes, weighted list
+we can talk about general immune signature of signature of immune infiltration and stroma
+or immune signature of a specific cell type of functional subpopulation
+purpose of signatures
+
+avaliability of immune signatures
+
+problem of non cosistence of immune signatures
+origin of signatures
+
+## Immunotherapies
+
+
+This section outlines progress in cancer therapies with a focus on immune therapies. It will link the ongoing research on TME with therapeutical potential. 
+
+### Cancer therapies
+
+### Recent progress in immuno-therapies
+
+most potential  
+cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell death protein 1 (PD-1)
+
+> CTLA4 is a negative regulator of T cells that acts to control T-cell activation by competing with the co-stimulatory molecule CD28 for binding to shared ligands CD80 (also known as B7.1) and CD86 (also known as B7.2).The cell-surface receptor PD-1 is expressed by T cells on activation during priming or expansion and binds to one of two ligands, PD-L1 and PD-L2. Many types of cells can express PD-L1, including tumour cells and immune cells after exposure to cytokines such as interferon (IFN)-γ; however, PD-L2 is expressed mainly on dendritic cells in normal tissues. Binding of PD-L1 or PD-L2 to PD-1 generates an inhibitory signal that attenuates the activity of T cells. The 'exhaustion' of effector T cells was identified through studies of chronic viral infection in mice in which the PD-L1/PD-1 axis was found to be an important negative feedback loop that ensures immune homeostasis; it is also an important axis for restricting tumour immunity. (IMMUNE CANCER CIRCLE)
+
+> The mechanisms that underlie cancer immunotherapy differ considerably from those of other approaches to cancer treatment. Unlike chemotherapy or oncogene-targeted therapies, cancer immunotherapy relies on promoting an anticancer response that is dynamic and not limited to targeting a single oncogenic derangement or other autonomous feature of cancer cells. Cancer immunotherapy can therefore lead to antitumour activity that simultaneously targets many of the abnormalities that differentiate cancer cells and tumours from normal cells and tissues.(IMMUNE CANCER CIRCLE)
+
+### Potential of developpement of new immunotherapies
+
+>As effective as immunotherapy can be, only a minority of people exhibit dramatic responses, with the frequency of rapid tumour shrinkage from single-agent anti-PD-L1/PD-1 antibodies ranging from 10–40%, depending on the individual's indication (
+Zou, W., Wolchok, J. D. & Chen, L. PD-L1 (B7-H1) and PD-1 pathway blockade for cancer therapy: mechanisms, response biomarkers, and combinations. Sci. Transl. Med. 8, 328rv4 (2016).)
+
+> predicting reponse: The immune-inflamed phenotype correlates generally with higher response rates to anti-PD-L1/PD-1 therapy51,62,67,69,70,71, which suggests that biomarkers could be used as predictive tools. Most attention has been paid to PD-L1, which is thought to reflect the activity of effector T cells because it can be adaptively expressed by most cell types following exposure to IFN-γ6,82. IMMUNE CANCER CIRCLE)
+
+<!-- You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+
+
+
+
+
+
+
+
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+ -->
