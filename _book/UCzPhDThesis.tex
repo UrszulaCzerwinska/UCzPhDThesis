@@ -1,0 +1,416 @@
+\documentclass[12pt,]{book}
+\usepackage{lmodern}
+\usepackage{setspace}
+\setstretch{1}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[marginpar=2cm, top=3cm, bottom=4cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{}
+  \pretitle{\vspace{\droptitle}}
+  \posttitle{}
+  \author{}
+  \preauthor{}\postauthor{}
+  \date{}
+  \predate{}\postdate{}
+
+% Améliore l'esthétique de la police
+\usepackage{lmodern}
+
+%Packages pour créer des tableaux 
+\usepackage{longtable} % Pour des tableaux dont la longueur dépasse une feuille A4
+\usepackage{tabularx} % Pour des tableaux à largeur définie
+\usepackage{array} % Pour améliorer la qualité typographique des tableaux.
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\begin{document}
+
+%Page de garde
+\begin{titlepage}
+\frontmatter
+\begin{figure}[t]
+\includegraphics[width=5cm]{../figures-ext/LogoParisDescartes}
+\end{figure}
+
+\begin{center}
+UNIVERSITÉ PARIS DESCARTES \\
+\vspace*{1cm}
+\textbf{École doctorale}\\
+\vspace*{0,5cm}
+\textit{Laboratoire/équipe de recherche}\\
+\vspace*{1cm}
+\LARGE{\textbf{Titre de la thèse}}\\
+\vspace*{0,5cm}
+\large{\textit{\textbf{Sous-titre de la thèse}}}\\
+\vspace*{2cm}
+\large{\textbf{Par [Prénom et nom de l'auteur]}}\\
+\vspace*{1cm}
+Thèse de doctorat de [Discipline : consulter la liste des disciplines]\\
+\vspace*{1cm}
+Dirigée par [Prénom et nom du directeur de thèse]\\
+\vspace*{1cm}
+\small{Présentée et soutenue publiquement le [date de soutenance]}\\
+\end{center}
+\vspace*{1cm}
+\begin{footnotesize}
+Devant un jury composé de : \\
+\begin{tabular}{lll}
+Prénom NOM & [fonction] - université\\
+Prénom NOM & [fonction] - université\\
+Prénom NOM & [fonction] - université\\
+\end{tabular}
+\end{footnotesize}
+
+\begin{figure}[b]
+\begin{center}
+\includegraphics{../figures-ext/creativecommons}
+\end{center}
+\end{figure}
+
+
+
+
+\clearpage
+
+
+%Abstract
+\newpage
+\thispagestyle{empty}
+\noindent % Supprime le retrait de paragraphe
+\textbf{Résumé (français) :}
+\vskip 1cm
+\noindent
+\textbf{Title :}
+\vskip 1cm
+\noindent
+\textbf{Abstract :}
+\vskip 1cm
+\noindent
+\textbf{Mots-clés (français) :}
+\vskip 1cm
+\noindent
+\textbf{Keywords :}
+
+
+%Dédicace
+\newpage
+\emph{Dédicace}
+\vspace*{\fill}
+ \begin{quote}
+ \emph{Suffering has been stronger than all other teaching, and has taught me to understand what your heart used to be. I have been bent and broken, but - I hope - into a better shape.}
+ \end{quote}
+ \vspace*{\fill}
+
+%Remerciements
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\large{\textbf{Avertissement}}
+\end{center}
+\vspace{2cm}
+Cette thèse de doctorat est le fruit d’un travail approuvé par le jury de soutenance et
+réalisé dans le but d’obtenir le diplôme d’Etat de docteur de philosophie. Ce document
+est mis à disposition de l’ensemble de la communauté universitaire élargie.
+Il est soumis à la propriété intellectuelle de l’auteur. Ceci implique une obligation de
+citation et de référencement lors de l’utilisation de ce document.
+D’autre part, toute contrefaçon, plagiat, reproduction illicite encourt toute poursuite
+pénale.
+\vspace*{\fill}
+
+\emph{Code de la Propriété Intellectuelle. Articles L 122.4 \newline
+Code de la Propriété Intellectuelle. Articles L 335.2-L 335.10}
+
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\large{\textbf{Remerciments}}
+\end{center}
+\vspace{2cm}
+
+
+\end{titlepage}
+
+{
+\setcounter{tocdepth}{4}
+\tableofcontents
+}
+\listoftables
+\listoffigures
+\hypertarget{intro}{%
+\chapter{Immuno-biology of cancer}\label{intro}}
+
+\setcounter{page}{11}\renewcommand{\thepage}{\arabic{page}}\vspace*{\fill}
+
+\begin{quote}
+ \emph{Suffering has been stronger than all other teaching, and has taught me to understand what your heart used to be. I have been bent and broken, but - I hope - into a better shape.}
+ \end{quote}
+
+\vspace*{\fill}
+
+\begin{quote}
+\emph{Suffering has been stronger than all other teaching, and has
+taught me to understand what your heart used to be. I have been bent and
+broken, but - I hope - into a better shape.}
+
+--- someone
+\end{quote}
+
+This chapter will introduce basic topic of cancer and participation of
+stroma in cancer development, progression and response to treatment. It
+will also describe
+
+\hypertarget{cancer-seen-as-complex-environment}{%
+\section{Cancer seen as complex
+environment}\label{cancer-seen-as-complex-environment}}
+
+For a long time studying tumor was focused on tumor cells, their
+reporogramming, mutations. It was seen as diseas of uncontrolled cells.
+Recent reseach moved research focus from tumor cells to tumor cells in
+their proper context : tumor micorenvironment.
+
+\hypertarget{our-understanding-of-cancer-over-time}{%
+\subsection{Our understanding of cancer over
+time}\label{our-understanding-of-cancer-over-time}}
+
+cancer is a disease touching blah blah many ppl over the word. it has
+been known that blah blah and then types
+
+\hypertarget{tumor-micro-environment-fiend-or-foe}{%
+\subsection{Tumor micro environment : fiend or foe
+?}\label{tumor-micro-environment-fiend-or-foe}}
+
+what is tme : composition, roles it was decided the environment is bad
+for cancer Tumors effectively supresses immune response : activates
+negative regulatory pathways ( checkpoints)
+
+For ages we didn't know much about how modulate tme Now we know it can
+do both - review hallmarks of cancer immuno
+
+\hypertarget{cancer-immune-phenotypes}{%
+\subsection{Cancer immune phenotypes}\label{cancer-immune-phenotypes}}
+
+There can be distinguished cancer phenotypes depending on immune
+infiltration how they are measure, defined, indexes, types of cancer,
+impact
+
+\begin{quote}
+In further support of a role for memory T cells in antitumour responses,
+tumour-infiltrating lymphocytes that express CD4 or CD8 extracted from
+experimental tumour models typically have the features of memory T cells
+and can possess an activated or exhausted phenotype, expressing markers
+such as PD-1, T-cell immunoglobulin and mucin-domain containing protein
+3 (TIM-3) and lymphocyte activation gene 3 (LAG-3). (IMMUNE CANCER
+CIRCLE)
+\end{quote}
+
+\begin{quote}
+Anticancer immunity in humans can be segregated into three main
+phenotypes: the immune-desert phenotype (brown), the immune--excluded
+phenotype (blue) and the inflamed phenotype (red). (IMMUNE CANCER CIRCLE
+Fig 3)
+\end{quote}
+
+\hypertarget{immune-signatures}{%
+\subsection{Immune signatures}\label{immune-signatures}}
+
+definition of signature: marker genes, list of genes, weighted list we
+can talk about general immune signature of signature of immune
+infiltration and stroma or immune signature of a specific cell type of
+functional subpopulation purpose of signatures
+
+avaliability of immune signatures
+
+problem of non cosistence of immune signatures origin of signatures
+
+\hypertarget{immunotherapies}{%
+\section{Immunotherapies}\label{immunotherapies}}
+
+This section outlines progress in cancer therapies with a focus on
+immune therapies. It will link the ongoing research on TME with
+therapeutical potential.
+
+\hypertarget{cancer-therapies}{%
+\subsection{Cancer therapies}\label{cancer-therapies}}
+
+\hypertarget{recent-progress-in-immuno-therapies}{%
+\subsection{Recent progress in
+immuno-therapies}\label{recent-progress-in-immuno-therapies}}
+
+most potential\\
+cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell death
+protein 1 (PD-1)
+
+\begin{quote}
+CTLA4 is a negative regulator of T cells that acts to control T-cell
+activation by competing with the co-stimulatory molecule CD28 for
+binding to shared ligands CD80 (also known as B7.1) and CD86 (also known
+as B7.2).The cell-surface receptor PD-1 is expressed by T cells on
+activation during priming or expansion and binds to one of two ligands,
+PD-L1 and PD-L2. Many types of cells can express PD-L1, including tumour
+cells and immune cells after exposure to cytokines such as interferon
+(IFN)-γ; however, PD-L2 is expressed mainly on dendritic cells in normal
+tissues. Binding of PD-L1 or PD-L2 to PD-1 generates an inhibitory
+signal that attenuates the activity of T cells. The `exhaustion' of
+effector T cells was identified through studies of chronic viral
+infection in mice in which the PD-L1/PD-1 axis was found to be an
+important negative feedback loop that ensures immune homeostasis; it is
+also an important axis for restricting tumour immunity. (IMMUNE CANCER
+CIRCLE)
+\end{quote}
+
+\begin{quote}
+The mechanisms that underlie cancer immunotherapy differ considerably
+from those of other approaches to cancer treatment. Unlike chemotherapy
+or oncogene-targeted therapies, cancer immunotherapy relies on promoting
+an anticancer response that is dynamic and not limited to targeting a
+single oncogenic derangement or other autonomous feature of cancer
+cells. Cancer immunotherapy can therefore lead to antitumour activity
+that simultaneously targets many of the abnormalities that differentiate
+cancer cells and tumours from normal cells and tissues.(IMMUNE CANCER
+CIRCLE)
+\end{quote}
+
+\hypertarget{potential-of-developpement-of-new-immunotherapies}{%
+\subsection{Potential of developpement of new
+immunotherapies}\label{potential-of-developpement-of-new-immunotherapies}}
+
+\begin{quote}
+As effective as immunotherapy can be, only a minority of people exhibit
+dramatic responses, with the frequency of rapid tumour shrinkage from
+single-agent anti-PD-L1/PD-1 antibodies ranging from 10--40\%, depending
+on the individual's indication ( Zou, W., Wolchok, J. D. \& Chen, L.
+PD-L1 (B7-H1) and PD-1 pathway blockade for cancer therapy: mechanisms,
+response biomarkers, and combinations. Sci. Transl. Med. 8, 328rv4
+(2016).)
+\end{quote}
+
+\begin{quote}
+predicting reponse: The immune-inflamed phenotype correlates generally
+with higher response rates to anti-PD-L1/PD-1 therapy51,62,67,69,70,71,
+which suggests that biomarkers could be used as predictive tools. Most
+attention has been paid to PD-L1, which is thought to reflect the
+activity of effector T cells because it can be adaptively expressed by
+most cell types following exposure to IFN-γ6,82. IMMUNE CANCER CIRCLE)
+\end{quote}
+
+\hypertarget{methods}{%
+\chapter{Mathematical foundation of deconvolution}\label{methods}}
+
+Here is a review of existing methods.
+
+\hypertarget{deconvolution-of-transcriptomes-and-methylomes}{%
+\chapter{Deconvolution of transcriptomes and
+methylomes}\label{deconvolution-of-transcriptomes-and-methylomes}}
+
+We describe our methods in this chapter.
+
+\hypertarget{comparative-analysis-of-cancer-immune-infiltration}{%
+\chapter{Comparative analysis of cancer immune
+infiltration}\label{comparative-analysis-of-cancer-immune-infiltration}}
+
+Some \emph{significant} applications are demonstrated in this chapter.
+
+\hypertarget{example-one}{%
+\section{Example one}\label{example-one}}
+
+\hypertarget{example-two}{%
+\section{Example two}\label{example-two}}
+
+\hypertarget{heterogeneity-of-immune-cell-types}{%
+\chapter{Heterogeneity of immune cell
+types}\label{heterogeneity-of-immune-cell-types}}
+
+We have finished a nice book.
+
+\hypertarget{annexes-annexes}{%
+\chapter*{(ANNEXES) Annexes}\label{annexes-annexes}}
+\addcontentsline{toc}{chapter}{(ANNEXES) Annexes}
+
+\bibliography{book.bib,packages.bib}
+
+
+\end{document}
