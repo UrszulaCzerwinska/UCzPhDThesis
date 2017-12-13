@@ -7,9 +7,12 @@
  \end{quote}
  \vspace*{\fill}
 
-> *Suffering has been stronger than all other teaching, and has taught me to understand what your heart used to be. I have been bent and broken, but - I hope - into a better shape.*
+> And now, let's repeat the Non-Conformist Oath!
+> I promise to be different!
+> I promise to be unique!
+> I promise not to repeat things other people say!
 >
-> --- someone 
+> — Steve Martin, [*A Wild and Crazy Guy*](https://en.wikipedia.org/wiki/A_Wild_and_Crazy_Guy) (1978)
 
 
 This chapter will introduce basic topic of cancer and participation of stroma in cancer development, progression and response to treatment. It will also describe 
@@ -27,6 +30,7 @@ cancer is a disease touching blah blah many ppl over the word. it has been known
 what is tme : composition, roles 
 it was decided  the environment is bad for cancer 
 Tumors effectively supresses immune response : activates negative regulatory pathways ( checkpoints) 
+> Indeed, cellular elements of both the innate and adaptive immune response impact tumor progression.1,2 Cytotoxic T cells, B cells, and macrophages can orchestrate tumor cell elimination, while other populations such as regulatory T cells (Tregs) and myeloid-derived suppressor cells can dampen the antitumor immune response and promote malignant cell growth and tissue invasion3 (@Implications of the tumor immune microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon)
 
 For ages we didn't know much  about how modulate tme
 Now we know it can do both
@@ -37,11 +41,11 @@ Now we know it can do both
 There can be distinguished cancer phenotypes depending on immune infiltration
 how they are measure, defined, indexes, types of cancer, impact
 
-> In further support of a role for memory T cells in antitumour responses, tumour-infiltrating lymphocytes that express CD4 or CD8 extracted from experimental tumour models typically have the features of memory T cells and can possess an activated or exhausted phenotype, expressing markers such as PD-1, T-cell immunoglobulin and mucin-domain containing protein 3 (TIM-3) and lymphocyte activation gene 3 (LAG-3). (IMMUNE CANCER CIRCLE)
+> In further support of a role for memory T cells in antitumour responses, tumour-infiltrating lymphocytes that express CD4 or CD8 extracted from experimental tumour models typically have the features of memory T cells and can possess an activated or exhausted phenotype, expressing markers such as PD-1, T-cell immunoglobulin and mucin-domain containing protein 3 (TIM-3) and lymphocyte activation gene 3 (LAG-3). (@IMMUNE CANCER CIRCLE)
 
-> Anticancer immunity in humans can be segregated into three main phenotypes: the immune-desert phenotype (brown), the immune–excluded phenotype (blue) and the inflamed phenotype (red). (IMMUNE CANCER CIRCLE Fig 3)
+> Anticancer immunity in humans can be segregated into three main phenotypes: the immune-desert phenotype (brown), the immune–excluded phenotype (blue) and the inflamed phenotype (red). (@IMMUNE CANCER CIRCLE Fig 3)
 
-### Immune signatures
+### Immune signatures {#immune-signatures} 
 
 definition of signature: marker genes, list of genes, weighted list
 we can talk about general immune signature of signature of immune infiltration and stroma
@@ -56,6 +60,7 @@ origin of signatures
 ## Immunotherapies
 
 
+
 This section outlines progress in cancer therapies with a focus on immune therapies. It will link the ongoing research on TME with therapeutical potential. 
 
 ### Cancer therapies
@@ -65,16 +70,59 @@ This section outlines progress in cancer therapies with a focus on immune therap
 most potential  
 cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell death protein 1 (PD-1)
 
-> CTLA4 is a negative regulator of T cells that acts to control T-cell activation by competing with the co-stimulatory molecule CD28 for binding to shared ligands CD80 (also known as B7.1) and CD86 (also known as B7.2).The cell-surface receptor PD-1 is expressed by T cells on activation during priming or expansion and binds to one of two ligands, PD-L1 and PD-L2. Many types of cells can express PD-L1, including tumour cells and immune cells after exposure to cytokines such as interferon (IFN)-γ; however, PD-L2 is expressed mainly on dendritic cells in normal tissues. Binding of PD-L1 or PD-L2 to PD-1 generates an inhibitory signal that attenuates the activity of T cells. The 'exhaustion' of effector T cells was identified through studies of chronic viral infection in mice in which the PD-L1/PD-1 axis was found to be an important negative feedback loop that ensures immune homeostasis; it is also an important axis for restricting tumour immunity. (IMMUNE CANCER CIRCLE)
+> CTLA4 is a negative regulator of T cells that acts to control T-cell activation by competing with the co-stimulatory molecule CD28 for binding to shared ligands CD80 (also known as B7.1) and CD86 (also known as B7.2).The cell-surface receptor PD-1 is expressed by T cells on activation during priming or expansion and binds to one of two ligands, PD-L1 and PD-L2. Many types of cells can express PD-L1, including tumour cells and immune cells after exposure to cytokines such as interferon (IFN)-γ; however, PD-L2 is expressed mainly on dendritic cells in normal tissues. Binding of PD-L1 or PD-L2 to PD-1 generates an inhibitory signal that attenuates the activity of T cells. The 'exhaustion' of effector T cells was identified through studies of chronic viral infection in mice in which the PD-L1/PD-1 axis was found to be an important negative feedback loop that ensures immune homeostasis; it is also an important axis for restricting tumour immunity. (@IMMUNE CANCER CIRCLE)
 
-> The mechanisms that underlie cancer immunotherapy differ considerably from those of other approaches to cancer treatment. Unlike chemotherapy or oncogene-targeted therapies, cancer immunotherapy relies on promoting an anticancer response that is dynamic and not limited to targeting a single oncogenic derangement or other autonomous feature of cancer cells. Cancer immunotherapy can therefore lead to antitumour activity that simultaneously targets many of the abnormalities that differentiate cancer cells and tumours from normal cells and tissues.(IMMUNE CANCER CIRCLE)
+> The mechanisms that underlie cancer immunotherapy differ considerably from those of other approaches to cancer treatment. Unlike chemotherapy or oncogene-targeted therapies, cancer immunotherapy relies on promoting an anticancer response that is dynamic and not limited to targeting a single oncogenic derangement or other autonomous feature of cancer cells. Cancer immunotherapy can therefore lead to antitumour activity that simultaneously targets many of the abnormalities that differentiate cancer cells and tumours from normal cells and tissues.(@IMMUNE CANCER CIRCLE)
+
+>Checkpoint inhibitor immunotherapies work by
+>blocking the immune inhibitors CTLA-4 or PD-1/
+>PD-L1, allowing the natural host antitumor immune
+>response to eliminate a tumor and improve patient
+>survival even in advanced cancers. (@Implications of the tumor immune microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon)
+
+>Fig3 timeline immunotherapies (@Implications of the tumor immune microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon)
 
 ### Potential of developpement of new immunotherapies
 
->As effective as immunotherapy can be, only a minority of people exhibit dramatic responses, with the frequency of rapid tumour shrinkage from single-agent anti-PD-L1/PD-1 antibodies ranging from 10–40%, depending on the individual's indication (
-Zou, W., Wolchok, J. D. & Chen, L. PD-L1 (B7-H1) and PD-1 pathway blockade for cancer therapy: mechanisms, response biomarkers, and combinations. Sci. Transl. Med. 8, 328rv4 (2016).)
+>As effective as immunotherapy can be, only a minority of people exhibit dramatic responses, with the frequency of rapid tumour shrinkage from single-agent anti-PD-L1/PD-1 antibodies ranging from 10–40%, depending on the individual's indication (@
+>Zou, W., Wolchok, J. D. & Chen, L. PD-L1 (B7-H1) and PD-1 pathway blockade for cancer therapy: mechanisms, response biomarkers, and combinations. Sci. Transl. Med. 8, 328rv4 (2016).)
 
-> predicting reponse: The immune-inflamed phenotype correlates generally with higher response rates to anti-PD-L1/PD-1 therapy51,62,67,69,70,71, which suggests that biomarkers could be used as predictive tools. Most attention has been paid to PD-L1, which is thought to reflect the activity of effector T cells because it can be adaptively expressed by most cell types following exposure to IFN-γ6,82. IMMUNE CANCER CIRCLE)
+> predicting reponse: The immune-inflamed phenotype correlates generally with higher response rates to anti-PD-L1/PD-1 therapy51,62,67,69,70,71, which suggests that biomarkers could be used as predictive tools. Most attention has been paid to PD-L1, which is thought to reflect the activity of effector T cells because it can be adaptively expressed by most cell types following exposure to IFN-γ6,82. (@IMMUNE CANCER CIRCLE)
+
+
+## Quantifying immune infiltration (data)
+
+
+
+
+### Facs
+
+### staining (hispopathology, immunoscore!!! , multiplex immunofluorescence)
+>The standardized Immunoscore was based on
+>the quantification (cells/mm2) of two lymphocyte
+>populations (CD3 and CD8) within the central region
+>and the invasive margin of colorectal carcinoma
+>tumors and provides a scoring system ranging from
+>Immunoscore 0 (I0) to Immunoscore 4 (I4) (Figure 4).41 (@Implications of the tumor immune microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon)
+
+### omics 
+#### transcriptome
+#### methylome
+#### single cell 
+
+Described above methods of process DNA from hundreds of thousands cells  simultaneously and report averaged gene expression of all cells. In contrast scRNA-seq technology allows to get results for each cell individually. This is tremendous step forward enhancement of our understanding of cell heterogeneity and open new avenues of research questions. 
+
+This new data type also brings into the field new challenges related to data processing due to the volume, distribution, noise and biases. Experts highlight as the most "problematic" "batch effect" and noise and "dropout effect" (@https://www.nature.com/news/single-cell-sequencing-made-simple-1.22233). So far, there is no official standards that can be applies which makes data comparison and post-processing even more challenging. Up to date, there are around 70 reported  tools and ressources for single cell data processing (@ GitHub, called ‘Awesome Single Cell’ ([go.nature.com/2rmb1hp](http://go.nature.com/2rmb1hp))) .  
+
+A limited number of single cell datasets of tumors are made publicly available (@TABLE). 
+
+One can ask why then developing computational deconvolution of transcriptome if we can learn relevant information from single cell data. Todays reality is that single cell data does not provide straightforward answer to estimation of cell proportions. Few publications provide coverage information and how the proportion of sequenced single cells is representative of the true population. In addition, number of patients included in published studies of range <100 cannot be compared to thousand people cohorts sequenced with bulk transcriptome methods. Today, single cell technology brings very interesting "zoom in" perspective, but it would be incautious to make fundings from restricted group of individuals universal to the whole population. Major frein to the use of single cell technology more broadly is definitely the price that is neatly 10x higher for single cell sample compared to bulk (@https://www.cedars-sinai.edu/Research/Research-Cores/Genomics-Core/Documents/Single-Cell-Genomics-Pricing---June-2017.pdf).
+
+In this work, we are using single cell data in two ways. Firstly, in [Comparative… chapter](#results) we compare immune cell profiles defined by scRNA-seq, blood and blind deconvolution (problem introduced in [Immune signatures section](#immune-signatures)). Secondly, in [Heterogeneity of immune…](#map) we use single call data of Metastatic melanoma generated by Tirosh et al. (@Tirosh Melanoma sc) to demonstrate subpopulations of Macrophages and NK cells. 
+
+
+
+
 
 <!-- You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
 

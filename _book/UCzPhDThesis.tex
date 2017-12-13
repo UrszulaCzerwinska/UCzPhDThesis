@@ -15,6 +15,7 @@
     \usepackage{fontspec}
   \fi
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+    \setmainfont[]{Montserrat}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -112,7 +113,7 @@
 \begin{titlepage}
 \frontmatter
 \begin{figure}[t]
-\includegraphics[width=5cm]{../figures-ext/LogoParisDescartes}
+\includegraphics[width=5cm]{figures-ext/LogoParisDescartes}
 \end{figure}
 
 \begin{center}
@@ -146,7 +147,7 @@ Prénom NOM & [fonction] - université\\
 
 \begin{figure}[b]
 \begin{center}
-\includegraphics{../figures-ext/creativecommons}
+\includegraphics{figures-ext/creativecommons}
 \end{center}
 \end{figure}
 
@@ -232,11 +233,13 @@ Code de la Propriété Intellectuelle. Articles L 335.2-L 335.10}
 \vspace*{\fill}
 
 \begin{quote}
-\emph{Suffering has been stronger than all other teaching, and has
-taught me to understand what your heart used to be. I have been bent and
-broken, but - I hope - into a better shape.}
+And now, let's repeat the Non-Conformist Oath! I promise to be
+different! I promise to be unique! I promise not to repeat things other
+people say!
 
---- someone
+--- Steve Martin,
+\href{https://en.wikipedia.org/wiki/A_Wild_and_Crazy_Guy}{\emph{A Wild
+and Crazy Guy}} (1978)
 \end{quote}
 
 This chapter will introduce basic topic of cancer and participation of
@@ -265,7 +268,15 @@ been known that blah blah and then types
 
 what is tme : composition, roles it was decided the environment is bad
 for cancer Tumors effectively supresses immune response : activates
-negative regulatory pathways ( checkpoints)
+negative regulatory pathways ( checkpoints) \textgreater{} Indeed,
+cellular elements of both the innate and adaptive immune response impact
+tumor progression.1,2 Cytotoxic T cells, B cells, and macrophages can
+orchestrate tumor cell elimination, while other populations such as
+regulatory T cells (Tregs) and myeloid-derived suppressor cells can
+dampen the antitumor immune response and promote malignant cell growth
+and tissue invasion3 (\citet{Implications} of the tumor immune
+microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme
+Galon)
 
 For ages we didn't know much about how modulate tme Now we know it can
 do both - review hallmarks of cancer immuno
@@ -283,15 +294,15 @@ tumour-infiltrating lymphocytes that express CD4 or CD8 extracted from
 experimental tumour models typically have the features of memory T cells
 and can possess an activated or exhausted phenotype, expressing markers
 such as PD-1, T-cell immunoglobulin and mucin-domain containing protein
-3 (TIM-3) and lymphocyte activation gene 3 (LAG-3). (IMMUNE CANCER
-CIRCLE)
+3 (TIM-3) and lymphocyte activation gene 3 (LAG-3). (\citet{IMMUNE}
+CANCER CIRCLE)
 \end{quote}
 
 \begin{quote}
 Anticancer immunity in humans can be segregated into three main
 phenotypes: the immune-desert phenotype (brown), the immune--excluded
-phenotype (blue) and the inflamed phenotype (red). (IMMUNE CANCER CIRCLE
-Fig 3)
+phenotype (blue) and the inflamed phenotype (red). (\citet{IMMUNE}
+CANCER CIRCLE Fig 3)
 \end{quote}
 
 \hypertarget{immune-signatures}{%
@@ -338,8 +349,8 @@ signal that attenuates the activity of T cells. The `exhaustion' of
 effector T cells was identified through studies of chronic viral
 infection in mice in which the PD-L1/PD-1 axis was found to be an
 important negative feedback loop that ensures immune homeostasis; it is
-also an important axis for restricting tumour immunity. (IMMUNE CANCER
-CIRCLE)
+also an important axis for restricting tumour immunity. (\citet{IMMUNE}
+CANCER CIRCLE)
 \end{quote}
 
 \begin{quote}
@@ -350,8 +361,23 @@ an anticancer response that is dynamic and not limited to targeting a
 single oncogenic derangement or other autonomous feature of cancer
 cells. Cancer immunotherapy can therefore lead to antitumour activity
 that simultaneously targets many of the abnormalities that differentiate
-cancer cells and tumours from normal cells and tissues.(IMMUNE CANCER
-CIRCLE)
+cancer cells and tumours from normal cells and tissues.(\citet{IMMUNE}
+CANCER CIRCLE)
+\end{quote}
+
+\begin{quote}
+Checkpoint inhibitor immunotherapies work by blocking the immune
+inhibitors CTLA-4 or PD-1/ PD-L1, allowing the natural host antitumor
+immune response to eliminate a tumor and improve patient survival even
+in advanced cancers. (\citet{Implications} of the tumor immune
+microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme
+Galon)
+\end{quote}
+
+\begin{quote}
+Fig3 timeline immunotherapies (\citet{Implications} of the tumor immune
+microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme
+Galon)
 \end{quote}
 
 \hypertarget{potential-of-developpement-of-new-immunotherapies}{%
@@ -362,7 +388,7 @@ immunotherapies}\label{potential-of-developpement-of-new-immunotherapies}}
 As effective as immunotherapy can be, only a minority of people exhibit
 dramatic responses, with the frequency of rapid tumour shrinkage from
 single-agent anti-PD-L1/PD-1 antibodies ranging from 10--40\%, depending
-on the individual's indication ( Zou, W., Wolchok, J. D. \& Chen, L.
+on the individual's indication (@ Zou, W., Wolchok, J. D. \& Chen, L.
 PD-L1 (B7-H1) and PD-1 pathway blockade for cancer therapy: mechanisms,
 response biomarkers, and combinations. Sci. Transl. Med. 8, 328rv4
 (2016).)
@@ -374,8 +400,83 @@ with higher response rates to anti-PD-L1/PD-1 therapy51,62,67,69,70,71,
 which suggests that biomarkers could be used as predictive tools. Most
 attention has been paid to PD-L1, which is thought to reflect the
 activity of effector T cells because it can be adaptively expressed by
-most cell types following exposure to IFN-γ6,82. IMMUNE CANCER CIRCLE)
+most cell types following exposure to IFN-γ6,82. (\citet{IMMUNE} CANCER
+CIRCLE)
 \end{quote}
+
+\hypertarget{quantifying-immune-infiltration-data}{%
+\section{Quantifying immune infiltration
+(data)}\label{quantifying-immune-infiltration-data}}
+
+\hypertarget{facs}{%
+\subsection{Facs}\label{facs}}
+
+\hypertarget{staining-hispopathology-immunoscore-multiplex-immunofluorescence}{%
+\subsection{staining (hispopathology, immunoscore!!! , multiplex
+immunofluorescence)}\label{staining-hispopathology-immunoscore-multiplex-immunofluorescence}}
+
+\begin{quote}
+The standardized Immunoscore was based on the quantification (cells/mm2)
+of two lymphocyte populations (CD3 and CD8) within the central region
+and the invasive margin of colorectal carcinoma tumors and provides a
+scoring system ranging from Immunoscore 0 (I0) to Immunoscore 4 (I4)
+(Figure 4).41 (\citet{Implications} of the tumor immune microenvironment
+for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon)
+\end{quote}
+
+\hypertarget{omics}{%
+\subsection{omics}\label{omics}}
+
+\hypertarget{transcriptome}{%
+\subsubsection{transcriptome}\label{transcriptome}}
+
+\hypertarget{methylome}{%
+\subsubsection{methylome}\label{methylome}}
+
+\hypertarget{single-cell}{%
+\subsubsection{single cell}\label{single-cell}}
+
+Described above methods of process DNA from hundreds of thousands cells
+simultaneously and report averaged gene expression of all cells. In
+contrast scRNA-seq technology allows to get results for each cell
+individually. This is tremendous step forward enhancement of our
+understanding of cell heterogeneity and open new avenues of research
+questions.
+
+This new data type also brings into the field new challenges related to
+data processing due to the volume, distribution, noise and biases.
+Experts highlight as the most ``problematic'' ``batch effect'' and noise
+and ``dropout effect''
+(\citet{https://www.nature.com/news/single-cell-sequencing-made-simple-1.22233}).
+So far, there is no official standards that can be applies which makes
+data comparison and post-processing even more challenging. Up to date,
+there are around 70 reported tools and ressources for single cell data
+processing (@ GitHub, called `Awesome Single Cell'
+(\href{http://go.nature.com/2rmb1hp}{go.nature.com/2rmb1hp})) .
+
+A limited number of single cell datasets of tumors are made publicly
+available (\citet{TABLE}).
+
+One can ask why then developing computational deconvolution of
+transcriptome if we can learn relevant information from single cell
+data. Todays reality is that single cell data does not provide
+straightforward answer to estimation of cell proportions. Few
+publications provide coverage information and how the proportion of
+sequenced single cells is representative of the true population. In
+addition, number of patients included in published studies of range
+\textless{}100 cannot be compared to thousand people cohorts sequenced
+with bulk transcriptome methods. Today, single cell technology brings
+very interesting ``zoom in'' perspective, but it would be incautious to
+make fundings from restricted group of individuals universal to the
+whole population. Major frein to the use of single cell technology more
+broadly is definitely the price that is neatly 10x higher for single
+cell sample compared to bulk
+(\citet{https://www.cedars-sinai.edu/Research/Research-Cores/Genomics-Core/Documents/Single-Cell-Genomics-Pricing}---June-2017.pdf).
+
+In this work, we are using single cell data in two ways. Firstly, we
+compare immune cell profiles defined by scRNA-seq, blood and blind
+deconvolution (problem introduced in
+\protect\hyperlink{immune-signatures}{Immune signatures section})
 
 \hypertarget{methods}{%
 \chapter{Mathematical foundation of deconvolution}\label{methods}}
@@ -406,9 +507,9 @@ types}\label{heterogeneity-of-immune-cell-types}}
 
 We have finished a nice book.
 
-\hypertarget{annexes-annexes}{%
-\chapter*{(ANNEXES) Annexes}\label{annexes-annexes}}
-\addcontentsline{toc}{chapter}{(ANNEXES) Annexes}
+\hypertarget{annexes}{%
+\chapter*{Annexes}\label{annexes}}
+\addcontentsline{toc}{chapter}{Annexes}
 
 \bibliography{book.bib,packages.bib}
 

@@ -11,6 +11,7 @@ output:
     includes:
         in_header: Descartes.tex
         before_body: titre-doctorat.tex
+mainfont : Montserrat
 lof: yes
 lot: yes        
 documentclass: book
@@ -21,6 +22,7 @@ link-citations: yes
 geometry: "marginpar=2cm, top=3cm, bottom=4cm"
 description: "PhDThesis"
 linestretch: 1
+
 ---
 
 <!-- # Prerequisites -->
