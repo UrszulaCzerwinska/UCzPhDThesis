@@ -7,7 +7,7 @@ _bookdown_files
 rsconnect
 .DS_Store
 
-"Icon[\r]"
-figures-ext/"Icon[\r]"
-*/*/"Icon[\r]"
-*/"Icon[\r]"
+"Icon\r\r"
+figures-ext/"Icon\r\r"
+*/*/"Icon\r\r"
+*/"Icon\r\r"
