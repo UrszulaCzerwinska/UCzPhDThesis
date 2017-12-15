@@ -6,7 +6,8 @@ _book
 _bookdown_files
 rsconnect
 .DS_Store
-Icon^M^M
-figures-ext/Icon^M^M
-*/*/Icon^M^M
-*/Icon^M^M
+
+"Icon\r\r"
+figures-ext/"Icon\r\r"
+*/*/"Icon\r\r"
+*/"Icon\r\r"
