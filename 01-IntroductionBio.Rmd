@@ -114,6 +114,8 @@ It has been shown that anti PD-L1 therapies works more effectively in T cell inf
 
 Unfortunately most patients do not answer to immunotherapies which stimulates researches to look for better biomarkers and patient stratifications, and pharmaceutical industries to discover new immune checkpoints based therapies. 
 
+tedtrtr
+
 ### Potential of development of new immunotherapies
 
 >As effective as immunotherapy can be, only a minority of people exhibit dramatic responses, with the frequency of rapid tumor shrinkage from single-agent anti-PD-L1/PD-1 antibodies ranging from 10–40%, depending on the individual's indication (@
