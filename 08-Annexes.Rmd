@@ -1,1 +1,15 @@
 # Annexes {-} 
+
+## PhD timeline for defence before the end of October 2018 (Fig. \@ref(fig:an-timeline)) {-} 
+
+In order to defend before 31 October, I need to follow the guidelines of the University.
+
+* ~29 June - officially submlit the jury proposal and a draft of the thesis to the university
+* ~end of July - send manuscript to reviewers 
+* 24 Septemeber - 31 October - defend
+
+```{r an-timeline, echo = FALSE, out.width ='100%', fig.show='hold',fig.cap='Timeline privided by University Paris Descartes for 2017', fig.align = 'center'}
+knitr::include_graphics('figures-ext/An-timeline.jpg')
+```
+*Note: This annex will not be a part of final manuscript*
+

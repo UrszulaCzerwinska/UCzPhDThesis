@@ -1,0 +1,5 @@
+# Study of sensitivity  of known methods 
+
+## Reproducibility of NMF versus ICA
+
+## Impact of modification of signatures list on result for signature-based deconvolution methods

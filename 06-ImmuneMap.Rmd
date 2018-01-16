@@ -1,0 +1,5 @@
+# Heterogeneity of immune cell types {#map}
+
+Adapted from *submitted* article of Kondratova et al. 
+
+\includepdf[scale=1]{pdf-ext/ImmuneMap.pdf}

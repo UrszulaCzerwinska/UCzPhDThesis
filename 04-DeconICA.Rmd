@@ -1,0 +1,22 @@
+# Deconvolution of transcriptomes and methylomes
+
+We describe our methods in this chapter.
+
+## From blind deconvolution to cell-type quantification: general overview
+
+### The ICA-based deconvolution of Transcriptomes
+
+### Interpretation of Independent components
+
+#### Correlation based identification of confunding factors 
+
+#### Identification of immune cell types with enrichment test
+
+### Transforming metagenes into signature matrix
+
+### Regression-based estimation of cell-type proportions
+
+## *DeconICA* R package for ICA-based deconvolution 
+
+
+

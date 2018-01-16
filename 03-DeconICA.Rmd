@@ -1,8 +1,0 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-# Deconvolution of transcriptomes and methylomes
-
-We describe our methods in this chapter.

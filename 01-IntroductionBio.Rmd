@@ -1,42 +1,53 @@
 # Immuno-biology of cancer {#intro} 
 \setcounter{page}{11}
 \renewcommand{\thepage}{\arabic{page}}
-\vspace*{\fill}
- \begin{quote}
- \emph{Suffering has been stronger than all other teaching, and has taught me to understand what your heart used to be. I have been bent and broken, but - I hope - into a better shape.}
- \end{quote}
- \vspace*{\fill}
-
-> And now, let's repeat the Non-Conformist Oath!
-> I promise to be different!
-> I promise to be unique!
-> I promise not to repeat things other people say!
->
-> — Steve Martin, [*A Wild and Crazy Guy*](https://en.wikipedia.org/wiki/A_Wild_and_Crazy_Guy) (1978)
 
 
-This chapter will introduce a basic topic of cancer and participation of stroma in cancer development, progression and response to treatment. It will also describe 
+This chapter will introduce a basic topic of cancer and participation of stroma in cancer development, progression and response to treatment. It will also describe most important types of data used to study cancer microenvironment.
 
 ## Cancer seen as complex environment
 
-For a long time studying tumor was focused on tumor cells, their reprogramming, mutations. It was seen as disease of uncontrolled cells. Recent research moved research focus from tumor cells to tumor cells in their proper context: tumor microenvironment. 
+For a long time studying tumor was focused on tumor cells, their reprogramming, mutations. Cancer was seen as disease of uncontrolled cells. Recent discoveries moved research focus from tumor cells to tumor cells in their context: tumor microenvironment. We will describe here what is the composition and role of the TME in tumor progression, diagnosis and response to treatment.
 
 ### Our understanding of cancer over time
 
 cancer is a disease touching blah blah many ppl over the word. it has been known that blah blah and then types
 
+CANCER STATISTICS
+
+Tumor was seen for decades as a disease with mutations as a main source of heterogeneity. 
+
 ### Tumor micro environment: fiend or foe? 
 
-what is time : composition, roles 
-it was decided  the environment is bad for cancer 
+#### What is Tumor Microenvironment (TME)
 
-Tumors effectively suppresses immune response: activates negative regulatory pathways ( checkpoints) 
+Tumor Microenvironment is a complex tissue that surrounds tumor cells. It is composed of blood and lymphatics vessels, epithelial cells, mesenchymal stem cells,   fibroblast, adipocytes  and a wide variety of immune cells. Their proportion and specific roles vary significantly with tumor type and stage. Communication between the environmental cells  and the tumor is critical for tumor development and its impact on patient's response to treatment. 
 
-> Indeed, cellular elements of both the innate and adaptive immune response impact tumor progression.1,2 Cytotoxic T cells, B cells, and macrophages can orchestrate tumor cell elimination, while other populations such as regulatory T cells (Tregs) and myeloid-derived suppressor cells can dampen the antitumor immune response and promote malignant cell growth and tissue invasion3 (@Implications of the tumor immune microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon)
+#### TME as tumor allay
 
-For ages, we didn't know much  about how to modulate TME
-Now we know it can do both
+In 1863 Rudolf Virchow observed a link between chronic inflammation and tumorigenesis. Accoriding to Virchov theory  genetic damage would be the “match that lights the fire” of cancer, and the inflammation or cytokines produced by immune cells should be the “fuel that feeds the flames”. (@Inflammation and cancer: back to Virchow?). Therefore lymphocyte infiltration was confirmed by subsequent studies as a hallmark o cancer.  The question one may ask is why our immune system does not defend the organism from tumor cells as it does in a range of bacterial and viral infections? It is mainly because of the ability of tumor cells to  inhibit immune response through activation of negative regulatory pathways (so called immune checkpoints).
+
+Many examples can be cited on how TME facilitates tumor development.  For instance, in the early stages of tumorigenesis some  macrophage phenotypes support tumor growth.  Also, it  was shown that myeloid-derived suppressor cells (MDSCs) have an ability to suppress immune defence i.e. immunosurveillance by  dendritic cells (DCs), T cell activation and macrophage polarisation and they promote tumor vascularisation as well. (@ Talmadge, J.E. & Gabrilovich, D.I. History of myeloid-derived suppressor cells. Nat. Rev. Cancer 13, 739–752 (2013).44. @ Gabrilovich, D.I., Ostrand-Rosenberg, S. & Bronte, V. Coordinated regulation of myeloid cells by tumours. Nat. Rev. Immunol. 12, 253–268 (2012).  Tregs and myeloid-derived suppressor cells can negatively impact natural immune defence and by these means allow growth and invasion of tumor cells.   (@Implications of the tumor immune microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon). Another cell type, a part of ECM, fibroblast, or more precisely Cancer Associated Fibroblasts (CAFs) have proven pro-tumor functions in breast cancer where they enhance metastasis. (@ Dumont, N. et al. Breast fibroblasts modulate early dissemination, tumorigenesis, and metastasis through alteration of extracellular matrix characteristics. Neoplasia 15, 249–262 (2013).)
+
+In addition, it is worth mentioning the role of ECM as an  integral part of TME  and its impact on tumorigenesis and metastatis. It is usually anit-tumor in early stages and pro-tumor at the metastatic stages. The blood and lymphatic vessels maintain tumor growth providing necessary nutritive compound to malignant cells. 
+
+
+
+HALLMARKS?
+
+
+
+Fig 2 The micronvironment supports metastatic dissemination and colonistaion at secondary sites ? (@Microenvironmental regulation of tumor progression and metastasis)
+
+#### Two-faced nature of immune cells 
+
+Recent studies unveil ambivalent nature of immune cells of TME. While some as cytotoxic T cells, B cells and macrophages can manage to eliminate tumor cells.  Treg cells role is to regulate expansion and activation of T and B cells. Depending on cancer type, they can be either pro- or anit- tumor.  For example as  it has been shown for Tregs, they can be  also associated with improved survival (i.e.  in colorectal cancer(@.  Frey, D.M. et al. High frequency of tumor-infiltrating FOXP3+ regulatory T cells predicts improved survival in mismatch repair-proficient colorectal cancer patients. Int. J. Cancer 126, 2635–2643 (2010).). For innate immunity, there are widely accepted  M1 (ani-tumor) and M2 (pro-tumor) extreme macrophages phenotypes in TME. (@Qian, B.Z. & Pollard, J.W. Macrophage diversity enhances tumor progression and metastasis. Cell 141, 39–51 (2010). Most of the statements  seem to be context dependent and not valid universally across all cancer types. We already mentioned Macrophages phenotypic plasticity as well as different behaviour of EMC depending on tumor stage.
+
+From more general point of view, it has been observed that immunodeficiency can correlate with high cancer incidence. Results of analysis based on observations of  25,914 female immunosuppressed organ transplant recipients, the tumor incidence was higher than predicted for multiple cancers. However, the number  of breast cancer cases decreased which can be really disturbing if we need to decide on the role of immune defence in tumor progression (@Stewart T., Tsai, S.C., Grayson, H., Henderson, R. & Opelz, G. Incidence of de-novo breast cancer in women chronically immunosuppressed after organ transplantation. Lancet 34, 796–798 (1995).) This trend was confirmed through a study on individuals with AIDS and other studies.  This indicates that immune microenvironment can be cancer stimulating or inhibiting depending on the type of cancer. 
+
 - review hallmarks of cancer immune
+
+
 
 ### Cancer immune phenotypes
 
@@ -61,6 +72,8 @@ ML based scoring scheme. Random forest
 
 link to *precision medecine* 
 
+> Together, these observations support the notion that gene expression-based correlates of immune involve- ment could hold valuable clinical utility for a number of prognostic and therapy-predictive applications. However, to date, mRNA-based diagnostics that quantify immune involvement in tumors do not exist. Multi-gene diagnos- tics that simultaneously measure mRNA transcripts of multiple genes represent a class of In Vitro Diagnostic Multivariate Index Assay (IVDMIA) that has in recent years gained wide clinical acceptance for the diagnosis and stratification of patients into risk groups to guide therapeutic decisions [80, 81]
+
 > These observations raise the question of the underlying molecular mechanisms that explain the differences in immunogenicity of the tumors. The question can be reduced to the notion of sources of immunogenic differences, which can be divided into two categories: tumor-intrinsic factors and tumor-extrinsic factors. Tumor-intrinsic factors include the mutational load, the neoantigen load, the neoantigen frequency, the expression of immunoinhibitors and immunostimulators (e.g., PD-L1), and HLA class I molecule alterations. Tumor-extrinsic factors include chemokines that regulate T cell trafficking, infiltration of effector TILs and immunosuppressive TILs, and soluble immunomodulatory factors (cytokines) (@Gajewski et al., 2006Immune resistance orchestrated by the tumor microenvironment.)
 >
 > For each of the studied cancers, the analysis revealed only immune-related factors, which we classified into four categories: (1) infiltration of activated CD8+/CD4+ T cells and Tem CD8+/CD4+ cells; (2) infiltration of immunosuppressive cells (Tregs and MDSCs); (3) expression of MHC class I, class II, and non-classical molecules; and (4) expression of certain co-inhibitory and co-stimulatory molecules ([Figure 5](http://www.cell.com/cms/attachment/2109515464/2082923785/gr5.jpg)A).To visualize the information, we constructed an immunophenogram that includes these four categories ([Figure 5](http://www.cell.com/cms/attachment/2109515464/2082923785/gr5.jpg)B). We then calculated an aggregated score, immunophenoscore, based on the expression of the representative genes or gene sets comprising four categories: MHC molecules, immunomodulators, effector cells (activated CD8+ T cells and CD4+ T cells, Tem CD8+ and Tem CD4+ cells), and suppressor cells (Tregs and MDSCs) Multivariate analysis showed that the immunophenoscore was associated with survival in 12 solid cancers, of which 4 were significant: KIRC, SKCM, breast cancer (BRCA), and bladder cancer (BLCA) ([Figure 5](http://www.cell.com/cms/attachment/2109515464/2082923785/gr5.jpg)C).
@@ -83,45 +96,34 @@ origin of signatures
 
 ## Immunotherapies
 
-
-
 This section outlines progress in cancer therapies with a focus on immune therapies. It will link the ongoing research on TME with therapeutical potential. 
 
-### Cancer therapies
+### Cancer therapies {#cancer_Therapies}
 
 ### Recent progress in immuno-therapies
 
-most potential  
-cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell death protein 1 (PD-1)
+The immunotherapies, in contrast with other types of cancers therapies discussed in [the previous chapter](#cancer_Therapies), aim to trigger or restart the immune system to defend the organism and attack the malignant cells. All this, however without provoking persisting inflammation state (@Predina, J., (2013). Changes in the local tumor microenvironment in recurrent cancers may explain the failure of vaccines after surgery. Proc. Natl. Acad. Sci. USA 110, E415–E424.) 		
 
-> CTLA4 is a negative regulator of T cells that act to control T-cell activation by competing with the co-stimulatory molecule CD28 for binding to shared ligands CD80 (also known as B7.1) and CD86 (also known as B7.2).The cell-surface receptor PD-1 is expressed by T cells on activation during priming or expansion and binds to one of two ligands, PD-L1 and PD-L2. Many types of cells can express PD-L1, including tumor cells and immune cells after exposure to cytokines such as interferon (IFN)-γ; however, PD-L2 is expressed mainly on dendritic cells in normal tissues. Binding of PD-L1 or PD-L2 to PD-1 generates an inhibitory signal that attenuates the activity of T cells. The 'exhaustion' of effector T cells was identified through studies of chronic viral infection in mice in which the PD-L1/PD-1 axis was found to be an important negative feedback loop that ensures immune homeostasis; it is also an important axis for restricting tumor immunity. (@IMMUNE CANCER CIRCLE)
+The idea of stimulating immune system to fight malignant cell was not born recently. Since a long time a possibility of development of an anti-cancer vaccine has been investigated. Unfortunately, this idea faced two important limitations 1)  lack of knowledge of antigens that should be used in vaccine to successfully stimulate cytotoxic T cells  2) the ability of cancer to block the immune response also called *immunostat*.  Despite those impediments works on anti-tumor vaccines do not cede. (@Palucka, K., and Banchereau, J. (2013). Dendritic-cell-based therapeutic can- cer vaccines. Immunity 39, this issue, 38–48.)
 
-> The mechanisms that underlie cancer immunotherapy differ considerably from those of other approaches to cancer treatment. Unlike chemotherapy or oncogene-targeted therapies, cancer immunotherapy relies on promoting an anticancer response that is dynamic and not limited to targeting a single oncogenic derangement or other autonomous feature of cancer cells. Cancer immunotherapy can, therefore, lead to antitumor activity that simultaneously targets many of the abnormalities that differentiate cancer cells and tumors from normal cells and tissues.(@IMMUNE CANCER CIRCLE)
+Another idea involving using immune system as a weapon to fight cancer, would be  the use of genetically modified patient's T-cells, carrying  *CARs*  (chimeric antigen receptors) (@Jackson Driving CAR T-cells forward nat rev 2016). After a long period of small unsuccessful trials, recently  in 2017, two  CAR T-cell therapies were accepted, one  to "treat adults with certain type of large B-cell lymphoma" (@FDA_CAR-T_adult), other to treat "children with acute lymphoblastic leukemia (ALL)" (@FDA_CAR-T_ALL) , which  are, at the same time, the first two gene therapies accepted by FDA. 
 
->Checkpoint inhibitor immunotherapies work by
->blocking the immune inhibitors CTLA-4 or PD-1/
->PD-L1, allowing the natural host antitumor immune
->response to eliminate a tumor and improve patient
->survival even in advanced cancers. (@Implications of the tumor immune microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon)
+However, the two most promising immuno-related strategies are based on blocking so called immune check point inhibitors: cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell death protein 1 (PD-1). The anti-CLTA4 antibodies blocks repressive action of CLTA4 on T-cells and they become therefore activated. It was shown efficient in melanoma patients and accepted by FDA in 2015 as adjuvant therapy for stage III metastatic melanoma patients (@FDA_CTLA4).  PD-1 is a cell surface receptor of T cells, that binds to PD-L1/PD-L2.  After binding, an immunosuppressive pathway is activated and T cells activity is dampened. An action of an anti-PD-L1 antibody is to prevent this immune exhaustion.(@IMMUNE CANCER CIRCLE). A stepping stone for anti-PD-L1 therapies was approval of Tecentriq (atezolizumab) for Bladder cancer (@FDA_PDL1_Bladder) and anit-PD1 Keytruda (pembrolizumab)  initially accepted for NSCLC and further extended to head and neck cancer, Hodgkin's lymphoma, gastric cancer and  microsatellite instability-high cancer  (@FDA_PDL1_NSCLC). Since other anti-PD-L1 or anti-PD1 antibodies were accepted or entered advanced stages of clinical trials  (@Wolchok, 2015,PD-1 blockers).  A short history of immunotherapy FDA-accepted treatments can be found in Fig. \@ref(fig:timeline-immunotherapies)
 
->And second, basic research in cancer immunology paved the way for the development and approval of checkpoint blockers. These drugs, which augment T cell activity by blocking cytotoxic T lymphocyte antigen-4 (CTLA-4), programmed cell death protein 1 (PD-1), or PD-1 ligand (PD-L1), show remarkable clinical effects. Analysis of long-term data of patients who received anti-CTLA-4 antibodies in unresectable or metastatic melanoma shows a plateau in the survival curve after 3 years (@Schadendorf et al., 2015 Pooled analysis of long-term survival data from phase II and phase III trials of ipilimumab in unresectable or metastatic melanoma.), suggesting curative potential.Over and above, efficacy of anti-PD-1 antibodies has been shown not only in melanoma, but also in nine different tumor types (@Wolchok, 2015,PD-1 blockers.). There is currently a rapid pace of development of checkpoint blockers evident from more than 150 clinical trials with monotherapies or combination therapies (@Wolchok, 2015,PD-1 blockers). However, there is disparity in response rates across and within tumor types, suggesting the existence of intrinsic immune resistance, as well as evidence for acquired immune resistance (@Pitt et al., 2016,Resistance mechanisms to immune-checkpoint blockade in cancer: tumor-intrinsic and -extrinsic factors.).
+```{r timeline-immunotherapies, fig.cap='(ref:timeline-immunotherapies-caption)', out.width='100%', fig.align='center', echo = FALSE}
+knitr::include_graphics('figures-ext/02-timeline-immunotherapies.pdf')
+```
 
->Fig3 timeline immunotherapies (@Implications of the tumor immune microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon)
+(ref:timeline-immunotherapies-caption) This timeline describes short history of FDA approval of checkpoint blocking immunotherapies up to 2017. Reprinted by permission from Springer Nature,  (@Implications of the tumor immune microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon), © 2017 Macmillan Publishers Limited, part of Springer Nature. All Rights Reserved.
 
->Although long considered a possibility, it has been demonstrated only in the past five years that the mutational burden of tumours contributes to immune recognition of cancer and that it may, at least partly, determine a person’s response to cancer immunotherapy (@. Rizvi, N. A.et al. Mutational landscape determines sensitivity to PD-1 blockade in non-small cell lung cancer. Science 348, 124–128 (2015).
+ The main drawback of immunotherapies is a heterogeneity of  response rate, which can vary i.e. from 10–40% in case of PD-L1blocking(@
+Zou, W., Wolchok, J. D. & Chen, L. PD-L1 (B7-H1) and PD-1 pathway blockade for cancer therapy: mechanisms, response biomarkers, and combinations  Sci. Transl. Med. 8, 328rv4 (2016).) ,  suggesting that some patient can have more chances than others to respond to an immune therapy.  So far, it has been shown that anti PD-L1 therapies works more effectively in T cell infiltrated tumors with exclusion of Tregs because of lack of  difference in expression of FOXP3 in responding and non-responding group of patients. (@Herbst.predictive role PD_L1_. Also some light has been shade by Rizvi et al (@. Rizvi, N. A.et al. Mutational landscape determines sensitivity to PD-1 blockade in non-small cell lung cancer. Science 348, 124–128 (2015). who connected mutational rate of cancer cells to the chances of response to an immunotherapy.  
 
-It has been shown that anti PD-L1 therapies works more effectively in T cell infiltrated tumors with exclusion of Tregs because of lack of  difference in expression of FOXP3 in responding and non-responding group of patients. (@Herbst.predictive role PD_L1_)
-
-Unfortunately most patients do not answer to immunotherapies which stimulates researches to look for better biomarkers and patient stratifications, and pharmaceutical industries to discover new immune checkpoints based therapies. 
-
-tedtrtr
+Despite those fundings, the precise qualifications of patients that should be sensitive to an immunotherapy are not defined (@Pitt et al., 2016,Resistance mechanisms to immune-checkpoint blockade in cancer: tumor-intrinsic and -extrinsic factors.).  As most patients do not answer to immunotherapies, it stimulates researches to look for better biomarkers and patient stratifications, and pharmaceutical industries to discover new immune checkpoints based therapies. 
 
 ### Potential of development of new immunotherapies
 
->As effective as immunotherapy can be, only a minority of people exhibit dramatic responses, with the frequency of rapid tumor shrinkage from single-agent anti-PD-L1/PD-1 antibodies ranging from 10–40%, depending on the individual's indication (@
->Zou, W., Wolchok, J. D. & Chen, L. PD-L1 (B7-H1) and PD-1 pathway blockade for cancer therapy: mechanisms, response biomarkers, and combinations.(@ Sci. Transl. Med. 8, 328rv4 (2016).)
-
-> predicting response: The immune-inflamed phenotype correlates generally with higher response rates to anti-PD-L1/PD-1 therapy51,62,67,69,70,71, which suggests that biomarkers could be used as predictive tools. Most attention has been paid to PD-L1, which is thought to reflect the activity of effector T cells because it can be adaptively expressed by most cell types following exposure to IFN-γ6,82. (@IMMUNE CANCER CIRCLE)
+?
 
 
 ## Quantifying immune infiltration (data)
@@ -165,6 +167,27 @@ We will introduce most relevant data types that are used to study immune infiltr
 Some kind of sequencing explanation needed for non-biologists
 
 #### transcriptome
+
+> Transcriptomics is the large-scale study of RNA mole- cules by use of high-throughput techniques. It examines the abundance and makeup of a cell’s transcriptome1,2. In contrast to DNA, which is largely identical across all cells of an organism, the actively transcribed RNA is highly dynamic, reflecting the diversity of cell types, cellular states and regulatory mechanisms. Because a transcrip- tome profile can be regarded as a signature or snapshot of the underlying cell state, the experimental profiling of samples and specimens can provide insights into their unique biology. 
+>
+> Transcriptome profiling can detect changes in gene activity and regulation by capturing quantitative expres- sion patterns and has the capacity to describe the under- lying phenotypes in great detail. Furthermore, many genetic and epigenetic events can be either directly observed or indirectly inferred from transcriptomic data. The primary readouts of modern-day cancer tran- scriptomics can be broadly categorized as genetic and functional (FIG. 2). Whereas functional measurements benefit mostly from the breadth of genome-wide assays, the detection of genetic events required increased depth and base pair resolution.
+>
+> Although most transcriptomic platforms are highly reproducible by themselves, reproducibility across platforms is limited. Unfortunately, the biggest challenge is in the measurement of absolute expression levels263, which is the input to many biomarkers and signatures. Therefore, signatures cannot be expected to translate verbatim between platforms. Few studies have explored this topic. Fumagalli et al.264 concluded that single-gene expression biomarkers and established prognostic signatures generalize well between microarrays and RNA sequencing (RNA-seq). Zhang et al.265 reached a similar conclusion in that “technological platforms (RNA-seq versus microarrays) [...] do not significantly affect performances of the [predictive] models.” However, these studies were done on high-quality samples and did not explore whether RNA degradation or crosslinking had a detrimental effect.
+>
+> Types of gene expression analyses. Transcriptome- wide gene expression profiles are now available for the majority of cancer types and their corresponding tissues of origin. In general terms, there are two cancer-centric paths to analyse these data: the differential approach, which interprets tumour expression profiles relative to the patient-matched or unmatched normal tissue sam- ples; and the relative approach, which compares tran- script levels across tumours or other samples (FIG. 3). Inherently, these strategies have unique advantages and applications. Differential analyses are designed to detect cancer-specific changes, but if the normal samples are not comparable164, the results will be difficult to inter- pret, for example, if the cancer cell of origin is rare or unknown. In general terms, differential analyses tend to be underpowered in the clinical setting. Comparisons at the single-patient level are often limited by the dearth of replicates due to cost and sample availability, while at the cohort level, they are often confounded by interpatient heterogeneity. Relative analyses are useful to charac- terize individual samples but typically depend on the availability of external knowledge or reference data sets. The validity of any relative comparison is contingent on how well a query sample is matched to the reference in terms of technical (for example, type of data processing) and biological (for example, molecular subtype) biases. Therefore, relative analyses often necessitate advanced normalization techniques165 and batch correction166. Overall, the differential approach is more common in the research setting to generate hypotheses, whereas the relative approach drives many clinical applications, such as precision medicine.
+> Differential approaches. The simplest type of differen- tial analysis is the identification of genes that are upreg- ulated or downregulated in cancer (that is, differentially expressed genes (DEGs)), and established methods to detect DEGs are available for both microarray167 and RNA-seq data168–170. A typical result is a long list of DEGs that is difficult to interpret without additional functional annotation, as demonstrated by a landmark study in breast cancer171. Differential methods have also been proposed for splicing93 or isoform usage172. Although transcriptomes have very high dimensionality, there is also substantial correlation among the genes, which can be leveraged to simplify or summarize the data173. A common strategy is to break down the transcrip- tome-wide gene expression profile into a set of modules that are less interdependent, more generalizable and simpler to understand. The specifics for each method differ substantially, but in general, it is possible to test for differential gene sets174, pathways, gene regulatory networks or modules in co-expression networks175. Ideally, testing multiple related genes will improve sen- sitivity and yield results that are easier to understand. For example, using a simple gene set method, Majeti et al.176 were able to identify the dysregulation of the WNT pathway in acute myeloid leukaemia. Beyond upregulation or downregulation, methods have been developed to detect less-uniform changes in gene expres- sion177; for example, detecting mechanism of action by network dysregulation (DeMAND) leverages changes in correlation to prioritize dysregulated or ‘rewired’ modules178
+>
+> Cellular composition and microenvironment. The study of the heterogeneous cellular composition of tumours is one of the most recent applications of cancer tran- scriptomics. Approaches typically involve either directly isolating and characterizing individual cells (using, for example, single-cell sequencing) or indirectly inferring cell compositions in silico from bulk expression data. From bulk expression data (which are currently more readily available from clinical samples than are sin- gle-cell data), the computational task is often referred to as sorting, or deconvolving, the gene expression pro- file. Deconvolution is a difficult problem that requires methodological constraints in order to converge on plausible solutions. A large number of algorithms have been proposed197 that make different trade-offs on the basis of the available data and the desired output. In general, the methods can be divided into those that use cell-type-specific gene signatures and can be applied to a single tumour sample and those that require multiple tumour and normal samples (matched or unmatched). Currently, the most important applications are to esti- mate tumour clonality and purity, which are affected by intrinsic tumour cell heterogeneity or infiltration by stro- mal or immune cells198. For example, in silico purification of gene expression profiles has been applied to improve their performance in prognosis199 and classification200. Deconvolution also provides a unique opportunity to study the tumour microenvironment, for exam- ple, to unravel tumour–stromal paracrine crosstalk201. In the future, single-cell transcriptomics is bound to revolutionize our understanding of the tumour microenvironment202, heterogeneity203 and evolution204.
+>
+> The clinical utility of RNA- seq has been demonstrated by a number of sequencing programmes where RNA-seq identified a large num- ber of actionable genetic events221–223. Still, targeted DNA sequencing is currently the method of choice for many clinical applications in precision oncology. DNA is a highly stable analyte and is therefore well suited for molecular diagnostics.
+>
+> Transcriptomics in immuno-oncology. The needfor RNA-based companion diagnostics is particu-larly acute in immuno-oncology250. Cancer immunephenotypes were shown to broadly reflect the activityof the host immune system and to generalize remark-ably well across cancer types. Numerous studies haveinvestigated the association of immune infiltrationwith survival251–253 and found significant correlationsat the level of immune cell types, inflammation signa-tures and individual genes. Although immune check-point inhibitors are broadly beneficial across cancertypes, the response rates are highly variable. It isbecoming increasingly clear that positive responses toimmunotherapy are associated with tumour immuno-genicity and host immune infiltration253–255. However,given the complexity of adaptive immune responsesand the dynamic nature of tumour–immune evasion,it is unrealistic to expect that a single gene will besufficient to accurately predict outcomes or guidetreatment.
+>
+> The clinical utility of transcriptome profiling forimmunotherapy was demonstrated in a landmarklongitudinal study that demonstrated that signaturesof adaptive immunity are predictive of response to immune checkpoint blockade254. As both prognos-tic and predictive approaches require the expressionlevels of hundreds of genes, their clinical translationwill depend on the routine use of whole-transcrip-tome profiling or custom-targeted panels256. We haveshown that comprehensive immunophenotypic datacan be obtained from clinical transcriptomes and thatthey provide unique insights into the immunologicalheterogeneity of metastatic tumours across all majorprimary tissue types223. RNA-seq data are also particu-larly valuable for the development of personalized can-cer vaccines257,258, where they can be used to identifychimeric fusion proteins that contain putative mutantepitopes245 and help in the selection of potentiallyhighly abundant neoantigens.
+>
+> The complexity of tumour–immune cell interactionsis mirrored by the diversity of bioinformatics approachesto characterize them. Both data-driven198 and know-ledge-driven253 approaches have been proposed to quan-tify the overall level of tumour–immune infiltration. Inaddition, recent methodological advances made it pos-sible to estimate cell-type fractions from bulk tumourexpression profiles in a process referred to as in silicocell sorting259,260, which is similar to the ‘purification’ ofthe tumour cell expression profiles discussed above199,200.Finally, clonal expansion of antitumour T cells can bedetected by the presence of somatically rearranged TCRsequences, that is, clonotypes261. An analogous strategycan be applied to B cells and immunoglobulin loci262.As neoantigen prediction remains a daunting problem,RNA-seq data are useful for both the detection of pro-tein-altering genetic aberrations and their prioritizationbased on expression levels.
+>
+> (@Cancer transcriptome profiling at the juncture of clinical translation)
 
 >Bulk RNA-seq data can easily be obtained from either flash-frozen or formalin-fixed, paraffin-embedded (FFPE) tissue samples, including both surgically resected material and core needle biopsies. (@Shelker et al. Estimation of immune cell content using single cell data).
 

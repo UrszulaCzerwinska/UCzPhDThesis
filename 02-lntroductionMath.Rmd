@@ -1,8 +1,27 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-# Mathematical foundation of deconvolution {#methods}
+# Mathematical foundation of cell-type deconvolution of biological data {#methods}
 
-Here is a review of existing methods.
+In this chapter, we will discuss how mathematical models can be used to extract information about specific cell-types from 'bulk' data or how to unmix mixed sources.  It will introduce you to basic concepts of data analysis as well as most popular advanced solutions adapted for estimating presence and proportion of immune cells within cancer biopsies. 
+
+## Introduction to supervised  and unsupervised learning
+
+## Blind source sepration
+ (ICA, NMF etc)
+ 
+## Finding optimal number of components and over-decomposition of transcriptopmes
+ (adapted from BMC article)
+\includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}
+
+## Cell-type deconvolution models 
+(families of approaches) 
+
+### basis matrix
+
+### regression algorithm
+
+### others
+
+## Short review of most popular cell-type deconvolution tools 
+
+tools will already be mentioned in the section above. However a comment on other than mentionned aspects are needed
+
+

@@ -4,33 +4,31 @@
 \begin{figure}[t]
 \includegraphics[width=5cm]{figures-ext/LogoParisDescartes}
 \end{figure}
-
 \begin{center}
 UNIVERSITÉ PARIS DESCARTES \\
 \vspace*{1cm}
-\textbf{École doctorale}\\
+\textbf{ED 474 Frontières du vivant}\\
 \vspace*{0,5cm}
-\textit{Laboratoire/équipe de recherche}\\
+\textit{Institut Curie, PSL Research University, Mines Paris Tech, Inserm U900 \\26, rue d'Ulm\\ 75005 Paris, France}\\
 \vspace*{1cm}
-\LARGE{\textbf{Titre de la thèse}}\\
-\vspace*{0,5cm}
-\large{\textit{\textbf{Sous-titre de la thèse}}}\\
-\vspace*{2cm}
-\large{\textbf{Par [Prénom et nom de l'auteur]}}\\
+\LARGE{\textbf{COMPUTATIONAL DECONVOLUTION OF CELL AND ENVIRONMENT SPECIFIC SIGNALS AND
+THEIR INTERACTIONS FROM COMPLEX MIXTURES IN BIOLOGICAL SAMPLES}}\\
+\large{\textbf{Par Urszula Czerwińska}}\\
 \vspace*{1cm}
-Thèse de doctorat de [Discipline : consulter la liste des disciplines]\\
+Thesis Advisory Committee Report 2018\\
 \vspace*{1cm}
-Dirigée par [Prénom et nom du directeur de thèse]\\
+Thèse dirigée par Andrei Zinoviev et Vassili Soumelis\\
 \vspace*{1cm}
-\small{Présentée et soutenue publiquement le [date de soutenance]}\\
+\small{Paris, le 7 février 2018}\\
 \end{center}
 \vspace*{1cm}
 \begin{footnotesize}
 Devant un jury composé de : \\
 \begin{tabular}{lll}
-Prénom NOM & [fonction] - université\\
-Prénom NOM & [fonction] - université\\
-Prénom NOM & [fonction] - université\\
+Andrei Zinoviev & directeur de thèse - PSL\\
+Vassili Soumelis & directeur de thèse - PSL\\
+Denis Thieffry & advisor - ENS\\
+Frank Pagès & advisor - Université Paris Descartes\\
 \end{tabular}
 \end{footnotesize}
 
@@ -50,29 +48,53 @@ Prénom NOM & [fonction] - université\\
 \newpage
 \thispagestyle{empty}
 \noindent % Supprime le retrait de paragraphe
-\textbf{Résumé (français) :}
+%\textbf{Résumé (français) :}
+%\vskip 1cm
+%\noindent
+\textbf{Title: }
+Computational deconvolution of cell and environment specific signals and their interactions from complex mixtures in biological samples
 \vskip 1cm
 \noindent
-\textbf{Title :}
+\textbf{Abstract:}
+In many fields of science (biology, technology, sociology) observations on a studied system represent complex mixtures of signals of various origin. Tumors are engulfed in a complex microenvironment (TME) that critically impacts progression and response to therapy. It includes tumor cells, fibroblasts, and a diversity of immune cells. Most studies have focused on individual cell types in model tumor systems, and/or on individual molecules mediating a crosstalk between two cells. Unraveling the complexity, organization, and mutual interactions of TME cellular components represents a major challenge.
+Methods for deconvolution of complex mixtures of signals have been developed in signal processing field. It is known that under some assumptions, it is possible to separate complex signal mixtures, using classical and advanced methods of source separation and dimension reduction. Our recent large-scale analysis of more than 6500 tumor transcriptomes, applying classical blind source separation methods showed that we can reliably separate signals coming from tumor microenvironment from the tumor-specific signals and various technical artifacts. However, the precise composition of the immune-related signals in a tumor sample remains to be deciphered.
+
+In this project, we develop and apply the advanced methodology of signal deconvolution to decipher sources of signals shaping transcriptomes of tumor samples, with a particular focus on immune-related signals. So far, we managed to deconvolute successfully immune-related signal into groups related to immune cell-types in six breast cancer datasets. However, the precise composition of the immune-related signals and their interactions in a tumor sample remains to be deciphered and our method needs to be calibrated.
+
+We are going to release our processing pipeline in a form of an R package. This will allow the scientific community profit from our analytical pipeline and easily reproduce our results.
+
+In the case of success of this project, the results will be helpful in the detemining diagnosis and treatment of cancer, especially for immunotherapies.
+%\vskip 1cm
+%\noindent
+%\textbf{Mots-clés (français) :}
 \vskip 1cm
 \noindent
-\textbf{Abstract :}
-\vskip 1cm
-\noindent
-\textbf{Mots-clés (français) :}
-\vskip 1cm
-\noindent
-\textbf{Keywords :}
+\textbf{Keywords:} tumor microenvironment, cancer systems biology, transcriptome data analysis, single cell data analysis, bioinformatics, heterogeneity, blind deconvolution, unsupervised learning, cancer, immunology
 
 
 %Dédicace
 \newpage
 \emph{Dédicace}
 \vspace*{\fill}
+
  \begin{quote}
- \emph{Suffering has been stronger than all other teaching, and has taught me to understand what your heart used to be. I have been bent and broken, but - I hope - into a better shape.}
+
+\emph{And now, let's repeat the Non-Conformist Oath!}\\
+\vskip 0.5cm
+\noindent
+\emph{I promise to be different!}\\
+\noindent
+\vspace*{0.5cm}
+\emph{I promise to be unique!}\\
+\noindent
+\vspace*{0.5cm}
+\emph{I promise not to repeat things other people say!}\\
+\noindent
+\vspace*{0.5cm}
+— Steve Martin, \textit{A Wild and Crazy Guy (1978)}\\
  \end{quote}
  \vspace*{\fill}
+
 
 %Remerciements
 \newpage
@@ -97,9 +119,12 @@ Code de la Propriété Intellectuelle. Articles L 335.2-L 335.10}
 \newpage
 \thispagestyle{empty}
 \begin{center}
-\large{\textbf{Remerciments}}
+%\large{\textbf{Remerciments}}
+\large{\textbf{Note to TAC committee}}
 \end{center}
 \vspace{2cm}
+This is a draft of PhD thesis realized for a purpose of a Thesis Advisory Committee meeting of 3rd year. Please, forgive possible incoherence in the form and blanks that you will find in this report. The shape of this work will probably change many times before reach its final form. Don't mind the citation and references errors that will be fixed at the very end. 
 
+\emph{\textbf{Enjoy the reading!}}
 
 \end{titlepage}
