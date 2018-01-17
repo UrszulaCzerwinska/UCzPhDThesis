@@ -1,6 +1,8 @@
 # Annexes {-} 
 
-## PhD timeline for defence before the end of October 2018 (Fig. \@ref(fig:an-timeline)) {-} 
+*Note: This annexes will not be a part of final manuscript*
+
+## PhD timeline for defence before the end of October 2018 {-} 
 
 In order to defend before 31 October, I need to follow the guidelines of the University.
 
@@ -8,8 +10,23 @@ In order to defend before 31 October, I need to follow the guidelines of the Uni
 * ~end of July - send manuscript to reviewers 
 * 24 Septemeber - 31 October - defend
 
-```{r an-timeline, echo = FALSE, out.width ='100%', fig.show='hold',fig.cap='Timeline privided by University Paris Descartes for 2017', fig.align = 'center'}
-knitr::include_graphics('figures-ext/An-timeline.jpg')
-```
-*Note: This annex will not be a part of final manuscript*
+
+![Timeline provided by University Paris Descartes for 2017](figures-ext/An-timeline.pdf)
+
+
+## Thesis writing {-} 
+
+This Report is written in [*bookdown*](https://github.com/rstudio/bookdown). I have chosen this form as it can easily compile to *LaTeX*, PDF, MS Word, ebook and  html. Optimally, the final manuscript will be also published online in a form of an open source [gitBook](https://www.gitbook.com/about) and an ebook including interactive figures and maybe even data demos. Another good reason for using  [*bookdown*](https://github.com/rstudio/bookdown) is its simple syntax of markdown and natural integration of code snippets with .Rmd. It reduces formatting time and give multiple outputs. 
+
+The template of for this thesis manuscript was adapted from *LaTeX*  template provided by University Paris Descartes. 
+
+The format *thesis by publication* will be considered for parts of the thesis.
+
+\newpage
+
+## Activity Report 2017 {-}
+
+This documents list main achievements of 2017 including conference, posters and publications list. 
+
+\includepdf[pages={1-}, scale=1]{pdf-ext/An-RA2017.pdf}
 

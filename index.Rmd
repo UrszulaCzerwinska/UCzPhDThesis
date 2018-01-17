@@ -17,7 +17,7 @@ lot: yes
 documentclass: book
 fontsize: 12pt
 bibliography: [book.bib, packages.bib, UCzcite.bib]
-biblio-style: apalike
+biblio-style: plain
 link-citations: yes
 geometry: "marginpar=2cm, top=3cm, bottom=4cm"
 description: "PhDThesis"

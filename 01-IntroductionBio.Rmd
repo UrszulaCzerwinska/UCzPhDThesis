@@ -1,3 +1,6 @@
+```{r include=FALSE}
+load(file = "./RData/IntroBio.RData")
+```
 # Immuno-biology of cancer {#intro} 
 \setcounter{page}{11}
 \renewcommand{\thepage}{\arabic{page}}
@@ -7,15 +10,37 @@ This chapter will introduce a basic topic of cancer and participation of stroma 
 
 ## Cancer seen as complex environment
 
-For a long time studying tumor was focused on tumor cells, their reprogramming, mutations. Cancer was seen as disease of uncontrolled cells. Recent discoveries moved research focus from tumor cells to tumor cells in their context: tumor microenvironment. We will describe here what is the composition and role of the TME in tumor progression, diagnosis and response to treatment.
+According to [GLOBOCAN study]( http://globocan.iarc.fr/Pages/fact_sheets_cancer.aspx),  14.1 million cancer cases was estimated to happen  around the world in 2012. It touched  7.4 million  men and 6.7 million women. It is estimated that the cancer cases will  increase almost two-fold to 24 million by 2035.
+
+In France only, in 2012 there were 194552 cases of cancer, of which leading is Prostate cancer (29,2%) followed by Lung (14,4%) and Colorectal cancers (11,1%). 
+
+For a long time studying tumor was focused on tumor cells, their reprogramming, mutations. Cancer was seen as disease of uncontrolled cells. Recent discoveries moved research focus from tumor cells to tumor cells in their context: tumor microenvironment. We will describe here what is the composition and role of the TME in tumor progression, diagnosis and response to treatment. 
 
 ### Our understanding of cancer over time
 
-cancer is a disease touching blah blah many ppl over the word. it has been known that blah blah and then types
+Cancer was historically described by a physician Hippocrates (460–370 B.C), (@https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2927383/). Even though there exist even earlier evidence of the disease. Hippocrates stated that the body contained 4 humors (body fluids) : blood,  phlegm,  yellow bile and  black bile. Any imbalance of these fluids will result in disease. Particularly the excess of black bile in an organ was meant to provoke cancer.  For years, it was not known what factors cause cancer and it was easily confounded with other diseases. In the middle ages in the Renaissance Period  it was believed cancer is a punishment  for the sins they committed against their god, that they  deserved it to some extend
 
-CANCER STATISTICS
+Until 18th century it was believed that cancer is contagious and is spread by parasites.
 
-Tumor was seen for decades as a disease with mutations as a main source of heterogeneity. 
+In the 1850s, tumor cells started to be analysed by  pathologists. They were strike with their ability to proliferate uncontrollably, ability to spread and destroy the original tissue (@https://www.npr.org/templates/story/story.php?storyId=130754101). Around the same time leukocytes from the blood was first described by Gabriel Andra and William Addison. Just a few years later, in 1845 Bennett and Virchow described blood cells in leukaemia. Virchow is also a father of Chronic irritation theory (which we would call chronic inflammation) that says that cancer cells spread resulting in metastasis. 
+
+In  the 20th century, molecular causes started to be investigated. It was discovered that cancer could be caused by environmental factors, i.e.  chemicals (carcinogens), radiation, viruses and also inherited from ancestors. Those factors would damage but contrary to a healthy condition they would  not die.
+
+ During the 1970s, oncogenes and tumor suppressor genes were discovered. Oncogenes are genes that allow a cell to become cancer cell, while the tumor suppressor genes would repair DNA or execute cell death of a damaged cell.
+
+Since the end of the 20th century, cancer screens are developed along with multiple strategies to fight tumor. Most classical ones are based on the idea of removing tumor cells (surgery),  killing tumor cells with DNA-blocking drugs (chemotherapy), radiation, inhibit cancer growth (hormonal therapy, adjuvant therapy and immunotherapy). As non of those methods is fully efficient, often a combination of treatments is proposed. Nowadays, science is aming in the direction of trageted therapies and personalized treatment.  
+
+The recent success of immunotherapies (discussed in [Immunotherapies section](#immunotherapies) made realise the scientific community how important is the context in which tumor cells are found. This context called Tumor Microenvironment, as well as the communication that happens within it between different agents, become a popular scientific topics of 21st century (Fig. \@ref(fig:pubmedTME)). 
+
+```{r pubmedTME, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, fig.cap='(ref:pubmedTME-caption)', out.width='70%', fig.align='center'}
+library(ggplot2)
+ggplot(data = tme, aes(x = Year, y = percall, fill = Type)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  theme_bw() + scale_x_continuous(breaks = round(seq(min(tme$Year), max(tme$Year), by = 5), 1)) + labs(y = "Percentage of all publications [%]")
+```
+
+(ref:pubmedTME-caption) Percentage of publications containg phrase "tumor immunotherapy" is growing, numbers retreived on 17.01.2017 from [Medline Trends](http://dan.corlan.net/medline-trend.html) @REF
+
 
 ### Tumor micro environment: fiend or foe? 
 
@@ -94,7 +119,7 @@ origin of signatures
 
 "the gene expression profiles of tumour-associated immune cells differ considerably from those of  blood derived immune cells"(@Shelker et al. Estimation of immune cell content using single cell data)
 
-## Immunotherapies
+## Immunotherapies {#immunotherapies}
 
 This section outlines progress in cancer therapies with a focus on immune therapies. It will link the ongoing research on TME with therapeutical potential. 
 
@@ -254,3 +279,8 @@ knitr::kable(
 
 You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
  -->
+
+```{r include=FALSE}
+save(tme , file = "./RData/IntroBio.RData")
+```
+
