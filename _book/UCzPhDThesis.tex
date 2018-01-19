@@ -30,8 +30,8 @@
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\usepackage{natbib}
-\bibliographystyle{plain}
+\usepackage[numbers]{natbib}
+\bibliographystyle{plainnat}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -87,7 +87,6 @@
 
 % Améliore l'esthétique de la police
 \usepackage{lmodern}
-
 %Packages pour créer des tableaux 
 \usepackage{longtable} % Pour des tableaux dont la longueur dépasse une feuille A4
 \usepackage{tabularx} % Pour des tableaux à largeur définie
@@ -255,10 +254,10 @@ environment}\label{cancer-seen-as-complex-environment}}
 
 According to
 \href{http://globocan.iarc.fr/Pages/fact_sheets_cancer.aspx}{GLOBOCAN
-study}, 14.1 million cancer cases was estimated to happen around the
-world in 2012. It touched 7.4 million men and 6.7 million women. It is
-estimated that the cancer cases will increase almost two-fold to 24
-million by 2035.
+study} \citep{GLOBOCAN}, 14.1 million cancer cases was estimated to
+happen around the world in 2012. It touched 7.4 million men and 6.7
+million women. It is estimated that the cancer cases will increase
+almost two-fold to 24 million by 2035.
 
 In France only, in 2012 there were 194552 cases of cancer, of which
 leading is Prostate cancer (29,2\%) followed by Lung (14,4\%) and
@@ -377,38 +376,56 @@ bacterial and viral infections? It is mainly because of the ability of
 tumor cells to inhibit immune response through activation of negative
 regulatory pathways (so called immune checkpoints).
 
-Many examples can be cited on how TME facilitates tumor development. For
-instance, in the early stages of tumorigenesis some macrophage
-phenotypes support tumor growth. Also, it was shown that myeloid-derived
-suppressor cells (MDSCs) have an ability to suppress immune defence
-i.e.~immunosurveillance by dendritic cells (DCs), T cell activation and
-macrophage polarisation and they promote tumor vascularisation as well.
-(@ Talmadge, J.E. \& Gabrilovich, D.I. History of myeloid-derived
-suppressor cells. Nat. Rev.~Cancer 13, 739--752 (2013).44. @
-Gabrilovich, D.I., Ostrand-Rosenberg, S. \& Bronte, V. Coordinated
-regulation of myeloid cells by tumours. Nat. Rev.~Immunol. 12, 253--268
-(2012). Tregs and myeloid-derived suppressor cells can negatively impact
-natural immune defence and by these means allow growth and invasion of
-tumor cells. (\citet{Implications} of the tumor immune microenvironment
-for staging and therapeutics Janis M Taube1,2,3, Jérôme Galon). Another
-cell type, a part of ECM, fibroblast, or more precisely Cancer
-Associated Fibroblasts (CAFs) have proven pro-tumor functions in breast
-cancer where they enhance metastasis. (@ Dumont, N. et al.~Breast
+Many examples can be cited on how TME facilitates tumor development
+(Fig. \ref{fig:met-dis}). For instance, in the early stages of
+tumorigenesis some macrophage phenotypes support tumor growth and
+mobility through TGF-beta signaling. Also, it was shown that NK cells
+and myeloid-derived suppressor cells (MDSCs) have an ability to suppress
+immune defence i.e.~immunosurveillance by dendritic cells (DCs), T cell
+activation and macrophage polarisation and they promote tumor
+vascularisation as well. (@ Talmadge, J.E. \& Gabrilovich, D.I. History
+of myeloid-derived suppressor cells. Nat. Rev.~Cancer 13, 739--752
+(2013).44. @ Gabrilovich, D.I., Ostrand-Rosenberg, S. \& Bronte, V.
+Coordinated regulation of myeloid cells by tumours. Nat. Rev.~Immunol.
+12, 253--268 (2012). They create so-called niches that facilitates tumor
+colonization. Tregs and myeloid-derived suppressor cells can negatively
+impact natural immune defence and by these means allow growth and
+invasion of tumor cells. (\citet{Implications} of the tumor immune
+microenvironment for staging and therapeutics Janis M Taube1,2,3, Jérôme
+Galon). Another cell type, a part of ECM, fibroblast, or more precisely
+Cancer Associated Fibroblasts (CAFs) have proven pro-tumor functions in
+breast cancer where they enhance metastasis. (@ Dumont, N. et al.~Breast
 fibroblasts modulate early dissemination, tumorigenesis, and metastasis
 through alteration of extracellular matrix characteristics. Neoplasia
-15, 249--262 (2013).)
+15, 249--262 (2013).) The blood and lymphatic vessels maintain tumor
+growth providing necessary nutritive compound to malignant cells.
 
-In addition, it is worth mentioning the role of ECM as an integral part
-of TME and its impact on tumorigenesis and metastatis. It is usually
-anit-tumor in early stages and pro-tumor at the metastatic stages. The
-blood and lymphatic vessels maintain tumor growth providing necessary
-nutritive compound to malignant cells.
+(Fig. \ref{fig:met-dis})
 
-HALLMARKS?
+\begin{figure}
 
-Fig 2 The micronvironment supports metastatic dissemination and
-colonistaion at secondary sites ? (\citet{Microenvironmental} regulation
-of tumor progression and metastasis)
+{\centering \includegraphics[width=1\linewidth]{figures-ext/massive-dissemination} 
+
+}
+
+\caption{The microenvironment supports metastatic
+dissemination and colonization at secondary sites. Different tumor sites
+can communicate through exosomes realized by tumor cells and also immune
+and stromal cells such as NK cells, CAFs and DCs. Reprinted by
+permission from Springer Nature, (\citet{The} micronvironment supports
+metastatic dissemination and colonistaion at secondary sites
+\url{https://www.nature.com/articles/nm.3}), © 2013 Nature America,
+Inc.~All rights reserved.}\label{fig:met-dis}
+\end{figure}
+
+
+
+
+
+
+
+
+
 
 \hypertarget{two-faced-nature-of-immune-cells}{%
 \subsubsection{Two-faced nature of immune
@@ -633,9 +650,9 @@ would be the use of genetically modified patient's T-cells, carrying
 T-cells forward nat rev 2016). After a long period of small unsuccessful
 trials, recently in 2017, two CAR T-cell therapies were accepted, one to
 ``treat adults with certain type of large B-cell lymphoma''
-(\citet{FDA_CAR-T_adult}), other to treat ``children with acute
-lymphoblastic leukemia (ALL)'' (\citet{FDA_CAR-T_ALL}) , which are, at
-the same time, the first two gene therapies accepted by FDA.
+\citep{FDACARTadult}, other to treat ``children with acute lymphoblastic
+leukemia (ALL)'' \citep{FDACARTALL} , which are, at the same time, the
+first two gene therapies accepted by FDA.
 
 However, the two most promising immuno-related strategies are based on
 blocking so called immune check point inhibitors: cytotoxic T-lymphocyte
@@ -643,20 +660,20 @@ protein 4 (CTLA4) and programmed cell death protein 1 (PD-1). The
 anti-CLTA4 antibodies blocks repressive action of CLTA4 on T-cells and
 they become therefore activated. It was shown efficient in melanoma
 patients and accepted by FDA in 2015 as adjuvant therapy for stage III
-metastatic melanoma patients (\citet{FDA_CTLA4}). PD-1 is a cell surface
+metastatic melanoma patients \citep{FDACTLA4}. PD-1 is a cell surface
 receptor of T cells, that binds to PD-L1/PD-L2. After binding, an
 immunosuppressive pathway is activated and T cells activity is dampened.
 An action of an anti-PD-L1 antibody is to prevent this immune
-exhaustion.(\citet{IMMUNE} CANCER CIRCLE). A stepping stone for
+exhaustion.{[}\citet{IMMUNE} CANCER CIRCLE). A stepping stone for
 anti-PD-L1 therapies was approval of Tecentriq (atezolizumab) for
-Bladder cancer (\citet{FDA_PDL1_Bladder}) and anit-PD1 Keytruda
+Bladder cancer \citep{FDAPDL1Bladder} and anit-PD1 Keytruda
 (pembrolizumab) initially accepted for NSCLC and further extended to
 head and neck cancer, Hodgkin's lymphoma, gastric cancer and
-microsatellite instability-high cancer (\citet{FDA_PDL1_NSCLC}). Since
-other anti-PD-L1 or anti-PD1 antibodies were accepted or entered
-advanced stages of clinical trials (\citet{Wolchok}, 2015,PD-1
-blockers). A short history of immunotherapy FDA-accepted treatments can
-be found in Fig. \ref{fig:timeline-immunotherapies}
+microsatellite instability-high cancer \citep{FDAPDL1NSCLC}. Since other
+anti-PD-L1 or anti-PD1 antibodies were accepted or entered advanced
+stages of clinical trials (\citet{Wolchok}, 2015,PD-1 blockers). A short
+history of immunotherapy FDA-accepted treatments can be found in Fig.
+\ref{fig:timeline-immunotherapies}
 
 \begin{figure}
 
@@ -1245,6 +1262,9 @@ analysis with DeconICA
 Adapted from \emph{submitted} article of Kondratova et al.
 
 \includepdf[scale=1]{pdf-ext/ImmuneMap.pdf}
+
+\hypertarget{conclusions}{%
+\chapter{Conclusions and perspectives}\label{conclusions}}
 
 \hypertarget{annexes}{%
 \chapter*{Annexes}\label{annexes}}
