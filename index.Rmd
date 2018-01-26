@@ -16,7 +16,7 @@ lof: yes
 lot: yes        
 documentclass: book
 fontsize: 12pt
-bibliography: [book.bib, packages.bib, UCzcite.bib]
+bibliography: [01-Intro.bib, packages.bib, UCzcite.bib]
 biblio-style: "plainnat"
 link-citations: true
 geometry: "marginpar=2cm, top=3cm, bottom=4cm"
