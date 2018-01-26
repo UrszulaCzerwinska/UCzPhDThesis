@@ -22,7 +22,7 @@ Cancer was historically described by a physician Hippocrates (460–370 B.C) [@S
 
 Until 18th century it was believed that cancer is contagious and is spread by parasites.
 
-In the 1850s, tumor cells started to be analysed by pathologists. They were strike with their ability to proliferate uncontrollably, ability to spread and destroy the original tissue [@NPR2010 ]. Around the same time leukocytes from the blood was first described by Gabriel Andra and William Addison. Just a few years later, in 1845 Bennett and Virchow described blood cells in leukaemia. Virchow is also a father of Chronic irritation theory (which we would call chronic inflammation) that says that cancer cells spread resulting in metastasis. 
+In the 1850s, tumor cells started to be analysed by pathologists. They were strike with their ability to proliferate uncontrollably, ability to spread and destroy the original tissue [@NPR2010]. Around the same time leukocytes from the blood was first described by Gabriel Andra and William Addison. Just a few years later, in 1845 Bennett and Virchow described blood cells in leukaemia. Virchow is also a father of Chronic irritation theory (which we would call chronic inflammation) that says that cancer cells spread resulting in metastasis. 
 
 In the 20th century, molecular causes started to be investigated. It was discovered that cancer could be caused by environmental factors, i.e. chemicals (carcinogens), radiation, viruses and also inherited from ancestors. Those factors would damage but contrary to a healthy condition they would not die.
 

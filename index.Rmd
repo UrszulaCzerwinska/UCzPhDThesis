@@ -19,6 +19,7 @@ fontsize: 12pt
 bibliography: [01-Intro.bib, packages.bib, UCzcite.bib]
 biblio-style: "plainnat"
 link-citations: true
+colorlinks: true
 geometry: "marginpar=2cm, top=3cm, bottom=4cm"
 description: "PhDThesis"
 linestretch: 1

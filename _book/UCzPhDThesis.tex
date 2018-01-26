@@ -26,8 +26,12 @@
 }{}
 \usepackage[marginpar=2cm, top=3cm, bottom=4cm]{geometry}
 \usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 \hypersetup{unicode=true,
-            pdfborder={0 0 0},
+            colorlinks=true,
+            citecolor=teal,
+            linkcolor=darkgray,
+            urlcolor=blue,
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage[numbers]{natbib}
@@ -92,9 +96,8 @@
 \usepackage{tabularx} % Pour des tableaux à largeur définie
 \usepackage{array} % Pour améliorer la qualité typographique des tableaux.
 \usepackage{siunitx}
-\usepackage{pdfpages}
 \usepackage[font=small,labelfont=bf]{caption}
-
+\usepackage{pdfpages}
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
 \newtheorem{lemma}{Lemma}[chapter]
@@ -234,10 +237,13 @@ This is a draft of PhD thesis realized for a purpose of a Thesis Advisory Commit
 \end{titlepage}
 
 {
+\hypersetup{linkcolor=black}
 \setcounter{tocdepth}{4}
 \tableofcontents
 }
+\hypersetup{linkcolor=black}
 \listoftables
+\hypersetup{linkcolor=black}
 \listoffigures
 \hypertarget{intro}{%
 \chapter{Immuno-biology of cancer}\label{intro}}
@@ -291,9 +297,9 @@ spread by parasites.
 
 In the 1850s, tumor cells started to be analysed by pathologists. They
 were strike with their ability to proliferate uncontrollably, ability to
-spread and destroy the original tissue \citep[ ]{NPR2010}. Around the
-same time leukocytes from the blood was first described by Gabriel Andra
-and William Addison. Just a few years later, in 1845 Bennett and Virchow
+spread and destroy the original tissue \citep{NPR2010}. Around the same
+time leukocytes from the blood was first described by Gabriel Andra and
+William Addison. Just a few years later, in 1845 Bennett and Virchow
 described blood cells in leukaemia. Virchow is also a father of Chronic
 irritation theory (which we would call chronic inflammation) that says
 that cancer cells spread resulting in metastasis.
@@ -755,6 +761,19 @@ Since other anti-PD-L1 or anti-PD1 antibodies were accepted or entered
 advanced stages of clinical trials \citep{Wolchok2015}. A short history
 of immunotherapy FDA-accepted treatments can be found in Fig.
 \ref{fig:timeline-immunotherapies}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures-ext/02-timeline-immunotherapies} 
+
+}
+
+\caption{This timeline describes short
+history of FDA approval of checkpoint blocking immunotherapies up to
+2017. Reprinted by permission from Springer Nature \citep{Taube2017a}
+Macmillan Publishers Limited, part of Springer Nature. All Rights
+Reserved.}\label{fig:timeline-immunotherapies}
+\end{figure}
 
 
 
