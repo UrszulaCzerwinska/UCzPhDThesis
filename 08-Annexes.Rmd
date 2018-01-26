@@ -20,6 +20,10 @@ This Report is written in [*bookdown*](https://github.com/rstudio/bookdown). I h
 
 The template of for this thesis manuscript was adapted from *LaTeX*  template provided by University Paris Descartes. 
 
+Citations are stocked in Mendeley Desktop and exported to .bib files automatically.
+
+[MendeleyBibFix](https://ramblingacademic.com/2016/06/fixing-bibtex-files-mendeley/) is used to cope with automatic export errors.
+
 The format *thesis by publication* will be considered for parts of the thesis.
 
 \newpage

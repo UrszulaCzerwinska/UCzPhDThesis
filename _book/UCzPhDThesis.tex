@@ -227,7 +227,7 @@ Code de la Propriété Intellectuelle. Articles L 335.2-L 335.10}
 \large{\textbf{Note to TAC committee}}
 \end{center}
 \vspace{2cm}
-This is a draft of PhD thesis realized for a purpose of a Thesis Advisory Committee meeting of 3rd year. Please, forgive possible incoherence in the form and blanks that you will find in this report. The shape of this work will probably change many times before reach its final form. Don't mind the citation and references errors that will be fixed at the very end. 
+This is a draft of PhD thesis realized for a purpose of a Thesis Advisory Committee meeting of 3rd year. Please, forgive possible incoherence in the form and blanks that you will find in this report. The shape of this work will probably change many times before reach its final form. Don't mind the citation and references errors that will be fixed at the very end. The abbreviation index is in progress as much as the empty Chapters of the thesis. For technical note concerning thesis writing and defense please see Annexes.
 
 \emph{\textbf{Enjoy the reading!}}
 
@@ -455,6 +455,16 @@ confirmed through a study on individuals with AIDS and other studies.
 This indicates that immune microenvironment can be cancer stimulating or
 inhibiting depending on the type of cancer.
 
+\hypertarget{immune-cell-subtypes-in-tme}{%
+\subsubsection{Immune cell (sub)types in
+TME}\label{immune-cell-subtypes-in-tme}}
+
+Here will be a definition of what is immune cell type, how different
+phenotypes are can be associated with subtypes and why researches do it
+
+Necessary for the chapter \protect\hyperlink{map}{Heterogeneity of
+immune cell types}
+
 \hypertarget{cancer-immune-phenotypes}{%
 \subsection{Cancer immune phenotypes}\label{cancer-immune-phenotypes}}
 
@@ -653,7 +663,8 @@ considerably from those of blood derived immune cells'''
 \end{quote}
 
 Immune signatures will be also discussed as a part of deconvolution
-pipeline in the \protect\hyperlink{methods}{Chapter 2}.
+pipeline in the \protect\hyperlink{methods}{Chapter 2} under the section
+about \emph{basis matrix}.
 
 \hypertarget{immunotherapies}{%
 \section{Immunotherapies}\label{immunotherapies}}
@@ -744,19 +755,6 @@ Since other anti-PD-L1 or anti-PD1 antibodies were accepted or entered
 advanced stages of clinical trials \citep{Wolchok2015}. A short history
 of immunotherapy FDA-accepted treatments can be found in Fig.
 \ref{fig:timeline-immunotherapies}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{figures-ext/02-timeline-immunotherapies} 
-
-}
-
-\caption{This timeline describes short
-history of FDA approval of checkpoint blocking immunotherapies up to
-2017. Reprinted by permission from Springer Nature \citep{Taube2017a}
-Macmillan Publishers Limited, part of Springer Nature. All Rights
-Reserved.}\label{fig:timeline-immunotherapies}
-\end{figure}
 
 
 
@@ -1044,9 +1042,20 @@ analysis as well as most popular advanced solutions adapted for
 estimating presence and proportion of immune cells within cancer
 biopsies.
 
+Explain the principle
+
+\textbf{My figure}
+
 \hypertarget{introduction-to-supervised-and-unsupervised-learning}{%
 \section{Introduction to supervised and unsupervised
 learning}\label{introduction-to-supervised-and-unsupervised-learning}}
+
+\begin{itemize}
+\tightlist
+\item
+  Explaining difference between supervised and non-supervised learning
+  technically and in our context
+\end{itemize}
 
 \hypertarget{blind-source-sepration}{%
 \section{Blind source sepration}\label{blind-source-sepration}}
@@ -1056,6 +1065,14 @@ learning}\label{introduction-to-supervised-and-unsupervised-learning}}
 \hypertarget{finding-optimal-number-of-components-and-over-decomposition-of-transcriptopmes}{%
 \section{Finding optimal number of components and over-decomposition of
 transcriptopmes}\label{finding-optimal-number-of-components-and-over-decomposition-of-transcriptopmes}}
+
+\begin{itemize}
+\tightlist
+\item
+  Explain why this problem is important
+\item
+  Explain shortly my role in the paper
+\end{itemize}
 
 (adapted from BMC article)
 \includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}
@@ -1069,18 +1086,48 @@ models}\label{cell-type-deconvolution-models}}
 \hypertarget{basis-matrix}{%
 \subsection{basis matrix}\label{basis-matrix}}
 
+\begin{itemize}
+\tightlist
+\item
+  define what basis matrix is vs signatures vs marker genes
+\item
+  explain the differences between basis matrices in published algorithms
+\end{itemize}
+
 \hypertarget{regression-algorithm}{%
 \subsection{regression algorithm}\label{regression-algorithm}}
 
+\begin{itemize}
+\tightlist
+\item
+  explain what it is for
+\item
+  explain how it works
+\item
+  explain the different approaches
+\end{itemize}
+
 \hypertarget{others}{%
-\subsection{others}\label{others}}
+\subsection{Others}\label{others}}
+
+\begin{itemize}
+\tightlist
+\item
+  explain possible normalisation
+\item
+  explain additional possible features
+\end{itemize}
 
 \hypertarget{short-review-of-most-popular-cell-type-deconvolution-tools}{%
 \section{Short review of most popular cell-type deconvolution
 tools}\label{short-review-of-most-popular-cell-type-deconvolution-tools}}
 
-tools will already be mentioned in the section above. However a comment
-on other than mentionned aspects are needed
+Tools will already be mentioned in the section above. However a comment
+on other than mentioned aspects are needed.
+
+Explain the success of CIBEROSRT
+
+Explain originality of each tool
 
 \hypertarget{study-of-sensitivity-of-known-methods}{%
 \chapter{Study of sensitivity of known
@@ -1090,10 +1137,28 @@ methods}\label{study-of-sensitivity-of-known-methods}}
 \section{Reproducibility of NMF versus
 ICA}\label{reproducibility-of-nmf-versus-ica}}
 
+\begin{itemize}
+\tightlist
+\item
+  Comparing metagenes obtained with NMS vs ICA.
+\item
+  Explain why ICA is more reproducible
+\end{itemize}
+
 \hypertarget{impact-of-modification-of-signatures-list-on-result-for-signature-based-deconvolution-methods}{%
 \section{Impact of modification of signatures list on result for
 signature-based deconvolution
 methods}\label{impact-of-modification-of-signatures-list-on-result-for-signature-based-deconvolution-methods}}
+
+Carry on a ``sensitivity study'':
+
+\begin{itemize}
+\tightlist
+\item
+  remove some \% of genes from basis matrix or marker gene list
+\item
+  evaluate how it changes results
+\end{itemize}
 
 \hypertarget{deconvolution-of-transcriptomes-and-methylomes}{%
 \chapter{Deconvolution of transcriptomes and
@@ -1112,35 +1177,75 @@ pipeline will be split into following structure
 \section{From blind deconvolution to cell-type quantification: general
 overview}\label{from-blind-deconvolution-to-cell-type-quantification-general-overview}}
 
+Few lines describing our idea
+
+Figure?
+
 \hypertarget{the-ica-based-deconvolution-of-transcriptomes}{%
 \subsection{The ICA-based deconvolution of
 Transcriptomes}\label{the-ica-based-deconvolution-of-transcriptomes}}
+
+\begin{itemize}
+\tightlist
+\item
+  remind shortly ICA
+\item
+  describe stabilisation procedure \emph{icasso}
+\item
+  explain IC-metagene concept
+\end{itemize}
+
+If completed add related section about two other ways of getting
+metagenes
+
+\begin{itemize}
+\tightlist
+\item
+  attractor metagenes
+\item
+  k-lines
+\end{itemize}
 
 \hypertarget{interpretation-of-independent-components}{%
 \subsection{Interpretation of Independent
 components}\label{interpretation-of-independent-components}}
 
-\hypertarget{correlation-based-identification-of-confunding-factors}{%
-\subsubsection{Correlation based identification of confunding
-factors}\label{correlation-based-identification-of-confunding-factors}}
+\hypertarget{correlation-based-identification-of-confounding-factors}{%
+\subsubsection{Correlation based identification of confounding
+factors}\label{correlation-based-identification-of-confounding-factors}}
 
-\hypertarget{identification-of-immune-cell-types-with-enrichment-test}{%
-\subsubsection{Identification of immune cell types with enrichment
-test}\label{identification-of-immune-cell-types-with-enrichment-test}}
+\hypertarget{identification-of-immune-cell-types-with-enrichment-test-other}{%
+\subsubsection{Identification of immune cell types with enrichment test
+/
+other}\label{identification-of-immune-cell-types-with-enrichment-test-other}}
 
 \hypertarget{transforming-metagenes-into-signature-matrix}{%
 \subsection{Transforming metagenes into signature
 matrix}\label{transforming-metagenes-into-signature-matrix}}
 
-\hypertarget{regression-based-estimation-of-cell-type-proportions}{%
-\subsection{Regression-based estimation of cell-type
-proportions}\label{regression-based-estimation-of-cell-type-proportions}}
+\hypertarget{regression-based-estimation-of-cell-type-proportions-solving-system-of-equations}{%
+\subsection{Regression-based estimation of cell-type proportions :
+solving system of
+equations}\label{regression-based-estimation-of-cell-type-proportions-solving-system-of-equations}}
 
 \hypertarget{deconica-r-package-for-ica-based-deconvolution}{%
 \section{\texorpdfstring{\emph{DeconICA} R package for ICA-based
 deconvolution}{DeconICA R package for ICA-based deconvolution}}\label{deconica-r-package-for-ica-based-deconvolution}}
 
 This part of the chapter will be adapted from package vignettes
+
+It will contain
+
+\begin{itemize}
+\item
+  technical package description
+\item
+  user guide
+\item
+  examples
+
+  ​
+\end{itemize}
 
 \includepdf[pages={1-}, scale=1]{pdf-ext/LVAICA.pdf}
 
@@ -1151,18 +1256,79 @@ infiltration}\label{results}}
 This chapter will include biological interpretation of Pan-cancer
 analysis with DeconICA
 
-\hypertarget{section}{%
-\section{}\label{section}}
+\begin{itemize}
+\item
+  application to Breast cancer
+
+  \begin{itemize}
+  \item
+    compare metagenes of the same cell type in different datasets
+  \item
+    compare metagenes of the same cell type in the same dataset (happens
+    sometimes)
+  \item
+    compare A matrix (sample weights) with clinical metadata
+  \item
+    compare patients with opposite extreme phenotypes (the gene
+    expression) with DEG ou others
+  \item
+    run enrichment with more specific list of genes ex. Th1/2/17 cells
+    in T cels etc.
+
+    ​
+  \end{itemize}
+\item
+  application pan cancer
+
+  \begin{itemize}
+  \tightlist
+  \item
+    derivation of meta-metagenes for immune cell types
+  \item
+    above points are true for pan cancer
+  \end{itemize}
+\item
+  follow up of Biton paper ?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Idea of Vassili from the lab meeting}, personally I am not
+    sure if there is no conflict of interest with other members of the
+    team
+  \end{itemize}
+\end{itemize}
 
 \hypertarget{map}{%
 \chapter{Heterogeneity of immune cell types}\label{map}}
 
-Adapted from \emph{submitted} article of Kondratova et al.
+Adapted from \emph{submitted} article of Kondratova et al. (co-first
+authored by me)
+
+Explication how deconvolution methodology can be used for analysis of
+heterogeneity of immune cells
+
+\begin{itemize}
+\item
+  describe the context briefly
+\item
+  describe more in details my part - data analysis of single cell data
+\end{itemize}
+
+Add CAFS (that will maybe appear in \emph{JBM})
+
+Unpublished analysis made for the Nature Immunology \emph{Michea et al.}
+paper (to be defined)
+
+The single T-cell study (if happens)
 
 \includepdf[scale=1]{pdf-ext/ImmuneMap.pdf}
 
 \hypertarget{conclusions}{%
 \chapter{Conclusions and perspectives}\label{conclusions}}
+
+Here we will have some interesting and well-written conclusion that will
+validate the quality of this thesis.
 
 \hypertarget{annexes}{%
 \chapter*{Annexes}\label{annexes}}
@@ -1213,6 +1379,12 @@ simple syntax of markdown and natural integration of code snippets with
 
 The template of for this thesis manuscript was adapted from \emph{LaTeX}
 template provided by University Paris Descartes.
+
+Citations are stocked in Mendeley Desktop and exported to .bib files
+automatically.
+
+\href{https://ramblingacademic.com/2016/06/fixing-bibtex-files-mendeley/}{MendeleyBibFix}
+is used to cope with automatic export errors.
 
 The format \emph{thesis by publication} will be considered for parts of
 the thesis.

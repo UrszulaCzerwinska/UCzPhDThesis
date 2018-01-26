@@ -37,11 +37,29 @@ linestretch: 1
 
 <!-- Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`. -->
 
-<!-- To compile this example to PDF, you need to install XeLaTeX. -->
+<!-- To compile this example to PDF, you need to install XeLaTeX. 
+
+# ```{r echo=TRUE}
+# knitr::opts_knit$get("rmarkdown.pandoc.to")
+# ```
+-->
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
+```
+
+
+```{r setup, include=FALSE}
+is_pdf_output = function() {
+  knitr::opts_knit$get("rmarkdown.pandoc.to") =="latex"
+}
+```
+
+```{r setup2, include=FALSE}
+is_html_output = function() {
+  knitr::opts_knit$get("rmarkdown.pandoc.to") =="html4"
+}
 ```

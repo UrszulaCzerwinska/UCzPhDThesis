@@ -2,4 +2,25 @@
 
 This chapter will include biological interpretation of Pan-cancer analysis with DeconICA 
 
-## 
+* application to Breast cancer
+
+  * compare metagenes of the same cell type in different datasets 
+
+  * compare metagenes of the same cell type in the same dataset (happens sometimes)
+
+  * compare A matrix (sample weights) with clinical metadata
+
+  * compare patients with opposite extreme phenotypes (the gene expression) with DEG ou others
+
+  * run enrichment with more specific list of genes ex. Th1/2/17 cells in T cels etc.
+
+    ​
+
+* application pan cancer
+
+  * derivation of meta-metagenes for immune cell types
+  * above points are true for pan cancer
+
+* follow up of Biton paper ?
+
+  * *Idea of Vassili from the lab meeting*, personally I am not sure if there is no conflict of interest with other members of the team

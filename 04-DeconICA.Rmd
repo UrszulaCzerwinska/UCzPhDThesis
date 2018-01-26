@@ -4,21 +4,44 @@ We describe our methods in this chapter.  The pre-eliminary pipeline and simple 
 
 ## From blind deconvolution to cell-type quantification: general overview
 
+Few lines describing our idea
+
+Figure?
+
 ### The ICA-based deconvolution of Transcriptomes
+
+* remind shortly ICA
+* describe stabilisation procedure *icasso*
+* explain IC-metagene concept
+
+If completed add related section about two other ways of getting metagenes
+
+ * attractor metagenes
+ * k-lines
 
 ### Interpretation of Independent components
 
-#### Correlation based identification of confunding factors 
+#### Correlation based identification of confounding factors 
 
-#### Identification of immune cell types with enrichment test
+#### Identification of immune cell types with enrichment test / other
 
 ### Transforming metagenes into signature matrix
 
-### Regression-based estimation of cell-type proportions
+### Regression-based estimation of cell-type proportions : solving system of equations
 
 ## *DeconICA* R package for ICA-based deconvolution 
 
 This part of the chapter will be adapted from package vignettes
+
+It will contain 
+
+* technical package description
+
+* user guide 
+
+* examples
+
+  ​
 
 \includepdf[pages={1-}, scale=1]{pdf-ext/LVAICA.pdf}
 

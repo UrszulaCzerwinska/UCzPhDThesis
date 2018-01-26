@@ -2,12 +2,22 @@
 
 In this chapter, we will discuss how mathematical models can be used to extract information about specific cell-types from 'bulk' data or how to unmix mixed sources.  It will introduce you to basic concepts of data analysis as well as most popular advanced solutions adapted for estimating presence and proportion of immune cells within cancer biopsies. 
 
+Explain the principle 
+
+**My figure**
+
 ## Introduction to supervised  and unsupervised learning
+
+* Explaining difference between supervised and non-supervised learning technically and in our context
 
 ## Blind source sepration
  (ICA, NMF etc)
- 
+
 ## Finding optimal number of components and over-decomposition of transcriptopmes
+
+* Explain why this problem is important
+* Explain shortly  my role in the paper
+
  (adapted from BMC article)
 \includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}
 
@@ -16,12 +26,28 @@ In this chapter, we will discuss how mathematical models can be used to extract 
 
 ### basis matrix
 
+* define what basis matrix is vs signatures vs marker genes
+* explain the differences between basis matrices in published algorithms
+
 ### regression algorithm
 
-### others
+* explain what it is for 
+* explain how it works
+* explain the different approaches
+
+### Others
+
+* explain possible normalisation 
+* explain additional possible features 
 
 ## Short review of most popular cell-type deconvolution tools 
 
-tools will already be mentioned in the section above. However a comment on other than mentionned aspects are needed
+Tools will already be mentioned in the section above. However a comment on other than mentioned aspects are needed. 
+
+Explain the success of CIBEROSRT
+
+Explain originality of each tool
+
+
 
 

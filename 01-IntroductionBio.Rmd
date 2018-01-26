@@ -1,10 +1,10 @@
 ```{r include=FALSE}
 load(file = "./RData/IntroBio.RData")
 ```
+
 # Immuno-biology of cancer {#intro} 
 \setcounter{page}{11}
 \renewcommand{\thepage}{\arabic{page}}
-
 
 This chapter will introduce a basic topic of cancer and participation of stroma in cancer development, progression and response to treatment. It will also describe most important types of data used to study cancer microenvironment.
 
@@ -56,7 +56,11 @@ Many examples can be cited on how TME facilitates tumor development (Fig. \@ref(
 
 
 ```{r met-dis, fig.cap='(ref:met-dis-caption)', out.width='100%', fig.align='center', echo = FALSE}
-knitr::include_graphics('figures-ext/massive-dissemination.pdf')
+if (is_pdf_output()) {
+  knitr::include_graphics('figures-ext/massive-dissemination.pdf')
+} else {
+  knitr::include_graphics('figures-ext/massive-dissemination.png')
+}
 ```
 
 (ref:met-dis-caption) The microenvironment supports metastatic dissemination and colonization at secondary sites.  Different tumor sites can communicate through exosomes realized by tumor cells and also immune and stromal cells such as NK cells, CAFs and DCs. Reprinted by permission from Springer Nature [@Quail2013] © 2013 Nature America, Inc. All rights reserved.
@@ -71,6 +75,12 @@ According to [@Hanahan2012] immune and stroma cells participate in almost all of
 Recent studies unveil ambivalent nature of immune cells of TME. While some as cytotoxic T cells, B cells and macrophages can manage to eliminate tumor cells. Treg cells role is to regulate expansion and activation of T and B cells. Depending on cancer type, they can be either pro- or anit- tumor. For example as it has been shown for Tregs, they can be also associated with improved survival (i.e. in colorectal cancer [@Frey2010]. For innate immunity, there are widely accepted M1 (ani-tumor) and M2 (pro-tumor) extreme macrophages phenotypes in TME [@Qian2010]. Most of the statements seem to be context dependent and not valid universally across all cancer types. We already mentioned Macrophages phenotypic plasticity as well as different behaviour of EMC depending on tumor stage.
 
 From more general point of view, it has been observed that immunodeficiency can correlate with high cancer incidence. Results of analysis based on observations of 25,914 female immunosuppressed organ transplant recipients, the tumor incidence was higher than predicted for multiple cancers. However, the number of breast cancer cases decreased which can be really disturbing if we need to decide on the role of immune defence in tumor progression [@Stewart1995]. This trend was confirmed through a study on individuals with AIDS and other studies. This indicates that immune microenvironment can be cancer stimulating or inhibiting depending on the type of cancer. 
+
+#### Immune cell (sub)types in TME 
+
+Here will be a definition of what is immune cell type, how different phenotypes are can be associated with subtypes and why researches do it 
+
+Necessary for the chapter [Heterogeneity of immune cell types](#map)
 
 ### Cancer immune phenotypes
 
@@ -89,7 +99,11 @@ The most standard approach is to convey an analysis of histopathological cuts to
 @Chen2017 describes classification into inflamed and non-inflamed tumors, where non-inlamed phenotypes: can be further split into the immune-desert phenotype and the immune–excluded phenotype (Fig. \@ref(fig:immune-phenotypes)). The inflamed phenotype is characterised by rich presence of immune cells : T cells, myeloid cells, monocytes in tumor margin. Along with the immune cels, due to their communication, a high expression of cytokines is characteristic for this phenotype. According to Chen2017, this is a mark of anti-tumor response that was arrested by tumor. The inflamed phenotype has shown to be most responsive to immunotherapies. In the immune-excluded phenotype, the immune cells are present as well but located in the stroma [@Herbst2014], sometimes penetrating inside tumor. However, when exposed to check point immuotherapy, T cells does not gain the ability to infiltrate the tumor, therefore the treatment is inefficient. The immune-desert main features is little or no presence of immune cells, especially T cells. Surprisingly, this tumors have been to proven to rarely respond to the checkpoint therapy [@Herbst2014]. In non-inflamed tumours cytokines associated with immune suppression or tolerance are expressed.
 
 ```{r immune-phenotypes, fig.cap='(ref:immune-phenotypes-caption)', out.width='100%', fig.align='center', echo = FALSE}
-knitr::include_graphics('figures-ext/immune-phenotypes.pdf')
+if (is_pdf_output()) {
+  knitr::include_graphics('figures-ext/immune-phenotypes.pdf')
+} else {
+  knitr::include_graphics('figures-ext/immune-phenotypes.png')
+}
 ```
 
 (ref:immune-phenotypes-caption) Cancer-immune phenotypes: the immune-desert phenotype (brown), the immune–excluded phenotype (blue) and the inflamed phenotype (red). The immune–desert phenotype is characterised by paucity of immune cells and cytokines. In the immune-excluded phenotypes the T cells are often present but trapped in stroma, enabled to migrate to the tumor site. The immune-inflamed phenotype is rich in immune cells and the most responsive to the immune check point therapies. Reprinted by permission from Springer Nature [@Chen2017] © 2017 Macmillian Publishers Limited, part of Springler Nature. All rights reserved. 
@@ -140,7 +154,7 @@ Despite those facts, the gene expression based classifications are not yet used 
 
 > "the gene expression profiles of tumour-associated immune cells differ considerably from those of blood derived immune cells"' [@Schelker2017]
 
-Immune signatures will be also discussed as a part of deconvolution pipeline in the [Chapter 2](#methods).
+Immune signatures will be also discussed as a part of deconvolution pipeline in the [Chapter 2](#methods) under the section about *basis matrix*.
 
 ## Immunotherapies {#immunotherapies}
 
@@ -163,8 +177,13 @@ Another idea involving using immune system as a weapon to fight cancer, would be
 However, the two most promising immuno-related strategies are based on blocking so called immune check point inhibitors: cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell death protein 1 (PD-1). The anti-CLTA4 antibodies blocks repressive action of CLTA4 on T-cells and they become therefore activated. It was shown efficient in melanoma patients and accepted by FDA in 2015 as adjuvant therapy for stage III metastatic melanoma patients [@FDACTLA4]. PD-1 is a cell surface receptor of T cells, that binds to PD-L1/PD-L2. After binding, an immunosuppressive pathway is activated and T cells activity is dampened. An action of an anti-PD-L1 antibody is to prevent this immune exhaustion [@Chen2017]. A stepping stone for anti-PD-L1 therapies was approval of Tecentriq (atezolizumab) for Bladder cancer [@FDAPDL1Bladder] and anit-PD1 Keytruda (pembrolizumab) initially accepted for NSCLC and further extended to head and neck cancer, Hodgkin's lymphoma, gastric cancer and microsatellite instability-high cancer [@FDAPDL1NSCLC]. Since other anti-PD-L1 or anti-PD1 antibodies were accepted or entered advanced stages of clinical trials [@Wolchok2015]. A short history of immunotherapy FDA-accepted treatments can be found in Fig. \@ref(fig:timeline-immunotherapies)
 
 ```{r timeline-immunotherapies, fig.cap='(ref:timeline-immunotherapies-caption)', out.width='100%', fig.align='center', echo = FALSE}
-knitr::include_graphics('figures-ext/02-timeline-immunotherapies.pdf')
+if (is_pdf_output()) {
+  knitr::include_graphics('figures-ext/02-timeline-immunotherapies.pdf')
+} else {
+  knitr::include_graphics('figures-ext/02-timeline-immunotherapies.png')
+}
 ```
+
 
 (ref:timeline-immunotherapies-caption) This timeline describes short history of FDA approval of checkpoint blocking immunotherapies up to 2017. Reprinted by permission from Springer Nature [@Taube2017a] Macmillan Publishers Limited, part of Springer Nature. All Rights Reserved.
 
@@ -176,6 +195,7 @@ Despite those fundings, the precise qualifications of patients that should be se
 ## Quantifying immune infiltration (data)
 
 Nowadays, more and more biological data is produced. However, this proliferation of accessible resources is not proportional to generated insights and wisdom. In this thesis, we wok mostly generate *Knowledge* and *Insights* and we hope to generate some *Wisdom* (Fig. \@ref(fig:information-power)). However, in this part, we will introduce the foundation of our analysis: different data types that will be further discussed in chapters that follow.
+
 
 ```{r information-power, echo = FALSE, out.width='80%', fig.show='hold', fig.cap='(ref:information-power-caption)', fig.align = 'center'}
 knitr::include_graphics('figures-ext/01-Information_power.jpg')
@@ -221,7 +241,11 @@ Different strategies can be adapted to analyse bulk transcriptome.
 @Cieslik2017 describes five groups of most popular approaches that can be applied to study transcriptome (Fig. \@ref(fig:transcriptome-methods)). Despite a diversity of bioinformatic and statistical tools, the most popular differential approaches, mainly differential gene expression (DGE) based on difference between two experimental conditions. 
 
 ```{r transcriptome-methods, fig.cap='(ref:transcriptome-methods-caption)', out.width='100%', fig.align='center', echo = FALSE}
-knitr::include_graphics('figures-ext/transcriptome-methods.pdf')
+if (is_pdf_output()) {
+  knitr::include_graphics('figures-ext/transcriptome-methods.pdf')
+} else {
+  knitr::include_graphics('figures-ext/transcriptome-methods.png')
+}
 ```
 
 (ref:transcriptome-methods-caption) Five categories of RNA-seq data analysis. Differential analyses: comparing two (or more) conditions, Relative analyses: comparing to an internal refernce (average, base level), Compositional analyses: inferring cell types or groups of cell types (i.e. tumor purity), Global analyses: pan-tissue and pan-cancer analyses and Integrative analyses: compiling heterogneious data types. Reprinted by permission from Springer Nature [@Cieslik2017] © 2018 Macmillian Publishers Limited, part of Springler Nature. All rights reserved. 
@@ -253,7 +277,7 @@ One can ask why then developing computational deconvolution of transcriptome if 
 | scRNA-seq  | 3000$ / sample |
 |  RNA-seq   | 200 $ / sample |
 |    FACS    |  0.05$ / cell  |
-|    CyTOF   |    35$/cell    |
+|   CyTOF    |    35$/cell    |
 In this work, we are using single cell data in two ways. Firstly, in [Comparative… chapter](#results) we compare immune cell profiles defined by scRNA-seq, blood and blind deconvolution (problem introduced in [Immune signatures section](#immune-signatures)). Secondly, in [Heterogeneity of immune…](#map) we use single call data of Metastatic melanoma generated by @Tirosh2016 to demonstrate subpopulations of Macrophages and NK cells. 
 
 <!-- You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
