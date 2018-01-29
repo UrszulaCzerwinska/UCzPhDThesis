@@ -34,9 +34,16 @@ The recent success of immunotherapies (discussed in [Immunotherapies section](#i
 
 ```{r pubmedTME, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, fig.cap='(ref:pubmedTME-caption)', out.width='70%', fig.align='center'}
 library(ggplot2)
-ggplot(data = tme, aes(x = Year, y = percall, fill = Type)) +
+p <- ggplot(data = tme, aes(x = Year, y = percall, fill = Type)) +
  geom_bar(stat = "identity", fill = "steelblue") +
  theme_bw() + scale_x_continuous(breaks = round(seq(min(tme$Year), max(tme$Year), by = 5), 1)) + labs(y = "Percentage of all publications [%]")
+if (is_pdf_output()) {
+  p
+} else if (is_html_output()){
+  library(plotly)
+  ggplotly(p)
+}
+
 ```
 
 (ref:pubmedTME-caption) Percentage of publications containg phrase "tumor immunotherapy" is growing, numbers retreived on 17.01.2018 from [Medline Trends](http://dan.corlan.net/medline-trend.html) [@Corlan2004]
