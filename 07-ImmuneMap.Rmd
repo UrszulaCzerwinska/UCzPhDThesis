@@ -1,0 +1,18 @@
+# Heterogeneity of immune cell types {#map}
+
+We include here an extract of a *ready to submit* article of Kondratova et al. **(co-first authored by Urszula Czerwinska)** - the abstract and figures which are result of work on single cell heterogeneity.
+
+Explication how deconvolution methodology can be used for analysis of heterogeneity of immune cells 
+
+* describe the context briefly
+
+* describe more in details my part - data analysis of single cell data
+
+
+To be defined:
+
+* add CAFS (that will maybe appear in *JBM*) 
+* add unpublished analysis made for the Nature Immunology *Michea et al.* paper  (to be defined)
+* The single T-cell study  (if done)
+
+\includepdf[pages={1-}, scale=1]{pdf-ext/ImmuneMap.pdf}

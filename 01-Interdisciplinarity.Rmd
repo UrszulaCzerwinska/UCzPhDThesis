@@ -1,0 +1,14 @@
+# Preamble about Interdisciplinary Reasearch {-}
+
+\setcounter{page}{13}
+\renewcommand{\thepage}{\arabic{page}}
+
+## What does interdisciplinarity in science mean in XXI century?
+
+This will be an interdisciplinary thesis about using different disciplines, opportunities, challenges and methods. 
+
+## Strengths, Weaknesses Opportunities, Threats (SWOT) of an interdisciplinary PhD 
+
+
+
+## Organisation of the dissertation
