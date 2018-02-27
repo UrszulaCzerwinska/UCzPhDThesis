@@ -11,7 +11,7 @@ Explain the principle
 if (is_pdf_output()) {
   knitr::include_graphics('figures-ext/deconv.pdf')
 } else {
-  knitr::include_graphics('figures-ext/idecon.png')
+  knitr::include_graphics('figures-ext/deconv.png')
 }
 ```
 (ref:deconvolution-cartoon-caption) **Principle of the deconvolution applied to transcriptome** Graphical illustration of the deconvolution of mixed samples. Starting from the left, gene expression of genes A B C is a sum of expression of cell types 1, 2, 3, 4. After deconvolution, cell types are separated and gene expression of each cell type is estimated taking into account cell type proportions.

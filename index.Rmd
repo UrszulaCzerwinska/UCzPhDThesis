@@ -64,3 +64,11 @@ is_html_output = function() {
   knitr::opts_knit$get("rmarkdown.pandoc.to") =="html4"
 }
 ```
+
+```{r index, echo=FALSE, results='asis', eval=is_html_output()}
+cat("# Preface {-}
+
+This is the index")
+```
+
+
