@@ -9,26 +9,26 @@ UNIVERSITÉ PARIS DESCARTES \\
 \vspace*{1cm}
 \textbf{ED 474 Frontières du vivant}\\
 \vspace*{0,5cm}
-\textit{Institut Curie, PSL Research University, Mines Paris Tech, Inserm U900 \\26, rue d'Ulm\\ 75005 Paris, France}\\
+\textit{Institut Curie, PSL Research University, Mines Paris Tech, Inserm U900 \\Paris, France}\\
 \vspace*{1cm}
-\LARGE{\textbf{COMPUTATIONAL DECONVOLUTION OF CELL AND ENVIRONMENT SPECIFIC SIGNALS AND
+\LARGE{\textbf{UNSUPERVISED DECONVOLUTION OF CELL AND ENVIRONMENT SPECIFIC SIGNALS AND
 THEIR INTERACTIONS FROM COMPLEX MIXTURES IN BIOLOGICAL SAMPLES}}\\
 \large{\textbf{Par Urszula Czerwińska}}\\
 \vspace*{1cm}
-Thesis Advisory Committee Report 2018\\
+Theèse de doctorat de Biostatistique\\
 \vspace*{1cm}
-Thèse dirigée par Andrei Zinoviev et Vassili Soumelis\\
+Thèse dirigée par Andrei Zinovyev et Vassili Soumelis\\
 \vspace*{1cm}
-\small{Paris, le 7 février 2018}\\
+\small{Présentée et soutenue publiquement le [date de soutenance]}\\
 \end{center}
 \vspace*{1cm}
 \begin{footnotesize}
 Devant un jury composé de : \\
 \begin{tabular}{lll}
-Andrei Zinoviev & directeur de thèse - PSL\\
+Andrei Zinovyev & directeur de thèse - PSL\\
 Vassili Soumelis & directeur de thèse - PSL\\
-Denis Thieffry & advisor - ENS\\
-Frank Pagès & advisor - Université Paris Descartes\\
+Prénom NOM & [fonction] - université\\
+
 \end{tabular}
 \end{footnotesize}
 
@@ -48,11 +48,15 @@ Frank Pagès & advisor - Université Paris Descartes\\
 \newpage
 \thispagestyle{empty}
 \noindent % Supprime le retrait de paragraphe
+
+\textbf{Title: }
+Déconvolution non supervisée de signaux spécifiques aux cellules dans leur environnement et leurs interactions à partir de mélanges complexes dans des échantillons biologiques
+\vskip 1cm
 \textbf{Résumé (français) :}
 \vskip 1cm
 \noindent
 \textbf{Title: }
-Computational deconvolution of cell and environment specific signals and their interactions from complex mixtures in biological samples
+Unsupervised deconvolution of cell and environment specific signals and their interactions from complex mixtures in biological samples
 \vskip 1cm
 \noindent
 \textbf{Abstract:}
@@ -66,10 +70,10 @@ We are going to release our processing pipeline in a form of an R package. This 
 In the case of success of this project, the results will be helpful in the detemining diagnosis and treatment of cancer, especially for immunotherapies.
 \vskip 1cm
 \noindent
-\textbf{Mots-clés (français) :}
+\textbf{Mots-clés (français) :} microenvironnement tumoral, biologie des systèmes de cancer, analyse de données transcriptomiques, analyse de données monocellulaires, bioinformatique, hétérogénéité,  séparation aveugle de source, apprentissage non supervisé, cancer, oncologie, immunologie
 \vskip 1cm
 \noindent
-\textbf{Keywords:} Tumor immunology, tumor microenvironment, cancer systems biology, transcriptome data analysis, single cell data analysis, bioinformatics, molecular pathways and networks, intercellular communication, cell reprogramming, polarization, heterogeneity
+\textbf{Keywords:} tumor microenvironment, cancer systems biology, transcriptome data analysis, single cell data analysis, bioinformatics, heterogeneity, blind sources separation, unsupervised learning, cancer, oncology, immunology
 
 
 %Dédicace
@@ -78,15 +82,10 @@ In the case of success of this project, the results will be helpful in the detem
 \vspace*{\fill}
 
  \begin{quote}
-
-\emph{And now, let's repeat the Non-Conformist Oath!}\\
-\vspace*{0.5cm}
-\emph{I promise to be different!}\\
-\vspace*{0.5cm}
-\emph{I promise to be unique!}\\
-\vspace*{0.5cm}
-\emph{I promise not to repeat things other people say!}\\
-\vspace*{0.5cm}
+\emph{\textbf{And now, let's repeat the Non-Conformist Oath!\\
+I promise to be different!\\
+I promise to be unique!\\
+I promise not to repeat things other people say!}}\\
 — Steve Martin, \textit{A Wild and Crazy Guy (1978)}\\
  \end{quote}
  \vspace*{\fill}
@@ -115,9 +114,10 @@ Code de la Propriété Intellectuelle. Articles L 335.2-L 335.10}
 \newpage
 \thispagestyle{empty}
 \begin{center}
+%\large{\textbf{Remerciments}}
 \large{\textbf{Remerciments}}
 \end{center}
 \vspace{2cm}
-
+Merci tout le monde
 
 \end{titlepage}

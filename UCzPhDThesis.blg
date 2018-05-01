@@ -1,0 +1,79 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: UCzPhDThesis.aux
+The style file: plainnat.bst
+Database file #1: 00-Inter.bib.bib
+Database file #2: 01-Intro.bib.bib
+Database file #3: packages.bib.bib
+Database file #4: UCzcite.bib.bib
+Warning--I didn't find a database entry for "Virchow1847"
+Warning--I didn't find a database entry for "Paget1889"
+Warning--I didn't find a database entry for "Ehrlich1909"
+Warning--I didn't find a database entry for "Greenblatt1968"
+Warning--I didn't find a database entry for "Folkman1971"
+Warning--I didn't find a database entry for "Feinberg1983"
+Warning--I didn't find a database entry for "Greger1989"
+Warning--I didn't find a database entry for "Pel1982"
+Warning--I didn't find a database entry for "Leung1989"
+Warning--I didn't find a database entry for "Golub1999"
+Warning--I didn't find a database entry for "Rygaard1976"
+Warning--I didn't find a database entry for "Dunn2002"
+Warning--I didn't find a database entry for "Vesely2011"
+Warning--I didn't find a database entry for "Marquez2012"
+Warning--I didn't find a database entry for "Kornstein1983"
+Warning--I didn't find a database entry for "Baxevanis1994"
+Warning--I didn't find a database entry for "Naito1998"
+Warning--I didn't find a database entry for "Pages2005"
+Warning--I didn't find a database entry for "Aris2012"
+Warning--I didn't find a database entry for "Parker2009"
+Warning--I didn't find a database entry for "Sagiv-Barfi2018"
+Warning--I didn't find a database entry for "Ulykbek2017"
+Warning--I didn't find a database entry for "Brunet"
+Warning--to sort, need author or key in CRIweb
+Warning--to sort, need author, editor, or key in FIRbook
+Warning--empty year in CRIweb
+Warning--empty author and editor in FIRbook
+Warning--empty publisher in Berghoff2018
+Warning--empty journal in Cavallo2011
+You've used 65 entries,
+            2773 wiz_defined-function locations,
+            1211 strings with 27240 characters,
+and the built_in function-call counts, 44926 in all, are:
+= -- 3760
+> -- 4303
+< -- 34
++ -- 1450
+- -- 1382
+* -- 4396
+:= -- 7366
+add.period$ -- 315
+call.type$ -- 65
+change.case$ -- 654
+chr.to.int$ -- 62
+cite$ -- 138
+duplicate$ -- 1243
+empty$ -- 2405
+format.name$ -- 1475
+if$ -- 8945
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 45
+newline$ -- 452
+num.names$ -- 254
+pop$ -- 1199
+preamble$ -- 1
+purify$ -- 590
+quote$ -- 0
+skip$ -- 1268
+stack$ -- 0
+substring$ -- 962
+swap$ -- 110
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 710
+warning$ -- 6
+while$ -- 262
+width$ -- 0
+write$ -- 1067
+(There were 29 warnings)

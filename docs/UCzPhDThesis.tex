@@ -1,5 +1,5 @@
 \documentclass[12pt,]{book}
-\usepackage{xcolor}
+%\usepackage{xcolor}
 \usepackage{lmodern}
 \usepackage{setspace}
 \setstretch{1}
@@ -140,10 +140,31 @@
 \usepackage[font=small,labelfont=bf]{caption}
 
 %%%%%
-%%%%%
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
 \usepackage{pdfpages}
-%%%%
-
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
 \newtheorem{lemma}{Lemma}[chapter]
@@ -173,15 +194,15 @@ UNIVERSITÉ PARIS DESCARTES \\
 \vspace*{0,5cm}
 \textit{Institut Curie, PSL Research University, Mines Paris Tech, Inserm U900 \\Paris, France}\\
 \vspace*{1cm}
-\LARGE{\textbf{COMPUTATIONAL DECONVOLUTION OF CELL AND ENVIRONMENT SPECIFIC SIGNALS AND
+\LARGE{\textbf{UNSUPERVISED DECONVOLUTION OF CELL AND ENVIRONMENT SPECIFIC SIGNALS AND
 THEIR INTERACTIONS FROM COMPLEX MIXTURES IN BIOLOGICAL SAMPLES}}\\
 \large{\textbf{Par Urszula Czerwińska}}\\
 \vspace*{1cm}
-Theèse de doctorat de Biostatistique\\
+Thèse de doctorat de Biostatistique\\
 \vspace*{1cm}
 Thèse dirigée par Andrei Zinovyev et Vassili Soumelis\\
 \vspace*{1cm}
-\small{Présentée et soutenue publiquement le [date de soutenance]}\\
+\small{Présentée et soutenue publiquement le 2 octobre 2018}\\
 \end{center}
 \vspace*{1cm}
 \begin{footnotesize}
@@ -189,8 +210,6 @@ Devant un jury composé de : \\
 \begin{tabular}{lll}
 Andrei Zinovyev & directeur de thèse - PSL\\
 Vassili Soumelis & directeur de thèse - PSL\\
-Denis Thieffry & advisor - ENS\\
-Frank Pagès & advisor - Université Paris Descartes\\
 Prénom NOM & [fonction] - université\\
 
 \end{tabular}
@@ -212,11 +231,15 @@ Prénom NOM & [fonction] - université\\
 \newpage
 \thispagestyle{empty}
 \noindent % Supprime le retrait de paragraphe
+
+\textbf{Title: }
+Déconvolution non supervisée de signaux spécifiques aux cellules dans leur environnement et leurs interactions à partir de mélanges complexes dans des échantillons biologiques
+\vskip 1cm
 \textbf{Résumé (français) :}
 \vskip 1cm
 \noindent
 \textbf{Title: }
-Computational deconvolution of cell and environment specific signals and their interactions from complex mixtures in biological samples
+Unsupervised deconvolution of cell and environment specific signals and their interactions from complex mixtures in biological samples
 \vskip 1cm
 \noindent
 \textbf{Abstract:}
@@ -230,10 +253,10 @@ We are going to release our processing pipeline in a form of an R package. This 
 In the case of success of this project, the results will be helpful in the detemining diagnosis and treatment of cancer, especially for immunotherapies.
 \vskip 1cm
 \noindent
-\textbf{Mots-clés (français) :}
+\textbf{Mots-clés (français) :} microenvironnement tumoral, biologie des systèmes de cancer, analyse de données transcriptomiques, analyse de données monocellulaires, bioinformatique, hétérogénéité,  séparation aveugle de source, apprentissage non supervisé, cancer, oncologie, immunologie
 \vskip 1cm
 \noindent
-\textbf{Keywords:} tumor microenvironment, cancer systems biology, transcriptome data analysis, single cell data analysis, bioinformatics, heterogeneity, blind deconvolution, unsupervised learning, cancer, immunology
+\textbf{Keywords:} tumor microenvironment, cancer systems biology, transcriptome data analysis, single cell data analysis, bioinformatics, heterogeneity, blind sources separation, unsupervised learning, cancer, oncology, immunology
 
 
 %Dédicace
@@ -293,41 +316,336 @@ Merci tout le monde
 
 \hypersetup{linkcolor=black}
 \listoffigures
-\hypertarget{preamble-about-interdisciplinary-reasearch}{%
+\hypertarget{preamble-about-interdisciplinary-research}{%
 \chapter*{Preamble about Interdisciplinary
-Reasearch}\label{preamble-about-interdisciplinary-reasearch}}
+Research}\label{preamble-about-interdisciplinary-research}}
 \addcontentsline{toc}{chapter}{Preamble about Interdisciplinary
-Reasearch}
+Research}
 
-\setcounter{page}{13}\renewcommand{\thepage}{\arabic{page}}
+\setcounter{page}{15}\renewcommand{\thepage}{\arabic{page}}
+
+\begin{quote}
+\emph{We are not students of some subject matter, but students of
+problems. And problems may cut right across the borders of any subject
+matter or discipline.} --- Karl Popper
+\end{quote}
+
+The piece of work you have between your hands or on your screen should
+collect fruits of an interdisciplinary research, or at least, was
+conceived in an interdisciplinary environment of Center for
+Interdisciplinary Research in Paris (CRI) in École doctorale
+\emph{Frontières du Vivant} (FdV) . CRI's main mission can be formulated
+as follows:
+
+\begin{quote}
+*to empower the students to take initiative and develop their own
+research projects **at the crossroads of life, learning, and digital
+sciences.* \citep{CRIweb}
+\end{quote}
+
+Interdisciplinarity has many definitions and meanings. According to the
+book \emph{Facilitating Interdisciplinary Research} \citep{FIRbook}
+
+\begin{quote}
+\emph{Interdisciplinary research and education are inspired by the drive
+to solve \textbf{complex questions} and problems, whether generated by
+scientific curiosity or by society, and lead researchers in different
+disciplines to meet at the \textbf{interfaces} and \textbf{frontiers} of
+those disciplines and even to \textbf{cross frontiers} to \textbf{form
+new disciplines}.}
+\end{quote}
+
+For me, the essence of interdisciplinarity is the need to solve a
+complex problem, whatever expertise would be necessary to solve it. I
+consider that fighting cancer disease, deciphering cancer heterogeneity
+and its interactions with immune systems is a cause worth an
+interdisciplinary effort.
+
+However, though this preamble I would like not only praise the
+interdisciplinary research but also underline possible limitations and
+constraints that come with it and which could affect this thesis.
 
 \hypertarget{what-does-interdisciplinarity-in-science-mean-in-xxi-century}{%
-\section{What does interdisciplinarity in science mean in XXI
+\section*{What does interdisciplinarity in science mean in XXI
 century?}\label{what-does-interdisciplinarity-in-science-mean-in-xxi-century}}
+\addcontentsline{toc}{section}{What does interdisciplinarity in science
+mean in XXI century?}
 
-This will be an interdisciplinary thesis about using different
-disciplines, opportunities, challenges and methods.
+In the ancient history, being formed and practice multiple disciplines
+was not anything unusual which is strongly reflected in Greek philosophy
+initiating the dispute about the division and hierarchical
+classification of knowledge. \citep{Slavicek2012}. Figures as Aristotle
+and Leonardo Da Vinci, that can be called \emph{homo universals} served
+different disciplines from arts through history, natural sciences to
+mathematics. With time human knowledge about the word, i.e.~natural
+sciences got bigger and bigger, to the point that it became hard to
+master all the disciplines. The specialisation would allow to study in
+deep a certain subject and make discoveries about it. And even if,
+interdisciplinary efforts never stopped, for long time they were not
+mainstream in scientific communities divided into academies, chairs and
+specialization.
 
-\hypertarget{strengths-weaknesses-opportunities-threats-swot-of-an-interdisciplinary-phd}{%
-\section{Strengths, Weaknesses Opportunities, Threats (SWOT) of an
-interdisciplinary
-PhD}\label{strengths-weaknesses-opportunities-threats-swot-of-an-interdisciplinary-phd}}
+How we can define these separate units? Different fields differ in term
+of concept, method, tools, processes and theories \citep{Slavicek2012}.
+Thanks to division into scientific disciplines certain order is
+conserved across space and time. Hierarchical classification of
+knowledge comes with human nature.
+
+However, specialisation came with a price,
+
+\begin{quote}
+\emph{advancing specialisation leads to gaps in the level of
+comprehension between individual disciplines and eventually gives rise
+to the demand for interdisciplinarity - in order to close the gaps
+between disciplines.}\citep{Slavicek2012}
+\end{quote}
+
+Nowadays, the knowledge is accessible and popular, therefore we can
+profit from achievements of different disciplines thanks to easy mean of
+communication. Two different terms can be defined to initiatives that
+use the knowledge of different specialities: multidisciplinarity which
+is a sum of efforts of different disciplines and interdisciplinarity
+that allows to profit from synergy of multiple disciplines (Fig.
+\ref{fig:multidisc}). With interdisciplinary research and education come
+flexibility, creativity and novelty but also limit of depth on ingested
+knowledge and possibilities of cross-interactions between disciplines.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures-ext/multidisc} 
+
+}
+
+\caption{\textbf{Symbolic illustration of sum
+(multidisciplinarity) versus synergy (interdisciplinarity)}, an
+interdisciplinary project should have an added value compared to a
+multidisciplinary one. Inspired from \citep{Slavicek2012}.}\label{fig:multidisc}
+\end{figure}
+
+
+
+
+
+
+\emph{What does it mean to be truly interdisciplinary in science today
+and why disciplines still exist? Do they?}
+
+\begin{quote}
+\emph{Scientists tend to resist interdisciplinary inquiries into their
+own territory. In many instances, such parochialism is founded on the
+fear that intrusion from other disciplines would compete unfairly for
+limited financial resources and thus diminish their own opportunity for
+research} ---
+\href{http://www.azquotes.com/author/28130-Hannes_Alfven}{Hannes Alfvén}
+\end{quote}
+
+An example of truly interdisciplinary research can be work on the string
+theory that makes advance both mathematics and theoretical physics. Also
+new disciplines that recently emerged as biophysics and bioinformatics
+are fuit of the interdisciplinary approach.
+
+However, crossing frontiers is not an easy task. Examples of early
+interdisciplinary efforts are nicely described by (\citet{Ledford2015}).
+For example, Theodore Brown in 1980s, while trying to organise a big
+interdisciplinary effort and reorganise university space to engage
+exchange between students of different faculties, he encounter a lot of
+reluctance.
+
+\begin{quote}
+\emph{And then there was the stigma. ``Interdisciplinary research is for
+people who aren't good enough to make it in their own field,'' an
+illustrious physicist chided} \citep{Ledford2015}.
+\end{quote}
+
+The story seems to end up with a happy ending of 40-milion US dollars
+grant and foundation of Beckman Institute for Advanced Science and
+Technology. However, recruiting open-minded director to lead this
+unconventional organisation was a struggle. Soon, the organisation
+became a model for others and met a great scientific success (creation
+of one of the first graphical web browsers).
+
+Even though, since then the idea of interdisciplinary research spread
+around the world. Still, not all problem got overcome.
+
+\begin{quote}
+*There's a huge push to call your work interdisciplinary,'' says David
+Wood, a bioengineer at the University of Minnesota in Minneapolis. ``But
+there's still resistance to doing actual interdisciplinary science.*
+\end{quote}
+
+First, the institutions, universities where research is performed should
+equip scientist with a \emph{passe-porte}, facilitate exchange of
+disciplines, funding the interdisciplinary research, accepting fusion of
+disciplines as new ones. Then, a proper communication between
+disciplines is necessary. Finally, forming interdisciplinary researches
+is extremely challenging as it often requires extra effort from an
+apprentice.
+
+How interdisciplinariy changed then over years? Are all disciplines
+affected equally? From the chart \ref{fig:interdisciplinary}) we can see
+that Social Studies of Medecine seems to be the most interdisciplinary
+field. In general Biology, Health and Biomedical Sciences seem to be
+more open into flow of knowledge from other fields than humanities. On
+the extreme opposite of health, Clinical Medecine appears to be very
+conservative field.
+
+\begin{figure}
+
+{\centering \includegraphics{figures-ext/interdisciplinary} 
+
+}
+
+\caption{\textbf{Interdisciplnarity of different
+fields.} ``From 1950-2014, a field's position is determined by how much
+its papers cite outside disciplines (x-axis), and by how much outside
+disciplines subsequently cite its papers (y-axis). (Some years, certain
+fields have too few references to be plotted.)''. Reprinted by
+permission from Springer Nature \citep{VanNoorden2015} © 2015 Nature
+America, Inc.~All rights reserved.}\label{fig:interdisciplinary}
+\end{figure}
+
+
+
+
+
+
+
+
+
+\emph{Are all the disciplines idependent units nowadays?}
+
+Can we do molecular biology without technical, mathematical and
+computational support? Can we study cognitive science without knowledge
+of biology, physics and psychology? Can we advance medecine without
+basic research in biology, physiology, electronics?
+
+\hypertarget{strengths-weaknesses-opportunities-threats-swot-of-an-interdisciplinary-phd---personal-perspective}{%
+\section*{Strengths, Weaknesses Opportunities, Threats (SWOT) of an
+interdisciplinary PhD - personal
+perspective}\label{strengths-weaknesses-opportunities-threats-swot-of-an-interdisciplinary-phd---personal-perspective}}
+\addcontentsline{toc}{section}{Strengths, Weaknesses Opportunities,
+Threats (SWOT) of an interdisciplinary PhD - personal perspective}
+
+Being formed, first in double major of biology and mathematics, then
+participating in interdisciplinary projects during my master studies, I
+can witness that learning curve of multiple disciples is steep. It is
+also often associated with frustration of not going deep enough in all
+of disciplines. \emph{Why?} Because of lack of time or energy, and
+because of developed curiosity to learn new things continuously.
+
+Coming with expertise of biology and mathematics, I got fascinated by
+complex biological systems. One way of study high-dimensional data and
+reduce them to smaller interpretable units. This is what I tempted to
+achieve in this thesis in order to enrich our knowledge about tumor
+microenvironment and possible contribute to orienting future research on
+immunotherapies.
+
+However, often an interdisciplinary research is not easy. \emph{To which
+category do I belong?} \emph{To whom should I present my work?} I often
+asked myself these questions. I also often encountered lack of
+understanding where my methodological results were not bringing enough
+of \emph{biological insights}. Or the constraints of my biological
+application seemed very obscured and complicated for mathematicians and
+my work often lacked \emph{important methodological advances}.
+
+\emph{Does it mean that my work is not accurate, useless?} Probably it
+is not enough, for many. However, I still hope that for some it is. For
+me, working with data and statistics does not mean much if it does not
+serve an actual purpose. The table \ref{tab:SWOT} summarize Strengths,
+Weaknesses, Opportunities and Threats (SWOT analysis) of an
+interdisciplinary projects, in the way I see it.
+
+\rowcolors{2}{gray!6}{white}\begin{table}
+
+\caption{\label{tab:SWOT}\textbf{SWOT analysis of Interdisciplinary research}}
+\centering
+\begin{tabular}[t]{|>{\centering\arraybackslash}p{9em}|>{\centering\arraybackslash}p{9em}|>{\centering\arraybackslash}p{9em}|>{\centering\arraybackslash}p{9em}|}
+\hiderowcolors
+\toprule
+\rowcolor{Gray}  \textcolor{white}{\textbf{Strengths (internal, positive)}} & \textcolor{white}{\textbf{Weaknesses (internal, negative)}} & \textcolor{white}{\textbf{Opportunities (external, positive)}} & \textcolor{white}{\textbf{Threats (external, negative)}}\\
+\midrule
+\showrowcolors
+Having a holistic view of the problem & Not seeing details of the problem & Mulitple possibilities to convey research & Spending too much time filling knowledge gap\\
+Being supervised by multiple experts & Being in the missgle of a conflict of two experts & Take advantage of synergistic effect of fields & Inhibiting effect of oppinions from different fields\\
+Joining expertises of different fields & Not covering in details all the disciplines & Doing a new discovery & Obtaining too generic results\\
+Using new/non standart approach & Experiencing steep learning curve & Raising interest in different expert domains & Not mastering the specific vocabulary of different fields\\
+Having better understanding of complex processes & Being in constant need of help of domain experts & Making progress & Not being understood\\
+\addlinespace
+Higher creativity &  & Creating a new field & Being hard to classify/ fall into a category\\
+Having great flexibility &  & Sovling many problems impossible to solve with traditional approach & Being considered as superficial\\
+Feeling a thrill of adventure &  &  & \\
+Being open &  &  & \\
+\bottomrule
+\end{tabular}
+\end{table}\rowcolors{2}{white}{white}
+
+
+
+Besides conducting research that crosses the boundaries of one
+discipline, I also could meet and work with inspiring people coping like
+me with filling the gap in understanding of an interdisciplinary work. I
+gained (even if only superficial) understanding of many topics in
+mathematics, statistics, data science, immunology, cancer etc.
+
+\hypertarget{general-context-of-the-thesis}{%
+\section*{General context of the
+thesis}\label{general-context-of-the-thesis}}
+\addcontentsline{toc}{section}{General context of the thesis}
+
+\begin{quote}
+\emph{The universe will lead me where I need to go. I am like a leaf in
+the stream of creation} ​ --- Dirk Gently, Holistic detective
+\end{quote}
+
+When finishing my master I was looking for an interdisciplinary subject
+where I could deepen my quantitative skills and apply to a real-life
+health problem. I came across a project proposed by Andrei Zinovyev in
+close collaboration with Vassili Soumelis. I was quite anxious that my
+knowledge of cancer immunology would not be sufficient to lead the
+project to a success. I recognise that the complexity and heterogeneity
+of immune systems are quite a mystery to me and even though I did my
+best efforts to learn during these three years, I am still far for being
+confortable.
+
+The project started by causal exploration of different blind source
+separation or dimension reduction techniques and their ability to
+dissect bulk transcriptomic data into cell type-related units. We also
+faced an important problem of lack of gold standard data that would
+define efficiency and accuracy of different methods. I have spent void
+efforts working of sophisticated simulation framework, I touched the
+border of my capacities to solve important statistical issue. In the
+meantime, many tools dissecting tumor bulk transcriptome were published.
+Serving a similar purpose, they used different means and assumptions,
+which leaved space for my project to continue. In my third year, I am
+finally publishing a tool that performs the analysis I developed
+together with the Sysbio team members, and I can apply it to a body of
+publicly available data sets to learn about actual problem: the immune
+system infiltrating cancers and the interactions occurring in the
+environment.
+
+In parallel, I worked on exploration of brand new data type: single cell
+transcriptomic (RNAseq) in the context of tumor microenvironment.
 
 \hypertarget{organisation-of-the-dissertation}{%
-\section{Organisation of the
+\section*{Organisation of the
 dissertation}\label{organisation-of-the-dissertation}}
+\addcontentsline{toc}{section}{Organisation of the dissertation}
+
+The introS, the results, the discussion
 
 \hypertarget{intro}{%
 \chapter{Immuno-biology of cancer}\label{intro}}
 
-This chapter will introduce a basic topic of cancer and participation of
-stroma in cancer development, progression and response to treatment. It
-will also describe most important types of data used to study cancer
-microenvironment.
+This chapter will first introduce a short history of cancer with a focus
+on discoveries linking cancer and its environment. It will also describe
+participation of TME in cancer development, progression and response to
+treatment. It will refer as well most important types of data used to
+study cancer microenvironment. It will show a link between tumor
+immune-biology and cancer phenotyping for development of
+immunotherapies.
 
-\hypertarget{cancer-seen-as-complex-environment}{%
-\section{Cancer seen as complex
-environment}\label{cancer-seen-as-complex-environment}}
+\hypertarget{cancer-disease}{%
+\section{Cancer disease}\label{cancer-disease}}
 
 According to
 \href{http://globocan.iarc.fr/Pages/fact_sheets_cancer.aspx}{GLOBOCAN
@@ -342,14 +660,15 @@ Colorectal cancers (11,1\%).
 
 For a long time studying tumor was focused on tumor cells, their
 reprogramming, mutations. Cancer was seen as disease of uncontrolled
-cells. Recent discoveries moved research focus from tumor cells to tumor
-cells in their context: tumor microenvironment. We will describe here
-what is the composition and role of the TME in tumor progression,
-diagnosis and response to treatment.
+cells by the mainstream research. At the same time, the idea of
+importance of the impact of other cells and structures on cancer cells
+was present but often not believed. Recent success of immunotherapies
+moved research focus to tumor cells in their context: tumor
+microenvironment. We will describe here what is the composition and role
+of the TME in tumor progression, diagnosis and response to treatment.
 
-\hypertarget{our-understanding-of-cancer-over-time}{%
-\subsection{Our understanding of cancer over
-time}\label{our-understanding-of-cancer-over-time}}
+\hypertarget{hist}{%
+\subsection{Historical understanding of cancer}\label{hist}}
 
 Cancer was historically described by a physician Hippocrates (460--370
 B.C) \citep{Sudhakar2009}. Even though there exist even earlier evidence
@@ -365,14 +684,45 @@ that they deserved it to some extend
 Until 18th century it was believed that cancer is contagious and is
 spread by parasites.
 
-In the 1850s, tumor cells started to be analysed by pathologists. They
-were strike with their ability to proliferate uncontrollably, ability to
-spread and destroy the original tissue \citep{NPR2010}. Around the same
-time leukocytes from the blood was first described by Gabriel Andra and
-William Addison. Just a few years later, in 1845 Bennett and Virchow
-described blood cells in leukaemia. Virchow is also a father of Chronic
+In the 19th century, tumor cells started to be analysed by pathologists.
+They were strike with their ability to proliferate uncontrollably,
+ability to spread and destroy the original tissue \citep{NPR2010}.
+Around the same time leukocytes from the blood was first described by
+Gabriel Andra and William Addison. Just a few years later, in 1845
+Bennett and Virchow described blood cells in leukaemia (Fig.
+\ref{fig:Virchow-cell}). . Virchow is also a father of Chronic
 irritation theory (which we would call chronic inflammation) that says
-that cancer cells spread resulting in metastasis.
+that cancer is caused by local ``irritation'' and, incorrectly, that
+cancer cells spread like liquid resulting in metastasis.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures-ext/01-Virchow-cell} 
+
+}
+
+\caption{\textbf{Illustration of Virchow's cell
+theory}. Virchow depicted different cells transformation due to
+irritation. \citep{Virchow1847}}\label{fig:Virchov-cell}
+\end{figure}
+
+
+
+
+
+In 1889, Stephen Paget introduced \emph{soil and seed} hypothesis of
+metastases \citep{Paget1889}. He formulates it as follows
+
+\begin{quote}
+When a plant goes to seed, its seeds are carried in all directions, but
+they can only live and grow if they fall on congenial soil."
+\end{quote}
+
+Which is a parallel to cancer cells disseminated by body fluids, and
+they can grow only tissues - ``soil'' that is predisposed to host the
+cancer cell - ``the seed''. He focused on the importance of tissue
+characteristics that favorise tumor development as opposed to most
+researchers of his time that were focusing on the ``seed'' itself.
 
 In the 20th century, molecular causes started to be investigated. It was
 discovered that cancer could be caused by environmental factors,
@@ -380,10 +730,44 @@ i.e.~chemicals (carcinogens), radiation, viruses and also inherited from
 ancestors. Those factors would damage but contrary to a healthy
 condition they would not die.
 
+Also in 1909, Paul Ehrlich, called one of fathers of immunology and
+Nobel Prize laureate, indicated a link between immune system and tumor
+suppression \citep{Ehrlich1909}. One of remarkable first immontherapy
+attempts can be attributed to William Coley, that practiced injecting
+streptococcus bacteria directly into patients after cancer surgery in
+1891, later called ``Colley vaccine''. However, the impact of this
+procedure on patients recovery was judged by scientific community as
+``unclear''.
+
+In 1968, Melvin Greenblatt and Philippe Shubik showed that tumour
+transplants secete a substance stimulating the growth of blood vessels
+\citep{Greenblatt1968}, later identified as ``tumour angiogenic factor
+(TAF)'' by Judah Folkman in 1971 \citep{Folkman1971}. Folkman also
+suggested that TAF can target of therapy itself which was a revolutional
+idea, as it did not target the tumor cells but their environment.
+
 During the 1970s, oncogenes and tumor suppressor genes were discovered.
 Oncogenes are genes that allow a cell to become cancer cell, while the
 tumor suppressor genes would repair DNA or execute cell death of a
-damaged cell.
+damaged cell. A new dimention to cancer studies was added in the 1980s,
+epigenetic changes was proven to occur to both oncogenes and tumour
+suppressors \citep{Feinberg1983, Greger1989}, which are presently known
+as epigenetic markers used for diagnostics and therapeutic targets for
+cancer.
+
+In 1982, Aline van Pel and Thierry Boon \citep{Pel1982} discovered that
+a specific immunity to spontanious tumor cells could be induced by
+vaccinating mice with mutagenized tumour cells. This araised an
+inspiration for many years of immune therapy developement.
+
+In Napoleone Ferrara and colleagues identified gene encoding vascular
+endothelial growth factor (VEGF) that was shown to stimulate growth of
+enothelial cells proliferation \emph{in vitro} and angiogenesis (blood
+vessels formation) \emph{in vivo} \citep{Leung1989}.
+
+In 1999 for the first time, gene-expression was used to study cancer
+(leukeamia) by Todd Golub, Donna Slonim and colleagues
+\citep{Golub1999}.
 
 Since the end of the 20th century, cancer screens are developed along
 with multiple strategies to fight tumor. Most classical ones are based
@@ -395,12 +779,13 @@ proposed. Nowadays, science is aming in the direction of trageted
 therapies and personalized treatment.
 
 The recent success of immunotherapies (discussed in
-\protect\hyperlink{immunotherapies}{Immunotherapies section} made
-realise the scientific community how important is the context in which
+\protect\hyperlink{immunotherapies}{Immunotherapies section} attracted
+the attention the scientific community again to the context in which
 tumor cells are found. This context called Tumor Microenvironment, as
 well as the communication that happens within it between different
-agents, become a popular scientific topics of 21st century (Fig.
-\ref{fig:pubmedTME}).
+agents, nowadays studied differently with available knowledge of
+molecular biology, become a popular scientific topics of 21st century
+(Fig. \ref{fig:pubmedTME}).
 
 \begin{figure}
 
@@ -409,9 +794,9 @@ agents, become a popular scientific topics of 21st century (Fig.
 }
 
 \caption{\textbf{Percentage of publications containg
-phrase ``tumor immunotherapy'' is growing, numbers retreived on
+phrase ``tumor immunotherapy'' is growing}, numbers retreived on
 17.01.2018 from \href{http://dan.corlan.net/medline-trend.html}{Medline
-Trends} \citep{Corlan2004}}}\label{fig:pubmedTME}
+Trends} \citep{Corlan2004}}\label{fig:pubmedTME}
 \end{figure}
 
 
@@ -419,27 +804,78 @@ Trends} \citep{Corlan2004}}}\label{fig:pubmedTME}
 
 
 
-\hypertarget{tumor-micro-environment-fiend-or-foe}{%
-\subsection{Tumor micro environment: fiend or
-foe?}\label{tumor-micro-environment-fiend-or-foe}}
+\hypertarget{tumor-micro-environment-as-a-complex-system}{%
+\subsection{Tumor micro environment as a complex
+system}\label{tumor-micro-environment-as-a-complex-system}}
+
+\begin{quote}
+ALL IS CONNECTED ---Dirk Gently, holistic detective
+\end{quote}
 
 \hypertarget{what-is-tumor-microenvironment-tme}{%
 \subsubsection{What is Tumor Microenvironment
 (TME)}\label{what-is-tumor-microenvironment-tme}}
 
 Tumor Microenvironment is a complex tissue that surrounds tumor cells.
-It is composed of blood and lymphatics vessels, epithelial cells,
-mesenchymal stem cells, fibroblast, adipocytes and a wide variety of
-immune cells. Their proportion and specific roles vary significantly
-with tumor type and stage. Communication between the environmental cells
-and the tumor is critical for tumor development and its impact on
-patient's response to treatment.
+It is composed of different compartments (in solid tumors):
 
-\hypertarget{tme-as-a-tumor-ally}{%
-\subsubsection{TME as a tumor ally}\label{tme-as-a-tumor-ally}}
+\begin{itemize}
+\tightlist
+\item
+  Stroma: blood and lymphatics vessels, epithelial cells, mesenchymal
+  stem cells, fibroblast, adipocytes supported by extracellular matrix
+  (EM)
+\item
+  Immune cells: T cells, B cells, NK cells, Dendritic cells,
+  Macorphages, Monocytes etc.
+\end{itemize}
+
+Their proportion and specific roles vary significantly with tumor type
+and stage. Communication between the environmental cells and the tumor
+is critical for tumor development and its impact on patient's response
+to treatment. These communication between different compartments is
+bidirectional and all the players can influence each other. Depending on
+the nature and prevailing direction of those interactions different
+destiny is possible for each of the compartments, i.e.~immune cells can
+be recruited to protect tumor cells or they can kill them directly. Many
+of the signals can be contradictory, many can suppress each other. Then
+is it possible to tilt this complex ecosystem into patients' favour? Can
+we decipher the most important factors of this molecular knot and
+manipulate it?
+
+This chapter describes different scenarios of interaction within TME in
+order to illustrate the complexity of TME and possible targets for
+cancer therapies.
+
+\hypertarget{interactions-between-tme-and-tumor}{%
+\subsubsection{Interactions between TME and
+Tumor}\label{interactions-between-tme-and-tumor}}
+
+Three scenarios can be considered to describe the relationship between
+TME and tumor cells:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  TME stimulates tumor growth and/or progression and/or impact
+  negatively the response to treatment
+\item
+  TME has no impact on tumor cells and disease development
+\item
+  TME has a tumor suppressive role and impact positively the response to
+  treatment
+\end{enumerate}
+
+As can be seen partly in \protect\hyperlink{hist}{Historical
+understanding of cancer} these three hypothesis were gaining and loosing
+popularity in scientific and medical community.
+
+\hypertarget{tme-as-a-foe-inflammation}{%
+\paragraph{TME as a foe: inflammation}\label{tme-as-a-foe-inflammation}}
 
 In 1863 Rudolf Virchow observed a link between chronic inflammation and
-tumorigenesis. Accoriding to Virchov theory genetic damage would be the
+tumorigenesis. According to Virchov theory genetic damage would be the
 ``match that lights the fire'' of cancer, and the inflammation or
 cytokines produced by immune cells should be the ``fuel that feeds the
 flames'' \citep{Balkwill2001}. Therefore lymphocyte infiltration was
@@ -494,18 +930,99 @@ of the hallmarks of cancer are enabled and sustained to varying degrees
 through contributions from repertoires of stromal cell types and
 distinctive subcell types.
 
-\hypertarget{two-faced-nature-of-immune-cells}{%
-\subsubsection{Two-faced nature of immune
-cells}\label{two-faced-nature-of-immune-cells}}
+\hypertarget{tme-seen-as-neutral}{%
+\paragraph{TME seen as neutral}\label{tme-seen-as-neutral}}
 
-In the 1960s, the immune surveillance theory hypothesized ``the ability
-to identify and destroy nascent tumors as a central asset of the immune
-system'' \citep{Sebeok1976, Burnet1970}, but it was highly criticized in
-consequence of no increase in tumor incidence in athymic nude mice
-\citep{Stutman1974, Rygaard1976}. Later it was shown, that this mice
-model was not adequate \citep{Cavallo2011}. Over the years, it was shown
-that the immune surveillance theory was not wrong, but was not
-completely right neither.
+In front of lack of definitive proof that TME can positively or
+negatively impact on tumor development, many scientist, for long time,
+ignored the importance of this factor. Until the early-mid eighties, the
+TME research was mostly limited to angiogenesis and immune environment
+and most areas that are now driving the field were not represented.
+
+From early 70. until the end of the 90. the most accepted statement was
+that genetic alterations in oncogenes and tumor suppressor genes are
+both necessary and sufficient to initiate tumorigenesis and drive tumor
+progression. Therefore TME was not seen as an important element of the
+puzzle.
+
+The cancer geneticists, at the time had a lot of influence on scientific
+community diminishing the work of made on TME which were considered as
+``uninteresting'' and definitely not ``mainstream''.
+
+After 90. with discovery of singling molecules involved in communication
+of TME like VEGF. Also discoveries made by developmental biology field
+supported the hypothesis that microenvironment plays an important role
+in development which was later shown for tumorigenesis. Also success of
+immune vaccines starting with the tuberculosis vaccine Bacille
+Calmette-Guérin (BCG) in 1976 and finishing, at the moment with
+checkpoint inhibitors did not leave the scientific community
+indifferent.
+
+\hypertarget{tme-as-a-friend-immunosurveillance}{%
+\paragraph{TME as a friend:
+immunosurveillance}\label{tme-as-a-friend-immunosurveillance}}
+
+As mentioned in \protect\hyperlink{hist}{Historical understanding of
+cancer} Paget proposed a hypothesis of ``seed and soil'' where the TME
+in a certain tissue (the soil) can either stimulate or suppress the
+metastasis (the seed). William Coley tested a possibility to trigger
+tumorsuppressive effect via stimulation of the immune system with
+bacteria. In the 1960s, the immune surveillance theory hypothesized
+``the ability to identify and destroy nascent tumors as a central asset
+of the immune system'' \citep{Sebeok1976, Burnet1970}, but it was highly
+criticized in consequence of no increase in tumor incidence in athymic
+nude mice \citep{Stutman1974, Rygaard1976}. Later it was shown, that
+this mice model was not adequate \citep{Cavallo2011} . Thus, the
+hypothesis that TME can have a positive role in tumor prognosis is not
+new.
+
+The immunosurveillance through immune-editing can be summarized in three
+processes: elimination, equilibrium, and escape \citep{Dunn2002}.
+
+The elimination is direct killing of cancer cells or growth inhibition
+by immune system. The adoptive T cells and NK are actively involved in
+tumor killing and stimulate other immune cells. The CD8 + cytotoxic
+lymphocytes (CTLs) directly recognize tumor cells. Employing perforin-
+and granzyme-dependent mechanisms they can lyze tumor cells. The CD4 + T
+cells release factors to induce proliferation of B cells and to promote
+their differentiation to antibody (Ab)-secreting plasma cells, activate
+macrophages. Macrophages use phagocytosis to eliminate cancer cells
+\citep{Vesely2011}.
+
+The tumor-infiltrating lymphocytes (TILs) have been associated with an
+overall good prognosis and better survival in different cancer studies.
+Also, abundance of CD3 + and CD8 + T cells, NK cells, and γδT cells
+correlates with improved outcomes in epithelial ovarian cancers
+\citep{Marquez2012}. Several studies report that the presence of the
+abundant immune infiltrate is correlated with good prognosis or better
+survival \citep{Kornstein1983, Baxevanis1994, Naito1998, Pages2005}.
+Spontaneous regression of human tumors has been reported in cutaneous
+melanoma, retinoblastoma, osteosarcoma, etc. \citep{Aris2012}.
+
+The equilibrium is the phase when cancer and immune cells coexist and
+their crosstalk is preventing metastasis.
+
+T cells are the main actor maintaining the equilibrium. Progressively,
+the tumor cells become more immunogenic as they are not edited by the
+immune system
+(\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3170416/}). The state
+of tumor cells is then identified as ``dormant'' and active scientific
+reports investigate the possible molecular pathways that maintain
+dormancy or lead to escape
+(\url{https://www.ncbi.nlm.nih.gov/pubmed/18515327}).
+
+The immune escape is the final process when tumor cells impair the
+immune response.
+
+\hypertarget{two-faced-nature-of-immune-cells-context-dependent-functional-plasticity}{%
+\subsubsection{Two-faced nature of immune cells: context-dependent
+functional
+plasticity}\label{two-faced-nature-of-immune-cells-context-dependent-functional-plasticity}}
+
+Modern vision of TME tumor interactions assumes that tumor can be
+directed to several molecular pathways. This direction is decided by
+signals that are native of tumor cell and/or coming from the
+microenvironment.
 
 Recent studies unveil ambivalent nature of immune cells of TME. While
 some as cytotoxic T cells, B cells and macrophages can manage to
@@ -538,357 +1055,52 @@ TME}\label{immune-cell-subtypes-in-tme}}
 Here will be a definition of what is immune cell type, how different
 phenotypes are can be associated with subtypes and why researches do it
 
+\begin{quote}
+Cette espèce de leucocytes a une grande ressemblance avec certains
+éléments fixes du tissu conjonctif, ainsi qu'avec des cellules
+endothéliales et des cellules de la pulpe splénique. On est donc souvent
+embarrassé, surtout lorsqu'on trouve ces leucocytes mononucléaires en
+dehors des vaisseaux, pour les distinguer des autres espèces de cellules
+mentionnées.
+
+​ --- Elie Metchnikoff, Leçons sur la pathologie comparée de
+l'inflammation, 1891
+\end{quote}
+
+Pathological characterisation
+
+FACS molecular charaterisation
+
 Necessary for the chapter \protect\hyperlink{map}{Heterogeneity of
 immune cell types}
-
-\hypertarget{cancer-immune-phenotypes}{%
-\subsection{Cancer immune phenotypes}\label{cancer-immune-phenotypes}}
-
-Since 20. century physicians decided on common nomenclature that
-classify tumors into distinct groups that are relatively homogenous or
-that share common characteristic important for treatment and prognosis.
-Tumor typing should help to better asses predicting prognosis, to adapt
-a therapy to the clinical situation, to enable therapeutic studies which
-are essential in proving any therapeutic progress.
-
-Most of the classifications are based on clinical data. Most common
-factors taken into account are: the degree of local invasion, the degree
-of remote invasion, histological types of cancer with specific grading
-for each type of cancer, possibly various tumour markers, general status
-of the patient.
-
-With a progress of molecular biology also gene markers or proteomic
-abnormalities can be part of classification panel.
-
-Since the increase of importance of the immunotherapies, researches
-proposed several ways to classify tumors based on their
-microenvironment. Given different parameters describing TME, cancers can
-be sorted into groups that show similar characteristics. We will discuss
-most common frameworks that allow to phenotype cancers based on the TME.
-
-The localisation of the immune cells can be an indicator of the state
-and response to the therapy \citep{Bindea2013}.
-
-The most standard approach is to convey an analysis of histopathological
-cuts to asses the number of infiltrating lymphocytes (TILs). Two typical
-patterns are usually identified: ``hot'' - immune inflamed and ``cold''
-- no active immune response \citep{Berghoff2018}.
-
-\citet{Chen2017} describes classification into inflamed and non-inflamed
-tumors, where non-inlamed phenotypes: can be further split into the
-immune-desert phenotype and the immune--excluded phenotype (Fig.
-\ref{fig:immune-phenotypes}). The inflamed phenotype is characterised by
-rich presence of immune cells : T cells, myeloid cells, monocytes in
-tumor margin. Along with the immune cels, due to their communication, a
-high expression of cytokines is characteristic for this phenotype.
-According to Chen2017, this is a mark of anti-tumor response that was
-arrested by tumor. The inflamed phenotype has shown to be most
-responsive to immunotherapies. In the immune-excluded phenotype, the
-immune cells are present as well but located in the stroma
-\citep{Herbst2014}, sometimes penetrating inside tumor. However, when
-exposed to check point immuotherapy, T cells does not gain the ability
-to infiltrate the tumor, therefore the treatment is inefficient. The
-immune-desert main features is little or no presence of immune cells,
-especially T cells. Surprisingly, this tumors have been to proven to
-rarely respond to the checkpoint therapy \citep{Herbst2014}. In
-non-inflamed tumours cytokines associated with immune suppression or
-tolerance are expressed.
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{figures-ext/immune-phenotypes} 
-
-}
-
-\caption{\textbf{Cancer-immune phenotypes: the
-immune-desert phenotype (brown), the immune--excluded phenotype (blue)
-and the inflamed phenotype (red).} The immune--desert phenotype is
-characterised by paucity of immune cells and cytokines. In the
-immune-excluded phenotypes the T cells are often present but trapped in
-stroma, enabled to migrate to the tumor site. The immune-inflamed
-phenotype is rich in immune cells and the most responsive to the immune
-check point therapies. Reprinted by permission from Springer Nature
-\citep{Chen2017} © 2017 Macmillian Publishers Limited, part of Springler
-Nature. All rights reserved.}\label{fig:immune-phenotypes}
-\end{figure}
-
-
-
-
-
-
-
-
-
-
-
-
-The immunogenicity of the tumors can be explained by tumor-intrinsic
-factors and tumor-extrinsic factors \citep{Gajewski2006}.
-Tumor-intrinsic factors are, the neoantigen load and frequency, the
-mutational load, the expression of immunoinhibitors and
-immunostimulators (e.i. PD-L1), and alteration of HLA class I molecules.
-Tumor-extrinsic factors include chemokines regulating T cell
-trafficking, infiltration of effector TILs and immunosuppressive TILs,
-and soluble immunomodulatory factors (cytokines).
-
-A plethora of different computational methods have been developed in
-order to further characterize tumor samples using different factors. We
-mention here mainstream methods that cover different approaches of
-scoring the TME-cancer phenotype.
-
-\hypertarget{immunoscore}{%
-\subsubsection{Immunoscore}\label{immunoscore}}
-
-Image-based tumors classification
-
-\url{http://www.haliodx.com/clinical-research-services/immunoscorer/}
-
-\citet{Galon2012}
-
-\hypertarget{immunophenoscore}{%
-\subsubsection{Immunophenoscore}\label{immunophenoscore}}
-
-Different approaches are based on gene expression patterns. Most
-commonly, machine learning supervised algorithms are trained to match
-known phenotype (established with microscopy or with clinical features)
-to genetic patterns or an unsupervised clustering is used to discover
-new classification.
-
-An example of well-formulated classification framework is
-Immunophenoscore \citep{Charoentong2017}, based on publication of
-\citet{Angelova2015}, where methylome, transcriptome and mutation of
-TCGA CRC dataset (n = 598) was used to describe \emph{immunophenotypes}.
-Later on, it was reduced to gene expression indicator and summarised in
-a form of a score. In This scoring scheme is based on the data of 20
-solid tumors, using expression of marker genes selected by a Machine
-Learning algorithm (random forest) for best prediction in each cancer.
-These indicators can be grouped into four categories:
-
-\begin{itemize}
-\tightlist
-\item
-  MHC molecules (MHC)
-\item
-  Immunomodulators (CP)
-\item
-  Effector cells (EC)
-\item
-  Suppressor cells (SC)
-\end{itemize}
-
-The immunophenscore (IPS) is calculated on a 0-10 scale based on the
-expression of genes in each category. Stimulatory factors (cell types)
-impact the score positively and inhibitory factors (cell types)
-negatively. Z-scores ≥ 3 were designated as IPS10 and z-scores ≤ 0 are
-designated as IPS0. A similar conceptual framework called \emph{cancer
-immunogram} was proposed by \citet{Blank2016} included seven parameters:
-tumor foreignness (Mutational load), general immune status (Lymphocyte
-count), immune cell infiltration (Intratumoral T cells), absence of
-checkpoints (PD-L1), absence of soluble inhibitors (IL--6, CRP), absence
-of inhibitory tumor metabolism (LDH, glucose utilisation), tumor
-sensitivity to immune effectors (MHC expression, IFN-γ sensitivity).
-Nonetheless, the details of \emph{cancer immunogram} use in practice
-remain unclear and result could be sensitive to patients' and data
-heterogeneity as no standardisation was proposed.
-
-\citet{Charoentong2017} claim that the immunophenoscore can predict
-response to CTLA-4 and anti-PD-1.
-
-\hypertarget{immune-maps}{%
-\subsubsection{Immune maps}\label{immune-maps}}
-
-Description on how immune portraits (NAVIcell) can be used to
-characterise tumor immune environment.
 
 \hypertarget{summary}{%
 \subsubsection{Summary}\label{summary}}
 
-Despite those facts, the gene expression based classifications are not
-yet used in clinics. The measured multi-panel mRNA expression, that can
-be included into category of In Vitro Diagnostic Multivariate Index
-Assay (IVDMIA) \citep{Gyorffy2015, Ross2008}, may be a future of
-TME-based cancer classification, diagnosis and treatment recommendation
-\citep{Gnjatic2017}. For this best tools need to be used to properly
-evaluate the state of TME and tumor-stroma-immune cells communication.
+Cancer is a disease concerning milliards of people with a long history.
+Scientific community recognises role of the environment where the tumor
+cells find themselves as an important factor influencing tumor
+development, prognosis and response to treatment. TME is a complex
+environment that constantly interacts with tumor cells, where both tumor
+and TME influence and shape each other.
 
-\hypertarget{immune-signatures}{%
-\subsection{Immune signatures - biological
-perspective}\label{immune-signatures}}
+Over the years, many interactions are being discovered and cell types
+re-defined and described in their context. However, lots of mechanisms
+and interactions of TME remains unknown due to very heterogeneous nature
+of this micro environment which leaves room to more extensive
+investigation by researches.
 
-\begin{itemize}
-\tightlist
-\item
-  definition of signature: marker genes, list of genes, weighted list,
-  metagenes
-\item
-  the general immune signature of signature of immune infiltration and
-  stroma vs immune signature of a specific cell type of functional
-  subpopulation
-\item
-  purpose of signatures
-\item
-  availability of immune signatures
-\item
-  the problem of not consistency of immune signatures
-\item
-  origin of signatures
-\end{itemize}
+A therapeutic goal is target interactions that would be able to pivot
+the essential processes in tumorigenesis or tumor escape in order to put
+the cells ``back on track'' and facilitate anti-tumor therapies.
 
-\begin{quote}
-``the gene expression profiles of tumour-associated immune cells differ
-considerably from those of blood derived immune cells'''
-\citep{Schelker2017}
-\end{quote}
+These goals can be meet thanks to improvement of investigating
+techniques and data quality and abundance. We will discuss the most
+important data types used in this project to investigate the TME.
 
-Immune signatures will be also discussed as a part of deconvolution
-pipeline in the \protect\hyperlink{methods}{Chapter 2} under the section
-about \emph{basis matrix}.
-
-\hypertarget{immunotherapies}{%
-\section{Immunotherapies}\label{immunotherapies}}
-
-This section outlines progress in cancer therapies with a focus on
-immune therapies. It will link the ongoing research on TME with
-therapeutical potential.
-
-\hypertarget{cancer_Therapies}{%
-\subsection{Cancer therapies}\label{cancer_Therapies}}
-
-Cancer is a complex disease. Up to date, no uniform and fully effective
-treatment was proposed and usually different strategies are tested to
-kill tumor cells. \textbf{Surgery} is one of the oldest methods. The
-cancer is removed from the patient body. There are different ways, more
-or less invasive, that it can be performed. it is usually applied for
-solid tumor contained in a small area. \textbf{Radiation Therapy} uses
-high doses of radiation to eliminate tumor cells and shrink tumor mass.
-It can be applied externally or internally. \textbf{Chemotherapy} uses a
-drug (or a combination of drugs) that kill cancer cells, usually
-altering cell proliferation and growth. The drawback of radiotherapy and
-chemotherapy are strong side effects. \textbf{Hormone therapy } modulate
-hormone levels in the body in order to inhibit tumor growth in breast
-and prostate cancers. In leukemia and lymphoma, can be applied
-\textbf{stem cell transplants} that restore blood-forming stem cells
-destroyed by the very high doses of chemotherapy or radiation therapy
-that are used to treat certain cancers.
-
-Alternatively, \textbf{targeted therapies} represent more focused
-strategy that aims to be more effective and cause less side effects than
-systematic therapies. Two main types of targeted therapies are
-small-molecule drugs and monoclonal antibodies. Targeted therapies
-usually aim to stimulate/inhibit a selected molecular function. A
-special types of targeted therapies are \textbf{Immunotherapies}.
-Through adtivation/inhibition of immune regulatory pathways, it
-stimulates immune system to destroy malignant cells. A continuation of
-targeted therapies is \textbf{precision medecine approach}. It is based
-on genetic information to specify patient's profile and find adapted
-treatment. A number of innovative treatments targeting a specific change
-in tumor ecosystem are being tested presently in precision medicine
-clinical trials \citep{NCI2018}.
-
-\hypertarget{recent-progress-in-immuno-therapies}{%
-\subsection{Recent progress in
-immuno-therapies}\label{recent-progress-in-immuno-therapies}}
-
-The immunotherapies, in contrast with other types of cancers therapies
-discussed in \protect\hyperlink{cancer_Therapies}{the previous chapter},
-aim to trigger or restart the immune system to defend the organism and
-attack the malignant cells. All this, however without provoking
-persisting inflammation state \citep{Predina2013}
-
-The idea of stimulating immune system to fight malignant cell was not
-born recently. Since a long time a possibility of development of an
-anti-cancer vaccine has been investigated. Unfortunately, this idea
-faced two important limitations 1) lack of knowledge of antigens that
-should be used in vaccine to successfully stimulate cytotoxic T cells 2)
-the ability of cancer to block the immune response also called
-\emph{immunostat}. Despite those impediments works on anti-tumor
-vaccines do not cease \citep{Palucka2013}. A very recent promising an
-in-situ ani-tumor vaccine was proposed by Sagiv-Barfi et al.
-\citep{Sagiv-Barfi2018}. The therapy tested in mice, would be based on
-local injections of the combination of ``unmethylated CG-enriched
-oligodeoxynucleotide (Cp-G) - a Toll-like receptor 9 (TLR9) ligand and
-anti-OX40 antibody. Low doses of CpG injected into a tumor induce the
-expression of OX40 on CD4+ T cells in the microenvironment in mouse or
-human tumors. An agonistic anti-OX40 antibody can then trigger a T cell
-immune response, which is specific to the antigens of the injected
-tumor''. Sagiv-Barfi et al.~claim this therapy could be applied to all
-tumor types, as long as they are leucocyte-infiltrated. As a local
-therapy, in situ vaccination should have less side-effects than
-systematic administration. It is now undergoing clinical trials to test
-its efficiency in human patients.
-
-Another idea involving using immune system as a weapon to fight cancer,
-would be the use of genetically modified patient's T-cells, carrying
-\emph{CARs} (chimeric antigen receptors) \citep{Jackson2016}. After a
-long period of small unsuccessful trials, recently in 2017, two CAR
-T-cell therapies were accepted, one to ``treat adults with certain type
-of large B-cell lymphoma'' \citep{FDACARTadult}, other to treat
-``children with acute lymphoblastic leukemia (ALL)'' \citep{FDACARTALL}
-, which are, at the same time, the first two gene therapies accepted by
-FDA.
-
-However, the two most promising immuno-related strategies with proven
-clinical efficiency are based on blocking so called immune check point
-inhibitors: cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell
-death protein 1 (PD-1). The anti-CLTA4 antibodies blocks repressive
-action of CLTA4 on T-cells and they become therefore activated. It was
-shown efficient in melanoma patients and accepted by FDA in 2015 as
-adjuvant therapy for stage III metastatic melanoma patients
-\citep{FDACTLA4}. PD-1 is a cell surface receptor of T cells, that binds
-to PD-L1/PD-L2. After binding, an immunosuppressive pathway is activated
-and T cells activity is dampened. An action of an anti-PD-L1 antibody is
-to prevent this immune exhaustion \citep{Chen2017}. A stepping stone for
-anti-PD-L1 therapies was approval of Tecentriq (atezolizumab) for
-Bladder cancer \citep{FDAPDL1Bladder} and anit-PD1 Keytruda
-(pembrolizumab) initially accepted for NSCLC and further extended to
-head and neck cancer, Hodgkin's lymphoma, gastric cancer and
-microsatellite instability-high cancer \citep{FDAPDL1NSCLC}. Since other
-anti-PD-L1 or anti-PD1 antibodies were accepted or entered advanced
-stages of clinical trials \citep{Wolchok2015}. A short history of
-immunotherapy FDA-accepted treatments can be found in Fig.
-\ref{fig:timeline-immunotherapies}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{figures-ext/02-timeline-immunotherapies} 
-
-}
-
-\caption{\textbf{This timeline describes
-short history of FDA approval of checkpoint blocking immunotherapies up
-to 2017.} Reprinted by permission from Springer Nature
-\citep{Taube2017a} Macmillan Publishers Limited, part of Springer
-Nature. All Rights Reserved.}\label{fig:timeline-immunotherapies}
-\end{figure}
-
-
-
-
-
-
-
-The main drawback of immunotherapies is a heterogeneity of response
-rate, which can vary i.e.~from 10--40\% in case of PD-L1blocking
-\citep{Zou2016}, suggesting that some patient can have more chances than
-others to respond to an immune therapy. So far, it has been shown that
-anti PD-L1 therapies works more effectively in T cell infiltrated tumors
-with exclusion of Tregs because of lack of difference in expression of
-FOXP3 in responding and non-responding group of patients
-\citep{Herbst2014}. Also some light has been shade by \citet{Rizvi2015}
-who connected mutational rate of cancer cells to the chances of response
-to an immunotherapy.
-
-Despite those fundings, the precise qualifications of patients that
-should be sensitive to an immunotherapy are not defined
-\citep{Pitt2016}. As most patients do not answer to immunotherapies, it
-stimulates researches to look for better biomarkers and patient
-stratifications, and pharmaceutical industries to discover new immune
-checkpoints based therapies.
-
-\hypertarget{quantifying-immune-infiltration-data}{%
-\section{Quantifying immune infiltration
-(data)}\label{quantifying-immune-infiltration-data}}
+\hypertarget{quantifying-and-qualifying-immune-infiltration-data}{%
+\section{Quantifying and qualifying immune infiltration
+(data)}\label{quantifying-and-qualifying-immune-infiltration-data}}
 
 Nowadays, more and more biological data is produced. However, this
 proliferation of accessible resources is not proportional to generated
@@ -938,6 +1150,16 @@ Flow cytometry is a laser-based technology. It uses marker genes: cell
 surface proteins to sort cells in different compartments. Nowadays, it
 permits quantification of the abundance of up to 17 cell surface
 proteins using fluorescently labelled antibodies \citep{Papalexi2017}.
+However this techniques is not free from bias, our knowledge about cell
+markers is limited and several markers may not be relevant in some
+context. Moreover, the scientific community did not clearly agree on the
+marker choice even for popular and well studied cell types which
+introduced additional heterogeneity when independent studies are
+compared. Also the quality of antibodies may influence the results of
+the FACs analysis. Besides those limitations FACs remains quite popular
+method for analysing cells in complex tissues. It was among first
+methods that allowed molecular phenotyping of immune cells, a discovery
+of numerous subsets and thier further functional interpretation.
 
 \hypertarget{mass-cytometry}{%
 \subsubsection{Mass cytometry}\label{mass-cytometry}}
@@ -1136,6 +1358,358 @@ signatures section}). Secondly, in \protect\hyperlink{map}{Heterogeneity
 of immune\ldots{}} we use single call data of Metastatic melanoma
 generated by \citet{Tirosh2016} to demonstrate subpopulations of
 Macrophages and NK cells.
+
+\hypertarget{immunotherapies}{%
+\section{From cancer phenotyping to immune
+therapies}\label{immunotherapies}}
+
+This section outlines different methods of cancer immune phenotyping and
+progress in cancer therapies with a focus on immune therapies. It will
+link the ongoing research on TME with therapeutical potential.
+
+\hypertarget{cancer-immune-phenotypes}{%
+\subsection{Cancer immune phenotypes}\label{cancer-immune-phenotypes}}
+
+Since 20. century physicians decided on common nomenclature that
+classify tumors into distinct groups that are relatively homogenous or
+that share common characteristic important for treatment and prognosis.
+Tumor typing should help to better asses predicting prognosis, to adapt
+a therapy to the clinical situation, to enable therapeutic studies which
+are essential in proving any therapeutic progress.
+
+Most of the classifications are based on clinical data. Most common
+factors taken into account are: the degree of local invasion, the degree
+of remote invasion, histological types of cancer with specific grading
+for each type of cancer, possibly various tumour markers, general status
+of the patient.
+
+However, cancers with similar morphological and histopathological
+features reveal very distinct patterns of progression and response to
+therapy. In the era of gene sequencing, gene and protein expression,
+epigenome can provide a complementary information. Therefore gene
+markers or proteomic abnormalities can integrated into classification
+panel. One popular example is a gene signature \emph{PAM50}
+\citep{Parker2009} used for prediction of patients' prognosis in breast
+cancer, patented as a tumor profiling test.
+
+Since the increase of importance of the immunotherapies, researches
+proposed several ways to classify tumors based on their
+microenvironment. Given different parameters describing TME, cancers can
+be sorted into groups that show similar characteristics. We will discuss
+most common frameworks that allow to phenotype cancers based on the TME.
+
+The localisation of the immune cells can be an indicator of the state
+and response to the therapy \citep{Bindea2013}.
+
+The most standard approach is to convey an analysis of histopathological
+cuts to asses the number of infiltrating lymphocytes (TILs). Two typical
+patterns are usually identified: ``hot'' - immune inflamed and ``cold''
+- no active immune response \citep{Berghoff2018}.
+
+\citet{Chen2017} describes classification into inflamed and non-inflamed
+tumors, where non-inlamed phenotypes: can be further split into the
+immune-desert phenotype and the immune--excluded phenotype (Fig.
+\ref{fig:immune-phenotypes}). The inflamed phenotype is characterised by
+rich presence of immune cells : T cells, myeloid cells, monocytes in
+tumor margin. Along with the immune cels, due to their communication, a
+high expression of cytokines is characteristic for this phenotype.
+According to Chen2017, this is a mark of anti-tumor response that was
+arrested by tumor. The inflamed phenotype has shown to be most
+responsive to immunotherapies. In the immune-excluded phenotype, the
+immune cells are present as well but located in the stroma
+\citep{Herbst2014}, sometimes penetrating inside tumor. However, when
+exposed to check point immuotherapy, T cells does not gain the ability
+to infiltrate the tumor, therefore the treatment is inefficient. The
+immune-desert main features is little or no presence of immune cells,
+especially T cells. Surprisingly, this tumors have been to proven to
+rarely respond to the checkpoint therapy \citep{Herbst2014}. In
+non-inflamed tumours cytokines associated with immune suppression or
+tolerance are expressed.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures-ext/immune-phenotypes} 
+
+}
+
+\caption{\textbf{Cancer-immune phenotypes: the
+immune-desert phenotype (brown), the immune--excluded phenotype (blue)
+and the inflamed phenotype (red).} The immune--desert phenotype is
+characterised by paucity of immune cells and cytokines. In the
+immune-excluded phenotypes the T cells are often present but trapped in
+stroma, enabled to migrate to the tumor site. The immune-inflamed
+phenotype is rich in immune cells and the most responsive to the immune
+check point therapies. Reprinted by permission from Springer Nature
+\citep{Chen2017} © 2017 Macmillian Publishers Limited, part of Springler
+Nature. All rights reserved.}\label{fig:immune-phenotypes}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+The immunogenicity of the tumors can be explained by tumor-intrinsic
+factors and tumor-extrinsic factors \citep{Gajewski2006}.
+Tumor-intrinsic factors are, the neoantigen load and frequency, the
+mutational load, the expression of immunoinhibitors and
+immunostimulators (e.i. PD-L1), and alteration of HLA class I molecules.
+Tumor-extrinsic factors include chemokines regulating T cell
+trafficking, infiltration of effector TILs and immunosuppressive TILs,
+and soluble immunomodulatory factors (cytokines).
+
+A plethora of different computational methods have been developed in
+order to further characterize tumor samples using different factors. We
+mention here mainstream methods that cover different approaches of
+scoring the TME-cancer phenotype.
+
+\hypertarget{immunoscore}{%
+\subsubsection{Immunoscore}\label{immunoscore}}
+
+Image-based tumors classification
+
+\url{http://www.haliodx.com/clinical-research-services/immunoscorer/}
+
+\citet{Galon2012}
+
+\hypertarget{immunophenoscore}{%
+\subsubsection{Immunophenoscore}\label{immunophenoscore}}
+
+Different approaches are based on gene expression patterns. Most
+commonly, machine learning supervised algorithms are trained to match
+known phenotype (established with microscopy or with clinical features)
+to genetic patterns or an unsupervised clustering is used to discover
+new classification.
+
+An example of well-formulated classification framework is
+Immunophenoscore \citep{Charoentong2017}, based on publication of
+\citet{Angelova2015}, where methylome, transcriptome and mutation of
+TCGA CRC dataset (n = 598) was used to describe \emph{immunophenotypes}.
+Later on, it was reduced to gene expression indicator and summarised in
+a form of a score. In This scoring scheme is based on the data of 20
+solid tumors, using expression of marker genes selected by a Machine
+Learning algorithm (random forest) for best prediction in each cancer.
+These indicators can be grouped into four categories:
+
+\begin{itemize}
+\tightlist
+\item
+  MHC molecules (MHC)
+\item
+  Immunomodulators (CP)
+\item
+  Effector cells (EC)
+\item
+  Suppressor cells (SC)
+\end{itemize}
+
+The immunophenscore (IPS) is calculated on a 0-10 scale based on the
+expression of genes in each category. Stimulatory factors (cell types)
+impact the score positively and inhibitory factors (cell types)
+negatively. Z-scores ≥ 3 were designated as IPS10 and z-scores ≤ 0 are
+designated as IPS0. A similar conceptual framework called \emph{cancer
+immunogram} was proposed by \citet{Blank2016} included seven parameters:
+tumor foreignness (Mutational load), general immune status (Lymphocyte
+count), immune cell infiltration (Intratumoral T cells), absence of
+checkpoints (PD-L1), absence of soluble inhibitors (IL--6, CRP), absence
+of inhibitory tumor metabolism (LDH, glucose utilisation), tumor
+sensitivity to immune effectors (MHC expression, IFN-γ sensitivity).
+Nonetheless, the details of \emph{cancer immunogram} use in practice
+remain unclear and result could be sensitive to patients' and data
+heterogeneity as no standardisation was proposed.
+
+\citet{Charoentong2017} claim that the immunophenoscore can predict
+response to CTLA-4 and anti-PD-1.
+
+\hypertarget{immune-maps}{%
+\subsubsection{Immune maps}\label{immune-maps}}
+
+Description on how immune portraits (NAVIcell) can be used to
+characterise tumor immune environment.
+
+\hypertarget{summary-1}{%
+\subsubsection{Summary}\label{summary-1}}
+
+Despite those facts, the gene expression based classifications are not
+yet used in clinics. The measured multi-panel mRNA expression, that can
+be included into category of In Vitro Diagnostic Multivariate Index
+Assay (IVDMIA) \citep{Gyorffy2015, Ross2008}, may be a future of
+TME-based cancer classification, diagnosis and treatment recommendation
+\citep{Gnjatic2017}. For this best tools need to be used to properly
+evaluate the state of TME and tumor-stroma-immune cells communication.
+
+\hypertarget{immune-signatures}{%
+\subsection{Immune signatures - biological
+perspective}\label{immune-signatures}}
+
+\begin{itemize}
+\tightlist
+\item
+  definition of signature: marker genes, list of genes, weighted list,
+  metagenes
+\item
+  the general immune signature of signature of immune infiltration and
+  stroma vs immune signature of a specific cell type of functional
+  subpopulation
+\item
+  purpose of signatures
+\item
+  availability of immune signatures
+\item
+  the problem of not consistency of immune signatures
+\item
+  origin of signatures
+\end{itemize}
+
+\begin{quote}
+``the gene expression profiles of tumour-associated immune cells differ
+considerably from those of blood derived immune cells'''
+\citep{Schelker2017}
+\end{quote}
+
+Immune signatures will be also discussed as a part of deconvolution
+pipeline in the \protect\hyperlink{methods}{Chapter 2} under the section
+about \emph{basis matrix}.
+
+\hypertarget{cancer_Therapies}{%
+\subsection{Cancer therapies}\label{cancer_Therapies}}
+
+Cancer is a complex disease. Up to date, no uniform and fully effective
+treatment was proposed and usually different strategies are tested to
+kill tumor cells. \textbf{Surgery} is one of the oldest methods. The
+cancer is removed from the patient body. There are different ways, more
+or less invasive, that it can be performed. it is usually applied for
+solid tumor contained in a small area. \textbf{Radiation Therapy} uses
+high doses of radiation to eliminate tumor cells and shrink tumor mass.
+It can be applied externally or internally. \textbf{Chemotherapy} uses a
+drug (or a combination of drugs) that kill cancer cells, usually
+altering cell proliferation and growth. The drawback of radiotherapy and
+chemotherapy are strong side effects. \textbf{Hormone therapy } modulate
+hormone levels in the body in order to inhibit tumor growth in breast
+and prostate cancers. In leukemia and lymphoma, can be applied
+\textbf{stem cell transplants} that restore blood-forming stem cells
+destroyed by the very high doses of chemotherapy or radiation therapy
+that are used to treat certain cancers.
+
+Alternatively, \textbf{targeted therapies} represent more focused
+strategy that aims to be more effective and cause less side effects than
+systematic therapies. Two main types of targeted therapies are
+small-molecule drugs and monoclonal antibodies. Targeted therapies
+usually aim to stimulate/inhibit a selected molecular function. A
+special types of targeted therapies are \textbf{Immunotherapies}.
+Through adtivation/inhibition of immune regulatory pathways, it
+stimulates immune system to destroy malignant cells. A continuation of
+targeted therapies is \textbf{precision medecine approach}. It is based
+on genetic information to specify patient's profile and find adapted
+treatment. A number of innovative treatments targeting a specific change
+in tumor ecosystem are being tested presently in precision medicine
+clinical trials \citep{NCI2018}.
+
+\hypertarget{recent-progress-in-immuno-therapies}{%
+\subsection{Recent progress in
+immuno-therapies}\label{recent-progress-in-immuno-therapies}}
+
+The immunotherapies, in contrast with other types of cancers therapies
+discussed in \protect\hyperlink{cancer_Therapies}{the previous chapter},
+aim to trigger or restart the immune system to defend the organism and
+attack the malignant cells. All this, however without provoking
+persisting inflammation state \citep{Predina2013}
+
+The idea of stimulating immune system to fight malignant cell was not
+born recently. Since a long time a possibility of development of an
+anti-cancer vaccine has been investigated. Unfortunately, this idea
+faced two important limitations 1) lack of knowledge of antigens that
+should be used in vaccine to successfully stimulate cytotoxic T cells 2)
+the ability of cancer to block the immune response also called
+\emph{immunostat}. Despite those impediments works on anti-tumor
+vaccines do not cease \citep{Palucka2013}. A very recent promising an
+in-situ ani-tumor vaccine was proposed by Sagiv-Barfi et al.
+\citep{Sagiv-Barfi2018}. The therapy tested in mice, would be based on
+local injections of the combination of ``unmethylated CG-enriched
+oligodeoxynucleotide (Cp-G) - a Toll-like receptor 9 (TLR9) ligand and
+anti-OX40 antibody. Low doses of CpG injected into a tumor induce the
+expression of OX40 on CD4+ T cells in the microenvironment in mouse or
+human tumors. An agonistic anti-OX40 antibody can then trigger a T cell
+immune response, which is specific to the antigens of the injected
+tumor''. Sagiv-Barfi et al.~claim this therapy could be applied to all
+tumor types, as long as they are leucocyte-infiltrated. As a local
+therapy, in situ vaccination should have less side-effects than
+systematic administration. It is now undergoing clinical trials to test
+its efficiency in human patients.
+
+Another idea involving using immune system as a weapon to fight cancer,
+would be the use of genetically modified patient's T-cells, carrying
+\emph{CARs} (chimeric antigen receptors) \citep{Jackson2016}. After a
+long period of small unsuccessful trials, recently in 2017, two CAR
+T-cell therapies were accepted, one to ``treat adults with certain type
+of large B-cell lymphoma'' \citep{FDACARTadult}, other to treat
+``children with acute lymphoblastic leukemia (ALL)'' \citep{FDACARTALL}
+, which are, at the same time, the first two gene therapies accepted by
+FDA.
+
+However, the two most promising immuno-related strategies with proven
+clinical efficiency are based on blocking so called immune check point
+inhibitors: cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell
+death protein 1 (PD-1). The anti-CLTA4 antibodies blocks repressive
+action of CLTA4 on T-cells and they become therefore activated. It was
+shown efficient in melanoma patients and accepted by FDA in 2015 as
+adjuvant therapy for stage III metastatic melanoma patients
+\citep{FDACTLA4}. PD-1 is a cell surface receptor of T cells, that binds
+to PD-L1/PD-L2. After binding, an immunosuppressive pathway is activated
+and T cells activity is dampened. An action of an anti-PD-L1 antibody is
+to prevent this immune exhaustion \citep{Chen2017}. A stepping stone for
+anti-PD-L1 therapies was approval of Tecentriq (atezolizumab) for
+Bladder cancer \citep{FDAPDL1Bladder} and anit-PD1 Keytruda
+(pembrolizumab) initially accepted for NSCLC and further extended to
+head and neck cancer, Hodgkin's lymphoma, gastric cancer and
+microsatellite instability-high cancer \citep{FDAPDL1NSCLC}. Since other
+anti-PD-L1 or anti-PD1 antibodies were accepted or entered advanced
+stages of clinical trials \citep{Wolchok2015}. A short history of
+immunotherapy FDA-accepted treatments can be found in Fig.
+\ref{fig:timeline-immunotherapies}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures-ext/02-timeline-immunotherapies} 
+
+}
+
+\caption{\textbf{This timeline describes
+short history of FDA approval of checkpoint blocking immunotherapies up
+to 2017.} Reprinted by permission from Springer Nature
+\citep{Taube2017a} Macmillan Publishers Limited, part of Springer
+Nature. All Rights Reserved.}\label{fig:timeline-immunotherapies}
+\end{figure}
+
+
+
+
+
+
+
+The main drawback of immunotherapies is a heterogeneity of response
+rate, which can vary i.e.~from 10--40\% in case of PD-L1blocking
+\citep{Zou2016}, suggesting that some patient can have more chances than
+others to respond to an immune therapy. So far, it has been shown that
+anti PD-L1 therapies works more effectively in T cell infiltrated tumors
+with exclusion of Tregs because of lack of difference in expression of
+FOXP3 in responding and non-responding group of patients
+\citep{Herbst2014}. Also some light has been shade by \citet{Rizvi2015}
+who connected mutational rate of cancer cells to the chances of response
+to an immunotherapy.
+
+Despite those fundings, the precise qualifications of patients that
+should be sensitive to an immunotherapy are not defined
+\citep{Pitt2016}. As most patients do not answer to immunotherapies, it
+stimulates researches to look for better biomarkers and patient
+stratifications, and pharmaceutical industries to discover new immune
+checkpoints based therapies.
 
 \hypertarget{biological-dimension-of-the-thesis}{%
 \section{Biological dimension of the
@@ -1804,7 +2378,7 @@ posters and publications list.
 
 \includepdf[pages={1-}, scale=1]{pdf-ext/An-RA2017.pdf}
 
-\bibliography{01-Intro.bib,packages.bib,UCzcite.bib}
+\bibliography{00-Inter.bib,01-Intro.bib,packages.bib,UCzcite.bib}
 
 
 \end{document}

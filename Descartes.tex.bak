@@ -7,5 +7,14 @@
 \usepackage{siunitx}
 \usepackage[font=small,labelfont=bf]{caption}
 
-\usepackage[Lenny]{fncychap}
 %%%%%
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}

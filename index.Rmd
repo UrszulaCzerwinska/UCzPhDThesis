@@ -16,7 +16,7 @@ lof: yes
 lot: yes        
 documentclass: book
 fontsize: 12pt
-bibliography: [01-Intro.bib, packages.bib, UCzcite.bib]
+bibliography: [00-Inter.bib, 01-Intro.bib, packages.bib, UCzcite.bib]
 biblio-style: "plainnat"
 link-citations: true
 colorlinks: true
@@ -44,6 +44,9 @@ linestretch: 1
 # knitr::opts_knit$get("rmarkdown.pandoc.to")
 # ```
 -->
+```{r include=FALSE}
+  library(kableExtra)
+```
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

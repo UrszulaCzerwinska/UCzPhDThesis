@@ -4,31 +4,53 @@ load(file = "./RData/IntroBio.RData")
 
 # Immuno-biology of cancer {#intro} 
 
-This chapter will introduce a basic topic of cancer and participation of stroma in cancer development, progression and response to treatment. It will also describe most important types of data used to study cancer microenvironment.
+This chapter will first introduce a short history of cancer with a focus on discoveries linking cancer and its environment. It will also describe participation of TME in cancer development, progression and response to treatment. It will refer as well most important types of data used to study cancer microenvironment. It will show a link between tumor immune-biology and cancer phenotyping for development of immunotherapies.
 
-## Cancer seen as complex environment
+## Cancer disease
 
 According to [GLOBOCAN study]( http://globocan.iarc.fr/Pages/fact_sheets_cancer.aspx) [@GLOBOCAN], 14.1 million cancer cases was estimated to happen around the world in 2012. It touched 7.4 million men and 6.7 million women. It is estimated that the cancer cases will increase almost two-fold to 24 million by 2035.
 
 In France only, in 2012 there were 194552 cases of cancer, of which leading is Prostate cancer (29,2%) followed by Lung (14,4%) and Colorectal cancers (11,1%). 
 
-For a long time studying tumor was focused on tumor cells, their reprogramming, mutations. Cancer was seen as disease of uncontrolled cells. Recent discoveries moved research focus from tumor cells to tumor cells in their context: tumor microenvironment. We will describe here what is the composition and role of the TME in tumor progression, diagnosis and response to treatment. 
+For a long time studying tumor was focused on tumor cells, their reprogramming, mutations. Cancer was seen as disease of uncontrolled cells by the mainstream research. At the same time, the idea of  importance of the impact of other cells and structures  on cancer cells was present but often not believed.  Recent success of immunotherapies moved research focus to tumor cells in their context: tumor microenvironment. We will describe here what is the composition and role of the TME in tumor progression, diagnosis and response to treatment. 
 
-### Our understanding of cancer over time
+### Historical understanding of cancer {#hist}  
 
 Cancer was historically described by a physician Hippocrates (460–370 B.C) [@Sudhakar2009]. Even though there exist even earlier evidence of the disease. Hippocrates stated that the body contained 4 humors (body fluids) : blood, phlegm, yellow bile and black bile. Any imbalance of these fluids will result in disease. Particularly the excess of black bile in an organ was meant to provoke cancer. For years, it was not known what factors cause cancer and it was easily confounded with other diseases. In the middle ages in the Renaissance Period it was believed cancer is a punishment for the sins they committed against their god, that they deserved it to some extend
 
 Until 18th century it was believed that cancer is contagious and is spread by parasites.
 
-In the 1850s, tumor cells started to be analysed by pathologists. They were strike with their ability to proliferate uncontrollably, ability to spread and destroy the original tissue [@NPR2010]. Around the same time leukocytes from the blood was first described by Gabriel Andra and William Addison. Just a few years later, in 1845 Bennett and Virchow described blood cells in leukaemia. Virchow is also a father of Chronic irritation theory (which we would call chronic inflammation) that says that cancer cells spread resulting in metastasis. 
+In the 19th century, tumor cells started to be analysed by pathologists. They were strike with their ability to proliferate uncontrollably, ability to spread and destroy the original tissue [@NPR2010]. Around the same time leukocytes from the blood was first described by Gabriel Andra and William Addison. Just a few years later, in 1845 Bennett and Virchow described blood cells in leukaemia  (Fig. \@ref(fig:Virchow-cell)). . Virchow is also a father of Chronic irritation theory (which we would call chronic inflammation) that says that cancer is caused by local "irritation" and, incorrectly, that cancer cells spread like liquid resulting in metastasis.
+
+```{r Virchow-cell, fig.cap='(ref:Virchow-cell-caption)', out.width='100%', fig.align='center', echo = FALSE}
+knitr::include_graphics('figures-ext/01-Virchow-cell.jpg')
+```
+
+(ref:Virchow-cell-caption) **Illustration of Virchow's cell theory**. Virchow depicted different cells transformation due to irritation.  [@Virchow1847] 
+
+In 1889, Stephen Paget introduced *soil and seed*  hypothesis of metastases [@Paget1889]. He formulates it as follows 
+
+> *When a plant goes to seed, its seeds are carried in all directions, but they can only live and grow if they fall on congenial soil.*
+
+Which is a parallel to cancer cells disseminated by body fluids, and they can grow only tissues - "soil" that is predisposed to host the cancer cell - "the seed". He focused on the importance of tissue characteristics that favorise tumor development as opposed to most researchers of his time that were focusing on the "seed" itself.
 
 In the 20th century, molecular causes started to be investigated. It was discovered that cancer could be caused by environmental factors, i.e. chemicals (carcinogens), radiation, viruses and also inherited from ancestors. Those factors would damage but contrary to a healthy condition they would not die.
 
- During the 1970s, oncogenes and tumor suppressor genes were discovered. Oncogenes are genes that allow a cell to become cancer cell, while the tumor suppressor genes would repair DNA or execute cell death of a damaged cell.
+Also in 1909, Paul Ehrlich, called one of fathers of immunology and Nobel Prize laureate, indicated a link between immune system and tumor suppression [@Ehrlich1909]. One of remarkable first immontherapy attempts can be attributed to William Coley, that practiced injecting streptococcus bacteria directly into patients after cancer surgery in 1891, later called "Colley vaccine". However, the impact of this procedure on patients recovery was judged by scientific community as "unclear".
 
-Since the end of the 20th century, cancer screens are developed along with multiple strategies to fight tumor. Most classical ones are based on the idea of removing tumor cells (surgery), killing tumor cells with DNA-blocking drugs (chemotherapy), radiation, inhibit cancer growth (hormonal therapy, adjuvant therapy and immunotherapy). As non of those methods is fully efficient, often a combination of treatments is proposed. Nowadays, science is aming in the direction of trageted therapies and personalized treatment. 
+In 1968, Melvin Greenblatt and Philippe Shubik showed that tumour transplants secete a substance stimulating the growth of blood vessels [@Greenblatt1968], later identified as "tumour angiogenic factor (TAF)" by Judah Folkman in 1971 [@Folkman1971]. Folkman also suggested that TAF can target of therapy itself which was a revolutional idea, as it did not target the tumor cells but their environment.
 
-The recent success of immunotherapies (discussed in [Immunotherapies section](#immunotherapies) made realise the scientific community how important is the context in which tumor cells are found. This context called Tumor Microenvironment, as well as the communication that happens within it between different agents, become a popular scientific topics of 21st century (Fig. \@ref(fig:pubmedTME)). 
+During the 1970s, oncogenes and tumor suppressor genes were discovered. Oncogenes are genes that allow a cell to become cancer cell, while the tumor suppressor genes would repair DNA or execute cell death of a damaged cell. A new dimention to cancer studies was added in the 1980s, epigenetic changes was proven to occur to both oncogenes and tumour suppressors [@Feinberg1983; @Greger1989], which are presently known as epigenetic markers used for diagnostics and therapeutic targets for cancer.
+
+In 1982, Aline van Pel and Thierry Boon [@Pel1982] discovered that a specific immunity to spontanious tumor cells could be induced by vaccinating mice with mutagenized tumour cells. This araised an inspiration for many years of immune therapy developement.
+
+In Napoleone Ferrara and colleagues identified gene encoding vascular endothelial growth factor (VEGF) that was shown to stimulate growth of enothelial cells proliferation *in vitro* and angiogenesis (blood vessels formation) *in vivo* [@Leung1989].
+
+In 1999 for the first time, gene-expression was used to study cancer (leukeamia) by Todd Golub, Donna Slonim and colleagues [@Golub1999].
+
+Since the end of the 20th century, cancer screens are developed along with multiple strategies to fight tumor. Most classical ones are based on the idea of removing tumor cells (surgery), killing tumor cells with DNA-blocking drugs (chemotherapy), radiation, inhibit cancer growth (hormonal therapy, adjuvant therapy and immunotherapy). As non of those methods is fully efficient, often a combination of treatments is proposed. Nowadays, science is aming in the direction of trageted therapies and personalized treatment.  
+
+The recent success of immunotherapies (discussed in [Immunotherapies section](#immunotherapies) attracted the attention the scientific community again to the context in which tumor cells are found. This context called Tumor Microenvironment, as well as the communication that happens within it between different agents, nowadays studied differently with available knowledge of molecular biology, become a popular scientific topics of 21st century (Fig. \@ref(fig:pubmedTME)). 
 
 ```{r pubmedTME, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, fig.cap='(ref:pubmedTME-caption)', out.width='70%', fig.align='center'}
 library(ggplot2)
@@ -37,25 +59,49 @@ p <- ggplot(data = tme, aes(x = Year, y = percentage, fill = Type)) +
  theme_bw() + scale_x_continuous(breaks = round(seq(min(tme$Year), max(tme$Year), by = 5), 1)) + labs(y = "Percentage of all publications [%]")
 if (is_html_output()){
   library(plotly)
-  ggplotly(p, tooltip=c("Year","percentage"))
+  ggplotly(p, tooltip=c("x","y"))
 } else {
  p
 }
-
 ```
 
-(ref:pubmedTME-caption) **Percentage of publications containg phrase "tumor immunotherapy" is growing, numbers retreived on 17.01.2018 from [Medline Trends](http://dan.corlan.net/medline-trend.html) [@Corlan2004]**
+(ref:pubmedTME-caption) **Percentage of publications containg phrase "tumor immunotherapy" is growing**, numbers retreived on 17.01.2018 from [Medline Trends](http://dan.corlan.net/medline-trend.html) [@Corlan2004]
 
+### Tumor micro environment as a complex system 
 
-### Tumor micro environment: fiend or foe? 
+> ALL IS CONNECTED
+>   —Dirk Gently, holistic detective
 
 #### What is Tumor Microenvironment (TME)
 
-Tumor Microenvironment is a complex tissue that surrounds tumor cells. It is composed of blood and lymphatics vessels, epithelial cells, mesenchymal stem cells,  fibroblast, adipocytes and a wide variety of immune cells. Their proportion and specific roles vary significantly with tumor type and stage. Communication between the environmental cells and the tumor is critical for tumor development and its impact on patient's response to treatment. 
+Tumor Microenvironment is a complex tissue that surrounds tumor cells. It is composed of different compartments (in solid tumors):
 
-#### TME as a tumor ally
+* Stroma:  blood and lymphatics vessels, epithelial cells, mesenchymal stem cells,  fibroblast, adipocytes supported by extracellular matrix (EM) 
+*  Immune cells: T cells, B cells, NK cells, Dendritic cells,  Macorphages, Monocytes etc. 
 
-In 1863 Rudolf Virchow observed a link between chronic inflammation and tumorigenesis. Accoriding to Virchov theory genetic damage would be the “match that lights the fire” of cancer, and the inflammation or cytokines produced by immune cells should be the “fuel that feeds the flames” [@Balkwill2001]. Therefore lymphocyte infiltration was confirmed by subsequent studies as a hallmark o cancer. The question one may ask is why our immune system does not defend the organism from tumor cells as it does in a range of bacterial and viral infections? It is mainly because of the ability of tumor cells to inhibit immune response through activation of negative regulatory pathways (so called immune checkpoints).
+Their proportion and specific roles vary significantly with tumor type and stage. Communication between the environmental cells and the tumor is critical for tumor development and its impact on patient's response to treatment. These communication between different compartments is bidirectional and all the players  can influence each other. Depending on the nature and prevailing direction of those interactions different destiny is possible for each of the compartments, i.e. immune cells  can be recruited to protect tumor cells or they can kill them directly. Many of the signals can be contradictory, many can suppress each other. Then is it possible to tilt this complex ecosystem into patients' favour? Can we decipher the most important factors of this molecular knot and manipulate it? 
+
+This chapter describes different scenarios of interaction within TME in order to illustrate the complexity of TME and possible targets for cancer therapies.
+
+```{r video1, echo=FALSE, results='asis', eval=is_html_output()}
+cat("We recommend watching this video in order to visualise the TME and cancer thanks to 3D animations
+
+<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/K09xzIQ8zsg\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe> ")
+```
+
+#### Interactions between TME and Tumor
+
+Three scenarios can be considered to describe the relationship between TME and tumor cells:
+
+1. TME stimulates  tumor growth and/or  progression and/or impact negatively the response to treatment
+2. TME has no impact on tumor cells and disease development
+3. TME has a tumor suppressive role and impact positively the response to treatment
+
+As can be seen partly in [Historical understanding of cancer](#hist) these three hypothesis were gaining and loosing popularity in scientific and medical community.
+
+##### TME as a foe: inflammation
+
+In 1863 Rudolf Virchow observed a link between chronic inflammation and tumorigenesis. According to Virchov theory genetic damage would be the “match that lights the fire” of cancer, and the inflammation or cytokines produced by immune cells should be the “fuel that feeds the flames” [@Balkwill2001]. Therefore lymphocyte infiltration was confirmed by subsequent studies as a hallmark o cancer. The question one may ask is why our immune system does not defend the organism from tumor cells as it does in a range of bacterial and viral infections? It is mainly because of the ability of tumor cells to inhibit immune response through activation of negative regulatory pathways (so called immune checkpoints).
 
 Many examples can be cited on how TME facilitates tumor development (Fig. \@ref(fig:met-dis)). For instance, in the early stages of tumorigenesis some macrophage phenotypes support tumor growth and mobility through TGF-beta signaling. Also, it was shown that NK cells and myeloid-derived suppressor cells (MDSCs) have an ability to suppress immune defence i.e. immunosurveillance by dendritic cells (DCs), T cell activation and macrophage polarisation and they promote tumor vascularisation as well. [@Talmadge2013; @Gabrilovich2012] They create so-called niches that facilitates tumor colonization. Tregs and myeloid-derived suppressor cells can negatively impact natural immune defence and by these means allow growth and invasion of tumor cells [@Taube2017a]. Another cell type, a part of ECM, fibroblast, or more precisely Cancer Associated Fibroblasts (CAFs) have proven pro-tumor functions in breast cancer where they enhance metastasis [@Dumont2013]. The blood and lymphatic vessels maintain tumor growth providing necessary nutritive compound to malignant cells. 
 
@@ -72,10 +118,37 @@ if (is_pdf_output()) {
 
 According to [@Hanahan2012] immune and stroma cells participate in almost all of Cancer Hallmarks [@Hanahan2000; @Hanahan2012] : Most of the hallmarks of cancer are enabled and sustained to varying degrees through contributions from repertoires of stromal cell types and distinctive subcell types.
 
+##### TME seen as neutral
 
-#### Two-faced nature of immune cells 
+In front of lack of definitive proof that TME can positively or negatively impact on tumor development, many scientist, for long time, ignored the importance of this factor.  Until the early-mid eighties, the TME research was mostly limited to angiogenesis and immune environment and most areas that are now driving the field were not represented. 
 
- In the 1960s, the immune surveillance theory hypothesized "the ability to identify and destroy nascent tumors as a central asset of the immune system" [@Sebeok1976; @Burnet1970], but it was highly criticized in consequence of no increase in tumor incidence in athymic nude mice [@Stutman1974; @Rygaard1976]. Later it was shown, that this mice model was not adequate [@Cavallo2011]. Over the years, it was shown that the immune surveillance theory was not wrong, but was not completely right neither.
+From early 70. until the end of the 90. the most accepted statement was that genetic alterations in oncogenes and tumor suppressor genes are both necessary and sufficient to initiate tumorigenesis and drive tumor progression. Therefore TME was not seen as an important element of the puzzle. 
+
+The cancer geneticists, at the time had a lot of influence on scientific community diminishing the work of made on TME which were considered as “uninteresting” and definitely not "mainstream".
+
+After 90. with discovery of singling molecules involved in communication of TME like VEGF. Also discoveries made by developmental biology field supported the hypothesis that microenvironment plays an important role in development which was later shown for tumorigenesis. Also success of immune vaccines starting with the tuberculosis vaccine Bacille Calmette-Guérin (BCG) in 1976 and finishing, at the moment with checkpoint inhibitors did not leave the scientific community indifferent. 
+
+##### TME as a friend: immunosurveillance
+
+As mentioned in  [Historical understanding of cancer](#hist) Paget proposed a hypothesis of "seed and soil" where the TME in a certain tissue (the soil) can either stimulate or suppress the metastasis (the seed). William Coley tested a possibility to trigger tumorsuppressive  effect via stimulation of the immune system with bacteria.  In the 1960s, the immune surveillance theory hypothesized "the ability to identify and destroy nascent tumors as a central asset of the immune system" [@Sebeok1976; @Burnet1970], but it was highly criticized in consequence of no increase in tumor incidence in athymic nude mice [@Stutman1974; @Rygaard1976]. Later it was shown, that this mice model was not adequate [@Cavallo2011] . Thus, the hypothesis that TME can have a positive role in tumor prognosis is not new. 
+
+The immunosurveillance through immune-editing can be summarized in three processes:  elimination, equilibrium, and escape  [@Dunn2002]. 
+
+The elimination is direct killing of cancer cells or growth inhibition by immune system. The adoptive T cells and NK are actively involved in tumor killing and stimulate other immune cells. The CD8 + cytotoxic lymphocytes (CTLs)  directly recognize tumor cells.  Employing  perforin- and granzyme-dependent mechanisms they can lyze tumor cells. The CD4 + T cells release  factors to induce proliferation of B cells and to
+promote their differentiation to antibody (Ab)-secreting plasma cells, activate macrophages. Macrophages use phagocytosis to eliminate cancer cells [@Vesely2011].
+
+The tumor-infiltrating lymphocytes (TILs) have been associated with an overall good prognosis and better survival in different cancer studies. Also,  abundance of  CD3 + and CD8 +  T cells, NK cells, and γδT cells correlates  with improved outcomes in epithelial ovarian cancers [@Marquez2012]. Several  studies report that the presence of the abundant  immune infiltrate is correlated with good prognosis or better survival [@Kornstein1983; @Baxevanis1994; @Naito1998; @Pages2005].   Spontaneous regression of human tumors has been reported in cutaneous melanoma, retinoblastoma, osteosarcoma, etc.  [@Aris2012].
+
+The equilibrium is the phase when cancer and immune cells coexist and their crosstalk is preventing metastasis.
+
+T cells are the main actor maintaining the equilibrium. Progressively, the tumor cells become more immunogenic as they are not edited by the immune system (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3170416/). The state of tumor cells is then identified as "dormant" and active scientific reports  investigate the possible molecular pathways that maintain dormancy or lead to  escape (https://www.ncbi.nlm.nih.gov/pubmed/18515327). 
+
+The immune escape is the final process  when tumor cells impair the immune response. 
+
+
+#### Two-faced nature of immune cells: context-dependent functional plasticity 
+
+Modern vision of TME tumor interactions assumes that tumor can be directed to several molecular pathways. This direction is decided by signals that are native of tumor cell and/or coming from the microenvironment. 
 
 Recent studies unveil ambivalent nature of immune cells of TME. While some as cytotoxic T cells, B cells and macrophages can manage to eliminate tumor cells. Treg cells role is to regulate expansion and activation of T and B cells. Depending on cancer type, they can be either pro- or anit- tumor. For example as it has been shown for Tregs, they can be also associated with improved survival (i.e. in colorectal cancer [@Frey2010]. For innate immunity, there are widely accepted M1 (ani-tumor) and M2 (pro-tumor) extreme macrophages phenotypes in TME [@Qian2010]. Most of the statements seem to be context dependent and not valid universally across all cancer types. We already mentioned Macrophages phenotypic plasticity as well as different behaviour of EMC depending on tumor stage.
 
@@ -85,119 +158,29 @@ From more general point of view, it has been observed that immunodeficiency can 
 
 Here will be a definition of what is immune cell type, how different phenotypes are can be associated with subtypes and why researches do it 
 
+> Cette espèce de leucocytes a une grande ressemblance avec certains éléments fixes du tissu conjonctif, ainsi qu'avec des cellules endothéliales et des cellules de la pulpe splénique. On est donc souvent embarrassé, surtout lorsqu'on trouve ces leucocytes mononucléaires en dehors des vaisseaux, pour les distinguer des autres espèces de cellules mentionnées. 
+>
+> ​	— Elie  Metchnikoff, Leçons sur la pathologie comparée de l'inflammation, 1891
+
+Pathological characterisation
+
+FACS molecular charaterisation
+
+
+
 Necessary for the chapter [Heterogeneity of immune cell types](#map)
-
-### Cancer immune phenotypes
-
-Since 20. century physicians decided on common nomenclature that classify tumors into distinct groups that are relatively homogenous or that share common characteristic important for treatment and prognosis. Tumor typing should help to better asses predicting prognosis, to adapt a therapy to the clinical situation, to enable therapeutic studies which are essential in proving any therapeutic progress.
-
-Most of the classifications are based on clinical data. Most common factors taken into account are: the degree of local invasion, the degree of remote invasion, histological types of cancer with specific grading for each type of cancer, possibly various tumour markers, general status of the patient. 
-
-With a progress of molecular biology also gene markers or proteomic abnormalities can be part of classification panel. 
-
-Since the increase of importance of the immunotherapies, researches proposed several ways to classify tumors based on their microenvironment. Given different parameters describing TME, cancers can be sorted into groups that show similar characteristics. We will discuss most common frameworks that allow to phenotype cancers based on the TME.
-
-The localisation of the immune cells can be an indicator of the state and response to the therapy [@Bindea2013].
-
-The most standard approach is to convey an analysis of histopathological cuts to asses the number of infiltrating lymphocytes (TILs). Two typical patterns are usually identified: "hot" - immune inflamed and "cold" - no active immune response [@Berghoff2018].
-
-@Chen2017 describes classification into inflamed and non-inflamed tumors, where non-inlamed phenotypes: can be further split into the immune-desert phenotype and the immune–excluded phenotype (Fig. \@ref(fig:immune-phenotypes)). The inflamed phenotype is characterised by rich presence of immune cells : T cells, myeloid cells, monocytes in tumor margin. Along with the immune cels, due to their communication, a high expression of cytokines is characteristic for this phenotype. According to Chen2017, this is a mark of anti-tumor response that was arrested by tumor. The inflamed phenotype has shown to be most responsive to immunotherapies. In the immune-excluded phenotype, the immune cells are present as well but located in the stroma [@Herbst2014], sometimes penetrating inside tumor. However, when exposed to check point immuotherapy, T cells does not gain the ability to infiltrate the tumor, therefore the treatment is inefficient. The immune-desert main features is little or no presence of immune cells, especially T cells. Surprisingly, this tumors have been to proven to rarely respond to the checkpoint therapy [@Herbst2014]. In non-inflamed tumours cytokines associated with immune suppression or tolerance are expressed.
-
-```{r immune-phenotypes, fig.cap='(ref:immune-phenotypes-caption)', out.width='100%', fig.align='center', echo = FALSE}
-if (is_pdf_output()) {
-  knitr::include_graphics('figures-ext/immune-phenotypes.pdf')
-} else {
-  knitr::include_graphics('figures-ext/immune-phenotypes.png')
-}
-```
-
-(ref:immune-phenotypes-caption) **Cancer-immune phenotypes: the immune-desert phenotype (brown), the immune–excluded phenotype (blue) and the inflamed phenotype (red).** The immune–desert phenotype is characterised by paucity of immune cells and cytokines. In the immune-excluded phenotypes the T cells are often present but trapped in stroma, enabled to migrate to the tumor site. The immune-inflamed phenotype is rich in immune cells and the most responsive to the immune check point therapies. Reprinted by permission from Springer Nature [@Chen2017] © 2017 Macmillian Publishers Limited, part of Springler Nature. All rights reserved. 
-
-The immunogenicity of the tumors can be explained by tumor-intrinsic factors and tumor-extrinsic factors [@Gajewski2006]. Tumor-intrinsic factors are, the neoantigen load and frequency, the mutational load, the expression of immunoinhibitors and immunostimulators (e.i. PD-L1), and alteration of HLA class I molecules. Tumor-extrinsic factors include chemokines regulating T cell trafficking, infiltration of effector TILs and immunosuppressive TILs, and soluble immunomodulatory factors (cytokines). 
-
-A plethora of different computational methods have been developed in order to further characterize tumor samples using different factors. We mention here mainstream methods that cover different approaches of scoring the TME-cancer phenotype. 
-
-#### Immunoscore
-
-Image-based tumors classification
-
-http://www.haliodx.com/clinical-research-services/immunoscorer/
-
-@Galon2012
-
-#### Immunophenoscore
-
-Different approaches are based on gene expression patterns. Most commonly, machine learning supervised algorithms are trained to match known phenotype (established with microscopy or with clinical features) to genetic patterns or an unsupervised clustering is used to discover new classification. 
-
-An example of well-formulated classification framework is Immunophenoscore [@Charoentong2017], based on publication of @Angelova2015, where methylome, transcriptome and mutation of TCGA CRC dataset (n = 598) was used to describe *immunophenotypes*. Later on, it was reduced to gene expression indicator and summarised in a form of a score. In This scoring scheme is based on the data of 20 solid tumors, using expression of marker genes selected by a Machine Learning algorithm (random forest) for best prediction in each cancer. These indicators can be grouped into four categories: 
-
-* MHC molecules (MHC)
-* Immunomodulators (CP)
-* Effector cells (EC)
-* Suppressor cells (SC)
-
-The immunophenscore (IPS) is calculated on a 0-10 scale based on the expression of genes in each category. Stimulatory factors (cell types) impact the score positively and inhibitory factors (cell types) negatively. Z-scores ≥ 3 were designated as IPS10 and z-scores ≤ 0 are designated as IPS0. A similar conceptual framework called *cancer immunogram* was proposed by @Blank2016 included seven parameters: tumor foreignness (Mutational load), general immune status (Lymphocyte count), immune cell infiltration (Intratumoral T cells), absence of checkpoints (PD-L1), absence of soluble inhibitors (IL–6, CRP), absence of inhibitory tumor metabolism (LDH, glucose utilisation), tumor sensitivity to immune effectors (MHC expression, IFN-γ sensitivity). Nonetheless, the details of *cancer immunogram* use in practice remain unclear and result could be sensitive to patients' and data heterogeneity as no standardisation was proposed. 
-
-@Charoentong2017 claim that the immunophenoscore can predict response to CTLA-4 and anti-PD-1.
-
-#### Immune maps
-
-Description on how immune portraits (NAVIcell) can be used to characterise tumor immune environment.
 
 #### Summary
 
-Despite those facts, the gene expression based classifications are not yet used in clinics. The measured multi-panel mRNA expression, that can be included into category of In Vitro Diagnostic Multivariate Index Assay (IVDMIA) [@Gyorffy2015; @Ross2008], may be a future of TME-based cancer classification, diagnosis and treatment recommendation [@Gnjatic2017]. For this best tools need to be used to properly evaluate the state of TME and tumor-stroma-immune cells communication.
+Cancer is a disease concerning milliards of people with a long history. Scientific community recognises role of the environment where the tumor cells find themselves as an important factor influencing tumor development, prognosis and response to treatment.  TME is a complex environment that constantly interacts with tumor cells, where both tumor and TME influence and shape each other. 
 
-### Immune signatures - biological perspective {#immune-signatures} 
+Over the years, many interactions are being discovered and cell types re-defined and described in their context. However, lots of mechanisms and interactions of TME remains unknown due to very heterogeneous nature of this micro environment which leaves room to more extensive investigation by researches.
 
-* definition of signature: marker genes, list of genes, weighted list, metagenes
-* the general immune signature of signature of immune infiltration and stroma vs immune signature of a specific cell type of functional subpopulation
-* purpose of signatures
-* availability of immune signatures
-* the problem of not consistency of immune signatures
-* origin of signatures
+A therapeutic goal is target interactions that would be able to pivot the essential processes in tumorigenesis or tumor escape in order to put the cells "back on track" and facilitate anti-tumor therapies. 
 
-> "the gene expression profiles of tumour-associated immune cells differ considerably from those of blood derived immune cells"' [@Schelker2017]
+These goals can be meet thanks to improvement of investigating techniques and data quality and abundance. We will discuss the most important data types used in this project to investigate the TME.
 
-Immune signatures will be also discussed as a part of deconvolution pipeline in the [Chapter 2](#methods) under the section about *basis matrix*.
-
-## Immunotherapies {#immunotherapies}
-
-This section outlines progress in cancer therapies with a focus on immune therapies. It will link the ongoing research on TME with therapeutical potential. 
-
-### Cancer therapies {#cancer_Therapies}
-
-Cancer is a complex disease. Up to date, no uniform and fully effective treatment was proposed and usually different strategies are tested to kill tumor cells. **Surgery** is one of the oldest methods. The cancer is removed from the patient body. There are different ways, more or less invasive, that it can be performed. it is usually applied for solid tumor contained in a small area. **Radiation Therapy** uses high doses of radiation to eliminate tumor cells and shrink tumor mass. It can be applied externally or internally. **Chemotherapy** uses a drug (or a combination of drugs) that kill cancer cells, usually altering cell proliferation and growth. The drawback of radiotherapy and chemotherapy are strong side effects. **Hormone therapy ** modulate hormone levels in the body in order to inhibit tumor growth in breast and prostate cancers. In leukemia and lymphoma, can be applied **stem cell transplants** that restore blood-forming stem cells destroyed by the very high doses of chemotherapy or radiation therapy that are used to treat certain cancers. 
-
-Alternatively, **targeted therapies** represent more focused strategy that aims to be more effective and cause less side effects than systematic therapies. Two main types of targeted therapies are small-molecule drugs and monoclonal antibodies. Targeted therapies usually aim to stimulate/inhibit a selected molecular function. A special types of targeted therapies are **Immunotherapies**. Through adtivation/inhibition of immune regulatory pathways, it stimulates immune system to destroy malignant cells. A continuation of targeted therapies is **precision medecine approach**. It is based on genetic information to specify patient's profile and find adapted treatment. A number of innovative treatments targeting a specific change in tumor ecosystem are being tested presently in precision medicine clinical trials [@NCI2018].
-
-### Recent progress in immuno-therapies
-
-The immunotherapies, in contrast with other types of cancers therapies discussed in [the previous chapter](#cancer_Therapies), aim to trigger or restart the immune system to defend the organism and attack the malignant cells. All this, however without provoking persisting inflammation state [@Predina2013]
-
-The idea of stimulating immune system to fight malignant cell was not born recently. Since a long time a possibility of development of an anti-cancer vaccine has been investigated. Unfortunately, this idea faced two important limitations 1) lack of knowledge of antigens that should be used in vaccine to successfully stimulate cytotoxic T cells 2) the ability of cancer to block the immune response also called *immunostat*. Despite those impediments works on anti-tumor vaccines do not cease [@Palucka2013]. A very recent promising an in-situ ani-tumor vaccine was proposed by Sagiv-Barfi et al. [@Sagiv-Barfi2018]. The therapy tested in mice, would be based on local injections of the combination of "unmethylated CG-enriched oligodeoxynucleotide (Cp-G) - a Toll-like receptor 9 (TLR9)  ligand and anti-OX40 antibody.  Low doses of CpG injected into a tumor induce the expression of OX40 on CD4+ T cells in the microenvironment in mouse or human tumors. An agonistic anti-OX40 antibody can then trigger a T cell immune response, which is specific to the antigens of the injected tumor". Sagiv-Barfi et al. claim this therapy could be applied to all tumor types, as long as they are leucocyte-infiltrated. As a local therapy, in situ vaccination should have less side-effects than systematic administration. It is now undergoing clinical trials to test its efficiency in human patients.
-
-Another idea involving using immune system as a weapon to fight cancer, would be the use of genetically modified patient's T-cells, carrying *CARs* (chimeric antigen receptors) [@Jackson2016]. After a long period of small unsuccessful trials, recently in 2017, two CAR T-cell therapies were accepted, one to "treat adults with certain type of large B-cell lymphoma" [@FDACARTadult], other to treat "children with acute lymphoblastic leukemia (ALL)" [@FDACARTALL] , which are, at the same time, the first two gene therapies accepted by FDA. 
-
-However, the two most promising immuno-related strategies with proven clinical efficiency are based on blocking so called immune check point inhibitors: cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell death protein 1 (PD-1). The anti-CLTA4 antibodies blocks repressive action of CLTA4 on T-cells and they become therefore activated. It was shown efficient in melanoma patients and accepted by FDA in 2015 as adjuvant therapy for stage III metastatic melanoma patients [@FDACTLA4]. PD-1 is a cell surface receptor of T cells, that binds to PD-L1/PD-L2. After binding, an immunosuppressive pathway is activated and T cells activity is dampened. An action of an anti-PD-L1 antibody is to prevent this immune exhaustion [@Chen2017]. A stepping stone for anti-PD-L1 therapies was approval of Tecentriq (atezolizumab) for Bladder cancer [@FDAPDL1Bladder] and anit-PD1 Keytruda (pembrolizumab) initially accepted for NSCLC and further extended to head and neck cancer, Hodgkin's lymphoma, gastric cancer and microsatellite instability-high cancer [@FDAPDL1NSCLC]. Since other anti-PD-L1 or anti-PD1 antibodies were accepted or entered advanced stages of clinical trials [@Wolchok2015]. A short history of immunotherapy FDA-accepted treatments can be found in Fig. \@ref(fig:timeline-immunotherapies)
-
-```{r timeline-immunotherapies, fig.cap='(ref:timeline-immunotherapies-caption)', out.width='100%', fig.align='center', echo = FALSE}
-if (is_pdf_output()) {
-  knitr::include_graphics('figures-ext/02-timeline-immunotherapies.pdf')
-} else {
-  knitr::include_graphics('figures-ext/02-timeline-immunotherapies.png')
-}
-```
-
-
-(ref:timeline-immunotherapies-caption) **This timeline describes short history of FDA approval of checkpoint blocking immunotherapies up to 2017.** Reprinted by permission from Springer Nature [@Taube2017a] Macmillan Publishers Limited, part of Springer Nature. All Rights Reserved.
-
-The main drawback of immunotherapies is a heterogeneity of response rate, which can vary i.e. from 10–40% in case of PD-L1blocking [@Zou2016], suggesting that some patient can have more chances than others to respond to an immune therapy. So far, it has been shown that anti PD-L1 therapies works more effectively in T cell infiltrated tumors with exclusion of Tregs because of lack of difference in expression of FOXP3 in responding and non-responding group of patients [@Herbst2014]. Also some light has been shade by @Rizvi2015 who connected mutational rate of cancer cells to the chances of response to an immunotherapy. 
-
-Despite those fundings, the precise qualifications of patients that should be sensitive to an immunotherapy are not defined [@Pitt2016]. As most patients do not answer to immunotherapies, it stimulates researches to look for better biomarkers and patient stratifications, and pharmaceutical industries to discover new immune checkpoints based therapies. 
-
-
-## Quantifying immune infiltration (data)
+## Quantifying and qualifying immune infiltration (data)
 
 Nowadays, more and more biological data is produced. However, this proliferation of accessible resources is not proportional to generated insights and wisdom. In this thesis, we wok mostly generate *Knowledge* and *Insights* and we hope to generate some *Wisdom* (Fig. \@ref(fig:information-power)). However, in this part, we will introduce the foundation of our analysis: different data types that will be further discussed in chapters that follow.
 
@@ -214,7 +197,7 @@ We will introduce most relevant data types that are used to study immune infiltr
 
 #### Flow cytometry
 
-Flow cytometry is a laser-based technology. It uses marker genes: cell surface proteins to sort cells in different compartments. Nowadays, it permits quantification of the abundance of up to 17 cell surface proteins using fluorescently labelled antibodies [@Papalexi2017].
+Flow cytometry is a laser-based technology. It uses marker genes: cell surface proteins to sort cells in different compartments. Nowadays, it permits quantification of the abundance of up to 17 cell surface proteins using fluorescently labelled antibodies [@Papalexi2017]. However this techniques is not free from bias, our knowledge about cell markers is limited and several markers may not be relevant in some context. Moreover, the scientific community did not clearly agree on the marker choice even for popular and well studied cell types which introduced additional heterogeneity when independent studies are compared. Also the quality of antibodies may influence the results of the FACs analysis.  Besides those limitations FACs remains quite popular method for analysing cells in complex tissues. It was among first methods that allowed molecular phenotyping of immune cells, a discovery of numerous subsets and thier further functional interpretation.
 
 #### Mass cytometry
 
@@ -284,6 +267,121 @@ One can ask why then developing computational deconvolution of transcriptome if 
 |    FACS    |  0.05$ / cell  |
 |   CyTOF    |    35$/cell    |
 In this work, we are using single cell data in two ways. Firstly, in [Comparative… chapter](#results) we compare immune cell profiles defined by scRNA-seq, blood and blind deconvolution (problem introduced in [Immune signatures section](#immune-signatures)). Secondly, in [Heterogeneity of immune…](#map) we use single call data of Metastatic melanoma generated by @Tirosh2016 to demonstrate subpopulations of Macrophages and NK cells. 
+
+
+## From cancer phenotyping to immune therapies {#immunotherapies}
+
+This section outlines different methods of cancer immune phenotyping and progress in cancer therapies with a focus on immune therapies. It will link the ongoing research on TME with therapeutical potential. 
+
+### Cancer immune phenotypes
+
+Since 20. century physicians decided on common nomenclature that classify tumors into distinct groups that are relatively homogenous or that share common characteristic important for treatment and prognosis. Tumor typing should help to better asses predicting prognosis, to adapt a therapy to the clinical situation, to enable therapeutic studies which are essential in proving any therapeutic progress.
+
+Most of the classifications are based on clinical data. Most common factors taken into account are: the degree of local invasion, the degree of remote invasion, histological types of cancer with specific grading for each type of cancer, possibly various tumour markers, general status of the patient. 
+
+However, cancers with similar morphological and histopathological features reveal very distinct patterns of progression and response to therapy. In the era of gene sequencing, gene and protein expression, epigenome can provide a complementary information. Therefore  gene markers or proteomic abnormalities can integrated into classification panel.  One popular example is a gene signature *PAM50* [@Parker2009] used for prediction of patients' prognosis in breast cancer, patented as a tumor profiling test. 
+
+Since the increase of importance of the immunotherapies, researches proposed several ways to classify tumors based on their microenvironment. Given different parameters describing TME, cancers can be sorted into groups that show similar characteristics. We will discuss most common frameworks that allow to phenotype cancers based on the TME.
+
+The localisation of the immune cells can be an indicator of the state and response to the therapy [@Bindea2013].
+
+The most standard approach is to convey an analysis of histopathological cuts to asses the number of infiltrating lymphocytes (TILs). Two typical patterns are usually identified: "hot" - immune inflamed and "cold" - no active immune response [@Berghoff2018].
+
+@Chen2017 describes classification into inflamed and non-inflamed tumors, where non-inlamed phenotypes: can be further split into the immune-desert phenotype and the immune–excluded phenotype (Fig. \@ref(fig:immune-phenotypes)). The inflamed phenotype is characterised by rich presence of immune cells : T cells, myeloid cells, monocytes in tumor margin. Along with the immune cels, due to their communication, a high expression of cytokines is characteristic for this phenotype. According to Chen2017, this is a mark of anti-tumor response that was arrested by tumor. The inflamed phenotype has shown to be most responsive to immunotherapies. In the immune-excluded phenotype, the immune cells are present as well but located in the stroma [@Herbst2014], sometimes penetrating inside tumor. However, when exposed to check point immuotherapy, T cells does not gain the ability to infiltrate the tumor, therefore the treatment is inefficient. The immune-desert main features is little or no presence of immune cells, especially T cells. Surprisingly, this tumors have been to proven to rarely respond to the checkpoint therapy [@Herbst2014]. In non-inflamed tumours cytokines associated with immune suppression or tolerance are expressed.
+
+```{r immune-phenotypes, fig.cap='(ref:immune-phenotypes-caption)', out.width='100%', fig.align='center', echo = FALSE}
+if (is_pdf_output()) {
+  knitr::include_graphics('figures-ext/immune-phenotypes.pdf')
+} else {
+  knitr::include_graphics('figures-ext/immune-phenotypes.png')
+}
+```
+
+(ref:immune-phenotypes-caption) **Cancer-immune phenotypes: the immune-desert phenotype (brown), the immune–excluded phenotype (blue) and the inflamed phenotype (red).** The immune–desert phenotype is characterised by paucity of immune cells and cytokines. In the immune-excluded phenotypes the T cells are often present but trapped in stroma, enabled to migrate to the tumor site. The immune-inflamed phenotype is rich in immune cells and the most responsive to the immune check point therapies. Reprinted by permission from Springer Nature [@Chen2017] © 2017 Macmillian Publishers Limited, part of Springler Nature. All rights reserved. 
+
+The immunogenicity of the tumors can be explained by tumor-intrinsic factors and tumor-extrinsic factors [@Gajewski2006]. Tumor-intrinsic factors are, the neoantigen load and frequency, the mutational load, the expression of immunoinhibitors and immunostimulators (e.i. PD-L1), and alteration of HLA class I molecules. Tumor-extrinsic factors include chemokines regulating T cell trafficking, infiltration of effector TILs and immunosuppressive TILs, and soluble immunomodulatory factors (cytokines). 
+
+A plethora of different computational methods have been developed in order to further characterize tumor samples using different factors. We mention here mainstream methods that cover different approaches of scoring the TME-cancer phenotype. 
+
+#### Immunoscore
+
+Image-based tumors classification
+
+http://www.haliodx.com/clinical-research-services/immunoscorer/
+
+@Galon2012
+
+#### Immunophenoscore
+
+Different approaches are based on gene expression patterns. Most commonly, machine learning supervised algorithms are trained to match known phenotype (established with microscopy or with clinical features) to genetic patterns or an unsupervised clustering is used to discover new classification. 
+
+An example of well-formulated classification framework is Immunophenoscore [@Charoentong2017], based on publication of @Angelova2015, where methylome, transcriptome and mutation of TCGA CRC dataset (n = 598) was used to describe *immunophenotypes*. Later on, it was reduced to gene expression indicator and summarised in a form of a score. In This scoring scheme is based on the data of 20 solid tumors, using expression of marker genes selected by a Machine Learning algorithm (random forest) for best prediction in each cancer. These indicators can be grouped into four categories: 
+
+* MHC molecules (MHC)
+* Immunomodulators (CP)
+* Effector cells (EC)
+* Suppressor cells (SC)
+
+The immunophenscore (IPS) is calculated on a 0-10 scale based on the expression of genes in each category. Stimulatory factors (cell types) impact the score positively and inhibitory factors (cell types) negatively. Z-scores ≥ 3 were designated as IPS10 and z-scores ≤ 0 are designated as IPS0. A similar conceptual framework called *cancer immunogram* was proposed by @Blank2016 included seven parameters: tumor foreignness (Mutational load), general immune status (Lymphocyte count), immune cell infiltration (Intratumoral T cells), absence of checkpoints (PD-L1), absence of soluble inhibitors (IL–6, CRP), absence of inhibitory tumor metabolism (LDH, glucose utilisation), tumor sensitivity to immune effectors (MHC expression, IFN-γ sensitivity). Nonetheless, the details of *cancer immunogram* use in practice remain unclear and result could be sensitive to patients' and data heterogeneity as no standardisation was proposed. 
+
+@Charoentong2017 claim that the immunophenoscore can predict response to CTLA-4 and anti-PD-1.
+
+#### Immune maps
+
+Description on how immune portraits (NAVIcell) can be used to characterise tumor immune environment.
+
+#### Summary
+
+Despite those facts, the gene expression based classifications are not yet used in clinics. The measured multi-panel mRNA expression, that can be included into category of In Vitro Diagnostic Multivariate Index Assay (IVDMIA) [@Gyorffy2015; @Ross2008], may be a future of TME-based cancer classification, diagnosis and treatment recommendation [@Gnjatic2017]. For this best tools need to be used to properly evaluate the state of TME and tumor-stroma-immune cells communication.
+
+### Immune signatures - biological perspective {#immune-signatures} 
+
+* definition of signature: marker genes, list of genes, weighted list, metagenes
+* the general immune signature of signature of immune infiltration and stroma vs immune signature of a specific cell type of functional subpopulation
+* purpose of signatures
+* availability of immune signatures
+* the problem of not consistency of immune signatures
+* origin of signatures
+
+> "the gene expression profiles of tumour-associated immune cells differ considerably from those of blood derived immune cells"' [@Schelker2017]
+
+Immune signatures will be also discussed as a part of deconvolution pipeline in the [Chapter 2](#methods) under the section about *basis matrix*.
+
+
+
+
+### Cancer therapies {#cancer_Therapies}
+
+Cancer is a complex disease. Up to date, no uniform and fully effective treatment was proposed and usually different strategies are tested to kill tumor cells. **Surgery** is one of the oldest methods. The cancer is removed from the patient body. There are different ways, more or less invasive, that it can be performed. it is usually applied for solid tumor contained in a small area. **Radiation Therapy** uses high doses of radiation to eliminate tumor cells and shrink tumor mass. It can be applied externally or internally. **Chemotherapy** uses a drug (or a combination of drugs) that kill cancer cells, usually altering cell proliferation and growth. The drawback of radiotherapy and chemotherapy are strong side effects. **Hormone therapy ** modulate hormone levels in the body in order to inhibit tumor growth in breast and prostate cancers. In leukemia and lymphoma, can be applied **stem cell transplants** that restore blood-forming stem cells destroyed by the very high doses of chemotherapy or radiation therapy that are used to treat certain cancers. 
+
+Alternatively, **targeted therapies** represent more focused strategy that aims to be more effective and cause less side effects than systematic therapies. Two main types of targeted therapies are small-molecule drugs and monoclonal antibodies. Targeted therapies usually aim to stimulate/inhibit a selected molecular function. A special types of targeted therapies are **Immunotherapies**. Through adtivation/inhibition of immune regulatory pathways, it stimulates immune system to destroy malignant cells. A continuation of targeted therapies is **precision medecine approach**. It is based on genetic information to specify patient's profile and find adapted treatment. A number of innovative treatments targeting a specific change in tumor ecosystem are being tested presently in precision medicine clinical trials [@NCI2018].
+
+### Recent progress in immuno-therapies
+
+The immunotherapies, in contrast with other types of cancers therapies discussed in [the previous chapter](#cancer_Therapies), aim to trigger or restart the immune system to defend the organism and attack the malignant cells. All this, however without provoking persisting inflammation state [@Predina2013]
+
+The idea of stimulating immune system to fight malignant cell was not born recently. Since a long time a possibility of development of an anti-cancer vaccine has been investigated. Unfortunately, this idea faced two important limitations 1) lack of knowledge of antigens that should be used in vaccine to successfully stimulate cytotoxic T cells 2) the ability of cancer to block the immune response also called *immunostat*. Despite those impediments works on anti-tumor vaccines do not cease [@Palucka2013]. A very recent promising an in-situ ani-tumor vaccine was proposed by Sagiv-Barfi et al. [@Sagiv-Barfi2018]. The therapy tested in mice, would be based on local injections of the combination of "unmethylated CG-enriched oligodeoxynucleotide (Cp-G) - a Toll-like receptor 9 (TLR9)  ligand and anti-OX40 antibody.  Low doses of CpG injected into a tumor induce the expression of OX40 on CD4+ T cells in the microenvironment in mouse or human tumors. An agonistic anti-OX40 antibody can then trigger a T cell immune response, which is specific to the antigens of the injected tumor". Sagiv-Barfi et al. claim this therapy could be applied to all tumor types, as long as they are leucocyte-infiltrated. As a local therapy, in situ vaccination should have less side-effects than systematic administration. It is now undergoing clinical trials to test its efficiency in human patients.
+
+Another idea involving using immune system as a weapon to fight cancer, would be the use of genetically modified patient's T-cells, carrying *CARs* (chimeric antigen receptors) [@Jackson2016]. After a long period of small unsuccessful trials, recently in 2017, two CAR T-cell therapies were accepted, one to "treat adults with certain type of large B-cell lymphoma" [@FDACARTadult], other to treat "children with acute lymphoblastic leukemia (ALL)" [@FDACARTALL] , which are, at the same time, the first two gene therapies accepted by FDA. 
+
+However, the two most promising immuno-related strategies with proven clinical efficiency are based on blocking so called immune check point inhibitors: cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell death protein 1 (PD-1). The anti-CLTA4 antibodies blocks repressive action of CLTA4 on T-cells and they become therefore activated. It was shown efficient in melanoma patients and accepted by FDA in 2015 as adjuvant therapy for stage III metastatic melanoma patients [@FDACTLA4]. PD-1 is a cell surface receptor of T cells, that binds to PD-L1/PD-L2. After binding, an immunosuppressive pathway is activated and T cells activity is dampened. An action of an anti-PD-L1 antibody is to prevent this immune exhaustion [@Chen2017]. A stepping stone for anti-PD-L1 therapies was approval of Tecentriq (atezolizumab) for Bladder cancer [@FDAPDL1Bladder] and anit-PD1 Keytruda (pembrolizumab) initially accepted for NSCLC and further extended to head and neck cancer, Hodgkin's lymphoma, gastric cancer and microsatellite instability-high cancer [@FDAPDL1NSCLC]. Since other anti-PD-L1 or anti-PD1 antibodies were accepted or entered advanced stages of clinical trials [@Wolchok2015]. A short history of immunotherapy FDA-accepted treatments can be found in Fig. \@ref(fig:timeline-immunotherapies)
+
+```{r timeline-immunotherapies, fig.cap='(ref:timeline-immunotherapies-caption)', out.width='100%', fig.align='center', echo = FALSE}
+if (is_pdf_output()) {
+  knitr::include_graphics('figures-ext/02-timeline-immunotherapies.pdf')
+} else {
+  knitr::include_graphics('figures-ext/02-timeline-immunotherapies.png')
+}
+```
+
+
+(ref:timeline-immunotherapies-caption) **This timeline describes short history of FDA approval of checkpoint blocking immunotherapies up to 2017.** Reprinted by permission from Springer Nature [@Taube2017a] Macmillan Publishers Limited, part of Springer Nature. All Rights Reserved.
+
+The main drawback of immunotherapies is a heterogeneity of response rate, which can vary i.e. from 10–40% in case of PD-L1blocking [@Zou2016], suggesting that some patient can have more chances than others to respond to an immune therapy. So far, it has been shown that anti PD-L1 therapies works more effectively in T cell infiltrated tumors with exclusion of Tregs because of lack of difference in expression of FOXP3 in responding and non-responding group of patients [@Herbst2014]. Also some light has been shade by @Rizvi2015 who connected mutational rate of cancer cells to the chances of response to an immunotherapy. 
+
+Despite those fundings, the precise qualifications of patients that should be sensitive to an immunotherapy are not defined [@Pitt2016]. As most patients do not answer to immunotherapies, it stimulates researches to look for better biomarkers and patient stratifications, and pharmaceutical industries to discover new immune checkpoints based therapies. 
+
+
 
 ## Biological dimension of the thesis
 
