@@ -1,4 +1,4 @@
-# Deconvolution of transcriptomes and methylomes
+# Deconvolution of transcriptomes and methylomes {#deconica}
 
 We describe our methods in this chapter.  The pre-eliminary pipeline and simple results are described in the manuscript submitted to  Springer-Verlag’s Lecture Notes in Computer Science ([LNCS](http://www.springer.com/gb/computer-science/lncs)) entitled **Application of Independent Component Analysis to Tumor Transcriptomes Reveals Specific And Reproducible Immune-related Signals** that is placed at the end of this chapter. In the final thesis final pipeline will be split into following structure
 

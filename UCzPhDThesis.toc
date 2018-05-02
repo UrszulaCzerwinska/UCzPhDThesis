@@ -3,65 +3,65 @@
 \contentsline {section}{Strengths, Weaknesses Opportunities, Threats (SWOT) of an interdisciplinary PhD - personal perspective}{20}{section*.10}
 \contentsline {section}{General context of the thesis}{20}{section*.12}
 \contentsline {section}{Organisation of the dissertation}{22}{section*.13}
-\contentsline {chapter}{\numberline {1}Immuno-biology of cancer}{23}{chapter.1}
-\contentsline {section}{\numberline {1.1}Cancer disease}{23}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Historical understanding of cancer}{24}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Tumor micro environment as a complex system}{26}{subsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.2.1}What is Tumor Microenvironment (TME)}{27}{subsubsection.1.1.2.1}
-\contentsline {subsubsection}{\numberline {1.1.2.2}Interactions between TME and Tumor}{28}{subsubsection.1.1.2.2}
-\contentsline {paragraph}{\numberline {1.1.2.2.1}TME as a foe: inflammation}{28}{paragraph.1.1.2.2.1}
-\contentsline {paragraph}{\numberline {1.1.2.2.2}TME seen as neutral}{30}{paragraph.1.1.2.2.2}
-\contentsline {paragraph}{\numberline {1.1.2.2.3}TME as a friend: immunosurveillance}{30}{paragraph.1.1.2.2.3}
-\contentsline {subsubsection}{\numberline {1.1.2.3}Two-faced nature of immune cells: context-dependent functional plasticity}{31}{subsubsection.1.1.2.3}
-\contentsline {subsubsection}{\numberline {1.1.2.4}Immune cell (sub)types in TME}{32}{subsubsection.1.1.2.4}
-\contentsline {subsubsection}{\numberline {1.1.2.5}Summary}{32}{subsubsection.1.1.2.5}
-\contentsline {section}{\numberline {1.2}Quantifying and qualifying immune infiltration (data)}{33}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Cell sorting}{33}{subsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.1.1}Flow cytometry}{33}{subsubsection.1.2.1.1}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Mass cytometry}{34}{subsubsection.1.2.1.2}
-\contentsline {subsection}{\numberline {1.2.2}Microscope Staining}{34}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}omics}{34}{subsection.1.2.3}
-\contentsline {subsubsection}{\numberline {1.2.3.1}Transcriptome}{35}{subsubsection.1.2.3.1}
-\contentsline {subsubsection}{\numberline {1.2.3.2}Epigenome}{35}{subsubsection.1.2.3.2}
-\contentsline {subsubsection}{\numberline {1.2.3.3}Single cell RNA-seq}{37}{subsubsection.1.2.3.3}
-\contentsline {section}{\numberline {1.3}From cancer phenotyping to immune therapies}{38}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Cancer immune phenotypes}{38}{subsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.1.1}Immunoscore}{39}{subsubsection.1.3.1.1}
-\contentsline {subsubsection}{\numberline {1.3.1.2}Immunophenoscore}{41}{subsubsection.1.3.1.2}
-\contentsline {subsubsection}{\numberline {1.3.1.3}Immune maps}{42}{subsubsection.1.3.1.3}
-\contentsline {subsubsection}{\numberline {1.3.1.4}Summary}{42}{subsubsection.1.3.1.4}
-\contentsline {subsection}{\numberline {1.3.2}Immune signatures - biological perspective}{42}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Cancer therapies}{42}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Recent progress in immuno-therapies}{43}{subsection.1.3.4}
-\contentsline {section}{\numberline {1.4}Biological dimension of the thesis}{44}{section.1.4}
-\contentsline {chapter}{\numberline {2}Mathematical foundation of cell-type deconvolution of biological data}{47}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction to supervised and unsupervised learning}{47}{section.2.1}
-\contentsline {section}{\numberline {2.2}Blind source separation}{47}{section.2.2}
-\contentsline {section}{\numberline {2.3}Finding optimal number of components and over-decomposition of transcriptopmes}{49}{section.2.3}
-\contentsline {section}{\numberline {2.4}Cell-type deconvolution models}{63}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}basis matrix}{63}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}regression algorithm}{63}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Others}{63}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Short review of most popular cell-type deconvolution tools}{63}{section.2.5}
-\contentsline {section}{\numberline {2.6}Methodological dimension of the thesis}{63}{section.2.6}
-\contentsline {chapter}{\numberline {3}Study of sensitivity and reproducibility of known methods}{65}{chapter.3}
-\contentsline {section}{\numberline {3.1}Reproducibility of NMF versus ICA (vs CAM?)}{65}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Comparing metagenes obtained with NMF vs ICA.}{65}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Impact of modification of signatures list on result for signature-based deconvolution methods}{68}{section.3.2}
-\contentsline {chapter}{\numberline {4}Deconvolution of transcriptomes and methylomes}{69}{chapter.4}
-\contentsline {section}{\numberline {4.1}From blind deconvolution to cell-type quantification: general overview}{69}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}The ICA-based deconvolution of Transcriptomes}{69}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Interpretation of Independent components}{70}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}Correlation based identification of confounding factors}{70}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}Identification of immune cell types with enrichment test / other}{70}{subsubsection.4.1.2.2}
-\contentsline {subsection}{\numberline {4.1.3}Transforming metagenes into signature matrix}{70}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Regression-based estimation of cell-type proportions : solving system of equations}{70}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}\emph {DeconICA} R package for ICA-based deconvolution}{70}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}\emph {Demo}}{70}{subsection.4.2.1}
-\contentsline {chapter}{\numberline {5}Comparative analysis of cancer immune infiltration}{87}{chapter.5}
-\contentsline {chapter}{\numberline {6}Heterogeneity of immune cell types}{89}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusions and perspectives}{95}{chapter.7}
-\contentsline {chapter}{Annexes}{97}{chapter*.24}
-\contentsline {section}{PhD timeline for defence before the end of October 2018}{97}{section*.25}
-\contentsline {section}{Thesis writing}{97}{section*.27}
-\contentsline {section}{Activity Report 2017}{99}{section*.28}
+\contentsline {chapter}{\numberline {1}Immuno-biology of cancer}{25}{chapter.1}
+\contentsline {section}{\numberline {1.1}Cancer disease}{25}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Historical understanding of cancer}{26}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Tumor micro environment as a complex system}{28}{subsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.2.1}What is Tumor Microenvironment (TME)}{29}{subsubsection.1.1.2.1}
+\contentsline {subsubsection}{\numberline {1.1.2.2}Interactions between TME and Tumor}{30}{subsubsection.1.1.2.2}
+\contentsline {paragraph}{\numberline {1.1.2.2.1}TME as a foe: inflammation}{30}{paragraph.1.1.2.2.1}
+\contentsline {paragraph}{\numberline {1.1.2.2.2}TME seen as neutral}{32}{paragraph.1.1.2.2.2}
+\contentsline {paragraph}{\numberline {1.1.2.2.3}TME as a friend: immunosurveillance}{32}{paragraph.1.1.2.2.3}
+\contentsline {subsubsection}{\numberline {1.1.2.3}Two-faced nature of immune cells: context-dependent functional plasticity}{33}{subsubsection.1.1.2.3}
+\contentsline {subsubsection}{\numberline {1.1.2.4}Immune cell (sub)types in TME}{34}{subsubsection.1.1.2.4}
+\contentsline {subsubsection}{\numberline {1.1.2.5}Summary}{34}{subsubsection.1.1.2.5}
+\contentsline {section}{\numberline {1.2}Quantifying and qualifying immune infiltration (data)}{35}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Cell sorting}{35}{subsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Flow cytometry}{35}{subsubsection.1.2.1.1}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Mass cytometry}{36}{subsubsection.1.2.1.2}
+\contentsline {subsection}{\numberline {1.2.2}Microscope Staining}{36}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}omics}{36}{subsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.3.1}Transcriptome}{37}{subsubsection.1.2.3.1}
+\contentsline {subsubsection}{\numberline {1.2.3.2}Epigenome}{37}{subsubsection.1.2.3.2}
+\contentsline {subsubsection}{\numberline {1.2.3.3}Single cell RNA-seq}{39}{subsubsection.1.2.3.3}
+\contentsline {section}{\numberline {1.3}From cancer phenotyping to immune therapies}{40}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Cancer immune phenotypes}{40}{subsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.1.1}Immunoscore}{41}{subsubsection.1.3.1.1}
+\contentsline {subsubsection}{\numberline {1.3.1.2}Immunophenoscore}{43}{subsubsection.1.3.1.2}
+\contentsline {subsubsection}{\numberline {1.3.1.3}Immune maps}{44}{subsubsection.1.3.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1.4}Summary}{44}{subsubsection.1.3.1.4}
+\contentsline {subsection}{\numberline {1.3.2}Immune signatures - biological perspective}{44}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Cancer therapies}{44}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Recent progress in immuno-therapies}{45}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.4}Biological dimension of the thesis}{46}{section.1.4}
+\contentsline {chapter}{\numberline {2}Mathematical foundation of cell-type deconvolution of biological data}{49}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction to supervised and unsupervised learning}{49}{section.2.1}
+\contentsline {section}{\numberline {2.2}Blind source separation}{49}{section.2.2}
+\contentsline {section}{\numberline {2.3}Finding optimal number of components and over-decomposition of transcriptopmes}{51}{section.2.3}
+\contentsline {section}{\numberline {2.4}Cell-type deconvolution models}{65}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}basis matrix}{65}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}regression algorithm}{65}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Others}{65}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Short review of most popular cell-type deconvolution tools}{65}{section.2.5}
+\contentsline {section}{\numberline {2.6}Methodological dimension of the thesis}{65}{section.2.6}
+\contentsline {chapter}{\numberline {3}Study of sensitivity and reproducibility of known methods}{67}{chapter.3}
+\contentsline {section}{\numberline {3.1}Reproducibility of NMF versus ICA (vs CAM?)}{67}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Comparing metagenes obtained with NMF vs ICA.}{67}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Impact of modification of signatures list on result for signature-based deconvolution methods}{70}{section.3.2}
+\contentsline {chapter}{\numberline {4}Deconvolution of transcriptomes and methylomes}{71}{chapter.4}
+\contentsline {section}{\numberline {4.1}From blind deconvolution to cell-type quantification: general overview}{71}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}The ICA-based deconvolution of Transcriptomes}{71}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Interpretation of Independent components}{72}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Correlation based identification of confounding factors}{72}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Identification of immune cell types with enrichment test / other}{72}{subsubsection.4.1.2.2}
+\contentsline {subsection}{\numberline {4.1.3}Transforming metagenes into signature matrix}{72}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Regression-based estimation of cell-type proportions : solving system of equations}{72}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}\emph {DeconICA} R package for ICA-based deconvolution}{72}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}\emph {Demo}}{72}{subsection.4.2.1}
+\contentsline {chapter}{\numberline {5}Comparative analysis of cancer immune infiltration}{89}{chapter.5}
+\contentsline {chapter}{\numberline {6}Heterogeneity of immune cell types}{91}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusions and perspectives}{97}{chapter.7}
+\contentsline {chapter}{Annexes}{99}{chapter*.24}
+\contentsline {section}{PhD timeline for defence before the end of October 2018}{99}{section*.25}
+\contentsline {section}{Thesis writing}{99}{section*.27}
+\contentsline {section}{Activity Report 2017}{101}{section*.28}

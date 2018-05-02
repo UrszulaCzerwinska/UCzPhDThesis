@@ -338,9 +338,9 @@ Interdisciplinary Research in Paris (CRI) in École doctorale
 as follows:
 
 \begin{quote}
-*to empower the students to take initiative and develop their own
-research projects **at the crossroads of life, learning, and digital
-sciences.* \citep{CRIweb}
+\emph{to empower the students to take initiative and develop their own
+research projects \textbf{at the crossroads of life, learning, and
+digital sciences}.} \citep{CRIweb}
 \end{quote}
 
 Interdisciplinarity has many definitions and meanings. According to the
@@ -445,7 +445,9 @@ new disciplines that recently emerged as biophysics and bioinformatics
 are fuit of the interdisciplinary approach.
 
 However, crossing frontiers is not an easy task. Examples of early
-interdisciplinary efforts are nicely described by (\citet{Ledford2015}).
+interdisciplinary efforts are nicely described by Ledford et al.
+\citep{Ledford2015} in \emph{Nature} special issue on
+\href{https://www.nature.com/news/interdisciplinarity-1.18295}{Interdisciplinarity}.
 For example, Theodore Brown in 1980s, while trying to organise a big
 interdisciplinary effort and reorganise university space to engage
 exchange between students of different faculties, he encounter a lot of
@@ -468,9 +470,10 @@ Even though, since then the idea of interdisciplinary research spread
 around the world. Still, not all problem got overcome.
 
 \begin{quote}
-*There's a huge push to call your work interdisciplinary,'' says David
-Wood, a bioengineer at the University of Minnesota in Minneapolis. ``But
-there's still resistance to doing actual interdisciplinary science.*
+\emph{``There's a huge push to call your work interdisciplinary,'' says
+David Wood, a bioengineer at the University of Minnesota in Minneapolis.
+``But there's still resistance to doing actual interdisciplinary
+science''.}
 \end{quote}
 
 First, the institutions, universities where research is performed should
@@ -482,12 +485,12 @@ is extremely challenging as it often requires extra effort from an
 apprentice.
 
 How interdisciplinariy changed then over years? Are all disciplines
-affected equally? From the chart \ref{fig:interdisciplinary}) we can see
-that Social Studies of Medecine seems to be the most interdisciplinary
-field. In general Biology, Health and Biomedical Sciences seem to be
-more open into flow of knowledge from other fields than humanities. On
-the extreme opposite of health, Clinical Medecine appears to be very
-conservative field.
+affected equally? From the chart (Fig:\ref{fig:interdisciplinary}) we
+can see that Social Studies of Medecine seems to be the most
+interdisciplinary field. In general Biology, Health and Biomedical
+Sciences seem to be more open into flow of knowledge from other fields
+than humanities. On the extreme opposite of health, Clinical Medecine
+appears to be very conservative field.
 
 \begin{figure}
 
@@ -594,7 +597,14 @@ thesis}\label{general-context-of-the-thesis}}
 
 \begin{quote}
 \emph{The universe will lead me where I need to go. I am like a leaf in
-the stream of creation} ​ --- Dirk Gently, Holistic detective
+the stream of creation} --- Dirk Gently, Holistic detective
+\end{quote}
+
+\begin{quote}
+\emph{I'm not good enough to do well something I dislike. In fact, I
+find it hard enough to do well something that I like}
+
+​ --- Jim Watson, Succeeding In Science: Some Rules Of Thumb
 \end{quote}
 
 When finishing my master I was looking for an interdisciplinary subject
@@ -621,17 +631,88 @@ finally publishing a tool that performs the analysis I developed
 together with the Sysbio team members, and I can apply it to a body of
 publicly available data sets to learn about actual problem: the immune
 system infiltrating cancers and the interactions occurring in the
-environment.
+environment (see \protect\hyperlink{deconica}{Chapters 4 \& 5}).
 
-In parallel, I worked on exploration of brand new data type: single cell
-transcriptomic (RNAseq) in the context of tumor microenvironment.
+In a parallel project, I worked on exploration of brand new data type:
+single cell transcriptomic (RNAseq) in the context of tumor
+microenvironment (see \protect\hyperlink{map}{Chapter 6}).
+
+Alongside with pursuing the compelling scientific research, I completed
+a wide variety of courses. Thanks to this extensive (\textgreater{}300
+hours of training over 3 years), I am equipped with soft skills that not
+only helped me to shape my thesis project on the go but also, I hope,
+will help me to succeed in my future career path.
 
 \hypertarget{organisation-of-the-dissertation}{%
 \section*{Organisation of the
 dissertation}\label{organisation-of-the-dissertation}}
 \addcontentsline{toc}{section}{Organisation of the dissertation}
 
-The introS, the results, the discussion
+As it is a fruit of an interdisciplinary work, I decided to introduce
+the topic from two perspectives: describe the biological and biomedical
+dimension of the topic (see \protect\hyperlink{intro}{Chapter 1}), as
+well as, the mathematical dimension of the problem of separation of
+sources in complex mixtures (see \protect\hyperlink{methods}{Chapter
+2}). I hope, it will make the subject of my thesis abordable for both
+non-biologists and non-mathematicians. In the results part, I compare
+reproducibility of different BSS methods (see
+\protect\hyperlink{sens}{Chapter 3}) , then I will introduce the
+DeconICA R package (see \protect\hyperlink{deconica}{Chapter 4} ) and
+finally present results of application of DeconICA and other tools to
+\textgreater{}100 transcriptomic datasets (see
+\protect\hyperlink{results}{Chapter 5}). A second part of results is
+dedicated to my work on cell type heterogeneity (see
+\protect\hyperlink{map}{Chapter 6}). The manuscript finishes with
+\protect\hyperlink{conclusions}{Chapter 7} that contains discussion,
+conclussions and perspectives. In annexes you can find publications to
+which I contributed during my doctorate that are not strictly linked
+with the topic of this thesis.
+
+\textbf{INTRODUCTION}
+
+\begin{itemize}
+\item
+  \protect\hyperlink{intro}{Chapter 1}: introduction to cancer biology
+  and immunity, challenges in cancer immunotherapies and cancer immune
+  phenotyping as well as data sources most commonly used to face the
+  topic.
+\item
+  \protect\hyperlink{methods}{Chapter 2}: introduction to a problem of
+  mixed sources in biological samples, overview of blind source
+  separation methods and supervised deconvolution methods, with focus on
+  those applied to bulk transcriptome to uncover and quantify immune
+  compartments
+\end{itemize}
+
+\textbf{RESULTS}
+
+\begin{itemize}
+\item
+  \protect\hyperlink{sens}{Chapter 3}: comparison of reproducibility of
+  BSS methods and possible biases of supervised methods
+\item
+  \protect\hyperlink{deconica}{Chapter 4}: presentation of DeconICA R
+  package
+\item
+  \protect\hyperlink{results}{Chapter 5}: application of DeconICA R
+  package and other tools to analyse \textgreater{}100 transcriptome
+  datasets of bulk cancer transcriptomes
+\item
+  \protect\hyperlink{map}{Chapter 6}: study of immune cell types
+  heterogeneity in tumor microenvironment using innate immune map and
+  scRNAseq data
+\end{itemize}
+
+\textbf{CONCLUSION}
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{conclusions}{Chapter 7}: discussion, conclussions
+  and perspectives
+\end{itemize}
+
+\textbf{ANNEXES}
 
 \hypertarget{intro}{%
 \chapter{Immuno-biology of cancer}\label{intro}}
@@ -703,7 +784,7 @@ cancer cells spread like liquid resulting in metastasis.
 
 \caption{\textbf{Illustration of Virchow's cell
 theory}. Virchow depicted different cells transformation due to
-irritation. \citep{Virchow1847}}\label{fig:Virchov-cell}
+irritation. \citep{Virchow1847}}\label{fig:Virchow-cell}
 \end{figure}
 
 
@@ -714,8 +795,9 @@ In 1889, Stephen Paget introduced \emph{soil and seed} hypothesis of
 metastases \citep{Paget1889}. He formulates it as follows
 
 \begin{quote}
-When a plant goes to seed, its seeds are carried in all directions, but
-they can only live and grow if they fall on congenial soil."
+\emph{When a plant goes to seed, its seeds are carried in all
+directions, but they can only live and grow if they fall on congenial
+soil.}
 \end{quote}
 
 Which is a parallel to cancer cells disseminated by body fluids, and
@@ -1868,9 +1950,9 @@ thesis}\label{methodological-dimension-of-the-thesis}}
   discuss limitations of computational approaches in biology
 \end{itemize}
 
-\hypertarget{study-of-sensitivity-and-reproducibility-of-known-methods}{%
+\hypertarget{sens}{%
 \chapter{Study of sensitivity and reproducibility of known
-methods}\label{study-of-sensitivity-and-reproducibility-of-known-methods}}
+methods}\label{sens}}
 
 \hypertarget{reproducibility-of-nmf-versus-ica-vs-cam}{%
 \section{Reproducibility of NMF versus ICA (vs
@@ -2029,9 +2111,9 @@ Carry on a ``sensitivity study'':
   evaluate how it changes results
 \end{itemize}
 
-\hypertarget{deconvolution-of-transcriptomes-and-methylomes}{%
+\hypertarget{deconica}{%
 \chapter{Deconvolution of transcriptomes and
-methylomes}\label{deconvolution-of-transcriptomes-and-methylomes}}
+methylomes}\label{deconica}}
 
 We describe our methods in this chapter. The pre-eliminary pipeline and
 simple results are described in the manuscript submitted to

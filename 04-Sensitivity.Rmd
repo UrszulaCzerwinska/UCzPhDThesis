@@ -1,4 +1,4 @@
-# Study of sensitivity and reproducibility of known methods 
+# Study of sensitivity and reproducibility of known methods {#sens} 
 
 ## Reproducibility of NMF versus ICA (vs CAM?)
 
