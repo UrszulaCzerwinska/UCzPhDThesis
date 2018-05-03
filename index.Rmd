@@ -23,7 +23,6 @@ colorlinks: true
 geometry: "marginpar=2cm, top=3cm, bottom=4cm"
 description: "PhDThesis"
 linestretch: 1
-
 ---
 
 <!-- # Prerequisites -->

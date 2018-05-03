@@ -4,7 +4,7 @@ load(file = "./RData/IntroBio.RData")
 
 # Immuno-biology of cancer {#intro} 
 
-This chapter will first introduce a short history of cancer with a focus on discoveries linking cancer and its environment. It will also describe participation of TME in cancer development, progression and response to treatment. It will refer as well most important types of data used to study cancer microenvironment. It will show a link between tumor immune-biology and cancer phenotyping for development of immunotherapies.
+This chapter will first introduce a short history of cancer with a focus on discoveries linking cancer and its environment. It will also describe participation of TME in cancer development, progression and response to treatment. Most important types of data used to study cancer microenvironment will be discussed. A link between tumor immune-biology and cancer phenotyping for development of immunotherapies will be introduced as well.
 
 ## Cancer disease
 
@@ -20,7 +20,7 @@ Cancer was historically described by a physician Hippocrates (460–370 B.C) [@S
 
 Until 18th century it was believed that cancer is contagious and is spread by parasites.
 
-In the 19th century, tumor cells started to be analysed by pathologists. They were strike with their ability to proliferate uncontrollably, ability to spread and destroy the original tissue [@NPR2010]. Around the same time leukocytes from the blood was first described by Gabriel Andra and William Addison. Just a few years later, in 1845 Bennett and Virchow described blood cells in leukaemia  (Fig. \@ref(fig:Virchow-cell)). . Virchow is also a father of Chronic irritation theory (which we would call chronic inflammation) that says that cancer is caused by local "irritation" and, incorrectly, that cancer cells spread like liquid resulting in metastasis.
+In the 19th century, tumor cells started to be analysed by pathologists. They were strike with their ability to proliferate uncontrollably, ability to spread and destroy the original tissue [@NPR2010]. Around the same time leukocytes from the blood was first described by Gabriel Andra and William Addison. Just a few years later, in 1845 Bennett and Virchow described blood cells in leukaemia  (Fig. \@ref(fig:Virchow-cell)). Virchow is also a father of Chronic irritation theory (which we would call chronic inflammation) that says that cancer is caused by local "irritation" and, incorrectly, that cancer cells spread like liquid resulting in metastasis.
 
 ```{r Virchow-cell, fig.cap='(ref:Virchow-cell-caption)', out.width='100%', fig.align='center', echo = FALSE}
 knitr::include_graphics('figures-ext/01-Virchow-cell.jpg')
@@ -40,9 +40,9 @@ Also in 1909, Paul Ehrlich, called one of fathers of immunology and Nobel Prize 
 
 In 1968, Melvin Greenblatt and Philippe Shubik showed that tumour transplants secete a substance stimulating the growth of blood vessels [@Greenblatt1968], later identified as "tumour angiogenic factor (TAF)" by Judah Folkman in 1971 [@Folkman1971]. Folkman also suggested that TAF can target of therapy itself which was a revolutional idea, as it did not target the tumor cells but their environment.
 
-During the 1970s, oncogenes and tumor suppressor genes were discovered. Oncogenes are genes that allow a cell to become cancer cell, while the tumor suppressor genes would repair DNA or execute cell death of a damaged cell. A new dimention to cancer studies was added in the 1980s, epigenetic changes was proven to occur to both oncogenes and tumour suppressors [@Feinberg1983; @Greger1989], which are presently known as epigenetic markers used for diagnostics and therapeutic targets for cancer.
+During the 1970s, oncogenes and tumor suppressor genes were discovered. Oncogenes are genes that allow a cell to become cancer cell, while the tumor suppressor genes would repair DNA or execute cell death of a damaged cell. A new dimension to cancer studies was added in the 1980s, epigenetic changes was proven to occur to both oncogenes and tumour suppressors [@Feinberg1983; @Greger1989], which are presently known as epigenetic markers used for diagnostics and therapeutic targets for cancer.
 
-In 1982, Aline van Pel and Thierry Boon [@Pel1982] discovered that a specific immunity to spontanious tumor cells could be induced by vaccinating mice with mutagenized tumour cells. This araised an inspiration for many years of immune therapy developement.
+In 1982, Aline van Pel and Thierry Boon [@VanPel1982] discovered that a specific immunity to spontanious tumor cells could be induced by vaccinating mice with mutagenized tumour cells. This araised an inspiration for many years of immune therapy developement.
 
 In Napoleone Ferrara and colleagues identified gene encoding vascular endothelial growth factor (VEGF) that was shown to stimulate growth of enothelial cells proliferation *in vitro* and angiogenesis (blood vessels formation) *in vivo* [@Leung1989].
 
@@ -50,7 +50,7 @@ In 1999 for the first time, gene-expression was used to study cancer (leukeamia)
 
 Since the end of the 20th century, cancer screens are developed along with multiple strategies to fight tumor. Most classical ones are based on the idea of removing tumor cells (surgery), killing tumor cells with DNA-blocking drugs (chemotherapy), radiation, inhibit cancer growth (hormonal therapy, adjuvant therapy and immunotherapy). As non of those methods is fully efficient, often a combination of treatments is proposed. Nowadays, science is aming in the direction of trageted therapies and personalized treatment.  
 
-The recent success of immunotherapies (discussed in [Immunotherapies section](#immunotherapies) attracted the attention the scientific community again to the context in which tumor cells are found. This context called Tumor Microenvironment, as well as the communication that happens within it between different agents, nowadays studied differently with available knowledge of molecular biology, become a popular scientific topics of 21st century (Fig. \@ref(fig:pubmedTME)). 
+The recent success of immunotherapies (discussed in [Immunotherapies section](#immunotherapies) attracted the attention the scientific community again to the context in which tumor cells are found. This context called Tumor Microenvironment, as well as the communication that happens within it between different agents, nowadays studied differently with available knowledge of molecular biology, have become a popular scientific topics of 21st century (Fig. \@ref(fig:pubmedTME)). 
 
 ```{r pubmedTME, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, fig.cap='(ref:pubmedTME-caption)', out.width='70%', fig.align='center'}
 library(ggplot2)
@@ -68,11 +68,6 @@ if (is_html_output()){
 (ref:pubmedTME-caption) **Percentage of publications containg phrase "tumor immunotherapy" is growing**, numbers retreived on 17.01.2018 from [Medline Trends](http://dan.corlan.net/medline-trend.html) [@Corlan2004]
 
 ### Tumor micro environment as a complex system 
-
-> ALL IS CONNECTED
->   —Dirk Gently, holistic detective
-
-#### What is Tumor Microenvironment (TME)
 
 Tumor Microenvironment is a complex tissue that surrounds tumor cells. It is composed of different compartments (in solid tumors):
 
@@ -97,7 +92,7 @@ Three scenarios can be considered to describe the relationship between TME and t
 2. TME has no impact on tumor cells and disease development
 3. TME has a tumor suppressive role and impact positively the response to treatment
 
-As can be seen partly in [Historical understanding of cancer](#hist) these three hypothesis were gaining and loosing popularity in scientific and medical community.
+As can be seen partly in [Historical understanding of cancer](#hist) these three hypothesis were gaining and loosing popularity in scientific and medical community over the decades.
 
 ##### TME as a foe: inflammation
 
@@ -116,11 +111,11 @@ if (is_pdf_output()) {
 
 (ref:met-dis-caption) **The microenvironment supports metastatic dissemination and colonization at secondary sites.**  Different tumor sites can communicate through exosomes realized by tumor cells and also immune and stromal cells such as NK cells, CAFs and DCs. Reprinted by permission from Springer Nature [@Quail2013] © 2013 Nature America, Inc. All rights reserved.
 
-According to [@Hanahan2012] immune and stroma cells participate in almost all of Cancer Hallmarks [@Hanahan2000; @Hanahan2012] : Most of the hallmarks of cancer are enabled and sustained to varying degrees through contributions from repertoires of stromal cell types and distinctive subcell types.
+According to [@Hanahan2012] immune and stroma cells participate in almost all of Cancer Hallmarks [@Hanahan2000; @Hanahan2012]. Most of the hallmarks of cancer are enabled and sustained to varying degrees through contributions from repertoires of stromal cell types and distinctive subcell types.
 
 ##### TME seen as neutral
 
-In front of lack of definitive proof that TME can positively or negatively impact on tumor development, many scientist, for long time, ignored the importance of this factor.  Until the early-mid eighties, the TME research was mostly limited to angiogenesis and immune environment and most areas that are now driving the field were not represented. 
+In front of lack of definitive proof that TME can positively or negatively impact on tumor development, many scientist, in a long time, ignored the importance of this factor.  Until the early-mid eighties, the TME research was mostly limited to angiogenesis and immune environment and most areas that are now driving the field were not represented. 
 
 From early 70. until the end of the 90. the most accepted statement was that genetic alterations in oncogenes and tumor suppressor genes are both necessary and sufficient to initiate tumorigenesis and drive tumor progression. Therefore TME was not seen as an important element of the puzzle. 
 
@@ -134,29 +129,26 @@ As mentioned in  [Historical understanding of cancer](#hist) Paget proposed a hy
 
 The immunosurveillance through immune-editing can be summarized in three processes:  elimination, equilibrium, and escape  [@Dunn2002]. 
 
-The elimination is direct killing of cancer cells or growth inhibition by immune system. The adoptive T cells and NK are actively involved in tumor killing and stimulate other immune cells. The CD8 + cytotoxic lymphocytes (CTLs)  directly recognize tumor cells.  Employing  perforin- and granzyme-dependent mechanisms they can lyze tumor cells. The CD4 + T cells release  factors to induce proliferation of B cells and to
-promote their differentiation to antibody (Ab)-secreting plasma cells, activate macrophages. Macrophages use phagocytosis to eliminate cancer cells [@Vesely2011].
+The elimination is direct killing of cancer cells or growth inhibition by immune system. The adoptive T cells and NK are actively involved in tumor killing and stimulate other immune cells. The CD8 + cytotoxic lymphocytes (CTLs)  directly recognize tumor cells.  Employing  perforin- and granzyme-dependent mechanisms they can lyze tumor cells. The CD4 + T cells release  factors to induce proliferation of B cells and to promote their differentiation to antibody (Ab)-secreting plasma cells, activate macrophages. Macrophages use phagocytosis to eliminate cancer cells [@Vesely2011].
 
-The tumor-infiltrating lymphocytes (TILs) have been associated with an overall good prognosis and better survival in different cancer studies. Also,  abundance of  CD3 + and CD8 +  T cells, NK cells, and γδT cells correlates  with improved outcomes in epithelial ovarian cancers [@Marquez2012]. Several  studies report that the presence of the abundant  immune infiltrate is correlated with good prognosis or better survival [@Kornstein1983; @Baxevanis1994; @Naito1998; @Pages2005].   Spontaneous regression of human tumors has been reported in cutaneous melanoma, retinoblastoma, osteosarcoma, etc.  [@Aris2012].
+The tumor-infiltrating lymphocytes (TILs) have been associated with an overall good prognosis and better survival in different cancer studies. Also,  abundance of  CD3 + and CD8 +  T cells, NK cells, and $\gamma\delta$T cells correlates  with improved outcomes in epithelial ovarian cancers [@Marquez-Medina2012]. Several  studies report that the presence of the abundant  immune infiltrate is correlated with good prognosis or better survival [@Kornstein1983; @Baxevanis1994; @Naito1998; @Pages2005].   Spontaneous regression of human tumors has been reported in cutaneous melanoma, retinoblastoma, osteosarcoma, etc.  [@Aris2012].
 
 The equilibrium is the phase when cancer and immune cells coexist and their crosstalk is preventing metastasis.
 
-T cells are the main actor maintaining the equilibrium. Progressively, the tumor cells become more immunogenic as they are not edited by the immune system (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3170416/). The state of tumor cells is then identified as "dormant" and active scientific reports  investigate the possible molecular pathways that maintain dormancy or lead to  escape (https://www.ncbi.nlm.nih.gov/pubmed/18515327). 
+T cells are the main actor maintaining the equilibrium. Progressively, the tumor cells become more immunogenic as they are not edited by the immune system [@Bahatia2011]. The state of tumor cells is then identified as "dormant" and active scientific reports  investigate the possible molecular pathways that maintain dormancy or lead to escape [@Teng2008]. 
 
 The immune escape is the final process  when tumor cells impair the immune response. 
 
 
 #### Two-faced nature of immune cells: context-dependent functional plasticity 
 
-Modern vision of TME tumor interactions assumes that tumor can be directed to several molecular pathways. This direction is decided by signals that are native of tumor cell and/or coming from the microenvironment. 
+Modern vision of TME-tumor interactions assumes that tumor can be directed to several molecular pathways. This direction is decided by signals that are native of tumor cell and/or coming from the microenvironment. 
 
-Recent studies unveil ambivalent nature of immune cells of TME. While some as cytotoxic T cells, B cells and macrophages can manage to eliminate tumor cells. Treg cells role is to regulate expansion and activation of T and B cells. Depending on cancer type, they can be either pro- or anit- tumor. For example as it has been shown for Tregs, they can be also associated with improved survival (i.e. in colorectal cancer [@Frey2010]. For innate immunity, there are widely accepted M1 (ani-tumor) and M2 (pro-tumor) extreme macrophages phenotypes in TME [@Qian2010]. Most of the statements seem to be context dependent and not valid universally across all cancer types. We already mentioned Macrophages phenotypic plasticity as well as different behaviour of EMC depending on tumor stage.
+Recent studies unveil ambivalent nature of immune cells in TME. While some as cytotoxic T cells, B cells and macrophages can manage to eliminate tumor cells. Treg cells role is to regulate expansion and activation of T and B cells. Depending on cancer type, they can be either pro- or anti-tumor. For example, as it has been shown for T-regs, usually associated with bad prognosis, they can be associated with improved survival (i.e. in colorectal cancer [@Frey2010]). For innate immunity, there are widely accepted M1 (ani-tumor) and M2 (pro-tumor) extreme macrophages phenotypes in TME [@Qian2010]. Most of the statements seem to be context dependent and not valid universally across all cancer types. We already mentioned Macrophages phenotypic plasticity as well as different behaviour of EMC depending on tumor stage.
 
-From more general point of view, it has been observed that immunodeficiency can correlate with high cancer incidence. Results of analysis based on observations of 25,914 female immunosuppressed organ transplant recipients, the tumor incidence was higher than predicted for multiple cancers. However, the number of breast cancer cases decreased which can be really disturbing if we need to decide on the role of immune defence in tumor progression [@Stewart1995]. This trend was confirmed through a study on individuals with AIDS and other studies. This indicates that immune microenvironment can be cancer stimulating or inhibiting depending on the type of cancer. 
+From more general point of view, it has been observed that immunodeficiency can correlate with high cancer incidence. Results of analysis based on observations of 25,914 female immunosuppressed organ transplant recipients, the tumor incidence was higher than predicted for multiple cancers. However, the number of breast cancer cases decreased which can be really disturbing if we need to decide on the role of immune defence in tumor progression [@Stewart1995]. This indicates that immune microenvironment can be cancer stimulating or inhibiting depending on the type of cancer and/or other factors. 
 
 #### Immune cell (sub)types in TME 
-
-Here will be a definition of what is immune cell type, how different phenotypes are can be associated with subtypes and why researches do it 
 
 > Cette espèce de leucocytes a une grande ressemblance avec certains éléments fixes du tissu conjonctif, ainsi qu'avec des cellules endothéliales et des cellules de la pulpe splénique. On est donc souvent embarrassé, surtout lorsqu'on trouve ces leucocytes mononucléaires en dehors des vaisseaux, pour les distinguer des autres espèces de cellules mentionnées. 
 >
@@ -174,15 +166,15 @@ Necessary for the chapter [Heterogeneity of immune cell types](#map)
 
 Cancer is a disease concerning milliards of people with a long history. Scientific community recognises role of the environment where the tumor cells find themselves as an important factor influencing tumor development, prognosis and response to treatment.  TME is a complex environment that constantly interacts with tumor cells, where both tumor and TME influence and shape each other. 
 
-Over the years, many interactions are being discovered and cell types re-defined and described in their context. However, lots of mechanisms and interactions of TME remains unknown due to very heterogeneous nature of this micro environment which leaves room to more extensive investigation by researches.
+Over the years, many interactions are being discovered and cell types re-defined and described in their context. However, lots of mechanisms and interactions of TME remains unknown due to very heterogeneous nature of this micro environment. This leaves room to more extensive investigation of TME.
 
-A therapeutic goal is target interactions that would be able to pivot the essential processes in tumorigenesis or tumor escape in order to put the cells "back on track" and facilitate anti-tumor therapies. 
+A therapeutic goal are target interactions that would be able to pivot the essential processes in tumorigenesis or tumor escape in order to put the cells "back on track" and facilitate anti-tumor therapies. 
 
 These goals can be meet thanks to improvement of investigating techniques and data quality and abundance. We will discuss the most important data types used in this project to investigate the TME.
 
 ## Quantifying and qualifying immune infiltration (data)
 
-Nowadays, more and more biological data is produced. However, this proliferation of accessible resources is not proportional to generated insights and wisdom. In this thesis, we wok mostly generate *Knowledge* and *Insights* and we hope to generate some *Wisdom* (Fig. \@ref(fig:information-power)). However, in this part, we will introduce the foundation of our analysis: different data types that will be further discussed in chapters that follow.
+Nowadays, more and more biological data is produced. However, this proliferation of accessible resources is not proportional to generated insights and wisdom. In this thesis, we wok mostly generate *Knowledge* and *Insights* and we hope to generate some *Wisdom* (Fig. \@ref(fig:information-power)). In this section, we will introduce the foundation of our analysis: different data types that will be further discussed and explored in chapters that follow.
 
 
 ```{r information-power, echo = FALSE, out.width='80%', fig.show='hold', fig.cap='(ref:information-power-caption)', fig.align = 'center'}
@@ -201,7 +193,7 @@ Flow cytometry is a laser-based technology. It uses marker genes: cell surface p
 
 #### Mass cytometry
 
-Mass cytometry (also known as CyTOF allows for the quantification of cellular protein levels by using isotopes. It allows to quantify up to 40 proteins per cell [@Papalexi2017].
+Mass cytometry (also known as CyTOF allows for the quantification of cellular protein levels by using isotopes. It allows to quantify up to 40 proteins per cell [@Papalexi2017]. It also demands lower starting number of cells (1000 - 1000000), a realistic number that can be extracted from patient biopsy [@Lyons2017].
 
 ### Microscope Staining{#staining}
 
@@ -218,9 +210,11 @@ The [cell sorting methods](#facs) and [microscope staining](#staining) are usual
 
 #### Transcriptome
 
-Transcriptomics is measures the number of counts of mRNA molecules using high-throughput techniques. mRNA is the part of genetic information that should be translated to proteins. It reflects the activity of cell ongoing processes. In contrast to DNA, mRNA is highly variant [@Velculescu1997]. In addition, many genetic and epigenetic events can be either directly observed or indirectly inferred from transcriptomic data. Transcriptome can be measure with microarrays or RNA-seq NGS technology.
+Transcriptomics measures the number of counts of mRNA molecules using high-throughput techniques. mRNA is the part of genetic information that should be translated to proteins. It reflects the activity of ongoing processes in a cell. In contrast to DNA, mRNA is highly variant [@Velculescu1997]. This variability can be either "intrinsic" that reflect the stochastic process or "extrinsic" reflecting impact of factors upstream to mRNA synthesis [@Satija2014].
 
-Bulk transcriptome data can are quite accessible. They can be obtained from either flash-frozen or formalin-fixed, paraffin-embedded (FFPE) tissue samples, including both surgically resected material and core needle biopsies [@Schelker2017].
+In addition, many genetic and epigenetic events can be either directly observed or indirectly inferred from transcriptomic data. Transcriptome can be measure with microarrays or RNA-seq NGS technology.
+
+Bulk transcriptome data are quite accessible nowadays. They can be obtained from either flash-frozen or formalin-fixed, paraffin-embedded (FFPE) tissue samples, including both surgically resected material and core needle biopsies [@Schelker2017].
 
 The main flaw of transcriptomic data is that the reproducibility between different platforms is limited. As a result, direct comparison between two datasets produced by different platforms is not advised. 
 
@@ -240,11 +234,11 @@ if (is_pdf_output()) {
 
 RNA-seq data was proven to be a useful indicator for clinical applications [@Mody2015; @Oberg2016; @Robinson2017]. Its utility for immune profiling was demonstrated in may studies through a use of transcriptomic signatures to predict immunotherapy response or survival [@Chen2016].
 
-In this work transcriptome data are analyzed propose an alternative method to describe immune infiltration. 
+In this work transcriptome data analysis fails into multiple categories: Compositional, Relative and aims to construct a Global-level conclusions.
 
 #### Epigenome
 
-An epigenome can be defined as a record of the chemical changes to the DNA and histone proteins of an organism. Changes to the epigenome can provoke changes to the structure of chromatin and changes to the function of the genome [@Bernstein2007]. Epigenome data usually contains information about methylation CpG island changes. In cancer, global genomic hypomethylation, CpG island promoter hypermethylation of tumor suppressor genes, an altered histone code for critical genes, a global loss of monoacetylated and trimethylated histone H4 were observed. Mathylome profiles can be also use as molecular signature [NMF and other ref]
+An epigenome can be defined as a record of the chemical changes to the DNA and histone proteins of an organism. Changes to the epigenome can provoke changes to the structure of chromatin and changes to the function of the genome [@Bernstein2007]. Epigenome data usually contains information about methylation CpG island changes. In cancer, global genomic hypomethylation, CpG island promoter hypermethylation of tumor suppressor genes, an altered histone code for critical genes, a global loss of monoacetylated and trimethylated histone H4 were observed. Methylome profiles can be also use as molecular signature [@Jeschke2017].
 
 
 
@@ -252,13 +246,13 @@ An epigenome can be defined as a record of the chemical changes to the DNA and h
 
 Described above methods of process DNA from hundreds of thousands of cells simultaneously and report averaged gene expression of all cells. In contrast, scRNA-seq technology allows getting results for each cell individually. This is tremendous step forward enhancement of our understanding of cell heterogeneity and opens new avenues of research questions. 
 
-Continuous discovery of new immune subtypes has proven that cell surface markers that are used for phenotyping by techniques like [FACS](#facs) and [immunohistochelistry](#staining) cannot capture the full complexity. ScRNA-seq methods allow to cluster known cell types in subpopulations based on their genetic features [@Papalexi2017]. ScRNA-seq is also able to capture particularly rare cell types as it requires much less of RNA material (1 ng isolated from 100-1000 cells) compared to 'bulk' RNA-seq ( ~ 1 μg of total mRNA transcripts ). It also allow to study cells at high resolution where the phenotypes can re-defined in much more refined scale than previously [@Papalexi2017]
+Continuous discovery of new immune subtypes has proven that cell surface markers that are used for phenotyping by techniques like [FACS](#facs) and [immunohistochelistry](#staining) cannot capture the full complexity. ScRNA-seq methods allow to cluster known cell types in subpopulations based on their genetic features. ScRNA-seq is also able to capture particularly rare cell types as it requires much less of RNA material (1 ng isolated from 100-1000 cells) compared to 'bulk' RNA-seq ( ~ 1 μg of total mRNA transcripts ). It also allows to study cells at high resolution capturing the phenotypes in much more refined scale than previously [@Papalexi2017].
 
 This new data type also brings into the field new challenges related to data processing due to the volume, distribution, noise, and biases. Experts highlight as the most "batch effect", "noise" and "dropout effect" [@Perkel2017]. So far, there are no official standards that can be applied which makes data comparison and post-processing even more challenging. Up to date, there are around 70 reported tools and resources for single cell data processing [@Davis2016] . 
 
 A limited number of single-cell datasets of tumors are made publicly available (@ TABLE ?). 
 
-One can ask why then developing computational deconvolution of transcriptome if we can learn relevant information from single-cell data. Today's reality is that single cell data does not provide a straightforward answer to the estimation of cell proportions. The coverage is not full and sequenced single cells are not fully representative of the true population. For instance, neutrophiles are not found in scRNA-seq data because of they are "difficult to isolate, highly labile *ex vivo* and therefore difficult to preserve with current single-cell methods" [@Schelker2017]. In addition, a number of patients included in published studies of range <100 cannot be compared to thousand people cohorts sequenced with bulk transcriptome methods. This is mostly because single cell experiments are challenging to perform, especially in clinical setting as fresh samples are needed [@Schelker2017]. Today, single cell technology brings very interesting "zoom in" perspective, but it would be incautious to make fundings from a restricted group of individuals universal to the whole population. Major brake to the use of single cell technology more broadly might be as well the price that is neatly 10x higher for single cell sample compared to bulk [@Cedar2018]. 
+One can ask why then developing computational deconvolution of bulk transcriptome if we can learn relevant information from single-cell data. Firstly, that single cell data do not provide a straightforward answer to the estimation of cell proportions. The coverage is not full and sequenced single cells are not fully representative of the true population. For instance, neutrophiles are not found in scRNA-seq data because of they are "difficult to isolate, highly labile *ex vivo* and therefore difficult to preserve with current single-cell methods" [@Schelker2017]. In addition, a number of patients included in published studies of range <100 cannot be compared to thousand people cohorts sequenced with bulk transcriptome methods. This is mostly because single cell experiments are challenging to perform, especially in clinical setting as fresh samples are needed [@Schelker2017]. Today, single cell technology brings very interesting "zoom in" perspective, but it would be incautious to make fundings from a restricted group of individuals universal to the whole population. Major brake to the use of single cell technology more broadly might be as well the price that is nearly 10x higher for single cell sample compared to bulk [@Cedar2018]. 
 
 | Technology |     Price      |
 | :--------: | :------------: |
@@ -266,7 +260,7 @@ One can ask why then developing computational deconvolution of transcriptome if 
 |  RNA-seq   | 200 $ / sample |
 |    FACS    |  0.05$ / cell  |
 |   CyTOF    |    35$/cell    |
-In this work, we are using single cell data in two ways. Firstly, in [Comparative… chapter](#results) we compare immune cell profiles defined by scRNA-seq, blood and blind deconvolution (problem introduced in [Immune signatures section](#immune-signatures)). Secondly, in [Heterogeneity of immune…](#map) we use single call data of Metastatic melanoma generated by @Tirosh2016 to demonstrate subpopulations of Macrophages and NK cells. 
+In this work, we are using single cell data in two ways. Firstly, in [Chapter 5](#results) we compare immune cell profiles defined by scRNA-seq, blood and blind deconvolution (problem introduced in [Immune signatures section](#immune-signatures)). Secondly, in [Chapter 6](#map) we use single call data of Metastatic melanoma generated by @Tirosh2016 to demonstrate heterogeneity of subpopulations of Macrophages and NK cells. 
 
 
 ## From cancer phenotyping to immune therapies {#immunotherapies}
@@ -279,7 +273,7 @@ Since 20. century physicians decided on common nomenclature that classify tumors
 
 Most of the classifications are based on clinical data. Most common factors taken into account are: the degree of local invasion, the degree of remote invasion, histological types of cancer with specific grading for each type of cancer, possibly various tumour markers, general status of the patient. 
 
-However, cancers with similar morphological and histopathological features reveal very distinct patterns of progression and response to therapy. In the era of gene sequencing, gene and protein expression, epigenome can provide a complementary information. Therefore  gene markers or proteomic abnormalities can integrated into classification panel.  One popular example is a gene signature *PAM50* [@Parker2009] used for prediction of patients' prognosis in breast cancer, patented as a tumor profiling test. 
+However, cancers with similar morphological and histopathological features reveal very distinct patterns of progression and response to therapy [@Galon2014]. In the era of gene sequencing, gene and protein expression as well as epigenome can provide an important complementary information. Therefore  gene markers or proteomic abnormalities can integrated into classification panel.  One popular example is a gene signature *PAM50* [@Parker2009] used for prediction of patients' prognosis in breast cancer, patented as a tumor profiling test. 
 
 Since the increase of importance of the immunotherapies, researches proposed several ways to classify tumors based on their microenvironment. Given different parameters describing TME, cancers can be sorted into groups that show similar characteristics. We will discuss most common frameworks that allow to phenotype cancers based on the TME.
 
@@ -299,17 +293,28 @@ if (is_pdf_output()) {
 
 (ref:immune-phenotypes-caption) **Cancer-immune phenotypes: the immune-desert phenotype (brown), the immune–excluded phenotype (blue) and the inflamed phenotype (red).** The immune–desert phenotype is characterised by paucity of immune cells and cytokines. In the immune-excluded phenotypes the T cells are often present but trapped in stroma, enabled to migrate to the tumor site. The immune-inflamed phenotype is rich in immune cells and the most responsive to the immune check point therapies. Reprinted by permission from Springer Nature [@Chen2017] © 2017 Macmillian Publishers Limited, part of Springler Nature. All rights reserved. 
 
+@Thorsson2018 performed a multi-omic analysis of TCGA datasets that allowed them to define 6 subtypes that are valid across cancer types: 
+
+1. wound healing
+2. IFN-$\gamma$ dominant
+3. inflammatory
+4. lymphocyte depleted
+5. immunologically quiet
+6. TGF-$\beta$ dominant
+
+Different indicators were used to define these six phenotypes: 
+
 The immunogenicity of the tumors can be explained by tumor-intrinsic factors and tumor-extrinsic factors [@Gajewski2006]. Tumor-intrinsic factors are, the neoantigen load and frequency, the mutational load, the expression of immunoinhibitors and immunostimulators (e.i. PD-L1), and alteration of HLA class I molecules. Tumor-extrinsic factors include chemokines regulating T cell trafficking, infiltration of effector TILs and immunosuppressive TILs, and soluble immunomodulatory factors (cytokines). 
+
+
 
 A plethora of different computational methods have been developed in order to further characterize tumor samples using different factors. We mention here mainstream methods that cover different approaches of scoring the TME-cancer phenotype. 
 
 #### Immunoscore
 
-Image-based tumors classification
+One of the most recognised scoring method, based on fluorescent images is authored by Jerôme Galon lab in Paris and names [Immunoscore](http://www.haliodx.com/clinical-research-services/immunoscorer/). The Immunoscore ranges from 0 to 4 and it is based on the density of lymphocyte populations CD3/CD45RO, CD3/CD8, or CD8/ CD45RO. It also takes into account the spacial position of the cells: the tumor core and margins [@Galon2012]. It was successfully applied to colorectal cancer to predict patients' survival [@Anitei2014] . Since it resulted in numerous application to many cancer types. It was also linked to time-to-recurrence in an international study. There is great potential to use immunoscore as a predictive marker if validated in prospective studies [@Galon2016].
 
-http://www.haliodx.com/clinical-research-services/immunoscorer/
-
-@Galon2012
+The immunoscore is an interesting indicator, especially in the scope of clinical applications, although it does not tell us a lot about underlying biology. It is also limited to a few cell types while it may be that in some cancer types or patients, the system requires more detailed or rich analysis of larger panel of cells. 
 
 #### Immunophenoscore
 
@@ -322,13 +327,13 @@ An example of well-formulated classification framework is Immunophenoscore [@Cha
 * Effector cells (EC)
 * Suppressor cells (SC)
 
-The immunophenscore (IPS) is calculated on a 0-10 scale based on the expression of genes in each category. Stimulatory factors (cell types) impact the score positively and inhibitory factors (cell types) negatively. Z-scores ≥ 3 were designated as IPS10 and z-scores ≤ 0 are designated as IPS0. A similar conceptual framework called *cancer immunogram* was proposed by @Blank2016 included seven parameters: tumor foreignness (Mutational load), general immune status (Lymphocyte count), immune cell infiltration (Intratumoral T cells), absence of checkpoints (PD-L1), absence of soluble inhibitors (IL–6, CRP), absence of inhibitory tumor metabolism (LDH, glucose utilisation), tumor sensitivity to immune effectors (MHC expression, IFN-γ sensitivity). Nonetheless, the details of *cancer immunogram* use in practice remain unclear and result could be sensitive to patients' and data heterogeneity as no standardisation was proposed. 
+The immunophenscore (IPS) is calculated on a 0-10 scale based on the expression of genes in each category. Stimulatory factors (cell types) impact the score positively and inhibitory factors (cell types) negatively. Z-scores ≥ 3 were designated as IPS10 and z-scores ≤ 0 are designated as IPS0. A similar conceptual framework called *cancer immunogram* was proposed by @Blank2016 included seven parameters: tumor foreignness (Mutational load), general immune status (Lymphocyte count), immune cell infiltration (Intratumoral T cells), absence of checkpoints (PD-L1), absence of soluble inhibitors (IL–6, CRP), absence of inhibitory tumor metabolism (LDH, glucose utilisation), tumor sensitivity to immune effectors (MHC expression, IFN-γ sensitivity). @Charoentong2017 claim that the immunophenoscore can predict response to CTLA-4 and anti-PD-1. 
 
-@Charoentong2017 claim that the immunophenoscore can predict response to CTLA-4 and anti-PD-1.
+Nonetheless, the details of *cancer immunogram* use in practice remain unclear and result could be sensitive to patients' and data heterogeneity as no standardisation was proposed. It should be also validated in a systematic independent study. 
 
 #### Immune maps
 
-Description on how immune portraits (NAVIcell) can be used to characterise tumor immune environment.
+Another way to summarize tumor phenotype can be though use of molecular maps. [Atlas of Cancer Signaling Network (ACSN) ](https://acsn.curie.fr/) [@Kuperstein2013; @Kuperstein2015] is primarily a pathway database that contains a collection of interconnected cancer-related signalling network maps. An additional feature is ACSN web-based goole-maps like visualisation of the database. User data can be projected on the molecular map (for example gene/protein expression from user data can be paired with entities on the map ). Currently it contains [11 maps](https://navicell.curie.fr/) covering signalling processes involved in apoptosis, cell cycle, DNA repair,  EMT, cell motility, Ewing sarcoma, Dendritic cells, Macrophage cells, Natural killer cells, CAF and integrated innate immunity map. Through projection of the data on the innate immunity map, one can see if the patient or a sample is characterised by pro- or anti-tumor activated pathways due to the organisation of the map layout. Also, different CAF subtypes were characterised with the CAF specific map in [@Costa2018]. Kondratova and colleagues (including myself) used innate immune map to characterize NK and Macrophages subtypes and in another publication [@Kondratova2018] different patient profiles using scRNAseq data of Metastatic melanoma. 
 
 #### Summary
 
@@ -343,10 +348,49 @@ Despite those facts, the gene expression based classifications are not yet used 
 * the problem of not consistency of immune signatures
 * origin of signatures
 
-> "the gene expression profiles of tumour-associated immune cells differ considerably from those of blood derived immune cells"' [@Schelker2017]
+> *the gene expression profiles of tumour-associated immune cells differ considerably from those of blood derived immune cells* [@Schelker2017]
 
 Immune signatures will be also discussed as a part of deconvolution pipeline in the [Chapter 2](#methods) under the section about *basis matrix*.
 
+———
+
+Gene expression signatures
+
+ Lack of immune-specific signatures. Gene expression signatures are used as tools to predict which patients will benefit from certain treatments and to guide decision-making in the clinic.46 
+
+Gene expression signatures are considered “prognostic” when they can differentiate between patients with a good or bad prognosis in the context of traditional therapy or no treatment at all.47 Gene signatures are considered “predictive” when they are able to predict treatment benefit between experimental and/or nontraditional treatment groups vs. control, typically in the setting of a randomized controlled clinical trial.47 In breast cancer, the predictive and prognostic assays Oncotype DX, EndoPredict, PAM50, and Breast Cancer Index are now recommended as adjuncts for clinical decision-making for patients with specific subtypes of breast cancer.46 These signatures, however, are not specifically immune-related and share little overlap in their selected genes.47, 48 Because tumor cells and infiltrating immune cells both have prognostic value, evaluating tumors and the surrounding stroma with use of the methods described above, in order to generate immune-related signatures, can provide prognostic and perhaps predictive information associated with patient outcome. Although there are no immune-related gene signatures used in clinical practice currently, several studies have shown the validity and reproducibility of using immune-related signatures to predict outcome and response to therapy in patient cancer samples. 
+
+Solution: in silico, pan-cancer studies. One reason immune-related gene signatures have not been widely used in clinical settings is the lack of consistency of genes, both within the same tumor type and among different tumors.49 Efforts to address this problem are under way, with the development of conserved immune gene signatures representing multiple tumor types.49 Another problem with immune-related gene signatures is the difficulty in decipher- ing whether the genes represent specific immune cell popula- tions, antigen-presenting machinery, cytokines, or other immune- related molecules. In silico studies have validated pan-cancer immune-related gene signatures that represent many immune cell types with known prognostic significance including T cells, B cells, NK cells, macrophages, as well as various cytokine populations.49, 50 Immune-related gene signatures have proven to be prognostic of clinical outcome across multiple cancer types and are associated with response to immune therapy in specific cancers.49, 50 Recent findings on immune-related gene signatures have shown that gene signatures are able to distinguish between broad lineages of cell type, such as lymphoid and myeloid but are less adept at distinguishing between more differentiated cells such as CD8+ and CD4+ T cells.49 
+
+
+
+Ranked gene lists 
+
+Oversimplification of interpretation. Currently, given the multi- 
+
+tude of methods with which to analyze genomic data, the 
+
+problem no longer lies in obtaining gene expression profiles but 
+
+rather in interpreting the data. Analysis of gene expression data 
+
+typically involves a comparison of two groups and the creation of 
+
+a ranked gene list based on expression. One method of 
+
+interpretation involves looking at each end of the ranked list to 
+
+7, 51 
+
+Quantity of data. The NCBI Gene Expression Omnibus database contains more than 30,000 series and 1 million samples of array- based expression data, many of which involve the immune system.52 Because of the large amount of expression data relating to the immune system and the inability to compare information between the various datasets, the Immunological Genome Project (IGP) was created to provide a comprehensive compendium of the expression of protein-coding genes for all immune cell popula- tions in the mouse immune system.53 This project was developed to provide information on primary immune cells isolated ex vivo from the mouse immune system and then integrate that information into networks, while taking into account variation via genetic polymorphisms, knock-out of genes, knockdown via RNA interference, and drug treatment.53 Researchers can use these data to determine gene expression profiles that serve as biomarkers for predicting response to treatment and for measur- ing residual disease after immune therapy. 
+
+Solution 1: added-value/specialty databases. Primary databases contain gene expression and other genomic data such as genotype, DNA methylation, and protein expression data. These 
+
+evaluate genes showing the largest difference in expression. Problems with this method include small relevant biological differences between genes leading to no statistical significance, a long list of genes that are statistically significant but lack biologic relevance, missed effects on pathways by analyzing single genes, and variation in gene lists for the same biologic system based on two different groups’ data.51 This again underscores the challenge faced when trying to create a clinically useful immune-related gene signature from a high-throughput panel of genes. 
+
+@Lyons2017
+
+——-
 
 
 
