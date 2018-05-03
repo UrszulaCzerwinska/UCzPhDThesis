@@ -70,7 +70,7 @@ is_html_output = function() {
 ```{r index, echo=FALSE, results='asis', eval=is_html_output()}
 cat("# Preface {-}
 
-This is the index")
+This is PhD Thesis of [Urszula Czerwinska](urszulaczerwinska.github.io)")
 ```
 
 
