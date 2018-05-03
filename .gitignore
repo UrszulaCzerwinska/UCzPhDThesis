@@ -6,12 +6,11 @@ _book
 _bookdown_files
 rsconnect
 .DS_Store
-**/*.RData
-**/*.csv
-**/*.DS_Store
 
-IconRData
+Icon
 
-figures-ext/Icon
-*/*/Icon
-*/Icon**/Icon
+figures-ext/Icon
+
+*/*/Icon
+
+*/Icon
