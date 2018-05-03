@@ -8,7 +8,7 @@ rsconnect
 .DS_Store
 Icon**/*.RData
 **/*.csv
-
+RData
 
 figures-ext/Icon
 
