@@ -9,7 +9,8 @@ rsconnect
 Icon**/*.RData
 **/*.csv
 RData
-
+figures-ext
+pdf-ext
 figures-ext/Icon
 
 */*/Icon
