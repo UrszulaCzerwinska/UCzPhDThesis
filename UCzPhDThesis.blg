@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: UCzPhDThesis.aux
+The style file: plainnat.bst
+Database file #1: 00-Inter.bib.bib
+Database file #2: 01-Intro2.bib.bib
+Database file #3: packages.bib.bib
+Database file #4: UCzcite.bib.bib
+Warning--I didn't find a database entry for "Hanzelmann2018"
+Warning--I didn't find a database entry for "JMBKondratova2018"
+Warning--I didn't find a database entry for "Ulykbek2017"
+Warning--I didn't find a database entry for "Brunet"
+Warning--to sort, need author or key in CRIweb
+Warning--to sort, need author, editor, or key in FIRbook
+Warning--empty year in CRIweb
+Warning--empty author and editor in FIRbook
+Warning--empty publisher in Berghoff2018
+Warning--empty journal in Cavallo2011
+You've used 114 entries,
+            2773 wiz_defined-function locations,
+            1627 strings with 47497 characters,
+and the built_in function-call counts, 83600 in all, are:
+= -- 7102
+> -- 7984
+< -- 47
++ -- 2681
+- -- 2564
+* -- 8363
+:= -- 13706
+add.period$ -- 594
+call.type$ -- 114
+change.case$ -- 1193
+chr.to.int$ -- 111
+cite$ -- 236
+duplicate$ -- 2294
+empty$ -- 4364
+format.name$ -- 2718
+if$ -- 16629
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 95
+newline$ -- 829
+num.names$ -- 450
+pop$ -- 2075
+preamble$ -- 1
+purify$ -- 1082
+quote$ -- 0
+skip$ -- 2282
+stack$ -- 0
+substring$ -- 2137
+swap$ -- 240
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1239
+warning$ -- 6
+while$ -- 491
+width$ -- 0
+write$ -- 1965
+(There were 10 warnings)

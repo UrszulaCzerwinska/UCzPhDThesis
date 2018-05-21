@@ -150,6 +150,7 @@
 \usepackage{pdflscape}
 \usepackage{tabu}
 \usepackage{threeparttable}
+\usepackage{subfig}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -330,12 +331,13 @@ problems. And problems may cut right across the borders of any subject
 matter or discipline.} --- Karl Popper
 \end{quote}
 
-The piece of work you have between your hands or on your screen should
-collect fruits of an interdisciplinary research, or at least, was
-conceived in an interdisciplinary environment of Center for
-Interdisciplinary Research in Paris (CRI) in École doctorale
-\emph{Frontières du Vivant} (FdV) . CRI's main mission can be formulated
-as follows:
+The piece of work you are reading should harvest fruit of an
+interdisciplinary research conceived in an interdisciplinary environment
+of Center for Interdisciplinary Research in Paris (CRI) in École
+doctorale \emph{Frontières du Vivant} (FdV) and Institut Curie in groups
+Computational Systems Biology of Cancer and Integrative Biology of Human
+Dendritic Cells and T-cells. CRI's main mission can be formulated as
+follows:
 
 \begin{quote}
 \emph{to empower the students to take initiative and develop their own
@@ -358,10 +360,10 @@ new disciplines}.}
 For me, the essence of interdisciplinarity is the need to solve a
 complex problem, whatever expertise would be necessary to solve it. I
 consider that fighting cancer disease, deciphering cancer heterogeneity
-and its interactions with immune systems is a cause worth an
-interdisciplinary effort. This is even more true in the era of big data
-that demand quantitative tools in order to extract information and
-knowledge.
+and interactions of immune system are causes worth an interdisciplinary
+effort. This is even more true in the era of big data, when the demand
+for quantitative tools is exponentially growing, in order to extract
+information and knowledge.
 
 Though this preamble I would like not only praise the interdisciplinary
 research but also underline possible limitations and constraints that
@@ -382,18 +384,18 @@ different disciplines from arts through history, natural sciences to
 mathematics. With time human knowledge about the word, i.e.~natural
 sciences got bigger and bigger, to the point that it became hard to
 master all the disciplines. The specialisation would allow to study in
-deep a certain subject and make discoveries about it. And even if,
-interdisciplinary efforts never stopped, for long time they were not
+deep a certain subject and make possible discoveries about it. And even
+if, interdisciplinary efforts never stopped, for long time they were not
 mainstream in scientific communities divided into academies, chairs and
 specialization.
 
-How we can define these separate units? Different fields differ in term
-of concept, method, tools, processes and theories \citep{Slavicek2012}.
-Thanks to division into scientific disciplines certain order is
-conserved across space and time. Hierarchical classification of
-knowledge comes with human nature.
+Different fields differ in term of concept, method, tools, processes and
+theories \citep{Slavicek2012}. Thanks to division into scientific
+disciplines certain order is conserved across space and time.
+Hierarchical classification of knowledge comes with human nature.
 
-However, specialisation came with a price,
+However, specialisation came with a price, an increasing gap between
+disciplines.
 
 \begin{quote}
 \emph{advancing specialisation leads to gaps in the level of
@@ -402,12 +404,12 @@ to the demand for interdisciplinarity - in order to close the gaps
 between disciplines.}\citep{Slavicek2012}
 \end{quote}
 
-Nowadays, the knowledge is accessible and popular, therefore we can
-profit from achievements of different disciplines thanks to easy mean of
-communication. Two different terms can be defined to initiatives that
-use the knowledge of different specialities: multidisciplinarity which
-is a sum of efforts of different disciplines and interdisciplinarity
-that allows to profit from synergy of multiple disciplines (Fig.
+Nowadays, the knowledge is accessible, we can profit from achievements
+of different disciplines thanks to easy means of communication. Two
+different terms can be defined to describe initiatives that use the
+knowledge of different specialities: multidisciplinarity which is a sum
+of efforts of different disciplines and interdisciplinarity that allows
+to profit from synergy of multiple disciplines (Fig.
 \ref{fig:multidisc}). With interdisciplinary research and education come
 flexibility, creativity and novelty but also limit of depth on ingested
 knowledge and possibilities of cross-interactions between disciplines.
@@ -418,7 +420,7 @@ knowledge and possibilities of cross-interactions between disciplines.
 
 }
 
-\caption{\textbf{Symbolic illustration of sum
+\caption[Symbolic illustration of sum (multidisciplinarity) versus synergy (interdisciplinarity)]{\textbf{Symbolic illustration of sum
 (multidisciplinarity) versus synergy (interdisciplinarity)}, an
 interdisciplinary project should have an added value compared to a
 multidisciplinary one. Inspired from \citep{Slavicek2012}.}\label{fig:multidisc}
@@ -429,8 +431,7 @@ multidisciplinary one. Inspired from \citep{Slavicek2012}.}\label{fig:multidisc}
 
 
 
-\emph{What does it mean to be truly interdisciplinary in science today
-and why disciplines still exist? Do they?}
+Why not all the labs are interdisciplinary?
 
 \begin{quote}
 \emph{Scientists tend to resist interdisciplinary inquiries into their
@@ -441,30 +442,10 @@ research} ---
 \href{http://www.azquotes.com/author/28130-Hannes_Alfven}{Hannes Alfvén}
 \end{quote}
 
-An example of truly interdisciplinary research can be work on the string
-theory that makes advance both mathematics and theoretical physics. Also
-new disciplines that recently emerged as biophysics and bioinformatics
-are fuit of the interdisciplinary approach.
-
-Bioinformatics and/or computational biology is an interesting case.
-Working in this field being between biology, medecine, computer science,
-mathematics and statistics, the role of a computational biologist is
-sometimes reduced to a service. A biological lab may need a
-computational biologist to perform an analysis, restructure the data,
-that is needed for the biological discovery. Often, there is not enough
-space for research in computational biology itself, where the discovery
-does not depend on the original data but on tools and approaches to
-complex, data-intensive biological problems. It may happed also the
-other way round, when a computational biologist ask a bench researcher
-to perform an experiment only to prove a theory. In both cases, the
-long-term interdisciplinary partnership would probably fail. A wet and
-dry researches should collaborate as equal with important research
-advances on both side to assure a long term equilibrium.
-
-Crossing frontiers is not an easy task, and it was even more difficult
-in its beginnings. Some examples of early interdisciplinary efforts are
-nicely described by Ledford et al. \citep{Ledford2015} in \emph{Nature}
-special issue on
+Crossing frontiers is not an easy task, and it was quite difficult in
+its beginnings of modern interdisciplinarity. Some examples of early
+interdisciplinary efforts of 20th century are nicely described by
+Ledford et al. \citep{Ledford2015} in \emph{Nature} special issue on
 \href{https://www.nature.com/news/interdisciplinarity-1.18295}{Interdisciplinarity}.
 It illustrates Theodore Brown in 1980s, while trying to organise a new
 interdisciplinary research project and reorganise university space to
@@ -509,6 +490,21 @@ computational support? Can we study cognitive science without knowledge
 of biology, physics and psychology? Can we advance medecine without
 basic research in biology, physiology, electronics?
 
+Bioinformatics and/or computational biology is an interesting case.
+Working in this field being between biology, medecine, computer science,
+mathematics and statistics, the role of a computational biologist is
+sometimes reduced to a service. A biological lab may need a
+computational biologist to perform an analysis, restructure the data,
+that is needed for the biological discovery. Often, there is not enough
+space for research in computational biology itself, where the discovery
+does not depend on the original data but on tools and approaches to
+complex, data-intensive biological problems. It may happed also the
+other way round, when a computational biologist ask a bench researcher
+to perform an experiment only to prove a theory. In both cases, the
+long-term interdisciplinary partnership would probably fail. A wet and
+dry researches should collaborate as equal with important research
+advances on both side to assure a long term equilibrium.
+
 \emph{How interdisciplinarity changed over years? Are all disciplines
 affected equally?}
 
@@ -521,11 +517,11 @@ field.
 
 \begin{figure}
 
-{\centering \includegraphics{figures-ext/interdisciplinary} 
+{\centering \includegraphics[width=0.7\linewidth]{figures-ext/interdisciplinary} 
 
 }
 
-\caption{\textbf{Interdisciplnarity of different
+\caption[Interdisciplnarity of different fields.]{\textbf{Interdisciplnarity of different
 fields.} ``From 1950-2014, a field's position is determined by how much
 its papers cite outside disciplines (x-axis), and by how much outside
 disciplines subsequently cite its papers (y-axis). (Some years, certain
@@ -550,9 +546,9 @@ perspective}\label{strengths-weaknesses-opportunities-threats-swot-of-an-interdi
 Threats (SWOT) of an interdisciplinary PhD - personal perspective}
 
 \begin{quote}
-I'm not good enough to do well something I dislike. In fact, I find it
-hard enough to do well something that I like --- Jim Watson, Succeeding
-In Science: Some Rules Of Thumb
+\emph{I'm not good enough to do well something I dislike. In fact, I
+find it hard enough to do well something that I like} --- Jim Watson,
+Succeeding In Science: Some Rules Of Thumb \citep{Csermely2007}
 \end{quote}
 
 Being formed first in double major in biology and mathematics, then
@@ -569,25 +565,28 @@ achieve in this thesis in order to enrich our knowledge about tumor
 microenvironment and possible contribute to orienting future research on
 immunotherapies.
 
-However, being an interdisciplinary researcher was not a privilege.
-\emph{To which category do I belong?} \emph{To whom should I present my
-work?} I often asked myself these questions. I also often encountered
-lack of understanding where my methodological results were not bringing
-enough of \emph{biological insights}. Or the constraints of my
-biological application seemed very obscured and complicated for
+However, being an interdisciplinary researcher was not always a
+privilege. \emph{To which category do I belong?} \emph{To whom should I
+present my work?} I often asked myself these questions. I also often
+encountered lack of understanding where my methodological results were
+not bringing enough of \emph{biological insights}. Or the constraints of
+my biological application seemed very obscured and complicated for
 mathematicians and my work often lacked \emph{important methodological
 advances}.
 
 \emph{Does it mean that my work is not accurate, useless?} Probably, for
-many, it is not enough. However, I still hope that for some it is. I
-enjoy working with data and statistics that serve an actual purpose. The
-Tab. \ref{tab:SWOT} summarizes Strengths, Weaknesses, Opportunities and
-Threats (SWOT analysis) of an interdisciplinary projects, in the way I
-see it.
+many, it is not enough. However, I still hope that our findings will be
+interesting to some. I enjoy working with data and statistics that serve
+an actual purpose. The Tab. \ref{tab:SWOT} summarizes Strengths,
+Weaknesses, Opportunities and Threats (SWOT analysis) of an
+interdisciplinary projects, in the way I see it.
 
 \rowcolors{2}{gray!6}{white}\begin{table}
 
-\caption{\label{tab:SWOT}\textbf{SWOT analysis of Interdisciplinary research}}
+\caption[SWOT analysis of Interdisciplinary research]{\label{tab:SWOT}\textbf{SWOT analysis of Interdisciplinary research}.
+In SWOT analysis, Strengths, Weakenesses, Opportunities and Threats are
+enumerated. Strengths and Wearknesses are internal and Opportunities and
+Threats are external factors.}
 \centering
 \begin{tabular}[t]{|>{\centering\arraybackslash}p{9em}|>{\centering\arraybackslash}p{9em}|>{\centering\arraybackslash}p{9em}|>{\centering\arraybackslash}p{9em}|}
 \hiderowcolors
@@ -608,6 +607,9 @@ Being open &  &  & \\
 \bottomrule
 \end{tabular}
 \end{table}\rowcolors{2}{white}{white}
+
+
+
 
 
 
@@ -646,24 +648,25 @@ healthcare problem. I came across a project proposed by Andrei Zinovyev
 in close collaboration with Vassili Soumelis. I was quite anxious that
 my knowledge of cancer immunology would not be sufficient to lead the
 project to a success. I recognise that the complexity and heterogeneity
-of immune systems are quite a mystery to me and even though I did my
-best efforts to learn during these three years, I am still far for being
-confortable.
+of immune systems are is very complex and dynamic system and many years
+of expertise are needed to really grasp the understanding of it. I had a
+great chance to work hand in hand with domain experts that would suggest
+me the direction I should take in my research.
 
 The project started by causal exploration of different blind source
 separation or dimension reduction techniques and their ability to
 dissect bulk transcriptomic data into cell type-related units. We also
 faced an important problem of lack of gold standard data that would
 define efficiency and accuracy of different methods. I have spent void
-efforts working of sophisticated simulation framework, I touched the
-border of my capacities to solve important statistical issue. In the
-meantime, many tools dissecting tumor bulk transcriptome were published.
-Serving a similar purpose, they used different means and assumptions,
-which leaved space for my project to continue. In my third year, I am
-finally publishing a tool that performs the analysis I developed
-together with the Sysbio team members, and I can apply it to a body of
-publicly available data sets to learn about actual problem: the immune
-system infiltrating cancers and the interactions occurring in the
+efforts working on a bulk transcriptomic data simulation framework, I
+touched the border of my capacities to solve important statistical
+issues. In the meantime, many tools dissecting tumor bulk transcriptome
+were published. Serving a similar purpose, they used different means and
+assumptions, which left a space for my project to continue. In my third
+year, I am finally publishing a tool that performs the analysis I
+developed together with the Sysbio team members, and I can apply it to a
+body of publicly available data sets to learn about actual question: the
+immune system infiltrating cancers and the interactions occurring in the
 environment (see \protect\hyperlink{deconica}{Chapters 4 \& 5}).
 
 In a parallel project, I worked on exploration of brand new data type:
@@ -754,9 +757,9 @@ This chapter will first introduce a short history of cancer with a focus
 on discoveries linking cancer and its environment. It will also describe
 participation of TME in cancer development, progression and response to
 treatment. Most important types of data used to study cancer
-microenvironment will be discussed. A link between tumor immune-biology
-and cancer phenotyping for development of immunotherapies will be
-introduced as well.
+microenvironment will be discussed. I also introduce a link between
+tumor immune-biology and cancer phenotyping for development of
+immunotherapies.
 
 \hypertarget{cancer-disease}{%
 \section{Cancer disease}\label{cancer-disease}}
@@ -805,8 +808,8 @@ Around the same time leukocytes from the blood was first described by
 Gabriel Andra and William Addison. Just a few years later, in 1845
 Bennett and Virchow described blood cells in leukaemia (Fig.
 \ref{fig:Virchow-cell}). Virchow is also a father of Chronic irritation
-theory (which we would call chronic inflammation) that says that cancer
-is caused by local ``irritation'' and, incorrectly, that cancer cells
+theory (nowadays calledl chronic inflammation) that says that cancer is
+caused by local ``irritation'' and, incorrectly, that cancer cells
 spread like liquid resulting in metastasis.
 
 \begin{figure}
@@ -815,9 +818,9 @@ spread like liquid resulting in metastasis.
 
 }
 
-\caption{\textbf{Illustration of Virchow's cell
+\caption[Illustration of Virchow's cell theory]{\textbf{Illustration of Virchow's cell
 theory}. Virchow depicted different cells transformation due to
-irritation. \citep{Virchow1847}}\label{fig:Virchow-cell}
+irritation. \citep{VirchowRudolf1847}}\label{fig:Virchow-cell}
 \end{figure}
 
 
@@ -908,7 +911,7 @@ century (Fig. \ref{fig:pubmedTME}).
 
 }
 
-\caption{\textbf{Percentage of publications containg
+\caption[Percentage of publications containg phrase "tumor immunotherapy" is growing]{\textbf{Percentage of publications containg
 phrase ``tumor immunotherapy'' is growing}, numbers retreived on
 17.01.2018 from \href{http://dan.corlan.net/medline-trend.html}{Medline
 Trends} \citep{Corlan2004}}\label{fig:pubmedTME}
@@ -919,9 +922,9 @@ Trends} \citep{Corlan2004}}\label{fig:pubmedTME}
 
 
 
-\hypertarget{tumor-micro-environment-as-a-complex-system}{%
-\subsection{Tumor micro environment as a complex
-system}\label{tumor-micro-environment-as-a-complex-system}}
+\hypertarget{tumor-microenvironment-as-a-complex-system}{%
+\subsection{Tumor Microenvironment as a complex
+system}\label{tumor-microenvironment-as-a-complex-system}}
 
 Tumor Microenvironment is a complex tissue that surrounds tumor cells.
 It is composed of different compartments (in solid tumors):
@@ -1016,7 +1019,7 @@ growth providing necessary nutritive compound to malignant cells.
 
 }
 
-\caption{\textbf{The microenvironment supports metastatic
+\caption[The microenvironment supports metastatic dissemination and colonization at secondary sites.]{\textbf{The microenvironment supports metastatic
 dissemination and colonization at secondary sites.} Different tumor
 sites can communicate through exosomes realized by tumor cells and also
 immune and stromal cells such as NK cells, CAFs and DCs. Reprinted by
@@ -1112,7 +1115,7 @@ their crosstalk is preventing metastasis.
 
 T cells are the main actor maintaining the equilibrium. Progressively,
 the tumor cells become more immunogenic as they are not edited by the
-immune system \citep{Bahatia2011}. The state of tumor cells is then
+immune system \citep{Bhatia2011}. The state of tumor cells is then
 identified as ``dormant'' and active scientific reports investigate the
 possible molecular pathways that maintain dormancy or lead to escape
 \citep{Teng2008}.
@@ -1158,24 +1161,120 @@ depending on the type of cancer and/or other factors.
 \subsubsection{Immune cell (sub)types in
 TME}\label{immune-cell-subtypes-in-tme}}
 
+We are taught that a cell is the basic structural, functional, and
+biological unit of all known living organisms. Human body contains
+around \(10^{14}\) which is three order of magnitude more than number of
+stars in the Milky Way. This ensemble of cells are traditionally
+classified into cell types based on their phenotypical variety.
+
 \begin{quote}
-Cette espèce de leucocytes a une grande ressemblance avec certains
+\emph{for their immense number, the variety of cells is much smaller:
+only about 200 different cell types are represented in the collection of
+about \(10^{14}\) cells that make up our bodies. These cells have
+diverse capabilities and, superficially, have remarkably different
+shapes\ldots{}.} \citet{Boal2002}
+\end{quote}
+
+In the description of TME, I have referred to cell types of immune cells
+as well-established entities of immune system. However, the definition
+of cell types remains controversial and there is no consensus among
+researchers how exactly a cell type should be defined. The notion of the
+cell-subtypes is even more vague. The problem does not only concerns
+immune cells, most of cell types of our organism, classified initially
+according to their morphology, seem to fulfil multiple functions. One
+can also relate cell-type problem to species problem where scientist
+also debate about where to draw the borders between species. This
+problem is widely generalized as ``theory of types'' \citep{Slater2013}
+in many disciplines as philosophy, linguistics, mathematics.
+
+In this chapter I will limit the description to immune cell types.
+
+An immune cell can be described nowadays along many axes:
+
+\begin{itemize}
+\tightlist
+\item
+  Phenotype /surface markers
+\item
+  Stability
+\item
+  Morphology (expressed proteins)
+\item
+  Ultrastructure (electron microscopy)
+\item
+  Molecular data (gene expresson, genotype, epigenome)
+\item
+  Cell fate
+\item
+  Cell of origin
+\item
+  Function
+\end{itemize}
+
+Depending how well a cell is different from all other cells along those
+axes, it will (or not) be defined as a distinct cell type. However, this
+comes with more or less subjective threshold on where the cells become
+\emph{significantly different}. This thresholds can be established
+computationally or by an expert. Usual practice is a mix of both
+methods.
+
+Since the beginning of immunology, there were disagreement between
+pre-defined cell types and cell functions.
+
+\begin{quote}
+\emph{Cette espèce de leucocytes a une grande ressemblance avec certains
 éléments fixes du tissu conjonctif, ainsi qu'avec des cellules
 endothéliales et des cellules de la pulpe splénique. On est donc souvent
 embarrassé, surtout lorsqu'on trouve ces leucocytes mononucléaires en
 dehors des vaisseaux, pour les distinguer des autres espèces de cellules
-mentionnées.
-
-​ --- Elie Metchnikoff, Leçons sur la pathologie comparée de
+mentionnées.} --- Elie Metchnikoff, Leçons sur la pathologie comparée de
 l'inflammation, 1891
 \end{quote}
 
-Pathological characterisation
+The definition of cell types and subtypes is widely discussed today with
+arrival of single cell technologies that allow a change of paradigm in
+cell classifications. Up to now, the top-down approach was mostly used.
+Pre-defined set of parameters describing a cell was fixed in order to
+select cells and then other parameters were measured. Now, it is
+possible to practice bottom-up approach where all (or some) parameters
+are measured for a single cell and then, depending on its distance from
+other cells, cell types are defined \citep{Satija2014}.
 
-FACS molecular charaterisation
+\begin{quote}
+\emph{The concept of ``cell type'' is poorly defined and incredibly
+useful}\\
+--- Allon Klein, Harvard Medical School
+\end{quote}
 
-Necessary for the chapter \protect\hyperlink{map}{Heterogeneity of
-immune cell types}
+Researchers agree that the concept of cell type is artificial and a
+continuum of cell types is closer to the reality. According to Susanne
+Rafelski,
+
+\begin{quote}
+\emph{A useful way to classify cells might thus be a multiscale and
+multi- parameter cell-type space that includes vectors for key
+intracellular organizational, dynamic, and functional features as well
+as tissue location, gene expression etc.}
+\end{quote}
+
+Some, as Allon Klein, propose to introduce a concept of \emph{cell
+states} which would better describe a cell depending on its context and
+function. However, an emerging challenge would be to connect \emph{cell
+states} with historical \emph{cell types.}
+\citep{EdiorialCellSystems2017} .
+
+Another aspect of cells, that I am not approaching in this thesis is
+time. Cells are shaped by thier environment, intrinsic and extrinsic
+events and can change states, functions etc. Can one cell belong to
+different cell types depending on its trajectory? How to include the
+dynamic aspect of the cells into the classification?
+
+Thus, most scientist agree that used convention of cell types is not
+ideal and it is more matter of convenience than biological reality. This
+leaves a room to study cells and challenge existing classification.
+Describing cell types or cell states in tumor micorenvironment is
+extremely interesting as still little is know about the diversity of
+cell infiltrated in solid tissues.
 
 \hypertarget{summary}{%
 \subsubsection{Summary}\label{summary}}
@@ -1207,11 +1306,11 @@ important data types used in this project to investigate the TME.
 
 Nowadays, more and more biological data is produced. However, this
 proliferation of accessible resources is not proportional to generated
-insights and wisdom. In this thesis, we wok mostly generate
-\emph{Knowledge} and \emph{Insights} and we hope to generate some
-\emph{Wisdom} (Fig. \ref{fig:information-power}). In this section, we
-will introduce the foundation of our analysis: different data types that
-will be further discussed and explored in chapters that follow.
+insights and wisdom. In this thesis, I aim to generate \emph{Knowledge}
+and \emph{Insights} and we hope to generate some \emph{Wisdom} (Fig.
+\ref{fig:information-power}). In this section, we will introduce the
+foundation of our analysis: different data types that will be further
+discussed and explored in chapters that follow.
 
 \begin{figure}
 
@@ -1219,7 +1318,7 @@ will be further discussed and explored in chapters that follow.
 
 }
 
-\caption{\textbf{From \emph{Data} to
+\caption[From Data to Wisdom]{\textbf{From \emph{Data} to
 \emph{Wisdom}}. Illustration of different steps that it takes to go from
 \emph{Data} to generating \emph{Wisdom}. It highlights that generating
 data is not equal to understanding it and additional efforts are needed
@@ -1303,11 +1402,20 @@ scalable way to measure tumor micro environment.
 \hypertarget{omics}{%
 \subsection{omics}\label{omics}}
 
-\begin{itemize}
-\tightlist
-\item
-  Some kind of sequencing explanation needed for non-biologists
-\end{itemize}
+In biological systems information is coded in a form of DNA that do not
+vary a lot between different individuals of the same species. In order
+to trigger a function in an organism, a part of the DNA is transcribed
+to RNA, depending on the intrinsic and extrinsic factors, and after
+additional modification messenger RNA (mRNA) is translated into a
+protein (i.e.~digestive enzyme) that fulfill a role in the organism. The
+mRNA information (also called transcriptome) can be captured with
+experimental methods at high throughput (transcriptomics) and provides
+an approximation of the state of the studied system (i.e.~a tissue).
+There is also information, not coded on the DNA sequence but in a
+pattern of chemical species that can regulate the state transition of
+DNA information. This additional regulators are called collectively
+epigenome and some of them, like methylation, can be also measured at
+high-throughput.
 
 \hypertarget{transcriptome}{%
 \subsubsection{Transcriptome}\label{transcriptome}}
@@ -1324,6 +1432,14 @@ In addition, many genetic and epigenetic events can be either directly
 observed or indirectly inferred from transcriptomic data. Transcriptome
 can be measure with microarrays or RNA-seq NGS technology.
 
+Microarrays remain cost-efficient and popular technique designed in 90.
+There exist two and one color fluorescent probes, both representing
+different challenges in experimental design for batch effect removal.
+RNA-seq, in contrast, uses sequenced RNA to quantify the expression. As
+not only selected genes (probes) are quantified it can be used to study
+unknown parts of the genome. RNA-seq is also characterised by lower
+background noise than microarrays.
+
 Bulk transcriptome data are quite accessible nowadays. They can be
 obtained from either flash-frozen or formalin-fixed, paraffin-embedded
 (FFPE) tissue samples, including both surgically resected material and
@@ -1331,7 +1447,10 @@ core needle biopsies \citep{Schelker2017}.
 
 The main flaw of transcriptomic data is that the reproducibility between
 different platforms is limited. As a result, direct comparison between
-two datasets produced by different platforms is not advised.
+two datasets produced by different platforms is not advised. There are
+12 thousands genes that are matching between four sequencing platforms.
+Through gene names conversions a lot of information is lost and bias is
+introduced.
 
 Different strategies can be adapted to analyse bulk transcriptome.
 
@@ -1348,7 +1467,7 @@ experimental conditions.
 
 }
 
-\caption{\textbf{Five categories of RNA-seq
+\caption[Five categories of RNA-seq data analysis.]{\textbf{Five categories of RNA-seq
 data analysis.} Differential analyses: comparing two (or more)
 conditions, Relative analyses: comparing to an internal refernce
 (average, base level), Compositional analyses: inferring cell types or
@@ -1379,20 +1498,6 @@ In this work transcriptome data analysis fails into multiple categories:
 Compositional, Relative and aims to construct a Global-level
 conclusions.
 
-\hypertarget{epigenome}{%
-\subsubsection{Epigenome}\label{epigenome}}
-
-An epigenome can be defined as a record of the chemical changes to the
-DNA and histone proteins of an organism. Changes to the epigenome can
-provoke changes to the structure of chromatin and changes to the
-function of the genome \citep{Bernstein2007}. Epigenome data usually
-contains information about methylation CpG island changes. In cancer,
-global genomic hypomethylation, CpG island promoter hypermethylation of
-tumor suppressor genes, an altered histone code for critical genes, a
-global loss of monoacetylated and trimethylated histone H4 were
-observed. Methylome profiles can be also use as molecular signature
-\citep{Jeschke2017}.
-
 \hypertarget{single-cell-rna-seq}{%
 \subsubsection{Single cell RNA-seq}\label{single-cell-rna-seq}}
 
@@ -1421,10 +1526,9 @@ Experts highlight as the most ``batch effect'', ``noise'' and ``dropout
 effect'' \citep{Perkel2017}. So far, there are no official standards
 that can be applied which makes data comparison and post-processing even
 more challenging. Up to date, there are around 70 reported tools and
-resources for single cell data processing \citep{Davis2016} .
-
-A limited number of single-cell datasets of tumors are made publicly
-available (@ TABLE ?).
+resources for single cell data processing \citep{Davis2016} . A limited
+number of single-cell datasets of tumors are made publicly available and
+more are to come.
 
 One can ask why then developing computational deconvolution of bulk
 transcriptome if we can learn relevant information from single-cell
@@ -1446,18 +1550,6 @@ brake to the use of single cell technology more broadly might be as well
 the price that is nearly 10x higher for single cell sample compared to
 bulk \citep{Cedar2018}.
 
-\begin{longtable}[]{@{}cc@{}}
-\toprule
-Technology & Price\tabularnewline
-\midrule
-\endhead
-scRNA-seq & 3000\$ / sample\tabularnewline
-RNA-seq & 200 \$ / sample\tabularnewline
-FACS & 0.05\$ / cell\tabularnewline
-CyTOF & 35\$/cell\tabularnewline
-\bottomrule
-\end{longtable}
-
 In this work, we are using single cell data in two ways. Firstly, in
 \protect\hyperlink{results}{Chapter 5} we compare immune cell profiles
 defined by scRNA-seq, blood and blind deconvolution (problem introduced
@@ -1465,6 +1557,20 @@ in \protect\hyperlink{immune-signatures}{Immune signatures section}).
 Secondly, in \protect\hyperlink{map}{Chapter 6} we use single call data
 of Metastatic melanoma generated by \citet{Tirosh2016} to demonstrate
 heterogeneity of subpopulations of Macrophages and NK cells.
+
+\hypertarget{epigenome}{%
+\subsubsection{Epigenome}\label{epigenome}}
+
+An epigenome can be defined as a record of the chemical changes to the
+DNA and histone proteins of an organism. Changes to the epigenome can
+provoke changes to the structure of chromatin and changes to the
+function of the genome \citep{Bernstein2007}. Epigenome data usually
+contains information about methylation CpG island changes. In cancer,
+global genomic hypomethylation, CpG island promoter hypermethylation of
+tumor suppressor genes, an altered histone code for critical genes, a
+global loss of monoacetylated and trimethylated histone H4 were
+observed. Methylome profiles can be also use as molecular signature
+\citep{Jeschke2017}.
 
 \hypertarget{immunotherapies}{%
 \section{From cancer phenotyping to immune
@@ -1540,7 +1646,7 @@ tolerance are expressed.
 
 }
 
-\caption{\textbf{Cancer-immune phenotypes: the
+\caption[Cancer-immune phenotypes: the immune-desert phenotype, the immune–excluded phenotype and the inflamed phenotype.]{\textbf{Cancer-immune phenotypes: the
 immune-desert phenotype (brown), the immune--excluded phenotype (blue)
 and the inflamed phenotype (red).} The immune--desert phenotype is
 characterised by paucity of immune cells and cytokines. In the
@@ -1563,42 +1669,28 @@ Nature. All rights reserved.}\label{fig:immune-phenotypes}
 
 
 
-\citet{Thorsson2018} performed a multi-omic analysis of TCGA datasets
-that allowed them to define 6 subtypes that are valid across cancer
-types:
+A presence of immune phenotypes was confirmed by for example by
+\citet{Becht2016} in colorectal cancer, where after deconvolution of
+bulk tumor profiles, pattern of immune and stroma cells abundance was
+matching four cancer subtypes. The good prognosis was related to
+cytotoxic response and bad prognosis to lymphocytes and cells of
+monocytic origin.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  wound healing
-\item
-  IFN-\(\gamma\) dominant
-\item
-  inflammatory
-\item
-  lymphocyte depleted
-\item
-  immunologically quiet
-\item
-  TGF-\(\beta\) dominant
-\end{enumerate}
-
-Different indicators were used to define these six phenotypes:
-
-The immunogenicity of the tumors can be explained by tumor-intrinsic
-factors and tumor-extrinsic factors \citep{Gajewski2006}.
-Tumor-intrinsic factors are, the neoantigen load and frequency, the
+According to \citet{Gajewski2006}, the immunogenicity of the tumors can
+be explained by tumor-intrinsic factors and tumor-extrinsic factors.
+Tumor-intrinsic factors are: the neoantigen load and frequency, the
 mutational load, the expression of immunoinhibitors and
 immunostimulators (e.i. PD-L1), and alteration of HLA class I molecules.
 Tumor-extrinsic factors include chemokines regulating T cell
 trafficking, infiltration of effector TILs and immunosuppressive TILs,
 and soluble immunomodulatory factors (cytokines).
 
-A plethora of different computational methods have been developed in
-order to further characterize tumor samples using different factors. We
-mention here mainstream methods that cover different approaches of
-scoring the TME-cancer phenotype.
+\hypertarget{scoring-the-immune-infiltration}{%
+\subsection{Scoring the immune
+infiltration}\label{scoring-the-immune-infiltration}}
+
+The most know scoring system based on image analysis is named
+Immunoscore.
 
 \hypertarget{immunoscore}{%
 \subsubsection{Immunoscore}\label{immunoscore}}
@@ -1621,6 +1713,11 @@ clinical applications, although it does not tell us a lot about
 underlying biology. It is also limited to a few cell types while it may
 be that in some cancer types or patients, the system requires more
 detailed or rich analysis of larger panel of cells.
+
+Computational tools enabled us to characterize and classify TME with
+multi-omics data. Here I present a short list of most influencing and
+complete analysis aiming to redefine tumor phenotypes based on the
+immune infiltration.
 
 \hypertarget{immunophenoscore}{%
 \subsubsection{Immunophenoscore}\label{immunophenoscore}}
@@ -1672,6 +1769,117 @@ remain unclear and result could be sensitive to patients' and data
 heterogeneity as no standardisation was proposed. It should be also
 validated in a systematic independent study.
 
+\hypertarget{the-immune-landscape-of-cancer}{%
+\subsubsection{The immune landscape of
+cancer}\label{the-immune-landscape-of-cancer}}
+
+\rowcolors{2}{gray!6}{white}\begin{table}
+
+\caption[Six immunological subtypes of cancer]{\label{tab:C6}\textbf{Six immunological subtypes of cancer}. General
+characteristic of subtypes generated by \citet{Thorsson2018} as
+described in the original publication.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{|>{}c|>{}c|>{}c|>{}c|>{}c|>{}c|>{}c|}
+\hiderowcolors
+\toprule
+\rowcolor{Gray}  \textcolor{white}{\textbf{Cluster}} & \textcolor{white}{\textbf{Features}} & \textcolor{white}{\textbf{Macrophage..lymphocyte}} & \textcolor{white}{\textbf{Th1.Th2}} & \textcolor{white}{\textbf{Proliferation}} & \textcolor{white}{\textbf{Intratumoral.heterogeneity}} & \textcolor{white}{\textbf{Other}}\\
+\midrule
+\showrowcolors
+C1 & Wound healing & Balanced & Low & High & High & \\
+C2 & IFN-$\gamma$ dominant & Lowest & Lowest & High & Highest & Highest M1 and CD8 T cells\\
+C3 & Inflammatory & Balanced & High & Low & Lowest & Highest Th17\\
+C4 & Lymphocyte depleted & High & Minimal Th & Moderate & Moderate & \\
+C5 & Immunologically quiet & Highest & Minimal Th & Low & Low & Highest M2\\
+C6 & TGF-$\beta$ dominant & High & Balanced & Moderate & Moderate & Highest TGF-β signature\\
+\bottomrule
+\end{tabular}}
+\end{table}\rowcolors{2}{white}{white}
+
+\citet{Thorsson2018} performed a multi-omic analysis of TCGA datasets
+that allowed them to define 6 subtypes that are valid across cancer
+types (see Tab. \ref{tab:C6} ).
+
+
+
+
+
+Authors selected eight indicators to define these six phenotypes:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  differences in macrophage or lymphocyte signatures
+\item
+  Th1:Th2 cell ratio
+\item
+  extent of intratumoral heterogeneity
+\item
+  aneuploidy
+\item
+  extent of neoantigen load
+\item
+  overall cell proliferation
+\item
+  expression of immunomodulatory genes
+\item
+  prognosis
+\end{enumerate}
+
+These indicators were selected among many other indicators though
+machine learning (elastic net regression) for the best predictive power
+of survival.
+
+All the data and computed parameters can be accessed at
+\href{https://isb-cgc.shinyapps.io/shiny-iatlas/}{CRI iAtlas Portal}.
+Among the six phenotypes C3 (Inflammatory) has the best associated
+prognosis while C1 (wound healing) and C2 (IFN-\(\gamma\) dominant),
+much less favourable outcome. This again illustrates the ambivalent
+nature of the immune system as the best and the worst prognosis are
+associated with immunologically active tumors. C4 (lymphocyte depleted)
+and C6 (TGF-\(\beta\) dominant) subtypes had the worst prognosis. The
+content of immune cells was determined using different tools and data
+types (expression, DNA methylation, images etc.) We can learn a lot from
+the study, however, it seems difficult to integrate the methods to an
+ordinary practice because different data levels are necessary for the
+same samples to compute all the indicators.
+
+\hypertarget{a-pan-cancer-landscape-of-immune-cancer-interactions-in-solid-tumors}{%
+\subsubsection{A pan-cancer landscape of immune-cancer interactions in
+solid
+tumors}\label{a-pan-cancer-landscape-of-immune-cancer-interactions-in-solid-tumors}}
+
+A different classification was proposed by \citet{Tamborero2018}, also
+using TCGA data. They distinguished 17 immune infiltration patters based
+on the immune cell proportions and 6 different clusters based on
+cytotoxicity measure across all cancer types (named immune-phenotypes)
+that were finally summarized in three groups: cytotxic immune
+infiltrate, infiltrate with more immune-suppressive component and poor
+immune infiltrate. According to the analysis, one of the most important
+factors is cytotoxicity. Tumors with high cytotoxicity were
+characterized by low clonal heterogeneity, with gene alterations
+regulating epigenetic, antigen presentation and cell-cell communication.
+The medium-level cytotoxic tumors had activated invasion and remodelling
+of adjacent tissue, probably favourable to immune-suppressive cells. The
+low cytotoxicity subgroup of tumors had altered pathways: cell-cycle,
+hedgehog, \(\beta\)- catenin and TGF-\(\beta\) pathways. This result
+roughly overlaps with the one of \citet{Thorsson2018}. The survival
+analysis based on the 6 immune-pehnotypes revealed that for most cancer
+types, high cytotoxic tumors are associated with better survival. To
+evaluate tumor environment cells authors used gene set variation
+analysis \citep{Hanzelmann2018} with a set of pre-defined cell-type
+markers. Another important conclusion of \citet{Tamborero2018} is that
+tissue of origin is not the only important factor shaping cell-type
+patterns in tumors. However, the least infiltrated tumors were lung,
+uterine and bladder cancers, while the most infiltrated were pancreatic,
+kidney, skin cancers and glioblastoma. They also analysed cancer cell
+pathways after computational purification of tumor samples (subtraction
+of the immune signal) in order to better understand cancer signalling.
+
+A different approach, is to characterize tumors based on signaling
+pathways organized in functional modules.
+
 \hypertarget{immune-maps}{%
 \subsubsection{Immune maps}\label{immune-maps}}
 
@@ -1685,16 +1893,19 @@ projected on the molecular map (for example gene/protein expression from
 user data can be paired with entities on the map ). Currently it
 contains \href{https://navicell.curie.fr/}{11 maps} covering signalling
 processes involved in apoptosis, cell cycle, DNA repair, EMT, cell
-motility, Ewing sarcoma, Dendritic cells, Macrophage cells, Natural
-killer cells, CAF and integrated innate immunity map. Through projection
-of the data on the innate immunity map, one can see if the patient or a
-sample is characterised by pro- or anti-tumor activated pathways due to
-the organisation of the map layout. Also, different CAF subtypes were
+motility, Ewing sarcoma. Additional maps are to be promptly integrated
+into ACSN, are available on
+\href{https://navicell.curie.fr/pages/maps.html}{Navicell website}:
+Dendritic cells, Macrophage cells, Natural killer cells, CAF and
+integrated innate immunity map. Through projection of the data on the
+innate immunity map, one can see if the patient or a sample is
+characterised by pro- or anti-tumor activated pathways due to the
+organisation of the map layout. Also, different CAF subtypes were
 characterised with the CAF specific map in \citep{Costa2018}. Kondratova
 and colleagues (including myself) used innate immune map to characterize
 NK and Macrophages subtypes and in another publication
-\citep{Kondratova2018} different patient profiles using scRNAseq data of
-Metastatic melanoma.
+\citep[\#][]{JMBKondratova2018} different patient profiles using
+scRNAseq data of Metastatic melanoma.
 
 \hypertarget{summary-1}{%
 \subsubsection{Summary}\label{summary-1}}
@@ -1711,24 +1922,114 @@ evaluate the state of TME and tumor-stroma-immune cells communication.
 \subsection{Immune signatures - biological
 perspective}\label{immune-signatures}}
 
+A gene signature is
+
+\begin{quote}
+\emph{a single or combined group of genes in with a uniquely
+characteristic pattern of gene expression that occurs as a result of an
+altered or unaltered biological process or pathogenic medical condition}
+\citep{Itadani2008, Liu2008}.
+\end{quote}
+
+A term \emph{metagene} is also used to describe an aggregated pattern of
+gene expression. The aggregation can correspond to simple mean of
+samples or can be obtained though matrix factorisation or source
+separation techniques, clustering.
+
+They can be classified based on their form:
+
 \begin{itemize}
 \tightlist
 \item
-  definition of signature: marker genes, list of genes, weighted list,
-  metagenes
+  gene list
 \item
-  the general immune signature of signature of immune infiltration and
-  stroma vs immune signature of a specific cell type of functional
-  subpopulation
+  weighted gene list
 \item
-  purpose of signatures
-\item
-  availability of immune signatures
-\item
-  the problem of not consistency of immune signatures
-\item
-  origin of signatures
+  gene networks
 \end{itemize}
+
+Gene lists are simple enumeration of transcripts names or gene
+identifiers. Application of gene list is often limited to gene
+enrichment analysis tools or gene selection from the data. An
+alternative is a weighted gene list or ranked gene list, where genes are
+ranked according to their importance. Often the ranks is obtained though
+comparison between two conditions or test/control. They can be also
+based on absolute gene expression values\citep{Lyons2017}. One possible
+problem with this weighted gene list can be platform dependence. Gene
+networks are less popular signature type where not only gene id are
+important but also they way ho they interact with each other. Network
+signatures can make signatures more robust as a lack of a single gene in
+studied dataset should not the global conclusion \citep{Sonachalam2012}.
+
+There exist a big choice of databases storing collections of signatures.
+They contain gene expression and other genomic data such as genotype,
+DNA methylation, and protein expression data attributed to some
+condition of reference. A big collection of immune signatures are
+regrouped by \href{https://www.immgen.org/}{Immunological Genome Project
+(IGP, ImmGen)} \citep{Heng2008}. Gene expression of protein coding genes
+measure in mice immune cells, ex vivo, in different conditions (drug
+treatment, perturbations) were regrouped in this ressource. A different
+ressource
+\href{https://sysimm.ifrec.osaka-u.ac.jp/immuno-navigator/}{Immuno-navigator}
+\citep{Vandenbon2016} that stores information about human and murine
+immune genes and co-expression networks.
+\href{http://software.broadinstitute.org/gsea/msigdb/collections.jsp}{ImmuneSigDB}
+is a collection of gene-sets that describe immunity and inflammation in
+transcriptomic data \citep{Godec2016} and a part of popular MSigDB
+ressource used commonly for gene set enrichment analysis (GSEA)
+\citep{Subramanian2005}.
+
+They can also be classified based on their use:
+
+\begin{itemize}
+\tightlist
+\item
+  prognostic signatures
+\item
+  predictive signatures
+\item
+  diagnostic signature
+\item
+  specific signature
+\end{itemize}
+
+The \emph{prognostic} signatures can distinguish between patients with a
+good or from patients with bad prognosis when deciding to assign a
+patient to a therapy.
+
+The \emph{predictive} signatures are able to predict treatment benefit
+between experimental and/or nontraditional treatment groups vs.~control,
+i.e.~in clinical trials \citep{Michiels2016}.
+
+The \emph{diagnostic} signature, also called \emph{biomarkers} can be
+used for detection of a disease in a patient, like for example in blood
+tests.
+
+The \emph{specific} signatures should describe with robustness and
+reproducibility the same group of cells, or patients, or condition among
+different studies.
+
+Examples of predictive and prognostic gene signatures, used in clinical
+practice are Oncotype DX, EndoPredict, PAM50, and Breast Cancer Index
+for breast cancer \citep{Harris2016}.
+
+Studies discussed in this Chapter showed plausible importance of
+immune-related signals in cancer therapy. However, there is no no
+immune-related gene signatures used in clinical practice currently. This
+can be because of the lack of consistency of genes, both within the same
+tumor type and among different tumors that can be found in the
+signatures \citep{Chifman2016}. Difference in gene expression of
+different cell populations were found even intra- and interlabs. This
+difference can be due to confounding factors like stress or to
+contamination \citep{Heng2008}.
+
+In many studies \emph{specifc} signatures of cell types are used. They
+seem to be good in discriminating between broad lineages of cell type,
+such as lymphoid and myeloid. Although thier capacity to describe cell
+states and cell subtypes is more discutable \citep{Chifman2016}. Another
+matter is that cell type signatures are often obtained in model
+organisms or extracted from different tissue (i.e.~blood-derived
+signatures vs cancer-derived signatures).
 
 \begin{quote}
 \emph{the gene expression profiles of tumour-associated immune cells
@@ -1736,110 +2037,15 @@ differ considerably from those of blood derived immune cells}
 \citep{Schelker2017}
 \end{quote}
 
+With emergence of single-cell signatures, there are new horizons of gene
+signatures to be discovered. Especially signatures of rare cell types in
+solid tissues. Yet, it is up to researches to cross validate single cell
+signatures with different types of data as scRNA-seq is not free of
+platform and post-processing bias.
+
 Immune signatures will be also discussed as a part of deconvolution
 pipeline in the \protect\hyperlink{methods}{Chapter 2} under the section
-about \emph{basis matrix}.
-
----------
-
-Gene expression signatures
-
-Lack of immune-specific signatures. Gene expression signatures are used
-as tools to predict which patients will benefit from certain treatments
-and to guide decision-making in the clinic.46
-
-Gene expression signatures are considered ``prognostic'' when they can
-differentiate between patients with a good or bad prognosis in the
-context of traditional therapy or no treatment at all.47 Gene signatures
-are considered ``predictive'' when they are able to predict treatment
-benefit between experimental and/or nontraditional treatment groups
-vs.~control, typically in the setting of a randomized controlled
-clinical trial.47 In breast cancer, the predictive and prognostic assays
-Oncotype DX, EndoPredict, PAM50, and Breast Cancer Index are now
-recommended as adjuncts for clinical decision-making for patients with
-specific subtypes of breast cancer.46 These signatures, however, are not
-specifically immune-related and share little overlap in their selected
-genes.47, 48 Because tumor cells and infiltrating immune cells both have
-prognostic value, evaluating tumors and the surrounding stroma with use
-of the methods described above, in order to generate immune-related
-signatures, can provide prognostic and perhaps predictive information
-associated with patient outcome. Although there are no immune-related
-gene signatures used in clinical practice currently, several studies
-have shown the validity and reproducibility of using immune-related
-signatures to predict outcome and response to therapy in patient cancer
-samples.
-
-Solution: in silico, pan-cancer studies. One reason immune-related gene
-signatures have not been widely used in clinical settings is the lack of
-consistency of genes, both within the same tumor type and among
-different tumors.49 Efforts to address this problem are under way, with
-the development of conserved immune gene signatures representing
-multiple tumor types.49 Another problem with immune-related gene
-signatures is the difficulty in decipher- ing whether the genes
-represent specific immune cell popula- tions, antigen-presenting
-machinery, cytokines, or other immune- related molecules. In silico
-studies have validated pan-cancer immune-related gene signatures that
-represent many immune cell types with known prognostic significance
-including T cells, B cells, NK cells, macrophages, as well as various
-cytokine populations.49, 50 Immune-related gene signatures have proven
-to be prognostic of clinical outcome across multiple cancer types and
-are associated with response to immune therapy in specific cancers.49,
-50 Recent findings on immune-related gene signatures have shown that
-gene signatures are able to distinguish between broad lineages of cell
-type, such as lymphoid and myeloid but are less adept at distinguishing
-between more differentiated cells such as CD8+ and CD4+ T cells.49
-
-Ranked gene lists
-
-Oversimplification of interpretation. Currently, given the multi-
-
-tude of methods with which to analyze genomic data, the
-
-problem no longer lies in obtaining gene expression profiles but
-
-rather in interpreting the data. Analysis of gene expression data
-
-typically involves a comparison of two groups and the creation of
-
-a ranked gene list based on expression. One method of
-
-interpretation involves looking at each end of the ranked list to
-
-7, 51
-
-Quantity of data. The NCBI Gene Expression Omnibus database contains
-more than 30,000 series and 1 million samples of array- based expression
-data, many of which involve the immune system.52 Because of the large
-amount of expression data relating to the immune system and the
-inability to compare information between the various datasets, the
-Immunological Genome Project (IGP) was created to provide a
-comprehensive compendium of the expression of protein-coding genes for
-all immune cell popula- tions in the mouse immune system.53 This project
-was developed to provide information on primary immune cells isolated ex
-vivo from the mouse immune system and then integrate that information
-into networks, while taking into account variation via genetic
-polymorphisms, knock-out of genes, knockdown via RNA interference, and
-drug treatment.53 Researchers can use these data to determine gene
-expression profiles that serve as biomarkers for predicting response to
-treatment and for measur- ing residual disease after immune therapy.
-
-Solution 1: added-value/specialty databases. Primary databases contain
-gene expression and other genomic data such as genotype, DNA
-methylation, and protein expression data. These
-
-evaluate genes showing the largest difference in expression. Problems
-with this method include small relevant biological differences between
-genes leading to no statistical significance, a long list of genes that
-are statistically significant but lack biologic relevance, missed
-effects on pathways by analyzing single genes, and variation in gene
-lists for the same biologic system based on two different groups'
-data.51 This again underscores the challenge faced when trying to create
-a clinically useful immune-related gene signature from a high-throughput
-panel of genes.
-
-\citet{Lyons2017}
-
--------
+about \emph{basis matrix} in mathematical terms.
 
 \hypertarget{cancer_Therapies}{%
 \subsection{Cancer therapies}\label{cancer_Therapies}}
@@ -1944,7 +2150,7 @@ immunotherapy FDA-accepted treatments can be found in Fig.
 
 }
 
-\caption{\textbf{This timeline describes
+\caption[This timeline describes short history of FDA approval of checkpoint blocking immunotherapies up to 2017.]{\textbf{This timeline describes
 short history of FDA approval of checkpoint blocking immunotherapies up
 to 2017.} Reprinted by permission from Springer Nature
 \citep{Taube2017a} Macmillan Publishers Limited, part of Springer
@@ -1979,35 +2185,47 @@ checkpoints based therapies.
 \section{Biological dimension of the
 thesis}\label{biological-dimension-of-the-thesis}}
 
-Explaining the biological dimension of the project
+In this thesis I aim to bring new insights into composition and function
+of TME. It is clear that complex information is necessary to understand
+the role of different immune cells in cancer and not only presence but
+also function are to be deciphered from available data. Therefore, this
+project, on its biological side, has two main aims:
 
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  help to better understand tumor immunophenotypes (cell types present
-  and their biology, interactions)
+  fundamental research: understand presence of different cell type,
+  their interactions and functions in TME of different cancers types and
+  how other factors as stress, cell cycle etc. shape them. Thanks to
+  data-driven and discovery nature of the project, I will also hope to
+  understand how signature of cell type evolves in different conditions
+  shaped by other cells and factors.
 \item
-  propose predictive biomarkers - precision medecine
-\item
-  better explore available data
-\item
-  integrate the data (transcriptome \& methylome, validate transcriptome
-  with FACS etc.)
-\end{itemize}
+  translational research: how immune landscape and its state can help to
+  predict patient survival and better tailor recommendation for therapy.
+  The analysis could also bring to the light possible biomarkers or drug
+  targets for immune therapies.
+\end{enumerate}
+
+The project aims to explore publicly available data, challenge inter-lab
+and inter-platform biases. It will use mainly transcriptomic data
+(because of accessible volume) and cross-validate with other data types:
+scRNA-seq, FACSs, IHC when possible.
 
 \hypertarget{methods}{%
 \chapter{Mathematical foundation of cell-type deconvolution of
 biological data}\label{methods}}
 
 In this chapter, we will discuss how mathematical models can be used to
-extract information about specific cell-types from `bulk' data or how to
-unmix mixed sources. It will introduce you to basic concepts of data
-analysis as well as most popular advanced solutions adapted for
-estimating presence and proportion of immune cells within cancer
-biopsies.
+extract information about specific cell-types from `bulk' transcriptome
+data or how to de-mix mixed sources. It will introduce you to basic
+concepts of approaches adapted for cell-type deconvolution, show an
+overview of the evolution of the field as well as it will explicit most
+tools for estimating presence and proportion of immune cells within
+cancer biopsies.
 
-\emph{Note: Parts of this chapter with benchmark data might be a part of
-a future review}
+Deconvolution - definition
 
 Explain the principle
 
@@ -2017,13 +2235,17 @@ Explain the principle
 
 }
 
-\caption{\textbf{Principle of the
+\caption[\textbf{Principle of the
+deconvolution applied to transcriptome}]{\textbf{Principle of the
 deconvolution applied to transcriptome} Graphical illustration of the
 deconvolution of mixed samples. Starting from the left, gene expression
 of genes A B C is a sum of expression of cell types 1, 2, 3, 4. After
 deconvolution, cell types are separated and gene expression of each cell
 type is estimated taking into account cell type proportions.}\label{fig:deconvolution-cartoon}
 \end{figure}
+
+
+
 
 
 
@@ -2039,14 +2261,296 @@ learning}\label{introduction-to-supervised-and-unsupervised-learning}}
 \begin{itemize}
 \tightlist
 \item
-  Explaining difference between supervised and non-supervised learning
+  ML
+\item
+  Explaining difference between supervised and unsupervised learning
   technically and in our context
 \end{itemize}
 
-\hypertarget{blind-source-separation}{%
-\section{Blind source separation}\label{blind-source-separation}}
+Unsupervised learning The computer is handed over some data to learn
+from and is the source for selecting an action, although no feedback is
+given so the computer has no clue of how well it did.
 
-(ICA, NMF, CAM)
+Supervised learning The computer is handed over some data to learn from
+and is also told what is the right decision in each case. This requires
+a lot of observing.
+
+Reinforcement learning The computer is handed over some data to learn
+from and receives feedback on how well it did based on the result, but
+is not told which specific action was good or bad.
+
+Clustering
+
+\hypertarget{cell-type-deconvolution-models-of-bulk-transcriptome}{%
+\section{Cell-type deconvolution models of bulk
+transcriptome}\label{cell-type-deconvolution-models-of-bulk-transcriptome}}
+
+\hypertarget{literature-overview}{%
+\subsection{Literature overview}\label{literature-overview}}
+
+\begin{landscape}\rowcolors{2}{gray!6}{white}
+\begin{table}
+
+\caption[Summary of methods for cell-type deconvolution of bulk transcriptome]{\label{tab:mytab}\textbf{Summary of methods for cell-type
+deconvolution of bulk transcriptome}. Data gathered based on pubmed and
+google scholar search in May 2018.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{cccccccccccccc}
+\hiderowcolors
+\toprule
+name & data & type & doi & year & application & availability & out.profiles & out.proportions & category & language & citations & pop.index & previously.covered\\
+\midrule
+\showrowcolors
+GSVA scores & RNA-seq & supervised & https://doi.org/10.1158/1078-0432.CCR-17-3509 & 2018 & Cancer transcriptome & NA & FALSE & TRUE & enrichment & unknown & 1 & 1.00 & FALSE\\
+MySort & MA & supervised & https://doi.org/10.1186/s12859-018-2069-6 & 2018 & Blood & https://testtoolshed.g2.bx.psu.edu/repository?repository\_id=6e9a9ab163e578e0\&changeset\_revision=e3afe097e80a & FALSE & TRUE & regression & R, web tool & 0 & 0.00 & FALSE\\
+ADVOCATE & RNA-seq & supervised & https://doi.org/10.1101/288779 & 2018 & Cancer transcriptome & NA & TRUE & TRUE & probabilistic & R & 0 & 0.00 & FALSE\\
+DTD & scRNA-seq & supervised & https://arxiv.org/abs/1801.08447v1 & 2018 & Cancer transcriptome & NA & FALSE & TRUE & regression & unknown & 0 & 0.00 & FALSE\\
+CellDistinguisher & MA + RNA-seq & unsupervised & https://doi.org/10.1371/journal.pone.0193067 & 2018 & yeast cell cycle & https:// github.com/GeneralElectric/CcellDdistinguisher & TRUE & TRUE & convex hull & R & 0 & 0.00 & FALSE\\
+\addlinespace
+dtangle & MA + RNA-seq & supervised & https://doi.org/10.1101/290262 & 2018 & Blood & cran.r-project.org/package=dtangle & FALSE & TRUE & regression & R & 0 & 0.00 & FALSE\\
+DeconICA & MA + RNA-seq & unsupervised & https://doi.org/10.5281/zenodo.1250069 & 2018 & Cancer transcriptome & https://urszulaczerwinska.github.io/DeconICA/ & TRUE & TRUE & matrix factorisation & R, matlab & 0 & 0.00 & FALSE\\
+xCell & MA + RNA-seq & supervised & https://dx.doi.org/10.1186\%2Fs13059-017-1349-1 & 2017 & Cancer transcriptome & http://xcell.ucsf.edu/; https://github.com/dviraran/xCell & FALSE & TRUE & enrichment & R, web tool & 14 & 7.00 & FALSE\\
+BioQC & MA + RNA-seq & supervised & https://doi.org/10.1186/s12864-017-3661-2 & 2017 & Gene expression & https://www.bioconductor.org/packages/release/bioc/html/BioQC.html & FALSE & FALSE & enrichment & R & 6 & 3.00 & TRUE\\
+EPIC & RNA-seq & supervised & https://dx.doi.org/10.7554\%2FeLife.26476 & 2017 & Cancer transcriptome & https://github.com/GfellerLab/EPIC & FALSE & TRUE & regression & R & 4 & 2.00 & FALSE\\
+\addlinespace
+Estimation of immune cell content & scRNA-seq & supervised & https://doi.org/10.1038/s41467-017-02289-3 & 2017 & Cancer transcriptome & NA & FALSE & TRUE & regression & unknown & 3 & 1.50 & FALSE\\
+Enumerateblood & MA & supervised & https://doi.org/10.1186/s12864-016-3460-1 & 2017 & Blood gene expression & https://github.com/cashoes/enumerateblood & TRUE & TRUE & probabilistic & R & 2 & 1.00 & TRUE\\
+ImmunoStates & MA & supervised & https://doi.org/10.1101/206466 & 2017 & Blood, solid tissue, disease & NA & FALSE & TRUE & regression & R & 1 & 0.50 & FALSE\\
+quanTIseq & RNA-seq + Images & supervised & https://doi.org/10.1101/223180 & 2017 & Cancer transcriptome & http://icbi.at/software/quantiseq/doc/index.html & FALSE & TRUE & regression & web tool & 1 & 0.50 & FALSE\\
+SMC & MA & unsupervised & https://doi.org/10.1371/journal.pone.0186167 & 2017 & Tissue mixtures & https://github.com/moyanre/smcgenedeconv & TRUE & TRUE & probabilistic & matlab & 1 & 0.50 & FALSE\\
+\addlinespace
+modular discrimination index & MA + RNA-seq & supervised & https://doi.org/10.1371/journal.pone.0169271 & 2017 & Skin tuberculosis & https://github.com/MJMurray1/MDIScoring & FALSE & TRUE & enrichment & R & 1 & 0.50 & FALSE\\
+DemixT & MA + RNA-seq & supervised & https://doi.org/10.1101/146795 & 2017 & Cancer transcriptome & https://github.com/wwylab/DeMixT & TRUE & TRUE & probabilistic & R & 0 & 0.00 & FALSE\\
+Post‐modified non‐negative matrix factorization & RNA-seq & unsupervised & https://doi.org/10.1002/cem.2929 & 2017 & Cancer transcriptome & NA & TRUE & TRUE & matrix factorisation & matlab & 0 & 0.00 & FALSE\\
+Infino & RNA-seq & supervised & https://doi.org/10.1101/221671 & 2017 & Cancer transcriptome & https://github.com/hammerlab/infino & TRUE & TRUE & probabilistic & Stan & 0 & 0.00 & FALSE\\
+MCPcounter & MA & supervised & https://doi.org/10.1186/s13059-016-1070-5 & 2016 & Cancer transcriptome & https://github.com/ebecht/MCPcounter & FALSE & TRUE & enrichment & R & 42 & 14.00 & TRUE\\
+\addlinespace
+CAM & MA & unsupervised & https://doi.org/10.1038/srep18909 & 2016 & yeast cell cycle & http://mloss.org/software/view/437, & TRUE & TRUE & convex hull & R-java & 12 & 4.00 & TRUE\\
+Immune  Quant & undefined & supervised & https://doi.org/10.1093/bioinformatics/btw535 & 2016 & Human tissues & http://csgi.tau.ac.il/ImmQuant/ & FALSE & TRUE & regression & web tool & 5 & 1.67 & TRUE\\
+VoCAL & MA, GWAS & supervised & https://doi.org/10.1371/journal.pcbi.1004856 & 2016 & Lung tissue & https://cran.r-project.org/web/packages/ComICS/index.html & FALSE & TRUE & regression & R & 5 & 1.67 & TRUE\\
+CellMapper & MA & semi-supervised & https://doi.org/10.1186/s13059-016-1062-5 & 2016 & Brain tissue & http://bioconductor.org/packages/release/bioc/html/CellMapper.html & TRUE & FALSE & matrix factorisation & R & 5 & 1.67 & TRUE\\
+contamDE & RNA-seq & supervised & https://doi.org/10.1093/bioinformatics/btv657 & 2016 & Tumor purity & https://github.com/zhanghfd/contamDE/ & TRUE & TRUE & probabilistic & R & 4 & 1.33 & TRUE\\
+\addlinespace
+ImSig & RNA-seq & supervised & https://doi.org/10.1101/077487 & 2016 & Cancer transcriptome & NA & FALSE & TRUE & enrichment & unknown & 0 & 0.00 & FALSE\\
+CIBERSORT & MA & supervised & https://doi.org/10.1038/nmeth.3337 & 2015 & Cancer transcriptome & http://cibersort.stanford.edu/ & FALSE & TRUE & regression & R, web tool & 343 & 85.75 & TRUE\\
+Virtual Microdissection & MA & supervised & https://doi.org/10.1038/ng.3398 & 2015 & detection of cancer and stroma in PDAC (TCGA) & NA & TRUE & TRUE & matrix factorisation & matlab & 86 & 21.50 & TRUE\\
+CellCODE & MA & semi-supervised & https://doi.org/10.1093/bioinformatics/btv015 & 2015 & Blood & http://www.pitt.edu/\textasciitilde{}mchikina/CellCODE/ & TRUE & TRUE & matrix factorisation & R- C-C++- Fortran & 28 & 7.00 & TRUE\\
+CoD & RNA-seq & supervised & https://doi.org/10.1093/bioinformatics/btv498 & 2015 & Mice diseased tissues & http://www.csgi.tau.ac.il/CoD/ & FALSE & TRUE & regression & web tool & 4 & 1.00 & TRUE\\
+\addlinespace
+DCQ & RNA-seq & supervised & https://dx.doi.org/10.1002\%2Fmsb.134947 & 2014 & Mice blood under flu infection & http://www.dcq.tau.ac.il/ & FALSE & TRUE & regression & web tool & 32 & 6.40 & TRUE\\
+UNDO & MA & unsupervised & https://doi.org/10.1093/bioinformatics/btu607 & 2014 & Cancer transcriptome & https://www.bioconductor.org/packages/release/bioc/html/UNDO.html & TRUE & TRUE & matrix factorisation & R & 18 & 3.60 & TRUE\\
+ESTIMATE & MA + RNA-seq & supervised & https://doi.org/10.1038/ncomms3612 & 2013 & Cancer transcriptome & https://sourceforge.net/projects/estimateproject/ & FALSE & TRUE & enrichment & R & 266 & 44.33 & TRUE\\
+DeconRNASeq & RNA-seq & supervised & https://doi.org/10.1093/bioinformatics/btt090 & 2013 & Tissue mixtures & https://www.bioconductor.org/packages/release/bioc/html/DeconRNASeq.html & FALSE & TRUE & regression & R & 52 & 8.67 & TRUE\\
+DSA & MA & supervised & https://dx.doi.org/10.1186\%2F1471-2105-14-89 & 2013 & Cancer transcriptome & NA & TRUE & TRUE & regression & unknown & 52 & 8.67 & TRUE\\
+\addlinespace
+ISOpure & MA & supervised & https://doi.org/10.1186/gm433 & 2013 & Cancer transcriptome & https://qlab.faculty.ucdavis.edu/isopure/ & TRUE & TRUE & probabilistic & matlab, R & 44 & 7.33 & TRUE\\
+DeMix & MA & supervised & https://doi.org/10.1093/bioinformatics/btt301 & 2013 & Cancer purity & http://odin.mdacc.tmc.edu/∼wwang7/DeMix.html. & TRUE & TRUE & probabilistic & C, R & 38 & 6.33 & TRUE\\
+Nanodissection & MA & supervised & https://doi.org/10.1101/gr.155697.113 & 2013 & Chronic kidney disease (Cell lineages) & http://nano.princeton.edu/ & FALSE & TRUE & regression & web tool & 33 & 5.50 & TRUE\\
+TIMER & MA + RNA-seq & supervised & https://doi.org/10.1186/s13059-016-1028-7 & 2013 & Cancer transcriptome & http://cistrome.org/TIMER/ & FALSE & TRUE & regression & web tool & 33 & 5.50 & TRUE\\
+Self-directed Method for Cell-Type Identification & MA & unsupervised & https://doi.org/10.1371/journal.pcbi.1003189 & 2013 & Cancer transcriptome & NA & TRUE & TRUE & matrix factorisation & matlab & 18 & 3.00 & TRUE\\
+\addlinespace
+MMAD & MA & BOTH & https://doi.org/10.1093/bioinformatics/btt566 & 2013 & in vitro tissue mlxtures & http://sourceforge.net/projects/mmad/ & TRUE & TRUE & regression & matlab & 11 & 1.83 & TRUE\\
+Statical mechanics approach & undefined & unsupervised & https://arxiv.org/abs/1210.7508v1 & 2013 & Udefined & NA & TRUE & TRUE & probabilistic & unknown & 2 & 0.33 & FALSE\\
+TEMT & RNAseq & supervised & https://doi.org/10.1186/1471-2105-14-S5-S11 & 2013 & in vitro cell mixtures & https://github.com/uci-cbcl/TEMT & FALSE & TRUE & probabilistic & python & 0 & 0.00 & TRUE\\
+Semi-supervised Nonnegative Matrix Factorization & MA & semi-supervised & https://doi.org/10.1016/j.meegid.2011.08.014 & 2012 & Blood & https://web.cbio.uct.ac.za/\textasciitilde{}renaud/CRAN/web/CellMix/ & TRUE & TRUE & matrix factorisation & R & 61 & 8.71 & TRUE\\
+PERT & MA & supervised & https://doi.org/10.1371/journal.pcbi.1002838 & 2012 & blood & https://github.com/gquon/PERT & TRUE & TRUE & probabilistic & octave & 33 & 4.71 & TRUE\\
+\addlinespace
+CTen & MA & supervised & https://doi.org/10.1186/1471-2164-13-460 & 2012 & Infected lung tissue & http://www.influenza-x.org/\textasciitilde{}jshoemaker/cten/ & TRUE & FALSE & enrichment & web tool & 31 & 4.43 & TRUE\\
+PSEA & MA & supervised & https://doi.org/10.1038/nmeth.1710 & 2011 & Brain tissue & https://bioconductor.org/packages/release/bioc/html/PSEA.html & FALSE & TRUE & regression & R & 96 & 12.00 & TRUE\\
+Quadratic programming & MA & supervised & https://doi.org/10.1371/journal.pone.0027156 & 2011 & Blood & NA & FALSE & TRUE & regression & unknown & 76 & 9.50 & TRUE\\
+SPEC & MA & supervised & https://doi.org/10.1186/1471-2105-12-258 & 2011 & Blood & http://clip.med.yale.edu/SPEC/ & FALSE & TRUE & enrichment & R & 39 & 4.88 & TRUE\\
+csSAM & MA & supervised & 10.1038/nmeth.1439 & 2010 & Blood & https://github.com/shenorrLab/csSAM & TRUE & FALSE & regression & R & 286 & 31.78 & TRUE\\
+\addlinespace
+Statistical expression deconvolution & MA & supervised & https://doi.org/10.1093/bioinformatics/btq097 & 2010 & Cancer xenografts & NA & FALSE & TRUE & regression & unknown & 53 & 5.89 & TRUE\\
+DSection & MA & supervised & https://doi.org/10.1093/bioinformatics/btq406 & 2010 & Tissue mixtures & http://informatics.systemsbiology.net/DSection & TRUE & FALSE & probabilistic & matlab & 52 & 5.78 & TRUE\\
+deconf & MA & unsupervised & https://doi.org/10.1186/1471-2105-11-27 & 2010 & Blood & https://static-content.springer.com/esm/art\%3A10.1186\%2F1471-2105-11-27/MediaObjects/12859\_2009\_3484\_MOESM1\_ESM.ZIP & TRUE & TRUE & matrix factorisation & R & 41 & 4.56 & TRUE\\
+Abbas regression & MA & supervised & https://doi.org/10.1371/journal.pone.0006098 & 2009 & Blood & NA & FALSE & TRUE & regression & R & 207 & 20.70 & TRUE\\
+ISOLATE & MA & supervised & https://dx.doi.org/10.1093\%2Fbioinformatics\%2Fbtp378 & 2009 & Cancer transcriptome & https://qlab.faculty.ucdavis.edu/isolate/ & TRUE & TRUE & matrix factorisation & matlab & 37 & 3.70 & TRUE\\
+\addlinespace
+Electronical substraction & MA & supervised & https://doi.org/10.1093/bioinformatics/btm508 & 2007 & Infected macrophages & NA & TRUE & TRUE & regression & unknown & 30 & 2.50 & TRUE\\
+Computational expression deconvolution & MA & supervised & https://doi.org/10.1186/1471-2105-7-328 & 2006 & Murine mammary gland & NA & FALSE & TRUE & regression & unknown & 36 & 2.77 & TRUE\\
+Robust Computational Reconstitution & MA & supervised & https://doi.org/10.1186/1471-2105-7-369 & 2006 & Synovial tissue (cell types in silico) & NA & FALSE & TRUE & regression & unknown & 6 & 0.46 & TRUE\\
+MHMM & MA & unsupervised & https://doi.org/10.1089/cmb.2006.13.1749 & 2006 & Yeast cell cycle & NA & TRUE & TRUE & probabilistic & unknown & 4 & 0.31 & TRUE\\
+In silico microdissection & MA & unsupervised & https://doi.org/10.1186/1471-2105-6-54 & 2005 & In vitro tissue mixtures & NA & TRUE & TRUE & probabilistic & unknown & 45 & 3.21 & TRUE\\
+\addlinespace
+Mixture models & MA & supervised & https://doi.org/10.1093/bioinformatics/bth139 & 2004 & Cancer transcriptome & broken link & TRUE & TRUE & probabilistic & R & 66 & 4.40 & TRUE\\
+DECONVOLUTE & MA & supervised & https://doi.org/10.1073/pnas.1832361100 & 2003 & yeast cell cycle & broken link & FALSE & TRUE & regression & Java 2 & 135 & 8.44 & TRUE\\
+Direct method & MA & unsupervised & https://www.ncbi.nlm.nih.gov/pubmed/11473019 & 2001 & cander and normal tissue & NA & TRUE & TRUE & matrix factorisation & unknown & 96 & 5.33 & TRUE\\
+\bottomrule
+\end{tabular}}
+\end{table}
+\rowcolors{2}{white}{white}
+\end{landscape}
+
+
+
+
+
+Tab. \ref{tab:mytab}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{UCzPhDThesis_files/figure-latex/pubyear-1} 
+
+}
+
+\caption{\textbf{Distibution of publications of cell-type
+deconvolution of bulk transcriptome over the years}. In red: hallmark
+publications. Data gathered based on pubmed and google scholar search in
+May 2018.}\label{fig:pubyear}
+\end{figure}
+
+
+
+
+
+
+\begin{figure}
+\subfloat[approach type\label{fig:languages1}]{\includegraphics[width=0.33\linewidth]{./figures-ext/piechartA} }\subfloat[supervised/unsupervised\label{fig:languages2}]{\includegraphics[width=0.33\linewidth]{./figures-ext/pichartB} }\subfloat[programming language\label{fig:languages3}]{\includegraphics[width=0.33\linewidth]{./figures-ext/pirChart} }\caption[Simple statistics illustrating characteristics of published cell-type deconvolution tools]{\textbf{Simple statistics illustrating
+characteristics of published cell-type deconvolution tools}:
+\ref{fig:languages1} - Percentage of used approach type,
+\ref{fig:languages2} - Percentage of supervised/unsupervised tools,
+\ref{fig:languages3} - Percentage of the programming languages of
+implementation. Data gathered based on pubmed and google scholar search
+in May 2018.}\label{fig:languages}
+\end{figure}
+
+
+
+
+
+
+
+
+
+\begin{itemize}
+\tightlist
+\item
+  the table
+\item
+  graph : percentage of programming language
+\item
+  nb pub / year
+\item
+  top methods (nb of citation based)
+\item
+  published code
+\end{itemize}
+
+\hypertarget{regression-based-methods}{%
+\subsection{Regression-based methods}\label{regression-based-methods}}
+
+\hypertarget{basis-matrix}{%
+\subsubsection{basis matrix}\label{basis-matrix}}
+
+\begin{itemize}
+\tightlist
+\item
+  define what basis matrix is vs signatures vs marker genes
+\item
+  explain the differences between basis matrices in published algorithms
+\end{itemize}
+
+3.4.7 Signature Matrix
+
+CIBERSORT requires an input matrix of reference gene expression signa-
+tures called ``signature matrix'', and this matrix has in earlier
+studies been called base or basis matrices according to Newman et
+al.{[}7{]}. The signature matrix possesses a small number of ``trademark
+genes'' for pure cell lines. Trademark genes are significantly
+differentially expressed genes among all the cell lines, meaning that
+genes that express a high score for one cell line, and a low score for
+the others, are relevant for the signature matrix. The authors stated
+that while developing their own signature matrix (LM22), expressed genes
+were found by using a two-sided unequal variance t-text, and genes with
+a false discovery rate below \textless{}0.3 are considered signific-
+ant{[}7{]}. The significant genes were sorted by decreasing fold change
+com- pared to other cell lines, and top G were kept for signature
+matrices. After iterating G from 50 to 200, they kept the signature
+matrix which had the lowest condition number (11.4) where G was 102 and
+the final signature matrix consisted of 547 distinct genes{[}7{]}.
+
+The number of genes present in signature matrix vary based on a combin-
+ation of the number of pure cell lines used, and how many genes are re-
+quired to express a specific pure cell line. Genes from the signature
+matrix are used for recognizing cell subsets within a mixture. The
+signature mat- rix is an essential part of CIBERSORT, and is required to
+run CIBERSORT. Newman et al. (2015) state that using a signature matrix
+(1) speeds up the run time as it ignores genes which do not express any
+particular cell sub- set, and (2) achieves a better signal-to-noise
+ratio as it preselects reference profiles having maximal discriminatory
+power{[}7{]}. They also state that their approach is unique compared to
+others for developing signature matrices like LLSR{[}8{]}. The signature
+genes are central for SVR when deconvolving a mixture, and the result is
+an estimated mixture calculated by CIBERSORT. The result from CIBERSORT
+also provides a Pearson correlation which is calculated by comparing the
+signature genes from the original mixture to the equivalent genes in the
+estimated mixture.
+
+\hypertarget{regression-algorithm}{%
+\subsection{regression algorithm}\label{regression-algorithm}}
+
+\begin{itemize}
+\tightlist
+\item
+  explain what it is for
+\item
+  explain how it works
+\item
+  explain the different approaches
+\end{itemize}
+
+\hypertarget{enrichment-based-methods}{%
+\subsection{Enrichment-based methods}\label{enrichment-based-methods}}
+
+\hypertarget{probabilistic-methods}{%
+\subsection{Probabilistic methods}\label{probabilistic-methods}}
+
+\hypertarget{convex-hull-based-methods}{%
+\subsection{Convex-hull based methods}\label{convex-hull-based-methods}}
+
+\hypertarget{matrix-factorisation-methods}{%
+\subsection{Matrix factorisation
+methods}\label{matrix-factorisation-methods}}
+
+\hypertarget{others-aspects}{%
+\subsection{Others aspects}\label{others-aspects}}
+
+\begin{itemize}
+\item
+  explain possible normalisation
+\item
+  explain additional possible features
+\end{itemize}
+
+\hypertarget{deconvolution-of-other-data-types}{%
+\section{Deconvolution of other data
+types}\label{deconvolution-of-other-data-types}}
+
+\hypertarget{methodological-dimension-of-the-thesis}{%
+\section{Methodological dimension of the
+thesis}\label{methodological-dimension-of-the-thesis}}
+
+\begin{itemize}
+\tightlist
+\item
+  expose state of art and compare existing tools
+\item
+  adjustment of existing methodology
+\item
+  develop a new user-friendly tool
+\item
+  discuss limitations of computational approaches in biology
+\item
+  data integration
+\item
+  exploration of data
+\end{itemize}
+
+\hypertarget{sens}{%
+\chapter{Study of sensitivity and reproducibility of known
+methods}\label{sens}}
 
 \hypertarget{finding-optimal-number-of-components-and-over-decomposition-of-transcriptopmes}{%
 \section{Finding optimal number of components and over-decomposition of
@@ -2064,80 +2568,11 @@ transcriptopmes}\label{finding-optimal-number-of-components-and-over-decompositi
 
 \includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}
 
-\hypertarget{cell-type-deconvolution-models}{%
-\section{Cell-type deconvolution
-models}\label{cell-type-deconvolution-models}}
-
-(families of approaches/strategies)
-
-\hypertarget{basis-matrix}{%
-\subsection{basis matrix}\label{basis-matrix}}
-
-\begin{itemize}
-\tightlist
-\item
-  define what basis matrix is vs signatures vs marker genes
-\item
-  explain the differences between basis matrices in published algorithms
-\end{itemize}
-
-\hypertarget{regression-algorithm}{%
-\subsection{regression algorithm}\label{regression-algorithm}}
-
-\begin{itemize}
-\tightlist
-\item
-  explain what it is for
-\item
-  explain how it works
-\item
-  explain the different approaches
-\end{itemize}
-
-\hypertarget{others}{%
-\subsection{Others}\label{others}}
-
-\begin{itemize}
-\tightlist
-\item
-  explain possible normalisation
-\item
-  explain additional possible features
-\end{itemize}
-
-\hypertarget{short-review-of-most-popular-cell-type-deconvolution-tools}{%
-\section{Short review of most popular cell-type deconvolution
-tools}\label{short-review-of-most-popular-cell-type-deconvolution-tools}}
-
-Tools will already be mentioned in the section above. However a comment
-on other than mentioned aspects are needed.
-
-Explain the success of CIBEROSRT
-
-Explain originality of each tool
-
-\hypertarget{methodological-dimension-of-the-thesis}{%
-\section{Methodological dimension of the
-thesis}\label{methodological-dimension-of-the-thesis}}
-
-\begin{itemize}
-\tightlist
-\item
-  expose state of art and compare existing tools
-\item
-  adjustment of existing methodology
-\item
-  develop a new user-friendly tool
-\item
-  discuss limitations of computational approaches in biology
-\end{itemize}
-
-\hypertarget{sens}{%
-\chapter{Study of sensitivity and reproducibility of known
-methods}\label{sens}}
+\hypertarget{section}{%
+\section{}\label{section}}
 
 \hypertarget{reproducibility-of-nmf-versus-ica-vs-cam}{%
-\section{Reproducibility of NMF versus ICA (vs
+\section{REPRODUCIBILITY OF NMF VERSUS ICA (VS
 CAM?)}\label{reproducibility-of-nmf-versus-ica-vs-cam}}
 
 NMF and ICA are both algorithms often applied to solve blind source
@@ -2572,6 +3007,21 @@ To be defined:
 Here we will have some interesting and well-written conclusion that will
 validate the quality of this thesis.
 
+A major part of this thesis has been to reproduce earlier
+work{[}7{]}{[}8{]}, and it has been time consuming to try to reproduce
+different approaches or scripts. It has been brought up that other
+scientists have struggled - and many failed - to reproduce another
+scientists work{[}48{]}. The article states that of 1,576 researchers,
+over 70\% have failed to reproduce others work and over 50\% have failed
+to reproduce their own. 52\% of the participants in the survey state
+that is is a ``significant crisis'', which indicates that we could call
+this a ``reproducibility crisis''{[}48{]}. Such high numbers may suggest
+in- accurate or poor documentation of the different steps towards
+achieving the results, or even going as far as suggesting untrustworthy
+results. The latter is a bold statement, but according to the article,
+less than 31\% believe that struggles to reproduce published results are
+due to wrong results{[}48{]}.
+
 \hypertarget{annexes}{%
 \chapter*{Annexes}\label{annexes}}
 \addcontentsline{toc}{chapter}{Annexes}
@@ -2642,7 +3092,7 @@ posters and publications list.
 
 \includepdf[pages={1-}, scale=1]{pdf-ext/An-RA2017.pdf}
 
-\bibliography{00-Inter.bib,01-Intro.bib,packages.bib,UCzcite.bib}
+\bibliography{00-Inter.bib,01-Intro2.bib,packages.bib,UCzcite.bib}
 
 
 \end{document}

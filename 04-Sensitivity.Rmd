@@ -1,6 +1,19 @@
 # Study of sensitivity and reproducibility of known methods {#sens} 
 
-## Reproducibility of NMF versus ICA (vs CAM?)
+## Finding optimal number of components and over-decomposition of transcriptopmes
+
+* Explain why this problem is important
+* Explain shortly  my role in the paper
+
+[@Ulykbek2017]
+
+\includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}
+
+## 
+
+
+
+## REPRODUCIBILITY OF NMF VERSUS ICA (VS CAM?)
 
 NMF and ICA are both algorithms often applied to solve blind source deconvolution problem. NMF gained a popularity as a tool of transcriptomic analysis mainly thanks to the publications [publicaition_list]. However, the non-negativity contraint, an attractive concept in the case of non-negative transcriptome counts, may be a reason why the reusults of NMF decomposition are not the best candidate for our deconvolution task. We observed that NMF-based metagenes are less reprouctible between different transcriptomic datasets than ICA-based metagenes.
 

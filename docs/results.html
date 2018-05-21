@@ -53,6 +53,15 @@
 <script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
 <link href="libs/plotlyjs-1.29.2/plotly-htmlwidgets.css" rel="stylesheet" />
 <script src="libs/plotlyjs-1.29.2/plotly-latest.min.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.4.11/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="libs/selectize-0.12.0/selectize.min.js"></script>
 
 
 <style type="text/css">
@@ -137,7 +146,7 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Immuno-biology of cancer</a><ul>
 <li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#cancer-disease"><i class="fa fa-check"></i><b>1.1</b> Cancer disease</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#hist"><i class="fa fa-check"></i><b>1.1.1</b> Historical understanding of cancer</a></li>
-<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#tumor-micro-environment-as-a-complex-system"><i class="fa fa-check"></i><b>1.1.2</b> Tumor micro environment as a complex system</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#tumor-microenvironment-as-a-complex-system"><i class="fa fa-check"></i><b>1.1.2</b> Tumor Microenvironment as a complex system</a></li>
 </ul></li>
 <li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#quantifying-and-qualifying-immune-infiltration-data"><i class="fa fa-check"></i><b>1.2</b> Quantifying and qualifying immune infiltration (data)</a><ul>
 <li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#facs"><i class="fa fa-check"></i><b>1.2.1</b> Cell sorting</a></li>
@@ -146,29 +155,35 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#immunotherapies"><i class="fa fa-check"></i><b>1.3</b> From cancer phenotyping to immune therapies</a><ul>
 <li class="chapter" data-level="1.3.1" data-path="intro.html"><a href="intro.html#cancer-immune-phenotypes"><i class="fa fa-check"></i><b>1.3.1</b> Cancer immune phenotypes</a></li>
-<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#immune-signatures"><i class="fa fa-check"></i><b>1.3.2</b> Immune signatures - biological perspective</a></li>
-<li class="chapter" data-level="1.3.3" data-path="intro.html"><a href="intro.html#cancer_Therapies"><i class="fa fa-check"></i><b>1.3.3</b> Cancer therapies</a></li>
-<li class="chapter" data-level="1.3.4" data-path="intro.html"><a href="intro.html#recent-progress-in-immuno-therapies"><i class="fa fa-check"></i><b>1.3.4</b> Recent progress in immuno-therapies</a></li>
+<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#scoring-the-immune-infiltration"><i class="fa fa-check"></i><b>1.3.2</b> Scoring the immune infiltration</a></li>
+<li class="chapter" data-level="1.3.3" data-path="intro.html"><a href="intro.html#immune-signatures"><i class="fa fa-check"></i><b>1.3.3</b> Immune signatures - biological perspective</a></li>
+<li class="chapter" data-level="1.3.4" data-path="intro.html"><a href="intro.html#cancer_Therapies"><i class="fa fa-check"></i><b>1.3.4</b> Cancer therapies</a></li>
+<li class="chapter" data-level="1.3.5" data-path="intro.html"><a href="intro.html#recent-progress-in-immuno-therapies"><i class="fa fa-check"></i><b>1.3.5</b> Recent progress in immuno-therapies</a></li>
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#biological-dimension-of-the-thesis"><i class="fa fa-check"></i><b>1.4</b> Biological dimension of the thesis</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Mathematical foundation of cell-type deconvolution of biological data</a><ul>
 <li class="chapter" data-level="2.1" data-path="methods.html"><a href="methods.html#introduction-to-supervised-and-unsupervised-learning"><i class="fa fa-check"></i><b>2.1</b> Introduction to supervised and unsupervised learning</a></li>
-<li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#blind-source-separation"><i class="fa fa-check"></i><b>2.2</b> Blind source separation</a></li>
-<li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#finding-optimal-number-of-components-and-over-decomposition-of-transcriptopmes"><i class="fa fa-check"></i><b>2.3</b> Finding optimal number of components and over-decomposition of transcriptopmes</a></li>
-<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#cell-type-deconvolution-models"><i class="fa fa-check"></i><b>2.4</b> Cell-type deconvolution models</a><ul>
-<li class="chapter" data-level="2.4.1" data-path="methods.html"><a href="methods.html#basis-matrix"><i class="fa fa-check"></i><b>2.4.1</b> basis matrix</a></li>
-<li class="chapter" data-level="2.4.2" data-path="methods.html"><a href="methods.html#regression-algorithm"><i class="fa fa-check"></i><b>2.4.2</b> regression algorithm</a></li>
-<li class="chapter" data-level="2.4.3" data-path="methods.html"><a href="methods.html#others"><i class="fa fa-check"></i><b>2.4.3</b> Others</a></li>
+<li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#cell-type-deconvolution-models-of-bulk-transcriptome"><i class="fa fa-check"></i><b>2.2</b> Cell-type deconvolution models of bulk transcriptome</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="methods.html"><a href="methods.html#literature-overview"><i class="fa fa-check"></i><b>2.2.1</b> Literature overview</a></li>
+<li class="chapter" data-level="2.2.2" data-path="methods.html"><a href="methods.html#regression-based-methods"><i class="fa fa-check"></i><b>2.2.2</b> Regression-based methods</a></li>
+<li class="chapter" data-level="2.2.3" data-path="methods.html"><a href="methods.html#regression-algorithm"><i class="fa fa-check"></i><b>2.2.3</b> regression algorithm</a></li>
+<li class="chapter" data-level="2.2.4" data-path="methods.html"><a href="methods.html#enrichment-based-methods"><i class="fa fa-check"></i><b>2.2.4</b> Enrichment-based methods</a></li>
+<li class="chapter" data-level="2.2.5" data-path="methods.html"><a href="methods.html#probabilistic-methods"><i class="fa fa-check"></i><b>2.2.5</b> Probabilistic methods</a></li>
+<li class="chapter" data-level="2.2.6" data-path="methods.html"><a href="methods.html#convex-hull-based-methods"><i class="fa fa-check"></i><b>2.2.6</b> Convex-hull based methods</a></li>
+<li class="chapter" data-level="2.2.7" data-path="methods.html"><a href="methods.html#matrix-factorisation-methods"><i class="fa fa-check"></i><b>2.2.7</b> Matrix factorisation methods</a></li>
+<li class="chapter" data-level="2.2.8" data-path="methods.html"><a href="methods.html#others-aspects"><i class="fa fa-check"></i><b>2.2.8</b> Others aspects</a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="methods.html"><a href="methods.html#short-review-of-most-popular-cell-type-deconvolution-tools"><i class="fa fa-check"></i><b>2.5</b> Short review of most popular cell-type deconvolution tools</a></li>
-<li class="chapter" data-level="2.6" data-path="methods.html"><a href="methods.html#methodological-dimension-of-the-thesis"><i class="fa fa-check"></i><b>2.6</b> Methodological dimension of the thesis</a></li>
+<li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#deconvolution-of-other-data-types"><i class="fa fa-check"></i><b>2.3</b> Deconvolution of other data types</a></li>
+<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#methodological-dimension-of-the-thesis"><i class="fa fa-check"></i><b>2.4</b> Methodological dimension of the thesis</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sens.html"><a href="sens.html"><i class="fa fa-check"></i><b>3</b> Study of sensitivity and reproducibility of known methods</a><ul>
-<li class="chapter" data-level="3.1" data-path="sens.html"><a href="sens.html#reproducibility-of-nmf-versus-ica-vs-cam"><i class="fa fa-check"></i><b>3.1</b> Reproducibility of NMF versus ICA (vs CAM?)</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="sens.html"><a href="sens.html#comparing-metagenes-obtained-with-nmf-vs-ica."><i class="fa fa-check"></i><b>3.1.1</b> Comparing metagenes obtained with NMF vs ICA.</a></li>
+<li class="chapter" data-level="3.1" data-path="sens.html"><a href="sens.html#finding-optimal-number-of-components-and-over-decomposition-of-transcriptopmes"><i class="fa fa-check"></i><b>3.1</b> Finding optimal number of components and over-decomposition of transcriptopmes</a></li>
+<li class="chapter" data-level="3.2" data-path="sens.html"><a href="sens.html#section"><i class="fa fa-check"></i><b>3.2</b> </a></li>
+<li class="chapter" data-level="3.3" data-path="sens.html"><a href="sens.html#reproducibility-of-nmf-versus-ica-vs-cam"><i class="fa fa-check"></i><b>3.3</b> REPRODUCIBILITY OF NMF VERSUS ICA (VS CAM?)</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="sens.html"><a href="sens.html#comparing-metagenes-obtained-with-nmf-vs-ica."><i class="fa fa-check"></i><b>3.3.1</b> Comparing metagenes obtained with NMF vs ICA.</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="sens.html"><a href="sens.html#impact-of-modification-of-signatures-list-on-result-for-signature-based-deconvolution-methods"><i class="fa fa-check"></i><b>3.2</b> Impact of modification of signatures list on result for signature-based deconvolution methods</a></li>
+<li class="chapter" data-level="3.4" data-path="sens.html"><a href="sens.html#impact-of-modification-of-signatures-list-on-result-for-signature-based-deconvolution-methods"><i class="fa fa-check"></i><b>3.4</b> Impact of modification of signatures list on result for signature-based deconvolution methods</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="deconica.html"><a href="deconica.html"><i class="fa fa-check"></i><b>4</b> Deconvolution of transcriptomes and methylomes</a><ul>
 <li class="chapter" data-level="4.1" data-path="deconica.html"><a href="deconica.html#from-blind-deconvolution-to-cell-type-quantification-general-overview"><i class="fa fa-check"></i><b>4.1</b> From blind deconvolution to cell-type quantification: general overview</a><ul>

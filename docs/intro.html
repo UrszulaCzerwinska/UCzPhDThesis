@@ -53,6 +53,15 @@
 <script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
 <link href="libs/plotlyjs-1.29.2/plotly-htmlwidgets.css" rel="stylesheet" />
 <script src="libs/plotlyjs-1.29.2/plotly-latest.min.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.4.11/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="libs/selectize-0.12.0/selectize.min.js"></script>
 
 
 <style type="text/css">
@@ -137,7 +146,7 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Immuno-biology of cancer</a><ul>
 <li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#cancer-disease"><i class="fa fa-check"></i><b>1.1</b> Cancer disease</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#hist"><i class="fa fa-check"></i><b>1.1.1</b> Historical understanding of cancer</a></li>
-<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#tumor-micro-environment-as-a-complex-system"><i class="fa fa-check"></i><b>1.1.2</b> Tumor micro environment as a complex system</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#tumor-microenvironment-as-a-complex-system"><i class="fa fa-check"></i><b>1.1.2</b> Tumor Microenvironment as a complex system</a></li>
 </ul></li>
 <li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#quantifying-and-qualifying-immune-infiltration-data"><i class="fa fa-check"></i><b>1.2</b> Quantifying and qualifying immune infiltration (data)</a><ul>
 <li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#facs"><i class="fa fa-check"></i><b>1.2.1</b> Cell sorting</a></li>
@@ -146,29 +155,35 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#immunotherapies"><i class="fa fa-check"></i><b>1.3</b> From cancer phenotyping to immune therapies</a><ul>
 <li class="chapter" data-level="1.3.1" data-path="intro.html"><a href="intro.html#cancer-immune-phenotypes"><i class="fa fa-check"></i><b>1.3.1</b> Cancer immune phenotypes</a></li>
-<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#immune-signatures"><i class="fa fa-check"></i><b>1.3.2</b> Immune signatures - biological perspective</a></li>
-<li class="chapter" data-level="1.3.3" data-path="intro.html"><a href="intro.html#cancer_Therapies"><i class="fa fa-check"></i><b>1.3.3</b> Cancer therapies</a></li>
-<li class="chapter" data-level="1.3.4" data-path="intro.html"><a href="intro.html#recent-progress-in-immuno-therapies"><i class="fa fa-check"></i><b>1.3.4</b> Recent progress in immuno-therapies</a></li>
+<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#scoring-the-immune-infiltration"><i class="fa fa-check"></i><b>1.3.2</b> Scoring the immune infiltration</a></li>
+<li class="chapter" data-level="1.3.3" data-path="intro.html"><a href="intro.html#immune-signatures"><i class="fa fa-check"></i><b>1.3.3</b> Immune signatures - biological perspective</a></li>
+<li class="chapter" data-level="1.3.4" data-path="intro.html"><a href="intro.html#cancer_Therapies"><i class="fa fa-check"></i><b>1.3.4</b> Cancer therapies</a></li>
+<li class="chapter" data-level="1.3.5" data-path="intro.html"><a href="intro.html#recent-progress-in-immuno-therapies"><i class="fa fa-check"></i><b>1.3.5</b> Recent progress in immuno-therapies</a></li>
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#biological-dimension-of-the-thesis"><i class="fa fa-check"></i><b>1.4</b> Biological dimension of the thesis</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Mathematical foundation of cell-type deconvolution of biological data</a><ul>
 <li class="chapter" data-level="2.1" data-path="methods.html"><a href="methods.html#introduction-to-supervised-and-unsupervised-learning"><i class="fa fa-check"></i><b>2.1</b> Introduction to supervised and unsupervised learning</a></li>
-<li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#blind-source-separation"><i class="fa fa-check"></i><b>2.2</b> Blind source separation</a></li>
-<li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#finding-optimal-number-of-components-and-over-decomposition-of-transcriptopmes"><i class="fa fa-check"></i><b>2.3</b> Finding optimal number of components and over-decomposition of transcriptopmes</a></li>
-<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#cell-type-deconvolution-models"><i class="fa fa-check"></i><b>2.4</b> Cell-type deconvolution models</a><ul>
-<li class="chapter" data-level="2.4.1" data-path="methods.html"><a href="methods.html#basis-matrix"><i class="fa fa-check"></i><b>2.4.1</b> basis matrix</a></li>
-<li class="chapter" data-level="2.4.2" data-path="methods.html"><a href="methods.html#regression-algorithm"><i class="fa fa-check"></i><b>2.4.2</b> regression algorithm</a></li>
-<li class="chapter" data-level="2.4.3" data-path="methods.html"><a href="methods.html#others"><i class="fa fa-check"></i><b>2.4.3</b> Others</a></li>
+<li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#cell-type-deconvolution-models-of-bulk-transcriptome"><i class="fa fa-check"></i><b>2.2</b> Cell-type deconvolution models of bulk transcriptome</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="methods.html"><a href="methods.html#literature-overview"><i class="fa fa-check"></i><b>2.2.1</b> Literature overview</a></li>
+<li class="chapter" data-level="2.2.2" data-path="methods.html"><a href="methods.html#regression-based-methods"><i class="fa fa-check"></i><b>2.2.2</b> Regression-based methods</a></li>
+<li class="chapter" data-level="2.2.3" data-path="methods.html"><a href="methods.html#regression-algorithm"><i class="fa fa-check"></i><b>2.2.3</b> regression algorithm</a></li>
+<li class="chapter" data-level="2.2.4" data-path="methods.html"><a href="methods.html#enrichment-based-methods"><i class="fa fa-check"></i><b>2.2.4</b> Enrichment-based methods</a></li>
+<li class="chapter" data-level="2.2.5" data-path="methods.html"><a href="methods.html#probabilistic-methods"><i class="fa fa-check"></i><b>2.2.5</b> Probabilistic methods</a></li>
+<li class="chapter" data-level="2.2.6" data-path="methods.html"><a href="methods.html#convex-hull-based-methods"><i class="fa fa-check"></i><b>2.2.6</b> Convex-hull based methods</a></li>
+<li class="chapter" data-level="2.2.7" data-path="methods.html"><a href="methods.html#matrix-factorisation-methods"><i class="fa fa-check"></i><b>2.2.7</b> Matrix factorisation methods</a></li>
+<li class="chapter" data-level="2.2.8" data-path="methods.html"><a href="methods.html#others-aspects"><i class="fa fa-check"></i><b>2.2.8</b> Others aspects</a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="methods.html"><a href="methods.html#short-review-of-most-popular-cell-type-deconvolution-tools"><i class="fa fa-check"></i><b>2.5</b> Short review of most popular cell-type deconvolution tools</a></li>
-<li class="chapter" data-level="2.6" data-path="methods.html"><a href="methods.html#methodological-dimension-of-the-thesis"><i class="fa fa-check"></i><b>2.6</b> Methodological dimension of the thesis</a></li>
+<li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#deconvolution-of-other-data-types"><i class="fa fa-check"></i><b>2.3</b> Deconvolution of other data types</a></li>
+<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#methodological-dimension-of-the-thesis"><i class="fa fa-check"></i><b>2.4</b> Methodological dimension of the thesis</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sens.html"><a href="sens.html"><i class="fa fa-check"></i><b>3</b> Study of sensitivity and reproducibility of known methods</a><ul>
-<li class="chapter" data-level="3.1" data-path="sens.html"><a href="sens.html#reproducibility-of-nmf-versus-ica-vs-cam"><i class="fa fa-check"></i><b>3.1</b> Reproducibility of NMF versus ICA (vs CAM?)</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="sens.html"><a href="sens.html#comparing-metagenes-obtained-with-nmf-vs-ica."><i class="fa fa-check"></i><b>3.1.1</b> Comparing metagenes obtained with NMF vs ICA.</a></li>
+<li class="chapter" data-level="3.1" data-path="sens.html"><a href="sens.html#finding-optimal-number-of-components-and-over-decomposition-of-transcriptopmes"><i class="fa fa-check"></i><b>3.1</b> Finding optimal number of components and over-decomposition of transcriptopmes</a></li>
+<li class="chapter" data-level="3.2" data-path="sens.html"><a href="sens.html#section"><i class="fa fa-check"></i><b>3.2</b> </a></li>
+<li class="chapter" data-level="3.3" data-path="sens.html"><a href="sens.html#reproducibility-of-nmf-versus-ica-vs-cam"><i class="fa fa-check"></i><b>3.3</b> REPRODUCIBILITY OF NMF VERSUS ICA (VS CAM?)</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="sens.html"><a href="sens.html#comparing-metagenes-obtained-with-nmf-vs-ica."><i class="fa fa-check"></i><b>3.3.1</b> Comparing metagenes obtained with NMF vs ICA.</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="sens.html"><a href="sens.html#impact-of-modification-of-signatures-list-on-result-for-signature-based-deconvolution-methods"><i class="fa fa-check"></i><b>3.2</b> Impact of modification of signatures list on result for signature-based deconvolution methods</a></li>
+<li class="chapter" data-level="3.4" data-path="sens.html"><a href="sens.html#impact-of-modification-of-signatures-list-on-result-for-signature-based-deconvolution-methods"><i class="fa fa-check"></i><b>3.4</b> Impact of modification of signatures list on result for signature-based deconvolution methods</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="deconica.html"><a href="deconica.html"><i class="fa fa-check"></i><b>4</b> Deconvolution of transcriptomes and methylomes</a><ul>
 <li class="chapter" data-level="4.1" data-path="deconica.html"><a href="deconica.html#from-blind-deconvolution-to-cell-type-quantification-general-overview"><i class="fa fa-check"></i><b>4.1</b> From blind deconvolution to cell-type quantification: general overview</a><ul>
@@ -212,7 +227,7 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
             <section class="normal" id="section-">
 <div id="intro" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> Immuno-biology of cancer</h1>
-<p>This chapter will first introduce a short history of cancer with a focus on discoveries linking cancer and its environment. It will also describe participation of TME in cancer development, progression and response to treatment. Most important types of data used to study cancer microenvironment will be discussed. A link between tumor immune-biology and cancer phenotyping for development of immunotherapies will be introduced as well.</p>
+<p>This chapter will first introduce a short history of cancer with a focus on discoveries linking cancer and its environment. It will also describe participation of TME in cancer development, progression and response to treatment. Most important types of data used to study cancer microenvironment will be discussed. I also introduce a link between tumor immune-biology and cancer phenotyping for development of immunotherapies.</p>
 <div id="cancer-disease" class="section level2">
 <h2><span class="header-section-number">1.1</span> Cancer disease</h2>
 <p>According to <a href="http://globocan.iarc.fr/Pages/fact_sheets_cancer.aspx">GLOBOCAN study</a> <span class="citation">(Research in Cancer <a href="#ref-GLOBOCAN">2018</a>)</span>, 14.1 million cancer cases was estimated to happen around the world in 2012. It touched 7.4 million men and 6.7 million women. It is estimated that the cancer cases will increase almost two-fold to 24 million by 2035.</p>
@@ -222,39 +237,39 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
 <h3><span class="header-section-number">1.1.1</span> Historical understanding of cancer</h3>
 <p>Cancer was historically described by a physician Hippocrates (460–370 B.C) <span class="citation">(Sudhakar <a href="#ref-Sudhakar2009">2009</a>)</span>. Even though there exist even earlier evidence of the disease. Hippocrates stated that the body contained 4 humors (body fluids) : blood, phlegm, yellow bile and black bile. Any imbalance of these fluids will result in disease. Particularly the excess of black bile in an organ was meant to provoke cancer. For years, it was not known what factors cause cancer and it was easily confounded with other diseases. In the middle ages in the Renaissance Period it was believed cancer is a punishment for the sins they committed against their god, that they deserved it to some extend</p>
 <p>Until 18th century it was believed that cancer is contagious and is spread by parasites.</p>
-<p>In the 19th century, tumor cells started to be analysed by pathologists. They were strike with their ability to proliferate uncontrollably, ability to spread and destroy the original tissue <span class="citation">(NPR <a href="#ref-NPR2010">2010</a><a href="#ref-NPR2010">b</a>)</span>. Around the same time leukocytes from the blood was first described by Gabriel Andra and William Addison. Just a few years later, in 1845 Bennett and Virchow described blood cells in leukaemia (Fig. <a href="intro.html#fig:Virchow-cell">1.1</a>). Virchow is also a father of Chronic irritation theory (which we would call chronic inflammation) that says that cancer is caused by local “irritation” and, incorrectly, that cancer cells spread like liquid resulting in metastasis.</p>
+<p>In the 19th century, tumor cells started to be analysed by pathologists. They were strike with their ability to proliferate uncontrollably, ability to spread and destroy the original tissue <span class="citation">(NPR <a href="#ref-NPR2010">2010</a><a href="#ref-NPR2010">b</a>)</span>. Around the same time leukocytes from the blood was first described by Gabriel Andra and William Addison. Just a few years later, in 1845 Bennett and Virchow described blood cells in leukaemia (Fig. <a href="intro.html#fig:Virchow-cell">1.1</a>). Virchow is also a father of Chronic irritation theory (nowadays calledl chronic inflammation) that says that cancer is caused by local “irritation” and, incorrectly, that cancer cells spread like liquid resulting in metastasis.</p>
 <div class="figure" style="text-align: center"><span id="fig:Virchow-cell"></span>
-<img src="figures-ext/01-Virchow-cell.jpg" alt="Illustration of Virchow’s cell theory. Virchow depicted different cells transformation due to irritation. (???)" width="100%" />
+<img src="figures-ext/01-Virchow-cell.jpg" alt="Illustration of Virchow’s cell theory. Virchow depicted different cells transformation due to irritation. (Virchow Rudolf 1847)" width="100%" />
 <p class="caption">
-Figure 1.1: <strong>Illustration of Virchow’s cell theory</strong>. Virchow depicted different cells transformation due to irritation. <span class="citation">(<span class="citeproc-not-found" data-reference-id="Virchow1847"><strong>???</strong></span>)</span>
+Figure 1.1: <strong>Illustration of Virchow’s cell theory</strong>. Virchow depicted different cells transformation due to irritation. <span class="citation">(Virchow Rudolf <a href="#ref-VirchowRudolf1847">1847</a>)</span>
 </p>
 </div>
 
-<p>In 1889, Stephen Paget introduced <em>soil and seed</em> hypothesis of metastases <span class="citation">(<span class="citeproc-not-found" data-reference-id="Paget1889"><strong>???</strong></span>)</span>. He formulates it as follows</p>
+<p>In 1889, Stephen Paget introduced <em>soil and seed</em> hypothesis of metastases <span class="citation">(Paget <a href="#ref-Paget1889">1889</a>)</span>. He formulates it as follows</p>
 <blockquote>
 <p><em>When a plant goes to seed, its seeds are carried in all directions, but they can only live and grow if they fall on congenial soil.</em></p>
 </blockquote>
 <p>Which is a parallel to cancer cells disseminated by body fluids, and they can grow only tissues - “soil” that is predisposed to host the cancer cell - “the seed”. He focused on the importance of tissue characteristics that favorise tumor development as opposed to most researchers of his time that were focusing on the “seed” itself.</p>
 <p>In the 20th century, molecular causes started to be investigated. It was discovered that cancer could be caused by environmental factors, i.e. chemicals (carcinogens), radiation, viruses and also inherited from ancestors. Those factors would damage but contrary to a healthy condition they would not die.</p>
-<p>Also in 1909, Paul Ehrlich, called one of fathers of immunology and Nobel Prize laureate, indicated a link between immune system and tumor suppression <span class="citation">(<span class="citeproc-not-found" data-reference-id="Ehrlich1909"><strong>???</strong></span>)</span>. One of remarkable first immontherapy attempts can be attributed to William Coley, that practiced injecting streptococcus bacteria directly into patients after cancer surgery in 1891, later called “Colley vaccine”. However, the impact of this procedure on patients recovery was judged by scientific community as “unclear”.</p>
-<p>In 1968, Melvin Greenblatt and Philippe Shubik showed that tumour transplants secete a substance stimulating the growth of blood vessels <span class="citation">(<span class="citeproc-not-found" data-reference-id="Greenblatt1968"><strong>???</strong></span>)</span>, later identified as “tumour angiogenic factor (TAF)” by Judah Folkman in 1971 <span class="citation">(<span class="citeproc-not-found" data-reference-id="Folkman1971"><strong>???</strong></span>)</span>. Folkman also suggested that TAF can target of therapy itself which was a revolutional idea, as it did not target the tumor cells but their environment.</p>
-<p>During the 1970s, oncogenes and tumor suppressor genes were discovered. Oncogenes are genes that allow a cell to become cancer cell, while the tumor suppressor genes would repair DNA or execute cell death of a damaged cell. A new dimension to cancer studies was added in the 1980s, epigenetic changes was proven to occur to both oncogenes and tumour suppressors <span class="citation">(<span class="citeproc-not-found" data-reference-id="Feinberg1983"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Greger1989"><strong>???</strong></span>)</span>, which are presently known as epigenetic markers used for diagnostics and therapeutic targets for cancer.</p>
-<p>In 1982, Aline van Pel and Thierry Boon <span class="citation">(<span class="citeproc-not-found" data-reference-id="VanPel1982"><strong>???</strong></span>)</span> discovered that a specific immunity to spontanious tumor cells could be induced by vaccinating mice with mutagenized tumour cells. This araised an inspiration for many years of immune therapy developement.</p>
-<p>In Napoleone Ferrara and colleagues identified gene encoding vascular endothelial growth factor (VEGF) that was shown to stimulate growth of enothelial cells proliferation <em>in vitro</em> and angiogenesis (blood vessels formation) <em>in vivo</em> <span class="citation">(<span class="citeproc-not-found" data-reference-id="Leung1989"><strong>???</strong></span>)</span>.</p>
-<p>In 1999 for the first time, gene-expression was used to study cancer (leukeamia) by Todd Golub, Donna Slonim and colleagues <span class="citation">(<span class="citeproc-not-found" data-reference-id="Golub1999"><strong>???</strong></span>)</span>.</p>
+<p>Also in 1909, Paul Ehrlich, called one of fathers of immunology and Nobel Prize laureate, indicated a link between immune system and tumor suppression <span class="citation">(Ehrlich <a href="#ref-Ehrlich1909">1909</a>)</span>. One of remarkable first immontherapy attempts can be attributed to William Coley, that practiced injecting streptococcus bacteria directly into patients after cancer surgery in 1891, later called “Colley vaccine”. However, the impact of this procedure on patients recovery was judged by scientific community as “unclear”.</p>
+<p>In 1968, Melvin Greenblatt and Philippe Shubik showed that tumour transplants secete a substance stimulating the growth of blood vessels <span class="citation">(Greenblatt and Shubi <a href="#ref-Greenblatt1968">1968</a>)</span>, later identified as “tumour angiogenic factor (TAF)” by Judah Folkman in 1971 <span class="citation">(Folkman et al. <a href="#ref-Folkman1971">1971</a>)</span>. Folkman also suggested that TAF can target of therapy itself which was a revolutional idea, as it did not target the tumor cells but their environment.</p>
+<p>During the 1970s, oncogenes and tumor suppressor genes were discovered. Oncogenes are genes that allow a cell to become cancer cell, while the tumor suppressor genes would repair DNA or execute cell death of a damaged cell. A new dimension to cancer studies was added in the 1980s, epigenetic changes was proven to occur to both oncogenes and tumour suppressors <span class="citation">(Feinberg and Vogelstein <a href="#ref-Feinberg1983">1983</a>; Greger et al. <a href="#ref-Greger1989">1989</a>)</span>, which are presently known as epigenetic markers used for diagnostics and therapeutic targets for cancer.</p>
+<p>In 1982, Aline van Pel and Thierry Boon <span class="citation">(Van Pel and Boon <a href="#ref-VanPel1982">1982</a>)</span> discovered that a specific immunity to spontanious tumor cells could be induced by vaccinating mice with mutagenized tumour cells. This araised an inspiration for many years of immune therapy developement.</p>
+<p>In Napoleone Ferrara and colleagues identified gene encoding vascular endothelial growth factor (VEGF) that was shown to stimulate growth of enothelial cells proliferation <em>in vitro</em> and angiogenesis (blood vessels formation) <em>in vivo</em> <span class="citation">(Leung et al. <a href="#ref-Leung1989">1989</a>)</span>.</p>
+<p>In 1999 for the first time, gene-expression was used to study cancer (leukeamia) by Todd Golub, Donna Slonim and colleagues <span class="citation">(Golub et al. <a href="#ref-Golub1999">1999</a>)</span>.</p>
 <p>Since the end of the 20th century, cancer screens are developed along with multiple strategies to fight tumor. Most classical ones are based on the idea of removing tumor cells (surgery), killing tumor cells with DNA-blocking drugs (chemotherapy), radiation, inhibit cancer growth (hormonal therapy, adjuvant therapy and immunotherapy). As non of those methods is fully efficient, often a combination of treatments is proposed. Nowadays, science is aming in the direction of trageted therapies and personalized treatment.</p>
 <p>The recent success of immunotherapies (discussed in <a href="intro.html#immunotherapies">Immunotherapies section</a> attracted the attention the scientific community again to the context in which tumor cells are found. This context called Tumor Microenvironment, as well as the communication that happens within it between different agents, nowadays studied differently with available knowledge of molecular biology, have become a popular scientific topics of 21st century (Fig. <a href="intro.html#fig:pubmedTME">1.2</a>).</p>
 <div class="figure" style="text-align: center"><span id="fig:pubmedTME"></span>
-<div id="21d4708581e1" style="width:70%;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="21d4708581e1">{"x":{"data":[{"orientation":"v","width":[0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091],"base":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"x":[1950,1951,1952,1953,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975,1976,1977,1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016],"y":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4.01411362350023e-06,7.84713775650332e-06,0,1.46888713438481e-05,1.0646452601993e-05,1.42687446715157e-05,2.1182476443321e-05,1.35460514953148e-05,1.6175000566125e-05,3.46051240750994e-05,4.77814476584104e-05,4.86892565723336e-05,7.07502244959047e-05,6.72625438176668e-05,9.19871715187828e-05,9.74981962833688e-05,5.57414951807842e-05,9.34225718515396e-05,0.000135886118061608,0.000189523246282033,0.000205119058235976,0.000224835848002235,0.000234806175182962,0.000276840886228962,0.000245495861061516,0.000252070173326461,0.000390067025601582,0.00041818465333201,0.000476993893466869,0.000509121897881113,0.000629368028676296,0.000716625030975615,0.000856136023706814,0.0009827909827431,0.00111680424979417,0.00137703697796209,0.00187891461005892,0.00216715357778359,0.0024373280322394,0.00272225123846604,0.00309914470308773,0.00348693807766557],"text":["~Year: 1950<br />~percentage: 0.000000e+00","~Year: 1951<br />~percentage: 0.000000e+00","~Year: 1952<br />~percentage: 0.000000e+00","~Year: 1953<br />~percentage: 0.000000e+00","~Year: 1954<br />~percentage: 0.000000e+00","~Year: 1955<br />~percentage: 0.000000e+00","~Year: 1956<br />~percentage: 0.000000e+00","~Year: 1957<br />~percentage: 0.000000e+00","~Year: 1958<br />~percentage: 0.000000e+00","~Year: 1959<br />~percentage: 0.000000e+00","~Year: 1960<br />~percentage: 0.000000e+00","~Year: 1961<br />~percentage: 0.000000e+00","~Year: 1962<br />~percentage: 0.000000e+00","~Year: 1963<br />~percentage: 0.000000e+00","~Year: 1964<br />~percentage: 0.000000e+00","~Year: 1965<br />~percentage: 0.000000e+00","~Year: 1966<br />~percentage: 0.000000e+00","~Year: 1967<br />~percentage: 0.000000e+00","~Year: 1968<br />~percentage: 0.000000e+00","~Year: 1969<br />~percentage: 0.000000e+00","~Year: 1970<br />~percentage: 0.000000e+00","~Year: 1971<br />~percentage: 0.000000e+00","~Year: 1972<br />~percentage: 0.000000e+00","~Year: 1973<br />~percentage: 0.000000e+00","~Year: 1974<br />~percentage: 0.000000e+00","~Year: 1975<br />~percentage: 4.014114e-06","~Year: 1976<br />~percentage: 7.847138e-06","~Year: 1977<br />~percentage: 0.000000e+00","~Year: 1978<br />~percentage: 1.468887e-05","~Year: 1979<br />~percentage: 1.064645e-05","~Year: 1980<br />~percentage: 1.426874e-05","~Year: 1981<br />~percentage: 2.118248e-05","~Year: 1982<br />~percentage: 1.354605e-05","~Year: 1983<br />~percentage: 1.617500e-05","~Year: 1984<br />~percentage: 3.460512e-05","~Year: 1985<br />~percentage: 4.778145e-05","~Year: 1986<br />~percentage: 4.868926e-05","~Year: 1987<br />~percentage: 7.075022e-05","~Year: 1988<br />~percentage: 6.726254e-05","~Year: 1989<br />~percentage: 9.198717e-05","~Year: 1990<br />~percentage: 9.749820e-05","~Year: 1991<br />~percentage: 5.574150e-05","~Year: 1992<br />~percentage: 9.342257e-05","~Year: 1993<br />~percentage: 1.358861e-04","~Year: 1994<br />~percentage: 1.895232e-04","~Year: 1995<br />~percentage: 2.051191e-04","~Year: 1996<br />~percentage: 2.248358e-04","~Year: 1997<br />~percentage: 2.348062e-04","~Year: 1998<br />~percentage: 2.768409e-04","~Year: 1999<br />~percentage: 2.454959e-04","~Year: 2000<br />~percentage: 2.520702e-04","~Year: 2001<br />~percentage: 3.900670e-04","~Year: 2002<br />~percentage: 4.181847e-04","~Year: 2003<br />~percentage: 4.769939e-04","~Year: 2004<br />~percentage: 5.091219e-04","~Year: 2005<br />~percentage: 6.293680e-04","~Year: 2006<br />~percentage: 7.166250e-04","~Year: 2007<br />~percentage: 8.561360e-04","~Year: 2008<br />~percentage: 9.827910e-04","~Year: 2009<br />~percentage: 1.116804e-03","~Year: 2010<br />~percentage: 1.377037e-03","~Year: 2011<br />~percentage: 1.878915e-03","~Year: 2012<br />~percentage: 2.167154e-03","~Year: 2013<br />~percentage: 2.437328e-03","~Year: 2014<br />~percentage: 2.722251e-03","~Year: 2015<br />~percentage: 3.099145e-03","~Year: 2016<br />~percentage: 3.486938e-03"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(70,130,180,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":26.2283105022831,"r":7.30593607305936,"b":40.1826484018265,"l":54.7945205479452},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[1946.205,2019.795],"tickmode":"array","ticktext":["1950","1955","1960","1965","1970","1975","1980","1985","1990","1995","2000","2005","2010","2015"],"tickvals":[1950,1955,1960,1965,1970,1975,1980,1985,1990,1995,2000,2005,2010,2015],"categoryorder":"array","categoryarray":["1950","1955","1960","1965","1970","1975","1980","1985","1990","1995","2000","2005","2010","2015"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":"Year","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-0.000174346903883279,0.00366128498154885],"tickmode":"array","ticktext":["0.000","0.001","0.002","0.003"],"tickvals":[0,0.001,0.002,0.003],"categoryorder":"array","categoryarray":["0.000","0.001","0.002","0.003"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":"Percentage of all publications [%]","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"source":"A","attrs":{"21d482bc0e7":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"21d482bc0e7","visdat":{"21d482bc0e7":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":{"render":[{"code":"function(el, x) { var ctConfig = crosstalk.var('plotlyCrosstalkOpts').set({\"on\":\"plotly_click\",\"persistent\":false,\"dynamic\":false,\"selectize\":false,\"opacityDim\":0.2,\"selected\":{\"opacity\":1}}); }","data":null}]}}</script>
+<div id="699764f18c72" style="width:100%;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="699764f18c72">{"x":{"data":[{"orientation":"v","width":[0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091],"base":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"x":[1950,1951,1952,1953,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975,1976,1977,1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016],"y":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4.01411362350023e-06,7.84713775650332e-06,0,1.46888713438481e-05,1.0646452601993e-05,1.42687446715157e-05,2.1182476443321e-05,1.35460514953148e-05,1.6175000566125e-05,3.46051240750994e-05,4.77814476584104e-05,4.86892565723336e-05,7.07502244959047e-05,6.72625438176668e-05,9.19871715187828e-05,9.74981962833688e-05,5.57414951807842e-05,9.34225718515396e-05,0.000135886118061608,0.000189523246282033,0.000205119058235976,0.000224835848002235,0.000234806175182962,0.000276840886228962,0.000245495861061516,0.000252070173326461,0.000390067025601582,0.00041818465333201,0.000476993893466869,0.000509121897881113,0.000629368028676296,0.000716625030975615,0.000856136023706814,0.0009827909827431,0.00111680424979417,0.00137703697796209,0.00187891461005892,0.00216715357778359,0.0024373280322394,0.00272225123846604,0.00309914470308773,0.00348693807766557],"text":["~Year: 1950<br />~percentage: 0.000000e+00","~Year: 1951<br />~percentage: 0.000000e+00","~Year: 1952<br />~percentage: 0.000000e+00","~Year: 1953<br />~percentage: 0.000000e+00","~Year: 1954<br />~percentage: 0.000000e+00","~Year: 1955<br />~percentage: 0.000000e+00","~Year: 1956<br />~percentage: 0.000000e+00","~Year: 1957<br />~percentage: 0.000000e+00","~Year: 1958<br />~percentage: 0.000000e+00","~Year: 1959<br />~percentage: 0.000000e+00","~Year: 1960<br />~percentage: 0.000000e+00","~Year: 1961<br />~percentage: 0.000000e+00","~Year: 1962<br />~percentage: 0.000000e+00","~Year: 1963<br />~percentage: 0.000000e+00","~Year: 1964<br />~percentage: 0.000000e+00","~Year: 1965<br />~percentage: 0.000000e+00","~Year: 1966<br />~percentage: 0.000000e+00","~Year: 1967<br />~percentage: 0.000000e+00","~Year: 1968<br />~percentage: 0.000000e+00","~Year: 1969<br />~percentage: 0.000000e+00","~Year: 1970<br />~percentage: 0.000000e+00","~Year: 1971<br />~percentage: 0.000000e+00","~Year: 1972<br />~percentage: 0.000000e+00","~Year: 1973<br />~percentage: 0.000000e+00","~Year: 1974<br />~percentage: 0.000000e+00","~Year: 1975<br />~percentage: 4.014114e-06","~Year: 1976<br />~percentage: 7.847138e-06","~Year: 1977<br />~percentage: 0.000000e+00","~Year: 1978<br />~percentage: 1.468887e-05","~Year: 1979<br />~percentage: 1.064645e-05","~Year: 1980<br />~percentage: 1.426874e-05","~Year: 1981<br />~percentage: 2.118248e-05","~Year: 1982<br />~percentage: 1.354605e-05","~Year: 1983<br />~percentage: 1.617500e-05","~Year: 1984<br />~percentage: 3.460512e-05","~Year: 1985<br />~percentage: 4.778145e-05","~Year: 1986<br />~percentage: 4.868926e-05","~Year: 1987<br />~percentage: 7.075022e-05","~Year: 1988<br />~percentage: 6.726254e-05","~Year: 1989<br />~percentage: 9.198717e-05","~Year: 1990<br />~percentage: 9.749820e-05","~Year: 1991<br />~percentage: 5.574150e-05","~Year: 1992<br />~percentage: 9.342257e-05","~Year: 1993<br />~percentage: 1.358861e-04","~Year: 1994<br />~percentage: 1.895232e-04","~Year: 1995<br />~percentage: 2.051191e-04","~Year: 1996<br />~percentage: 2.248358e-04","~Year: 1997<br />~percentage: 2.348062e-04","~Year: 1998<br />~percentage: 2.768409e-04","~Year: 1999<br />~percentage: 2.454959e-04","~Year: 2000<br />~percentage: 2.520702e-04","~Year: 2001<br />~percentage: 3.900670e-04","~Year: 2002<br />~percentage: 4.181847e-04","~Year: 2003<br />~percentage: 4.769939e-04","~Year: 2004<br />~percentage: 5.091219e-04","~Year: 2005<br />~percentage: 6.293680e-04","~Year: 2006<br />~percentage: 7.166250e-04","~Year: 2007<br />~percentage: 8.561360e-04","~Year: 2008<br />~percentage: 9.827910e-04","~Year: 2009<br />~percentage: 1.116804e-03","~Year: 2010<br />~percentage: 1.377037e-03","~Year: 2011<br />~percentage: 1.878915e-03","~Year: 2012<br />~percentage: 2.167154e-03","~Year: 2013<br />~percentage: 2.437328e-03","~Year: 2014<br />~percentage: 2.722251e-03","~Year: 2015<br />~percentage: 3.099145e-03","~Year: 2016<br />~percentage: 3.486938e-03"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(70,130,180,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":26.2283105022831,"r":7.30593607305936,"b":40.1826484018265,"l":54.7945205479452},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[1946.205,2019.795],"tickmode":"array","ticktext":["1950","1955","1960","1965","1970","1975","1980","1985","1990","1995","2000","2005","2010","2015"],"tickvals":[1950,1955,1960,1965,1970,1975,1980,1985,1990,1995,2000,2005,2010,2015],"categoryorder":"array","categoryarray":["1950","1955","1960","1965","1970","1975","1980","1985","1990","1995","2000","2005","2010","2015"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":"Year","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-0.000174346903883279,0.00366128498154885],"tickmode":"array","ticktext":["0.000","0.001","0.002","0.003"],"tickvals":[0,0.001,0.002,0.003],"categoryorder":"array","categoryarray":["0.000","0.001","0.002","0.003"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":"Percentage of all publications [%]","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"source":"A","attrs":{"699767836b2d":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"699767836b2d","visdat":{"699767836b2d":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":{"render":[{"code":"function(el, x) { var ctConfig = crosstalk.var('plotlyCrosstalkOpts').set({\"on\":\"plotly_click\",\"persistent\":false,\"dynamic\":false,\"selectize\":false,\"opacityDim\":0.2,\"selected\":{\"opacity\":1}}); }","data":null}]}}</script>
 <p class="caption">
 Figure 1.2: <strong>Percentage of publications containg phrase “tumor immunotherapy” is growing</strong>, numbers retreived on 17.01.2018 from <a href="http://dan.corlan.net/medline-trend.html">Medline Trends</a> <span class="citation">(Corlan <a href="#ref-Corlan2004">2004</a>)</span>
 </p>
 </div>
 
 </div>
-<div id="tumor-micro-environment-as-a-complex-system" class="section level3">
-<h3><span class="header-section-number">1.1.2</span> Tumor micro environment as a complex system</h3>
+<div id="tumor-microenvironment-as-a-complex-system" class="section level3">
+<h3><span class="header-section-number">1.1.2</span> Tumor Microenvironment as a complex system</h3>
 <p>Tumor Microenvironment is a complex tissue that surrounds tumor cells. It is composed of different compartments (in solid tumors):</p>
 <ul>
 <li>Stroma: blood and lymphatics vessels, epithelial cells, mesenchymal stem cells, fibroblast, adipocytes supported by extracellular matrix (EM)</li>
@@ -296,12 +311,12 @@ Figure 1.3: <strong>The microenvironment supports metastatic dissemination and c
 </div>
 <div id="tme-as-a-friend-immunosurveillance" class="section level5">
 <h5><span class="header-section-number">1.1.2.1.3</span> TME as a friend: immunosurveillance</h5>
-<p>As mentioned in <a href="intro.html#hist">Historical understanding of cancer</a> Paget proposed a hypothesis of “seed and soil” where the TME in a certain tissue (the soil) can either stimulate or suppress the metastasis (the seed). William Coley tested a possibility to trigger tumorsuppressive effect via stimulation of the immune system with bacteria. In the 1960s, the immune surveillance theory hypothesized “the ability to identify and destroy nascent tumors as a central asset of the immune system” <span class="citation">(Sebeok <a href="#ref-Sebeok1976">1976</a>; Burnet <a href="#ref-Burnet1970">1970</a>)</span>, but it was highly criticized in consequence of no increase in tumor incidence in athymic nude mice <span class="citation">(Stutman <a href="#ref-Stutman1974">1974</a>; <span class="citeproc-not-found" data-reference-id="Rygaard1976"><strong>???</strong></span>)</span>. Later it was shown, that this mice model was not adequate <span class="citation">(Cavallo et al. <a href="#ref-Cavallo2011">2011</a>)</span> . Thus, the hypothesis that TME can have a positive role in tumor prognosis is not new.</p>
-<p>The immunosurveillance through immune-editing can be summarized in three processes: elimination, equilibrium, and escape <span class="citation">(<span class="citeproc-not-found" data-reference-id="Dunn2002"><strong>???</strong></span>)</span>.</p>
-<p>The elimination is direct killing of cancer cells or growth inhibition by immune system. The adoptive T cells and NK are actively involved in tumor killing and stimulate other immune cells. The CD8 + cytotoxic lymphocytes (CTLs) directly recognize tumor cells. Employing perforin- and granzyme-dependent mechanisms they can lyze tumor cells. The CD4 + T cells release factors to induce proliferation of B cells and to promote their differentiation to antibody (Ab)-secreting plasma cells, activate macrophages. Macrophages use phagocytosis to eliminate cancer cells <span class="citation">(<span class="citeproc-not-found" data-reference-id="Vesely2011"><strong>???</strong></span>)</span>.</p>
-<p>The tumor-infiltrating lymphocytes (TILs) have been associated with an overall good prognosis and better survival in different cancer studies. Also, abundance of CD3 + and CD8 + T cells, NK cells, and <span class="math inline">\(\gamma\delta\)</span>T cells correlates with improved outcomes in epithelial ovarian cancers <span class="citation">(<span class="citeproc-not-found" data-reference-id="Marquez-Medina2012"><strong>???</strong></span>)</span>. Several studies report that the presence of the abundant immune infiltrate is correlated with good prognosis or better survival <span class="citation">(<span class="citeproc-not-found" data-reference-id="Kornstein1983"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Baxevanis1994"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Naito1998"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Pages2005"><strong>???</strong></span>)</span>. Spontaneous regression of human tumors has been reported in cutaneous melanoma, retinoblastoma, osteosarcoma, etc. <span class="citation">(<span class="citeproc-not-found" data-reference-id="Aris2012"><strong>???</strong></span>)</span>.</p>
+<p>As mentioned in <a href="intro.html#hist">Historical understanding of cancer</a> Paget proposed a hypothesis of “seed and soil” where the TME in a certain tissue (the soil) can either stimulate or suppress the metastasis (the seed). William Coley tested a possibility to trigger tumorsuppressive effect via stimulation of the immune system with bacteria. In the 1960s, the immune surveillance theory hypothesized “the ability to identify and destroy nascent tumors as a central asset of the immune system” <span class="citation">(Sebeok <a href="#ref-Sebeok1976">1976</a>; Burnet <a href="#ref-Burnet1970">1970</a>)</span>, but it was highly criticized in consequence of no increase in tumor incidence in athymic nude mice <span class="citation">(Stutman <a href="#ref-Stutman1974">1974</a>; Rygaard and Povlsen <a href="#ref-Rygaard1976">1976</a>)</span>. Later it was shown, that this mice model was not adequate <span class="citation">(Cavallo et al. <a href="#ref-Cavallo2011">2011</a>)</span> . Thus, the hypothesis that TME can have a positive role in tumor prognosis is not new.</p>
+<p>The immunosurveillance through immune-editing can be summarized in three processes: elimination, equilibrium, and escape <span class="citation">(Dunn et al. <a href="#ref-Dunn2002">2002</a>)</span>.</p>
+<p>The elimination is direct killing of cancer cells or growth inhibition by immune system. The adoptive T cells and NK are actively involved in tumor killing and stimulate other immune cells. The CD8 + cytotoxic lymphocytes (CTLs) directly recognize tumor cells. Employing perforin- and granzyme-dependent mechanisms they can lyze tumor cells. The CD4 + T cells release factors to induce proliferation of B cells and to promote their differentiation to antibody (Ab)-secreting plasma cells, activate macrophages. Macrophages use phagocytosis to eliminate cancer cells <span class="citation">(Vesely et al. <a href="#ref-Vesely2011">2011</a>)</span>.</p>
+<p>The tumor-infiltrating lymphocytes (TILs) have been associated with an overall good prognosis and better survival in different cancer studies. Also, abundance of CD3 + and CD8 + T cells, NK cells, and <span class="math inline">\(\gamma\delta\)</span>T cells correlates with improved outcomes in epithelial ovarian cancers <span class="citation">(Marquez-Medina, Salla-Fortuny, and Salud-Salvia <a href="#ref-Marquez-Medina2012">2012</a>)</span>. Several studies report that the presence of the abundant immune infiltrate is correlated with good prognosis or better survival <span class="citation">(Kornstein, Brooks, and Elder <a href="#ref-Kornstein1983">1983</a>; Baxevanis et al. <a href="#ref-Baxevanis1994">1994</a>; Naito et al. <a href="#ref-Naito1998">1998</a>; Pagès et al. <a href="#ref-Pages2005">2005</a>)</span>. Spontaneous regression of human tumors has been reported in cutaneous melanoma, retinoblastoma, osteosarcoma, etc. <span class="citation">(Aris, Barrio, and Mordoh <a href="#ref-Aris2012">2012</a>)</span>.</p>
 <p>The equilibrium is the phase when cancer and immune cells coexist and their crosstalk is preventing metastasis.</p>
-<p>T cells are the main actor maintaining the equilibrium. Progressively, the tumor cells become more immunogenic as they are not edited by the immune system <span class="citation">(<span class="citeproc-not-found" data-reference-id="Bahatia2011"><strong>???</strong></span>)</span>. The state of tumor cells is then identified as “dormant” and active scientific reports investigate the possible molecular pathways that maintain dormancy or lead to escape <span class="citation">(<span class="citeproc-not-found" data-reference-id="Teng2008"><strong>???</strong></span>)</span>.</p>
+<p>T cells are the main actor maintaining the equilibrium. Progressively, the tumor cells become more immunogenic as they are not edited by the immune system <span class="citation">(Bhatia and Kumar <a href="#ref-Bhatia2011">2011</a>)</span>. The state of tumor cells is then identified as “dormant” and active scientific reports investigate the possible molecular pathways that maintain dormancy or lead to escape <span class="citation">(Teng et al. <a href="#ref-Teng2008">2008</a>)</span>.</p>
 <p>The immune escape is the final process when tumor cells impair the immune response.</p>
 </div>
 </div>
@@ -313,13 +328,41 @@ Figure 1.3: <strong>The microenvironment supports metastatic dissemination and c
 </div>
 <div id="immune-cell-subtypes-in-tme" class="section level4">
 <h4><span class="header-section-number">1.1.2.3</span> Immune cell (sub)types in TME</h4>
+<p>We are taught that a cell is the basic structural, functional, and biological unit of all known living organisms. Human body contains around <span class="math inline">\(10^{14}\)</span> which is three order of magnitude more than number of stars in the Milky Way. This ensemble of cells are traditionally classified into cell types based on their phenotypical variety.</p>
 <blockquote>
-<p>Cette espèce de leucocytes a une grande ressemblance avec certains éléments fixes du tissu conjonctif, ainsi qu’avec des cellules endothéliales et des cellules de la pulpe splénique. On est donc souvent embarrassé, surtout lorsqu’on trouve ces leucocytes mononucléaires en dehors des vaisseaux, pour les distinguer des autres espèces de cellules mentionnées.</p>
-<p>​ — Elie Metchnikoff, Leçons sur la pathologie comparée de l’inflammation, 1891</p>
+<p><em>for their immense number, the variety of cells is much smaller: only about 200 different cell types are represented in the collection of about <span class="math inline">\(10^{14}\)</span> cells that make up our bodies. These cells have diverse capabilities and, superficially, have remarkably different shapes….</em> <span class="citation">Boal (<a href="#ref-Boal2002">2002</a>)</span></p>
 </blockquote>
-<p>Pathological characterisation</p>
-<p>FACS molecular charaterisation</p>
-<p>Necessary for the chapter <a href="map.html#map">Heterogeneity of immune cell types</a></p>
+<p>In the description of TME, I have referred to cell types of immune cells as well-established entities of immune system. However, the definition of cell types remains controversial and there is no consensus among researchers how exactly a cell type should be defined. The notion of the cell-subtypes is even more vague. The problem does not only concerns immune cells, most of cell types of our organism, classified initially according to their morphology, seem to fulfil multiple functions. One can also relate cell-type problem to species problem where scientist also debate about where to draw the borders between species. This problem is widely generalized as “theory of types” <span class="citation">(Slater <a href="#ref-Slater2013">2013</a>)</span> in many disciplines as philosophy, linguistics, mathematics.</p>
+<p>In this chapter I will limit the description to immune cell types.</p>
+<p>An immune cell can be described nowadays along many axes:</p>
+<ul>
+<li>Phenotype /surface markers</li>
+<li>Stability</li>
+<li>Morphology (expressed proteins)</li>
+<li>Ultrastructure (electron microscopy)</li>
+<li>Molecular data (gene expresson, genotype, epigenome)</li>
+<li>Cell fate</li>
+<li>Cell of origin</li>
+<li>Function</li>
+</ul>
+<p>Depending how well a cell is different from all other cells along those axes, it will (or not) be defined as a distinct cell type. However, this comes with more or less subjective threshold on where the cells become <em>significantly different</em>. This thresholds can be established computationally or by an expert. Usual practice is a mix of both methods.</p>
+<p>Since the beginning of immunology, there were disagreement between pre-defined cell types and cell functions.</p>
+<blockquote>
+<p><em>Cette espèce de leucocytes a une grande ressemblance avec certains éléments fixes du tissu conjonctif, ainsi qu’avec des cellules endothéliales et des cellules de la pulpe splénique. On est donc souvent embarrassé, surtout lorsqu’on trouve ces leucocytes mononucléaires en dehors des vaisseaux, pour les distinguer des autres espèces de cellules mentionnées.</em>
+— Elie Metchnikoff, Leçons sur la pathologie comparée de l’inflammation, 1891</p>
+</blockquote>
+<p>The definition of cell types and subtypes is widely discussed today with arrival of single cell technologies that allow a change of paradigm in cell classifications. Up to now, the top-down approach was mostly used. Pre-defined set of parameters describing a cell was fixed in order to select cells and then other parameters were measured. Now, it is possible to practice bottom-up approach where all (or some) parameters are measured for a single cell and then, depending on its distance from other cells, cell types are defined <span class="citation">(Satija and Shalek <a href="#ref-Satija2014">2014</a>)</span>.</p>
+<blockquote>
+<p><em>The concept of “cell type” is poorly defined and incredibly useful</em><br />
+— Allon Klein, Harvard Medical School</p>
+</blockquote>
+<p>Researchers agree that the concept of cell type is artificial and a continuum of cell types is closer to the reality. According to Susanne Rafelski,</p>
+<blockquote>
+<p><em>A useful way to classify cells might thus be a multiscale and multi- parameter cell-type space that includes vectors for key intracellular organizational, dynamic, and functional features as well as tissue location, gene expression etc.</em></p>
+</blockquote>
+<p>Some, as Allon Klein, propose to introduce a concept of <em>cell states</em> which would better describe a cell depending on its context and function. However, an emerging challenge would be to connect <em>cell states</em> with historical <em>cell types.</em> <span class="citation">(Ediorial Cell Systems <a href="#ref-EdiorialCellSystems2017">2017</a>)</span> .</p>
+<p>Another aspect of cells, that I am not approaching in this thesis is time. Cells are shaped by thier environment, intrinsic and extrinsic events and can change states, functions etc. Can one cell belong to different cell types depending on its trajectory? How to include the dynamic aspect of the cells into the classification?</p>
+<p>Thus, most scientist agree that used convention of cell types is not ideal and it is more matter of convenience than biological reality. This leaves a room to study cells and challenge existing classification. Describing cell types or cell states in tumor micorenvironment is extremely interesting as still little is know about the diversity of cell infiltrated in solid tissues.</p>
 </div>
 <div id="summary" class="section level4">
 <h4><span class="header-section-number">1.1.2.4</span> Summary</h4>
@@ -332,7 +375,7 @@ Figure 1.3: <strong>The microenvironment supports metastatic dissemination and c
 </div>
 <div id="quantifying-and-qualifying-immune-infiltration-data" class="section level2">
 <h2><span class="header-section-number">1.2</span> Quantifying and qualifying immune infiltration (data)</h2>
-<p>Nowadays, more and more biological data is produced. However, this proliferation of accessible resources is not proportional to generated insights and wisdom. In this thesis, we wok mostly generate <em>Knowledge</em> and <em>Insights</em> and we hope to generate some <em>Wisdom</em> (Fig. <a href="intro.html#fig:information-power">1.4</a>). In this section, we will introduce the foundation of our analysis: different data types that will be further discussed and explored in chapters that follow.</p>
+<p>Nowadays, more and more biological data is produced. However, this proliferation of accessible resources is not proportional to generated insights and wisdom. In this thesis, I aim to generate <em>Knowledge</em> and <em>Insights</em> and we hope to generate some <em>Wisdom</em> (Fig. <a href="intro.html#fig:information-power">1.4</a>). In this section, we will introduce the foundation of our analysis: different data types that will be further discussed and explored in chapters that follow.</p>
 <div class="figure" style="text-align: center"><span id="fig:information-power"></span>
 <img src="figures-ext/01-Information_power.jpg" alt="From Data to Wisdom. Illustration of different steps that it takes to go from Data to generating Wisdom. It highlights that generating data is not equal to understanding it and additional efforts are needed to generate value. Image authored by Clifford Stoll and Gary Schubert published by Portland Press Limited on behalf of the Biochemical Society and the Royal Society of Biology and distributed under the Creative Commons Attribution License 4.0 (CC-BY) in (Ponting 2017)." width="80%" />
 <p class="caption">
@@ -349,7 +392,7 @@ Figure 1.4: <strong>From <em>Data</em> to <em>Wisdom</em></strong>. Illustration
 </div>
 <div id="mass-cytometry" class="section level4">
 <h4><span class="header-section-number">1.2.1.2</span> Mass cytometry</h4>
-<p>Mass cytometry (also known as CyTOF allows for the quantification of cellular protein levels by using isotopes. It allows to quantify up to 40 proteins per cell <span class="citation">(Papalexi and Satija <a href="#ref-Papalexi2017">2017</a>)</span>. It also demands lower starting number of cells (1000 - 1000000), a realistic number that can be extracted from patient biopsy <span class="citation">(<span class="citeproc-not-found" data-reference-id="Lyons2017"><strong>???</strong></span>)</span>.</p>
+<p>Mass cytometry (also known as CyTOF allows for the quantification of cellular protein levels by using isotopes. It allows to quantify up to 40 proteins per cell <span class="citation">(Papalexi and Satija <a href="#ref-Papalexi2017">2017</a>)</span>. It also demands lower starting number of cells (1000 - 1000000), a realistic number that can be extracted from patient biopsy <span class="citation">(Lyons et al. <a href="#ref-Lyons2017">2017</a>)</span>.</p>
 </div>
 </div>
 <div id="staining" class="section level3">
@@ -360,15 +403,14 @@ Figure 1.4: <strong>From <em>Data</em> to <em>Wisdom</em></strong>. Illustration
 </div>
 <div id="omics" class="section level3">
 <h3><span class="header-section-number">1.2.3</span> omics</h3>
-<ul>
-<li>Some kind of sequencing explanation needed for non-biologists</li>
-</ul>
+<p>In biological systems information is coded in a form of DNA that do not vary a lot between different individuals of the same species. In order to trigger a function in an organism, a part of the DNA is transcribed to RNA, depending on the intrinsic and extrinsic factors, and after additional modification messenger RNA (mRNA) is translated into a protein (i.e. digestive enzyme) that fulfill a role in the organism. The mRNA information (also called transcriptome) can be captured with experimental methods at high throughput (transcriptomics) and provides an approximation of the state of the studied system (i.e. a tissue). There is also information, not coded on the DNA sequence but in a pattern of chemical species that can regulate the state transition of DNA information. This additional regulators are called collectively epigenome and some of them, like methylation, can be also measured at high-throughput.</p>
 <div id="transcriptome" class="section level4">
 <h4><span class="header-section-number">1.2.3.1</span> Transcriptome</h4>
-<p>Transcriptomics measures the number of counts of mRNA molecules using high-throughput techniques. mRNA is the part of genetic information that should be translated to proteins. It reflects the activity of ongoing processes in a cell. In contrast to DNA, mRNA is highly variant <span class="citation">(Velculescu et al. <a href="#ref-Velculescu1997">1997</a>)</span>. This variability can be either “intrinsic” that reflect the stochastic process or “extrinsic” reflecting impact of factors upstream to mRNA synthesis <span class="citation">(<span class="citeproc-not-found" data-reference-id="Satija2014"><strong>???</strong></span>)</span>.</p>
+<p>Transcriptomics measures the number of counts of mRNA molecules using high-throughput techniques. mRNA is the part of genetic information that should be translated to proteins. It reflects the activity of ongoing processes in a cell. In contrast to DNA, mRNA is highly variant <span class="citation">(Velculescu et al. <a href="#ref-Velculescu1997">1997</a>)</span>. This variability can be either “intrinsic” that reflect the stochastic process or “extrinsic” reflecting impact of factors upstream to mRNA synthesis <span class="citation">(Satija and Shalek <a href="#ref-Satija2014">2014</a>)</span>.</p>
 <p>In addition, many genetic and epigenetic events can be either directly observed or indirectly inferred from transcriptomic data. Transcriptome can be measure with microarrays or RNA-seq NGS technology.</p>
+<p>Microarrays remain cost-efficient and popular technique designed in 90. There exist two and one color fluorescent probes, both representing different challenges in experimental design for batch effect removal. RNA-seq, in contrast, uses sequenced RNA to quantify the expression. As not only selected genes (probes) are quantified it can be used to study unknown parts of the genome. RNA-seq is also characterised by lower background noise than microarrays.</p>
 <p>Bulk transcriptome data are quite accessible nowadays. They can be obtained from either flash-frozen or formalin-fixed, paraffin-embedded (FFPE) tissue samples, including both surgically resected material and core needle biopsies <span class="citation">(Schelker et al. <a href="#ref-Schelker2017">2017</a>)</span>.</p>
-<p>The main flaw of transcriptomic data is that the reproducibility between different platforms is limited. As a result, direct comparison between two datasets produced by different platforms is not advised.</p>
+<p>The main flaw of transcriptomic data is that the reproducibility between different platforms is limited. As a result, direct comparison between two datasets produced by different platforms is not advised. There are 12 thousands genes that are matching between four sequencing platforms. Through gene names conversions a lot of information is lost and bias is introduced.</p>
 <p>Different strategies can be adapted to analyse bulk transcriptome.</p>
 <p><span class="citation">Cieślik and Chinnaiyan (<a href="#ref-Cieslik2017">2017</a>)</span> describes five groups of most popular approaches that can be applied to study transcriptome (Fig. <a href="intro.html#fig:transcriptome-methods">1.5</a>). Despite a diversity of bioinformatic and statistical tools, the most popular differential approaches, mainly differential gene expression (DGE) based on difference between two experimental conditions.</p>
 <div class="figure" style="text-align: center"><span id="fig:transcriptome-methods"></span>
@@ -381,44 +423,17 @@ Figure 1.5: <strong>Five categories of RNA-seq data analysis.</strong> Different
 <p>RNA-seq data was proven to be a useful indicator for clinical applications <span class="citation">(Mody et al. <a href="#ref-Mody2015">2015</a>; Oberg et al. <a href="#ref-Oberg2016">2016</a>; Robinson et al. <a href="#ref-Robinson2017">2017</a>)</span>. Its utility for immune profiling was demonstrated in may studies through a use of transcriptomic signatures to predict immunotherapy response or survival <span class="citation">(Chen et al. <a href="#ref-Chen2016">2016</a>)</span>.</p>
 <p>In this work transcriptome data analysis fails into multiple categories: Compositional, Relative and aims to construct a Global-level conclusions.</p>
 </div>
-<div id="epigenome" class="section level4">
-<h4><span class="header-section-number">1.2.3.2</span> Epigenome</h4>
-<p>An epigenome can be defined as a record of the chemical changes to the DNA and histone proteins of an organism. Changes to the epigenome can provoke changes to the structure of chromatin and changes to the function of the genome <span class="citation">(Bernstein, Meissner, and Lander <a href="#ref-Bernstein2007">2007</a>)</span>. Epigenome data usually contains information about methylation CpG island changes. In cancer, global genomic hypomethylation, CpG island promoter hypermethylation of tumor suppressor genes, an altered histone code for critical genes, a global loss of monoacetylated and trimethylated histone H4 were observed. Methylome profiles can be also use as molecular signature <span class="citation">(<span class="citeproc-not-found" data-reference-id="Jeschke2017"><strong>???</strong></span>)</span>.</p>
-</div>
 <div id="single-cell-rna-seq" class="section level4">
-<h4><span class="header-section-number">1.2.3.3</span> Single cell RNA-seq</h4>
+<h4><span class="header-section-number">1.2.3.2</span> Single cell RNA-seq</h4>
 <p>Described above methods of process DNA from hundreds of thousands of cells simultaneously and report averaged gene expression of all cells. In contrast, scRNA-seq technology allows getting results for each cell individually. This is tremendous step forward enhancement of our understanding of cell heterogeneity and opens new avenues of research questions.</p>
 <p>Continuous discovery of new immune subtypes has proven that cell surface markers that are used for phenotyping by techniques like <a href="intro.html#facs">FACS</a> and <a href="intro.html#staining">immunohistochelistry</a> cannot capture the full complexity. ScRNA-seq methods allow to cluster known cell types in subpopulations based on their genetic features. ScRNA-seq is also able to capture particularly rare cell types as it requires much less of RNA material (1 ng isolated from 100-1000 cells) compared to ‘bulk’ RNA-seq ( ~ 1 μg of total mRNA transcripts ). It also allows to study cells at high resolution capturing the phenotypes in much more refined scale than previously <span class="citation">(Papalexi and Satija <a href="#ref-Papalexi2017">2017</a>)</span>.</p>
-<p>This new data type also brings into the field new challenges related to data processing due to the volume, distribution, noise, and biases. Experts highlight as the most “batch effect”, “noise” and “dropout effect” <span class="citation">(Perkel <a href="#ref-Perkel2017">2017</a>)</span>. So far, there are no official standards that can be applied which makes data comparison and post-processing even more challenging. Up to date, there are around 70 reported tools and resources for single cell data processing <span class="citation">(Davis <a href="#ref-Davis2016">2016</a>)</span> .</p>
-<p>A limited number of single-cell datasets of tumors are made publicly available (@ TABLE ?).</p>
+<p>This new data type also brings into the field new challenges related to data processing due to the volume, distribution, noise, and biases. Experts highlight as the most “batch effect”, “noise” and “dropout effect” <span class="citation">(Perkel <a href="#ref-Perkel2017">2017</a>)</span>. So far, there are no official standards that can be applied which makes data comparison and post-processing even more challenging. Up to date, there are around 70 reported tools and resources for single cell data processing <span class="citation">(Davis <a href="#ref-Davis2016">2016</a>)</span> . A limited number of single-cell datasets of tumors are made publicly available and more are to come.</p>
 <p>One can ask why then developing computational deconvolution of bulk transcriptome if we can learn relevant information from single-cell data. Firstly, that single cell data do not provide a straightforward answer to the estimation of cell proportions. The coverage is not full and sequenced single cells are not fully representative of the true population. For instance, neutrophiles are not found in scRNA-seq data because of they are “difficult to isolate, highly labile <em>ex vivo</em> and therefore difficult to preserve with current single-cell methods” <span class="citation">(Schelker et al. <a href="#ref-Schelker2017">2017</a>)</span>. In addition, a number of patients included in published studies of range &lt;100 cannot be compared to thousand people cohorts sequenced with bulk transcriptome methods. This is mostly because single cell experiments are challenging to perform, especially in clinical setting as fresh samples are needed <span class="citation">(Schelker et al. <a href="#ref-Schelker2017">2017</a>)</span>. Today, single cell technology brings very interesting “zoom in” perspective, but it would be incautious to make fundings from a restricted group of individuals universal to the whole population. Major brake to the use of single cell technology more broadly might be as well the price that is nearly 10x higher for single cell sample compared to bulk <span class="citation">(Core <a href="#ref-Cedar2018">2016</a>)</span>.</p>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Technology</th>
-<th align="center">Price</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">scRNA-seq</td>
-<td align="center">3000$ / sample</td>
-</tr>
-<tr class="even">
-<td align="center">RNA-seq</td>
-<td align="center">200 $ / sample</td>
-</tr>
-<tr class="odd">
-<td align="center">FACS</td>
-<td align="center">0.05$ / cell</td>
-</tr>
-<tr class="even">
-<td align="center">CyTOF</td>
-<td align="center">35$/cell</td>
-</tr>
-</tbody>
-</table>
 <p>In this work, we are using single cell data in two ways. Firstly, in <a href="results.html#results">Chapter 5</a> we compare immune cell profiles defined by scRNA-seq, blood and blind deconvolution (problem introduced in <a href="intro.html#immune-signatures">Immune signatures section</a>). Secondly, in <a href="map.html#map">Chapter 6</a> we use single call data of Metastatic melanoma generated by <span class="citation">Tirosh et al. (<a href="#ref-Tirosh2016">2016</a>)</span> to demonstrate heterogeneity of subpopulations of Macrophages and NK cells.</p>
+</div>
+<div id="epigenome" class="section level4">
+<h4><span class="header-section-number">1.2.3.3</span> Epigenome</h4>
+<p>An epigenome can be defined as a record of the chemical changes to the DNA and histone proteins of an organism. Changes to the epigenome can provoke changes to the structure of chromatin and changes to the function of the genome <span class="citation">(Bernstein, Meissner, and Lander <a href="#ref-Bernstein2007">2007</a>)</span>. Epigenome data usually contains information about methylation CpG island changes. In cancer, global genomic hypomethylation, CpG island promoter hypermethylation of tumor suppressor genes, an altered histone code for critical genes, a global loss of monoacetylated and trimethylated histone H4 were observed. Methylome profiles can be also use as molecular signature <span class="citation">(Jeschke et al. <a href="#ref-Jeschke2017">2017</a>)</span>.</p>
 </div>
 </div>
 </div>
@@ -429,7 +444,7 @@ Figure 1.5: <strong>Five categories of RNA-seq data analysis.</strong> Different
 <h3><span class="header-section-number">1.3.1</span> Cancer immune phenotypes</h3>
 <p>Since 20. century physicians decided on common nomenclature that classify tumors into distinct groups that are relatively homogenous or that share common characteristic important for treatment and prognosis. Tumor typing should help to better asses predicting prognosis, to adapt a therapy to the clinical situation, to enable therapeutic studies which are essential in proving any therapeutic progress.</p>
 <p>Most of the classifications are based on clinical data. Most common factors taken into account are: the degree of local invasion, the degree of remote invasion, histological types of cancer with specific grading for each type of cancer, possibly various tumour markers, general status of the patient.</p>
-<p>However, cancers with similar morphological and histopathological features reveal very distinct patterns of progression and response to therapy <span class="citation">(<span class="citeproc-not-found" data-reference-id="Galon2014"><strong>???</strong></span>)</span>. In the era of gene sequencing, gene and protein expression as well as epigenome can provide an important complementary information. Therefore gene markers or proteomic abnormalities can integrated into classification panel. One popular example is a gene signature <em>PAM50</em> <span class="citation">(<span class="citeproc-not-found" data-reference-id="Parker2009"><strong>???</strong></span>)</span> used for prediction of patients’ prognosis in breast cancer, patented as a tumor profiling test.</p>
+<p>However, cancers with similar morphological and histopathological features reveal very distinct patterns of progression and response to therapy <span class="citation">(Galon et al. <a href="#ref-Galon2014">2014</a>)</span>. In the era of gene sequencing, gene and protein expression as well as epigenome can provide an important complementary information. Therefore gene markers or proteomic abnormalities can integrated into classification panel. One popular example is a gene signature <em>PAM50</em> <span class="citation">(Parker et al. <a href="#ref-Parker2009">2009</a>)</span> used for prediction of patients’ prognosis in breast cancer, patented as a tumor profiling test.</p>
 <p>Since the increase of importance of the immunotherapies, researches proposed several ways to classify tumors based on their microenvironment. Given different parameters describing TME, cancers can be sorted into groups that show similar characteristics. We will discuss most common frameworks that allow to phenotype cancers based on the TME.</p>
 <p>The localisation of the immune cells can be an indicator of the state and response to the therapy <span class="citation">(Bindea et al. <a href="#ref-Bindea2013">2013</a>)</span>.</p>
 <p>The most standard approach is to convey an analysis of histopathological cuts to asses the number of infiltrating lymphocytes (TILs). Two typical patterns are usually identified: “hot” - immune inflamed and “cold” - no active immune response <span class="citation">(Berghoff, Kather, and Jäger <a href="#ref-Berghoff2018">2018</a>)</span>.</p>
@@ -441,25 +456,20 @@ Figure 1.6: <strong>Cancer-immune phenotypes: the immune-desert phenotype (brown
 </p>
 </div>
 
-<p><span class="citation">(<span class="citeproc-not-found" data-reference-id="Thorsson2018"><strong>???</strong></span>)</span> performed a multi-omic analysis of TCGA datasets that allowed them to define 6 subtypes that are valid across cancer types:</p>
-<ol style="list-style-type: decimal">
-<li>wound healing</li>
-<li>IFN-<span class="math inline">\(\gamma\)</span> dominant</li>
-<li>inflammatory</li>
-<li>lymphocyte depleted</li>
-<li>immunologically quiet</li>
-<li>TGF-<span class="math inline">\(\beta\)</span> dominant</li>
-</ol>
-<p>Different indicators were used to define these six phenotypes:</p>
-<p>The immunogenicity of the tumors can be explained by tumor-intrinsic factors and tumor-extrinsic factors <span class="citation">(Gajewski et al. <a href="#ref-Gajewski2006">2006</a>)</span>. Tumor-intrinsic factors are, the neoantigen load and frequency, the mutational load, the expression of immunoinhibitors and immunostimulators (e.i. PD-L1), and alteration of HLA class I molecules. Tumor-extrinsic factors include chemokines regulating T cell trafficking, infiltration of effector TILs and immunosuppressive TILs, and soluble immunomodulatory factors (cytokines).</p>
-<p>A plethora of different computational methods have been developed in order to further characterize tumor samples using different factors. We mention here mainstream methods that cover different approaches of scoring the TME-cancer phenotype.</p>
+<p>A presence of immune phenotypes was confirmed by for example by <span class="citation">Becht et al. (<a href="#ref-Becht2016">2016</a>)</span> in colorectal cancer, where after deconvolution of bulk tumor profiles, pattern of immune and stroma cells abundance was matching four cancer subtypes. The good prognosis was related to cytotoxic response and bad prognosis to lymphocytes and cells of monocytic origin.</p>
+<p>According to <span class="citation">Gajewski et al. (<a href="#ref-Gajewski2006">2006</a>)</span>, the immunogenicity of the tumors can be explained by tumor-intrinsic factors and tumor-extrinsic factors. Tumor-intrinsic factors are: the neoantigen load and frequency, the mutational load, the expression of immunoinhibitors and immunostimulators (e.i. PD-L1), and alteration of HLA class I molecules. Tumor-extrinsic factors include chemokines regulating T cell trafficking, infiltration of effector TILs and immunosuppressive TILs, and soluble immunomodulatory factors (cytokines).</p>
+</div>
+<div id="scoring-the-immune-infiltration" class="section level3">
+<h3><span class="header-section-number">1.3.2</span> Scoring the immune infiltration</h3>
+<p>The most know scoring system based on image analysis is named Immunoscore.</p>
 <div id="immunoscore" class="section level4">
-<h4><span class="header-section-number">1.3.1.1</span> Immunoscore</h4>
-<p>One of the most recognised scoring method, based on fluorescent images is authored by Jerôme Galon lab in Paris and names <a href="http://www.haliodx.com/clinical-research-services/immunoscorer/">Immunoscore</a>. The Immunoscore ranges from 0 to 4 and it is based on the density of lymphocyte populations CD3/CD45RO, CD3/CD8, or CD8/ CD45RO. It also takes into account the spacial position of the cells: the tumor core and margins <span class="citation">(Galon et al. <a href="#ref-Galon2012">2012</a>)</span>. It was successfully applied to colorectal cancer to predict patients’ survival <span class="citation">(<span class="citeproc-not-found" data-reference-id="Anitei2014"><strong>???</strong></span>)</span> . Since it resulted in numerous application to many cancer types. It was also linked to time-to-recurrence in an international study. There is great potential to use immunoscore as a predictive marker if validated in prospective studies <span class="citation">(<span class="citeproc-not-found" data-reference-id="Galon2016"><strong>???</strong></span>)</span>.</p>
+<h4><span class="header-section-number">1.3.2.1</span> Immunoscore</h4>
+<p>One of the most recognised scoring method, based on fluorescent images is authored by Jerôme Galon lab in Paris and names <a href="http://www.haliodx.com/clinical-research-services/immunoscorer/">Immunoscore</a>. The Immunoscore ranges from 0 to 4 and it is based on the density of lymphocyte populations CD3/CD45RO, CD3/CD8, or CD8/ CD45RO. It also takes into account the spacial position of the cells: the tumor core and margins <span class="citation">(Galon et al. <a href="#ref-Galon2012">2012</a>)</span>. It was successfully applied to colorectal cancer to predict patients’ survival <span class="citation">(Anitei et al. <a href="#ref-Anitei2014">2014</a>)</span> . Since it resulted in numerous application to many cancer types. It was also linked to time-to-recurrence in an international study. There is great potential to use immunoscore as a predictive marker if validated in prospective studies <span class="citation">(Galon et al. <a href="#ref-Galon2016">2016</a>)</span>.</p>
 <p>The immunoscore is an interesting indicator, especially in the scope of clinical applications, although it does not tell us a lot about underlying biology. It is also limited to a few cell types while it may be that in some cancer types or patients, the system requires more detailed or rich analysis of larger panel of cells.</p>
+<p>Computational tools enabled us to characterize and classify TME with multi-omics data. Here I present a short list of most influencing and complete analysis aiming to redefine tumor phenotypes based on the immune infiltration.</p>
 </div>
 <div id="immunophenoscore" class="section level4">
-<h4><span class="header-section-number">1.3.1.2</span> Immunophenoscore</h4>
+<h4><span class="header-section-number">1.3.2.2</span> Immunophenoscore</h4>
 <p>Different approaches are based on gene expression patterns. Most commonly, machine learning supervised algorithms are trained to match known phenotype (established with microscopy or with clinical features) to genetic patterns or an unsupervised clustering is used to discover new classification.</p>
 <p>An example of well-formulated classification framework is Immunophenoscore <span class="citation">(Charoentong et al. <a href="#ref-Charoentong2017">2017</a>)</span>, based on publication of <span class="citation">Angelova et al. (<a href="#ref-Angelova2015">2015</a>)</span>, where methylome, transcriptome and mutation of TCGA CRC dataset (n = 598) was used to describe <em>immunophenotypes</em>. Later on, it was reduced to gene expression indicator and summarised in a form of a score. In This scoring scheme is based on the data of 20 solid tumors, using expression of marker genes selected by a Machine Learning algorithm (random forest) for best prediction in each cancer. These indicators can be grouped into four categories:</p>
 <ul>
@@ -471,58 +481,250 @@ Figure 1.6: <strong>Cancer-immune phenotypes: the immune-desert phenotype (brown
 <p>The immunophenscore (IPS) is calculated on a 0-10 scale based on the expression of genes in each category. Stimulatory factors (cell types) impact the score positively and inhibitory factors (cell types) negatively. Z-scores ≥ 3 were designated as IPS10 and z-scores ≤ 0 are designated as IPS0. A similar conceptual framework called <em>cancer immunogram</em> was proposed by <span class="citation">Blank et al. (<a href="#ref-Blank2016">2016</a>)</span> included seven parameters: tumor foreignness (Mutational load), general immune status (Lymphocyte count), immune cell infiltration (Intratumoral T cells), absence of checkpoints (PD-L1), absence of soluble inhibitors (IL–6, CRP), absence of inhibitory tumor metabolism (LDH, glucose utilisation), tumor sensitivity to immune effectors (MHC expression, IFN-γ sensitivity). <span class="citation">Charoentong et al. (<a href="#ref-Charoentong2017">2017</a>)</span> claim that the immunophenoscore can predict response to CTLA-4 and anti-PD-1.</p>
 <p>Nonetheless, the details of <em>cancer immunogram</em> use in practice remain unclear and result could be sensitive to patients’ and data heterogeneity as no standardisation was proposed. It should be also validated in a systematic independent study.</p>
 </div>
+<div id="the-immune-landscape-of-cancer" class="section level4">
+<h4><span class="header-section-number">1.3.2.3</span> The immune landscape of cancer</h4>
+<table class="table table-striped table-bordered" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:C6">Table 1.1: </span><strong>Six immunological subtypes of cancer</strong>. General characteristic of subtypes generated by <span class="citation">Thorsson et al. (<a href="#ref-Thorsson2018">2018</a>)</span> as described in the original publication.
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;font-weight: bold;color: white;background-color: black;">
+Cluster
+</th>
+<th style="text-align:center;font-weight: bold;color: white;background-color: black;">
+Features
+</th>
+<th style="text-align:center;font-weight: bold;color: white;background-color: black;">
+Macrophage..lymphocyte
+</th>
+<th style="text-align:center;font-weight: bold;color: white;background-color: black;">
+Th1.Th2
+</th>
+<th style="text-align:center;font-weight: bold;color: white;background-color: black;">
+Proliferation
+</th>
+<th style="text-align:center;font-weight: bold;color: white;background-color: black;">
+Intratumoral.heterogeneity
+</th>
+<th style="text-align:center;font-weight: bold;color: white;background-color: black;">
+Other
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+C1
+</td>
+<td style="text-align:center;">
+Wound healing
+</td>
+<td style="text-align:center;">
+Balanced
+</td>
+<td style="text-align:center;">
+Low
+</td>
+<td style="text-align:center;">
+High
+</td>
+<td style="text-align:center;">
+High
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+C2
+</td>
+<td style="text-align:center;">
+IFN-γ dominant
+</td>
+<td style="text-align:center;">
+Lowest
+</td>
+<td style="text-align:center;">
+Lowest
+</td>
+<td style="text-align:center;">
+High
+</td>
+<td style="text-align:center;">
+Highest
+</td>
+<td style="text-align:center;">
+Highest M1 and CD8 T cells
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+C3
+</td>
+<td style="text-align:center;">
+Inflammatory
+</td>
+<td style="text-align:center;">
+Balanced
+</td>
+<td style="text-align:center;">
+High
+</td>
+<td style="text-align:center;">
+Low
+</td>
+<td style="text-align:center;">
+Lowest
+</td>
+<td style="text-align:center;">
+Highest Th17
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+C4
+</td>
+<td style="text-align:center;">
+Lymphocyte depleted
+</td>
+<td style="text-align:center;">
+High
+</td>
+<td style="text-align:center;">
+Minimal Th
+</td>
+<td style="text-align:center;">
+Moderate
+</td>
+<td style="text-align:center;">
+Moderate
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+C5
+</td>
+<td style="text-align:center;">
+Immunologically quiet
+</td>
+<td style="text-align:center;">
+Highest
+</td>
+<td style="text-align:center;">
+Minimal Th
+</td>
+<td style="text-align:center;">
+Low
+</td>
+<td style="text-align:center;">
+Low
+</td>
+<td style="text-align:center;">
+Highest M2
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+C6
+</td>
+<td style="text-align:center;">
+TGF-β dominant
+</td>
+<td style="text-align:center;">
+High
+</td>
+<td style="text-align:center;">
+Balanced
+</td>
+<td style="text-align:center;">
+Moderate
+</td>
+<td style="text-align:center;">
+Moderate
+</td>
+<td style="text-align:center;">
+Highest TGF-β signature
+</td>
+</tr>
+</tbody>
+</table>
+<p><span class="citation">Thorsson et al. (<a href="#ref-Thorsson2018">2018</a>)</span> performed a multi-omic analysis of TCGA datasets that allowed them to define 6 subtypes that are valid across cancer types (see Tab. <a href="intro.html#tab:C6">1.1</a> ).</p>
+
+<p>Authors selected eight indicators to define these six phenotypes:</p>
+<ol style="list-style-type: decimal">
+<li>differences in macrophage or lymphocyte signatures</li>
+<li>Th1:Th2 cell ratio</li>
+<li>extent of intratumoral heterogeneity</li>
+<li>aneuploidy</li>
+<li>extent of neoantigen load</li>
+<li>overall cell proliferation</li>
+<li>expression of immunomodulatory genes</li>
+<li>prognosis</li>
+</ol>
+<p>These indicators were selected among many other indicators though machine learning (elastic net regression) for the best predictive power of survival.</p>
+<p>All the data and computed parameters can be accessed at <a href="https://isb-cgc.shinyapps.io/shiny-iatlas/">CRI iAtlas Portal</a>. Among the six phenotypes C3 (Inflammatory) has the best associated prognosis while C1 (wound healing) and C2 (IFN-<span class="math inline">\(\gamma\)</span> dominant), much less favourable outcome. This again illustrates the ambivalent nature of the immune system as the best and the worst prognosis are associated with immunologically active tumors. C4 (lymphocyte depleted) and C6 (TGF-<span class="math inline">\(\beta\)</span> dominant) subtypes had the worst prognosis. The content of immune cells was determined using different tools and data types (expression, DNA methylation, images etc.) We can learn a lot from the study, however, it seems difficult to integrate the methods to an ordinary practice because different data levels are necessary for the same samples to compute all the indicators.</p>
+</div>
+<div id="a-pan-cancer-landscape-of-immune-cancer-interactions-in-solid-tumors" class="section level4">
+<h4><span class="header-section-number">1.3.2.4</span> A pan-cancer landscape of immune-cancer interactions in solid tumors</h4>
+<p>A different classification was proposed by <span class="citation">Tamborero et al. (<a href="#ref-Tamborero2018">2018</a>)</span>, also using TCGA data. They distinguished 17 immune infiltration patters based on the immune cell proportions and 6 different clusters based on cytotoxicity measure across all cancer types (named immune-phenotypes) that were finally summarized in three groups: cytotxic immune infiltrate, infiltrate with more immune-suppressive component and poor immune infiltrate. According to the analysis, one of the most important factors is cytotoxicity. Tumors with high cytotoxicity were characterized by low clonal heterogeneity, with gene alterations regulating epigenetic, antigen presentation and cell-cell communication. The medium-level cytotoxic tumors had activated invasion and remodelling of adjacent tissue, probably favourable to immune-suppressive cells. The low cytotoxicity subgroup of tumors had altered pathways: cell-cycle, hedgehog, <span class="math inline">\(\beta\)</span>- catenin and TGF-<span class="math inline">\(\beta\)</span> pathways. This result roughly overlaps with the one of <span class="citation">Thorsson et al. (<a href="#ref-Thorsson2018">2018</a>)</span>. The survival analysis based on the 6 immune-pehnotypes revealed that for most cancer types, high cytotoxic tumors are associated with better survival. To evaluate tumor environment cells authors used gene set variation analysis <span class="citation">(<span class="citeproc-not-found" data-reference-id="Hanzelmann2018"><strong>???</strong></span>)</span> with a set of pre-defined cell-type markers. Another important conclusion of <span class="citation">Tamborero et al. (<a href="#ref-Tamborero2018">2018</a>)</span> is that tissue of origin is not the only important factor shaping cell-type patterns in tumors. However, the least infiltrated tumors were lung, uterine and bladder cancers, while the most infiltrated were pancreatic, kidney, skin cancers and glioblastoma. They also analysed cancer cell pathways after computational purification of tumor samples (subtraction of the immune signal) in order to better understand cancer signalling.</p>
+<p>A different approach, is to characterize tumors based on signaling pathways organized in functional modules.</p>
+</div>
 <div id="immune-maps" class="section level4">
-<h4><span class="header-section-number">1.3.1.3</span> Immune maps</h4>
-<p>Another way to summarize tumor phenotype can be though use of molecular maps. <a href="https://acsn.curie.fr/">Atlas of Cancer Signaling Network (ACSN)</a> <span class="citation">(<span class="citeproc-not-found" data-reference-id="Kuperstein2013"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Kuperstein2015"><strong>???</strong></span>)</span> is primarily a pathway database that contains a collection of interconnected cancer-related signalling network maps. An additional feature is ACSN web-based goole-maps like visualisation of the database. User data can be projected on the molecular map (for example gene/protein expression from user data can be paired with entities on the map ). Currently it contains <a href="https://navicell.curie.fr/">11 maps</a> covering signalling processes involved in apoptosis, cell cycle, DNA repair, EMT, cell motility, Ewing sarcoma, Dendritic cells, Macrophage cells, Natural killer cells, CAF and integrated innate immunity map. Through projection of the data on the innate immunity map, one can see if the patient or a sample is characterised by pro- or anti-tumor activated pathways due to the organisation of the map layout. Also, different CAF subtypes were characterised with the CAF specific map in <span class="citation">(<span class="citeproc-not-found" data-reference-id="Costa2018"><strong>???</strong></span>)</span>. Kondratova and colleagues (including myself) used innate immune map to characterize NK and Macrophages subtypes and in another publication <span class="citation">(<span class="citeproc-not-found" data-reference-id="Kondratova2018"><strong>???</strong></span>)</span> different patient profiles using scRNAseq data of Metastatic melanoma.</p>
+<h4><span class="header-section-number">1.3.2.5</span> Immune maps</h4>
+<p>Another way to summarize tumor phenotype can be though use of molecular maps. <a href="https://acsn.curie.fr/">Atlas of Cancer Signaling Network (ACSN)</a> <span class="citation">(Kuperstein et al. <a href="#ref-Kuperstein2013">2013</a>; Kuperstein et al. <a href="#ref-Kuperstein2015">2015</a>)</span> is primarily a pathway database that contains a collection of interconnected cancer-related signalling network maps. An additional feature is ACSN web-based goole-maps like visualisation of the database. User data can be projected on the molecular map (for example gene/protein expression from user data can be paired with entities on the map ). Currently it contains <a href="https://navicell.curie.fr/">11 maps</a> covering signalling processes involved in apoptosis, cell cycle, DNA repair, EMT, cell motility, Ewing sarcoma. Additional maps are to be promptly integrated into ACSN, are available on <a href="https://navicell.curie.fr/pages/maps.html">Navicell website</a>: Dendritic cells, Macrophage cells, Natural killer cells, CAF and integrated innate immunity map. Through projection of the data on the innate immunity map, one can see if the patient or a sample is characterised by pro- or anti-tumor activated pathways due to the organisation of the map layout. Also, different CAF subtypes were characterised with the CAF specific map in <span class="citation">(Costa et al. <a href="#ref-Costa2018">2018</a>)</span>. Kondratova and colleagues (including myself) used innate immune map to characterize NK and Macrophages subtypes and in another publication <span class="citation">(# <span class="citeproc-not-found" data-reference-id="JMBKondratova2018"><strong>???</strong></span>)</span> different patient profiles using scRNAseq data of Metastatic melanoma.</p>
 </div>
 <div id="summary-1" class="section level4">
-<h4><span class="header-section-number">1.3.1.4</span> Summary</h4>
+<h4><span class="header-section-number">1.3.2.6</span> Summary</h4>
 <p>Despite those facts, the gene expression based classifications are not yet used in clinics. The measured multi-panel mRNA expression, that can be included into category of In Vitro Diagnostic Multivariate Index Assay (IVDMIA) <span class="citation">(Győrffy et al. <a href="#ref-Gyorffy2015">2015</a>; Ross et al. <a href="#ref-Ross2008">2008</a>)</span>, may be a future of TME-based cancer classification, diagnosis and treatment recommendation <span class="citation">(Gnjatic et al. <a href="#ref-Gnjatic2017">2017</a>)</span>. For this best tools need to be used to properly evaluate the state of TME and tumor-stroma-immune cells communication.</p>
 </div>
 </div>
 <div id="immune-signatures" class="section level3">
-<h3><span class="header-section-number">1.3.2</span> Immune signatures - biological perspective</h3>
+<h3><span class="header-section-number">1.3.3</span> Immune signatures - biological perspective</h3>
+<p>A gene signature is</p>
+<blockquote>
+<p><em>a single or combined group of genes in with a uniquely characteristic pattern of gene expression that occurs as a result of an altered or unaltered biological process or pathogenic medical condition</em> <span class="citation">(Itadani, Mizuarai, and Kotani <a href="#ref-Itadani2008">2008</a>; Liu et al. <a href="#ref-Liu2008">2008</a>)</span>.</p>
+</blockquote>
+<p>A term <em>metagene</em> is also used to describe an aggregated pattern of gene expression. The aggregation can correspond to simple mean of samples or can be obtained though matrix factorisation or source separation techniques, clustering.</p>
+<p>They can be classified based on their form:</p>
 <ul>
-<li>definition of signature: marker genes, list of genes, weighted list, metagenes</li>
-<li>the general immune signature of signature of immune infiltration and stroma vs immune signature of a specific cell type of functional subpopulation</li>
-<li>purpose of signatures</li>
-<li>availability of immune signatures</li>
-<li>the problem of not consistency of immune signatures</li>
-<li>origin of signatures</li>
+<li>gene list</li>
+<li>weighted gene list</li>
+<li>gene networks</li>
 </ul>
+<p>Gene lists are simple enumeration of transcripts names or gene identifiers. Application of gene list is often limited to gene enrichment analysis tools or gene selection from the data. An alternative is a weighted gene list or ranked gene list, where genes are ranked according to their importance. Often the ranks is obtained though comparison between two conditions or test/control. They can be also based on absolute gene expression values<span class="citation">(Lyons et al. <a href="#ref-Lyons2017">2017</a>)</span>. One possible problem with this weighted gene list can be platform dependence. Gene networks are less popular signature type where not only gene id are important but also they way ho they interact with each other. Network signatures can make signatures more robust as a lack of a single gene in studied dataset should not the global conclusion <span class="citation">(Sonachalam et al. <a href="#ref-Sonachalam2012">2012</a>)</span>.</p>
+<p>There exist a big choice of databases storing collections of signatures. They contain gene expression and other genomic data such as genotype, DNA methylation, and protein expression data attributed to some condition of reference. A big collection of immune signatures are regrouped by <a href="https://www.immgen.org/">Immunological Genome Project (IGP, ImmGen)</a> <span class="citation">(Heng et al. <a href="#ref-Heng2008">2008</a>)</span>. Gene expression of protein coding genes measure in mice immune cells, ex vivo, in different conditions (drug treatment, perturbations) were regrouped in this ressource. A different ressource <a href="https://sysimm.ifrec.osaka-u.ac.jp/immuno-navigator/">Immuno-navigator</a> <span class="citation">(Vandenbon et al. <a href="#ref-Vandenbon2016">2016</a>)</span> that stores information about human and murine immune genes and co-expression networks. <a href="http://software.broadinstitute.org/gsea/msigdb/collections.jsp">ImmuneSigDB</a> is a collection of gene-sets that describe immunity and inflammation in transcriptomic data <span class="citation">(Godec et al. <a href="#ref-Godec2016">2016</a>)</span> and a part of popular MSigDB ressource used commonly for gene set enrichment analysis (GSEA) <span class="citation">(Subramanian et al. <a href="#ref-Subramanian2005">2005</a>)</span>.</p>
+<p>They can also be classified based on their use:</p>
+<ul>
+<li>prognostic signatures</li>
+<li>predictive signatures</li>
+<li>diagnostic signature</li>
+<li>specific signature</li>
+</ul>
+<p>The <em>prognostic</em> signatures can distinguish between patients with a good or from patients with bad prognosis when deciding to assign a patient to a therapy.</p>
+<p>The <em>predictive</em> signatures are able to predict treatment benefit between experimental and/or nontraditional treatment groups vs. control, i.e. in clinical trials <span class="citation">(Michiels, Ternès, and Rotolo <a href="#ref-Michiels2016">2016</a>)</span>.</p>
+<p>The <em>diagnostic</em> signature, also called <em>biomarkers</em> can be used for detection of a disease in a patient, like for example in blood tests.</p>
+<p>The <em>specific</em> signatures should describe with robustness and reproducibility the same group of cells, or patients, or condition among different studies.</p>
+<p>Examples of predictive and prognostic gene signatures, used in clinical practice are Oncotype DX, EndoPredict, PAM50, and Breast Cancer Index for breast cancer <span class="citation">(Harris et al. <a href="#ref-Harris2016">2016</a>)</span>.</p>
+<p>Studies discussed in this Chapter showed plausible importance of immune-related signals in cancer therapy. However, there is no no immune-related gene signatures used in clinical practice currently. This can be because of the lack of consistency of genes, both within the same tumor type and among different tumors that can be found in the signatures <span class="citation">(Chifman et al. <a href="#ref-Chifman2016">2016</a>)</span>. Difference in gene expression of different cell populations were found even intra- and interlabs. This difference can be due to confounding factors like stress or to contamination <span class="citation">(Heng et al. <a href="#ref-Heng2008">2008</a>)</span>.</p>
+<p>In many studies <em>specifc</em> signatures of cell types are used. They seem to be good in discriminating between broad lineages of cell type, such as lymphoid and myeloid. Although thier capacity to describe cell states and cell subtypes is more discutable <span class="citation">(Chifman et al. <a href="#ref-Chifman2016">2016</a>)</span>. Another matter is that cell type signatures are often obtained in model organisms or extracted from different tissue (i.e. blood-derived signatures vs cancer-derived signatures).</p>
 <blockquote>
 <p><em>the gene expression profiles of tumour-associated immune cells differ considerably from those of blood derived immune cells</em> <span class="citation">(Schelker et al. <a href="#ref-Schelker2017">2017</a>)</span></p>
 </blockquote>
-<p>Immune signatures will be also discussed as a part of deconvolution pipeline in the <a href="methods.html#methods">Chapter 2</a> under the section about <em>basis matrix</em>.</p>
-<p>———</p>
-<p>Gene expression signatures</p>
-<p>Lack of immune-specific signatures. Gene expression signatures are used as tools to predict which patients will benefit from certain treatments and to guide decision-making in the clinic.46</p>
-<p>Gene expression signatures are considered “prognostic” when they can differentiate between patients with a good or bad prognosis in the context of traditional therapy or no treatment at all.47 Gene signatures are considered “predictive” when they are able to predict treatment benefit between experimental and/or nontraditional treatment groups vs. control, typically in the setting of a randomized controlled clinical trial.47 In breast cancer, the predictive and prognostic assays Oncotype DX, EndoPredict, PAM50, and Breast Cancer Index are now recommended as adjuncts for clinical decision-making for patients with specific subtypes of breast cancer.46 These signatures, however, are not specifically immune-related and share little overlap in their selected genes.47, 48 Because tumor cells and infiltrating immune cells both have prognostic value, evaluating tumors and the surrounding stroma with use of the methods described above, in order to generate immune-related signatures, can provide prognostic and perhaps predictive information associated with patient outcome. Although there are no immune-related gene signatures used in clinical practice currently, several studies have shown the validity and reproducibility of using immune-related signatures to predict outcome and response to therapy in patient cancer samples.</p>
-<p>Solution: in silico, pan-cancer studies. One reason immune-related gene signatures have not been widely used in clinical settings is the lack of consistency of genes, both within the same tumor type and among different tumors.49 Efforts to address this problem are under way, with the development of conserved immune gene signatures representing multiple tumor types.49 Another problem with immune-related gene signatures is the difficulty in decipher- ing whether the genes represent specific immune cell popula- tions, antigen-presenting machinery, cytokines, or other immune- related molecules. In silico studies have validated pan-cancer immune-related gene signatures that represent many immune cell types with known prognostic significance including T cells, B cells, NK cells, macrophages, as well as various cytokine populations.49, 50 Immune-related gene signatures have proven to be prognostic of clinical outcome across multiple cancer types and are associated with response to immune therapy in specific cancers.49, 50 Recent findings on immune-related gene signatures have shown that gene signatures are able to distinguish between broad lineages of cell type, such as lymphoid and myeloid but are less adept at distinguishing between more differentiated cells such as CD8+ and CD4+ T cells.49</p>
-<p>Ranked gene lists</p>
-<p>Oversimplification of interpretation. Currently, given the multi-</p>
-<p>tude of methods with which to analyze genomic data, the</p>
-<p>problem no longer lies in obtaining gene expression profiles but</p>
-<p>rather in interpreting the data. Analysis of gene expression data</p>
-<p>typically involves a comparison of two groups and the creation of</p>
-<p>a ranked gene list based on expression. One method of</p>
-<p>interpretation involves looking at each end of the ranked list to</p>
-<p>7, 51</p>
-<p>Quantity of data. The NCBI Gene Expression Omnibus database contains more than 30,000 series and 1 million samples of array- based expression data, many of which involve the immune system.52 Because of the large amount of expression data relating to the immune system and the inability to compare information between the various datasets, the Immunological Genome Project (IGP) was created to provide a comprehensive compendium of the expression of protein-coding genes for all immune cell popula- tions in the mouse immune system.53 This project was developed to provide information on primary immune cells isolated ex vivo from the mouse immune system and then integrate that information into networks, while taking into account variation via genetic polymorphisms, knock-out of genes, knockdown via RNA interference, and drug treatment.53 Researchers can use these data to determine gene expression profiles that serve as biomarkers for predicting response to treatment and for measur- ing residual disease after immune therapy.</p>
-<p>Solution 1: added-value/specialty databases. Primary databases contain gene expression and other genomic data such as genotype, DNA methylation, and protein expression data. These</p>
-<p>evaluate genes showing the largest difference in expression. Problems with this method include small relevant biological differences between genes leading to no statistical significance, a long list of genes that are statistically significant but lack biologic relevance, missed effects on pathways by analyzing single genes, and variation in gene lists for the same biologic system based on two different groups’ data.51 This again underscores the challenge faced when trying to create a clinically useful immune-related gene signature from a high-throughput panel of genes.</p>
-<p><span class="citation">(<span class="citeproc-not-found" data-reference-id="Lyons2017"><strong>???</strong></span>)</span></p>
-<p>——-</p>
+<p>With emergence of single-cell signatures, there are new horizons of gene signatures to be discovered. Especially signatures of rare cell types in solid tissues. Yet, it is up to researches to cross validate single cell signatures with different types of data as scRNA-seq is not free of platform and post-processing bias.</p>
+<p>Immune signatures will be also discussed as a part of deconvolution pipeline in the <a href="methods.html#methods">Chapter 2</a> under the section about <em>basis matrix</em> in mathematical terms.</p>
 </div>
 <div id="cancer_Therapies" class="section level3">
-<h3><span class="header-section-number">1.3.3</span> Cancer therapies</h3>
+<h3><span class="header-section-number">1.3.4</span> Cancer therapies</h3>
 <p>Cancer is a complex disease. Up to date, no uniform and fully effective treatment was proposed and usually different strategies are tested to kill tumor cells. <strong>Surgery</strong> is one of the oldest methods. The cancer is removed from the patient body. There are different ways, more or less invasive, that it can be performed. it is usually applied for solid tumor contained in a small area. <strong>Radiation Therapy</strong> uses high doses of radiation to eliminate tumor cells and shrink tumor mass. It can be applied externally or internally. <strong>Chemotherapy</strong> uses a drug (or a combination of drugs) that kill cancer cells, usually altering cell proliferation and growth. The drawback of radiotherapy and chemotherapy are strong side effects. <strong>Hormone therapy </strong> modulate hormone levels in the body in order to inhibit tumor growth in breast and prostate cancers. In leukemia and lymphoma, can be applied <strong>stem cell transplants</strong> that restore blood-forming stem cells destroyed by the very high doses of chemotherapy or radiation therapy that are used to treat certain cancers.</p>
 <p>Alternatively, <strong>targeted therapies</strong> represent more focused strategy that aims to be more effective and cause less side effects than systematic therapies. Two main types of targeted therapies are small-molecule drugs and monoclonal antibodies. Targeted therapies usually aim to stimulate/inhibit a selected molecular function. A special types of targeted therapies are <strong>Immunotherapies</strong>. Through adtivation/inhibition of immune regulatory pathways, it stimulates immune system to destroy malignant cells. A continuation of targeted therapies is <strong>precision medecine approach</strong>. It is based on genetic information to specify patient’s profile and find adapted treatment. A number of innovative treatments targeting a specific change in tumor ecosystem are being tested presently in precision medicine clinical trials <span class="citation">(Institute <a href="#ref-NCI2018">2017</a>)</span>.</p>
 </div>
 <div id="recent-progress-in-immuno-therapies" class="section level3">
-<h3><span class="header-section-number">1.3.4</span> Recent progress in immuno-therapies</h3>
+<h3><span class="header-section-number">1.3.5</span> Recent progress in immuno-therapies</h3>
 <p>The immunotherapies, in contrast with other types of cancers therapies discussed in <a href="intro.html#cancer_Therapies">the previous chapter</a>, aim to trigger or restart the immune system to defend the organism and attack the malignant cells. All this, however without provoking persisting inflammation state <span class="citation">(Predina et al. <a href="#ref-Predina2013">2013</a>)</span></p>
-<p>The idea of stimulating immune system to fight malignant cell was not born recently. Since a long time a possibility of development of an anti-cancer vaccine has been investigated. Unfortunately, this idea faced two important limitations 1) lack of knowledge of antigens that should be used in vaccine to successfully stimulate cytotoxic T cells 2) the ability of cancer to block the immune response also called <em>immunostat</em>. Despite those impediments works on anti-tumor vaccines do not cease <span class="citation">(Palucka and Banchereau <a href="#ref-Palucka2013">2013</a>)</span>. A very recent promising an in-situ ani-tumor vaccine was proposed by Sagiv-Barfi et al. <span class="citation">(<span class="citeproc-not-found" data-reference-id="Sagiv-Barfi2018"><strong>???</strong></span>)</span>. The therapy tested in mice, would be based on local injections of the combination of “unmethylated CG-enriched oligodeoxynucleotide (Cp-G) - a Toll-like receptor 9 (TLR9) ligand and anti-OX40 antibody. Low doses of CpG injected into a tumor induce the expression of OX40 on CD4+ T cells in the microenvironment in mouse or human tumors. An agonistic anti-OX40 antibody can then trigger a T cell immune response, which is specific to the antigens of the injected tumor”. Sagiv-Barfi et al. claim this therapy could be applied to all tumor types, as long as they are leucocyte-infiltrated. As a local therapy, in situ vaccination should have less side-effects than systematic administration. It is now undergoing clinical trials to test its efficiency in human patients.</p>
+<p>The idea of stimulating immune system to fight malignant cell was not born recently. Since a long time a possibility of development of an anti-cancer vaccine has been investigated. Unfortunately, this idea faced two important limitations 1) lack of knowledge of antigens that should be used in vaccine to successfully stimulate cytotoxic T cells 2) the ability of cancer to block the immune response also called <em>immunostat</em>. Despite those impediments works on anti-tumor vaccines do not cease <span class="citation">(Palucka and Banchereau <a href="#ref-Palucka2013">2013</a>)</span>. A very recent promising an in-situ ani-tumor vaccine was proposed by Sagiv-Barfi et al. <span class="citation">(Sagiv-Barfi et al. <a href="#ref-Sagiv-Barfi2018">2018</a>)</span>. The therapy tested in mice, would be based on local injections of the combination of “unmethylated CG-enriched oligodeoxynucleotide (Cp-G) - a Toll-like receptor 9 (TLR9) ligand and anti-OX40 antibody. Low doses of CpG injected into a tumor induce the expression of OX40 on CD4+ T cells in the microenvironment in mouse or human tumors. An agonistic anti-OX40 antibody can then trigger a T cell immune response, which is specific to the antigens of the injected tumor”. Sagiv-Barfi et al. claim this therapy could be applied to all tumor types, as long as they are leucocyte-infiltrated. As a local therapy, in situ vaccination should have less side-effects than systematic administration. It is now undergoing clinical trials to test its efficiency in human patients.</p>
 <p>Another idea involving using immune system as a weapon to fight cancer, would be the use of genetically modified patient’s T-cells, carrying <em>CARs</em> (chimeric antigen receptors) <span class="citation">(Jackson, Rafiq, and Brentjens <a href="#ref-Jackson2016">2016</a>)</span>. After a long period of small unsuccessful trials, recently in 2017, two CAR T-cell therapies were accepted, one to “treat adults with certain type of large B-cell lymphoma” <span class="citation">(Health and Services <a href="#ref-FDACARTadult">2017</a><a href="#ref-FDACARTadult">b</a>)</span>, other to treat “children with acute lymphoblastic leukemia (ALL)” <span class="citation">(Health and Services <a href="#ref-FDACARTALL">2017</a><a href="#ref-FDACARTALL">a</a>)</span> , which are, at the same time, the first two gene therapies accepted by FDA.</p>
 <p>However, the two most promising immuno-related strategies with proven clinical efficiency are based on blocking so called immune check point inhibitors: cytotoxic T-lymphocyte protein 4 (CTLA4) and programmed cell death protein 1 (PD-1). The anti-CLTA4 antibodies blocks repressive action of CLTA4 on T-cells and they become therefore activated. It was shown efficient in melanoma patients and accepted by FDA in 2015 as adjuvant therapy for stage III metastatic melanoma patients <span class="citation">(Health and Services <a href="#ref-FDACTLA4">2015</a>)</span>. PD-1 is a cell surface receptor of T cells, that binds to PD-L1/PD-L2. After binding, an immunosuppressive pathway is activated and T cells activity is dampened. An action of an anti-PD-L1 antibody is to prevent this immune exhaustion <span class="citation">(Chen and Mellman <a href="#ref-Chen2017">2017</a>)</span>. A stepping stone for anti-PD-L1 therapies was approval of Tecentriq (atezolizumab) for Bladder cancer <span class="citation">(Health and Services <a href="#ref-FDAPDL1Bladder">2016</a><a href="#ref-FDAPDL1Bladder">a</a>)</span> and anit-PD1 Keytruda (pembrolizumab) initially accepted for NSCLC and further extended to head and neck cancer, Hodgkin’s lymphoma, gastric cancer and microsatellite instability-high cancer <span class="citation">(Health and Services <a href="#ref-FDAPDL1NSCLC">2016</a><a href="#ref-FDAPDL1NSCLC">b</a>)</span>. Since other anti-PD-L1 or anti-PD1 antibodies were accepted or entered advanced stages of clinical trials <span class="citation">(Wolchok <a href="#ref-Wolchok2015">2015</a>)</span>. A short history of immunotherapy FDA-accepted treatments can be found in Fig. <a href="intro.html#fig:timeline-immunotherapies">1.7</a></p>
 <div class="figure" style="text-align: center"><span id="fig:timeline-immunotherapies"></span>
@@ -538,196 +740,24 @@ Figure 1.7: <strong>This timeline describes short history of FDA approval of che
 </div>
 <div id="biological-dimension-of-the-thesis" class="section level2">
 <h2><span class="header-section-number">1.4</span> Biological dimension of the thesis</h2>
-<p>Explaining the biological dimension of the project</p>
-<ul>
-<li>help to better understand tumor immunophenotypes (cell types present and their biology, interactions)</li>
-<li>propose predictive biomarkers - precision medecine</li>
-<li>better explore available data</li>
-<li>integrate the data (transcriptome &amp; methylome, validate transcriptome with FACS etc.)</li>
-</ul>
-<!-- You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+<p>In this thesis I aim to bring new insights into composition and function of TME. It is clear that complex information is necessary to understand the role of different immune cells in cancer and not only presence but also function are to be deciphered from available data. Therefore, this project, on its biological side, has two main aims:</p>
+<ol style="list-style-type: decimal">
+<li>fundamental research: understand presence of different cell type, their interactions and functions in TME of different cancers types and how other factors as stress, cell cycle etc. shape them. Thanks to data-driven and discovery nature of the project, I will also hope to understand how signature of cell type evolves in different conditions shaped by other cells and factors.</li>
+<li>translational research: how immune landscape and its state can help to predict patient survival and better tailor recommendation for therapy. The analysis could also bring to the light possible biomarkers or drug targets for immune therapies.</li>
+</ol>
+<p>The project aims to explore publicly available data, challenge inter-lab and inter-platform biases. It will use mainly transcriptomic data (because of accessible volume) and cross-validate with other data types: scRNA-seq, FACSs, IHC when possible.</p>
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
-
-
-```r
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
-
-<div class="figure" style="text-align: center">
-<img src="UCzPhDThesis_files/figure-html/nice-fig-1.png" alt="Here is a nice figure!" width="80%" />
-<p class="caption">(\#fig:nice-fig)Here is a nice figure!</p>
-</div>
-
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
-
-
-```r
-knitr::kable(
- head(iris, 20), caption = 'Here is a nice table!',
- booktabs = TRUE
-)
-```
-
-<table>
-<caption>(\#tab:nice-tab)Here is a nice table!</caption>
- <thead>
-  <tr>
-   <th style="text-align:right;"> Sepal.Length </th>
-   <th style="text-align:right;"> Sepal.Width </th>
-   <th style="text-align:right;"> Petal.Length </th>
-   <th style="text-align:right;"> Petal.Width </th>
-   <th style="text-align:left;"> Species </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> 5.1 </td>
-   <td style="text-align:right;"> 3.5 </td>
-   <td style="text-align:right;"> 1.4 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 4.9 </td>
-   <td style="text-align:right;"> 3.0 </td>
-   <td style="text-align:right;"> 1.4 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 4.7 </td>
-   <td style="text-align:right;"> 3.2 </td>
-   <td style="text-align:right;"> 1.3 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 4.6 </td>
-   <td style="text-align:right;"> 3.1 </td>
-   <td style="text-align:right;"> 1.5 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.0 </td>
-   <td style="text-align:right;"> 3.6 </td>
-   <td style="text-align:right;"> 1.4 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.4 </td>
-   <td style="text-align:right;"> 3.9 </td>
-   <td style="text-align:right;"> 1.7 </td>
-   <td style="text-align:right;"> 0.4 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 4.6 </td>
-   <td style="text-align:right;"> 3.4 </td>
-   <td style="text-align:right;"> 1.4 </td>
-   <td style="text-align:right;"> 0.3 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.0 </td>
-   <td style="text-align:right;"> 3.4 </td>
-   <td style="text-align:right;"> 1.5 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 4.4 </td>
-   <td style="text-align:right;"> 2.9 </td>
-   <td style="text-align:right;"> 1.4 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 4.9 </td>
-   <td style="text-align:right;"> 3.1 </td>
-   <td style="text-align:right;"> 1.5 </td>
-   <td style="text-align:right;"> 0.1 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.4 </td>
-   <td style="text-align:right;"> 3.7 </td>
-   <td style="text-align:right;"> 1.5 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 4.8 </td>
-   <td style="text-align:right;"> 3.4 </td>
-   <td style="text-align:right;"> 1.6 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 4.8 </td>
-   <td style="text-align:right;"> 3.0 </td>
-   <td style="text-align:right;"> 1.4 </td>
-   <td style="text-align:right;"> 0.1 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 4.3 </td>
-   <td style="text-align:right;"> 3.0 </td>
-   <td style="text-align:right;"> 1.1 </td>
-   <td style="text-align:right;"> 0.1 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.8 </td>
-   <td style="text-align:right;"> 4.0 </td>
-   <td style="text-align:right;"> 1.2 </td>
-   <td style="text-align:right;"> 0.2 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.7 </td>
-   <td style="text-align:right;"> 4.4 </td>
-   <td style="text-align:right;"> 1.5 </td>
-   <td style="text-align:right;"> 0.4 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.4 </td>
-   <td style="text-align:right;"> 3.9 </td>
-   <td style="text-align:right;"> 1.3 </td>
-   <td style="text-align:right;"> 0.4 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.1 </td>
-   <td style="text-align:right;"> 3.5 </td>
-   <td style="text-align:right;"> 1.4 </td>
-   <td style="text-align:right;"> 0.3 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.7 </td>
-   <td style="text-align:right;"> 3.8 </td>
-   <td style="text-align:right;"> 1.7 </td>
-   <td style="text-align:right;"> 0.3 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 5.1 </td>
-   <td style="text-align:right;"> 3.8 </td>
-   <td style="text-align:right;"> 1.5 </td>
-   <td style="text-align:right;"> 0.3 </td>
-   <td style="text-align:left;"> setosa </td>
-  </tr>
-</tbody>
-</table>
-
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
- -->
-
+<!-- ```{r setup, include=FALSE} -->
+<!--  is_pdf_output = function() { -->
+<!--   knitr::opts_knit$get("rmarkdown.pandoc.to") =="latex" -->
+<!--  } -->
+<!-- ``` -->
+<!-- ```{r setup2, include=FALSE} -->
+<!--  is_html_output = function() { -->
+<!--   knitr::opts_knit$get("rmarkdown.pandoc.to") =="html4" -->
+<!--  } -->
+<!-- size.fig = "100%" -->
+<!-- ``` -->
 </div>
 </div>
 <h3>References</h3>
@@ -740,6 +770,36 @@ You can write citations, too. For example, we are using the **bookdown** package
 </div>
 <div id="ref-NPR2010">
 <p>NPR. 2010b. “Science Diction: The Origin of the Word ’Cancer’ : NPR.” <a href="https://www.npr.org/templates/story/story.php?storyId=130754101" class="uri">https://www.npr.org/templates/story/story.php?storyId=130754101</a>.</p>
+</div>
+<div id="ref-VirchowRudolf1847">
+<p>Virchow Rudolf. 1847. “Archiv für pathologische Anatomie und Physiologie und für klinische Medizin.” Berlin ; New York: Springer. <a href="file://catalog.hathitrust.org/Record/000493993 http://hdl.handle.net/2027/njp.32101076036878 (Bd.64 (1875)) http://hdl.handle.net/2027/uc1.31175008645106 (v.170 {\&amp;}index v.161-170) http://hdl.handle.net/2027/hvd.32044093331494 (Bd.111 (1888)) http://hdl.han" class="uri">file://catalog.hathitrust.org/Record/000493993 http://hdl.handle.net/2027/njp.32101076036878 (Bd.64 (1875)) http://hdl.handle.net/2027/uc1.31175008645106 (v.170 {\&amp;}index v.161-170) http://hdl.handle.net/2027/hvd.32044093331494 (Bd.111 (1888)) http://hdl.han</a>.</p>
+</div>
+<div id="ref-Paget1889">
+<p>Paget, Stephen. 1889. “THE DISTRIBUTION OF SECONDARY GROWTHS IN CANCER OF THE BREAST.” <em>The Lancet</em> 133 (3421). Elsevier: 571–73. doi:<a href="https://doi.org/10.1016/S0140-6736(00)49915-0">10.1016/S0140-6736(00)49915-0</a>.</p>
+</div>
+<div id="ref-Ehrlich1909">
+<p>Ehrlich, P. 1909. “Über den jetzigen Stand der Chemotherapie.” <em>Berichte Der Deutschen Chemischen Gesellschaft</em> 42 (1). Wiley-Blackwell: 17–47. doi:<a href="https://doi.org/10.1002/cber.19090420105">10.1002/cber.19090420105</a>.</p>
+</div>
+<div id="ref-Greenblatt1968">
+<p>Greenblatt, M, and P Shubi. 1968. “Tumor angiogenesis: transfilter diffusion studies in the hamster by the transparent chamber technique.” <em>Journal of the National Cancer Institute</em> 41 (1): 111–24. <a href="http://www.ncbi.nlm.nih.gov/pubmed/5662020" class="uri">http://www.ncbi.nlm.nih.gov/pubmed/5662020</a>.</p>
+</div>
+<div id="ref-Folkman1971">
+<p>Folkman, J, E Merler, C Abernathy, and G Williams. 1971. “Isolation of a tumor factor responsible for angiogenesis.” <em>The Journal of Experimental Medicine</em> 133 (2). Rockefeller University Press: 275–88. doi:<a href="https://doi.org/10.1084/JEM.133.2.275">10.1084/JEM.133.2.275</a>.</p>
+</div>
+<div id="ref-Feinberg1983">
+<p>Feinberg, Andrew P., and Bert Vogelstein. 1983. “Hypomethylation distinguishes genes of some human cancers from their normal counterparts.” <em>Nature</em> 301 (5895). Nature Publishing Group: 89–92. doi:<a href="https://doi.org/10.1038/301089a0">10.1038/301089a0</a>.</p>
+</div>
+<div id="ref-Greger1989">
+<p>Greger, Valerie, Eberhard Passarge, Wolfgang H�pping, Elmar Messmer, and Bernhard Horsthemke. 1989. “Epigenetic changes may contribute to the formation and spontaneous regression of retinoblastoma.” <em>Human Genetics</em> 83 (2). Springer-Verlag: 155–58. doi:<a href="https://doi.org/10.1007/BF00286709">10.1007/BF00286709</a>.</p>
+</div>
+<div id="ref-VanPel1982">
+<p>Van Pel, A, and T Boon. 1982. “Protection against a nonimmunogenic mouse leukemia by an immunogenic variant obtained by mutagenesis.” <em>Proceedings of the National Academy of Sciences of the United States of America</em> 79 (15): 4718–22. <a href="http://www.ncbi.nlm.nih.gov/pubmed/6981814 http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC346748" class="uri">http://www.ncbi.nlm.nih.gov/pubmed/6981814 http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC346748</a>.</p>
+</div>
+<div id="ref-Leung1989">
+<p>Leung, D., G Cachianes, W. Kuang, D. Goeddel, and N Ferrara. 1989. “Vascular endothelial growth factor is a secreted angiogenic mitogen.” <em>Science</em> 246 (4935): 1306–9. doi:<a href="https://doi.org/10.1126/science.2479986">10.1126/science.2479986</a>.</p>
+</div>
+<div id="ref-Golub1999">
+<p>Golub, T R, D K Slonim, P Tamayo, C Huard, M Gaasenbeek, J P Mesirov, H Coller, et al. 1999. “Molecular classification of cancer: class discovery and class prediction by gene expression monitoring.” <em>Science (New York, N.Y.)</em> 286 (5439). American Association for the Advancement of Science: 531–7. doi:<a href="https://doi.org/10.1126/SCIENCE.286.5439.531">10.1126/SCIENCE.286.5439.531</a>.</p>
 </div>
 <div id="ref-Corlan2004">
 <p>Corlan, Alexandru Dan. 2004. “Medline Trend: Automated Yearly Statistics of Pubmed Results for Any Query.” <a href="http://dan.corlan.net/medline-trend.html" class="uri">http://dan.corlan.net/medline-trend.html</a>.</p>
@@ -777,8 +837,41 @@ You can write citations, too. For example, we are using the **bookdown** package
 <div id="ref-Stutman1974">
 <p>Stutman, O. 1974. “Tumor development after 3-methylcholanthrene in immunologically deficient athymic-nude mice.” <em>Science (New York, N.Y.)</em> 183 (4124): 534–6. <a href="http://www.ncbi.nlm.nih.gov/pubmed/4588620" class="uri">http://www.ncbi.nlm.nih.gov/pubmed/4588620</a>.</p>
 </div>
+<div id="ref-Rygaard1976">
+<p>Rygaard, Josrgen, and Carl O. Povlsen. 1976. “The Nude Mouse vs. The Hypothesis of Immunological Surveillance.” <em>Immunological Reviews</em> 28 (1). Wiley/Blackwell (10.1111): 43–61. doi:<a href="https://doi.org/10.1111/j.1600-065X.1976.tb00192.x">10.1111/j.1600-065X.1976.tb00192.x</a>.</p>
+</div>
 <div id="ref-Cavallo2011">
 <p>Cavallo, Federica, Carla De Giovanni, Patrizia Nanni, Guido Forni, and Pier-Luigi Lollini. 2011. “No Title” 60 (3). Springer-Verlag. doi:<a href="https://doi.org/10.1007/s00262-010-0968-0">10.1007/s00262-010-0968-0</a>.</p>
+</div>
+<div id="ref-Dunn2002">
+<p>Dunn, Gavin P., Allen T. Bruce, Hiroaki Ikeda, Lloyd J. Old, and Robert D. Schreiber. 2002. “Cancer immunoediting: from immunosurveillance to tumor escape.” <em>Nature Immunology</em> 3 (11). Nature Publishing Group: 991–98. doi:<a href="https://doi.org/10.1038/ni1102-991">10.1038/ni1102-991</a>.</p>
+</div>
+<div id="ref-Vesely2011">
+<p>Vesely, Matthew D., Michael H. Kershaw, Robert D. Schreiber, and Mark J. Smyth. 2011. “Natural Innate and Adaptive Immunity to Cancer.” <em>Annual Review of Immunology</em> 29 (1): 235–71. doi:<a href="https://doi.org/10.1146/annurev-immunol-031210-101324">10.1146/annurev-immunol-031210-101324</a>.</p>
+</div>
+<div id="ref-Marquez-Medina2012">
+<p>Marquez-Medina, Diego, Joel Salla-Fortuny, and Antonieta Salud-Salvia. 2012. “Role of gamma-delta T-cells in cancer. Another opening door to immunotherapy.” <em>Clinical and Translational Oncology</em> 14 (12): 891–95. doi:<a href="https://doi.org/10.1007/s12094-012-0935-7">10.1007/s12094-012-0935-7</a>.</p>
+</div>
+<div id="ref-Kornstein1983">
+<p>Kornstein, M J, J S Brooks, and D E Elder. 1983. “Immunoperoxidase localization of lymphocyte subsets in the host response to melanoma and nevi.” <em>Cancer Research</em> 43 (6): 2749–53. <a href="http://www.ncbi.nlm.nih.gov/pubmed/6342758" class="uri">http://www.ncbi.nlm.nih.gov/pubmed/6342758</a>.</p>
+</div>
+<div id="ref-Baxevanis1994">
+<p>Baxevanis, C N, G V Dedoussis, N G Papadopoulos, I Missitzis, G P Stathopoulos, and M Papamichail. 1994. “Tumor specific cytolysis by tumor infiltrating lymphocytes in breast cancer.” <em>Cancer</em> 74 (4): 1275–82. <a href="http://www.ncbi.nlm.nih.gov/pubmed/7914469" class="uri">http://www.ncbi.nlm.nih.gov/pubmed/7914469</a>.</p>
+</div>
+<div id="ref-Naito1998">
+<p>Naito, Y, K Saito, K Shiiba, A Ohuchi, K Saigenji, H Nagura, and H Ohtani. 1998. “CD8+ T cells infiltrated within cancer cell nests as a prognostic factor in human colorectal cancer.” <em>Cancer Research</em> 58 (16): 3491–4. <a href="http://www.ncbi.nlm.nih.gov/pubmed/9721846" class="uri">http://www.ncbi.nlm.nih.gov/pubmed/9721846</a>.</p>
+</div>
+<div id="ref-Pages2005">
+<p>Pagès, Franck, Anne Berger, Matthieu Camus, Fatima Sanchez-Cabo, Anne Costes, Robert Molidor, Bernhard Mlecnik, et al. 2005. “Effector Memory T Cells, Early Metastasis, and Survival in Colorectal Cancer.” <em>New England Journal of Medicine</em> 353 (25): 2654–66. doi:<a href="https://doi.org/10.1056/NEJMoa051424">10.1056/NEJMoa051424</a>.</p>
+</div>
+<div id="ref-Aris2012">
+<p>Aris, Mariana, María Marcela Barrio, and José Mordoh. 2012. “Lessons from Cancer Immunoediting in Cutaneous Melanoma.” <em>Clinical and Developmental Immunology</em> 2012: 1–14. doi:<a href="https://doi.org/10.1155/2012/192719">10.1155/2012/192719</a>.</p>
+</div>
+<div id="ref-Bhatia2011">
+<p>Bhatia, Alka, and Yashwant Kumar. 2011. “Cancer-immune equilibrium: questions unanswered.” <em>Cancer Microenvironment : Official Journal of the International Cancer Microenvironment Society</em> 4 (2). Springer: 209–17. doi:<a href="https://doi.org/10.1007/s12307-011-0065-8">10.1007/s12307-011-0065-8</a>.</p>
+</div>
+<div id="ref-Teng2008">
+<p>Teng, Michele W. L., Jeremy B. Swann, Catherine M. Koebel, Robert D. Schreiber, and Mark J. Smyth. 2008. “Immune-mediated dormancy: an equilibrium with cancer.” <em>Journal of Leukocyte Biology</em> 84 (4): 988–93. doi:<a href="https://doi.org/10.1189/jlb.1107774">10.1189/jlb.1107774</a>.</p>
 </div>
 <div id="ref-Frey2010">
 <p>Frey, Daniel M., Raoul A. Droeser, Carsten T. Viehl, Inti Zlobec, Alessandro Lugli, Urs Zingg, Daniel Oertli, Christoph Kettelhack, Luigi Terracciano, and Luigi Tornillo. 2010. “High frequency of tumor-infiltrating FOXP3+ regulatory T cells predicts improved survival in mismatch repair-proficient colorectal cancer patients.” <em>International Journal of Cancer</em> 126 (11): 2635–43. doi:<a href="https://doi.org/10.1002/ijc.24989">10.1002/ijc.24989</a>.</p>
@@ -789,11 +882,26 @@ You can write citations, too. For example, we are using the **bookdown** package
 <div id="ref-Stewart1995">
 <p>Stewart, T., S. CJ Tsai, H. Grayson, R. Henderson, and G. Opelz. 1995. “Incidence of de-novo breast cancer in women chronically immunosuppressed after organ transplantation.” <em>The Lancet</em> 346 (8978): 796–98. doi:<a href="https://doi.org/10.1016/S0140-6736(95)91618-0">10.1016/S0140-6736(95)91618-0</a>.</p>
 </div>
+<div id="ref-Boal2002">
+<p>Boal, David H. 2002. <em>Mechanics of the cell</em>. Cambridge University Press.</p>
+</div>
+<div id="ref-Slater2013">
+<p>Slater, Matthew H. 2013. “Cell Types as Natural Kinds.” <em>Biological Theory</em> 7 (2). Springer Netherlands: 170–79. doi:<a href="https://doi.org/10.1007/s13752-012-0084-9">10.1007/s13752-012-0084-9</a>.</p>
+</div>
+<div id="ref-Satija2014">
+<p>Satija, Rahul, and Alex K. Shalek. 2014. “Heterogeneity in immune responses: from populations to single cells.” <em>Trends in Immunology</em> 35 (5): 219–29. doi:<a href="https://doi.org/10.1016/j.it.2014.03.004">10.1016/j.it.2014.03.004</a>.</p>
+</div>
+<div id="ref-EdiorialCellSystems2017">
+<p>Ediorial Cell Systems. 2017. “What Is Your Conceptual Definition of ‘Cell Type’ in the Context of a Mature Organism?” <em>Cell Systems</em> 4 (3). Elsevier: 255–59. doi:<a href="https://doi.org/10.1016/j.cels.2017.03.006">10.1016/j.cels.2017.03.006</a>.</p>
+</div>
 <div id="ref-Ponting2017">
 <p>Ponting, Chris P. 2017. “Big knowledge from big data in functional genomics.” <em>Emerging Topics in Life Sciences</em> 1 (3). Portland Press Journals portal: 245–48. doi:<a href="https://doi.org/10.1042/ETLS20170129">10.1042/ETLS20170129</a>.</p>
 </div>
 <div id="ref-Papalexi2017">
 <p>Papalexi, Efthymia, and Rahul Satija. 2017. “Single-cell RNA sequencing to explore immune cell heterogeneity.” <em>Nature Reviews Immunology</em> 18 (1): 35–45. doi:<a href="https://doi.org/10.1038/nri.2017.76">10.1038/nri.2017.76</a>.</p>
+</div>
+<div id="ref-Lyons2017">
+<p>Lyons, Yasmin A, Sherry Y Wu, Willem W Overwijk, Keith A Baggerly, and Anil K Sood. 2017. “Immune cell profiling in cancer: molecular approaches to cell- specific identification.” <em>Npj Precision Oncology</em> 1. doi:<a href="https://doi.org/10.1038/s41698-017-0031-0">10.1038/s41698-017-0031-0</a>.</p>
 </div>
 <div id="ref-RamosVara2010">
 <p>NPR. 2010a. “Science Diction: The Origin of the Word ’Cancer’.” <a href="https://www.npr.org/templates/story/story.php?storyId=130754101" class="uri">https://www.npr.org/templates/story/story.php?storyId=130754101</a>.</p>
@@ -822,9 +930,6 @@ You can write citations, too. For example, we are using the **bookdown** package
 <div id="ref-Chen2016">
 <p>Chen, Pei Ling, Whijae Roh, Alexandre Reuben, Zachary A. Cooper, Christine N. Spencer, Peter A. Prieto, John P. Miller, et al. 2016. “Analysis of immune signatures in longitudinal tumor samples yields insight into biomarkers of response and mechanisms of resistance to immune checkpoint blockade.” <em>Cancer Discovery</em> 6 (8): 827–37. doi:<a href="https://doi.org/10.1158/2159-8290.CD-15-1545">10.1158/2159-8290.CD-15-1545</a>.</p>
 </div>
-<div id="ref-Bernstein2007">
-<p>Bernstein, Bradley E, Alexander Meissner, and Eric S Lander. 2007. “The mammalian epigenome.” <em>Cell</em> 128 (4). Elsevier: 669–81. doi:<a href="https://doi.org/10.1016/j.cell.2007.01.033">10.1016/j.cell.2007.01.033</a>.</p>
-</div>
 <div id="ref-Perkel2017">
 <p>Perkel, Jeffrey M. 2017. “Single-cell sequencing made simple.” <em>Nature</em> 547 (7661): 125–26. doi:<a href="https://doi.org/10.1038/547125a">10.1038/547125a</a>.</p>
 </div>
@@ -836,6 +941,18 @@ You can write citations, too. For example, we are using the **bookdown** package
 </div>
 <div id="ref-Tirosh2016">
 <p>Tirosh, Itay, Benjamin Izar, Sanjay M. Prakadan, Marc H. Wadsworth, Daniel Treacy, John J. Trombetta, Asaf Rotem, et al. 2016. “Dissecting the multicellular ecosystem of metastatic melanoma by single-cell RNA-seq.” <em>Science</em> 352 (6282): 189–96. doi:<a href="https://doi.org/10.1126/science.aad0501">10.1126/science.aad0501</a>.</p>
+</div>
+<div id="ref-Bernstein2007">
+<p>Bernstein, Bradley E, Alexander Meissner, and Eric S Lander. 2007. “The mammalian epigenome.” <em>Cell</em> 128 (4). Elsevier: 669–81. doi:<a href="https://doi.org/10.1016/j.cell.2007.01.033">10.1016/j.cell.2007.01.033</a>.</p>
+</div>
+<div id="ref-Jeschke2017">
+<p>Jeschke, Jana, Martin Bizet, Christine Desmedt, Emilie Calonne, Sarah Dedeurwaerder, Soizic Garaud, Alexander Koch, et al. 2017. “DNA methylation–based immune response signature improves patient diagnosis in multiple cancers.” <em>Journal of Clinical Investigation</em> 127 (8): 3090–3102. doi:<a href="https://doi.org/10.1172/JCI91095">10.1172/JCI91095</a>.</p>
+</div>
+<div id="ref-Galon2014">
+<p>Galon, Jérôme, Bernhard Mlecnik, Gabriela Bindea, Helen K Angell, Anne Berger, Christine Lagorce, Alessandro Lugli, et al. 2014. “Towards the introduction of the ‘Immunoscore’ in the classification of malignant tumours.” <em>The Journal of Pathology</em> 232 (2): 199–209. doi:<a href="https://doi.org/10.1002/path.4287">10.1002/path.4287</a>.</p>
+</div>
+<div id="ref-Parker2009">
+<p>Parker, Joel S, Michael Mullins, Maggie C U Cheang, Samuel Leung, David Voduc, Tammi Vickery, Sherri Davies, et al. 2009. “Supervised risk predictor of breast cancer based on intrinsic subtypes.” <em>Journal of Clinical Oncology : Official Journal of the American Society of Clinical Oncology</em> 27 (8). American Society of Clinical Oncology: 1160–7. doi:<a href="https://doi.org/10.1200/JCO.2008.18.1370">10.1200/JCO.2008.18.1370</a>.</p>
 </div>
 <div id="ref-Bindea2013">
 <p>Bindea, Gabriela, Bernhard Mlecnik, Marie Tosolini, Amos Kirilovsky, Maximilian Waldner, Anna C. Obenauf, Helen Angell, et al. 2013. “Spatiotemporal Dynamics of Intratumoral Immune Cells Reveal the Immune Landscape in Human Cancer.” <em>Immunity</em> 39 (4): 782–95. doi:<a href="https://doi.org/10.1016/j.immuni.2013.10.003">10.1016/j.immuni.2013.10.003</a>.</p>
@@ -849,11 +966,20 @@ You can write citations, too. For example, we are using the **bookdown** package
 <div id="ref-Herbst2014">
 <p>Herbst, Roy S., Jean-Charles Soria, Marcin Kowanetz, Gregg D. Fine, Omid Hamid, Michael S. Gordon, Jeffery A. Sosman, et al. 2014. “Predictive correlates of response to the anti-PD-L1 antibody MPDL3280A in cancer patients.” <em>Nature</em> 515 (7528): 563–67. doi:<a href="https://doi.org/10.1038/nature14011">10.1038/nature14011</a>.</p>
 </div>
+<div id="ref-Becht2016">
+<p>Becht, Etienne, Aurélien de Reyniès, Nicolas A Giraldo, Camilla Pilati, Bénédicte Buttard, Laetitia Lacroix, Janick Selves, Catherine Sautès-Fridman, Pierre Laurent-Puig, and Wolf Herman Fridman. 2016. “Immune and Stromal Classification of Colorectal Cancer Is Associated with Molecular Subtypes and Relevant for Precision Immunotherapy.” <em>Clinical Cancer Research : An Official Journal of the American Association for Cancer Research</em> 22 (16). American Association for Cancer Research: 4057–66. doi:<a href="https://doi.org/10.1158/1078-0432.CCR-15-2879">10.1158/1078-0432.CCR-15-2879</a>.</p>
+</div>
 <div id="ref-Gajewski2006">
 <p>Gajewski, Thomas F., Yuru Meng, Christian Blank, Ian Brown, Aalok Kacha, Justin Kline, and Helena Harlin. 2006. “Immune resistance orchestrated by the tumor microenvironment.” <em>Immunological Reviews</em> 213 (1). Blackwell Publishing Ltd: 131–45. doi:<a href="https://doi.org/10.1111/J.1600-065X.2006.00442.X">10.1111/J.1600-065X.2006.00442.X</a>.</p>
 </div>
 <div id="ref-Galon2012">
 <p>Galon, Jérôme, Franck Pagès, Francesco M Marincola, Magdalena Thurin, Giorgio Trinchieri, Bernard A Fox, Thomas F Gajewski, and Paolo A Ascierto. 2012. “The immune score as a new possible approach for the classification of cancer.” <em>Journal of Translational Medicine</em> 10 (1). BioMed Central: 1. doi:<a href="https://doi.org/10.1186/1479-5876-10-1">10.1186/1479-5876-10-1</a>.</p>
+</div>
+<div id="ref-Anitei2014">
+<p>Anitei, M G, G Zeitoun, B Mlecnik, F Marliot, N Haicheur, A M Todosi, A Kirilovsky, et al. 2014. “Prognostic and predictive values of the immunoscore in patients with rectal cancer.” <em>Clin Cancer Res</em> 20 (7): 1891–9. doi:<a href="https://doi.org/10.1158/1078-0432.ccr-13-2830">10.1158/1078-0432.ccr-13-2830</a>.</p>
+</div>
+<div id="ref-Galon2016">
+<p>Galon, J., B. A. Fox, C. B. Bifulco, G. Masucci, T. Rau, G. Botti, F. M. Marincola, et al. 2016. “Immunoscore and Immunoprofiling in cancer: An update from the melanoma and immunotherapy bridge 2015.” <em>Journal of Translational Medicine</em> 14 (1). doi:<a href="https://doi.org/10.1186/s12967-016-1029-z">10.1186/s12967-016-1029-z</a>.</p>
 </div>
 <div id="ref-Charoentong2017">
 <p>Charoentong, Pornpimol, Francesca Finotello, Mihaela Angelova, Clemens Mayer, Mirjana Efremova, Dietmar Rieder, Hubert Hackl, and Zlatko Trajanoski. 2017. “Pan-cancer Immunogenomic Analyses Reveal Genotype-Immunophenotype Relationships and Predictors of Response to Checkpoint Blockade.” <em>Cell Reports</em> 18 (1). Elsevier: 248–62. doi:<a href="https://doi.org/10.1016/j.celrep.2016.12.019">10.1016/j.celrep.2016.12.019</a>.</p>
@@ -864,6 +990,21 @@ You can write citations, too. For example, we are using the **bookdown** package
 <div id="ref-Blank2016">
 <p>Blank, Christian U, John B Haanen, Antoni Ribas, and Ton N Schumacher. 2016. “CANCER IMMUNOLOGY. the ‘Cancer Immunogram’.” <em>Science (New York, N.Y.)</em> 352 (6286). American Association for the Advancement of Science: 658–60. doi:<a href="https://doi.org/10.1126/science.aaf2834">10.1126/science.aaf2834</a>.</p>
 </div>
+<div id="ref-Thorsson2018">
+<p>Thorsson, Vésteinn, David L Gibbs, Scott D Brown, Denise Wolf, Dante S Bortone, Tai-Hsien Ou Yang, Eduard Porta-Pardo, et al. 2018. “The Immune Landscape of Cancer.” <em>Immunity</em> 48 (4). Elsevier: 812–830.e14. doi:<a href="https://doi.org/10.1016/j.immuni.2018.03.023">10.1016/j.immuni.2018.03.023</a>.</p>
+</div>
+<div id="ref-Tamborero2018">
+<p>Tamborero, David, Carlota Rubio-Perez, Ferran Muiños, Radhakrishnan Sabarinathan, Josep Maria Piulats, Aura Muntasell, Rodrigo Dienstmann, Nuria Lopez-Bigas, and Abel Gonzalez-Perez. 2018. “A pan-cancer landscape of interactions between solid tumors and infiltrating immune cell populations.” <em>Clinical Cancer Research : An Official Journal of the American Association for Cancer Research</em>, April. American Association for Cancer Research, clincanres.3509.2017. doi:<a href="https://doi.org/10.1158/1078-0432.CCR-17-3509">10.1158/1078-0432.CCR-17-3509</a>.</p>
+</div>
+<div id="ref-Kuperstein2013">
+<p>Kuperstein, Inna, David PA Cohen, Stuart Pook, Eric Viara, Laurence Calzone, Emmanuel Barillot, and Andrei Zinovyev. 2013. “NaviCell: a web-based environment for navigation, curation and maintenance of large molecular interaction maps.” <em>BMC Systems Biology</em> 7 (1). BioMed Central: 100. doi:<a href="https://doi.org/10.1186/1752-0509-7-100">10.1186/1752-0509-7-100</a>.</p>
+</div>
+<div id="ref-Kuperstein2015">
+<p>Kuperstein, I, E Bonnet, H-A Nguyen, D Cohen, E Viara, L Grieco, S Fourquet, et al. 2015. “Atlas of Cancer Signalling Network: a systems biology resource for integrative analysis of cancer data with Google Maps.” <em>Oncogenesis</em> 4 (7): e160–e160. doi:<a href="https://doi.org/10.1038/oncsis.2015.19">10.1038/oncsis.2015.19</a>.</p>
+</div>
+<div id="ref-Costa2018">
+<p>Costa, Ana, Yann Kieffer, Alix Scholer-Dahirel, Floriane Pelon, Brigitte Bourachot, Melissa Cardon, Philemon Sirven, et al. 2018. “Fibroblast Heterogeneity and Immunosuppressive Environment in Human Breast Cancer.” <em>Cancer Cell</em> 33 (3). Elsevier: 463–479.e10. doi:<a href="https://doi.org/10.1016/j.ccell.2018.01.011">10.1016/j.ccell.2018.01.011</a>.</p>
+</div>
 <div id="ref-Gyorffy2015">
 <p>Győrffy, Balázs, Christos Hatzis, Tara Sanft, Erin Hofstatter, Bilge Aktas, and Lajos Pusztai. 2015. “Multigene prognostic tests in breast cancer: past, present, future.” <em>Breast Cancer Research : BCR</em> 17 (1). BioMed Central: 11. doi:<a href="https://doi.org/10.1186/s13058-015-0514-2">10.1186/s13058-015-0514-2</a>.</p>
 </div>
@@ -873,6 +1014,36 @@ You can write citations, too. For example, we are using the **bookdown** package
 <div id="ref-Gnjatic2017">
 <p>Gnjatic, Sacha, Vincenzo Bronte, Laura Rosa Brunet, Marcus O Butler, Mary L Disis, Jérôme Galon, Leif G Hakansson, et al. 2017. “Identifying baseline immune-related biomarkers to predict clinical outcome of immunotherapy.” <em>Journal for Immunotherapy of Cancer</em> 5. BioMed Central: 44. doi:<a href="https://doi.org/10.1186/s40425-017-0243-4">10.1186/s40425-017-0243-4</a>.</p>
 </div>
+<div id="ref-Itadani2008">
+<p>Itadani, Hiraku, Shinji Mizuarai, and Hidehito Kotani. 2008. “Can Systems Biology Understand Pathway Activation? Gene Expression Signatures as Surrogate Markers for Understanding the Complexity of Pathway Activation.” <em>Current Genomics</em> 9 (5): 349–60. doi:<a href="https://doi.org/10.2174/138920208785133235">10.2174/138920208785133235</a>.</p>
+</div>
+<div id="ref-Liu2008">
+<p>Liu, Jiangang, Andrew Campen, Shuguang Huang, Sheng-Bin Peng, Xiang Ye, Mathew Palakal, A Keith Dunker, Yuni Xia, and Shuyu Li. 2008. “Identification of a gene signature in cell cycle pathway for breast cancer prognosis using gene expression profiling data.” <em>BMC Medical Genomics</em> 1 (1): 39. doi:<a href="https://doi.org/10.1186/1755-8794-1-39">10.1186/1755-8794-1-39</a>.</p>
+</div>
+<div id="ref-Sonachalam2012">
+<p>Sonachalam, Madhankumar, Jeffrey Shen, Hui Huang, and Xiaogang Wu. 2012. “Systems biology approach to identify gene network signatures for colorectal cancer.” <em>Frontiers in Genetics</em> 3. Frontiers Media SA: 80. doi:<a href="https://doi.org/10.3389/fgene.2012.00080">10.3389/fgene.2012.00080</a>.</p>
+</div>
+<div id="ref-Heng2008">
+<p>Heng, Tracy S P, Michio W Painter, Kutlu Elpek, Veronika Lukacs-Kornek, Nora Mauermann, Shannon J Turley, Daphne Koller, et al. 2008. “The Immunological Genome Project: networks of gene expression in immune cells.” <em>Nature Immunology</em> 9 (10): 1091–4. doi:<a href="https://doi.org/10.1038/ni1008-1091">10.1038/ni1008-1091</a>.</p>
+</div>
+<div id="ref-Vandenbon2016">
+<p>Vandenbon, Alexis, Viet H Dinh, Norihisa Mikami, Yohko Kitagawa, Shunsuke Teraguchi, Naganari Ohkura, and Shimon Sakaguchi. 2016. “Immuno-Navigator, a batch-corrected coexpression database, reveals cell type-specific gene networks in the immune system.” <em>Proceedings of the National Academy of Sciences of the United States of America</em> 113 (17). National Academy of Sciences: E2393–402. doi:<a href="https://doi.org/10.1073/pnas.1604351113">10.1073/pnas.1604351113</a>.</p>
+</div>
+<div id="ref-Godec2016">
+<p>Godec, Jernej, Yan Tan, Arthur Liberzon, Pablo Tamayo, Sanchita Bhattacharya, Atul J. Butte, Jill P. Mesirov, and W. Nicholas Haining. 2016. “Compendium of Immune Signatures Identifies Conserved and Species-Specific Biology in Response to Inflammation.” <em>Immunity</em> 44 (1): 194–206. doi:<a href="https://doi.org/10.1016/j.immuni.2015.12.006">10.1016/j.immuni.2015.12.006</a>.</p>
+</div>
+<div id="ref-Subramanian2005">
+<p>Subramanian, Aravind, Pablo Tamayo, Vamsi K Mootha, Sayan Mukherjee, Benjamin L Ebert, Michael A Gillette, Amanda Paulovich, et al. 2005. “Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.” <em>Proceedings of the National Academy of Sciences of the United States of America</em> 102 (43). National Academy of Sciences: 15545–50. doi:<a href="https://doi.org/10.1073/pnas.0506580102">10.1073/pnas.0506580102</a>.</p>
+</div>
+<div id="ref-Michiels2016">
+<p>Michiels, S., N. Ternès, and F. Rotolo. 2016. “Statistical controversies in clinical research: prognostic gene signatures are not (yet) useful in clinical practice.” <em>Annals of Oncology</em> 27 (12): 2160–7. doi:<a href="https://doi.org/10.1093/annonc/mdw307">10.1093/annonc/mdw307</a>.</p>
+</div>
+<div id="ref-Harris2016">
+<p>Harris, Lyndsay N., Nofisat Ismaila, Lisa M. McShane, Fabrice Andre, Deborah E. Collyar, Ana M. Gonzalez-Angulo, Elizabeth H. Hammond, et al. 2016. “Use of Biomarkers to Guide Decisions on Adjuvant Systemic Therapy for Women With Early-Stage Invasive Breast Cancer: American Society of Clinical Oncology Clinical Practice Guideline.” <em>Journal of Clinical Oncology</em> 34 (10): 1134–50. doi:<a href="https://doi.org/10.1200/JCO.2015.65.2289">10.1200/JCO.2015.65.2289</a>.</p>
+</div>
+<div id="ref-Chifman2016">
+<p>Chifman, Julia, Ashok Pullikuth, Jeff W Chou, Davide Bedognetti, and Lance D Miller. 2016. “Conservation of immune gene signatures in solid tumors and prognostic implications.” <em>BMC Cancer</em> 16 (1): 911. doi:<a href="https://doi.org/10.1186/s12885-016-2948-z">10.1186/s12885-016-2948-z</a>.</p>
+</div>
 <div id="ref-NCI2018">
 <p>Institute, National Cancer. 2017. “Types of Cancer Treatment.” <a href="https://www.cancer.gov/about-cancer/treatment/types" class="uri">https://www.cancer.gov/about-cancer/treatment/types</a>.</p>
 </div>
@@ -881,6 +1052,9 @@ You can write citations, too. For example, we are using the **bookdown** package
 </div>
 <div id="ref-Palucka2013">
 <p>Palucka, Karolina, and Jacques Banchereau. 2013. “Dendritic-Cell-Based Therapeutic Cancer Vaccines.” doi:<a href="https://doi.org/10.1016/j.immuni.2013.07.004">10.1016/j.immuni.2013.07.004</a>.</p>
+</div>
+<div id="ref-Sagiv-Barfi2018">
+<p>Sagiv-Barfi, Idit, Debra K. Czerwinski, Shoshana Levy, Israt S. Alam, Aaron T. Mayer, Sanjiv S. Gambhir, and Ronald Levy. 2018. “Eradication of spontaneous malignancy by local immunotherapy.” <em>Science Translational Medicine</em> 10 (426). American Association for the Advancement of Science: eaan4488. doi:<a href="https://doi.org/10.1126/SCITRANSLMED.AAN4488">10.1126/SCITRANSLMED.AAN4488</a>.</p>
 </div>
 <div id="ref-Jackson2016">
 <p>Jackson, Hollie J., Sarwish Rafiq, and Renier J. Brentjens. 2016. “Driving CAR T-cells forward.” doi:<a href="https://doi.org/10.1038/nrclinonc.2016.36">10.1038/nrclinonc.2016.36</a>.</p>

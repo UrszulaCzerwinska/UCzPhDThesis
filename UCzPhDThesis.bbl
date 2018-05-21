@@ -1,0 +1,1244 @@
+\begin{thebibliography}{114}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[CRI()]{CRIweb}
+{The CRI | Centre for Research and Interdisciplinarity}.
+\newblock URL \url{https://cri-paris.org/the-cri/}.
+
+\bibitem[FIR(2004)]{FIRbook}
+\emph{{Facilitating Interdisciplinary Research}}.
+\newblock National Academies Press, Washington, D.C., apr 2004.
+\newblock ISBN 978-0-309-09435-1.
+\newblock \doi{10.17226/11153}.
+\newblock URL \url{http://www.nap.edu/catalog/11153}.
+
+\bibitem[Angelova et~al.(2015)Angelova, Charoentong, Hackl, Fischer, Snajder,
+  Krogsdam, Waldner, Bindea, Mlecnik, Galon, and Trajanoski]{Angelova2015}
+Mihaela Angelova, Pornpimol Charoentong, Hubert Hackl, Maria~L Fischer, Rene
+  Snajder, Anne~M Krogsdam, Maximilian~J Waldner, Gabriela Bindea, Bernhard
+  Mlecnik, Jerome Galon, and Zlatko Trajanoski.
+\newblock {Characterization of the immunophenotypes and antigenomes of
+  colorectal cancers reveals distinct tumor escape mechanisms and novel targets
+  for immunotherapy}.
+\newblock \emph{Genome Biology}, 16\penalty0 (1):\penalty0 64, dec 2015.
+\newblock ISSN 1465-6906.
+\newblock \doi{10.1186/s13059-015-0620-6}.
+\newblock URL \url{http://genomebiology.com/2015/16/1/64}.
+
+\bibitem[Anitei et~al.(2014)Anitei, Zeitoun, Mlecnik, Marliot, Haicheur,
+  Todosi, Kirilovsky, Lagorce, Bindea, Ferariu, Danciu, Bruneval, Scripcariu,
+  Chevallier, Zinzindohoue, Berger, Galon, and Pages]{Anitei2014}
+M~G Anitei, G~Zeitoun, B~Mlecnik, F~Marliot, N~Haicheur, A~M Todosi,
+  A~Kirilovsky, C~Lagorce, G~Bindea, D~Ferariu, M~Danciu, P~Bruneval,
+  V~Scripcariu, J~M Chevallier, F~Zinzindohoue, A~Berger, J~Galon, and F~Pages.
+\newblock {Prognostic and predictive values of the immunoscore in patients with
+  rectal cancer}.
+\newblock \emph{Clin Cancer Res}, 20\penalty0 (7):\penalty0 1891--1899, 2014.
+\newblock ISSN 1078-0432.
+\newblock \doi{10.1158/1078-0432.ccr-13-2830}.
+\newblock URL
+  \url{http://clincancerres.aacrjournals.org/content/20/7/1891.full.pdf}.
+
+\bibitem[Aris et~al.(2012)Aris, Barrio, and Mordoh]{Aris2012}
+Mariana Aris, Mar{\'{i}}a~Marcela Barrio, and Jos{\'{e}} Mordoh.
+\newblock {Lessons from Cancer Immunoediting in Cutaneous Melanoma}.
+\newblock \emph{Clinical and Developmental Immunology}, 2012:\penalty0 1--14,
+  2012.
+\newblock ISSN 1740-2522.
+\newblock \doi{10.1155/2012/192719}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/22924051
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC3424677
+  http://www.hindawi.com/journals/jir/2012/192719/}.
+
+\bibitem[Balkwill and Mantovani(2001)]{Balkwill2001}
+Fran Balkwill and Alberto Mantovani.
+\newblock {Inflammation and cancer: Back to Virchow?}, 2001.
+\newblock ISSN 01406736.
+
+\bibitem[Baxevanis et~al.(1994)Baxevanis, Dedoussis, Papadopoulos, Missitzis,
+  Stathopoulos, and Papamichail]{Baxevanis1994}
+C~N Baxevanis, G~V Dedoussis, N~G Papadopoulos, I~Missitzis, G~P Stathopoulos,
+  and M~Papamichail.
+\newblock {Tumor specific cytolysis by tumor infiltrating lymphocytes in breast
+  cancer.}
+\newblock \emph{Cancer}, 74\penalty0 (4):\penalty0 1275--82, aug 1994.
+\newblock ISSN 0008-543X.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/7914469}.
+
+\bibitem[Becht et~al.(2016)Becht, de~Reyni{\`{e}}s, Giraldo, Pilati, Buttard,
+  Lacroix, Selves, Saut{\`{e}}s-Fridman, Laurent-Puig, and Fridman]{Becht2016}
+Etienne Becht, Aur{\'{e}}lien de~Reyni{\`{e}}s, Nicolas~A Giraldo, Camilla
+  Pilati, B{\'{e}}n{\'{e}}dicte Buttard, Laetitia Lacroix, Janick Selves,
+  Catherine Saut{\`{e}}s-Fridman, Pierre Laurent-Puig, and Wolf~Herman Fridman.
+\newblock {Immune and Stromal Classification of Colorectal Cancer Is Associated
+  with Molecular Subtypes and Relevant for Precision Immunotherapy.}
+\newblock \emph{Clinical cancer research : an official journal of the American
+  Association for Cancer Research}, 22\penalty0 (16):\penalty0 4057--66, aug
+  2016.
+\newblock ISSN 1078-0432.
+\newblock \doi{10.1158/1078-0432.CCR-15-2879}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/26994146}.
+
+\bibitem[Berghoff et~al.(2018)Berghoff, Kather, and Jäger]{Berghoff2018}
+Anna Berghoff, Jakob Kather, and Dirk Jäger.
+\newblock Genetics and immunology: Tumor-specific genetic alterations as a
+  target for immune modulating therapies.
+\newblock In Laurence Zitvogel and Guido Kroemer, editors, \emph{Oncoimmunology
+  : a practical guide for cancer immunotherapy}, chapter~13, pages 231--246. 01
+  2018.
+\newblock ISBN 978-3-319-62430-3.
+
+\bibitem[Bernstein et~al.(2007)Bernstein, Meissner, and Lander]{Bernstein2007}
+Bradley~E Bernstein, Alexander Meissner, and Eric~S Lander.
+\newblock {The mammalian epigenome.}
+\newblock \emph{Cell}, 128\penalty0 (4):\penalty0 669--81, feb 2007.
+\newblock ISSN 0092-8674.
+\newblock \doi{10.1016/j.cell.2007.01.033}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/17320505}.
+
+\bibitem[Bhatia and Kumar(2011)]{Bhatia2011}
+Alka Bhatia and Yashwant Kumar.
+\newblock {Cancer-immune equilibrium: questions unanswered.}
+\newblock \emph{Cancer microenvironment : official journal of the International
+  Cancer Microenvironment Society}, 4\penalty0 (2):\penalty0 209--17, aug 2011.
+\newblock ISSN 1875-2284.
+\newblock \doi{10.1007/s12307-011-0065-8}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/21607751
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC3170416}.
+
+\bibitem[Bindea et~al.(2013)Bindea, Mlecnik, Tosolini, Kirilovsky, Waldner,
+  Obenauf, Angell, Fredriksen, Lafontaine, Berger, Bruneval, Fridman, Becker,
+  Pag{\`{e}}s, Speicher, Trajanoski, and Galon]{Bindea2013}
+Gabriela Bindea, Bernhard Mlecnik, Marie Tosolini, Amos Kirilovsky, Maximilian
+  Waldner, Anna C. Obenauf, Helen Angell, Tessa Fredriksen, Lucie Lafontaine,
+  Anne Berger, Patrick Bruneval, Wolf Herman Fridman, Christoph Becker, Franck
+  Pag{\`{e}}s, Michael R. Speicher, Zlatko Trajanoski, and J{\'{e}}r{\^{o}}me
+  Galon.
+\newblock {Spatiotemporal Dynamics of Intratumoral Immune Cells Reveal the
+  Immune Landscape in Human Cancer}.
+\newblock \emph{Immunity}, 39\penalty0 (4):\penalty0 782--795, oct 2013.
+\newblock ISSN 10747613.
+\newblock \doi{10.1016/j.immuni.2013.10.003}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/24138885
+  http://linkinghub.elsevier.com/retrieve/pii/S1074761313004378}.
+
+\bibitem[Blank et~al.(2016)Blank, Haanen, Ribas, and Schumacher]{Blank2016}
+Christian~U Blank, John~B Haanen, Antoni Ribas, and Ton~N Schumacher.
+\newblock {CANCER IMMUNOLOGY. The "cancer immunogram".}
+\newblock \emph{Science (New York, N.Y.)}, 352\penalty0 (6286):\penalty0
+  658--60, may 2016.
+\newblock ISSN 1095-9203.
+\newblock \doi{10.1126/science.aaf2834}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/27151852}.
+
+\bibitem[Boal(2002)]{Boal2002}
+David~H. Boal.
+\newblock \emph{{Mechanics of the cell}}.
+\newblock Cambridge University Press, 2002.
+\newblock ISBN 9780511810954.
+
+\bibitem[Burnet(1970)]{Burnet1970}
+F~M Burnet.
+\newblock {The concept of immunological surveillance.}
+\newblock \emph{Progress in experimental tumor research}, 13:\penalty0 1--27,
+  1970.
+\newblock ISSN 0079-6263.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/4921480}.
+
+\bibitem[Cavallo et~al.(2011)Cavallo, {De Giovanni}, Nanni, Forni, and
+  Lollini]{Cavallo2011}
+Federica Cavallo, Carla {De Giovanni}, Patrizia Nanni, Guido Forni, and
+  Pier-Luigi Lollini.
+\newblock {No Title}.
+\newblock 60\penalty0 (3), mar 2011.
+\newblock \doi{10.1007/s00262-010-0968-0}.
+\newblock URL \url{http://link.springer.com/10.1007/s00262-010-0968-0}.
+
+\bibitem[Charoentong et~al.(2017)Charoentong, Finotello, Angelova, Mayer,
+  Efremova, Rieder, Hackl, and Trajanoski]{Charoentong2017}
+Pornpimol Charoentong, Francesca Finotello, Mihaela Angelova, Clemens Mayer,
+  Mirjana Efremova, Dietmar Rieder, Hubert Hackl, and Zlatko Trajanoski.
+\newblock {Pan-cancer Immunogenomic Analyses Reveal Genotype-Immunophenotype
+  Relationships and Predictors of Response to Checkpoint Blockade.}
+\newblock \emph{Cell reports}, 18\penalty0 (1):\penalty0 248--262, jan 2017.
+\newblock ISSN 2211-1247.
+\newblock \doi{10.1016/j.celrep.2016.12.019}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/28052254}.
+
+\bibitem[Chen and Mellman(2017)]{Chen2017}
+Daniel~S. Chen and Ira Mellman.
+\newblock {Elements of cancer immunity and the cancer-immune set point}, 2017.
+\newblock ISSN 14764687.
+
+\bibitem[Chen et~al.(2016)Chen, Roh, Reuben, Cooper, Spencer, Prieto, Miller,
+  Bassett, Gopalakrishnan, Wani, {De Macedo}, Austin-Breneman, Jiang, Chang,
+  Reddy, Chen, Tetzlaff, Broaddus, Davies, Gershenwald, Haydu, Lazar, Patel,
+  Hwu, Hwu, Diab, Glitza, Woodman, Vence, Wistuba, Amaria, Kwong, Prieto, {Eric
+  Davis}, Ma, Overwijk, Sharpe, Hu, {Andrew Futreal}, Blando, Sharma, Allison,
+  Chin, and Wargo]{Chen2016}
+Pei~Ling Chen, Whijae Roh, Alexandre Reuben, Zachary~A. Cooper, Christine~N.
+  Spencer, Peter~A. Prieto, John~P. Miller, Roland~L. Bassett, Vancheswaran
+  Gopalakrishnan, Khalida Wani, Mariana~Petaccia {De Macedo}, Jacob~L.
+  Austin-Breneman, Hong Jiang, Qing Chang, Sangeetha~M. Reddy, Wei~Shen Chen,
+  Michael~T. Tetzlaff, Russell~J. Broaddus, Michael~A. Davies, Jeffrey~E.
+  Gershenwald, Lauren Haydu, Alexander~J. Lazar, Sapna~P. Patel, Patrick Hwu,
+  Wen~Jen Hwu, Adi Diab, Isabella~C. Glitza, Scott~E. Woodman, Luis~M. Vence,
+  Ignacio~I. Wistuba, Rodabe~N. Amaria, Lawrence~N. Kwong, Victor Prieto,
+  R.~{Eric Davis}, Wencai Ma, Willem~W. Overwijk, Arlene~H. Sharpe, Jianhua Hu,
+  P.~{Andrew Futreal}, Jorge Blando, Padmanee Sharma, James~P. Allison, Lynda
+  Chin, and Jennifer~A. Wargo.
+\newblock {Analysis of immune signatures in longitudinal tumor samples yields
+  insight into biomarkers of response and mechanisms of resistance to immune
+  checkpoint blockade}.
+\newblock \emph{Cancer Discovery}, 6\penalty0 (8):\penalty0 827--837, 2016.
+\newblock ISSN 21598290.
+\newblock \doi{10.1158/2159-8290.CD-15-1545}.
+
+\bibitem[Chifman et~al.(2016)Chifman, Pullikuth, Chou, Bedognetti, and
+  Miller]{Chifman2016}
+Julia Chifman, Ashok Pullikuth, Jeff~W Chou, Davide Bedognetti, and Lance~D
+  Miller.
+\newblock {Conservation of immune gene signatures in solid tumors and
+  prognostic implications.}
+\newblock \emph{BMC cancer}, 16\penalty0 (1):\penalty0 911, dec 2016.
+\newblock ISSN 1471-2407.
+\newblock \doi{10.1186/s12885-016-2948-z}.
+\newblock URL
+  \url{http://bmccancer.biomedcentral.com/articles/10.1186/s12885-016-2948-z
+  http://www.ncbi.nlm.nih.gov/pubmed/27871313
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC5118876}.
+
+\bibitem[Cie{\'{s}}lik and Chinnaiyan(2017)]{Cieslik2017}
+Marcin Cie{\'{s}}lik and Arul~M. Chinnaiyan.
+\newblock {Cancer transcriptome profiling at the juncture of clinical
+  translation}.
+\newblock \emph{Nature Reviews Genetics}, 19\penalty0 (2):\penalty0 93--109,
+  dec 2017.
+\newblock ISSN 1471-0056.
+\newblock \doi{10.1038/nrg.2017.96}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/nrg.2017.96}.
+
+\bibitem[Core(2016)]{Cedar2018}
+Cedar-Sinals~Genomics Core.
+\newblock Single cell genomics, 2016.
+\newblock URL
+  \url{https://www.cedars-sinai.edu/Research/Research-Cores/Genomics-Core/Documents/website_pricing_jan_2018_final.pdf}.
+
+\bibitem[Corlan(2004)]{Corlan2004}
+Alexandru~Dan Corlan.
+\newblock Medline trend: automated yearly statistics of pubmed results for any
+  query, 2004.
+\newblock URL \url{http://dan.corlan.net/medline-trend.html}.
+
+\bibitem[Costa et~al.(2018)Costa, Kieffer, Scholer-Dahirel, Pelon, Bourachot,
+  Cardon, Sirven, Magagna, Fuhrmann, Bernard, Bonneau, Kondratova, Kuperstein,
+  Zinovyev, Givel, Parrini, Soumelis, Vincent-Salomon, and
+  Mechta-Grigoriou]{Costa2018}
+Ana Costa, Yann Kieffer, Alix Scholer-Dahirel, Floriane Pelon, Brigitte
+  Bourachot, Melissa Cardon, Philemon Sirven, Ilaria Magagna, Laetitia
+  Fuhrmann, Charles Bernard, Claire Bonneau, Maria Kondratova, Inna Kuperstein,
+  Andrei Zinovyev, Anne-Marie Givel, Maria-Carla Parrini, Vassili Soumelis,
+  Anne Vincent-Salomon, and Fatima Mechta-Grigoriou.
+\newblock {Fibroblast Heterogeneity and Immunosuppressive Environment in Human
+  Breast Cancer.}
+\newblock \emph{Cancer cell}, 33\penalty0 (3):\penalty0 463--479.e10, mar 2018.
+\newblock ISSN 1878-3686.
+\newblock \doi{10.1016/j.ccell.2018.01.011}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/29455927}.
+
+\bibitem[Csermely et~al.(2007)Csermely, Korlevic, and Sulyok]{Csermely2007}
+Peter. Csermely, Korado. Korlevic, and Katalin. Sulyok.
+\newblock \emph{{Science education : models and networking of student research
+  training under 21}}.
+\newblock IOS Press, 2007.
+\newblock ISBN 9781586037215.
+
+\bibitem[Davis(2016)]{Davis2016}
+Sean Davis.
+\newblock Github: awesome-single-cell, 2016.
+\newblock URL \url{https://github.com/seandavi/awesome-single-cell}.
+
+\bibitem[Dumont et~al.(2013)Dumont, Liu, DeFilippis, Chang, Rabban, Karnezis,
+  Tjoe, Marx, Parvin, and Tlsty]{Dumont2013}
+Nancy Dumont, Bob Liu, Rosa~Anna DeFilippis, Hang Chang, Joseph~T. Rabban,
+  Anthony~N. Karnezis, Judy~A. Tjoe, James Marx, Bahram Parvin, and Thea~D.
+  Tlsty.
+\newblock {Breast Fibroblasts Modulate Early Dissemination, Tumorigenesis, and
+  Metastasis through Alteration of Extracellular Matrix Characteristics}.
+\newblock \emph{Neoplasia}, 15\penalty0 (3):\penalty0 249--IN7, 2013.
+\newblock ISSN 14765586.
+\newblock \doi{10.1593/neo.121950}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1476558613800553}.
+
+\bibitem[Dunn et~al.(2002)Dunn, Bruce, Ikeda, Old, and Schreiber]{Dunn2002}
+Gavin~P. Dunn, Allen~T. Bruce, Hiroaki Ikeda, Lloyd~J. Old, and Robert~D.
+  Schreiber.
+\newblock {Cancer immunoediting: from immunosurveillance to tumor escape}.
+\newblock \emph{Nature Immunology}, 3\penalty0 (11):\penalty0 991--998, nov
+  2002.
+\newblock ISSN 1529-2908.
+\newblock \doi{10.1038/ni1102-991}.
+\newblock URL \url{http://www.nature.com/articles/ni1102-991}.
+
+\bibitem[{Ediorial Cell Systems}(2017)]{EdiorialCellSystems2017}
+{Ediorial Cell Systems}.
+\newblock {What Is Your Conceptual Definition of "Cell Type" in the Context of
+  a Mature Organism?}
+\newblock \emph{Cell systems}, 4\penalty0 (3):\penalty0 255--259, mar 2017.
+\newblock \doi{10.1016/j.cels.2017.03.006}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/28334573}.
+
+\bibitem[Ehrlich(1909)]{Ehrlich1909}
+P.~Ehrlich.
+\newblock {{\"{U}}ber den jetzigen Stand der Chemotherapie}.
+\newblock \emph{Berichte der deutschen chemischen Gesellschaft}, 42\penalty0
+  (1):\penalty0 17--47, jan 1909.
+\newblock ISSN 03659496.
+\newblock \doi{10.1002/cber.19090420105}.
+\newblock URL \url{http://doi.wiley.com/10.1002/cber.19090420105}.
+
+\bibitem[Feinberg and Vogelstein(1983)]{Feinberg1983}
+Andrew~P. Feinberg and Bert Vogelstein.
+\newblock {Hypomethylation distinguishes genes of some human cancers from their
+  normal counterparts}.
+\newblock \emph{Nature}, 301\penalty0 (5895):\penalty0 89--92, jan 1983.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/301089a0}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/301089a0}.
+
+\bibitem[Folkman et~al.(1971)Folkman, Merler, Abernathy, and
+  Williams]{Folkman1971}
+J~Folkman, E~Merler, C~Abernathy, and G~Williams.
+\newblock {Isolation of a tumor factor responsible for angiogenesis.}
+\newblock \emph{The Journal of experimental medicine}, 133\penalty0
+  (2):\penalty0 275--88, feb 1971.
+\newblock ISSN 0022-1007.
+\newblock \doi{10.1084/JEM.133.2.275}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/4332371
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC2138906}.
+
+\bibitem[for Research~in Cancer(2018)]{GLOBOCAN}
+International~Agency for Research~in Cancer.
+\newblock Globocan - facts sheets by cancer, 2018.
+\newblock URL \url{http://globocan.iarc.fr/Pages/fact_sheets_cancer.aspx}.
+
+\bibitem[Frey et~al.(2010)Frey, Droeser, Viehl, Zlobec, Lugli, Zingg, Oertli,
+  Kettelhack, Terracciano, and Tornillo]{Frey2010}
+Daniel~M. Frey, Raoul~A. Droeser, Carsten~T. Viehl, Inti Zlobec, Alessandro
+  Lugli, Urs Zingg, Daniel Oertli, Christoph Kettelhack, Luigi Terracciano, and
+  Luigi Tornillo.
+\newblock {High frequency of tumor-infiltrating FOXP3+ regulatory T cells
+  predicts improved survival in mismatch repair-proficient colorectal cancer
+  patients}.
+\newblock \emph{International Journal of Cancer}, 126\penalty0 (11):\penalty0
+  2635--2643, 2010.
+\newblock ISSN 00207136.
+\newblock \doi{10.1002/ijc.24989}.
+
+\bibitem[Gabrilovich et~al.(2012)Gabrilovich, Ostrand-Rosenberg, and
+  Bronte]{Gabrilovich2012}
+Dmitry~I. Gabrilovich, Suzanne Ostrand-Rosenberg, and Vincenzo Bronte.
+\newblock {Coordinated regulation of myeloid cells by tumours}, 2012.
+\newblock ISSN 14741733.
+
+\bibitem[Gajewski et~al.(2006)Gajewski, Meng, Blank, Brown, Kacha, Kline, and
+  Harlin]{Gajewski2006}
+Thomas~F. Gajewski, Yuru Meng, Christian Blank, Ian Brown, Aalok Kacha, Justin
+  Kline, and Helena Harlin.
+\newblock {Immune resistance orchestrated by the tumor microenvironment}.
+\newblock \emph{Immunological Reviews}, 213\penalty0 (1):\penalty0 131--145,
+  oct 2006.
+\newblock ISSN 1600-065X.
+\newblock \doi{10.1111/J.1600-065X.2006.00442.X}.
+\newblock URL
+  \url{http://onlinelibrary.wiley.com/doi/10.1111/j.1600-065X.2006.00442.x/abstract}.
+
+\bibitem[Galon et~al.(2016)Galon, Fox, Bifulco, Masucci, Rau, Botti, Marincola,
+  Ciliberto, Pages, Ascierto, and Capone]{Galon2016}
+J.~Galon, B.~A. Fox, C.~B. Bifulco, G.~Masucci, T.~Rau, G.~Botti, F.~M.
+  Marincola, G.~Ciliberto, F.~Pages, P.~A. Ascierto, and M.~Capone.
+\newblock {Immunoscore and Immunoprofiling in cancer: An update from the
+  melanoma and immunotherapy bridge 2015}.
+\newblock \emph{Journal of Translational Medicine}, 14\penalty0 (1), 2016.
+\newblock ISSN 14795876.
+\newblock \doi{10.1186/s12967-016-1029-z}.
+
+\bibitem[Galon et~al.(2012)Galon, Pag{\`{e}}s, Marincola, Thurin, Trinchieri,
+  Fox, Gajewski, and Ascierto]{Galon2012}
+J{\'{e}}r{\^{o}}me Galon, Franck Pag{\`{e}}s, Francesco~M Marincola, Magdalena
+  Thurin, Giorgio Trinchieri, Bernard~A Fox, Thomas~F Gajewski, and Paolo~A
+  Ascierto.
+\newblock {The immune score as a new possible approach for the classification
+  of cancer}.
+\newblock \emph{Journal of Translational Medicine}, 10\penalty0 (1):\penalty0
+  1, jan 2012.
+\newblock ISSN 1479-5876.
+\newblock \doi{10.1186/1479-5876-10-1}.
+\newblock URL
+  \url{http://translational-medicine.biomedcentral.com/articles/10.1186/1479-5876-10-1}.
+
+\bibitem[Galon et~al.(2014)Galon, Mlecnik, Bindea, Angell, Berger, Lagorce,
+  Lugli, Zlobec, Hartmann, Bifulco, Nagtegaal, Palmqvist, Masucci, Botti,
+  Tatangelo, Delrio, Maio, Laghi, Grizzi, Asslaber, D'Arrigo, Vidal-Vanaclocha,
+  Zavadova, Chouchane, Ohashi, Hafezi-Bakhtiari, Wouters, Roehrl, Nguyen,
+  Kawakami, Hazama, Okuno, Ogino, Gibbs, Waring, Sato, Torigoe, Itoh, Patel,
+  Shukla, Wang, Kopetz, Sinicrope, Scripcariu, Ascierto, Marincola, Fox, and
+  Pag{\`{e}}s]{Galon2014}
+J{\'{e}}r{\^{o}}me Galon, Bernhard Mlecnik, Gabriela Bindea, Helen~K Angell,
+  Anne Berger, Christine Lagorce, Alessandro Lugli, Inti Zlobec, Arndt
+  Hartmann, Carlo Bifulco, Iris~D Nagtegaal, Richard Palmqvist, Giuseppe~V
+  Masucci, Gerardo Botti, Fabiana Tatangelo, Paolo Delrio, Michele Maio, Luigi
+  Laghi, Fabio Grizzi, Martin Asslaber, Corrado D'Arrigo, Fernando
+  Vidal-Vanaclocha, Eva Zavadova, Lotfi Chouchane, Pamela~S Ohashi, Sara
+  Hafezi-Bakhtiari, Bradly~G Wouters, Michael Roehrl, Linh Nguyen, Yutaka
+  Kawakami, Shoichi Hazama, Kiyotaka Okuno, Shuji Ogino, Peter Gibbs, Paul
+  Waring, Noriyuki Sato, Toshihiko Torigoe, Kyogo Itoh, Prabhu~S Patel,
+  Shilin~N Shukla, Yili Wang, Scott Kopetz, Frank~A Sinicrope, Viorel
+  Scripcariu, Paolo~A Ascierto, Francesco~M Marincola, Bernard~A Fox, and
+  Franck Pag{\`{e}}s.
+\newblock {Towards the introduction of the ‘Immunoscore' in the
+  classification of malignant tumours}.
+\newblock \emph{The Journal of Pathology}, 232\penalty0 (2):\penalty0 199--209,
+  jan 2014.
+\newblock ISSN 00223417.
+\newblock \doi{10.1002/path.4287}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/24122236
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4255306
+  http://doi.wiley.com/10.1002/path.4287}.
+
+\bibitem[Giesen et~al.(2014)Giesen, Wang, Schapiro, Zivanovic, Jacobs,
+  Hattendorf, Sch{\"{u}}ffler, Grolimund, Buhmann, Brandt, Varga, Wild,
+  G{\"{u}}nther, and Bodenmiller]{Giesen2014}
+Charlotte Giesen, Hao A~O Wang, Denis Schapiro, Nevena Zivanovic, Andrea
+  Jacobs, Bodo Hattendorf, Peter~J Sch{\"{u}}ffler, Daniel Grolimund, Joachim~M
+  Buhmann, Simone Brandt, Zsuzsanna Varga, Peter~J Wild, Detlef G{\"{u}}nther,
+  and Bernd Bodenmiller.
+\newblock {Highly multiplexed imaging of tumor tissues with subcellular
+  resolution by mass cytometry}.
+\newblock \emph{Nature Methods}, 11\penalty0 (4):\penalty0 417--422, apr 2014.
+\newblock ISSN 1548-7091.
+\newblock \doi{10.1038/nmeth.2869}.
+\newblock URL \url{http://www.nature.com/articles/nmeth.2869}.
+
+\bibitem[Gnjatic et~al.(2017)Gnjatic, Bronte, Brunet, Butler, Disis, Galon,
+  Hakansson, Hanks, Karanikas, Khleif, Kirkwood, Miller, Schendel, Tanneau,
+  Wigginton, and Butterfield]{Gnjatic2017}
+Sacha Gnjatic, Vincenzo Bronte, Laura~Rosa Brunet, Marcus~O Butler, Mary~L
+  Disis, J{\'{e}}r{\^{o}}me Galon, Leif~G Hakansson, Brent~A Hanks, Vaios
+  Karanikas, Samir~N Khleif, John~M Kirkwood, Lance~D Miller, Dolores~J
+  Schendel, Isabelle Tanneau, Jon~M Wigginton, and Lisa~H Butterfield.
+\newblock {Identifying baseline immune-related biomarkers to predict clinical
+  outcome of immunotherapy.}
+\newblock \emph{Journal for immunotherapy of cancer}, 5:\penalty0 44, 2017.
+\newblock ISSN 2051-1426.
+\newblock \doi{10.1186/s40425-017-0243-4}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/28515944
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC5432988}.
+
+\bibitem[Godec et~al.(2016)Godec, Tan, Liberzon, Tamayo, Bhattacharya, Butte,
+  Mesirov, and Haining]{Godec2016}
+Jernej Godec, Yan Tan, Arthur Liberzon, Pablo Tamayo, Sanchita Bhattacharya,
+  Atul J. Butte, Jill P. Mesirov, and W. Nicholas Haining.
+\newblock {Compendium of Immune Signatures Identifies Conserved and
+  Species-Specific Biology in Response to Inflammation}.
+\newblock \emph{Immunity}, 44\penalty0 (1):\penalty0 194--206, jan 2016.
+\newblock ISSN 10747613.
+\newblock \doi{10.1016/j.immuni.2015.12.006}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/26795250
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC5330663
+  http://linkinghub.elsevier.com/retrieve/pii/S1074761315005324}.
+
+\bibitem[Golub et~al.(1999)Golub, Slonim, Tamayo, Huard, Gaasenbeek, Mesirov,
+  Coller, Loh, Downing, Caligiuri, Bloomfield, and Lander]{Golub1999}
+T~R Golub, D~K Slonim, P~Tamayo, C~Huard, M~Gaasenbeek, J~P Mesirov, H~Coller,
+  M~L Loh, J~R Downing, M~A Caligiuri, C~D Bloomfield, and E~S Lander.
+\newblock {Molecular classification of cancer: class discovery and class
+  prediction by gene expression monitoring.}
+\newblock \emph{Science (New York, N.Y.)}, 286\penalty0 (5439):\penalty0
+  531--7, oct 1999.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/SCIENCE.286.5439.531}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/10521349}.
+
+\bibitem[Greenblatt and Shubi(1968)]{Greenblatt1968}
+M~Greenblatt and P~Shubi.
+\newblock {Tumor angiogenesis: transfilter diffusion studies in the hamster by
+  the transparent chamber technique.}
+\newblock \emph{Journal of the National Cancer Institute}, 41\penalty0
+  (1):\penalty0 111--24, jul 1968.
+\newblock ISSN 0027-8874.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/5662020}.
+
+\bibitem[Greger et~al.(1989)Greger, Passarge, H�pping, Messmer, and
+  Horsthemke]{Greger1989}
+Valerie Greger, Eberhard Passarge, Wolfgang H�pping, Elmar Messmer, and
+  Bernhard Horsthemke.
+\newblock {Epigenetic changes may contribute to the formation and spontaneous
+  regression of retinoblastoma}.
+\newblock \emph{Human Genetics}, 83\penalty0 (2):\penalty0 155--158, sep 1989.
+\newblock ISSN 0340-6717.
+\newblock \doi{10.1007/BF00286709}.
+\newblock URL \url{http://link.springer.com/10.1007/BF00286709}.
+
+\bibitem[Győrffy et~al.(2015)Győrffy, Hatzis, Sanft, Hofstatter, Aktas, and
+  Pusztai]{Gyorffy2015}
+Bal{\'{a}}zs Győrffy, Christos Hatzis, Tara Sanft, Erin Hofstatter, Bilge
+  Aktas, and Lajos Pusztai.
+\newblock {Multigene prognostic tests in breast cancer: past, present, future.}
+\newblock \emph{Breast cancer research : BCR}, 17\penalty0 (1):\penalty0 11,
+  jan 2015.
+\newblock ISSN 1465-542X.
+\newblock \doi{10.1186/s13058-015-0514-2}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/25848861
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4307898}.
+
+\bibitem[Hanahan and Weinberg(2000)]{Hanahan2000}
+D~Hanahan and R~A Weinberg.
+\newblock {The hallmarks of cancer.}
+\newblock \emph{Cell}, 100\penalty0 (1):\penalty0 57--70, jan 2000.
+\newblock ISSN 0092-8674.
+\newblock \doi{10.1016/S0092-8674(00)81683-9}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/10647931}.
+
+\bibitem[Hanahan and Coussens(2012)]{Hanahan2012}
+Douglas Hanahan and Lisa M. Coussens.
+\newblock {Accessories to the Crime: Functions of Cells Recruited to the Tumor
+  Microenvironment}.
+\newblock \emph{Cancer Cell}, 21\penalty0 (3):\penalty0 309--322, mar 2012.
+\newblock ISSN 15356108.
+\newblock \doi{10.1016/j.ccr.2012.02.022}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/22439926
+  http://linkinghub.elsevier.com/retrieve/pii/S1535610812000827}.
+
+\bibitem[Harris et~al.(2016)Harris, Ismaila, McShane, Andre, Collyar,
+  Gonzalez-Angulo, Hammond, Kuderer, Liu, Mennel, {Van Poznak}, Bast, Hayes,
+  and {American Society of Clinical Oncology}]{Harris2016}
+Lyndsay~N. Harris, Nofisat Ismaila, Lisa~M. McShane, Fabrice Andre, Deborah~E.
+  Collyar, Ana~M. Gonzalez-Angulo, Elizabeth~H. Hammond, Nicole~M. Kuderer,
+  Minetta~C. Liu, Robert~G. Mennel, Catherine {Van Poznak}, Robert~C. Bast,
+  Daniel~F. Hayes, and {American Society of Clinical Oncology}.
+\newblock {Use of Biomarkers to Guide Decisions on Adjuvant Systemic Therapy
+  for Women With Early-Stage Invasive Breast Cancer: American Society of
+  Clinical Oncology Clinical Practice Guideline}.
+\newblock \emph{Journal of Clinical Oncology}, 34\penalty0 (10):\penalty0
+  1134--1150, apr 2016.
+\newblock ISSN 0732-183X.
+\newblock \doi{10.1200/JCO.2015.65.2289}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/26858339
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4933134
+  http://ascopubs.org/doi/10.1200/JCO.2015.65.2289}.
+
+\bibitem[Heng et~al.(2008)Heng, Painter, Elpek, Lukacs-Kornek, Mauermann,
+  Turley, Koller, Kim, Wagers, Asinovski, Davis, Fassett, Feuerer, Gray,
+  Haxhinasto, Hill, Hyatt, Laplace, Leatherbee, Mathis, Benoist, Jianu,
+  Laidlaw, Best, Knell, Goldrath, Jarjoura, Sun, Zhu, Lanier, Ergun, Li,
+  Collins, Shinton, Hardy, Friedline, Sylvia, and Kang]{Heng2008}
+Tracy S~P Heng, Michio~W Painter, Kutlu Elpek, Veronika Lukacs-Kornek, Nora
+  Mauermann, Shannon~J Turley, Daphne Koller, Francis~S Kim, Amy~J Wagers,
+  Natasha Asinovski, Scott Davis, Marlys Fassett, Markus Feuerer, Daniel H~D
+  Gray, Sokol Haxhinasto, Jonathan~A Hill, Gordon Hyatt, Catherine Laplace,
+  Kristen Leatherbee, Diane Mathis, Christophe Benoist, Radu Jianu, David~H
+  Laidlaw, J~Adam Best, Jamie Knell, Ananda~W Goldrath, Jessica Jarjoura,
+  Joseph~C Sun, Yanan Zhu, Lewis~L Lanier, Ayla Ergun, Zheng Li, James~J
+  Collins, Susan~A Shinton, Richard~R Hardy, Randall Friedline, Katelyn Sylvia,
+  and Joonsoo Kang.
+\newblock {The Immunological Genome Project: networks of gene expression in
+  immune cells}.
+\newblock \emph{Nature Immunology}, 9\penalty0 (10):\penalty0 1091--1094, oct
+  2008.
+\newblock ISSN 1529-2908.
+\newblock \doi{10.1038/ni1008-1091}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/18800157
+  http://www.nature.com/doifinder/10.1038/ni1008-1091}.
+
+\bibitem[Herbst et~al.(2014)Herbst, Soria, Kowanetz, Fine, Hamid, Gordon,
+  Sosman, McDermott, Powderly, Gettinger, Kohrt, Horn, Lawrence, Rost, Leabman,
+  Xiao, Mokatrin, Koeppen, Hegde, Mellman, Chen, and Hodi]{Herbst2014}
+Roy~S. Herbst, Jean-Charles Soria, Marcin Kowanetz, Gregg~D. Fine, Omid Hamid,
+  Michael~S. Gordon, Jeffery~A. Sosman, David~F. McDermott, John~D. Powderly,
+  Scott~N. Gettinger, Holbrook E.~K. Kohrt, Leora Horn, Donald~P. Lawrence,
+  Sandra Rost, Maya Leabman, Yuanyuan Xiao, Ahmad Mokatrin, Hartmut Koeppen,
+  Priti~S. Hegde, Ira Mellman, Daniel~S. Chen, and F.~Stephen Hodi.
+\newblock {Predictive correlates of response to the anti-PD-L1 antibody
+  MPDL3280A in cancer patients}.
+\newblock \emph{Nature}, 515\penalty0 (7528):\penalty0 563--567, nov 2014.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/nature14011}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/25428504
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4836193
+  http://www.nature.com/articles/nature14011}.
+
+\bibitem[Institute(2017)]{NCI2018}
+National~Cancer Institute.
+\newblock Types of cancer treatment, 2017.
+\newblock URL \url{https://www.cancer.gov/about-cancer/treatment/types}.
+
+\bibitem[Itadani et~al.(2008)Itadani, Mizuarai, and Kotani]{Itadani2008}
+Hiraku Itadani, Shinji Mizuarai, and Hidehito Kotani.
+\newblock {Can Systems Biology Understand Pathway Activation? Gene Expression
+  Signatures as Surrogate Markers for Understanding the Complexity of Pathway
+  Activation}.
+\newblock \emph{Current Genomics}, 9\penalty0 (5):\penalty0 349--360, aug 2008.
+\newblock ISSN 13892029.
+\newblock \doi{10.2174/138920208785133235}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/19517027
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC2694555
+  http://www.eurekaselect.com/openurl/content.php?genre=article{\&}issn=1389-2029{\&}volume=9{\&}issue=5{\&}spage=349}.
+
+\bibitem[Jackson et~al.(2016)Jackson, Rafiq, and Brentjens]{Jackson2016}
+Hollie~J. Jackson, Sarwish Rafiq, and Renier~J. Brentjens.
+\newblock {Driving CAR T-cells forward}, 2016.
+\newblock ISSN 17594782.
+
+\bibitem[Jeschke et~al.(2017)Jeschke, Bizet, Desmedt, Calonne, Dedeurwaerder,
+  Garaud, Koch, Larsimont, Salgado, {Van den Eynden}, {Willard Gallo},
+  Bontempi, Defrance, Sotiriou, and Fuks]{Jeschke2017}
+Jana Jeschke, Martin Bizet, Christine Desmedt, Emilie Calonne, Sarah
+  Dedeurwaerder, Soizic Garaud, Alexander Koch, Denis Larsimont, Roberto
+  Salgado, Gert {Van den Eynden}, Karen {Willard Gallo}, Gianluca Bontempi,
+  Matthieu Defrance, Christos Sotiriou, and Fran{\c{c}}ois Fuks.
+\newblock {DNA methylation–based immune response signature improves patient
+  diagnosis in multiple cancers}.
+\newblock \emph{Journal of Clinical Investigation}, 127\penalty0 (8):\penalty0
+  3090--3102, jul 2017.
+\newblock ISSN 0021-9738.
+\newblock \doi{10.1172/JCI91095}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/28714863
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC5531413
+  https://www.jci.org/articles/view/91095}.
+
+\bibitem[Kornstein et~al.(1983)Kornstein, Brooks, and Elder]{Kornstein1983}
+M~J Kornstein, J~S Brooks, and D~E Elder.
+\newblock {Immunoperoxidase localization of lymphocyte subsets in the host
+  response to melanoma and nevi.}
+\newblock \emph{Cancer research}, 43\penalty0 (6):\penalty0 2749--53, jun 1983.
+\newblock ISSN 0008-5472.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/6342758}.
+
+\bibitem[Kuperstein et~al.(2015)Kuperstein, Bonnet, Nguyen, Cohen, Viara,
+  Grieco, Fourquet, Calzone, Russo, Kondratova, Dutreix, Barillot, and
+  Zinovyev]{Kuperstein2015}
+I~Kuperstein, E~Bonnet, H-A Nguyen, D~Cohen, E~Viara, L~Grieco, S~Fourquet,
+  L~Calzone, C~Russo, M~Kondratova, M~Dutreix, E~Barillot, and A~Zinovyev.
+\newblock {Atlas of Cancer Signalling Network: a systems biology resource for
+  integrative analysis of cancer data with Google Maps}.
+\newblock \emph{Oncogenesis}, 4\penalty0 (7):\penalty0 e160--e160, jul 2015.
+\newblock ISSN 2157-9024.
+\newblock \doi{10.1038/oncsis.2015.19}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/26192618
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4521180
+  http://www.nature.com/articles/oncsis201519}.
+
+\bibitem[Kuperstein et~al.(2013)Kuperstein, Cohen, Pook, Viara, Calzone,
+  Barillot, and Zinovyev]{Kuperstein2013}
+Inna Kuperstein, David~PA Cohen, Stuart Pook, Eric Viara, Laurence Calzone,
+  Emmanuel Barillot, and Andrei Zinovyev.
+\newblock {NaviCell: a web-based environment for navigation, curation and
+  maintenance of large molecular interaction maps}.
+\newblock \emph{BMC Systems Biology}, 7\penalty0 (1):\penalty0 100, oct 2013.
+\newblock ISSN 1752-0509.
+\newblock \doi{10.1186/1752-0509-7-100}.
+\newblock URL
+  \url{http://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-7-100}.
+
+\bibitem[Ledford(2015)]{Ledford2015}
+Heidi Ledford.
+\newblock {How to solve the world's biggest problems}.
+\newblock \emph{Nature}, 525\penalty0 (7569):\penalty0 308--311, sep 2015.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/525308a}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/525308a}.
+
+\bibitem[Leung et~al.(1989)Leung, Cachianes, Kuang, Goeddel, and
+  Ferrara]{Leung1989}
+D.~Leung, G~Cachianes, W.~Kuang, D.~Goeddel, and N~Ferrara.
+\newblock {Vascular endothelial growth factor is a secreted angiogenic
+  mitogen}.
+\newblock \emph{Science}, 246\penalty0 (4935):\penalty0 1306--1309, 1989.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.2479986}.
+\newblock URL \url{http://www.sciencemag.org/cgi/doi/10.1126/science.2479986}.
+
+\bibitem[Liu et~al.(2008)Liu, Campen, Huang, Peng, Ye, Palakal, Dunker, Xia,
+  and Li]{Liu2008}
+Jiangang Liu, Andrew Campen, Shuguang Huang, Sheng-Bin Peng, Xiang Ye, Mathew
+  Palakal, A~Keith Dunker, Yuni Xia, and Shuyu Li.
+\newblock {Identification of a gene signature in cell cycle pathway for breast
+  cancer prognosis using gene expression profiling data}.
+\newblock \emph{BMC Medical Genomics}, 1\penalty0 (1):\penalty0 39, dec 2008.
+\newblock ISSN 1755-8794.
+\newblock \doi{10.1186/1755-8794-1-39}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/18786252
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC2551605
+  http://bmcmedgenomics.biomedcentral.com/articles/10.1186/1755-8794-1-39}.
+
+\bibitem[Lyons et~al.(2017)Lyons, Wu, Overwijk, Baggerly, and Sood]{Lyons2017}
+Yasmin~A Lyons, Sherry~Y Wu, Willem~W Overwijk, Keith~A Baggerly, and Anil~K
+  Sood.
+\newblock {Immune cell profiling in cancer: molecular approaches to cell-
+  specific identification}.
+\newblock \emph{npj Precision Oncology}, 1, 2017.
+\newblock \doi{10.1038/s41698-017-0031-0}.
+\newblock URL \url{https://www.nature.com/articles/s41698-017-0031-0.pdf}.
+
+\bibitem[Marquez-Medina et~al.(2012)Marquez-Medina, Salla-Fortuny, and
+  Salud-Salvia]{Marquez-Medina2012}
+Diego Marquez-Medina, Joel Salla-Fortuny, and Antonieta Salud-Salvia.
+\newblock {Role of gamma-delta T-cells in cancer. Another opening door to
+  immunotherapy}.
+\newblock \emph{Clinical and Translational Oncology}, 14\penalty0
+  (12):\penalty0 891--895, dec 2012.
+\newblock ISSN 1699-048X.
+\newblock \doi{10.1007/s12094-012-0935-7}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/23054752
+  http://link.springer.com/10.1007/s12094-012-0935-7}.
+
+\bibitem[Michiels et~al.(2016)Michiels, Tern{\`{e}}s, and Rotolo]{Michiels2016}
+S.~Michiels, N.~Tern{\`{e}}s, and F.~Rotolo.
+\newblock {Statistical controversies in clinical research: prognostic gene
+  signatures are not (yet) useful in clinical practice}.
+\newblock \emph{Annals of Oncology}, 27\penalty0 (12):\penalty0 2160--2167, dec
+  2016.
+\newblock ISSN 0923-7534.
+\newblock \doi{10.1093/annonc/mdw307}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/27634691
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC5178139
+  https://academic.oup.com/annonc/article-lookup/doi/10.1093/annonc/mdw307}.
+
+\bibitem[Mody et~al.(2015)Mody, Wu, Lonigro, Cao, Roychowdhury, Vats, Frank,
+  Prensner, Asangani, Palanisamy, Dillman, Rabah, Kunju, Everett, Raymond,
+  Ning, Su, Wang, Stoffel, Innis, Roberts, Robertson, Yanik, Chamdin, Connelly,
+  Choi, Harris, Kitko, Rao, Levine, Castle, Hutchinson, Talpaz, Robinson, and
+  Chinnaiyan]{Mody2015}
+Rajen~J. Mody, Yi-Mi Wu, Robert~J. Lonigro, Xuhong Cao, Sameek Roychowdhury,
+  Pankaj Vats, Kevin~M. Frank, John~R. Prensner, Irfan Asangani, Nallasivam
+  Palanisamy, Jonathan~R. Dillman, Raja~M. Rabah, Laxmi~Priya Kunju, Jessica
+  Everett, Victoria~M. Raymond, Yu~Ning, Fengyun Su, Rui Wang, Elena~M.
+  Stoffel, Jeffrey~W. Innis, J.~Scott Roberts, Patricia~L. Robertson, Gregory
+  Yanik, Aghiad Chamdin, James~A. Connelly, Sung Choi, Andrew~C. Harris, Carrie
+  Kitko, Rama~Jasty Rao, John~E. Levine, Valerie~P. Castle, Raymond~J.
+  Hutchinson, Moshe Talpaz, Dan~R. Robinson, and Arul~M. Chinnaiyan.
+\newblock {Integrative Clinical Sequencing in the Management of Refractory or
+  Relapsed Cancer in Youth}.
+\newblock \emph{JAMA}, 314\penalty0 (9):\penalty0 913, sep 2015.
+\newblock ISSN 0098-7484.
+\newblock \doi{10.1001/jama.2015.10080}.
+\newblock URL
+  \url{http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.2015.10080}.
+
+\bibitem[Naito et~al.(1998)Naito, Saito, Shiiba, Ohuchi, Saigenji, Nagura, and
+  Ohtani]{Naito1998}
+Y~Naito, K~Saito, K~Shiiba, A~Ohuchi, K~Saigenji, H~Nagura, and H~Ohtani.
+\newblock {CD8+ T cells infiltrated within cancer cell nests as a prognostic
+  factor in human colorectal cancer.}
+\newblock \emph{Cancer research}, 58\penalty0 (16):\penalty0 3491--4, aug 1998.
+\newblock ISSN 0008-5472.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/9721846}.
+
+\bibitem[NPR(2010{\natexlab{a}})]{NPR2010}
+NPR.
+\newblock {Science Diction: The Origin Of The Word 'Cancer' : NPR},
+  2010{\natexlab{a}}.
+\newblock URL
+  \url{https://www.npr.org/templates/story/story.php?storyId=130754101}.
+
+\bibitem[NPR(2010{\natexlab{b}})]{RamosVara2010}
+NPR.
+\newblock {Science Diction: The Origin Of The Word 'Cancer'},
+  2010{\natexlab{b}}.
+\newblock URL
+  \url{https://www.npr.org/templates/story/story.php?storyId=130754101}.
+
+\bibitem[Oberg et~al.(2016)Oberg, {Glade Bender}, Sulis, Pendrick, Sireci,
+  Hsiao, Turk, {Dela Cruz}, Hibshoosh, Remotti, Zylber, Pang, Diolaiti, Koval,
+  Andrews, Garvin, Yamashiro, Chung, Emerson, Nagy, Mansukhani, and
+  Kung]{Oberg2016}
+Jennifer~A. Oberg, Julia~L. {Glade Bender}, Maria~Luisa Sulis, Danielle
+  Pendrick, Anthony~N. Sireci, Susan~J. Hsiao, Andrew~T. Turk, Filemon~S. {Dela
+  Cruz}, Hanina Hibshoosh, Helen Remotti, Rebecca~J. Zylber, Jiuhong Pang,
+  Daniel Diolaiti, Carrie Koval, Stuart~J. Andrews, James~H. Garvin, Darrell~J.
+  Yamashiro, Wendy~K. Chung, Stephen~G. Emerson, Peter~L. Nagy, Mahesh~M.
+  Mansukhani, and Andrew~L. Kung.
+\newblock {Implementation of next generation sequencing into pediatric
+  hematology-oncology practice: moving beyond actionable alterations}.
+\newblock \emph{Genome Medicine}, 8\penalty0 (1):\penalty0 133, dec 2016.
+\newblock ISSN 1756-994X.
+\newblock \doi{10.1186/s13073-016-0389-6}.
+\newblock URL
+  \url{http://genomemedicine.biomedcentral.com/articles/10.1186/s13073-016-0389-6}.
+
+\bibitem[of~Health and Services(2015)]{FDACTLA4}
+U.S.~Department of~Health and Human Services.
+\newblock Fda approves yervoy to reduce the risk of melanoma returning after
+  surgery, 2015.
+\newblock URL
+  \url{https://www.fda.gov/NewsEvents/Newsroom/PressAnnouncements/ucm469944.htm}.
+
+\bibitem[of~Health and Services(2016{\natexlab{a}})]{FDAPDL1Bladder}
+U.S.~Department of~Health and Human Services.
+\newblock Fda approves new, targeted treatment for bladder cancer,
+  2016{\natexlab{a}}.
+\newblock URL
+  \url{https://www.fda.gov/newsevents/newsroom/pressannouncements/ucm501762.htm}.
+
+\bibitem[of~Health and Services(2016{\natexlab{b}})]{FDAPDL1NSCLC}
+U.S.~Department of~Health and Human Services.
+\newblock Pembrolizumab (keytruda) checkpoint inhibitor, 2016{\natexlab{b}}.
+\newblock URL
+  \url{https://www.fda.gov/drugs/informationondrugs/approveddrugs/ucm526430.htm}.
+
+\bibitem[of~Health and Services(2017{\natexlab{a}})]{FDACARTALL}
+U.S.~Department of~Health and Human Services.
+\newblock Fda approval brings first gene therapy to the united states,
+  2017{\natexlab{a}}.
+\newblock URL
+  \url{https://www.fda.gov/NewsEvents/Newsroom/PressAnnouncements/ucm574058.htm}.
+
+\bibitem[of~Health and Services(2017{\natexlab{b}})]{FDACARTadult}
+U.S.~Department of~Health and Human Services.
+\newblock Fda approves car-t cell therapy to treat adults with certain types of
+  large b-cell lymphoma, 2017{\natexlab{b}}.
+\newblock URL
+  \url{https://www.fda.gov/newsevents/newsroom/pressannouncements/ucm581216.htm}.
+
+\bibitem[Pag{\`{e}}s et~al.(2005)Pag{\`{e}}s, Berger, Camus, Sanchez-Cabo,
+  Costes, Molidor, Mlecnik, Kirilovsky, Nilsson, Damotte, Meatchi, Bruneval,
+  Cugnenc, Trajanoski, Fridman, and Galon]{Pages2005}
+Franck Pag{\`{e}}s, Anne Berger, Matthieu Camus, Fatima Sanchez-Cabo, Anne
+  Costes, Robert Molidor, Bernhard Mlecnik, Amos Kirilovsky, Malin Nilsson,
+  Diane Damotte, Tchao Meatchi, Patrick Bruneval, Paul-Henri Cugnenc, Zlatko
+  Trajanoski, Wolf-Herman Fridman, and J{\'{e}}r{\^{o}}me Galon.
+\newblock {Effector Memory T Cells, Early Metastasis, and Survival in
+  Colorectal Cancer}.
+\newblock \emph{New England Journal of Medicine}, 353\penalty0 (25):\penalty0
+  2654--2666, dec 2005.
+\newblock ISSN 0028-4793.
+\newblock \doi{10.1056/NEJMoa051424}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16371631
+  http://www.nejm.org/doi/abs/10.1056/NEJMoa051424}.
+
+\bibitem[Paget(1889)]{Paget1889}
+Stephen Paget.
+\newblock {THE DISTRIBUTION OF SECONDARY GROWTHS IN CANCER OF THE BREAST.}
+\newblock \emph{The Lancet}, 133\penalty0 (3421):\penalty0 571--573, mar 1889.
+\newblock ISSN 01406736.
+\newblock \doi{10.1016/S0140-6736(00)49915-0}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0140673600499150}.
+
+\bibitem[Palucka and Banchereau(2013)]{Palucka2013}
+Karolina Palucka and Jacques Banchereau.
+\newblock {Dendritic-Cell-Based Therapeutic Cancer Vaccines}, 2013.
+\newblock ISSN 10747613.
+
+\bibitem[Papalexi and Satija(2017)]{Papalexi2017}
+Efthymia Papalexi and Rahul Satija.
+\newblock {Single-cell RNA sequencing to explore immune cell heterogeneity}.
+\newblock \emph{Nature Reviews Immunology}, 18\penalty0 (1):\penalty0 35--45,
+  2017.
+\newblock ISSN 1474-1733.
+\newblock \doi{10.1038/nri.2017.76}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/nri.2017.76}.
+
+\bibitem[Parker et~al.(2009)Parker, Mullins, Cheang, Leung, Voduc, Vickery,
+  Davies, Fauron, He, Hu, Quackenbush, Stijleman, Palazzo, Marron, Nobel,
+  Mardis, Nielsen, Ellis, Perou, and Bernard]{Parker2009}
+Joel~S Parker, Michael Mullins, Maggie C~U Cheang, Samuel Leung, David Voduc,
+  Tammi Vickery, Sherri Davies, Christiane Fauron, Xiaping He, Zhiyuan Hu,
+  John~F Quackenbush, Inge~J Stijleman, Juan Palazzo, J~S Marron, Andrew~B
+  Nobel, Elaine Mardis, Torsten~O Nielsen, Matthew~J Ellis, Charles~M Perou,
+  and Philip~S Bernard.
+\newblock {Supervised risk predictor of breast cancer based on intrinsic
+  subtypes.}
+\newblock \emph{Journal of clinical oncology : official journal of the American
+  Society of Clinical Oncology}, 27\penalty0 (8):\penalty0 1160--7, mar 2009.
+\newblock ISSN 1527-7755.
+\newblock \doi{10.1200/JCO.2008.18.1370}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/19204204
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC2667820}.
+
+\bibitem[Perkel(2017)]{Perkel2017}
+Jeffrey~M. Perkel.
+\newblock {Single-cell sequencing made simple}.
+\newblock \emph{Nature}, 547\penalty0 (7661):\penalty0 125--126, jul 2017.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/547125a}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/547125a}.
+
+\bibitem[Pitt et~al.(2016)Pitt, V{\'{e}}tizou, Daill{\`{e}}re, Roberti,
+  Yamazaki, Routy, Lepage, Boneca, Chamaillard, Kroemer, and
+  Zitvogel]{Pitt2016}
+Jonathan~M Pitt, Marie V{\'{e}}tizou, Romain Daill{\`{e}}re, Mar{\'{i}}a~Paula
+  Roberti, Takahiro Yamazaki, Bertrand Routy, Patricia Lepage, Ivo~Gomperts
+  Boneca, Mathias Chamaillard, Guido Kroemer, and Laurence Zitvogel.
+\newblock {Resistance Mechanisms to Immune-Checkpoint Blockade in Cancer:
+  Tumor-Intrinsic and -Extrinsic Factors.}
+\newblock \emph{Immunity}, 44\penalty0 (6):\penalty0 1255--69, jun 2016.
+\newblock ISSN 1097-4180.
+\newblock \doi{10.1016/j.immuni.2016.06.001}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/27332730}.
+
+\bibitem[Ponting(2017)]{Ponting2017}
+Chris~P. Ponting.
+\newblock {Big knowledge from big data in functional genomics}.
+\newblock \emph{Emerging Topics in Life Sciences}, 1\penalty0 (3):\penalty0
+  245--248, nov 2017.
+\newblock ISSN 2397-8554.
+\newblock \doi{10.1042/ETLS20170129}.
+\newblock URL
+  \url{http://www.emergtoplifesci.org/lookup/doi/10.1042/ETLS20170129}.
+
+\bibitem[Predina et~al.(2013)Predina, Eruslanov, Judy, Kapoor, Cheng, Wang,
+  Sun, Moon, Fridlender, Albelda, and Singhal]{Predina2013}
+J.~Predina, E.~Eruslanov, B.~Judy, V.~Kapoor, G.~Cheng, L.-C. Wang, J.~Sun,
+  E.~K. Moon, Z.~G. Fridlender, S.~Albelda, and S.~Singhal.
+\newblock {Changes in the local tumor microenvironment in recurrent cancers may
+  explain the failure of vaccines after surgery}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 110\penalty0
+  (5):\penalty0 E415--E424, 2013.
+\newblock ISSN 0027-8424.
+\newblock \doi{10.1073/pnas.1211850110}.
+\newblock URL \url{http://www.pnas.org/cgi/doi/10.1073/pnas.1211850110}.
+
+\bibitem[Qian and Pollard(2010)]{Qian2010}
+Bin~Z. Qian and Jeffrey~W. Pollard.
+\newblock {Macrophage Diversity Enhances Tumor Progression and Metastasis},
+  2010.
+\newblock ISSN 00928674.
+
+\bibitem[Quail and Joyce(2013)]{Quail2013}
+D~F Quail and J~A Joyce.
+\newblock {Microenvironmental regulation of tumor progression and metastasis}.
+\newblock \emph{Nat Med}, 19\penalty0 (11):\penalty0 1423--1437, 2013.
+\newblock ISSN 1546-170X.
+\newblock \doi{10.1038/nm.3394}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/24202395}.
+
+\bibitem[Rizvi et~al.(2015)Rizvi, Hellmann, Snyder, Kvistborg, Makarov, Havel,
+  Lee, Yuan, Wong, Ho, Miller, Rekhtman, Moreira, Ibrahim, Bruggeman, Gasmi,
+  Zappasodi, Maeda, Sander, Garon, Merghoub, Wolchok, Schumacher, and
+  Chan]{Rizvi2015}
+Naiyer~A. Rizvi, Matthew~D. Hellmann, Alexandra Snyder, Pia Kvistborg, Vladimir
+  Makarov, Jonathan~J. Havel, William Lee, Jianda Yuan, Phillip Wong, Teresa~S.
+  Ho, Martin~L. Miller, Natasha Rekhtman, Andre~L. Moreira, Fawzia Ibrahim,
+  Cameron Bruggeman, Billel Gasmi, Roberta Zappasodi, Yuka Maeda, Chris Sander,
+  Edward~B. Garon, Taha Merghoub, Jedd~D. Wolchok, Ton~N. Schumacher, and
+  Timothy~A. Chan.
+\newblock {Mutational landscape determines sensitivity to PD-1 blockade in
+  non-small cell lung cancer}.
+\newblock \emph{Science}, 348\penalty0 (6230):\penalty0 124--128, 2015.
+\newblock ISSN 10959203.
+\newblock \doi{10.1126/science.aaa1348}.
+
+\bibitem[Robinson et~al.(2017)Robinson, Wu, Lonigro, Vats, Cobain, Everett,
+  Cao, Rabban, Kumar-Sinha, Raymond, Schuetze, Alva, Siddiqui, Chugh, Worden,
+  Zalupski, Innis, Mody, Tomlins, Lucas, Baker, Ramnath, Schott, Hayes, Vijai,
+  Offit, Stoffel, Roberts, Smith, Kunju, Talpaz, Cie{\'{s}}lik, and
+  Chinnaiyan]{Robinson2017}
+Dan~R. Robinson, Yi-Mi Wu, Robert~J. Lonigro, Pankaj Vats, Erin Cobain, Jessica
+  Everett, Xuhong Cao, Erica Rabban, Chandan Kumar-Sinha, Victoria Raymond,
+  Scott Schuetze, Ajjai Alva, Javed Siddiqui, Rashmi Chugh, Francis Worden,
+  Mark~M. Zalupski, Jeffrey Innis, Rajen~J. Mody, Scott~A. Tomlins, David
+  Lucas, Laurence~H. Baker, Nithya Ramnath, Ann~F. Schott, Daniel~F. Hayes,
+  Joseph Vijai, Kenneth Offit, Elena~M. Stoffel, J.~Scott Roberts, David~C.
+  Smith, Lakshmi~P. Kunju, Moshe Talpaz, Marcin Cie{\'{s}}lik, and Arul~M.
+  Chinnaiyan.
+\newblock {Integrative clinical genomics of metastatic cancer}.
+\newblock \emph{Nature}, 548\penalty0 (7667):\penalty0 297--303, aug 2017.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/nature23306}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/nature23306}.
+
+\bibitem[Ross et~al.(2008)Ross, Hatzis, Symmans, Pusztai, and
+  Hortobagyi]{Ross2008}
+J.~S. Ross, C.~Hatzis, W.~F. Symmans, L.~Pusztai, and G.~N. Hortobagyi.
+\newblock {Commercialized Multigene Predictors of Clinical Outcome for Breast
+  Cancer}.
+\newblock \emph{The Oncologist}, 13\penalty0 (5):\penalty0 477--493, may 2008.
+\newblock ISSN 1083-7159.
+\newblock \doi{10.1634/theoncologist.2007-0248}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/18515733
+  http://theoncologist.alphamedpress.org/cgi/doi/10.1634/theoncologist.2007-0248}.
+
+\bibitem[Rygaard and Povlsen(1976)]{Rygaard1976}
+Josrgen Rygaard and Carl~O. Povlsen.
+\newblock {The Nude Mouse vs. The Hypothesis of Immunological Surveillance}.
+\newblock \emph{Immunological Reviews}, 28\penalty0 (1):\penalty0 43--61, jan
+  1976.
+\newblock ISSN 0105-2896.
+\newblock \doi{10.1111/j.1600-065X.1976.tb00192.x}.
+\newblock URL \url{http://doi.wiley.com/10.1111/j.1600-065X.1976.tb00192.x}.
+
+\bibitem[Sagiv-Barfi et~al.(2018)Sagiv-Barfi, Czerwinski, Levy, Alam, Mayer,
+  Gambhir, and Levy]{Sagiv-Barfi2018}
+Idit Sagiv-Barfi, Debra~K. Czerwinski, Shoshana Levy, Israt~S. Alam, Aaron~T.
+  Mayer, Sanjiv~S. Gambhir, and Ronald Levy.
+\newblock {Eradication of spontaneous malignancy by local immunotherapy}.
+\newblock \emph{Science Translational Medicine}, 10\penalty0 (426):\penalty0
+  eaan4488, jan 2018.
+\newblock ISSN 1946-6234.
+\newblock \doi{10.1126/SCITRANSLMED.AAN4488}.
+\newblock URL \url{http://stm.sciencemag.org/content/10/426/eaan4488}.
+
+\bibitem[Satija and Shalek(2014)]{Satija2014}
+Rahul Satija and Alex~K. Shalek.
+\newblock {Heterogeneity in immune responses: from populations to single
+  cells}.
+\newblock \emph{Trends in Immunology}, 35\penalty0 (5):\penalty0 219--229, may
+  2014.
+\newblock ISSN 14714906.
+\newblock \doi{10.1016/j.it.2014.03.004}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/24746883
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4035247
+  http://linkinghub.elsevier.com/retrieve/pii/S1471490614000520}.
+
+\bibitem[Schelker et~al.(2017)Schelker, Feau, Du, Ranu, Klipp, Schoeberl,
+  MacBeath, Raue, Gavin, Schoeberl, Raue, MacBeath, and Raue]{Schelker2017}
+Max Schelker, Sonia Feau, Jinyan Du, Nav Ranu, Edda Klipp, Birgit Schoeberl,
+  Gavin MacBeath, Andreas Raue, MacBeath Gavin, Birgit Schoeberl, Andreas Raue,
+  Gavin MacBeath, and Andreas Raue.
+\newblock {Estimation of immune cell content in tumour tissue using single-cell
+  RNA-seq data}.
+\newblock \emph{Nature Communications}, 8\penalty0 (1):\penalty0 2032, dec
+  2017.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-017-02289-3}.
+\newblock URL \url{http://www.nature.com/articles/s41467-017-02289-3
+  http://dx.doi.org/10.1038/s41467-017-02289-3}.
+
+\bibitem[Sebeok(1976)]{Sebeok1976}
+Thomas~A Sebeok.
+\newblock {DISCUSSION}.
+\newblock \emph{Annals of the New York Academy of Sciences}, 280\penalty0 (1
+  Origins and E):\penalty0 481, oct 1976.
+\newblock ISSN 0077-8923.
+\newblock \doi{10.1111/j.1749-6632.1976.tb25511.x}.
+\newblock URL \url{http://doi.wiley.com/10.1111/j.1749-6632.1976.tb25511.x}.
+
+\bibitem[Slater(2013)]{Slater2013}
+Matthew~H. Slater.
+\newblock {Cell Types as Natural Kinds}.
+\newblock \emph{Biological Theory}, 7\penalty0 (2):\penalty0 170--179, feb
+  2013.
+\newblock ISSN 1555-5542.
+\newblock \doi{10.1007/s13752-012-0084-9}.
+\newblock URL \url{http://link.springer.com/10.1007/s13752-012-0084-9}.
+
+\bibitem[Slavicek(2012)]{Slavicek2012}
+Gregor Slavicek.
+\newblock {Interdisciplinary -A Historical Reflection}.
+\newblock \emph{International Journal of Humanities and Social Science},
+  2\penalty0 (20), 2012.
+\newblock URL
+  \url{http://www.ijhssnet.com/journals/Vol{\_}2{\_}No{\_}20{\_}Special{\_}Issue{\_}October{\_}2012/10.pdf}.
+
+\bibitem[Sonachalam et~al.(2012)Sonachalam, Shen, Huang, and
+  Wu]{Sonachalam2012}
+Madhankumar Sonachalam, Jeffrey Shen, Hui Huang, and Xiaogang Wu.
+\newblock {Systems biology approach to identify gene network signatures for
+  colorectal cancer.}
+\newblock \emph{Frontiers in genetics}, 3:\penalty0 80, 2012.
+\newblock ISSN 1664-8021.
+\newblock \doi{10.3389/fgene.2012.00080}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/22629282
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC3354560}.
+
+\bibitem[Stewart et~al.(1995)Stewart, Tsai, Grayson, Henderson, and
+  Opelz]{Stewart1995}
+T.~Stewart, S.~CJ Tsai, H.~Grayson, R.~Henderson, and G.~Opelz.
+\newblock {Incidence of de-novo breast cancer in women chronically
+  immunosuppressed after organ transplantation}.
+\newblock \emph{The Lancet}, 346\penalty0 (8978):\penalty0 796--798, 1995.
+\newblock ISSN 01406736.
+\newblock \doi{10.1016/S0140-6736(95)91618-0}.
+
+\bibitem[Stutman(1974)]{Stutman1974}
+O~Stutman.
+\newblock {Tumor development after 3-methylcholanthrene in immunologically
+  deficient athymic-nude mice.}
+\newblock \emph{Science (New York, N.Y.)}, 183\penalty0 (4124):\penalty0
+  534--6, feb 1974.
+\newblock ISSN 0036-8075.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/4588620}.
+
+\bibitem[Subramanian et~al.(2005)Subramanian, Tamayo, Mootha, Mukherjee, Ebert,
+  Gillette, Paulovich, Pomeroy, Golub, Lander, and Mesirov]{Subramanian2005}
+Aravind Subramanian, Pablo Tamayo, Vamsi~K Mootha, Sayan Mukherjee, Benjamin~L
+  Ebert, Michael~A Gillette, Amanda Paulovich, Scott~L Pomeroy, Todd~R Golub,
+  Eric~S Lander, and Jill~P Mesirov.
+\newblock {Gene set enrichment analysis: a knowledge-based approach for
+  interpreting genome-wide expression profiles.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 102\penalty0 (43):\penalty0 15545--50, oct 2005.
+\newblock ISSN 0027-8424.
+\newblock \doi{10.1073/pnas.0506580102}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16199517
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC1239896}.
+
+\bibitem[Sudhakar(2009)]{Sudhakar2009}
+Akulapalli Sudhakar.
+\newblock {History of Cancer, Ancient and Modern Treatment Methods.}
+\newblock \emph{Journal of cancer science {\&} therapy}, 1\penalty0
+  (2):\penalty0 1--4, dec 2009.
+\newblock ISSN 1948-5956.
+\newblock \doi{10.4172/1948-5956.100000e2}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/20740081
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC2927383}.
+
+\bibitem[Talmadge and Gabrilovich(2013)]{Talmadge2013}
+J~E Talmadge and D~I Gabrilovich.
+\newblock {History of myeloid-derived suppressor cells}.
+\newblock \emph{Nat Rev Cancer}, 13\penalty0 (10):\penalty0 739--752, 2013.
+\newblock ISSN 1474-1768.
+\newblock \doi{10.1038/nrc3581}.
+\newblock URL \url{http://www.nature.com/nrc/journal/v13/n10/pdf/nrc3581.pdf}.
+
+\bibitem[Tamborero et~al.(2018)Tamborero, Rubio-Perez, Mui{\~{n}}os,
+  Sabarinathan, Piulats, Muntasell, Dienstmann, Lopez-Bigas, and
+  Gonzalez-Perez]{Tamborero2018}
+David Tamborero, Carlota Rubio-Perez, Ferran Mui{\~{n}}os, Radhakrishnan
+  Sabarinathan, Josep~Maria Piulats, Aura Muntasell, Rodrigo Dienstmann, Nuria
+  Lopez-Bigas, and Abel Gonzalez-Perez.
+\newblock {A pan-cancer landscape of interactions between solid tumors and
+  infiltrating immune cell populations.}
+\newblock \emph{Clinical cancer research : an official journal of the American
+  Association for Cancer Research}, page clincanres.3509.2017, apr 2018.
+\newblock ISSN 1078-0432.
+\newblock \doi{10.1158/1078-0432.CCR-17-3509}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/29666300}.
+
+\bibitem[Taube et~al.(2017)Taube, Galon, Sholl, Rodig, Cottrell, Giraldo,
+  Baras, Patel, Anders, Rimm, and Cimino-Mathews]{Taube2017a}
+Janis~M Taube, J{\'{e}}r{\^{o}}me Galon, Lynette~M Sholl, Scott~J Rodig,
+  Tricia~R Cottrell, Nicolas~A Giraldo, Alexander~S Baras, Sanjay~S Patel,
+  Robert~A Anders, David~L Rimm, and Ashley Cimino-Mathews.
+\newblock {Implications of the tumor immune microenvironment for staging and
+  therapeutics}.
+\newblock \emph{Modern Pathology}, 2017.
+\newblock ISSN 0893-3952.
+\newblock \doi{10.1038/modpathol.2017.156}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/modpathol.2017.156}.
+
+\bibitem[Teng et~al.(2008)Teng, Swann, Koebel, Schreiber, and Smyth]{Teng2008}
+Michele W.~L. Teng, Jeremy~B. Swann, Catherine~M. Koebel, Robert~D. Schreiber,
+  and Mark~J. Smyth.
+\newblock {Immune-mediated dormancy: an equilibrium with cancer}.
+\newblock \emph{Journal of Leukocyte Biology}, 84\penalty0 (4):\penalty0
+  988--993, oct 2008.
+\newblock ISSN 07415400.
+\newblock \doi{10.1189/jlb.1107774}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/18515327
+  http://doi.wiley.com/10.1189/jlb.1107774}.
+
+\bibitem[Thorsson et~al.(2018)Thorsson, Gibbs, Brown, Wolf, Bortone, {Ou Yang},
+  Porta-Pardo, Gao, (...), Vincent, and llya Shmulevich]{Thorsson2018}
+V{\'{e}}steinn Thorsson, David~L Gibbs, Scott~D Brown, Denise Wolf, Dante~S
+  Bortone, Tai-Hsien {Ou Yang}, Eduard Porta-Pardo, Galen~F Gao, Plaisier
+  (...), Benjamin~G. Vincent, and llya Shmulevich.
+\newblock {The Immune Landscape of Cancer.}
+\newblock \emph{Immunity}, 48\penalty0 (4):\penalty0 812--830.e14, apr 2018.
+\newblock ISSN 1097-4180.
+\newblock \doi{10.1016/j.immuni.2018.03.023}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/29628290}.
+
+\bibitem[Tirosh et~al.(2016)Tirosh, Izar, Prakadan, Wadsworth, Treacy,
+  Trombetta, Rotem, Rodman, Lian, Murphy, Fallahi-Sichani, Dutton-Regester,
+  Lin, Cohen, Shah, Lu, Genshaft, Hughes, Ziegler, Kazer, Gaillard, Kolb,
+  Villani, Johannessen, Andreev, {Van Allen}, Bertagnolli, Sorger, Sullivan,
+  Flaherty, Frederick, Jan{\'{e}}-Valbuena, Yoon, Rozenblatt-Rosen, Shalek,
+  Regev, and Garraway]{Tirosh2016}
+Itay Tirosh, Benjamin Izar, Sanjay~M. Prakadan, Marc~H. Wadsworth, Daniel
+  Treacy, John~J. Trombetta, Asaf Rotem, Christopher Rodman, Christine Lian,
+  George Murphy, Mohammad Fallahi-Sichani, Ken Dutton-Regester, Jia~Ren Lin,
+  Ofir Cohen, Parin Shah, Diana Lu, Alex~S. Genshaft, Travis~K. Hughes,
+  Carly~G.K. Ziegler, Samuel~W. Kazer, Aleth Gaillard, Kellie~E. Kolb,
+  Alexandra~Chlo{\'{e}} Villani, Cory~M. Johannessen, Aleksandr~Y. Andreev,
+  Eliezer~M. {Van Allen}, Monica Bertagnolli, Peter~K. Sorger, Ryan~J.
+  Sullivan, Keith~T. Flaherty, Dennie~T. Frederick, Judit Jan{\'{e}}-Valbuena,
+  Charles~H. Yoon, Orit Rozenblatt-Rosen, Alex~K. Shalek, Aviv Regev, and
+  Levi~A. Garraway.
+\newblock {Dissecting the multicellular ecosystem of metastatic melanoma by
+  single-cell RNA-seq}.
+\newblock \emph{Science}, 352\penalty0 (6282):\penalty0 189--196, 2016.
+\newblock ISSN 10959203.
+\newblock \doi{10.1126/science.aad0501}.
+
+\bibitem[{Van Noorden}(2015)]{VanNoorden2015}
+Richard {Van Noorden}.
+\newblock {Interdisciplinary research by the numbers}.
+\newblock \emph{Nature}, 525\penalty0 (7569):\penalty0 306--307, sep 2015.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/525306a}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/525306a}.
+
+\bibitem[{Van Pel} and Boon(1982)]{VanPel1982}
+A~{Van Pel} and T~Boon.
+\newblock {Protection against a nonimmunogenic mouse leukemia by an immunogenic
+  variant obtained by mutagenesis.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 79\penalty0 (15):\penalty0 4718--22, aug 1982.
+\newblock ISSN 0027-8424.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/6981814
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC346748}.
+
+\bibitem[Vandenbon et~al.(2016)Vandenbon, Dinh, Mikami, Kitagawa, Teraguchi,
+  Ohkura, and Sakaguchi]{Vandenbon2016}
+Alexis Vandenbon, Viet~H Dinh, Norihisa Mikami, Yohko Kitagawa, Shunsuke
+  Teraguchi, Naganari Ohkura, and Shimon Sakaguchi.
+\newblock {Immuno-Navigator, a batch-corrected coexpression database, reveals
+  cell type-specific gene networks in the immune system.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 113\penalty0 (17):\penalty0 E2393--402, apr 2016.
+\newblock ISSN 1091-6490.
+\newblock \doi{10.1073/pnas.1604351113}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/27078110
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4855614}.
+
+\bibitem[Velculescu et~al.(1997)Velculescu, Zhang, Zhou, Vogelstein, Basrai,
+  Bassett, Hieter, Vogelstein, and Kinzler]{Velculescu1997}
+V~E Velculescu, L~Zhang, W~Zhou, J~Vogelstein, M~A Basrai, D~E Bassett,
+  P~Hieter, B~Vogelstein, and K~W Kinzler.
+\newblock {Characterization of the yeast transcriptome.}
+\newblock \emph{Cell}, 88\penalty0 (2):\penalty0 243--51, jan 1997.
+\newblock ISSN 0092-8674.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/9008165}.
+
+\bibitem[Vesely et~al.(2011)Vesely, Kershaw, Schreiber, and Smyth]{Vesely2011}
+Matthew~D. Vesely, Michael~H. Kershaw, Robert~D. Schreiber, and Mark~J. Smyth.
+\newblock {Natural Innate and Adaptive Immunity to Cancer}.
+\newblock \emph{Annual Review of Immunology}, 29\penalty0 (1):\penalty0
+  235--271, apr 2011.
+\newblock ISSN 0732-0582.
+\newblock \doi{10.1146/annurev-immunol-031210-101324}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/21219185
+  http://www.annualreviews.org/doi/10.1146/annurev-immunol-031210-101324}.
+
+\bibitem[{Virchow Rudolf}(1847)]{VirchowRudolf1847}
+{Virchow Rudolf}.
+\newblock {Archiv für pathologische Anatomie und Physiologie und für
+  klinische Medizin.}, 1847.
+\newblock URL \url{file://catalog.hathitrust.org/Record/000493993
+  http://hdl.handle.net/2027/njp.32101076036878 (Bd.64 (1875))
+  http://hdl.handle.net/2027/uc1.31175008645106 (v.170 {\&}index v.161-170)
+  http://hdl.handle.net/2027/hvd.32044093331494 (Bd.111 (1888))
+  http://hdl.han}.
+
+\bibitem[Wolchok(2015)]{Wolchok2015}
+Jedd~D. Wolchok.
+\newblock {PD-1 Blockers}, 2015.
+\newblock ISSN 10974172.
+
+\bibitem[Zou et~al.(2016)Zou, Wolchok, and Chen]{Zou2016}
+Weiping Zou, Jedd~D. Wolchok, and Lieping Chen.
+\newblock {PD-L1 (B7-H1) and PD-1 pathway blockade for cancer therapy:
+  Mechanisms, response biomarkers, and combinations}.
+\newblock \emph{Science Translational Medicine}, 8\penalty0 (328), 2016.
+\newblock ISSN 19466242.
+\newblock \doi{10.1126/scitranslmed.aad7118}.
+
+\end{thebibliography}
