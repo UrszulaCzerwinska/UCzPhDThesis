@@ -16,8 +16,8 @@ lof: yes
 lot: yes        
 documentclass: book
 fontsize: 12pt
-bibliography: [00-Inter, 01-Intro, 02-MathIntro, packages, UCzcite]
-biblio-style: "nar"
+bibliography: [00-Inter, 01-Intro02, 02-MathIntro, packages, UCzcite]
+biblio-style: "plainnat"
 link-citations: true
 colorlinks: true
 geometry: "marginpar=2cm, top=3cm, bottom=4cm"

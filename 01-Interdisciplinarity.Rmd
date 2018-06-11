@@ -114,7 +114,7 @@ Why not all the labs are interdisciplinary?
 > *Scientists tend to resist interdisciplinary inquiries into their own territory. In many instances, such parochialism is founded on the fear that intrusion from other disciplines would compete unfairly for limited financial resources and thus diminish their own opportunity for research*
 >  															— [Hannes Alfvén](http://www.azquotes.com/author/28130-Hannes_Alfven) 
 
-Crossing frontiers is not an easy task, and it was quite difficult in its beginnings of modern interdisciplinarity. Some examples of early interdisciplinary efforts of 20th century are nicely described by Ledford et al. [@Ledford2015] in *Nature* special issue on [Interdisciplinarity](https://www.nature.com/news/interdisciplinarity-1.18295). It illustrates Theodore Brown in 1980s, while trying to organise a new interdisciplinary research project and reorganise university space to engage exchange between students of different faculties, he encounter a lot of reluctance.
+Crossing frontiers is not an easy task, and it was quite difficult in the beginnings of modern interdisciplinarity. Some examples of early interdisciplinary efforts of 20th century are nicely described by Ledford et al. [@Ledford2015] in *Nature* special issue on [Interdisciplinarity](https://www.nature.com/news/interdisciplinarity-1.18295). It illustrates Theodore Brown in 1980s, while trying to organise a new interdisciplinary research project and reorganise university space to engage exchange between students of different faculties, he encounter a lot of reluctance.
 
 > *And then there was the stigma. “Interdisciplinary research is for people who aren't good enough to make it in their own field,” an illustrious physicist chided* [@Ledford2015].
 
@@ -136,7 +136,7 @@ Bioinformatics and/or computational biology is an interesting case. Working in t
 
 From the chart (Fig. \@ref(fig:interdisciplinary)) we can see that Social Studies of Medicine seems to be the most interdisciplinary field. In general Biology, Health and Biomedical Sciences seem to be more open into flow of knowledge from other fields than humanities. On the extreme opposite of health, Clinical Medecine appears to be very conservative field.
 
-```{r interdisciplinary, fig.cap='(ref:interdisciplinary-caption)',fig.scap="Interdisciplnarity of different fields.", echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE, fig.align='center', out.width=size.fig}
+```{r interdisciplinary, fig.cap='(ref:interdisciplinary-caption)',fig.scap="Interdisciplnarity of different fields.", echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE, fig.align='center', out.width='90%'}
 if (is_html_output()){
   library(plotly)
 library(ggplot2)
@@ -230,7 +230,7 @@ I have spent void efforts working on a bulk transcriptomic data simulation frame
 
 In a parallel project, I worked on exploration of brand new data type: single cell transcriptomic (RNAseq) in the context of tumor microenvironment (see [Chapter 6](#map)). 
 
-We have also participated in Dream Idea Challenge, a project that aimed to put closer experimental and theoretical  researchers [@Azencourt2018][Annexe1](). 
+We have also participated in Dream Idea Challenge, a project that aimed to put closer experimental and theoretical  researchers [@Azencott2018][Annexe1](). 
 
 I have collaborated in numerous projects within and outside my team. Some of the projects resulted in publications, such as my work on analysing pDC subsets of X cancer [Annexe2](). Others are in still preparation.
 
@@ -252,14 +252,14 @@ As it is a fruit of an interdisciplinary work, I decided to introduce the topic 
 
 **RESULTS**
 
-* [Chapter 3]: Most Reproducible Transcriptome Dimension (MSTD)
-* [Chapter 4]: application of ICA-based deconvolution to six breast transcriptomes
+* [Chapter 3](): Most Reproducible Transcriptome Dimension (MSTD)
+* [Chapter 4](): application of ICA-based deconvolution to six breast transcriptomes
 * [Chapter 5](#sens): comparison of reproducibility of NMF and ICA methods
-* [Chapter 6]: DeconICA R package
-* [Chapter 7]: application of DeconICA R package and other tools to analyse >100 transcriptome datasets of bulk cancer transcriptomes
+* [Chapter 6](): DeconICA R package
+* [Chapter 7](): application of DeconICA R package and other tools to analyse >100 transcriptome datasets of bulk cancer transcriptomes
 * [Chapter 8](#map): study of immune cell types heterogeneity in tumor microenvironment using innate immune map and scRNAseq data
 
-**CONCLUSION**
+**DISCUSSION**
 
 * [Chapter 9](#conclusions): discussion, conclussions and perspectives
 

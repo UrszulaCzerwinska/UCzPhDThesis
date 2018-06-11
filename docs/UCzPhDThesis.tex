@@ -36,7 +36,7 @@
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage[numbers]{natbib}
-\bibliographystyle{nar}
+\bibliographystyle{plainnat}
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -314,20 +314,6 @@ Additionally, I used the ICA-derived metagenes as context-specific signatures in
  \vspace*{\fill}
 
 
-%Dédicace2
-\newpage
-\emph{Dédicace}
-\vspace*{\fill}
-
- \begin{quote}
-\emph{\textbf{And now, let's repeat the Non-Conformist Oath!\\
-I promise to be different!\\
-I promise to be unique!\\
-I promise not to repeat things other people say!}}\\
-— Steve Martin, \textit{A Wild and Crazy Guy (1978)}\\
- \end{quote}
-
- \vspace*{\fill}
 
 
 %Avertissement
@@ -360,6 +346,21 @@ Code de la Propriété Intellectuelle. Articles L 335.2-L 335.10}
 Merci tout le monde
 
 \end{titlepage}
+
+%Dédicace2
+\newpage
+\emph{Motto}
+\vspace*{\fill}
+
+ \begin{quote}
+\emph{\textbf{And now, let's repeat the Non-Conformist Oath!\\
+I promise to be different!\\
+I promise to be unique!\\
+I promise not to repeat things other people say!}}\\
+— Steve Martin, \textit{A Wild and Crazy Guy (1978)}\\
+ \end{quote}
+
+ \vspace*{\fill}
 
 
 {
@@ -542,7 +543,7 @@ research} ---
 \end{quote}
 
 Crossing frontiers is not an easy task, and it was quite difficult in
-its beginnings of modern interdisciplinarity. Some examples of early
+the beginnings of modern interdisciplinarity. Some examples of early
 interdisciplinary efforts of 20th century are nicely described by
 Ledford et al. \citep{Ledford2015} in \emph{Nature} special issue on
 \href{https://www.nature.com/news/interdisciplinarity-1.18295}{Interdisciplinarity}.
@@ -616,7 +617,7 @@ field.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{figures-ext/interdisciplinary} 
+{\centering \includegraphics[width=0.9\linewidth]{figures-ext/interdisciplinary} 
 
 }
 
@@ -776,7 +777,7 @@ microenvironment (see \protect\hyperlink{map}{Chapter 6}).
 
 We have also participated in Dream Idea Challenge, a project that aimed
 to put closer experimental and theoretical researchers
-\citep{Azencourt2018}\href{}{Annexe1}.
+\citep{Azencott2018}\href{}{Annexe1}.
 
 I have collaborated in numerous projects within and outside my team.
 Some of the projects resulted in publications, such as my work on
@@ -838,20 +839,28 @@ strictly linked with the topic of this thesis.
 \textbf{RESULTS}
 
 \begin{itemize}
+\tightlist
 \item
+  \href{}{Chapter 3}: Most Reproducible Transcriptome Dimension (MSTD)
 \item
+  \href{}{Chapter 4}: application of ICA-based deconvolution to six
+  breast transcriptomes
 \item
   \protect\hyperlink{sens}{Chapter 5}: comparison of reproducibility of
   NMF and ICA methods
 \item
+  \href{}{Chapter 6}: DeconICA R package
 \item
+  \href{}{Chapter 7}: application of DeconICA R package and other tools
+  to analyse \textgreater{}100 transcriptome datasets of bulk cancer
+  transcriptomes
 \item
   \protect\hyperlink{map}{Chapter 8}: study of immune cell types
   heterogeneity in tumor microenvironment using innate immune map and
   scRNAseq data
 \end{itemize}
 
-\textbf{CONCLUSION}
+\textbf{DISCUSSION}
 
 \begin{itemize}
 \tightlist
@@ -1538,8 +1547,8 @@ number of small tissue segments can be organised in a single paraffin
 block where 100 tissue samples can be easily examined on one slide. A
 variety of molecular or microscopic method can be then applied to FFPE
 tissue including immunohistochemistry, FISH, and in situ hybridization
-{[}\citet{Wilczynski2009}). It is a technique in between traditional
-imaging and omic high-throughput.
+\citep{Wilczynski2009}. It is a technique in between traditional imaging
+and omic high-throughput.
 
 \hypertarget{omics}{%
 \subsection{omics}\label{omics}}
@@ -2083,7 +2092,7 @@ overlaps with the one of \citet{Thorsson2018}. The survival analysis
 based on the 6 immune-phenotypes revealed that for most cancer types,
 high cytotoxic tumors are associated with better survival. To evaluate
 tumor environment cells authors used gene set variation analysis
-\citep{Hanzelmann2018} with a set of pre-defined cell-type markers.
+\citep{Hanzelmann2013} with a set of pre-defined cell-type markers.
 Another important conclusion of \citet{Tamborero2018} is that tissue of
 origin is not the only important factor shaping cell-type patterns in
 tumors. However, the least infiltrated tumors were lung, uterine and
@@ -2461,7 +2470,7 @@ explained by the presence and quantities of tumor-infiltrating immune
 cells, their interactions with each other and the tumor.
 
 In this chapter, I will discuss how mathematical models can be used to
-extract information about specific cell-types from `bulk' omics data or
+extract information about different cell-types from `bulk' omics data or
 how to de-mix mixed sources composing the bulk samples. To start with, I
 will introduce you to basic concepts of machine learning. Then I will
 focus on approaches adapted for cell-type deconvolution. In a literature
@@ -2485,7 +2494,7 @@ experience E with respect to some class of tasks T and performance
 measure P if its performance at tasks in T, as measured by P, improves
 with experience E}.
 
---- Mitchell in 1997 \citep{Mitchel1997}
+--- Mitchell in 1997 \citep{Mitchell1997}
 \end{quote}
 
 Term \emph{Artificial intelligence} (AI) is often used by the media or
@@ -2522,8 +2531,8 @@ unsupervised learning.
 \subsection{Supervised learning}\label{supervised-learning}}
 
 Supervised learning can be described as ``the analysis of data via a
-focused structure'' \citep{Piegorsch2015}. The main task is to predict
-an output given the inputs. In the statistical language, the inputs are
+focused structure'' \citep{Piegorsch}. The main task is to predict an
+output given the inputs. In the statistical language, the inputs are
 often called the predictors or the independent variables. In the pattern
 recognition literature the term features is preferred. The outputs are
 called the responses, or the dependent variables. \citep{Hastie2009}
@@ -2571,8 +2580,8 @@ visualization}\label{low-dimensional-embeddingfor-visualization}}
 There is a common confusion, often seen in computational biology,
 between dimension reduction and clustering. This confusion is highly
 pronounced with, a popular in biology, algorithm: T-distributed
-Stochastic Neighbor Embedding (t-SNE) \citep{Maaten2008}. t-SNE works in
-2 main steps: (1) a~probability distribution~over pairs of
+Stochastic Neighbor Embedding (t-SNE) \citep{VanDerMaaten2008}. t-SNE
+works in 2 main steps: (1) a~probability distribution~over pairs of
 high-dimensional objects is computed in such a way that similar objects
 have a high probability of being picked, whilst dissimilar points have
 an extremely small probability of being picked, (2) t-SNE defines a
@@ -2584,29 +2593,17 @@ distances. It can also easily overfit the data and uncover `fake' or
 `forced' patterns. Therefore, a clustering should not be applied to
 t-sne reduced data. An alternative to t-SNE method is recently published
 Uniform Manifold Approximation and Projection for Dimension Reduction
-(UMAP) (\citet{Mcinnes2018}) that is based on Laplacian eigenmaps,
-highly scalable, reproducible and recently applied to biological data
-(\citet{Becht2018}). Older used alternatives are ISOMAPS (non linear
+(UMAP) \citep{Mcinnes201}-- that is based on Laplacian eigenmaps, highly
+scalable, reproducible and recently applied to biological data
+\citep{Becht2018}. Older used alternatives are ISOMAPS (non linear
 dimension reduction) or PCA (Principal components analysis). For any
 non-linear dimension reduction method, it is not recommended to use
 clustering \emph{a posteriori}. Clusters should be computed on original
 data and then the cluster labels can be visualized in low-dimentional
 embedding.
 
-\hypertarget{impact-of-machine-learning-on-healthcare}{%
-\section{Impact of machine learning on
-Healthcare}\label{impact-of-machine-learning-on-healthcare}}
-
-Machine learning may seem a discipline far from biology or healthcare.
-However with the expansion of data ML-based methods are participating
-more and more in medecine, especially in diagnostics, and will probably
-grow expotentially.
-
-\url{https://qz.com/1251502/the-fda-just-opened-the-door-to-let-ai-make-medical-decisions-on-its-own/}
-
-\url{https://www.healthcatalyst.com/clinical-applications-of-machine-learning-in-healthcare}
-
-\url{http://collections.plos.org/mlforhealth}
+\hypertarget{section}{%
+\section{}\label{section}}
 
 \hypertarget{types-of-deconvolution}{%
 \section{Types of deconvolution}\label{types-of-deconvolution}}
@@ -2666,13 +2663,13 @@ that form the mixtures can be different depending on the data type and
 scientific question asked.
 
 In general, the total bulk data can be split into three abundance
-components \citep{Shen0rr2013}:
+components \citep{Shen-Orr2013}:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  sample characteristic (disease, clinical feature)
+  sample characteristic (disease, clinical features)
 \item
   individual variation, genotype-specific or technical variation
 \item
@@ -2790,7 +2787,6 @@ their proportions, or the specific cell type expression.
 Why there is a need for cell-type deconvolution approaches?
 
 \begin{itemize}
-\tightlist
 \item
   for differential gene expression analysis, to avoid confusion between
   a feature and cell-type abundance
@@ -2806,6 +2802,19 @@ Why there is a need for cell-type deconvolution approaches?
 
 \hypertarget{literature-overview}{%
 \subsection{Literature overview}\label{literature-overview}}
+
+In order to answer general and specific need for cell-type deconvolution
+of bulk transcriptomes researches produced a large collection of tools.
+I have collected all (to my knowledge) articles published in journals or
+as a pre-print (up to May 2018) that propose original models/tools of
+cell-type deconvolution of bulk \textbf{transcriptomes} (Tab.
+\ref{tab:mytab}). Therefore clonal deconvolution methods are not
+included in this overview. The transcriptome-based purity estimation
+methods are included as many of them proposed an initial 2-sources model
+that could be, at least in theory, extended to multiple sources model.
+Also, I did not included cell-type deconvolution methods of other data
+types (such as methylome). A separate (section X){[}\#otherDecon{]} is
+dedicated to non-transcriptome methods.
 
 \begin{landscape}\rowcolors{2}{gray!6}{white}
 \begin{table}
@@ -2908,19 +2917,6 @@ Direct method & MA & unsupervised & https://www.ncbi.nlm.nih.gov/pubmed/11473019
 
 
 
-In order to answer general and specific need for cell-type deconvolution
-of bulk transcriptomes researches produced a large collection of tools.
-I have collected all (to my knowledge) articles published in journals or
-as a pre-print (up to May 2018) that propose original models/tools of
-cell-type deconvolution of bulk \textbf{transcriptomes} (Tab.
-\ref{tab:mytab}). Therefore clonal deconvolution methods are not
-included in this overview. The transcriptome-based purity estimation
-methods are included as many of them proposed an initial 2-sources model
-that could be, at least in theory, extended to multiple sources model.
-Also, I did not included cell-type deconvolution methods of other data
-types (such as methylome). A separate (section X){[}\#otherDecon{]} is
-dedicated to non-transcriptome methods.
-
 The Table \ref{tab:mytab} contains 64 (including mine) deconvolution
 methods. It can be observed (Fig. \ref{fig:pubyear}) that since the
 begging of my thesis (2015) the number of publications has doubled (64
@@ -2931,7 +2927,7 @@ three most popular methods (based of number of citations/number of years
 since publication) are CIBERSORT \citep{Newman2015} (2015, total number
 of citations: 343 and 88.75 citations per year), ESTIMATE
 \citep{Yoshihara2013} (2013, total number of citations: 266 and 44.33
-citations per year), and csSAM \citep{Shen-Orr2010} (2010, total number
+citations per year), and csSAM \citep{ShenOrr2010} (2010, total number
 of citations: 286 and 31.77 citations per year). It can be noticed that
 the high impact of the journal plays a role, the top 3 cited methods
 were published in \emph{Nature Methods} and \emph{Nature Communications}
@@ -2953,8 +2949,8 @@ total 21) methods do not provide source code or a user-interface tool to
 reproduce their results. Among those articles, 13 was published before
 2015. Therefore, it can be concluded that the pressure of publishers and
 research community on reproducibility and accessibility of bioinformatic
-tools gives positive results. \citet{Gajoux2013}, author of
-semi-supervised NMF method \citep{Gajoux2012}, published \emph{CellMIx:
+tools gives positive results. \citet{Shen-Orr2013}, authors of
+semi-supervised NMF method \citep{Gaujoux2012}, published \emph{CellMIx:
 a comprehensive toolbox for gene expression deconvolution} where he
 implements most of previously published tools in R language and group
 them in the same R-package. This work tremendously increased the
@@ -3001,7 +2997,7 @@ unsupervised. The approaches will be described in detail in the
 following section.
 
 There are numerous practical differences between the methods.
-\citet{Gajoux2011} in his review of deconvolution tools, grouped the
+\citet{Shen-0rr2013} in his review of deconvolution tools, grouped the
 tools depending on their inputs and outputs. Given type of outputs
 deconvolution can be considered as complete (proportions and cell
 profiles) or partial (one of those). Moreover, the inputs of the
@@ -3029,7 +3025,7 @@ deconvolution. Some methods (i.e.~CIBERSORT, Infino, xCell) give a
 specific attention to deconvolution of cell-subtypes. An absolute
 presence of a cell type in the mixture can be also an important factor,
 if it is too low it can reach a detection limit, Electronic subtraction
-\citep{Gosnik2007} discuss specifically the detection of rare cel-types.
+\citep{Gosink2007} discuss specifically the detection of rare cel-types.
 
 Running time and necessary infrastructure are another way to
 characterize the methods. Although it is hard to compare objectively the
@@ -3215,7 +3211,7 @@ coefficients. The most common conditions are
 Solution respecting the non-negativity condition is also called
 non-negative least squares (NNLS) to contrast with ordinary least
 squares (OLS). NNLS was adapted by many authors
-\citep{Venet2001, Abbas2009, Repsbiler2010, Zuckerman2013, Wang2016}.
+\citep{Venet2001, Abbas2009, Repsilber2010, Zuckerman2013, Wang2016}.
 
 The task can be also solved differently from computational perspective.
 \citet{Lu2003} and \citet{Wang2006} propose to use simulated annealing
@@ -3234,7 +3230,7 @@ resulting in improved performance of rare cell types (present in small
 proportion). However, the training is computationally heavy and the
 proper training data for bulk transcriptomes are not available.
 
-Since the publication of CIBERSORT (\citet{Newman2015}) some authors
+Since the publication of CIBERSORT \citep{Newman2015} some authors
 \citep{Chen2018, Schelker2017} used the \citet{Newman2015}
 implementation directly with pre/post modifications or different
 signature matrix or re-implemented the SVR regression \citep{Chen2018}.
@@ -3278,14 +3274,14 @@ proportions are not relative to the leucocyte infiltration but to the
 sample. It can be obtained with assumption that the estimation of
 proportion of all genes in CIBERSORT matrix is corresponding to sample
 purity. This functionality was not yet officially published and it is
-still in experimental phase \citep{Newman2018}.
+still in experimental phase \citep{Newman}.
 
 Regression methods combined with pre- and post-processing of data can
 result in estimation of proportions that can be interpreted directly as
 a percentage of cells in mixed sample. It is an important feature hard
 to achieve with other methods. Some methods provide relative proportions
-of the immune infiltrate (\citet{Newman2016}) and other aim to provide
-absolute abundance (\citet{Racle2017}). The absolute proportions are
+of the immune infiltrate \citep{Newman2015} and other aim to provide
+absolute abundance \citep{Racle2017}. The absolute proportions are
 easily comparable between data sets and cell types. Regression based
 methods are usually quite fast and can process big transcriptomic
 cohorts. However, as I will discuss in
@@ -3335,7 +3331,7 @@ expressed genes.
 
 Let's take an example, if one wants to compute enrichment in pathway X
 of the list of DEG genes Y with total number of tested genes Z, a
-contingency table need to be constructed (Tab. \ref{tab:contangency})
+contingency table need to be constructed (Tab. \ref{tab:contangency}).
 
 In the Fisher exact test formula (Eq. \eqref{eq:fisher}) the \(a\),
 \(b\),\(c\) and \(d\) are the individual frequencies, i.e.~number of
@@ -3358,7 +3354,7 @@ GSEA, single sample GSEA (ssGSEA) \citep{Barbie2009} was used by
 \citet{Senbabaoglu2016}, \citet{Yoshihara2013} and \citet{Aran2017} to
 compute infiltration scores. In the ssGSEA genes are ranked by their
 absolute expression. Variance-based variant of GSEA - GSVA
-\citep{Hänzelmann2013} was used by \citet{Tamborero2018} in the same
+\citep{Hanzelmann2013} was used by \citet{Tamborero2018} in the same
 purpose. MCPcounter \citep{Becht2016} uses an arithmetic mean of gene
 expression of highly specific signature genes to compute a score.
 
@@ -3406,9 +3402,8 @@ the distribution given the number of given sources. Then in each case,
 there are different ways of constructing different priors and posteriors
 functions. Among used techniques are Markov Chain Monte Carlo or
 Expectation-Maximisation, which themselves can be implemented in
-different ways {[}\citet{Erkkila2010}; \citet{Gosh2004};
-\citet{Lahdesmaki2005}; \citet{Li2013}; \citet{Roy2006},
-\citet{Zaslavsky2017})
+different ways
+\citep[\citet{Zaslavsky2017}]{Erkkila2010, Ghosh2004, Lahdesmaki2005, Li2013, Roy2006}.
 
 The probabilistic approaches are the most popular for purity estimation
 (2 components models), that seem to be possible to extend to
@@ -3432,7 +3427,7 @@ dimensional datasets due to extensive parameters search.
 An emerging family of BSS methods are convex geometry (CG)-based
 methods. Here, the \emph{sources} are found by searching the facets of
 the convex hull spanned by the mapped observations solving a classical
-convex optimization problem (\citet{Yang2015}). It can be implemented in
+convex optimization problem \citep{Yang2015}. It can be implemented in
 many ways \citep{Preparata1985}.
 
 \textbf{Convex hull} can be defined as follows \citep{Erickson2018}:
@@ -3608,7 +3603,7 @@ methods}\label{matrix-factorisation-methods}}
 
 Matrix factorisation is a general problem not specific to cell types
 deconvolution. It has been extensively used for signal processing
-\citep{Zinovyec2013}and extraction of features from images
+\citep{Zinovyev2013}and extraction of features from images
 \citep{Hastie2009}. Matrix factorisation can also be called BSS or
 dimension reduction. Despite quite simple statistical bases they have
 been proven to be able to solve quite complex problems. Many matrix
@@ -3705,10 +3700,10 @@ Especially in the context of the cell-type deconvolution, it can be
 imagine that different cell-types contribute to the variance but one PC
 could explain joint variance of many cell types.
 
-\citet{Wang2014} used SVD to compute matrix inversion in order to
+\citet{Wang2015} used SVD to compute matrix inversion in order to
 separate tumor from the stroma. The method was applied to tumor
 transcriptomes and gives purity estimation quite different from other
-popular enrichment-based method ESTIMATE (\citet{Yoshihara2013})
+popular enrichment-based method ESTIMATE \citep{Yoshihara2013}.
 
 \citet{Nelms2016} in CellMapper uses a semi-supervised approach based on
 SVD decomposition to dissect human brain bulk transcriptome. Authors
@@ -3774,7 +3769,7 @@ The optimization can be done employing different methods:
   \textbf{alternating non-negative least squares} using projected
   gradients (\citet{Lin2007})
 \item
-  \textbf{Convex-NMF }\citep{Ding2010} imposes a constraint that the
+  \textbf{convex-NMF }\citep{Ding2010} imposes a constraint that the
   columns of \(W\) must lie within the column space of~\(X\),
   i.e.~\(W = XA\)~(where~\(A\)~is an auxiliary adaptative weight matrix
   that fully determines~\(W\)), so that \(X=XAH\).~In this method only
@@ -3786,11 +3781,11 @@ in situations where \(X = WH\) holds exactly, the decomposition may not
 be unique. This implies that the solution found by NMF depends on the
 starting values. The performance of different combinations applied to
 MRS data from human brain tumours can be found in
-\citet{Ortega-Martorell2012}.
+\citet{OrtegaMartorell2012}.
 
 \citet{Brunet2004} created a NMF matlab toolbox and demonstrated
 applicability of NMF (using Kullback-Leibler divergence and euclidean
-multiplicative update \citep{Lee2001}) to cancer transcriptomes with
+multiplicative update \citep{Lee2000} to cancer transcriptomes with
 focus on cancer subtyping (focusing on \(H\) matrix). \citet{Brunet2004}
 also proposed a way to evaluate optimal number of factors (sources) to
 which matrix should be decomposed.
@@ -3800,33 +3795,32 @@ transcriptomes seems as an attractive concepts as both cell profiles and
 cell proportions should be non-negative. It is not suprising then that
 some authors used NMF to perform cell-type deconvolution.
 
-To my knowledge \emph{deconf} \citep{Repsilber2010} was the first tool
-proposing cell-type deconvolution of PBMC transcriptome of 80 samples
-(40 control and 40 case) of Tuberculosis. \citet{Repsilber2010} employed
-random initialization and alternating non-negative least squares to
-minimize the model divergence. The complete deconvolution of the
-transcriptome was used to perform DEG analysis on the deconvoluted
-profiles.
+To my knowledge, \emph{deconf} \citep{Repsilber2010} was the first tool
+proposing NMF cell-type deconvolution of PBMC transcriptome, of
+considerable dimensions, 80 samples (40 control and 40 case) of
+Tuberculosis. \citet{Repsilber2010} employed random initialization and
+alternating non-negative least squares to minimize the model divergence.
+The complete deconvolution of the transcriptome was used to perform DEG
+analysis on the deconvoluted profiles.
 
-\citet{Gaujoux2013}, not only presented exhaustive literature review
+\citet{Shen-Orr2013}, not only presented exhaustive literature review
 through implementing cell-type deconvolution methods in a R package
 \emph{CellMix} \citep{Gaujoux2013} but also proposed a semi-supervised
-NMF for cell-type deconvolution and in 2018 he published a R package
-implementing different NMF methods \citep{Gaujoux2018}. The
-semi-supervised version of NMF proposed by \citet{Gaujoux2013}, need a
-set of specific marker genes for each desired cell type. Then at
-initialization and after each iteration of the chosen NMF algorithm
-(applies to some versions of NMF
-\citep{Seung1999, Brunet2004, Pascual-Montano2006}, ``each cell type
+NMF for cell-type deconvolution and published an R package implementing
+different NMF methods \citep{Gaujoux2010}. The semi-supervised version
+of NMF proposed by \citet{Gaujoux2013}, need a set of specific marker
+genes for each desired cell type. Then at initialization and after each
+iteration of the chosen NMF algorithm (applies to some versions of NMF
+\citep{Seung1999, Brunet2004, PascualMontano2006}, ``each cell type
 signature has the values corresponding to markers of other cell types
 set to zero. The values for its own markers are left free to be updated
 by the algorithm's own iterative schema''. Applying their algorithm to
 \emph{in vitro} controlled dataset {[}GSE11058 \citep{Abbas2009},
 testing selected NMF implementations and varying number of markers per
 cell, authors observed the best performance with guided version of
-\emph{brunet} (\citet{Brunet2004}) implementation.
+\emph{brunet} \citep{Brunet2004} implementation.
 
-\citet{Moffit2015} applied NMF to separate tumor from stroma in
+\citet{Moffitt2015} applied NMF to separate tumor from stroma in
 pancreatic ductal carcinoma (PDAC) using multiplicative update NMF. They
 scaled \(H\) matrix rows to 1 so that the values correspond to the
 proportions. Authors tested different possibilities of number of sources
@@ -3996,7 +3990,7 @@ gene expression matrix into a weigheted set of genes (metagene)(\(S\))
 and weigheted set of samples (metasample \(A\)). Discussed here PCA, NMF
 and ICA differ in constraints and starting hypotheses. PCA components
 are ordered by variance and are orthogonal in the initial space of data
-(Fig. \ref(fig:matrixfact) ). NMF impose non-negativy contraint and ICA
+(Fig. \ref{fig:matrixfact} ). NMF impose non-negativy contraint and ICA
 independence of sources hypothesis. NMF and ICA do not have a prticular
 order. For all the matrix factorization methods number of components (or
 factors) (\(k\)) needs to be given to the algorithm. Some authors
@@ -4005,9 +3999,8 @@ a specific context. NMF and SVD wera applied in the contex of cell-type
 deconvolution while ICA, so far, was used to dissect transcriptome into
 factors related to signaling pathwyas, technical biases or clinical
 feautres. In addition, ICA was proven to find reproducible signals
-between different datasets (\citet{Cantini2018};
-\citet{Teschendorff2007}). I am going to discuss this aspect in the
-{[}Results{]} section.
+between different datasets \citep{Cantini2018, Teschendorff2007}. I am
+going to discuss this aspect in the {[}Results{]} section.
 
 \hypertarget{attractor-metagenes}{%
 \subsection{Attractor metagenes}\label{attractor-metagenes}}
@@ -4039,9 +4032,9 @@ identical membership will converge using the same computational
 methodology.}
 \end{quote}
 
-Which in pseudocode works as follows and itis implemented in R code is
-available online in
-\href{https://www.synapse.org/\#!Synapse:syn1446295}{Synapse portal}:
+Which in pseudocode works as described in Algorithm 2 \eqref{eq:attr} and
+it is implemented in R code is available online in
+\href{https://www.synapse.org/\#!Synapse:syn1446295}{Synapse portal}.
 
 \begin{algorithm}
   \caption{ Attractor metagenes algorithm}
@@ -4074,10 +4067,10 @@ discovered typically approximately 50 to 150 resulting attractors.
 Attractor Metagenes algorithm can be seen as a variant of clustering
 approach where distance metric is mutual information between genes and
 metagenes are weighed average of gene expression. This method was
-further to study breast cancer \citep{Al-Ejeh2014} and to SNP data
+further to study breast cancer \citep{AlEjeh2014} and to SNP data
 \citep{Elmas2016}.
 
-There is a possibility to tune the \(\alpha\) prameter in order to
+There is a possibility to tune the \(\alpha\) parameter in order to
 obtain more or less metagenes that would be possibly interpretable as
 cell-type signatures.
 
@@ -4085,19 +4078,21 @@ cell-type signatures.
 \subsection{Others aspects}\label{others-aspects}}
 
 Here I will discuss transversal aspects common to most of deconvolution
-methods.
+methods. They play critical role in the final results and are often
+omitted while algorithms are published which impacts significantly the
+reproducibility.
 
 \hypertarget{types-of-biological-reference}{%
 \subsubsection{Types of biological
 reference}\label{types-of-biological-reference}}
 
 Let us consider the most common case of the deconvolution where neither
-\(A\) or \(S\) are not known (Equation \eqref{eq:linear}) and we would
-like to estimate cell proportions or both cell proportions and cell
-profiles. No matter if the method is supervised or unsupervised at some
-point of the protocol the biological knowledge about cell types is
-necessary in order to either derive the model or interpret the data. I
-discussed signatures from biological perspective in
+\(A\) or \(S\) are not known (Eq. \eqref{eq:linear}) and we would like to
+estimate cell proportions or both cell proportions and cell profiles. No
+matter if the method is supervised or unsupervised at some point of the
+protocol the biological knowledge about cell types is necessary in order
+to either derive the model or interpret the data. I discussed signatures
+from biological perspective in
 \protect\hyperlink{immune-signatures}{Section X}. Here, I would like to
 stress the importance of the design of gene signatures which aim is to
 facilitate cell-type deconvolution.
@@ -4112,7 +4107,7 @@ regression methods come together with a new \textbf{basis matrix},
 ranging from hundreds to tens of genes. Normally, genes selected for
 basis matrix should be cell-type specific in respect to other estimated
 cell types, validated across many biological conditions
-\citep{Hoffman2006}. \citet{EPIC} adds a weight directly in the
+\citep{Hoffmann2006}. \citet{Racle2017} adds a weight directly in the
 regression formula (see Eq. \eqref{eq:epic} ) that corresponds to the
 variability of a signature gene between independent measurements of the
 same cell type so that the least inter-cell type variable genes have
@@ -4188,13 +4183,12 @@ reproduce.
 
 There is also a debate on the data normalization. Most of authors
 suggest to use counts (not log-space) for estimating cell abundance as
-log) transformed data violate the libearity assulption
-{[}\citet{Zhong2012}), some opt against it (\citet{Shannon2010};
-\citet{Clarke2010}) and some enivsage both possiblities
-{[}\citet{Erkkila2010}; \citet{Repsilber2010}). For the RNA-seq data TPM
-(transcriprs per milion) normalization is paciced or even required by
-most methods (\citet{Chen2018}; \citet{Finotello2017};
-\citet{Racle2017}).
+log) transformed data violate the libearity assumption
+\citep{Zhong2013}, some opt against it \citep{Shannon2010, Clarke2010}
+and some envisage both possiblities {[}\citet{Erkkila2010};
+\citet{Repsilber2010}). For the RNA-seq data TPM (transcriprs per
+milion) normalization is paciced or even required by most methods
+(\citet{Chen2018}; \citet{Finotello2017}; \citet{Racle2017}).
 
 \hypertarget{Validation}{%
 \subsubsection{Validation}\label{Validation}}
@@ -4232,16 +4226,16 @@ are:
   mix of human cell lines Jurkat, THP-1, IM-9 and Raji in four different
   concentration in triplicates and the pure cell-line profiles
   (\href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE11058}{GSE11058})
-  \citep{Abbas2009}GS;
+  \citep{Abbas2009};
 \item
   mix of rat tissues: liver, brain, lung mixed in 11 different
   concentrations in triplicates and the pure tissues
   expression(\href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE19830}{GSE19830})
-  \citep{Shen-Orr2010}
+  \citep{ShenOrr2010}
 \end{itemize}
 
 Similar simple mixtures are proposed also by other authors
-\citep[\citet{Khun2011}]{Becht2016}. This type of benchmark adds
+\citep[\citet{Kuhn2011}]{Becht2016}. This type of benchmark adds
 complexity of possible data processing and experimental noise. However,
 it still follows an almost perfect additive model as the cell/tissues do
 not interact and they are only constituents of the mixture.
@@ -4310,17 +4304,17 @@ without proper statistical evaluation.
 \hypertarget{summary-2}{%
 \subsection{Summary}\label{summary-2}}
 
-The field of computational deconvolution is constantly growing.
-Initially used to solve simple in vitro or simulated mixtures of quite
-distinct ingredients, then to deconvolute blood expression data, finally
-applied to solid cancer tissues. In cancer research digital
-quantification of cancer purity become a routine part of big cancer
-research projects \citep{Yoshihara2013}. Cell-type quantification, even
-though the validation framework and statistical significance of
-deconvolution tools can still be improved, seems to be considered as a
-popular part of analytical pipeline of bulk tumor transcriptomes
-\citep{Cieslik2017}. Different types of approaches try to solve the
-deconvolution problem, focusing on different aspects of the
+The field of computational transcriptome deconvolution is constantly
+growing. Initially used to solve simple in vitro or simulated mixtures
+of quite distinct ingredients, then to deconvolute blood expression
+data, finally applied to solid cancer tissues. In cancer research
+digital quantification of cancer purity become a routine part of big
+cancer research projects \citep{Yoshihara2013}. Cell-type
+quantification, even though the validation framework and statistical
+significance of deconvolution tools can still be improved, seems to be
+considered as a popular part of analytical pipeline of bulk tumor
+transcriptomes \citep{Cieslik2017}. Different types of approaches try to
+solve the deconvolution problem, focusing on different aspects of the
 quantification, or proposing methodologically different approaches.
 Methods proposing unsupervised solution to the deconvolution problem of
 transcriptomes are still underrepresented. All the tools assume a linear
@@ -4382,14 +4376,14 @@ least squares to fit a convex hull.
 As far as supervised methods are concerned, EPiDISH
 (\emph{E}pigenetic~\emph{D}issection
 of~\emph{I}ntra-\emph{S}ample-\emph{H}eterogeneity) R-package
-\citep{Teschendorff2017b} includes previously published tools: Quadratic
+\citep{Teschendorff2017} includes previously published tools: Quadratic
 programming method using reference specific DNAse hypersensitive sites
 {[}Constrained Projection (CP) \citep{Houseman2012}), adapted to
 methylome deconvolution CIBERSORT algorithm (\(\nu\)-SVR) and robust
 partial correlations~(RPC) method (a form of linear regression).
 Reference cell-type specific profiles were obtained from the blood.
 
-eFORGE \citep{Breeeze2016} can detect in a list of DMPs if there is a
+eFORGE \citep{Breeze2016} can detect in a list of DMPs if there is a
 significant cell-type effect.
 
 EDec \citep{Onuchic2016} uses DNAm to infer factors proportions using
@@ -4428,10 +4422,9 @@ cells (intra-tumor).
 Therefore, copy number aberrations can be used to estimate tumor purity
 and clonality. BACOM 2.0 \citep{Fu2015}, ABSOLUTE \citep{Carter2012},
 CloneCNA \citep{Yu2016}, PureBayes \citep{Larson2013}, CHAT
-\citep{Li2014}, ThetA \citep[ 2013]{Oesper}, SciClone
-\citep{Miller2014}, Canopy \citep{Jiyang2015}, PyClone \citep{Roth2014},
-EXPANDS \citep{Andor2014} estimate tumor purity and quantify true copy
-numbers.
+\citep{Li2014}, ThetA \citep{Oesper2013}, SciClone \citep{Miller2014},
+Canopy \citep{Jiang2016}, PyClone \citep{Roth2014}, EXPANDS
+\citep{Andor2014} estimate tumor purity and quantify true copy numbers.
 \href{https://omictools.com/tumor-purity-and-heterogeneity-category}{OmicTools
 website} reports 70 tools serving this purpose and their review goes
 beyond the scope of my work. Most of tools use tumor and normal samples,
@@ -4636,8 +4629,8 @@ transcriptopmes}\label{finding-optimal-number-of-components-and-over-decompositi
 
 \includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}
 
-\hypertarget{section}{%
-\section{}\label{section}}
+\hypertarget{section-1}{%
+\section{}\label{section-1}}
 
 \hypertarget{reproducibility-of-nmf-versus-ica-vs-cam}{%
 \section{REPRODUCIBILITY OF NMF VERSUS ICA (VS
@@ -5195,7 +5188,7 @@ automatically.
 
 \addcontentsline{toc}{chapter}{Bibliography}
 
-\bibliography{00-Inter,01-Intro,02-MathIntro,packages,UCzcite}
+\bibliography{00-Inter,01-Intro02,02-MathIntro,packages,UCzcite}
 
 
 \end{document}
