@@ -1,60 +1,115 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: UCzPhDThesis.aux
-The style file: plainnat.bst
-Database file #1: 00-Inter.bib.bib
-Database file #2: 01-Intro2.bib.bib
-Database file #3: packages.bib.bib
-Database file #4: UCzcite.bib.bib
+The style file: nar.bst
+Reallocated field_info (elt_size=4) to 11024 items from 5000.
+Database file #1: 00-Inter.bib
+Database file #2: 01-Intro.bib
+Database file #3: 02-MathIntro.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Database file #4: packages.bib
+Database file #5: UCzcite.bib
+Warning--I didn't find a database entry for "Azencourt2018"
+Warning--I didn't find a database entry for "Wilczynski2009"
+Warning--I didn't find a database entry for "McCarroll2007"
+Warning--I didn't find a database entry for "Zarrei2015"
+Warning--I didn't find a database entry for "Yamamoto2016"
+Warning--I didn't find a database entry for "Stahl2016"
+Warning--I didn't find a database entry for "Svensson2018"
+Warning--I didn't find a database entry for "Moncada2018"
+Warning--I didn't find a database entry for "Pages2018"
 Warning--I didn't find a database entry for "Hanzelmann2018"
-Warning--I didn't find a database entry for "JMBKondratova2018"
+Warning--I didn't find a database entry for "Mitchel1997"
+Warning--I didn't find a database entry for "Piegorsch2015"
+Warning--I didn't find a database entry for "Maaten2008"
+Warning--I didn't find a database entry for "Becht2018"
+Warning--I didn't find a database entry for "Shen0rr2013"
+Warning--I didn't find a database entry for "Schwartz2015"
+Warning--I didn't find a database entry for "Shen-Orr2010"
+Warning--I didn't find a database entry for "Gajoux2013"
+Warning--I didn't find a database entry for "Gajoux2012"
+Warning--I didn't find a database entry for "Gajoux2011"
+Warning--I didn't find a database entry for "Gosnik2007"
+Warning--I didn't find a database entry for "Repsbiler2010"
+Warning--I didn't find a database entry for "Lu2003"
+Warning--I didn't find a database entry for "Liebner2013"
+Warning--I didn't find a database entry for "Newman2018"
+Warning--I didn't find a database entry for "Newman2016"
+Warning--I didn't find a database entry for "Hänzelmann2013"
+Warning--I didn't find a database entry for "Gosh2004"
+Warning--I didn't find a database entry for "Yang2015"
+Warning--I didn't find a database entry for "Erickson2018"
+Warning--I didn't find a database entry for "Shoval2012"
+Warning--I didn't find a database entry for "Wang2010"
+Warning--I didn't find a database entry for "Zinovyec2013"
+Warning--I didn't find a database entry for "Wang2014"
+Warning--I didn't find a database entry for "Ding2010"
+Warning--I didn't find a database entry for "Ortega-Martorell2012"
+Warning--I didn't find a database entry for "Lee2001"
+Warning--I didn't find a database entry for "Gaujoux2013"
+Warning--I didn't find a database entry for "Gaujoux2018"
+Warning--I didn't find a database entry for "Pascual-Montano2006"
+Warning--I didn't find a database entry for "Moffit2015"
+Warning--I didn't find a database entry for "Himberg2003"
+Warning--I didn't find a database entry for "Biton2014"
+Warning--I didn't find a database entry for "Cantini2018"
+Warning--I didn't find a database entry for "Al-Ejeh2014"
+Warning--I didn't find a database entry for "Hoffman2006"
+Warning--I didn't find a database entry for "EPIC"
+Warning--I didn't find a database entry for "CellDistinguisher"
+Warning--I didn't find a database entry for "Nanodissection"
+Warning--I didn't find a database entry for "Zhong2012"
+Warning--I didn't find a database entry for "Shannon2010"
+Warning--I didn't find a database entry for "Khun2011"
+Warning--I didn't find a database entry for "Teschendorff2017b"
+Warning--I didn't find a database entry for "Breeeze2016"
+Warning--I didn't find a database entry for "Wen2017"
+Warning--I didn't find a database entry for "Oesper"
+Warning--I didn't find a database entry for "Jiyang2015"
 Warning--I didn't find a database entry for "Ulykbek2017"
 Warning--I didn't find a database entry for "Brunet"
-Warning--to sort, need author or key in CRIweb
-Warning--to sort, need author, editor, or key in FIRbook
-Warning--empty year in CRIweb
 Warning--empty author and editor in FIRbook
 Warning--empty publisher in Berghoff2018
-Warning--empty journal in Cavallo2011
-You've used 114 entries,
-            2773 wiz_defined-function locations,
-            1627 strings with 47497 characters,
-and the built_in function-call counts, 83600 in all, are:
-= -- 7102
-> -- 7984
-< -- 47
-+ -- 2681
-- -- 2564
-* -- 8363
-:= -- 13706
-add.period$ -- 594
-call.type$ -- 114
-change.case$ -- 1193
-chr.to.int$ -- 111
-cite$ -- 236
-duplicate$ -- 2294
-empty$ -- 4364
-format.name$ -- 2718
-if$ -- 16629
-int.to.chr$ -- 4
-int.to.str$ -- 1
-missing$ -- 95
-newline$ -- 829
-num.names$ -- 450
-pop$ -- 2075
+Warning--can't use both volume and number fields in Herault1986
+You've used 192 entries,
+            1908 wiz_defined-function locations,
+            1971 strings with 71635 characters,
+and the built_in function-call counts, 39894 in all, are:
+= -- 4223
+> -- 675
+< -- 12
++ -- 289
+- -- 97
+* -- 3796
+:= -- 5679
+add.period$ -- 192
+call.type$ -- 192
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 195
+duplicate$ -- 1783
+empty$ -- 4495
+format.name$ -- 227
+if$ -- 9370
+int.to.chr$ -- 0
+int.to.str$ -- 192
+missing$ -- 174
+newline$ -- 942
+num.names$ -- 192
+pop$ -- 382
 preamble$ -- 1
-purify$ -- 1082
+purify$ -- 0
 quote$ -- 0
-skip$ -- 2282
+skip$ -- 783
 stack$ -- 0
-substring$ -- 2137
-swap$ -- 240
-text.length$ -- 3
+substring$ -- 3448
+swap$ -- 326
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1239
-warning$ -- 6
-while$ -- 491
-width$ -- 0
-write$ -- 1965
-(There were 10 warnings)
+type$ -- 0
+warning$ -- 3
+while$ -- 328
+width$ -- 195
+write$ -- 1691
+(There were 62 warnings)

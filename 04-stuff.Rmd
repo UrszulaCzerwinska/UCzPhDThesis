@@ -1,0 +1,36 @@
+# Objectives {-}
+
+In the introduction, I have described two sides of studying TME complexity. I placed in the context of cancer research and cancer therapy the most recent studies of tumor immunity with focus on system-level computational approaches. I have also introduced a wide array of available approaches to address deconvolution of bulk omic data. I reviewed thier strong and weak points and I presented general trends since the field was established. 
+
+Answers to important questions on *how TME modulates tumor*, *how to propose better cancer subtyping for immune therapies* and *how to better predict a response to treatment* are perhaps hidden in already produced bulk omic data. However, new methodological tools and more overall view is needed to better uncover hidden patterns.
+
+In this thesis I aim to bring new insights into composition and function of TME. It is clear that complex information is necessary to understand the role of different immune cells in cancer and not only presence but also function are to be deciphered from available data. Therefore, this project, on its biological side, has two main aims:
+
+1. fundamental research: understand presence of different cell type, their interactions and functions in TME of different cancers types and how other factors as stress, cell cycle etc. shape them. Thanks to data-driven and discovery nature of the project, I will also hope to understand how signature of cell type evolves in different conditions shaped by other cells and factors.
+2. translational research: how immune landscape and its state can help to predict patient survival and better tailor recommendation for therapy. The analysis could also bring to the light possible biomarkers or drug targets for immune therapies.
+
+I aim to explore publicly available data, challenge inter-lab and inter-platform biases. I will use mainly bulk transcriptomic data (because of accessible volume) and cross-validate with other data types: scRNA-seq, FACS, IHC when possible.
+
+On its computational/mathematical side it will face following challenges: 
+
+1. Establish state-of-art of existing bulk deconvolution methods, discuss their advantages and limits
+2. Propose new unsupervised method that will fill the knowledge gap giving an insight into context-specific signatures of cell types/cell states in cancer
+3. Deliver well-documented and user friendly tool that can be used by the scientific community
+4. Decompose a big corpus of bulk omic data into interpretable biological functions, with a particular focus on the immune cell types
+5. Use different data types (scRNAseq, microarray, RNAseq, FACS etc.) to complete, compare and contrast findings of the analysis.
+6. Decompose established immune cells populations from metastatic melanoma in order to better understand cell-type heterogeneity
+
+In order to face those challenges, I have first focused on testing and creating new methods. This is why methods and results are interlaced in this thesis. Reproducing work of other researchers it is not always easy, sometimes it is even impossible. A lot of time was invested to understand and reuse previous publications, part of this effort was reflected in the introduction, some of my thoughts will be expressed in the discussion. 
+
+Next important step was improving and testing ideas born in our team. I collaborated to a publication on a topic (Chapter X) and I have authored an extension of this work described in Chapter Z. I have also compared my tool to other similar methodn an overview of the results are in Chapter U.
+
+Once I have found the most appropriate way to apply my method, that I validated with multiple datasets,  I have build a tool to share it with scientific community. The tool is freely available online as an R package. During my work,  I have collected many datasets of tumor signatures, tumor metagenes, benchmark datasets some of which are part of my tool. I have also accessed, thanks to curtesy of our collaborators a collection of pan-cancer bulk transcriptomic datasets that I competed with other publicly available datasets. I build my working environment in which I managed and cleaned the data.
+
+Finally, I realized a pan-cancer analysis of over 100 datasets which is the main outcome of my work. I completed results of this work with published scRNAseq data from tumor samples. This analysis is a source of many information, I have, so far, explored only part of possible direction focusing on cancer infiltrating T-cells. This results will be find in a manuscript in preparation in Chapter X. However, more information can still be extracted in the further work. There is also a possibility to provide an experimental validation to my finding and it will be considered in the discussion part.
+
+In parallel, I used part of methods to study cell-type heterogeneity in an independent project resulted in a submitted publication.  
+
+The remaining time, I have invested into collaborations and contributions to different works within and outside of my team. Published work from those projects will be shortly described in Annexes. 
+
+
+

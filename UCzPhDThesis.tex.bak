@@ -372,44 +372,6 @@ Merci tout le monde
 
 \hypersetup{linkcolor=black}
 \listoffigures
-\newpage\thispagestyle{empty}
-
-\vskip 1cm \huge{\textbf{Abbreviations}} \vskip 1cm \normalsize{}
-
-TME
-
-DNA
-
-RNA (mRNA, miRNA)
-
-FACS
-
-scRNA-seq
-
-RNA-seq
-
-CAF
-
-TIL
-
-DGE
-
-BSS
-
-CRI
-
-ML
-
-AI
-
-TMA
-
-CNV
-
-CNA
-
-\newpage\thispagestyle{empty}
-
 \hypertarget{preamble-about-interdisciplinary-research}{%
 \chapter*{Preamble about Interdisciplinary
 Research}\label{preamble-about-interdisciplinary-research}}
@@ -1806,7 +1768,7 @@ patterns are usually identified: ``hot'' - immune inflamed and ``cold''
 
 \citet{Chen2017} describe classification into inflamed and non-inflamed
 tumors, where non-inlamed phenotypes: can be further split into the
-immune-desert phenotype and the immune-excluded phenotype (Fig.
+immune-desert phenotype and the immune--excluded phenotype (Fig.
 \ref{fig:immune-phenotypes}). The inflamed phenotype is characterised by
 rich presence of immune cells : T cells, myeloid cells, monocytes in
 tumor margin. Along with the immune cels, due to their communication, a
@@ -1830,9 +1792,9 @@ tolerance are expressed.
 
 }
 
-\caption[Cancer-immune phenotypes: the immune-desert phenotype, the immune-excluded phenotype and the inflamed phenotype.]{\textbf{Cancer-immune phenotypes: the
-immune-desert phenotype (brown), the immune-excluded phenotype (blue)
-and the inflamed phenotype (red).} The immune-desert phenotype is
+\caption[Cancer-immune phenotypes: the immune-desert phenotype, the immune–excluded phenotype and the inflamed phenotype.]{\textbf{Cancer-immune phenotypes: the
+immune-desert phenotype (brown), the immune--excluded phenotype (blue)
+and the inflamed phenotype (red).} The immune--desert phenotype is
 characterised by paucity of immune cells and cytokines. In the
 immune-excluded phenotypes the T cells are often present but trapped in
 stroma, enabled to migrate to the tumor site. The immune-inflamed
@@ -2100,7 +2062,7 @@ pathways organized in functional modules.
 
 Another way to summarize tumor phenotype can be though use of molecular
 maps. \href{https://acsn.curie.fr/}{Atlas of Cancer Signaling Network
-(ACSN)} \citep{Kuperstein2013, Kuperstein2015} is a pathway database
+(ACSN)} \citep{Kuperstein2013, Kuperstein2015} is a~pathway database
 that contains a collection of interconnected cancer-related signalling
 network maps. An additional feature is ACSN web-based Google-maps-like
 visualisation of the database. User data can be projected on the
@@ -2894,7 +2856,7 @@ Computational expression deconvolution & MA & supervised & https://doi.org/10.11
 Robust Computational Reconstitution & MA & supervised & https://doi.org/10.1186/1471-2105-7-369 & 2006 & Synovial tissue (cell types in silico) & NA & FALSE & TRUE & regression & unknown & 6 & 0.46 & TRUE\\
 MHMM & MA & unsupervised & https://doi.org/10.1089/cmb.2006.13.1749 & 2006 & Yeast cell cycle & NA & TRUE & TRUE & probabilistic & unknown & 4 & 0.31 & TRUE\\
 \addlinespace
-In silico microdissection & MA & unsupervised & https://doi.org/10.1186/1471-2105-6-54 & 2005 & In vitro tissue mixtures & NA & TRUE & TRUE & probabilistic & unknown & 45 & 3.21 & TRUE\\
+In silico microdissection & MA & unsupervised & https://doi.org/10.1186/1471-2105-6-54 & 2005 & In vitro tissue mixtures & NA & TRUE & TRUE & probabilistic & unknown & 45 & 3.21 & TRUE\\
 Mixture models & MA & supervised & https://doi.org/10.1093/bioinformatics/bth139 & 2004 & Cancer transcriptome & broken link & TRUE & TRUE & probabilistic & R & 66 & 4.40 & TRUE\\
 DECONVOLUTE & MA & supervised & https://doi.org/10.1073/pnas.1832361100 & 2003 & yeast cell cycle & broken link & FALSE & TRUE & regression & Java 2 & 135 & 8.44 & TRUE\\
 Direct method & MA & unsupervised & https://www.ncbi.nlm.nih.gov/pubmed/11473019 & 2001 & cander and normal tissue & NA & TRUE & TRUE & matrix factorisation & unknown & 96 & 5.33 & TRUE\\
@@ -5193,9 +5155,12 @@ template provided by University Paris Descartes.
 Citations are stocked in Mendeley Desktop and exported to .bib files
 automatically.
 
+\hypertarget{section-1}{%
+\chapter{}\label{section-1}}
+
 \addcontentsline{toc}{chapter}{Bibliography}
 
-\bibliography{00-Inter,01-Intro,02-MathIntro,packages,UCzcite}
+\bibliography{00-Inter.bib,01-Intro.bib,02-MathIntro.bib,packages.bib,UCzcite.bib}
 
 
 \end{document}

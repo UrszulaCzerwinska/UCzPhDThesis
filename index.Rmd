@@ -6,7 +6,7 @@ site: bookdown::bookdown_site
 output: 
   bookdown::pdf_book: 
     toc : true
-    toc_depth: 5
+    toc_depth: 4
     keep_tex : yes
     includes:
         in_header: Descartes.tex
@@ -16,8 +16,8 @@ lof: yes
 lot: yes        
 documentclass: book
 fontsize: 12pt
-bibliography: [00-Inter.bib, 01-Intro2.bib, packages.bib, UCzcite.bib]
-biblio-style: "plainnat"
+bibliography: [00-Inter, 01-Intro, 02-MathIntro, packages, UCzcite]
+biblio-style: "nar"
 link-citations: true
 colorlinks: true
 geometry: "marginpar=2cm, top=3cm, bottom=4cm"
@@ -42,9 +42,13 @@ linestretch: 1
 # ```{r echo=TRUE}
 # knitr::opts_knit$get("rmarkdown.pandoc.to")
 # ```
+
+# ```{r GlobalOptions}
+# options(knitr.duplicate.label = 'allow')
+# ```
 -->
 ```{r include=FALSE}
-  library(kableExtra)
+library(kableExtra)
 ```
 
 ```{r include=FALSE}
@@ -61,7 +65,7 @@ is_pdf_output = function() {
 }
 ```
 
-```{r setup2, include=FALSE}
+```{r setupup, include=FALSE}
 is_html_output = function() {
   knitr::opts_knit$get("rmarkdown.pandoc.to") =="html4"
 }
