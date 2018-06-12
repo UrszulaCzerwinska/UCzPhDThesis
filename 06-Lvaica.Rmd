@@ -1,0 +1,18 @@
+
+
+# Application of Independent Component Analysis to Tumor Transcriptomes Reveals Specific and Reproducible Immune-Related Signals {#lva}
+
+```{r smallChaplva, results="asis", echo = FALSE}
+if(is_pdf_output()){
+cat("\\chaptermark{Reproductibility if ICA: Breast cancer}")
+}
+```
+**Urszula Czerwinska, Laura Cantini, Ulykbek Kairov, Emmanuel Barillot, Andrei Zinovyev**
+
+Independent Component Analysis (ICA) can be used to model gene expression data as an action of a set of statistically independent hidden factors. The ICA analysis with a downstream component analysis was successfully applied to transcriptomic data previously in order to decompose bulk transcriptomic data into interpretable hidden factors. Some of these factors reflect the presence of an immune infiltrate in the tumor environment. However, no foremost studies focused on reproducibility of the ICA-based immune-related signal in the tumor transcriptome. In this work, we use ICA to detect immune signals in six independent transcriptomic datasets. We observe several strongly reproducible immune-related signals when ICA is applied in sufficiently high-dimensional space (close to one hundred). Interestingly, we can interpret these signals as cell-type specific signals reflecting a presence of T-cells, B-cells and myeloid cells, which are of high interest in the field of oncoimmunology. Further quantification of these signals in tumoral transcriptomes has a therapeutic potential. 
+
+[@Czerwinska2018b]
+
+```{r pdf2, echo=FALSE, results='asis', eval=is_pdf_output()}
+cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/LVAICA_proof.pdf}")
+```

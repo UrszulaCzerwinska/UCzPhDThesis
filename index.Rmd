@@ -16,7 +16,7 @@ lof: yes
 lot: yes        
 documentclass: book
 fontsize: 12pt
-bibliography: [00-Inter, 01-Intro02, 02-MathIntro, packages, UCzcite]
+bibliography: [01-Interdisciplinarity, 01-Intro, 02-MathIntro, packages, UCzcite, lva]
 biblio-style: "plainnat"
 link-citations: true
 colorlinks: true

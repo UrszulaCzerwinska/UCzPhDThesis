@@ -1,0 +1,37 @@
+# (PART) Results {-}
+
+# Determining the optimal number of independent components for reproducible transcriptomic data analysis {#mstd}
+
+```{r smallChapMSTD, results="asis", echo = FALSE}
+if(is_pdf_output()){
+cat("\\chaptermark{Most Stable Transcriptomic Dimension}")
+}
+```
+**Ulykbek Kairov$^\star$, Laura Cantini$^\star$, Alessandro Greco, Askhat Molkenov, **__**Urszula Czerwinska**__**, Emmanuel Barillot and Andrei Zinovyev**
+
+Here is text that places article in the context
+
+Background
+
+Independent Component Analysis (ICA) is a method that models gene expression data as an action of a set of statistically independent hidden factors. The output of ICA depends on a fundamental parameter: the number of components (factors) to compute. The optimal choice of this parameter, related to determining the effective data dimension, remains an open question in the application of blind source separation techniques to transcriptomic data.
+
+Results
+
+Here we address the question of optimizing the number of statistically independent components in the analysis of transcriptomic data for reproducibility of the components in multiple runs of ICA (within the same or within varying effective dimensions) and in multiple independent datasets. To this end, we introduce ranking of independent components based on their stability in multiple ICA computation runs and define a distinguished number of components (Most Stable Transcriptome Dimension, MSTD) corresponding to the point of the qualitative change of the stability profile. Based on a large body of data, we demonstrate that a sufficient number of dimensions is required for biological interpretability of the ICA decomposition and that the most stable components with ranks below MSTD have more chances to be reproduced in independent studies compared to the less stable ones. At the same time, we show that a transcriptomics dataset can be reduced to a relatively high number of dimensions without losing the interpretability of ICA, even though higher dimensions give rise to components driven by small gene sets.
+
+Conclusions
+
+We suggest a protocol of ICA application to transcriptomics data with a possibility of prioritizing components with respect to their reproducibility that strengthens the biological interpretation. Computing too few components (much less than MSTD) is not optimal for interpretability of the results. The components ranked within MSTD range have more chances to be reproduced in independent studies.
+
+
+
+[@Kairov2017]
+
+```{r pdf, echo=FALSE, results='asis', eval=is_pdf_output()}
+cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}")
+```
+
+
+
+
+

@@ -777,7 +777,7 @@ microenvironment (see \protect\hyperlink{map}{Chapter 6}).
 
 We have also participated in Dream Idea Challenge, a project that aimed
 to put closer experimental and theoretical researchers
-\citep{Azencott2018}\href{}{Annexe1}.
+\citep{Azencott2017}\href{}{Annexe1}.
 
 I have collaborated in numerous projects within and outside my team.
 Some of the projects resulted in publications, such as my work on
@@ -2593,17 +2593,14 @@ distances. It can also easily overfit the data and uncover `fake' or
 `forced' patterns. Therefore, a clustering should not be applied to
 t-sne reduced data. An alternative to t-SNE method is recently published
 Uniform Manifold Approximation and Projection for Dimension Reduction
-(UMAP) \citep{Mcinnes201}-- that is based on Laplacian eigenmaps, highly
-scalable, reproducible and recently applied to biological data
+(UMAP) \citep{Mcinnes2018}-- that is based on Laplacian eigenmaps,
+highly scalable, reproducible and recently applied to biological data
 \citep{Becht2018}. Older used alternatives are ISOMAPS (non linear
 dimension reduction) or PCA (Principal components analysis). For any
 non-linear dimension reduction method, it is not recommended to use
 clustering \emph{a posteriori}. Clusters should be computed on original
 data and then the cluster labels can be visualized in low-dimentional
 embedding.
-
-\hypertarget{section}{%
-\section{}\label{section}}
 
 \hypertarget{types-of-deconvolution}{%
 \section{Types of deconvolution}\label{types-of-deconvolution}}
@@ -2689,19 +2686,19 @@ understanding of tumor deconvolution:
   \textbf{estimating clonality}: using genomic data is it possible to
   trace tumor phylogeny raised from mutations and aberrations in tumor
   cells; therefore it is dissecting \emph{intra}-tumor heterogeneity
-  (i.e.~using transcriptomic data \citep{Schwartz2015}, or more often
-  CNA data (see \protect\hyperlink{otherDecon}{Section X})
+  (i.e.~using transcriptomic data \citep{Schwartz2010}, or more often
+  CNA data (see \protect\hyperlink{otherDecon}{Section 2.4.2})
 \item
   \textbf{estimating purity}: deconvolution into tumor and immune/stroma
   compartments, often aiming to ``remove'' not-tumor signal from the
   expression data, can be performed with different data types, the most
   reliable estimations are obtained usually from CNA data (see
-  \protect\hyperlink{otherDecon}{Section X})
+  \protect\hyperlink{otherDecon}{Section 2.4})
 \item
   \textbf{estimating cell-type} proportions and/or profiles from bulk
   omics data, most of works were performed on transcriptome data (see
-  \protect\hyperlink{cellTypeTrans}{Section A}) and some on the
-  methylome data (see \protect\hyperlink{otherDecon}{Section X})
+  \protect\hyperlink{cellTypeTrans}{Section 2.3}) and some on the
+  methylome data (see \protect\hyperlink{otherDecon}{Section 2.4.1})
 \end{itemize}
 
 These three types of deconvolution can be performed on the bulk omics
@@ -2727,8 +2724,6 @@ in transcriptomic samples can be described as a linear mixture.
 \begin{equation} 
 X = SA  \label{eq:linear}
 \end{equation}
-
-\eqref{eq:linear}
 
 Where in Equaltion \eqref{eq:linear} \(X\) is microarray data matrix of
 one biological sample, \(A\) are mixing proportions and \(S\) is the
@@ -2816,6 +2811,47 @@ Also, I did not included cell-type deconvolution methods of other data
 types (such as methylome). A separate (section X){[}\#otherDecon{]} is
 dedicated to non-transcriptome methods.
 
+The Table \ref{tab:mytab} contains 64 (including mine) deconvolution
+methods. It can be observed (Fig. \ref{fig:pubyear}) that since the
+begging of my thesis (2015) the number of publications has doubled (64
+publications in 2018 vs.~33 in 2014). Also, since 2014 more methods are
+published every year. In Fig. \ref{fig:pubyear} \emph{hallmark}
+publications are indicated in red above their year of publication. The
+three most popular methods (based of number of citations/number of years
+since publication) are CIBERSORT \citep{Newman2015} (2015, total number
+of citations: 343 and 88.75 citations per year), ESTIMATE
+\citep{Yoshihara2013} (2013, total number of citations: 266 and 44.33
+citations per year), and csSAM \citep{ShenOrr2010} (2010, total number
+of citations: 286 and 31.77 citations per year). It can be noticed that
+the high impact of the journal plays a role, the top 3 cited methods
+were published in \emph{Nature Methods} and \emph{Nature Communications}
+followed by Virtual Microdissection method \citep{Moffitt2015} (2015)
+published in \emph{Nature Genetics}. However, the fifth most cited
+publication \citet{Abbas2009} (2009, total of 207 citations) appeared in
+\emph{PLOS ONE}. As the index is a bit penalizing for recent
+publications, among commonly cited tools after 2015 are MCPcounter with
+42 citations (2016, 32 without self-citations) and xCell with 14
+citations (2017, 11 without self-citations). A big number of
+publications with low number of citations were published in \emph{Oxford
+Bioinformatics} or \emph{BMC Bioinformatics} which underlines importance
+of publishing a computational tool along with an important biological
+message rather than in a technical journal in order to increase a chance
+to be used by other researchers.
+
+Another important aspect is availability of the tool. One-third (in
+total 21) methods do not provide source code or a user-interface tool to
+reproduce their results. Among those articles, 13 was published before
+2015. Therefore, it can be concluded that the pressure of publishers and
+research community on reproducibility and accessibility of bioinformatic
+tools gives positive results. \citet{Shen-Orr2013}, authors of
+semi-supervised NMF method \citep{Gaujoux2012}, published \emph{CellMIx:
+a comprehensive toolbox for gene expression deconvolution} where he
+implements most of previously published tools in R language and group
+them in the same R-package. This work tremendously increased the
+usability of previously published deconvolution methods. The CellMix
+package is one of the state-of-the-art work on deconvolution that
+regroups algorithms, signatures and benchmark datasets up to 2013.
+
 \begin{landscape}\rowcolors{2}{gray!6}{white}
 \begin{table}
 
@@ -2864,7 +2900,7 @@ CellMapper & MA & semi-supervised & https://doi.org/10.1186/s13059-016-1062-5 & 
 contamDE & RNA-seq & supervised & https://doi.org/10.1093/bioinformatics/btv657 & 2016 & Tumor purity & https://github.com/zhanghfd/contamDE/ & TRUE & TRUE & probabilistic & R & 4 & 1.33 & TRUE\\
 ImSig & RNA-seq & supervised & https://doi.org/10.1101/077487 & 2016 & Cancer transcriptome & NA & FALSE & TRUE & enrichment & unknown & 0 & 0.00 & FALSE\\
 CIBERSORT & MA & supervised & https://doi.org/10.1038/nmeth.3337 & 2015 & Cancer transcriptome & http://cibersort.stanford.edu/ & FALSE & TRUE & regression & R, web tool & 343 & 85.75 & TRUE\\
-Virtual Microdissection & MA & supervised & https://doi.org/10.1038/ng.3398 & 2015 & detection of cancer and stroma in PDAC (TCGA) & NA & TRUE & TRUE & matrix factorisation & matlab & 86 & 21.50 & TRUE\\
+Virtual Microdissection & MA & unsupervised & https://doi.org/10.1038/ng.3398 & 2015 & detection of cancer and stroma in PDAC (TCGA) & NA & TRUE & TRUE & matrix factorisation & matlab & 86 & 21.50 & TRUE\\
 CellCODE & MA & semi-supervised & https://doi.org/10.1093/bioinformatics/btv015 & 2015 & Blood & http://www.pitt.edu/\textasciitilde{}mchikina/CellCODE/ & TRUE & TRUE & matrix factorisation & R- C-C++- Fortran & 28 & 7.00 & TRUE\\
 \addlinespace
 CoD & RNA-seq & supervised & https://doi.org/10.1093/bioinformatics/btv498 & 2015 & Mice diseased tissues & http://www.csgi.tau.ac.il/CoD/ & FALSE & TRUE & regression & web tool & 4 & 1.00 & TRUE\\
@@ -2997,7 +3033,7 @@ unsupervised. The approaches will be described in detail in the
 following section.
 
 There are numerous practical differences between the methods.
-\citet{Shen-0rr2013} in his review of deconvolution tools, grouped the
+\citet{Shen-Orr2013} in his review of deconvolution tools, grouped the
 tools depending on their inputs and outputs. Given type of outputs
 deconvolution can be considered as complete (proportions and cell
 profiles) or partial (one of those). Moreover, the inputs of the
@@ -3258,7 +3294,7 @@ fraction:
 
 An additional feature of EPIC is advanced data normalisation and an
 estimation of mRNA produced by each cell to adjust cell proportions,
-which was previously proposed by \citet{Liebner2013} in the context of
+which was previously proposed by \citet{Liebner2014} in the context of
 microarray data:
 
 \begin{equation}
@@ -3616,7 +3652,7 @@ matrix (genes \(\times\) samples) without any additional input.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{figures-ext/factor} 
+{\centering \includegraphics[width=1\linewidth]{figures-ext/factor} 
 
 }
 
@@ -4111,7 +4147,7 @@ cell types, validated across many biological conditions
 regression formula (see Eq. \eqref{eq:epic} ) that corresponds to the
 variability of a signature gene between independent measurements of the
 same cell type so that the least inter-cell type variable genes have
-more weight in the model. \emph{CellMix} \citep{Gajoux2013} regroups
+more weight in the model. \emph{CellMix} \citep{Gaujoux2013} regroups
 different indexes to select the most specific genes based on
 signal-to-noise ratio. However, the most popular method is selection of
 differentially expressed genes between pure populations. Often criteria
@@ -4146,9 +4182,9 @@ deconvolution, it affects the interpretation. The advantage of \emph{a
 posteriori} interpretation is a possibility to use different sources and
 types of signatures in order to provide the post plausible
 interpretation. It is common, that the way of interpretation of
-components is not included in the deconvolution tool (\citet{Wang2016},
-\citet{CellDistinguisher}, \citet{Nanodissection}), even though it is a
-crucial part of the analysis.
+components is not included in the deconvolution tool
+\citep[\citet{Newberg2018}, \citet{Moffitt2015}]{Wang2016}, even though
+it is a crucial part of the analysis.
 
 For the deconvolution of tumoral biopsies, most of reference profiles,
 up to now, are coming from the blood, which is the most available
@@ -4183,37 +4219,78 @@ reproduce.
 
 There is also a debate on the data normalization. Most of authors
 suggest to use counts (not log-space) for estimating cell abundance as
-log) transformed data violate the libearity assumption
-\citep{Zhong2013}, some opt against it \citep{Shannon2010, Clarke2010}
-and some envisage both possiblities {[}\citet{Erkkila2010};
-\citet{Repsilber2010}). For the RNA-seq data TPM (transcriprs per
-milion) normalization is paciced or even required by most methods
-(\citet{Chen2018}; \citet{Finotello2017}; \citet{Racle2017}).
+log) transformed data violate the linearity assumption
+\citep{Zhong2013}, some opt against it \citep{Shannon2017, Clarke2010}
+and some envisage both possiblities \citep{Erkkila2010, Repsilber2010}.
+For the RNA-seq data TPM (transcriprs per milion) normalization is
+paciced or even required by most methods
+\citep{Chen2018, Finotello2017, Racle2017}.
 
 \hypertarget{Validation}{%
 \subsubsection{Validation}\label{Validation}}
 
-Most of algorithm validation starts with \emph{in silico} mixtures. In
-published articles, the bulk transcriptome is simulated in two ways (1)
-mixing numerically simulated sources at defined proportions of given
-distribution (i.e.~uniform) using linear model (for instance NMF) (2)
-using sampling (for instance Monte Carlo) to randomly select existing
-pure profiles and mixing them (additive model) at random proportions. To
-the obtained bulk samples, noise can be added at different steps of the
-simulation. Additional parameters can be defined in \emph{in silico}
-mixtures, for instance, CellMix allows defining number of marker genes
-(specific to only one source) for each cell type. The simulated
-benchmark based on single cell data was used in \citet{Schelker2017} and
-\citet{Gortler2018}. In this framework simulated data was obtained
-though summing single cell profiles at known proportions. The main
-pitfall of those methods is that in the proposed simulations the gene
-covariance structure is not preserved. In reality, the proportions of
-cell types are usually not random and some immune cell types can be
-correlated or anti-correlated. In addition, these simulations create a
-simple additive model which perfectly agrees with the linear
-deconvolution model. This is probably not the case of the real bulk data
-affected by different factors as cell cycle, technical biases, patients
-heterogeneity and especially cell-cell interactions.
+Most of algorithm validation starts with \emph{in silico} mixtures (Fig.
+\ref{fig:dataVal}). In published articles, the bulk transcriptome is
+simulated in two ways (1) mixing numerically simulated sources at
+defined proportions of given distribution (i.e.~uniform) using linear
+model (for instance NMF) (2) using sampling (for instance Monte Carlo)
+to randomly select existing pure profiles and mixing them (additive
+model) at random proportions. To the obtained bulk samples, noise can be
+added at different steps of the simulation. Additional parameters can be
+defined in \emph{in silico} mixtures, for instance, CellMix allows
+defining number of marker genes (specific to only one source) for each
+cell type. The simulated benchmark based on single cell data was used in
+\citet{Schelker2017} and \citet{Gortler2018}. In this framework
+simulated data was obtained though summing single cell profiles at known
+proportions. The main pitfall of those methods is that in the proposed
+simulations the gene covariance structure is not preserved. In reality,
+the proportions of cell types are usually not random and some immune
+cell types can be correlated or anti-correlated. In addition, these
+simulations create a simple additive model which perfectly agrees with
+the linear deconvolution model. This is probably not the case of the
+real bulk data affected by different factors as cell cycle, technical
+biases, patients heterogeneity and especially cell-cell interactions.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures-ext/dataVal} 
+
+}
+
+\caption[From theory to practice: simplified pipeline of model validation]{\textbf{From theory to practice: simplified
+pipeline of model validation}. The scheme reflects pipeline of data
+validation commonly used in transcriptome deconvolution methods
+validation. Project can be started from biological problem (A) and then
+a way to solve the problem in mathematical model (C) is tested. Most
+commonly, the project starts with the model (C) then it is tested on
+simulated data (D). Next level of difficulty is testing the model with
+real data, so called, benchmark data (B) that were generated in some
+biological context different from initial problem, they need to be
+usually normalized (E) before the model is challenged. B data are widely
+used as they are easily available and there is some validation available
+facilitating comparison. Lastly, it is assumed that if the method works
+fine in the context B, it will work as well in the context A, preferably
+accompanied by some partial validation. One can replace A by cancer
+transcriptomics, B by blood data or \emph{in vitro} mixtures, if the
+focus is TME bulk transcriptomics deconvolution.}\label{fig:dataVal}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Naturally, algorithms validated with simulated mixtures are then
 validated with controlled \emph{in vitro} mixtures of cell types or
@@ -4353,7 +4430,8 @@ Positions (DMPs). \citet{Teschendorff2017} reviewed 10 tools for
 epigenome deconvolution. Six of the described methods are identified by
 authors as reference-free (which I called in this Chapter
 \emph{unsupervised}), three are regression-based and one is
-semi-supervised.
+semi-supervised. Another review on this topic was authored by
+\citet{Titus2017}.
 
 Unsupervised methods employed in methylome cell-type deconvolution are
 RefFreeEWAS \citep{Houseman2014}, SVA \citep{Leek2007} are based on SVD,
@@ -4392,11 +4470,11 @@ transcriptome data of cancer datasets. Authors identify tumor and stroma
 compartments and profiles. However, they admit the error rate for
 profiles is quite high for most genes.
 
-\citet{Wen2017} focused on intra-tumor heterogeneity (clonal evolution)
+\citet{Wen2016} focused on intra-tumor heterogeneity (clonal evolution)
 based on DNAm data. Profiles obtained from cell lines were used in a
 regression model to identify the proportions of sub-clones in breast
-cancer data. InfiniumPurify \citep{Zheng2017} and LUMP (\citet{Aran2015}
-) uses DNAm to estimate sample purity.
+cancer data. InfiniumPurify \citep{Zheng2017} and LUMP \citep{Aran2015}
+uses DNAm to estimate sample purity.
 
 Validation framework for methylation deconvolution is very similar to
 transcriptome ones: in silico mixtures and FACS-measured proportions of
@@ -4506,9 +4584,10 @@ trends since the field was established.
 
 Answers to important questions on \emph{how TME modulates tumor},
 \emph{how to propose better cancer subtyping for immune therapies} and
-\emph{how to better predict a response to treatment} are perhaps hidden
-in already produced bulk omic data. However, new methodological tools
-and more overall view is needed to better uncover hidden patterns.
+\emph{how to better predict a response to treatment} are perhaps
+\textbf{hidden in already generated bulk omic data}. However, new
+methodological tools and more overall view is needed to better uncover
+hidden patterns.
 
 In this thesis I aim to bring new insights into composition and function
 of TME. It is clear that complex information is necessary to understand
@@ -4565,19 +4644,20 @@ challenges:
   melanoma in order to better understand cell-type heterogeneity
 \end{enumerate}
 
-In order to face those challenges, I have first focused on testing and
+In order to face these challenges, I have first focused on testing and
 creating new methods. This is why methods and results are interlaced in
 this thesis. Reproducing work of other researchers it is not always
 easy, sometimes it is even impossible. A lot of time was invested to
 understand and reuse previous publications, part of this effort was
-reflected in the introduction, some of my thoughts will be expressed in
-the discussion.
+reflected in the \protect\hyperlink{methods}{introduction}, some of my
+thoughts will be expressed in the discussion.
 
 Next important step was improving and testing ideas born in our team. I
-collaborated to a publication on a topic (Chapter X) and I have authored
-an extension of this work described in Chapter Z. I have also compared
-my tool to other similar methodn an overview of the results are in
-Chapter U.
+collaborated to a publication on a topic
+\protect\hyperlink{MSTD}{Chapter 3} and I have authored an extension of
+this work described in \protect\hyperlink{lva}{Chapter 4} . I have also
+compared my tool to other similar method, an overview of the results are
+in \protect\hyperlink{nmf}{Chapter 5}.
 
 Once I have found the most appropriate way to apply my method, that I
 validated with multiple datasets, I have build a tool to share it with
@@ -4594,13 +4674,15 @@ the main outcome of my work. I completed results of this work with
 published scRNAseq data from tumor samples. This analysis is a source of
 many information, I have, so far, explored only part of possible
 direction focusing on cancer infiltrating T-cells. This results will be
-find in a manuscript in preparation in Chapter X. However, more
-information can still be extracted in the further work. There is also a
-possibility to provide an experimental validation to my finding and it
-will be considered in the discussion part.
+find in a manuscript in preparation in
+\protect\hyperlink{deconica}{Chapter 6}. However, more information can
+still be extracted in the further work. There is also a possibility to
+provide an experimental validation to my finding and it will be
+considered in the discussion part.
 
 In parallel, I used part of methods to study cell-type heterogeneity in
-an independent project resulted in a submitted publication.
+an independent project resulted in a submitted publication
+(\protect\hyperlink{maps}{Chapter 8}).
 
 The remaining time, I have invested into collaborations and
 contributions to different works within and outside of my team.
@@ -4609,32 +4691,97 @@ Published work from those projects will be shortly described in Annexes.
 \hypertarget{part-results}{%
 \part{Results}\label{part-results}}
 
-\hypertarget{sens}{%
-\chapter{Study of sensitivity and reproducibility of known
-methods}\label{sens}}
+\hypertarget{mstd}{%
+\chapter{Determining the optimal number of independent components for
+reproducible transcriptomic data analysis}\label{mstd}}
 
-\hypertarget{finding-optimal-number-of-components-and-over-decomposition-of-transcriptopmes}{%
-\section{Finding optimal number of components and over-decomposition of
-transcriptopmes}\label{finding-optimal-number-of-components-and-over-decomposition-of-transcriptopmes}}
+\chaptermark{Most Stable Transcriptomic Dimension}
 
-\begin{itemize}
-\tightlist
-\item
-  Explain why this problem is important
-\item
-  Explain shortly my role in the paper
-\end{itemize}
+\textbf{Ulykbek Kairov\(^\star\), Laura Cantini\(^\star\), Alessandro
+Greco, Askhat Molkenov, }\_\_\textbf{Urszula Czerwinska}\_\_\textbf{,
+Emmanuel Barillot and Andrei Zinovyev}
 
-\citep{Ulykbek2017}
+Here is text that places article in the context
+
+Background
+
+Independent Component Analysis (ICA) is a method that models gene
+expression data as an action of a set of statistically independent
+hidden factors. The output of ICA depends on a fundamental parameter:
+the number of components (factors) to compute. The optimal choice of
+this parameter, related to determining the effective data dimension,
+remains an open question in the application of blind source separation
+techniques to transcriptomic data.
+
+Results
+
+Here we address the question of optimizing the number of statistically
+independent components in the analysis of transcriptomic data for
+reproducibility of the components in multiple runs of ICA (within the
+same or within varying effective dimensions) and in multiple independent
+datasets. To this end, we introduce ranking of independent components
+based on their stability in multiple ICA computation runs and define a
+distinguished number of components (Most Stable Transcriptome Dimension,
+MSTD) corresponding to the point of the qualitative change of the
+stability profile. Based on a large body of data, we demonstrate that a
+sufficient number of dimensions is required for biological
+interpretability of the ICA decomposition and that the most stable
+components with ranks below MSTD have more chances to be reproduced in
+independent studies compared to the less stable ones. At the same time,
+we show that a transcriptomics dataset can be reduced to a relatively
+high number of dimensions without losing the interpretability of ICA,
+even though higher dimensions give rise to components driven by small
+gene sets.
+
+Conclusions
+
+We suggest a protocol of ICA application to transcriptomics data with a
+possibility of prioritizing components with respect to their
+reproducibility that strengthens the biological interpretation.
+Computing too few components (much less than MSTD) is not optimal for
+interpretability of the results. The components ranked within MSTD range
+have more chances to be reproduced in independent studies.
+
+\citep{Kairov2017}
 
 \includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}
 
-\hypertarget{section-1}{%
-\section{}\label{section-1}}
+\hypertarget{lva}{%
+\chapter{Application of Independent Component Analysis to Tumor
+Transcriptomes Reveals Specific and Reproducible Immune-Related
+Signals}\label{lva}}
 
-\hypertarget{reproducibility-of-nmf-versus-ica-vs-cam}{%
-\section{REPRODUCIBILITY OF NMF VERSUS ICA (VS
-CAM?)}\label{reproducibility-of-nmf-versus-ica-vs-cam}}
+\chaptermark{Reproductibility if ICA: Breast cancer}
+
+\textbf{Urszula Czerwinska, Laura Cantini, Ulykbek Kairov, Emmanuel
+Barillot, Andrei Zinovyev}
+
+Independent Component Analysis (ICA) can be used to model gene
+expression data as an action of a set of statistically independent
+hidden factors. The ICA analysis with a downstream component analysis
+was successfully applied to transcriptomic data previously in order to
+decompose bulk transcriptomic data into interpretable hidden factors.
+Some of these factors reflect the presence of an immune infiltrate in
+the tumor environment. However, no foremost studies focused on
+reproducibility of the ICA-based immune-related signal in the tumor
+transcriptome. In this work, we use ICA to detect immune signals in six
+independent transcriptomic datasets. We observe several strongly
+reproducible immune-related signals when ICA is applied in sufficiently
+high-dimensional space (close to one hundred). Interestingly, we can
+interpret these signals as cell-type specific signals reflecting a
+presence of T-cells, B-cells and myeloid cells, which are of high
+interest in the field of oncoimmunology. Further quantification of these
+signals in tumoral transcriptomes has a therapeutic potential.
+
+\citep{Czerwinska2018b}
+
+\includepdf[pages={1-}, scale=1]{pdf-ext/LVAICA_proof.pdf}
+
+\hypertarget{comparison-of-reproducibility-between-nmf-and-ica}{%
+\chapter{Comparison of reproducibility between NMF and
+ICA}\label{comparison-of-reproducibility-between-nmf-and-ica}}
+
+\chaptermark{Reproducibility: NMF vs. ICA}
 
 NMF and ICA are both algorithms often applied to solve blind source
 deconvolution problem. NMF gained a popularity as a tool of
@@ -4687,7 +4834,7 @@ For ICA, the procedure was following:
   transformed data were mean-centered by gene
 \item
   our implementation of MSTD (most stable transcriptomic dimension) from
-  \citep{Ulykbek2017} was used to evaluate most stable dimension
+  \citep{Kairov2017} was used to evaluate most stable dimension
 \item
   datasets were demposed into (i) MSTD dimension and (ii) 50 components
   (approaching overdecomposition) with matlab implementantion of fastICA
@@ -4705,7 +4852,7 @@ with each other and with known Biton et al.~metagenes (obtain from
 previous ICA decompostion applied pan-cancer). We represented the
 results in a form of a correlation graph where nodes are metagenes from
 different datasets and decompostion levels and edge width corresponds
-peasron correaltion coefficients (Fig \ref{fig:ICAvsNMF}).
+peasron correaltion coefficients (Fig \ref{fig:icavsnmf}).
 
 \begin{figure}
 
@@ -4722,7 +4869,7 @@ the case of ICA (C), remaining nodes form pseudo-cliques, immune-related
 pseudo-clique is highlighted. In the case of NMF (D), components cluster
 by dataset. Edges' width coressponds to Pearson correlation coefficient.
 Node colors correspond to dataset from which a metagene was obtained
-(see legend).}\label{fig:ICAvsNMF}
+(see legend).}\label{fig:icavsnmf}
 \end{figure}
 
 
@@ -4749,9 +4896,9 @@ are more tighlty connected globally and when the threshold is applied,
 remaing metagenes do not form clear clusters but group by data set. In
 NMF decomposition if it hard to define different signals as the datasets
 seem to be all related to each other. We can see from (Fig
-\ref{fig:ICAvsNMF}D) that the IMMUNE signal is correlated
+\ref{fig:icavsnmf}D) that the IMMUNE signal is correlated
 \textgreater{}0.4 with a high number of NMF components that are also
-linked to some other components. In ICA (Fig \ref{fig:ICAvsNMF}C)
+linked to some other components. In ICA (Fig \ref{fig:icavsnmf}C)
 components related to the IMMUNE metagens form a pseudo-clique that is
 related with one link to INTERFERON metagene.
 
@@ -4768,14 +4915,12 @@ could be projected.
 \begin{itemize}
 \item
   \emph{quantify: with clustering coefficient?}
-
-  ​
 \item
   Explain why ICA is more reproducible
 \end{itemize}
 
 \hypertarget{impact-of-modification-of-signatures-list-on-result-for-signature-based-deconvolution-methods}{%
-\section{Impact of modification of signatures list on result for
+\section{? Impact of modification of signatures list on result for
 signature-based deconvolution
 methods}\label{impact-of-modification-of-signatures-list-on-result-for-signature-based-deconvolution-methods}}
 
@@ -4974,10 +5119,6 @@ Next step will be:
 \item
   writing a demo (best interactive)
 \end{itemize}
-
-\newpage
-
-\includepdf[pages={1-}, scale=1]{pdf-ext/LVAICA.pdf}
 
 \hypertarget{results}{%
 \chapter{Comparative analysis of cancer immune
@@ -5188,7 +5329,7 @@ automatically.
 
 \addcontentsline{toc}{chapter}{Bibliography}
 
-\bibliography{00-Inter,01-Intro02,02-MathIntro,packages,UCzcite}
+\bibliography{01-Interdisciplinarity,01-Intro,02-MathIntro,packages,UCzcite,lva}
 
 
 \end{document}

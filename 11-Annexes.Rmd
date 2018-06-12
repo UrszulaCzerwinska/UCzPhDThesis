@@ -1,0 +1,20 @@
+# Annexes {-} 
+
+## Dc subtypes {-}
+
+## DreamIdea Challenge {-}
+
+## Full list of publications {-}
+
+## CV {-}
+
+\newpage
+
+# Post Scriptum: Thesis writing {-}
+
+This Thesis is written in [*bookdown*](https://github.com/rstudio/bookdown). I have chosen this form as it can easily compile to *LaTeX*, PDF, MS Word, ebook and  html. Optimally, the final manuscript will be also published online in a form of an open source [gitBook](https://www.gitbook.com/about) and an ebook including interactive figures and maybe even data demos. Another good reason for using  [*bookdown*](https://github.com/rstudio/bookdown) is its simple syntax of markdown and natural integration of code snippets with .Rmd. It reduces formatting time and give multiple outputs. 
+
+The template of for this thesis manuscript was adapted from *LaTeX*  template provided by University Paris Descartes. 
+
+Citations are stocked in Mendeley Desktop and exported to .bib files automatically.
+

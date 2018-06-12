@@ -230,7 +230,7 @@ I have spent void efforts working on a bulk transcriptomic data simulation frame
 
 In a parallel project, I worked on exploration of brand new data type: single cell transcriptomic (RNAseq) in the context of tumor microenvironment (see [Chapter 6](#map)). 
 
-We have also participated in Dream Idea Challenge, a project that aimed to put closer experimental and theoretical  researchers [@Azencott2018][Annexe1](). 
+We have also participated in Dream Idea Challenge, a project that aimed to put closer experimental and theoretical  researchers [@Azencott2017][Annexe1](). 
 
 I have collaborated in numerous projects within and outside my team. Some of the projects resulted in publications, such as my work on analysing pDC subsets of X cancer [Annexe2](). Others are in still preparation.
 
