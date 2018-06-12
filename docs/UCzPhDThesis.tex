@@ -2721,7 +2721,7 @@ appear in an article of \citet{Venet2001} as a way to
 In the basic hypothesis \citep{Abbas2009}, mixture of signals from TME
 in transcriptomic samples can be described as a linear mixture.
 
-\begin{equation} 
+\begin{equation}
 X = SA  \label{eq:linear}
 \end{equation}
 
@@ -2732,7 +2732,7 @@ matrix of expression of genes in each cell type.
 Algebraically the same problem can be formalized as latent variable
 model:
 
-\begin{equation} 
+\begin{equation}
 \begin{aligned}
 \forall i \in \{1,M\},  \forall  j \in \{1,N\} \\
 x_{ij}= \sum_{k=1}^K a_{kj} *s_{ik}+ e_{ij} \label{eq:algebraic}
@@ -3005,8 +3005,8 @@ method, as CIBERSORT, demonstrated to work with microarray and applied
 commonly to RNA-seq by other researchers, the validity of results
 remains unclear as some studies claim that CIBERSORT performs accurately
 applied to RNA-seq \citep{Thorsson2018} and other opt agains it
-(\citet{Li2017}; \citet{Tamborero2018}). Most of newer methods
-(i.e.~EPIC \citep{Racle2017}, quanTIseq \citep{Finotello2017} or Infino
+\citep{Li2017, Tamborero2018}. Most of newer methods (i.e.~EPIC
+\citep{Racle2017}, quanTIseq \citep{Finotello2017} or Infino
 \citep{Zaslavsky2017}) are specifically designed for RNA-seq
 TPM-normalized data. Some methods, mostly enrichment-based methods, are
 applicable to both technologies (i.e.~xCell \citep{Aran2017}).
@@ -3045,23 +3045,23 @@ approximative proportions of mixed cells or purified profiles to be
 provided. The newer methods include the reference profiles in the tool
 if necessary. Some tools, including most of purity estimation tools,
 demand an additional data input as normal samples or another data type
-such as CNA data (Timer \citep{Li2013}, VoCAL \citep{Steuerman2016}{]}
-or image data (quanTIseq \citep{Finotello2017}). An important parameter
-is also a number of sources (\(k\)) to which the algorithm deconvolutes
-the mixture. In many methods it should be provided by the user, which
-can be difficult in a case of complex mixtures of human tissues. In
-addition, type of method can also limit the number of sources, for
-example, a probabilistic framework privilege lower number of sources
-(2-3) due to the theoretical constraints. In regression depending on
-provided reference the output number of estimated sources is imposed.
-Because of the problem of collinearity and similarity of immune cell
-profiles, it is hard to distinguish between cell sub-types,
-deconvolution into fine-grain cell subtypes is often called often deep
-deconvolution. Some methods (i.e.~CIBERSORT, Infino, xCell) give a
-specific attention to deconvolution of cell-subtypes. An absolute
-presence of a cell type in the mixture can be also an important factor,
-if it is too low it can reach a detection limit, Electronic subtraction
-\citep{Gosink2007} discuss specifically the detection of rare cel-types.
+such as CNA data (Timer \citep{Li2013}, VoCAL \citep{Steuerman2016}) or
+image data (quanTIseq \citep{Finotello2017}). An important parameter is
+also a number of sources (\(k\)) to which the algorithm deconvolutes the
+mixture. In many methods it should be provided by the user, which can be
+difficult in a case of complex mixtures of human tissues. In addition,
+type of method can also limit the number of sources, for example, a
+probabilistic framework privilege lower number of sources (2-3) due to
+the theoretical constraints. In regression depending on provided
+reference the output number of estimated sources is imposed. Because of
+the problem of collinearity and similarity of immune cell profiles, it
+is hard to distinguish between cell sub-types, deconvolution into
+fine-grain cell subtypes is often called often deep deconvolution. Some
+methods (i.e.~CIBERSORT, Infino, xCell) give a specific attention to
+deconvolution of cell-subtypes. An absolute presence of a cell type in
+the mixture can be also an important factor, if it is too low it can
+reach a detection limit, Electronic subtraction \citep{Gosink2007}
+discuss specifically the detection of rare cel-types.
 
 Running time and necessary infrastructure are another way to
 characterize the methods. Although it is hard to compare objectively the
@@ -3123,8 +3123,8 @@ in May 2018.}\label{fig:languages}
 Regression models are the most popular methods for bulk gene expression
 deconvolution. They use estimated pure cell profiles as depending
 variables (or selected signature genes) that should explain the mixed
-profiles choosing best \(\beta\) parameters (\eqref{eq:regLin}) that can
-be interpreted as cell proportions.
+profiles choosing best \(\beta\) parameters (Eq. \eqref{eq:regLin}) that
+can be interpreted as cell proportions.
 
 A standard type of regression is called linear regression. It reflects
 linear dependence between independent and dependent variables. The
@@ -3156,9 +3156,9 @@ RSS(\beta) = \sum_{i = 1}^{N}(y_i - f(x_i))^2 = \sum_{i = 1}^{N}(y_i - \beta_0 -
 \textbf{Ordinary least squares regression} is using Eq.\eqref{eq:rss} to
 compute \(\beta\).
 
-\textbf{Ridge regression} (Equation \eqref{eq:ridge}) adds a regularizer
-(called \(L2\) norm) to shrink the coefficients (\(\lambda \geq 1\))
-through imposing a penalty on their size.
+\textbf{Ridge regression} (Eq.\eqref{eq:ridge}) adds a regularizer (called
+\(L2\) norm) to shrink the coefficients (\(\lambda \geq 1\)) through
+imposing a penalty on their size.
 
 \begin{equation}
 \hat{\beta}^{ridge} = \underset{\beta}{\text{argmin}}\{\sum_{i = 1}^{N}(y_i - f(x_i))^2 + \lambda\sum_{j=1}^{p}\beta^2_j\}\label{eq:ridge}
@@ -3187,7 +3187,7 @@ where error is measured as follows:
 \begin{equation}
 V_\epsilon(r) = \begin{cases}
     0, & \text{if $\lvert r \rvert < \epsilon$,}\\
-    \rvert r\lvert - \epsilon, & \text{otherwise}. 
+    \rvert r\lvert - \epsilon, & \text{otherwise}.
   \end{cases}  \label{eq:svr2}
 \end{equation}
 
@@ -3374,7 +3374,7 @@ In the Fisher exact test formula (Eq. \eqref{eq:fisher}) the \(a\),
 genes in of the 2X2 contingency table, and \(N\) is the total frequency
 (\(a + b + c + d\)).
 
-\begin{equation} 
+\begin{equation}
 p= \frac{( ( a + b ) ! ( c + d ) ! ( a + c ) ! ( b + d ) ! )}{a ! b ! c ! d ! N ! } \label{eq:fisher}
 \end{equation}
 
@@ -3416,7 +3416,7 @@ cell-types and cell-states of different pathways.
 The probabilistic methods share a common denominator: they aim to
 minimise a likelihood function of Baye's theorem:
 
-\begin{equation} 
+\begin{equation}
 p(y|\theta) = \frac{p(\theta|y )* p(y)}{p(\theta)} \label{eq:Bayes}
 \end{equation}
 
@@ -3501,7 +3501,7 @@ points:}
 }
 
 \caption[Convex hull illustration]{\textbf{Convex hull illustration}. A set of
-points and its convex hull (line). Convex hull vertices are black;
+points and its convex hull (line). Convex hull vertices are black,
 interior points are white. Image reproduced after \citet{Erickson2018}.}\label{fig:convexhull}
 \end{figure}
 
@@ -3796,8 +3796,11 @@ The optimization can be done employing different methods:
 \tightlist
 \item
   \textbf{euclidean} update with multiplicative update rules, it is the
-  classic NMF \citep{Seung1999}
-  \begin{equation}\begin{aligned} W \leftarrow W \frac{XH^T}{WHH^T}\\H \leftarrow H\frac{W^TX}{W^TWH}  \label{eq:euclidNMF} \end{aligned}\end{equation}
+  classic NMF \citep{Seung1999} \begin{equation}
+  \begin{aligned}
+  W \leftarrow W \frac{XH^T}{WHH^T}\\H \leftarrow H\frac{W^TX}{W^TWH}  \label{eq:euclidNMF} 
+  \end{aligned}
+  \end{equation}
 \item
   \textbf{alternating least squares} \citep{Paatero1994} where the
   matrices W and H are fixed alternatively
@@ -3939,27 +3942,25 @@ correlated and have variance equal to 1.
 \end{enumerate}
 
 \begin{algorithm}
-  \caption{ FastICA multiple component extraction}
-  \begin{algorithmic}[1]
-  \INPUT{$K $ Number of desired components}
-  \INPUT{$X \in \mathbb{R}^{N \times M}$ Prewhitened matrix, where each column represents an $N$-dimensional sample, where $K \leq N$ }
-  \OUTPUT{$A \in \mathbb{R}^{N \times K}$ Un-mixing matrix where each column projects  $\mathbf {X}$ onto independent component.}
-  \OUTPUT{$S \in \mathbb{R}^{K \times M}$ Independent components matrix, with $M$ columns representing a sample with $K$ dimensions.}
-  \begin{equation}\label{eq:fasticaMul}\end{equation}
-    \For{$p\gets 1, K$}
-        \State $\mathbf{w}_{p} \gets$ \emph{Random vector of length} $N$
-        \While{$\mathbf{w_{p}}$ \emph{ changes}}
-            \State $\mathbf{w}_p \gets \frac{1}{M}Xg(\mathbf{w}_p^TX)^T - \frac{1}{M}g'(\mathbf{w}_p^TX)1w_p$ 
-            \State $\mathbf{w}_p \gets \mathbf{w}_p - (\sum_{j=1}^{p-1}\mathbf{w}_p^T\mathbf{w}_j\mathbf{w}_j^T)^T$
-            \State $\mathbf{w}_p \gets \frac{\mathbf{w}_p}{\lVert \mathbf{w}_p \rVert}$
-        \EndWhile
-    \EndFor 
-    \State where $\mathbf {1}$  is a column vector of 1's of dimension $M$ 
-     \OUTPUT{$A = [\mathbf{w}_1, ..., \mathbf{w}_K]$}
-     \OUTPUT{$S = \mathbf{A}^T\mathbf{X}$}
-
-  \end{algorithmic}
-
+\caption{ FastICA multiple component extraction}
+\begin{algorithmic}[1]
+\INPUT{$K $ Number of desired components}
+\INPUT{$X \in \mathbb{R}^{N \times M}$ Prewhitened matrix, where each column represents an $N$-dimensional sample, where $K \leq N$ }
+\OUTPUT{$A \in \mathbb{R}^{N \times K}$ Un-mixing matrix where each column projects  $\mathbf {X}$ onto independent component.}
+\OUTPUT{$S \in \mathbb{R}^{K \times M}$ Independent components matrix, with $M$ columns representing a sample with $K$ dimensions.}
+\begin{equation}\label{eq:fasticaMul}\end{equation}
+\For{$p\gets 1, K$}
+\State $\mathbf{w}_{p} \gets$ \emph{Random vector of length} $N$
+\While{$\mathbf{w_{p}}$ \emph{ changes}}
+\State $\mathbf{w}_p \gets \frac{1}{M}Xg(\mathbf{w}_p^TX)^T - \frac{1}{M}g'(\mathbf{w}_p^TX)1w_p$
+\State $\mathbf{w}_p \gets \mathbf{w}_p - (\sum_{j=1}^{p-1}\mathbf{w}_p^T\mathbf{w}_j\mathbf{w}_j^T)^T$
+\State $\mathbf{w}_p \gets \frac{\mathbf{w}_p}{\lVert \mathbf{w}_p \rVert}$
+\EndWhile
+\EndFor
+\State where $\mathbf {1}$  is a column vector of 1's of dimension $M$
+\OUTPUT{$A = [\mathbf{w}_1, ..., \mathbf{w}_K]$}
+\OUTPUT{$S = \mathbf{A}^T\mathbf{X}$}
+\end{algorithmic}
 \end{algorithm}
 
 However, the results of this algorithm (Alg. 1. \eqref{eq:fasticaMul}) are
@@ -4073,25 +4074,22 @@ it is implemented in R code is available online in
 \href{https://www.synapse.org/\#!Synapse:syn1446295}{Synapse portal}.
 
 \begin{algorithm}
-  \caption{ Attractor metagenes algorithm}
-  \begin{algorithmic}[2]
-  \INPUT{$\alpha$ shrinkage parameter}
-  \INPUT{$X \in \mathbb{R}^{N \times M}$ gene expression matrix }
-  \OUTPUT{$m_j$ metagene of $g_{seed}$ }
-
-    \begin{equation}\label{eq:attr}\end{equation}
-    \State{$g_{seed} \gets$ \emph{a gene from} $1:N$ }
-    \State{$I^{\alpha}(g_{seed}; g_i)$} \Comment{compute association beteen $g_{seed}$ and $g_i$}
-    \State{$w_i = f(I^{\alpha}(g_{seed}; g_i))$} \Comment{compute weights for each gene}
-    \State{$m_0 = \frac{\sum^N-1_{i=1}(g_iw_i)}{\sum^N-1_{i=1}w_i} $}\Comment{compute metagene as weighted average of all genes}
-    \State{$I^{\alpha}(m_0; g_i)$} \Comment{compute association between metagene $m_0$ and each gene $g_i$}
-    \Repeat 
-        \State{$w_i = f(I^{\alpha}(m_0; g_i))$}
-    \State{$m_j = \frac{\sum^N-1_{i=1}(m_0w_i)}{\sum^N-1_{i=1}w_i} $}
-    \Until {$m_{j+1} =  m_j$}
-
-  \end{algorithmic}
-
+\caption{Attractor metagenes algorithm}
+\begin{algorithmic}[2]
+\INPUT{$\alpha$ shrinkage parameter}
+\INPUT{$X \in \mathbb{R}^{N \times M}$ gene expression matrix}
+\OUTPUT{$m_j$ metagene of $g_{seed}$ }
+\begin{equation}\label{eq:attr}\end{equation}
+\State{$g_{seed} \gets$ \emph{a gene from} $1:N$ }
+ \State{$I^{\alpha}(g_{seed}; g_i)$} \Comment{compute association beteen $g_{seed}$ and $g_i$}
+\State{$w_i = f(I^{\alpha}(g_{seed}; g_i))$} \Comment{compute weights for each gene}
+\State{$m_0 = \frac{\sum^N-1_{i=1}(g_iw_i)}{\sum^N-1_{i=1}w_i} $}\Comment{compute metagene as weighted average of all genes}
+\State{$I^{\alpha}(m_0; g_i)$} \Comment{compute association between metagene $m_0$ and each gene $g_i$}
+ \Repeat
+\State{$w_i = f(I^{\alpha}(m_0; g_i))$}
+ \State{$m_j = \frac{\sum^N-1_{i=1}(m_0w_i)}{\sum^N-1_{i=1}w_i} $}
+\Until {$m_{j+1} =  m_j$}
+\end{algorithmic}
 \end{algorithm}
 
 The produced signatures' weights are non-negative. In the original
@@ -5329,7 +5327,7 @@ automatically.
 
 \addcontentsline{toc}{chapter}{Bibliography}
 
-\bibliography{01-Interdisciplinarity,01-Intro,02-MathIntro,packages,UCzcite,lva}
+\bibliography{01-Interdisciplinarity.bib,01-Intro.bib,02-MathIntro.bib,packages.bib,UCzcite.bib,lva.bib}
 
 
 \end{document}
