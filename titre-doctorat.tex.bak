@@ -158,7 +158,7 @@ Merci tout le monde
 
 %Dédicace2
 \newpage
-\emph{Dédicace}
+\emph{Motto}
 \vspace*{\fill}
 
  \begin{quote}
@@ -168,5 +168,16 @@ I promise to be unique!\\
 I promise not to repeat things other people say!}}\\
 — Steve Martin, \textit{A Wild and Crazy Guy (1978)}\\
  \end{quote}
+
+ \vspace*{\fill}
+ 
+ %web
+\newpage
+\emph{Information}
+\vspace*{\fill}
+
+
+
+\large{\centerline{This thesis is also available online as a webpage at the address \url{http://urszulaczerwinska.github.io/UCzPhDThesis}. The web version contains interactive content (videos, figures, tables) that are static in the pdf version. Enjoy!}
 
  \vspace*{\fill}

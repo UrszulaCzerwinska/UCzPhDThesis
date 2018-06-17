@@ -23,24 +23,24 @@ cat("\\chaptermark{Mathematical introduction}")
 }
 ```
 
-In the previous chapter I presented state-of-art of the current immuno-oncology research that has to embrace great complexity of cancer disease and the immune system. One part of this complexity can be explained by the presence and quantities of tumor-infiltrating immune cells, their interactions with each other and the tumor. 
+In the previous chapter, I presented state-of-art of the current immuno-oncology research that has to embrace the vast complexity of cancer disease and the immune system. One part of this complexity can be explained by the presence and quantities of tumor-infiltrating immune cells, their interactions with each other and the tumor. 
 
-In this chapter, I will discuss how mathematical models can be used to extract information about different  cell-types from 'bulk' omics data or how to de-mix mixed sources composing the bulk samples. To start with, I will introduce you to basic concepts of machine learning. Then I will focus on approaches adapted for cell-type deconvolution. In a literature overview, I will depict the evolution of the field as well as discuss the particularities   of different tools for estimating presence and proportion of immune cells within cancer bulk omic data. 
+In this chapter, I will discuss how mathematical models can be used to extract information about different cell-types from 'bulk' omics data or how to de-mix mixed sources composing the bulk samples. To start with, I will introduce you to basic concepts of machine learning. Then I will focus on approaches adapted for cell-type deconvolution. In a literature overview, I will depict the evolution of the field as well as discuss the particularities of different tools for estimating presence and proportion of immune cells within cancer bulk omic data. 
 
 
 ## Introduction to supervised  and unsupervised learning
 
-Machine learning (ML) is a filed of computer science where system is able to learn and improve given an objective function and the data. 
+Machine learning (ML) is a field of computer science where a system can learn and improve given an objective function and the data. 
 
-A popular definition of machine learning has been given by Mitchell in 1997: 
+Mitchell gave a popular definition of machine learning in 1997: 
 
 > Machine learning: *A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E*.
 >
 > —  Mitchell in 1997 [@Mitchell1997]
 
-Term *Artificial intelligence* (AI) is often used by the media or general public to describe machine learning. Indeed ML can be considered as a branch of AI, together with computer vision and deep neural networks applications. However, commonly ML and AI are used interchangeably by the wide public.
+Term *Artificial intelligence* (AI) is often used by the media or the general public to describe machine learning. Indeed ML can be considered as a branch of AI, together with computer vision and deep neural networks applications. However, commonly ML and AI are used interchangeably by the broad public.
 
-ML is applied commonly in many fields of science and industry. I will not discuss here a subtle differences between machine learning, statistical learning, computational statistics and mathematical optimisation. 
+ML is applied commonly in many fields of science and industry. I will not discuss here subtle differences between machine learning, statistical learning, computational statistics and mathematical optimization. 
 
 In general, algorithms can be divided into groups given the application: 
 
@@ -48,29 +48,29 @@ In general, algorithms can be divided into groups given the application:
 - regression - aims to predict a continuous response of an input (continuous variable)
 - clustering - aims to divide data into groups that are related to each other based on a distance 
 
-Another important distinction can be made given the inputs to the algorithm. Here, I present the differences between supervised and unsupervised learning.
+Another critical distinction can be made given the inputs to the algorithm. Here, I present the differences between supervised and unsupervised learning.
 
 ### Supervised learning 
 
-Supervised learning can be described as  "the analysis of data via a focused structure" [@Piegorsch]. The main task is to predict an output given the inputs. In the statistical language, the inputs are often called the predictors or the independent variables. In the pattern recognition literature the term features is preferred. The outputs are called the responses, or the dependent variables. [@Hastie2009]
+Supervised learning can be described as  "the analysis of data via a focused structure" [@Piegorsch]. The primary task is to predict an output given the inputs. In the statistical language, the inputs are often called the predictors or the independent variables. In the pattern recognition literature, the term features are preferred. The outputs are called the responses, or the dependent variables. [@Hastie2009]
 
-The initial data is divided into two sets: training and test. First the model is trained with correct answers on the training data (learning to minimise the error) , and then its performance is evaluated on the test data. 
+The initial data is divided into two sets: training and test. First, the model is trained with correct answers on the training data (learning to minimize the error), and then its performance is evaluated on the test data. 
 
-Among widely used classifiers there are Support Vector Machines (SVM), partition trees (and their extension random forests), and neural networks. For regression it is common to encounter linear regression, boosted trees regression, 
+Among widely used classifiers there are Support Vector Machines (SVM), partition trees (and their extension random forests), and neural networks. For regression, it is common to encounter linear regression, boosted trees regression, 
 
 ### Unsupervised learning {#unsup}
 
-In Unsupervised learning is given the data and is asked to divide the data given a certain constraint. However, the correct division of the data is not known. Therefore an unsupervised algorithms aims to unveil the "hidden structure" of the data, or latent variables.
+In Unsupervised learning is given the data and is asked to divide the data given a particular constraint. However, the correct division of the data is not known. Therefore an unsupervised algorithm aims to unveil the "hidden structure" of the data or latent variables.
 
-One group of unsupervised learning are descriptive statistic methods, such as: principal components, multidimensional scaling, self-organizing maps, and principal curves. This methods aim to represent to the data  most adequately in low-dimensional space  [@Hastie2009].
+One group of unsupervised learning are descriptive statistic methods, such as principal components, multidimensional scaling, self-organizing maps, and principal curves. These methods aim to represent to the data most adequately in low-dimensional space  [@Hastie2009].
 
-Another group are clustering algorithms. Clustering is the way to create groups (multiple convex regions) based on the intrinsic architecture of the data. These groups are not necessarily known beforehand, but can validated with the domain knowledge. Popular clustering algorithms are knn, k-means, hierarchical clustering.
+Another group is clustering algorithms. Clustering is the way to create groups (multiple convex regions) based on the intrinsic architecture of the data. These groups are not necessarily known beforehand but can be validated with the domain knowledge. Popular clustering algorithms are knn, k-means, hierarchical clustering.
 
-In both descriptive statistics and clustering, one important parameter (often called $k$) is number to which we want to decompose the data (number of factors, variables, clusters). Different algorithms and applications can propose an automatic choice of $k$ based on formal indexes or previous knowledge, in others, user need to provide the $k$.
+In both descriptive statistics and clustering, one important parameter (often called $k$) is number to which we want to decompose the data (number of factors, variables, clusters). Different algorithms and applications can propose an automatic choice of $k$ based on formal indexes or previous knowledge, in others, the user needs to provide the $k$.
 
 ### Low-dimensional embedding for visualization
 
-There is a common confusion, often seen in computational biology, between dimension reduction and clustering. This confusion is highly pronounced with, a popular in biology, algorithm: T-distributed Stochastic Neighbor Embedding (t-SNE) [@VanDerMaaten2008]. t-SNE works in 2 main steps:  (1) a probability distribution over pairs of high-dimensional objects is computed in such a way that similar objects have a high probability of being picked, whilst dissimilar points have an extremely small probability of being picked, (2) t-SNE defines a similar probability distribution over the points in the low-dimensional map, and it minimizes the Kullback–Leibler divergence between the two distributions with respect to the locations of the points in the map.  It is not reliable to use t-SNE for clustering as it does not preserve distances. It can also easily overfit the data and uncover 'fake' or 'forced' patterns. Therefore, a clustering should not be applied to t-sne reduced data. An alternative to t-SNE method is recently published Uniform Manifold Approximation and Projection for Dimension Reduction (UMAP) [@Mcinnes2018]– that is based on Laplacian eigenmaps, highly scalable, reproducible and recently applied to biological data [@Becht2018]. Older used alternatives are ISOMAPS (non linear dimension reduction) or PCA (Principal components analysis). For any non-linear dimension reduction method, it is not recommended to use clustering *a posteriori*. Clusters should be computed on original data and then the cluster labels can be visualized in low-dimentional embedding.
+There is a common confusion, often seen in computational biology, between dimension reduction and clustering. This confusion is highly pronounced with, a popular in biology, algorithm: T-distributed Stochastic Neighbor Embedding (t-SNE) [@VanDerMaaten2008]. t-SNE works in 2 main steps:  (1) a probability distribution over pairs of high-dimensional objects is computed in such a way that similar objects have a high probability of being picked, whilst dissimilar points have an extremely small probability of being picked, (2) t-SNE defines a similar probability distribution over the points in the low-dimensional map, and it minimizes the Kullback–Leibler divergence between the two distributions with respect to the locations of the points in the map.  It is not reliable to use t-SNE for clustering as it does not preserve distances. It can also easily overfit the data and uncover 'fake' or 'forced' patterns. Therefore, a clustering should not be applied to t-sne reduced data. An alternative to the t-SNE method is recently published Uniform Manifold Approximation and Projection for Dimension Reduction (UMAP) [@Mcinnes2018]– that is based on Laplacian eigenmaps, highly scalable, reproducible and recently applied to biological data [@Becht2018]. Older used alternatives are ISOMAPS (non-linear dimension reduction) or PCA (Principal components analysis). For any non-linear dimension reduction method, it is not recommended to use clustering *a posteriori*. Clusters should be computed on original data, and then the cluster labels can be visualized in low-dimensional embedding.
 
 <!--Impact of machine learning on Healthcare-->
 
@@ -86,15 +86,15 @@ There is a common confusion, often seen in computational biology, between dimens
 
 One specific application of mathematical/statistical tools is deconvolution of mixed signals.
 
-According to mathematical definition:
+According to a mathematical definition:
 
-> Deconvolution : *the resolution of a convolution function into the functions from which it was formed in order to separate their effects* 
+> Deconvolution : *the resolution of a convolution function into the functions from which it was formed to separate their effects* 
 
-Or in plain English:
+Alternatively, in plain English:
 
 > *a process of resolving something into its constituent elements or removing complication*
 
-The similar problem of mixed sources can be encountered in other fields, i.e. signal processing, known also under the name of  "**cocktail party problem**". In the cocktail party problem, at a party with many people and music, sound in recorded with several microphones. Through blind source separation, it is possible to separate the voices of different people and the musical background (Fig. \@ref(fig:cocktailparty)) [@Cherry1953].
+The similar problem of mixed sources can be encountered in other fields, i.e., signal processing, also known under the name of  "**cocktail party problem**." In the cocktail party problem, at a party with many people and music, sound in recorded with several microphones. Through blind source separation, it is possible to separate the voices of different people and the musical background (Fig. \@ref(fig:cocktailparty)) [@Cherry1953].
 
 ```{r cocktailparty, fig.cap='(ref:cocktailparty-caption)',fig.scap="illutration of the cocktail party problem", out.width='100%', fig.align='center', echo = FALSE}
 if (is_pdf_output()) {
@@ -104,22 +104,22 @@ if (is_pdf_output()) {
 }
 ```
 
-(ref:cocktailparty-caption) **Illutration of the cocktail party problem**. During a cocktail party voices of participalnts can be recorded with a set of microphones and then recovered though blind source separation. Fot the illustration purposes only four sources are mixed with three microphones, in reality the analysis can be performed with many sources. However, number of samples (microphones) should be higher than numer of sources (contrary to the illustration). 
+(ref:cocktailparty-caption) **Illustration of the cocktail party problem**. During a cocktail party voices of participants can be recorded with a set of microphones and then recovered through blind source separation. The illustration purposes only four sources are mixed with three microphones, in reality, the analysis can be performed with many sources. However, a number of samples (microphones) should be higher than the number of sources (contrary to the illustration). 
 
-The same concept can be transposed to the bulk omic data, each biological species (like gene) is a cocktail party where each sample is a microphone that gathers mixed signals of different nature. The signals that form the mixtures can be different depending on the data type and scientific question asked.
+The same concept can be transposed to the bulk omic data, each biological species (like gene) is a cocktail party where each sample is a microphone that gathers mixed signals of different nature. The signals that form the mixtures can be different depending on the data type, and the scientific question asked.
 
 In general, the total bulk data can be split into three abundance components [@Shen-Orr2013]: 
 
 1. sample characteristic (disease, clinical features)
 2. individual variation, genotype-specific or technical variation
-3. presence and abundance of different cell types expressing set of characteristic genes 
+3. presence and abundance of different cell types expressing a set of characteristic genes 
 
 Many scientists invested their efforts in order to dissect the bulk omic data into interpretable biological components.
 
 In scientific literature, there can be encountered three main understanding of tumor deconvolution:
 
-* **estimating clonality**: using genomic data is it possible to trace tumor phylogeny raised from mutations and aberrations in tumor cells; therefore it is dissecting *intra*-tumor heterogeneity (i.e. using transcriptomic data [@Schwartz2010], or more often CNA data (see [Section 2.4.2](#otherDecon)) 
-* **estimating purity**: deconvolution into tumor and immune/stroma compartments, often aiming to "remove" not-tumor signal from the expression data, can be performed with different data types, the most reliable estimations are obtained usually from CNA data (see [Section 2.4](#otherDecon)) 
+* **estimating clonality**: using genomic data is it possible to trace tumor phylogeny raised from mutations and aberrations in tumor cells; therefore it is dissecting *intra*-tumor heterogeneity (i.e., using transcriptomic data [@Schwartz2010], or more often CNA data (see [Section 2.4.2](#otherDecon)) 
+* **estimating purity**: deconvolution into the tumor and immune/stroma compartments, often aiming to "remove" not-tumor signal from the expression data, can be performed with different data types, the most reliable estimations are usually obtained from CNA data (see [Section 2.4](#otherDecon)) 
 * **estimating cell-type** proportions and/or profiles from bulk omics data, most of works were performed on transcriptome data (see [Section 2.3](#cellTypeTrans)) and some on the methylome data (see [Section 2.4.1](#otherDecon))
 
 These three types of deconvolution can be performed on the bulk omics data. Here we will focus on cell-type deconvolution models using bulk transcriptome. I will also briefly introduce deconvolution models applied to other data types (methylome and CNA).
@@ -128,9 +128,9 @@ These three types of deconvolution can be performed on the bulk omics data. Here
 
 The idea of un-mixing the bulk omic profiles is documented to first appear in an article of @Venet2001 as a way to 
 
-> *infer the gene expression profile of the various cellular types (...) directly from the measurements taken on the whole sample*
+> *infer the gene expression profile of the various cell types (...) directly from the measurements taken on the whole sample*
 
-In the basic hypothesis [@Abbas2009],  mixture of signals from TME in transcriptomic samples can be described as a linear mixture. 
+In the primary hypothesis [@Abbas2009], a mixture of signals from TME in transcriptomic samples can be described as a linear mixture. 
 
 ```{r e1o, results="asis", echo = FALSE}
 if(is_pdf_output()){
@@ -148,9 +148,9 @@ cat("\\end{equation}")
 }
 ```
 
-Where in Equaltion \@ref(eq:linear) $X$ is microarray data matrix of one biological sample, $A$ are mixing proportions and $S$ is the matrix of expression of genes in each cell type.
+Where in Equation \@ref(eq:linear) $X$ is microarray data matrix of one biological sample, $A$ are mixing proportions, and $S$ is the matrix of expression of genes in each cell type.
 
-Algebraically the same problem can be formalized as latent variable model:
+Algebraically the same problem can be formalized as the latent variable model:
 
 ```{r e2o, results="asis", echo = FALSE}
 if(is_pdf_output()){
@@ -184,15 +184,15 @@ if (is_pdf_output()) {
 }
 ```
 
-(ref:deconvolution-cartoon-caption) **Principle of the deconvolution applied to transcriptome** Graphical illustration of the deconvolution of mixed samples. Starting from the left, gene expression of genes A B C is a sum of expression of cell types 1, 2, 3, 4. After deconvolution, cell types are separated and gene expression of each cell type is estimated taking into account cell type proportions.
+(ref:deconvolution-cartoon-caption) **Principle of the deconvolution applied to transcriptome** Graphical illustration of the deconvolution of mixed samples. Starting from the left, gene expression of genes A B C is a sum of expression of cell types 1, 2, 3, 4. After deconvolution, cell types are separated, and gene expression of each cell type is estimated taking into account cell type proportions.
 
-However, in this model, either the mixing proportions, number of mixing sources or an array of specific genes need to be know. While, in the real-life case, only $X$ is truly known. Therefore, developed models proposed various manners for estimating number of mixing sources and their proportions, or the specific cell type expression.
+However, in this model, either the mixing proportions, number of mixing sources or an array of specific genes need to be known. While, in the real-life case, only $X$ is truly known. Therefore, developed models proposed various manners for estimating the number of mixing sources and their proportions, or the specific cell type expression.
 
 Why there is a need for cell-type deconvolution approaches?
 
 * for differential gene expression analysis, to avoid confusion between a feature and cell-type abundance
 
-* difference in gene expression in one cell type can be blurred by presence of other cells expressing the gene
+* difference in gene expression in one cell type can be blurred by the presence of other cells expressing the gene
 
 * to obtain information about a fraction of given component in the sample
 
@@ -200,11 +200,11 @@ Why there is a need for cell-type deconvolution approaches?
 
 ### Literature overview
 
-In order to answer general and specific need for cell-type deconvolution of bulk transcriptomes researches produced a large collection of tools. I have collected all (to my knowledge) articles published in journals or as a pre-print (up to May 2018) that propose original models/tools of cell-type deconvolution of bulk **transcriptomes** (Tab. \@ref(tab:mytab)). Therefore clonal deconvolution methods are not included in this overview. The transcriptome-based purity estimation methods are included as many of them proposed an initial 2-sources model that could be, at least in theory, extended to multiple sources model. Also, I did not included cell-type deconvolution methods of other data types (such as methylome). A separate (section X)[#otherDecon] is dedicated to non-transcriptome methods.
+In order to answer general and specific need for cell-type deconvolution of bulk transcriptomes researches produced a large collection of tools. I have collected all (to my knowledge) articles published in journals or as a pre-print (up to May 2018) that propose original models/tools of cell-type deconvolution of bulk **transcriptomes** (Tab. \@ref(tab:mytab)). Therefore clonal deconvolution methods are not included in this overview. The transcriptome-based purity estimation methods are included as many of them proposed an initial 2-sources model that could be, at least in theory, extended to multiple sources model. Also, I did not include cell-type deconvolution methods of other data types (such as methylome). A separate (section X)[#otherDecon] is dedicated to non-transcriptome methods.
 
-The Table \@ref(tab:mytab) contains 64 (including mine) deconvolution methods. It can be observed (Fig. \@ref(fig:pubyear)) that since the begging of my thesis (2015) the number of publications has doubled (64 publications in 2018 vs. 33 in 2014). Also, since 2014 more methods are published every year. In Fig. \@ref(fig:pubyear) *hallmark* publications are indicated in red above their year of publication. The three most popular methods (based of number of citations/number of years since publication) are CIBERSORT [@Newman2015] (2015, total  number of citations: 343  and 88.75 citations per year), ESTIMATE [@Yoshihara2013] (2013, total number of citations: 266 and 44.33 citations per year), and csSAM [@ShenOrr2010] (2010, total number of citations: 286 and 31.77 citations per year).  It can be noticed that the high impact of the journal plays a role, the top 3 cited methods were published in *Nature Methods* and *Nature Communications* followed by Virtual Microdissection method [@Moffitt2015] (2015) published in *Nature Genetics*. However, the fifth most cited publication @Abbas2009 (2009, total of 207 citations) appeared in *PLOS ONE*. As the index is a bit penalizing for recent publications, among commonly cited tools after 2015 are MCPcounter with 42 citations (2016, 32 without self-citations) and xCell with 14 citations (2017, 11 without self-citations). A big number of publications with low number of citations were published in *Oxford Bioinformatics* or *BMC Bioinformatics* which underlines importance of publishing a computational tool along with an important biological message rather than in a technical journal in order to increase a chance to be used by other researchers.
+The Table \@ref(tab:mytab) contains 64 (including mine) deconvolution methods. It can be observed (Fig. \@ref(fig:pubyear)) that since the begging of my thesis (2015) the number of publications has doubled (64 publications in 2018 vs. 33 in 2014). Also, from 2014 on, more methods are published every year. In Fig. \@ref(fig:pubyear) *hallmark* publications are indicated in red above their year of publication. The three most popular methods (based on number of citations/number of years since publication) are CIBERSORT [@Newman2015] (2015, total  number of citations: 343  and 88.75 citations per year), ESTIMATE [@Yoshihara2013] (2013, total number of citations: 266 and 44.33 citations per year), and csSAM [@ShenOrr2010] (2010, total number of citations: 286 and 31.77 citations per year).  It can be noticed that the high impact of the journal plays a role, the top 3 cited methods were published in *Nature Methods* and *Nature Communications* followed by Virtual Microdissection method [@Moffitt2015] (2015) published in *Nature Genetics*. However, the fifth most cited publication @Abbas2009 (2009, a total of 207 citations) appeared in *PLOS ONE*. As the index is a bit penalizing for recent publications, among commonly cited tools after 2015 are MCPcounter with 42 citations (2016, 32 without self-citations) and xCell with 14 citations (2017, 11 without self-citations). A big number of publications with a low number of citations were published in *Oxford Bioinformatics* or *BMC Bioinformatics* which underlines the importance of publishing a computational tool along with an important biological message rather than in a technical journal in order to increase a chance to be used by other researchers.
 
-Another important aspect is availability of the tool. One-third (in total 21) methods do not provide source code or a user-interface tool to reproduce their results. Among those articles, 13 was published before 2015. Therefore, it can be concluded that the pressure of publishers and research community on reproducibility and accessibility of bioinformatic tools gives positive results. @Shen-Orr2013, authors of semi-supervised NMF method [@Gaujoux2012], published *CellMIx: a comprehensive toolbox for gene expression deconvolution* where he implements most of previously published tools in R language and group them in the same R-package. This work tremendously increased the usability of previously published deconvolution methods. The CellMix package is one of the state-of-the-art work on deconvolution that regroups algorithms, signatures and benchmark datasets up to 2013.
+Another essential aspect is the availability of the tool. One-third (in total 21) methods do not provide source code or a user-interface tool to reproduce their results. Among those articles, 13 was published before 2015. Therefore, it can be concluded that the pressure of publishers and research community on reproducibility and accessibility of bioinformatic tools gives positive results. @Shen-Orr2013, authors of semi-supervised NMF method [@Gaujoux2012], published *CellMIx: a comprehensive toolbox for gene expression deconvolution* where he implements most of previously published tools in R language and group them in the same R-package. This work tremendously increased the usability of previously published deconvolution methods. The CellMix package is one of the state-of-the-art work on deconvolution that regroups algorithms, signatures and benchmark datasets up to 2013.
 
 ```{r x2, results="asis", echo = FALSE}
 if(is_html_output()){cat("<table>",paste0("<caption>", "(#tab:mytab)","<b>", "Summary of methods for cell-type deconvolution of bulk transcriptome","</b>", "</caption>"),"</table>", sep ="\n")}
@@ -273,10 +273,6 @@ tab.sel.o$pop.index <- round(tab.sel.o$pop.index,2)
 ```
 
 (ref:mytab-caption) **Summary of methods for cell-type deconvolution of bulk transcriptome**. Data gathered based on pubmed and google scholar search in May 2018.
-
-The Table \@ref(tab:mytab) contains 64 (including mine) deconvolution methods. It can be observed (Fig. \@ref(fig:pubyear)) that since the begging of my thesis (2015) the number of publications has doubled (64 publications in 2018 vs. 33 in 2014). Also, since 2014 more methods are published every year. In Fig. \@ref(fig:pubyear) *hallmark* publications are indicated in red above their year of publication. The three most popular methods (based of number of citations/number of years since publication) are CIBERSORT [@Newman2015] (2015, total  number of citations: 343  and 88.75 citations per year), ESTIMATE [@Yoshihara2013] (2013, total number of citations: 266 and 44.33 citations per year), and csSAM [@ShenOrr2010] (2010, total number of citations: 286 and 31.77 citations per year).  It can be noticed that the high impact of the journal plays a role, the top 3 cited methods were published in *Nature Methods* and *Nature Communications* followed by Virtual Microdissection method [@Moffitt2015] (2015) published in *Nature Genetics*. However, the fifth most cited publication @Abbas2009 (2009, total of 207 citations) appeared in *PLOS ONE*. As the index is a bit penalizing for recent publications, among commonly cited tools after 2015 are MCPcounter with 42 citations (2016, 32 without self-citations) and xCell with 14 citations (2017, 11 without self-citations). A big number of publications with low number of citations were published in *Oxford Bioinformatics* or *BMC Bioinformatics* which underlines importance of publishing a computational tool along with an important biological message rather than in a technical journal in order to increase a chance to be used by other researchers.
-
-Another important aspect is availability of the tool. One-third (in total 21) methods do not provide source code or a user-interface tool to reproduce their results. Among those articles, 13 was published before 2015. Therefore, it can be concluded that the pressure of publishers and research community on reproducibility and accessibility of bioinformatic tools gives positive results. @Shen-Orr2013, authors of semi-supervised NMF method [@Gaujoux2012], published *CellMIx: a comprehensive toolbox for gene expression deconvolution* where he implements most of previously published tools in R language and group them in the same R-package. This work tremendously increased the usability of previously published deconvolution methods. The CellMix package is one of the state-of-the-art work on deconvolution that regroups algorithms, signatures and benchmark datasets up to 2013.
 
 The most popular language of implementation of published methods is R (49.2 %), followed by Matlab (11.11%), only one tool so far was published in Python.
 
