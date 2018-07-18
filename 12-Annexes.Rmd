@@ -1,0 +1,237 @@
+# Annexes {-}
+
+```{r smallChapann, results="asis", echo = FALSE}
+if(is_pdf_output()){
+cat("\\chaptermark{Annexes}")
+}
+```
+## 1 DeconICA documentation {-} 
+
+Tutorials and manual are available as a part of R package documentation (Vignettes and Reference Manual) at https://github.com/UrszulaCzerwinska/DeconICA.
+
+### 1.1 Introduction to deconICA {-}
+
+See the online tutorial *Introduction to deconICA* at: https://urszulaczerwinska.github.io/DeconICA/DeconICA_introduction.html
+
+
+```{r pdfdoc1, echo=FALSE, results='asis', eval=is_pdf_output()}
+cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/IntroductiontodeconICA.pdf}")
+```
+\newpage
+
+### 1.2 Running fastICA with icasso stabilisation {-}
+
+See the online tutorial *Running fastICA with icasso stabilisation* at: https://urszulaczerwinska.github.io/DeconICA/Icasso.html
+
+
+```{r pdfdoc2, echo=FALSE, results='asis', eval=is_pdf_output()}
+if (is_pdf_output()){
+cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/icasso.pdf}")
+} 
+```
+
+\newpage
+
+### 1.3 Reference manual  {-}
+
+
+
+The formal documentation of the R package automatically generated. Describes all functions and data with examples included in the package.
+
+ 
+
+
+```{r pdfman, echo=FALSE, results='asis', eval=is_pdf_output()}
+if (is_pdf_output()){
+cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/DeconICA.pdf}")
+} else {
+    cat("The manual is available from the R package and online:  https://github.com/UrszulaCzerwinska/DeconICA/blob/master/inst/manual/DeconICA.pdf")
+}
+```
+
+
+\newpage
+
+## 2  Publications and conferences  {-}
+
+In this section I included publications with my minor contribution or not related to the thesis topic. At the end of the section, there is my CV with listed publicatons, conferences and selected graduated courses.
+
+### 2.1 Adjustment of dendritic cells to the breast-cancer microenvironment is subset-specific {-}
+
+Paula Michea$^\star$, Floriane Noël$^\star$, Eve Zakine, **Urszula Czerwinska**, Philemon Sirven, Omar Abouzid, Christel Goudot, Alix Scholer-Dahirel, Anne Vincent-Salomon, Fabien Reyal, Sebastian Amigorena, Maude Guillot-Delost, Elodie Segura, and Vassili Soumelis
+
+ $^\star$ $^{_{contributed}}$ $^{_{equally}}$
+
+*Publication accepted in Nature Immunology on 11th May 2018* (Abstract)
+
+
+
+This project developed by Michea et al. originated in Vassili Soumelis group with interesting quality bulk RNa-seq data on pDC cells subsets in breast cancer. 
+
+On my side, I worked on an alternative to DGE (presented in this publication) approach aiming to verify if the pDC subsets can be discovered in an unsupervised manner from the data. As there were a number of samples for each subset available, I used ICA to decompose each subset.  With the ICA components I created a correlation network of common and subset-specific signals. 
+
+On the other hand, I computed module activity scores with ROMA software [@Maginetti2017] of each samples using a wide collection of pathways and then used hierarchical clustering to order the samples. 
+
+In my analysis, some subsets were clearly separated (MMAC, BDCA1pDC) and some not (BDCA1nDC and CD14pDC). 
+
+A strategical decision was taken to not to include my part of work in the main storyline.  I actively participated in article writing and the review process.
+
+
+
+
+```{r pdfDC, echo=FALSE, results='asis', eval=is_pdf_output()}
+if (is_pdf_output()){
+cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/pDC_Paula_official.pdf}")
+} else{
+    cat("Article available online: https://www.nature.com/articles/s41590-018-0145-8")
+}
+```
+
+
+\newpage
+
+### 2.2 The inconvenience of data of convenience: computational research beyond post-mortem analyses {-}
+
+Chloé-Agathe Azencott, Tero Aittokallio, Sushmita Roy, **DREAM Idea Challenge Consortium**, Thea Norman, Stephen Friend, Gustavo Stolovitzky & Anna Goldenberg
+
+**DREAM Idea Challenge Consortium:**
+
+Ankit Agrawal, Tero Aittokallio, Chloé-Agathe Azencott, Emmanuel Barillot, Nikolai Bessonov, Deborah Chasman, **Urszula Czerwinska**, Alireza Fotuhi Siahpirani, Stephen Friend, Anna Goldenberg, Jan Greenberg, Manuel Huber, Samuel Kaski, Christoph Kurz, Marsha Mailick, Michael Merzenich, Nadya Morozova, Arezoo Movaghar, Mor Nahum, Torbjörn E M Nordling,
+Thea Norman, Robert Penner, Sushmita Roy, Krishanu Saha, Asif Salim, Siamak Sorooshyari,
+Vassili Soumelis, Alit Stark-Inbar, Audra Sterling, Gustavo Stolovitzky, S S Shiju, Jing Tang, Alen Tosenberger, Thomas Van Vieet, Krister Wennerberg & Andrey Zinovyev
+
+*Published in Nature Methods on 29 September 2017*
+
+
+
+One of burning problems of computational scientists is the fact that the data ideal to verify some hypothesis born from theoretical work or simulations do not exist. Idea Dream Challenge was a call for projects that would describe the ideal data for a proposed model. Winning project would obtain money to gather necessary data. All projects would participate in matching board that aimed to expose interesting theoretical work with experimental scientist that may have or produce necessary data.  
+
+I proposed a project, together with my thesis supervised Andrei Zinovyev and Vassili Soumelis. We proposed three independent datasets that could be used to study TME.
+
+1. A single cell data from tumor transcriptomes filling requirements of minimal number of cells of each type to facilitate the statistical analysis.
+2. A bulk transcriptome data of  systematically co-culture immune-related cells of different types together controlling their proportions with sufficient number of combinations (at least several hundreds) of different cell type proportions in order to study cell-cell interactions. This data would contain 1) individual transcriptomic profiles of pure cell cultures (few tens, containing the replicas) and 2) transcriptomic profiles of controlled mixtures of cell cultures (if possible, containing combinations of many cell types). 
+3. A benchmark dataset for deconvolution methods: bulk transcriptomic profiles of tumoral samples coupled with carefully quantified proportions of the immune-related cells of different types and the tumoral cellularity .
+
+In the project description we presented as well the ICA model of deconvolution and our preliminary results. 
+
+Our project was selected in the first but not the second round of the review process. 
+
+All participant of the Idea Dream Challenge co-authored the correspondence to *Nature Mathods* as the DREAM Idea Challenge Consortium.
+
+
+
+
+
+```{r pdfdata, echo=FALSE, results='asis', eval=is_pdf_output()}
+if (is_pdf_output()){
+cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/data.pdf}")
+} else {
+    cat("Article available online: https://www.nature.com/articles/nmeth.4457")
+}
+```
+
+<!-- ### 2.3 Deconvolution of transcriptomes and miRNomes by independent component analysis provides insights into biological processes and clinical outcomes of melanoma patients {-} -->
+
+<!-- Petr V. Nazarov$^\star$, Anke K. Wienecke-Baldacchino$^\star$, Andrei Zinovyev, **Urszula Czerwińska**, Arnaud Muller, Dorothée Nashan, Gunnar Dittmar1, Francisco Azuaje1 and Stephanie Kreis -->
+
+<!--  $^\star$ $^{_{contributed}}$ $^{_{equally}}$ -->
+
+<!-- *Submitted to NAR on 3rd July 2018* -->
+
+
+<!-- My part -->
+
+<!-- **ABSTRACT** -->
+
+<!-- The amount of publicly available cancer-related “omics” data is constantly growing and can potentially be used to gain insights into the biology of new cancer patients, their diagnosis and suitable treatment options. However, the integration of different datasets is not straightforward and requires specialized approaches to deal with heterogeneity at technical and biological levels. Here we present a methodology that can overcome technical biases, predict clinically relevant outcomes and identify tumour-related biological processes in patients using previously collected large reference datasets. The approach is based on independent component analysis (ICA) – an unsupervised method of signal deconvolution. We developed parallel consensus ICA that robustly decomposes joint reference and investigated datasets into signals with minimal mutual dependency. By applying the method to a small cohort of primary melanoma and control samples combined with a large reference melanoma dataset, we demonstrate that our method distinguishes cell-type specific signals from technical biases and allows to predict clinically relevant patient characteristics. Cancer subtypes, patient survival and activity of key tumour-related processes such as immune response, angiogenesis and cell proliferation were characterized. Additionally, through integration of transcriptomes and miRNomes, the method helped deducing biological functions of miRNAs, which would otherwise not be possible. -->
+
+
+<!-- \newpage -->
+
+### 2.3 CV: publications, conferences, courses {-}
+
+
+
+```{r pdfcv, echo=FALSE, results='asis', eval=is_pdf_output()}
+if (is_pdf_output()) {
+cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/CV.pdf}")
+} else {
+    
+}
+```
+
+\newpage
+
+# Glossary {-}
+
+## Biological terms {-}
+
+**bulk data** - a pooled assay using a weighted average of a bulk cell sample from a particular tissue (i.e., a large population of cells), obscuring cell-to-cell variation 
+
+cancer biopsy
+
+cytotoxic
+
+efectors
+
+gene enrichment
+
+gene expression
+genome
+immunosuppresive
+inducers 
+ligands
+liquid tissue
+marker gene
+molecular biology
+omic data
+phenotyping 
+receptors
+solid tissue 
+subtyping
+tumor purity
+
+## Mathematical terms {-}
+
+**basis matrix** - in cell-type deconvolution, the characteristic expression profiles for each of the cell types to be estimated used in the regression-based deconvolution
+
+bayesian
+
+**condition number** - a function with respect to an argument measures how much the output value of the function can change for a small change in the input argument. A problem with a low condition number is said to be **well-conditioned**, while a problem with a high condition number is said to be **ill-conditioned**. In linear regression the condition number can be used as a diagnostic for multicollinearity [@Belsley2005].
+
+
+
+correlation
+
+covariance
+
+**deconvolution** -  *Math*:the resolution of a convolution function into the functions from which it was formed in order to separate their effects; *Common*: a process of resolving something into its constituent elements or removing complication [@deconvolution]
+
+diagonal matrix
+dimension reduction
+eigenvalue 
+eigenvector
+matrix
+matrix factorisation
+metagene
+metasample
+monte carlo simulations
+
+multicollinearity
+
+p-value
+
+
+
+
+
+
+
+# Post Scriptum: Thesis writing {-}
+
+This Thesis is written in [*bookdown*](https://github.com/rstudio/bookdown). I have chosen this form as it can easily compile to *LaTeX*, PDF, MS Word, ebook and  html. Optimally, the final manuscript will be also published online in a form of an open source [gitBook](https://www.gitbook.com/about) and an ebook including interactive figures and maybe even data demos. Another good reason for using  [*bookdown*](https://github.com/rstudio/bookdown) is its simple syntax of markdown and natural integration of code snippets with .Rmd. It reduces formatting time and give multiple outputs. 
+
+The template of for this thesis manuscript was adapted from *LaTeX*  template provided by University Paris Descartes. 
+
+Citations are stocked in Mendeley Desktop and exported to .bib files automatically.
+

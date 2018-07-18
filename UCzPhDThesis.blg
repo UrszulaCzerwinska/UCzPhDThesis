@@ -1,0 +1,96 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: UCzPhDThesis.aux
+The style file: plainnat.bst
+Reallocated field_info (elt_size=4) to 12672 items from 5000.
+Database file #1: 01-Interdisciplinarity.bib.bib
+Database file #2: 01-Intro.bib.bib
+Database file #3: 02-MathIntro.bib.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Database file #4: packages.bib.bib
+Database file #5: UCzcite.bib.bib
+Database file #6: lva.bib.bib
+Database file #7: deconica.bib.bib
+Database file #8: data.bib.bib
+Database file #9: references.bib.bib
+Warning--I didn't find a database entry for "Xu2008"
+Warning--I didn't find a database entry for "deconvolution"
+Warning--I didn't find a database entry for "Hoyle2002"
+Warning--I didn't find a database entry for "Tsai2003"
+Warning--I didn't find a database entry for "Jin2017"
+Warning--I didn't find a database entry for "Ablin2018"
+Warning--I didn't find a database entry for "Fanelli2018"
+Warning--I didn't find a database entry for "Johnson207"
+Warning--I didn't find a database entry for "Bindea2014"
+Warning--I didn't find a database entry for "Galon2018"
+Warning--I didn't find a database entry for "Dieu-Nosjean2014"
+Warning--I didn't find a database entry for "Sautes-Fridman2016"
+Warning--I didn't find a database entry for "Saltz2018"
+Warning--I didn't find a database entry for "Touzot2014"
+Warning--I didn't find a database entry for "Teschendorff2018"
+Warning--I didn't find a database entry for "Taguchi2017"
+Warning--I didn't find a database entry for "Bonnet2015"
+Warning--I didn't find a database entry for "Huang2017"
+Warning--I didn't find a database entry for "Maginetti2017"
+Warning--I didn't find a database entry for "Belsley2005"
+Warning--to sort, need author or key in CRIweb
+Warning--to sort, need author, editor, or key in FIRbook
+Warning--to sort, need author or key in Knebel2017
+Warning--empty year in CRIweb
+Warning--empty author and editor in FIRbook
+Warning--empty author in Knebel2017
+Warning--empty journal in Bell1995
+Warning--empty publisher in Berghoff2018
+Warning--empty journal in Czerwinska2018
+Warning--empty year in Erickson2018
+Warning--empty journal in Gortler2018
+Warning--can't use both volume and number fields in Herault1986
+Warning--empty year in Himberg2003
+Warning--empty year in Himberg2003
+Warning--empty journal in Mcinnes2018
+Warning--empty year in Newman
+Warning--empty publisher in Piegorsch
+Warning--empty year in Piegorsch
+Warning--empty year in Piegorsch
+You've used 254 entries,
+            2780 wiz_defined-function locations,
+            2759 strings with 102991 characters,
+and the built_in function-call counts, 174468 in all, are:
+= -- 16728
+> -- 13790
+< -- 96
++ -- 4613
+- -- 4356
+* -- 16578
+:= -- 26943
+add.period$ -- 1385
+call.type$ -- 254
+change.case$ -- 2870
+chr.to.int$ -- 251
+cite$ -- 530
+duplicate$ -- 5362
+empty$ -- 9944
+format.name$ -- 4871
+if$ -- 35854
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 235
+newline$ -- 1895
+num.names$ -- 1006
+pop$ -- 4917
+preamble$ -- 1
+purify$ -- 2623
+quote$ -- 0
+skip$ -- 5437
+stack$ -- 0
+substring$ -- 5129
+swap$ -- 554
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2759
+warning$ -- 19
+while$ -- 939
+width$ -- 0
+write$ -- 4505
+(There were 39 warnings)

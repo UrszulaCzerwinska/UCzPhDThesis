@@ -1,0 +1,62 @@
+# A multiscale signalling network map of innate immune response in cancer reveals signatures of cell heterogeneity and functional polarization  {#map}
+
+
+
+```{r smallChapMAP, results="asis", echo = FALSE}
+if(is_pdf_output()){
+cat("\\chaptermark{Innate immune map}")
+}
+```
+Maria Kondratova$^\star$ , **Urszula Czerwinska$^\star$**, Nicolas Sompairac, Sebastian D Amigorena, Vassili Soumelis, Emmanuel Barillot, Andrei Zinovyev and Inna Kuperstein
+
+ $^\star$ $^{_{contributed}}$ $^{_{equally}}$
+
+*Under review in Nature Communications*
+
+## Context
+
+The intra- and intercellular signaling pathways are a broad subject of biological research. It is known that in cancer disease, important signaling pathways get altered. These phenomena got described in the field-breaking [@Hanahan2000] publication Hallmarks of cancer. Many pathways altered in cancer determine how cell get out of the 'healthy state' and become invasive, immortal and deleterious. Researchers performing metabolic, proteomic and genetic experiments can measure the interactions between different molecules and link with observed phenotype. This knowledge is collected in databases, of so-called, protein-protein interactions or pathway databases (i.e. HPRD [@KeshavaPrasad2009], STRING [@Szklarczyk2017], REACTOME [@JoshiTope2004]), some including metabolic interactions as well RECON [@Brunk2018], KEGG[@Kanehisa2000]. These databases can, besides the experimental knowledge, contain computationally inferred interactions based on text mining or data inference. It is a usual practice as well to include interactions observed in different animal species (Human, mice, yeast), or in different states (healthy, cancer, infection). Therefore, it is not trivial to retrieve relevant information for a given organism in a given state. In our group, there was created an Atlas of Cancer Signaling Networks (ACSN) that contains manually curated interactions retrieved from cancer-specific literature, to create a compendium of knowledge that is specific to tumor cells. The created database has a number of additional features facilitating the content exploration (google map based semantic zooming), hierarchical content organization (pathways, modules, maps), manually designed layout facilitating interpretation and allowing projection of proteomic and genomic data into the existing pathways to create, so-called, molecular portraits illustrating state of the represented pathways (activation/inhibition) in the data. 
+
+However, given the importance of the TME in the cancer progression and response to treatment, the intracellular cancer pathways are not enough to have a system-level view of the cancer data. The evaluation of the polarization status within the subtle innate immune cell subpopulations in TME is essential for the improvement of immunotherapy. This is why, in my team, we developed TME-related maps that will be soon a part of ACSN 2.0. The first part of TME maps collection was related to the innate immunity including NK, Macrophages and DC maps which form together, with additional intercellular interactions, an innate immunity meta map. With respect to existing databases of immune signaling networks, the innate immune maps we propose are cancer-focused and minutely manually curated, which make our resource the first of its kind.
+
+In this publication which I am a co-author, in the first place, we describe the details and strategy of the innate immunity maps creation. In the second place, we demonstrate with scRNA-seq transcriptomic profiles of NK and Macrophages in Metastatic Melanoma how this maps can be used to understand immune cells heterogeneity better. 
+
+I participated mostly in the second part of the work and as well as in figures design and article writing.
+
+
+## Description
+
+The created innate immune meta map contains 1466 nodes among which there are 582 proteins, 1084 biochemical reactions based on 837 cell type-specific and cancer-related articles. The map has a multidimensional hierarchical structure (Fig.3 @Kondratova2018)
+
+* right-left axis: anti- and pro-tumor polarisation
+* up-down axis: signaling pathways structure (Inducers $\rightarrow$ Intermediates $\rightarrow$ Effectors)
+* layers: signaling pathways, functional modules, biological processes
+
+Three cell-type specific maps (macrophages, NK, DC) can also be used separately. However, the combined meta-map contains more interactions and can often bring a complete picture. 
+
+To illustrate the use of the innate immune maps, we used the scRNA-seq of macrophages and NK cells from metastatic melanoma (section: **"Application of innate immune maps for high-throughput cancer data visualization and analysis"** of @Kondratova2018).
+
+We used **ICA to identify factors driving diversity of the cells within the population of macrophages and NK single cells**. We split NK and macrophages along the axis of the first independent component. Then the functional phenotypes of the subgroups of cells were analyzed with the innate immune map.
+
+We selected from the single cell profiles the genes present in the innate immune map. For each functional map module, we computed an activity score which corresponds to the mean of 50% most variant genes between two groups. The activity scores were projected on the innate map facilitating the visual representation. The ensemble of the results allowed the further interpretation of functional phenotypes of NK and Macrophage groups. 
+
+For macrophages, we identified **pro- and anti-tumor polarisation**.  The expression of inflammatory cytokines that induces local adaptive immunity via the antigen presentation process was the marker of the anti-tumor macrophage activity.  The expression of immunosuppressive cytokines and growth factors supporting tumor growth characterized the pro-tumor phenotype. 
+
+Among NK cells we identified **tumor-killing** and **immunosuppressed phenotypes**. The upregulation of map modules: Lytic granules exocytosis, Recruitment of immune cells, Integrins, Fc receptors, Danger signal pathway were upregulated in the tumor killing phenotypes. We suggested that the tumor-killing would possibly be cells that are recently recruited and actively migrating. In contrast, an immunosuppressed group of cell seems to be the resting group that does not express strongly any anti-tumor activity. 
+
+We also identified possible molecular pathways differentially regulated between the phenotypes (Fig 5D @Kondratova2018).
+
+Besides, we demonstrate that the genes present in the map are significantly linked with the prediction of patients survival (both good and bad prognosis) therefore the map could be a support to analyze patient samples with conclusions sensibly affecting the prognosis.
+
+## Discussion and perspectives
+
+In this work, we constructed the cell-specific and the meta innate-immune map including intra- and intercellular signaling in the Tumor Microenvironment.  Using ICA, we defined groups of cells of scRNA-seq, and we interpreted their functional phenotypes using the constructed map. 
+
+We presented here a quite simplistic view of "heterogeneity" focusing on two groups for each cell type. It cannot illustrate the full complexity of the immune cell types interacting with the tumor. With increasing accessibility of single-cell data, it will be possible to perform multidimensional analysis to discover more functional subtypes that might also be dependent on tumor type, patient clinical features, and the treatment.  Here we presented the first trial, shortly after the publication of the first cancer single cell RNAseq [@Tirosh2016]. An interesting extension could be a comparison of NK and Macrophages from melanoma with the ones sequenced in other cancer since then, i.e., CRC or Brest cancer. It could also be interesting to project data from different patients on the complete ACSN 2.0 (cancer cell and TME), using different cell types: cancer, immune, etc., under a condition, that they would have equilibrated and a sufficient number of cells sequenced per patient, to see possible differences between patients. 
+
+In the context of the thesis, this work demonstrated that the deconvolution of single-cell transcriptomes is possible and useful. It represents a deeper *zoom in* level if contrasted with the bulk transcriptome deconvolution performed so far. It demonstrates that ICA (and probably other deconvolution techniques) can also be used with single cell profiles to obtain coarse grain dissection of functional cell space.  
+
+
+```{r pdf2, echo=FALSE, results='asis', eval=is_pdf_output()}
+cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/MapPaper.pdf}}")
+```

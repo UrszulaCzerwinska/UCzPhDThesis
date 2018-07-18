@@ -7,25 +7,52 @@ if(is_pdf_output()){
 cat("\\chaptermark{Most Stable Transcriptomic Dimension}")
 }
 ```
-**Ulykbek Kairov$^\star$, Laura Cantini$^\star$, Alessandro Greco, Askhat Molkenov, **__**Urszula Czerwinska**__**, Emmanuel Barillot and Andrei Zinovyev**
+Ulykbek Kairov$^\star$, Laura Cantini$^\star$, Alessandro Greco, Askhat Molkenov, **Urszula Czerwinska**, Emmanuel Barillot and Andrei Zinovyev
 
-Here is text that places article in the context
+ $^\star$ $^{_{contributed}}$ $^{_{equally}}$
 
-Background
+*Published in BMC Genomics, 11 September 2017*
 
-Independent Component Analysis (ICA) is a method that models gene expression data as an action of a set of statistically independent hidden factors. The output of ICA depends on a fundamental parameter: the number of components (factors) to compute. The optimal choice of this parameter, related to determining the effective data dimension, remains an open question in the application of blind source separation techniques to transcriptomic data.
+## Context
 
-Results
+In the introduction to the computational cell-type deconvolution, I have introduced Matrix factorization *family* of approaches including, Independent Components Analysis (ICA). ICA decomposes transcriptome ($X$) into to matrices of sources ($S$) and mixing matrix ($A$).  I have mentioned that one of the most critical parameters to decompose transcriptome with matrix factorization methods is the parameter that I called $k$ (called $M$ through this publication), which is the number of sources (independent components). 
 
-Here we address the question of optimizing the number of statistically independent components in the analysis of transcriptomic data for reproducibility of the components in multiple runs of ICA (within the same or within varying effective dimensions) and in multiple independent datasets. To this end, we introduce ranking of independent components based on their stability in multiple ICA computation runs and define a distinguished number of components (Most Stable Transcriptome Dimension, MSTD) corresponding to the point of the qualitative change of the stability profile. Based on a large body of data, we demonstrate that a sufficient number of dimensions is required for biological interpretability of the ICA decomposition and that the most stable components with ranks below MSTD have more chances to be reproduced in independent studies compared to the less stable ones. At the same time, we show that a transcriptomics dataset can be reduced to a relatively high number of dimensions without losing the interpretability of ICA, even though higher dimensions give rise to components driven by small gene sets.
+## Description
 
-Conclusions
+In this publication, @Kairov2017 developed a way to identify a Maximally Stable Transcriptomic Dimension (MSTD). This index helps to decompose transcriptomes into interpretable biological factors. We mention that different methods to find the right number of $k$ were developed in the previous works. However, none was conceived with biological interpretation clarity in mind. The MSTD index is computed based on the stability of the components over different $k$. The details of how MSTD is computed are explained in the publication.
 
-We suggest a protocol of ICA application to transcriptomics data with a possibility of prioritizing components with respect to their reproducibility that strengthens the biological interpretation. Computing too few components (much less than MSTD) is not optimal for interpretability of the results. The components ranked within MSTD range have more chances to be reproduced in independent studies.
+The components coming from decompositions of within MSTD range have a higher probability to be found in other transcriptome datasets. In this way, reproducible signatures of cancer transcriptomes can be identified in diverse cancer datasets, published by different authors and in different platforms. 
 
+The concept was tested on TCGA data and six independent breast cancer datasets (37 datasets in total).
 
+In overall, we observed that average stability of computed components decreases when the number of components increase (Fig 1. [@Kairov2017]), while the top components keep their stability almost unchanged.
 
-[@Kairov2017]
+If one uses $k$ < MSTD, it makes the identification of biological signals difficult because different factors (sources) remain merged or mixed.
+
+An unexpected observation while working on MSTD was that if the transcriptome is decomposed into a high number of $k$ $\gg$ MSTD, the signals existing in lower dimensions are robustly identifiable. Besides, an important observation was made in METABRIC dataset, where the *Immune* signal existing in MSTD dimension, in high $k$, splits into three signals identifiable as groups of immune cells (Fig. 2f [@Kairov2017]). 
+
+A side-effect of $k$ $\gg$ MSTD were also components driven by a small number of genes. This phenomenon is described in details in the publication. 
+
+## Impact on the further work
+
+I have contributed to this publication by running numerous simulations and working on the final manuscript. 
+
+This work was a significant breakthrough in my work on cell-type deconvolution. While the co-authors started to develop the MSTD index, I was working on finding the best $k$ for immune cells identification. I was trying mainly two different strategies:
+
+1. decomposition of the transcriptome matrix with fastICA into a very stable dimension $k$$\approx$ 10, selection of the immune signal, selection of the $n$ top genes of these immune components from the transcriptome and running the fastICA again
+2. trying different decompositions and interpreting results, with an objective to define best $k$ for the interpretability.
+
+I have presented the first strategy (1), that was giving promising results on a breast carcinoma dataset, at [ISMB conference in 2016](https://www.iscb.org/ismb2016). I gave a short talk and presented an [award-winning poster](https://www.iscb.org/ismb2016general/ismb2016-awardwinners#f1000) presenting the strategy. However, this strategy was not easy to generalize and apply to multiple datasets. 
+
+Thus, I started to experiment with the second strategy. However, it was not easy to evaluate the quality of decomposition, as I was employing gene enrichment methods (like GSEA or Fisher test described in the previous chapter) that are not free from false positives. 
+
+Finally, participating in the work on this publication, I have found a third possibility:
+
+3. decomposing transcriptome into a high number of components ($k \gg MSTD$) that allows direct identification of cell-type-specific components
+
+The possibility to apply this strategy reproducibly remained unclear. The *unstable* components were not supposed to be found with high probability in other transcriptome data. 
+
+In the next [chapter](#Lvaica), I describe the study where I test the third strategy in multiple cancer transcriptome datasets. 
 
 ```{r pdf, echo=FALSE, results='asis', eval=is_pdf_output()}
 cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}")

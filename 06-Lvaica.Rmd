@@ -7,12 +7,49 @@ if(is_pdf_output()){
 cat("\\chaptermark{Reproductibility if ICA: Breast cancer}")
 }
 ```
-**Urszula Czerwinska, Laura Cantini, Ulykbek Kairov, Emmanuel Barillot, Andrei Zinovyev**
+**Urszula Czerwinska**, Laura Cantini, Ulykbek Kairov, Emmanuel Barillot, Andrei Zinovyev
 
-Independent Component Analysis (ICA) can be used to model gene expression data as an action of a set of statistically independent hidden factors. The ICA analysis with a downstream component analysis was successfully applied to transcriptomic data previously in order to decompose bulk transcriptomic data into interpretable hidden factors. Some of these factors reflect the presence of an immune infiltrate in the tumor environment. However, no foremost studies focused on reproducibility of the ICA-based immune-related signal in the tumor transcriptome. In this work, we use ICA to detect immune signals in six independent transcriptomic datasets. We observe several strongly reproducible immune-related signals when ICA is applied in sufficiently high-dimensional space (close to one hundred). Interestingly, we can interpret these signals as cell-type specific signals reflecting a presence of T-cells, B-cells and myeloid cells, which are of high interest in the field of oncoimmunology. Further quantification of these signals in tumoral transcriptomes has a therapeutic potential. 
+*Published in  [Lecture Notes in Computer Science](https://link.springer.com/bookseries/558) book series (LNCS, volume 10891) at conference  LVA/ICA 2018: [Latent Variable Analysis and Signal Separation](https://link.springer.com/book/10.1007/978-3-319-93764-9), 6 June 2018*
 
-[@Czerwinska2018b]
 
-```{r pdf2, echo=FALSE, results='asis', eval=is_pdf_output()}
+
+## Context
+
+LVA/ICA conference is an interdisciplinary conference that gathers researches working on Latent Variable Analysis and Signal Separation in different fields of application. Works presented at LVA/ICA conference can be both methodological and application works. Submitted papers are reviewed by at least three members of the Technical Program Committee (TPC) or by competent additional reviewers assigned by the TPC members. 
+
+I have decided to expose my work on immune-related signals obtained using the fastICA algorithm to the signal deconvolution community in order to receive feedback from the experts of the field. It was a great chance to systematize my findings on overdecomposition of breast cancer transcriptomes and describe them in details. I did not aim to expand biological interpretation in this work given the technical character of the conference. 
+
+## Description
+
+In this work, I applied ICA to six breast cancer datasets in a way to obtain a high number of sources ($k \gg MSTD$ as described in the previous chapter). Then, I identified the sources related to the immune signals in all of the datasets. Finally, I concluded that three cell-types could be identified: T-cell, B-cell and Myeloid cells in most of the datasets. 
+
+I am using the protocol of decomposition defined in the previous chapter: 
+
+1. Compute the MSTD for each dataset 
+2. If number of samples is >100 then decompose to $k$= 100, otherwise to the maximal possible number of components ($k$ = $m$) (assuming that 100 $\gg$ 25 - the average MSTD)
+3. Interpret the components with the gene enrichment methods
+
+I also improved this over-mentioned protocol with additional steps that will be later included in [DeconICA R package](https://urszulaczerwinska.github.io/DeconICA/) described in [chapter 6](#deconica). 
+
+1. The components of the $S$ matrix are oriented in the direction of the *heavy tail*  (the side of an ICA component with absolute higher weights) so that the *top* genes are always at the positive side.
+
+2. The components are interpreted through correlations with two panels: 
+
+   * reference metagenes, published in [@Biton2014] - the factors present in most tumor transcriptomes
+   * immune cell-type signatures used by CIBERSORT [@Newman2015] as pure cell-type profiles 
+   * reciprocity was a condition to label the components with reference metagenes and maximal correlation for immune cell-type signatures
+
+
+## Impact on the further work
+
+With six independent datasets, I validated the hypothesis that using decompositions of $k \gg MSTD$. It is possible to compute signals corresponding to immune cell types in tumor transcriptomes. 
+
+I was also able to test different ways to characterize components and chose the one giving the most consistent results in many datasets. This work was an important step that enabled me to develop an R package and apply it to over 100 cancer datasets. 
+
+In the next chapter, I will show a comparison of this approach with an alternative method: Nonnegative Matrix Factorisation (NMF).
+
+
+
+```{r pdf3, echo=FALSE, results='asis', eval=is_pdf_output()}
 cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/LVAICA_proof.pdf}")
 ```

@@ -16,7 +16,7 @@ lof: yes
 lot: yes        
 documentclass: book
 fontsize: 12pt
-bibliography: [01-Interdisciplinarity.bib, 01-Intro.bib, 02-MathIntro.bib, packages.bib, UCzcite.bib, lva.bib]
+bibliography: [01-Interdisciplinarity.bib, 01-Intro.bib, 02-MathIntro.bib, packages.bib, UCzcite.bib, lva.bib, deconica.bib, data.bib, references.bib]
 biblio-style: "plainnat"
 link-citations: true
 colorlinks: true
@@ -82,9 +82,15 @@ if(is_pdf_output()){
 ```
 
 ```{r index, echo=FALSE, results='asis', eval=is_html_output()}
-cat("# Note {-}
+cat("# **Unsupervised deconvolution of bulk omics profiles: methodology and application to characterize the immune landscape in tumors**{-}
 
-This is PhD Thesis of [Urszula Czerwinska](http://urszulaczerwinska.github.io). See the website [urszulaczerwinska.github.io](http://urszulaczerwinska.github.io) to learn more about me professional projects.\n\n
+by [Urszula Czerwinska](http://urszulaczerwinska.github.io)
+
+INTERDISCIPLINARY Ph.D. thesis
+
+Supervised by Andrei Zinovyev and  Vassili Soumelis
+
+See the website [urszulaczerwinska.github.io](http://urszulaczerwinska.github.io) to learn more about my professional projects.\n\n
 
 # Resumé {-}
 

@@ -1,0 +1,51 @@
+# Comparative analysis of cancer immune infiltration {#results}
+
+
+
+*Selected content of this chapter is a part of a publication in preparation*
+
+## Background 
+
+
+
+## Methods 
+
+### Data sources
+
+**Bulk datasets**
+
+TABLE
+
+**Single cell datasets**
+
+| Tirosh et al. | Tirosh, Itay, et al. "Dissecting the multicellular ecosystem of metastatic melanoma by single-cell RNA-seq." Science 352.6282 (2016): 189-196. | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4944528/        | Melanoma               | 4645 single cells   Malignant: unresolved :132 not malignant: 3256 malignant 1257 / cell type =undef :  1758 T: 2068  B: 515  macro: 126   endo: 65  CAF: 61   NK: 52 | 19   | normalised + labels | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72056 |                                                              |                                                      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | ---- | ------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Li et al.     | Li, Huipeng, et al. "Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors." Nature Genetics 49.5 (2017): 708-718. | https://www.nature.com/ng/journal/v49/n5/abs/ng.3818.html    | CRC + normal mucosa    | 215 Nornal Mucosa (   Bcell   18 Endothelial  2 Epithelial   160   Fibroblast  9  Macrophage    10   MastCell    3      Tcell    11 ) and 375 CR (cancer) ( Bcell   17 Endothelial   4  Epithelial  272   Fibroblast 17   Macrophage 19      MastCell   1          NA      11    Tcell 34 ) | 11   | normalised + labels | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81861 | [https://drive.google.com/open?id=0BwbuCoLN00xpeTk4MC1CdEctS1k](https://drive.google.com/open?id=0BwbuCoLN00xpakdPeWFFTUVvMlk) | stepwise when plotted number of cells over thershold |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+| Chung et al.  | Chung, Woosung, et al. "Single-cell RNA-seq enables comprehensive tumour and immune cell profiling in primary breast cancer." Nature Communications 8 (2017). | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5424158/        | Breast+ lymph nodes    | 515 =  Bcell 83 Myeloid 38  Stromal  23 Tcell 54 Tumor 317   | 11   | normalised + labels | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75688 |                                                              | labels on request                                    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+| Zheng et al.  | Zheng, Chunhong, et al. "Landscape of Infiltrating T Cells in Liver Cancer Revealed by Single-Cell Sequencing." Cell 169.7 (2017): 1342-1356. | http://www.sciencedirect.com/science/article/pii/S0092867417305962 | Liver + PBMC+ Adjacent | 5063 sc T cells  -> data: 4070 (CD4_C1-CCR7: 646  CD4_C2-IL2RA: 261   CD4_C3-CTLA4: 582    CD4_C4-GZMA :689 CD4_C5-CXCL13:146    CD4_C6-GNLY:167    CD8_C1-LEF1:161 CD8_C2-CX3CR1:288 CD8_C3-SLC4A10 :363   CD8_C4-LAYN:300    CD8_C5-GZMK:467 ) | 6    | normalised + labels | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98638 |                                                              |                                                      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+| Sidharth et al. | Puram, Sidharth V., et al. "Single-Cell Transcriptomic Analysis of Primary and Metastatic Tumor Ecosystems in Head and Neck Cancer." Cell (2017). | <https://www.sciencedirect.com/science/article/pii/S0092867417312709> | Head and Neck | 0     2539  B cell  138     Dendritic   51  Endothelial 260    Fibroblast    1440    Macrophage 98         Mast120      myocyte    19  T cell  1237 | 18   | normalized + labels | <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103322> |      | data is clean |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+
+### The DeconICA pipeline on bulk
+
+
+
+Labeling components 
+
+post Data cleaning 
+
+### The DeconICA pipeline on single cell
+
+
+
+## Results 
+
+Global image with 
+
+## Discussion
+
+## Conclussions 
+
+
+
+  
+

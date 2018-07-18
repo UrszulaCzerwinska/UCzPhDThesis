@@ -60,13 +60,13 @@ Among widely used classifiers there are Support Vector Machines (SVM), partition
 
 ### Unsupervised learning {#unsup}
 
-In Unsupervised learning is given the data and is asked to divide the data given a particular constraint. However, the correct division of the data is not known. Therefore an unsupervised algorithm aims to unveil the "hidden structure" of the data or latent variables.
+In Unsupervised learning is given the data and is asked to segment the data given a particular constraint. However, the true segments of the data are not known. Therefore an unsupervised algorithm aims to unveil the "hidden structure" of the data or latent variables.
 
 One group of unsupervised learning are descriptive statistic methods, such as principal components, multidimensional scaling, self-organizing maps, and principal curves. These methods aim to represent to the data most adequately in low-dimensional space  [@Hastie2009].
 
-Another group is clustering algorithms. Clustering is the way to create groups (multiple convex regions) based on the intrinsic architecture of the data. These groups are not necessarily known beforehand but can be validated with the domain knowledge. Popular clustering algorithms are knn, k-means, hierarchical clustering.
+Another group is clustering algorithms. Clustering is the way to create groups (multiple convex regions) based on the intrinsic architecture of the data. These groups are not necessarily known beforehand but can be validated with the domain knowledge. Popular clustering algorithms are k-means, hierarchical clustering, mixture density-based clustering [@Xu2008].
 
-In both descriptive statistics and clustering, one important parameter (often called $k$) is number to which we want to decompose the data (number of factors, variables, clusters). Different algorithms and applications can propose an automatic choice of $k$ based on formal indexes or previous knowledge, in others, the user needs to provide the $k$.
+In both descriptive statistics and clustering, one important parameter (i.e. denoted $k$) is the number (number of factors, variables, clusters) to which the data should be decomposed. Different algorithms and applications can propose an automatic choice of $k$ based on formal indexes or previous knowledge, in others, the user needs to provide the $k$.
 
 ### Low-dimensional embedding for visualization
 
@@ -88,11 +88,11 @@ One specific application of mathematical/statistical tools is deconvolution of m
 
 According to a mathematical definition:
 
-> Deconvolution : *the resolution of a convolution function into the functions from which it was formed to separate their effects* 
+> Deconvolution : *the resolution of a convolution function into the functions from which it was formed in order to separate their effects.* [@deconvolution]
 
 Alternatively, in plain English:
 
-> *a process of resolving something into its constituent elements or removing complication*
+> *a process of resolving something into its constituent elements or removing complication* [@deconvolution]
 
 The similar problem of mixed sources can be encountered in other fields, i.e., signal processing, also known under the name of  "**cocktail party problem**." In the cocktail party problem, at a party with many people and music, sound in recorded with several microphones. Through blind source separation, it is possible to separate the voices of different people and the musical background (Fig. \@ref(fig:cocktailparty)) [@Cherry1953].
 
@@ -108,7 +108,7 @@ if (is_pdf_output()) {
 
 The same concept can be transposed to the bulk omic data, each biological species (like gene) is a cocktail party where each sample is a microphone that gathers mixed signals of different nature. The signals that form the mixtures can be different depending on the data type, and the scientific question asked.
 
-In general, the total bulk data can be split into three abundance components [@Shen-Orr2013]: 
+In general, the total bulk data can be affected by three abundance components [@Shen-Orr2013]: 
 
 1. sample characteristic (disease, clinical features)
 2. individual variation, genotype-specific or technical variation
@@ -190,19 +190,21 @@ However, in this model, either the mixing proportions, number of mixing sources 
 
 Why there is a need for cell-type deconvolution approaches?
 
-* for differential gene expression analysis, to avoid confusion between a feature and cell-type abundance
-
+* for differential gene expression analysis, to avoid confusion between a studied condition (i.e. disease impact) and cell-type abundance (change in gene expression due to the change of cell proportions)
 * difference in gene expression in one cell type can be blurred by the presence of other cells expressing the gene
-
 * to obtain information about a fraction of given component in the sample
-
+* to study potential interactions between cell types in the studied context
 * to infer context-specific profile or signature
 
 ### Literature overview
 
-In order to answer general and specific need for cell-type deconvolution of bulk transcriptomes researches produced a large collection of tools. I have collected all (to my knowledge) articles published in journals or as a pre-print (up to May 2018) that propose original models/tools of cell-type deconvolution of bulk **transcriptomes** (Tab. \@ref(tab:mytab)). Therefore clonal deconvolution methods are not included in this overview. The transcriptome-based purity estimation methods are included as many of them proposed an initial 2-sources model that could be, at least in theory, extended to multiple sources model. Also, I did not include cell-type deconvolution methods of other data types (such as methylome). A separate (section X)[#otherDecon] is dedicated to non-transcriptome methods.
+In order to answer general and specific need for cell-type deconvolution of bulk transcriptomes researches produced a large collection of tools. I have collected all (to my knowledge) articles published in journals or as a pre-print (up to May 2018) that propose original models/tools of **cell-type deconvolution of bulk transcriptomes** (Tab. \@ref(tab:mytab)). Therefore clonal deconvolution methods are not included in this overview. The transcriptome-based purity estimation methods are included as many of them proposed an initial 2-sources model that could be, at least in theory, extended to multiple sources model. Also, I did not include cell-type deconvolution methods of other data types (such as methylome). A separate [section 2.4](#otherDecon) is dedicated to non-transcriptome methods.
+
+####Growth of the field 
 
 The Table \@ref(tab:mytab) contains 64 (including mine) deconvolution methods. It can be observed (Fig. \@ref(fig:pubyear)) that since the begging of my thesis (2015) the number of publications has doubled (64 publications in 2018 vs. 33 in 2014). Also, from 2014 on, more methods are published every year. In Fig. \@ref(fig:pubyear) *hallmark* publications are indicated in red above their year of publication. The three most popular methods (based on number of citations/number of years since publication) are CIBERSORT [@Newman2015] (2015, total  number of citations: 343  and 88.75 citations per year), ESTIMATE [@Yoshihara2013] (2013, total number of citations: 266 and 44.33 citations per year), and csSAM [@ShenOrr2010] (2010, total number of citations: 286 and 31.77 citations per year).  It can be noticed that the high impact of the journal plays a role, the top 3 cited methods were published in *Nature Methods* and *Nature Communications* followed by Virtual Microdissection method [@Moffitt2015] (2015) published in *Nature Genetics*. However, the fifth most cited publication @Abbas2009 (2009, a total of 207 citations) appeared in *PLOS ONE*. As the index is a bit penalizing for recent publications, among commonly cited tools after 2015 are MCPcounter with 42 citations (2016, 32 without self-citations) and xCell with 14 citations (2017, 11 without self-citations). A big number of publications with a low number of citations were published in *Oxford Bioinformatics* or *BMC Bioinformatics* which underlines the importance of publishing a computational tool along with an important biological message rather than in a technical journal in order to increase a chance to be used by other researchers.
+
+#### Availability
 
 Another essential aspect is the availability of the tool. One-third (in total 21) methods do not provide source code or a user-interface tool to reproduce their results. Among those articles, 13 was published before 2015. Therefore, it can be concluded that the pressure of publishers and research community on reproducibility and accessibility of bioinformatic tools gives positive results. @Shen-Orr2013, authors of semi-supervised NMF method [@Gaujoux2012], published *CellMIx: a comprehensive toolbox for gene expression deconvolution* where he implements most of previously published tools in R language and group them in the same R-package. This work tremendously increased the usability of previously published deconvolution methods. The CellMix package is one of the state-of-the-art work on deconvolution that regroups algorithms, signatures and benchmark datasets up to 2013.
 
@@ -276,15 +278,23 @@ tab.sel.o$pop.index <- round(tab.sel.o$pop.index,2)
 
 The most popular language of implementation of published methods is R (49.2 %), followed by Matlab (11.11%), only one tool so far was published in Python.
 
+#### Data type
+
 Also, most of the methods were designed to work with microarray data. There is a high chance that some of them are adaptable to RNA-seq. However, a little number of older methods was tested in a different setup. 
 For some method, as CIBERSORT, demonstrated to work with microarray and applied commonly to RNA-seq by other researchers, the validity of results remains unclear as some studies claim that CIBERSORT performs accurately applied to RNA-seq [@Thorsson2018] and other opt against it [@Li2017; @Tamborero2018].
 Most of newer methods (i.e. EPIC [@Racle2017], quanTIseq [@Finotello2017] or Infino [@Zaslavsky2017]) are specifically designed for RNA-seq TPM-normalized data. Some methods, mostly enrichment-based methods, are applicable to both technologies (i.e. xCell [@Aran2017]).
 
+#### Objectives of the cell-type deconvolution
+
 It is remarkable that the general aim of the  cell-type deconvolution changed with time. The earlier methods aimed to improve the power of differential expression analysis though *purification* of the gene expression. For example, to compare differentially expressed genes (DEG) in T-cell from the blood under two conditions. However, the obtained purified profiles from complex mixtures were often uncertain [@Onuchic2016]. Recently, the most mentioned goal of deconvolution is a quantification of proportions of different cell types, especially in the context of cancer transcriptomes motivated by redefinition of immunophenotypes discussed in the previous chapter.  The most popular tissue of interest for deconvolution algorithms are cancer tissues and blood. Other applications are cell-cycle time-dependent fluctuations of yeast,  brain cells, and glands .
+
+#### Differences between approaches
 
 Mathematically speaking, I have divided methods into four categories: probabilistic, regression, matrix factorisation and convex hull depending on the nature of the approach. Most of the methods (48 - 74.6%) are working within a supervised framework, and only 20% (14) are unsupervised. The approaches will be described in detail in the following section.
 
 There are numerous practical differences between the methods. @Shen-Orr2013 in their review of deconvolution tools grouped the tools depending on their inputs and outputs. Given the type of outputs, deconvolution can be considered as complete (proportions and cell profiles) or partial (one of those). Moreover, the inputs of the algorithms can be important to evaluate how practical the tool is. The most popular tools and the most recent tools ask for minimal input from the user: the bulk gene expression matrix, or even raw sequencing data [@Finotello2017]. Older methods usually request either at least approximative proportions of mixed cells or purified profiles to be provided.  The newer methods include the reference profiles in the tool if necessary. Some tools, including most of purity estimation tools, demand an additional data input as normal samples or another data type such as CNA data (Timer [@Li2013], VoCAL [@Steuerman2016]) or image data (quanTIseq [@Finotello2017]). An important parameter is also a number of sources  ($k$) to which the algorithm deconvolutes the mixture. In many methods, it should be provided by the user, which can be difficult in a case of complex mixtures of human tissues. Besides, type of method can also limit the number of sources, for example, a probabilistic framework privilege lower number of sources (2-3) due to the theoretical constraints.  In regression depending on provided reference the output number of estimated sources is imposed. Because of the problem of collinearity and similarity of immune cell profiles, it is hard to distinguish between cell sub-types, deconvolution into fine-grain cell subtypes is often called often deep deconvolution. Some methods (i.e., CIBERSORT, Infino, xCell) give specific attention to deconvolution of cell-subtypes. An absolute presence of a cell type in the mixture can also be an essential factor. If it is too low it can reach a detection limit, Electronic subtraction [@Gosink2007] discuss specifically the detection of rare cel-types.
+
+#### Computational efficiency
 
 Running time and the necessary infrastructure are another way to characterize the methods. Although it is hard to compare the running time objectively simultaneously of all the tools because of the heterogeneity of methods and different datasets analysed, some tendencies can be observed. If one thinks about applying deconvolution methods to big cohorts, regression and enrichment-based methods should be well suited. As far as matrix factorisation is concerned, it depends on the implementation (i.e. R vs Matlab) and if the number of sources needs to be estimated (multiple runs for different $k$ parameter) or if a stabilisation needs to applied (multiple runs for the same $k$ parameter). Finally, probabilistic tools seem to be challenging to scale, i.e. authors of Infino admit that their pipeline is not yet applicable at high-throughput.
 
@@ -509,7 +519,7 @@ RSS(\beta) = \sum_{i = 1}^{N}(y_i - f(x_i))^2 = \sum_{i = 1}^{N}(y_i - \beta_0 -
 
 **Ordinary least squares regression** is using Eq.\@ref(eq:rss) to compute $\beta$.
 
-**Ridge regression** (Eq.\@ref(eq:ridge)) adds a regularizer (called $L2$ norm) to shrink the coefficients ($\lambda \geq 1$) through imposing a penalty on their size.
+**Ridge regression** (Eq.\@ref(eq:ridge)) (aka Tikhonov regularization) adds a regularizer (called $L2$ norm) to shrink the coefficients ($\lambda \geq 1$) through imposing a penalty on their size.
 
 \begin{equation}
 \hat{\beta}^{ridge} = \underset{\beta}{\text{argmin}}\{\sum_{i = 1}^{N}(y_i - f(x_i))^2 + \lambda\sum_{j=1}^{p}\beta^2_j\}(\#eq:ridge)
@@ -561,7 +571,7 @@ The task can also be solved differently from the computational perspective. @Lu2
 
 An extensive review on optimization of the objective function for regression methods in cell-type deconvolution was published by @Mohammadi2017. Authors carefully consider different possibilities of parameter choice in the loss and regularization formulations and its performance. They present as well recommendations for construction of basis matrix and data pre- and post-processing. Digital tissue deconvolution (DTD) [@Gortler2018] aims to train the loss function with *in silico* mixtures of single cell profiles resulting in improved performance of rare cell types (present in a small proportion). However, the training is computationally heavy, and the proper training data for bulk transcriptomes are not available.
 
-Since the publication of CIBERSORT [@Newman2015] some authors [@Chen2018; @Schelker2017] used the @Newman2015 implementation directly with pre/post modifications or different signature matrix or re-implemented the SVR regression [@Chen2018].
+Since the publication of CIBERSORT [@Newman2015] some authors [@Chen2018; @Schelker2017] used the @Newman2015 implementation directly with pre/post modifications or with different basis matrix or they re-implemented the SVR regression in their tools [@Chen2018].
 
 Another recent method EPIC [@Racle2017] introduced weights related to gene variability. In their constrained regression, they add it explicitly in the cost function modifying RSS (Eq.\@ref(eq:rss)):
 
@@ -569,7 +579,7 @@ Another recent method EPIC [@Racle2017] introduced weights related to gene varia
 RSS^{weighted} (\beta) = \sum_{i = 1}^{N}(y_i - \beta_0 - w_i \sum_{j=1}^p x_i\beta_j)^2  (\#eq:epic)
 \end{equation}
 
-with the negativity and the sum constraints, we discussed above. The $w_i$ weights are corresponding to the variance of the given gene measure in the same cell type. It aims to give less importance to the variant genes. EPIC also allows a cell type that is not a referenced in the signature matrix with an assumption that the non-referenced cell type is equal to 1- a sum of proportions of other cell types (Eq.\@ref(eq:tumorcoeff)). Authors interpret this non-referenced cell type as the tumor fraction:
+with the non-negativity and the sum constraints, we discussed above. The $w_i$ weights are corresponding to the variance of the given gene measure in the same cell type. It aims to give less importance to the genes variant between different measurements of the same cell-type. EPIC also allows a cell type that is not a referenced in the signature matrix with an assumption that the non-referenced cell type is equal to 1- a sum of proportions of other cell types (Eq.\@ref(eq:tumorcoeff)). Authors interpret this non-referenced cell type as the tumor fraction:
 
 \begin{equation}
 \beta_m = 1 - \sum_{j=1}^{m-1}\beta_j (\#eq:tumorcoeff)
@@ -656,7 +666,7 @@ Even though enrichment methods do not try to fit the linear model and derived sc
 
 ### Probabilistic methods
 
-The probabilistic methods share a common denominator: they aim to minimise a likelihood function of Baye's theorem:
+The probabilistic methods share a common denominator: they aim to minimise a likelihood function of Bayes' theorem:
 
 \begin{equation}
 p(y|\theta) = \frac{p(\theta|y )* p(y)}{p(\theta)} (\#eq:Bayes)
@@ -774,9 +784,9 @@ if(is_html_output()){
 
 #### Principal Components Analysis
 
-One of the most popular methods, **Principal Components Analysis** (PCA) computes projections of the data, mutually uncorrelated and ordered in variance. The principal components provide a sequence of best linear approximations to that data.
+One of the most popular methods, **Principal Components Analysis** (PCA) computes projections of the variables onto the space of the eigenvectors of the empirical covariance matrix, the projections are mutually uncorrelated and ordered in variance. The principal components provide a sequence of best linear approximations to that data.
 
-Traditionally PCA is computed through eigen decomposition of the covariance matrix. Covariance matrix is computed as follows:
+PCA can  be computed through eigen decomposition of the covariance matrix. Covariance matrix is computed as follows:
 
 \begin{equation}
 \Sigma = \frac{1}{n-1}((X-\bar{x})^T(X-\bar{x})) (\#eq:covPCA)
@@ -797,9 +807,9 @@ It can be also computed using **singular value decomposition** (SVD) (computatio
 X= UDV^T (\#eq:svd)
 \end{equation}
 
-Here $U$ is an $N \times p$ orthogonal matrix ($U^T U = I_p$) whose columns $u_j$ are called the left singular vectors; $V$ is a $p \times p$ orthogonal matrix ($V^T V = I_p$) with columns $v_j$ called the right singular vectors, and $D$ is a $p \times p$ diagonal matrix, with diagonal elements $d_1 \geq d_2 \geq ... \geq d_p \geq 0$ known as the singular values. The columns of $UD$ are called the principal components of $X$.
+Here $U$ is an $N \times p$ orthogonal matrix ($U^T U = I_p$) whose columns $u_j$ are called the left singular vectors; $V$ is a $p \times p$ orthogonal matrix ($V^T V = I_p$) with columns $v_j$ called the right singular vectors, and $D$ is a $p \times p$ diagonal matrix, with diagonal elements $d_1 \geq d_2 \geq ... \geq d_p \geq 0$ known as the singular values. The columns of $UD$ are called the projections of principal components of $X$ on axes.
 
-PCA *sees'* the data as a cloud of points and finds directions in which the samples to define Principal Components. This dispersion is measured with variance, and resulting PCA components are variance-ordered.
+PCA finds directions in which the samples are dispersed to define Principal Components. This dispersion is measured with variance, and resulting PCA components are variance-ordered.
 
 As nicely described in [@Rutledge2013]
 
@@ -813,7 +823,7 @@ Especially in the context of the cell-type deconvolution, it can imagine that di
 
 #### Non-negative matrix factorisation
 
-Non-negative matrix factorization [@Seung1999] is an alternative approach to principal components analysis. It assumes that data and components are non-negative. It finds its application in image analysis and gene expression analysis where data are indeed non-negative. The $N \times p$ data matrix $X$ is approximated by
+Non-negative matrix factorization [@Seung1999] is an alternative approach to principal components analysis. It requires data are non-negative and it estimates components that are non-negative as well. It finds its application in image analysis and gene expression analysis where analyzed data are non-negative. The $N \times p$ data matrix $X$ is approximated by
 
 $$X \approx WH $$
 
@@ -826,7 +836,7 @@ The matrices $W$ and $H$ are found by maximizing
 \mathcal{L}(W, H) = \sum^N_{i=1}\sum^{p}_{j=1}[x_{ij} log(WH)_{ij} − (WH)_{ij} ] (\#eq:nmf)
 \end{equation}
 
-This is the log-likelihood from a model in which $x_{ij}$ has a Poisson distribution with mean $(WH)_{ij}$.
+The log-likelihood from a model in which $x_{ij}$ is drawn from a pre-defined distribution (i.e., Poisson) with a mean $(WH)_{ij}$.
 
 This formula can be maximized through minimization of divergence:
 
@@ -876,15 +886,15 @@ In brief, NMF is a popular, in biology, algorithm performing source separation w
 
 #### Independent Components Analysis
 
-Independent Components Analysis is written as in Eq. \@ref(eq:linear) with assumption that columns of $S$:  $S_i$ are *independent* and *non-Gaussian*, which adds orthogonality condition to $A$, since $S$ also has covariance $I$. It was first formulated by @Herault1986
+Independent Components Analysis is written as in Eq. \@ref(eq:linear) maximizing *independence*  and *non-Gaussianity* of columns of $S$:  $S_i$. It was first formulated by @Herault1986
 
 The independence can be measured with entropy, kurtosis, mutual information or negentropy measure $J(Y_j )$ [@Hyvarinen2000] defined by
 
 \begin{equation}
-J(Y_j ) = H(Z_j ) − H(Y_j ) (\#eq:negentropy)
+J(Y_j ) = H(Z_j ) - H(Y_j ) (\#eq:negentropy)
 \end{equation}
 
-where $Z_j$ is a Gaussian random variable with the same variance as $Y_j$. Negentropy is non-negative and measures the deviation of $Y_j$ from Gaussianity. It is used in a popular implementation of **FastICA** [@Hyvarinen2000]. Other existing implementations of ICA are
+where $H(Y_j )$ is entropy, $Z_j$ is a Gaussian random variable with the same variance as $Y_j$. Negentropy is non-negative and measures the deviation of $Y_j$ from Gaussianity. An approximation of negentropy is used in popular implementation of **FastICA** [@Hyvarinen2000]. Other existing implementations of ICA are
 
 * Infomax [@Bell1995] using Information-Maximization that maximizes the joint entropy
 * JADE (@Cardoso1993) on the construction of a fourth-order cumulants array from the data
@@ -997,7 +1007,7 @@ knitr::include_graphics('figures-ext/bss.png')
 ```
 (ref:matrixfact-caption) **Simple illustration of matrix factorisation methods**.  Adapted with permision from [@Zinovyev2013]
 
-All in all, matrix factorization methods are able to decompose a gene expression matrix into a weighted set of genes (metagene)($S$) and weighted set of samples (metasample $A$). Discussed here PCA, NMF and ICA differ in constraints and starting hypotheses. PCA components are ordered by variance and are orthogonal in the initial space of data (Fig. \@ref(fig:matrixfact) ). NMF impose non-negativity constraint and ICA independence of sources hypothesis. NMF and ICA do not have a particular order. For all the matrix factorization methods number of components (or factors) ($k$) needs to be given to the algorithm. Some authors propose a way to estimate the optimal number of components usually justified in a specific context. NMF and SVD were applied in the context of cell-type deconvolution while ICA, so far, was used to dissect transcriptome into factors related to signaling pathways, technical biases or clinical features. Also, ICA was proven to find reproducible signals between different datasets [@Cantini2018; @Teschendorff2007]. I am going to discuss this aspect of the [Results] section.
+All in all, matrix factorization methods are able to decompose a gene expression matrix into a weighted set of genes (metagene)($S$) and weighted set of samples (metasample $A$). Discussed here PCA, NMF and ICA differ in constraints and starting hypotheses. PCA components are ordered by variance and are orthogonal in the initial space of data (Fig. \@ref(fig:matrixfact) ). NMF impose non-negativity constraint and ICA independence of sources hypothesis. Components of NMF and ICA are not ordered. For all the matrix factorization methods number of components (or factors) ($k$) needs to be given to the algorithm. Some authors propose a way to estimate the optimal number of components usually justified in a specific context. NMF and SVD were applied in the context of cell-type deconvolution while ICA, so far, was used to dissect transcriptome into factors related to signaling pathways, technical biases or clinical features. Also, ICA was proven to find reproducible signals between different datasets [@Cantini2018; @Teschendorff2007]. I am going to discuss this aspect of the [Results] section.
 
 ### Attractor metagenes
 
@@ -1069,7 +1079,7 @@ cat("\\begin{algorithm}",
 
 The produced signatures’ weights are non-negative. In the original paper, the generation of tumor signatures leads to three reproducible signatures among different tumor types, including *leucocyte* metagene. Typically with the essential parameter $\alpha=5$, they discovered typically approximately 50 to 150 resulting attractors.
 
-Attractor Metagenes algorithm can be seen as a variant of clustering approach where distance metric is mutual information between genes and metagenes are weighed average of gene expression. This method was further to study breast cancer [@AlEjeh2014] and to SNP data [@Elmas2016].
+This method was further to study breast cancer [@AlEjeh2014] and to SNP data [@Elmas2016].
 
 There is a possibility to tune the $\alpha$ parameter in order to obtain more or less metagenes that would be possibly interpretable as cell-type signatures.
 
@@ -1079,9 +1089,9 @@ Here I will discuss transversal aspects common to most deconvolution methods. Th
 
 #### Types of biological reference
 
-Let us consider the most common case of the deconvolution where neither $A$ or $S$ are not known (Eq. \@ref(eq:linear)), and we would like to estimate cell proportions or both cell proportions and cell profiles. No matter if the method is supervised or unsupervised at some point of the protocol the biological knowledge about cell types is necessary in order to either derive the model or interpret the data. I discussed signatures from the biological perspective in [Section X](#immune-signatures). Here, I would like to stress the importance of the design of gene signatures which aim is to facilitate cell-type deconvolution.
+Let us consider the case of the deconvolution where neither $A$ or $S$ are not known (Eq. \@ref(eq:linear)) (as in the case of cancer transcriptomes), and we would like to estimate cell proportions or both cell proportions and cell profiles. No matter if the method is supervised or unsupervised at some point of the protocol the biological knowledge about cell types is necessary in order to either derive the model or interpret the data. I discussed signatures from the biological perspective in Section \@ref(immune-signatures). Here, I would like to stress the importance of the design of gene signatures which aim is to facilitate cell-type deconvolution.
 
-Depending on chosen solution different type of reference can be used. In regression algorithms, a proxy for purified cell profiles is necessary to estimate proportions. However, the genes that are the most variant between cell types are enough for regression, and not all profiles are necessary. The choice of the genes and the number of the genes impact the outcome [@Vallania2017] significantly. Therefore, most of the regression methods come together with a new **basis matrix**, ranging from hundreds to tens of genes. Typically, genes selected for basis matrix should be cell-type specific in respect to other estimated cell types, validated across many biological conditions [@Hoffmann2006]. @Racle2017 adds a weight directly in the regression formula (see Eq. \@ref(eq:epic) ) that corresponds to the variability of a signature gene between independent measurements of the same cell type so that the least inter-cell type variable genes have more weight in the model.   *CellMix* [@Gaujoux2013] regroups different indexes to select the most specific genes based on signal-to-noise ratio. However, the most popular method is the selection of differentially expressed genes between pure populations. Often criteria for the optimal number of genes in the basis matrix are not knowledge-based but data-driven. @Abbas2009 uses condition number of basis matrix (*kappa*) in order to select the number of genes. CIBERSORT and many other regression methods follow the same approach. @Newman2015 also added another step while constructing the basis matrix, and it preselects reference profiles having maximal discriminatory power. Some authors [@Ju2013; @Nelms2016] propose to find marker genes though correlation with a provided marker gene (a single one or a group of genes).
+Depending on chosen solution different type of reference can be used. In regression algorithms, a way to approximate the individual cell-type profiles is necessary to estimate proportions. However, the genes that are the most variant between cell types are enough for regression, and not all profiles are necessary. A matrix containing gene expression characteristic for a set of cell-types, often for selected, most discriminative, genes is called **basis matrix**.  The choice of the genes and the number of the genes impact the outcome [@Vallania2017] significantly. Therefore, most of the regression methods come together with a new basis matrix, ranging from hundreds to tens of genes. Typically, genes selected for basis matrix should be cell-type specific in respect to other estimated cell types, validated across many biological conditions [@Hoffmann2006]. @Racle2017 adds a weight directly in the regression formula (see Eq. \@ref(eq:epic) ) that corresponds to the variability of a signature gene between independent measurements of the same cell type so that the least inter-cell type variable genes have more weight in the model.   *CellMix* [@Gaujoux2013] regroups different indexes to select the most specific genes based on signal-to-noise ratio. However, the most popular method is the selection of differentially expressed genes between pure populations. Often criteria for the optimal number of genes in the basis matrix are not knowledge-based but data-driven. @Abbas2009 uses matrix mathematical property - condition number of basis matrix (*kappa*) in order to select the number of genes. CIBERSORT and many other regression methods follow the same approach. @Newman2015 also added another step while constructing the basis matrix, and it preselects reference profiles having maximal discriminatory power. Some authors [@Ju2013; @Nelms2016] propose to find marker genes through correlation with a provided marker gene (a single one or a group of genes).
 
 In enrichment methods, **gene list** can be enough to estimate cell abundance, sometimes (i.e., GSEA) ranked gene list is necessary. The choice of extremely specific markers is crucial for accurate call-type abundance estimation. The choice of markers can also be platform-dependent, this point is strongly underlined in [@Becht2016]. An interesting possibility is the use of gene list of different *cell states* in order obtain coarse-grain resolution.
 
@@ -1093,11 +1103,19 @@ For the deconvolution of tumoral biopsies, most of the reference profiles, up to
 
 With the availability of single-cell RNA-seq of human cancers [@Chung2017; @Lavin2017; @Li2017; @Puram2017; @Schelker2017; @Tirosh2016; @Zheng2017], we gain more knowledge on immune cells in TME, and there is growing evidence that they differ importantly from blood immune cells. @Racle2017 show that lymph node-resident immune cells have expression profile closer to blood immune cells than cancer immune cells. @Schelker2017 shows, using a synthetic bulk dataset that using single cell profiles with existing regression methods (CIBERSORT) can improve their performance in the cancer context. However, availability of scRNA-seq remains succinct and probably do not embrace the patient heterogeneity that can be found in large bulk transcriptome cohorts.
 
-#### Data normalization
+#### Data processing
 
-Data pre- and post-processing can have a substantial impact on the deconvolution. Many authors apply strong filtering of genes [@Wang2016], removing probes with a low and moderate expression as well as genes with the highest expression (potential outliers). In many cases, data preprocessing is not detailed and therefore impossible to reproduce.
+Data pre- and post-processing can have a substantial impact on the deconvolution. Many authors apply strong filtering of genes [@Wang2016], removing probes with the lowest and the highest expression (potential outliers). In many cases, data preprocessing is not detailed and therefore impossible to reproduce.
 
-There is also a debate on the data normalization. Most of the authors suggest to use counts (not log-space) for estimating cell abundance as log) transformed data violate the linearity assumption [@Zhong2013], some opt against it [@Shannon2017; @Clarke2010], and some envisage both possibilities [@Erkkila2010; @Repsilber2010]. For the RNA-seq data TPM (transcripts per million) normalization is preferred or even required by most methods [@Chen2018; @Finotello2017; @Racle2017].
+There is also a debate on the data normalization. 
+
+In microarray analysis pipeline, data are transformed into log-space, usually $log_2(x+1)$ in order to make the distribution closer to Gaussian and therefore facilitate statistical hypothesis testing [@Hoyle2002]. It also stabilizes the variance [@Tsai2003].
+
+Most of the authors suggest to use counts (not transformed into log-space) for estimating cell abundance as log-transformed data violate the linearity assumption [@Zhong2013], some opt against it [@Shannon2017; @Clarke2010], and some envisage both possibilities [@Erkkila2010; @Repsilber2010]. 
+
+For the RNA-seq data TPM (transcripts per million) normalization is preferred or even required by most methods [@Chen2018; @Finotello2017; @Racle2017]. @Jin2017 performed an extensive analysis of RNA-seq data processing that preserves best the linearity for deconvolution suggesting that TPM normalization for deconvolution studies. 
+
+For matrix factorization: PCA, ICA the data are usually log-transformed and centred to reduce the influence of extreme values or outliers. NMF for cell-type deconvolution is usually applied in non-log space.
 
 #### Validation {#Validation}
 

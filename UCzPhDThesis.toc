@@ -1,0 +1,141 @@
+\contentsline {chapter}{Preamble about Interdisciplinary Research}{17}{chapter*.6}
+\contentsline {section}{What does interdisciplinarity in science mean in XXI century?}{18}{section*.7}
+\contentsline {section}{Strengths, Weaknesses Opportunities, Threats (SWOT) of an interdisciplinary PhD - personal perspective}{20}{section*.10}
+\contentsline {section}{The origins of the PhD topic}{22}{section*.12}
+\contentsline {chapter}{Organisation of the dissertation}{25}{chapter*.13}
+\contentsline {part}{I\hspace {1em}Introduction}{27}{part.1}
+\contentsline {chapter}{\numberline {1}Immuno-biology of cancer}{29}{chapter.1}
+\contentsline {section}{\numberline {1.1}Cancer disease}{29}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Historical understanding of cancer}{29}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Tumor Microenvironment as a complex system}{32}{subsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.2.1}Interactions between TME and Tumor}{33}{subsubsection.1.1.2.1}
+\contentsline {paragraph}{\numberline {1.1.2.1.1}TME as a foe: inflammation}{33}{paragraph.1.1.2.1.1}
+\contentsline {paragraph}{\numberline {1.1.2.1.2}TME seen as neutral}{34}{paragraph.1.1.2.1.2}
+\contentsline {paragraph}{\numberline {1.1.2.1.3}TME as a friend: immunosurveillance}{36}{paragraph.1.1.2.1.3}
+\contentsline {subsubsection}{\numberline {1.1.2.2}Two-faced nature of immune cells: context-dependent functional plasticity}{37}{subsubsection.1.1.2.2}
+\contentsline {subsubsection}{\numberline {1.1.2.3}Immune cell (sub)types in TME}{37}{subsubsection.1.1.2.3}
+\contentsline {subsubsection}{\numberline {1.1.2.4}Summary}{39}{subsubsection.1.1.2.4}
+\contentsline {section}{\numberline {1.2}Quantifying and qualifying immune infiltration (data)}{40}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Cell sorting}{40}{subsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Flow cytometry}{40}{subsubsection.1.2.1.1}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Mass cytometry}{41}{subsubsection.1.2.1.2}
+\contentsline {subsection}{\numberline {1.2.2}Microscope Staining}{41}{subsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.1}Tissue Microarrays}{41}{subsubsection.1.2.2.1}
+\contentsline {subsection}{\numberline {1.2.3}omics}{42}{subsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.3.1}Transcriptome}{42}{subsubsection.1.2.3.1}
+\contentsline {subsubsection}{\numberline {1.2.3.2}Single cell RNA-seq}{44}{subsubsection.1.2.3.2}
+\contentsline {subsubsection}{\numberline {1.2.3.3}Epigenome}{45}{subsubsection.1.2.3.3}
+\contentsline {subsubsection}{\numberline {1.2.3.4}Copy number variation (CNV) and Copy number aberration (CNA)}{45}{subsubsection.1.2.3.4}
+\contentsline {subsubsection}{\numberline {1.2.3.5}Spatial transcriptomics}{45}{subsubsection.1.2.3.5}
+\contentsline {section}{\numberline {1.3}From cancer phenotyping to immune therapies}{46}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Cancer immune phenotypes}{46}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Scoring the immune infiltration}{47}{subsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.2.1}Immunoscore}{47}{subsubsection.1.3.2.1}
+\contentsline {subsubsection}{\numberline {1.3.2.2}Spatiotemporal dynamics of Intratumoral Immune Cells of Colorectal Cancer}{49}{subsubsection.1.3.2.2}
+\contentsline {subsubsection}{\numberline {1.3.2.3}Immunophenoscore}{49}{subsubsection.1.3.2.3}
+\contentsline {subsubsection}{\numberline {1.3.2.4}The immune landscape of cancer}{50}{subsubsection.1.3.2.4}
+\contentsline {subsubsection}{\numberline {1.3.2.5}A pan-cancer landscape of immune-cancer interactions in solid tumors}{51}{subsubsection.1.3.2.5}
+\contentsline {subsubsection}{\numberline {1.3.2.6}Immune maps}{52}{subsubsection.1.3.2.6}
+\contentsline {subsubsection}{\numberline {1.3.2.7}Summary}{52}{subsubsection.1.3.2.7}
+\contentsline {subsection}{\numberline {1.3.3}Immune signatures - biological perspective}{52}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Cancer therapies}{54}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}Recent progress in immuno-therapies}{55}{subsection.1.3.5}
+\contentsline {section}{\numberline {1.4}Summary of the chapter}{56}{section.1.4}
+\contentsline {chapter}{\numberline {2}Mathematical foundation of cell-type deconvolution of biological data}{59}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction to supervised and unsupervised learning}{59}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Supervised learning}{60}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Unsupervised learning}{60}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Low-dimensional embedding\nobreakspace {}for visualization}{61}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Types of deconvolution}{61}{section.2.2}
+\contentsline {section}{\numberline {2.3}Cell-type deconvolution of bulk transcriptomes}{63}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Literature overview}{65}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Availability}{65}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Data type}{68}{subsubsection.2.3.1.2}
+\contentsline {subsubsection}{\numberline {2.3.1.3}Objectives of the cell-type deconvolution}{68}{subsubsection.2.3.1.3}
+\contentsline {subsubsection}{\numberline {2.3.1.4}Differences between approaches}{68}{subsubsection.2.3.1.4}
+\contentsline {subsubsection}{\numberline {2.3.1.5}Computational efficiency}{69}{subsubsection.2.3.1.5}
+\contentsline {subsection}{\numberline {2.3.2}Regression-based methods}{69}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Enrichment-based methods}{74}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Probabilistic methods}{75}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Convex-hull based methods}{76}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Matrix factorization methods}{79}{subsection.2.3.6}
+\contentsline {subsubsection}{\numberline {2.3.6.1}Principal Components Analysis}{79}{subsubsection.2.3.6.1}
+\contentsline {subsubsection}{\numberline {2.3.6.2}Non-negative matrix factorisation}{82}{subsubsection.2.3.6.2}
+\contentsline {subsubsection}{\numberline {2.3.6.3}Independent Components Analysis}{84}{subsubsection.2.3.6.3}
+\contentsline {subsection}{\numberline {2.3.7}Attractor metagenes}{86}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.8}Others aspects}{88}{subsection.2.3.8}
+\contentsline {subsubsection}{\numberline {2.3.8.1}Types of biological reference}{88}{subsubsection.2.3.8.1}
+\contentsline {subsubsection}{\numberline {2.3.8.2}Data processing}{89}{subsubsection.2.3.8.2}
+\contentsline {subsubsection}{\numberline {2.3.8.3}Validation}{90}{subsubsection.2.3.8.3}
+\contentsline {subsubsection}{\numberline {2.3.8.4}Statistical significance}{92}{subsubsection.2.3.8.4}
+\contentsline {subsection}{\numberline {2.3.9}Summary}{93}{subsection.2.3.9}
+\contentsline {section}{\numberline {2.4}Deconvolution of other data types}{93}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}DNA methylation data}{93}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Copy number aberrations (CNA)}{94}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Summary of the chapter}{95}{section.2.5}
+\contentsline {chapter}{Objectives}{97}{chapter*.34}
+\contentsline {part}{II\hspace {1em}Results}{99}{part.2}
+\contentsline {chapter}{\numberline {3}Determining the optimal number of independent components for reproducible transcriptomic data analysis}{101}{chapter.3}
+\contentsline {section}{\numberline {3.1}Context}{101}{section.3.1}
+\contentsline {section}{\numberline {3.2}Description}{102}{section.3.2}
+\contentsline {section}{\numberline {3.3}Impact on the further work}{102}{section.3.3}
+\contentsline {chapter}{\numberline {4}Application of Independent Component Analysis to Tumor Transcriptomes Reveals Specific and Reproducible Immune-Related Signals}{117}{chapter.4}
+\contentsline {section}{\numberline {4.1}Context}{117}{section.4.1}
+\contentsline {section}{\numberline {4.2}Description}{118}{section.4.2}
+\contentsline {section}{\numberline {4.3}Impact on the further work}{118}{section.4.3}
+\contentsline {chapter}{\numberline {5}Comparison of reproducibility between NMF and ICA}{133}{chapter.5}
+\contentsline {section}{\numberline {5.1}Comparing metagenes obtained with NMF versus ICA}{133}{section.5.1}
+\contentsline {section}{\numberline {5.2}Summary}{136}{section.5.2}
+\contentsline {chapter}{\numberline {6}DeconICA: an R package for Deconvolution of omic data through Immune Components Analysis}{137}{chapter.6}
+\contentsline {section}{\numberline {6.1}From blind deconvolution to cell-type quantification: general overview}{137}{section.6.1}
+\contentsline {section}{\numberline {6.2}Unsupervised deconvolution}{138}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}FastICA overdecomposition protocol}{138}{subsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.1.1}Data transformation}{138}{subsubsection.6.2.1.1}
+\contentsline {subsubsection}{\numberline {6.2.1.2}Determining \(k\) number of sources}{138}{subsubsection.6.2.1.2}
+\contentsline {subsubsection}{\numberline {6.2.1.3}FastICA}{138}{subsubsection.6.2.1.3}
+\contentsline {subsubsection}{\numberline {6.2.1.4}Orienting the components}{140}{subsubsection.6.2.1.4}
+\contentsline {section}{\numberline {6.3}Interpretation of the components}{142}{section.6.3}
+\contentsline {subsubsection}{\numberline {6.3.0.1}Identification of immune cell types with an enrichment test}{142}{subsubsection.6.3.0.1}
+\contentsline {subsubsection}{\numberline {6.3.0.2}Correlation based identification}{143}{subsubsection.6.3.0.2}
+\contentsline {subsubsection}{\numberline {6.3.0.3}Reciprocal match}{143}{subsubsection.6.3.0.3}
+\contentsline {subsubsection}{\numberline {6.3.0.4}Maximal correlation match}{143}{subsubsection.6.3.0.4}
+\contentsline {section}{\numberline {6.4}Computing the abundance of the identified cell-types}{144}{section.6.4}
+\contentsline {subsubsection}{\numberline {6.4.0.1}Defining markers}{145}{subsubsection.6.4.0.1}
+\contentsline {subsubsection}{\numberline {6.4.0.2}Computing scores}{145}{subsubsection.6.4.0.2}
+\contentsline {section}{\numberline {6.5}Validation of the abundance estimation with \emph {DeconICA}}{145}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}\emph {In silico}}{145}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}\emph {In vitro}}{145}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}PBMC transcriptome}{147}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Summary}{147}{section.6.6}
+\contentsline {chapter}{\numberline {7}Comparative analysis of cancer immune infiltration}{153}{chapter.7}
+\contentsline {section}{\numberline {7.1}Background}{153}{section.7.1}
+\contentsline {section}{\numberline {7.2}Methods}{153}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Data sources}{153}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}The DeconICA pipeline on bulk}{158}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}The DeconICA pipeline on single cell}{159}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Results}{159}{section.7.3}
+\contentsline {section}{\numberline {7.4}Discussion}{159}{section.7.4}
+\contentsline {section}{\numberline {7.5}Conclussions}{159}{section.7.5}
+\contentsline {chapter}{\numberline {8}A multiscale signalling network map of innate immune response in cancer reveals signatures of cell heterogeneity and functional polarization}{161}{chapter.8}
+\contentsline {section}{\numberline {8.1}Context}{161}{section.8.1}
+\contentsline {section}{\numberline {8.2}Description}{162}{section.8.2}
+\contentsline {section}{\numberline {8.3}Discussion and perspectives}{163}{section.8.3}
+\contentsline {part}{III\hspace {1em}Discussion}{207}{part.3}
+\contentsline {chapter}{\numberline {9}Discussion}{209}{chapter.9}
+\contentsline {chapter}{\numberline {10}Conclusions and perspectives}{215}{chapter.10}
+\contentsline {section}{\numberline {10.1}Conclusions}{215}{section.10.1}
+\contentsline {section}{\numberline {10.2}Perspectives}{216}{section.10.2}
+\contentsline {chapter}{Annexes}{219}{chapter*.44}
+\contentsline {section}{1 DeconICA documentation}{219}{section*.45}
+\contentsline {subsection}{1.1 Introduction to deconICA}{219}{section*.46}
+\contentsline {subsection}{1.2 Running fastICA with icasso stabilisation}{260}{section*.47}
+\contentsline {subsection}{1.3 Reference manual}{269}{section*.48}
+\contentsline {section}{2 Publications and conferences}{307}{section*.49}
+\contentsline {subsection}{2.1 Adjustment of dendritic cells to the breast-cancer microenvironment is subset-specific}{307}{section*.50}
+\contentsline {subsection}{2.2 The inconvenience of data of convenience: computational research beyond post-mortem analyses}{310}{section*.51}
+\contentsline {subsection}{2.3 CV: publications, conferences, courses}{313}{section*.52}
+\contentsline {chapter}{Glossary}{317}{chapter*.53}
+\contentsline {section}{Biological terms}{317}{section*.54}
+\contentsline {section}{Mathematical terms}{317}{section*.55}
+\contentsline {chapter}{Post Scriptum: Thesis writing}{319}{chapter*.56}
+\contentsline {chapter}{Bibliography}{319}{chapter*.56}
