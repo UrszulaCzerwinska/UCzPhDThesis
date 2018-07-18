@@ -1,7 +1,7 @@
 \contentsline {chapter}{Preamble about Interdisciplinary Research}{17}{chapter*.6}
 \contentsline {section}{What does interdisciplinarity in science mean in XXI century?}{18}{section*.7}
-\contentsline {section}{Strengths, Weaknesses Opportunities, Threats (SWOT) of an interdisciplinary PhD - personal perspective}{20}{section*.10}
-\contentsline {section}{The origins of the PhD topic}{22}{section*.12}
+\contentsline {section}{Strengths, Weaknesses Opportunities, Threats (SWOT) of an interdisciplinary Ph.D. - personal perspective}{20}{section*.10}
+\contentsline {section}{The origins of the Ph.D.\nobreakspace {}topic}{22}{section*.12}
 \contentsline {chapter}{Organisation of the dissertation}{25}{chapter*.13}
 \contentsline {part}{I\hspace {1em}Introduction}{27}{part.1}
 \contentsline {chapter}{\numberline {1}Immuno-biology of cancer}{29}{chapter.1}
@@ -132,10 +132,10 @@
 \contentsline {subsection}{1.3 Reference manual}{269}{section*.48}
 \contentsline {section}{2 Publications and conferences}{307}{section*.49}
 \contentsline {subsection}{2.1 Adjustment of dendritic cells to the breast-cancer microenvironment is subset-specific}{307}{section*.50}
-\contentsline {subsection}{2.2 The inconvenience of data of convenience: computational research beyond post-mortem analyses}{310}{section*.51}
-\contentsline {subsection}{2.3 CV: publications, conferences, courses}{313}{section*.52}
-\contentsline {chapter}{Glossary}{317}{chapter*.53}
-\contentsline {section}{Biological terms}{317}{section*.54}
-\contentsline {section}{Mathematical terms}{317}{section*.55}
-\contentsline {chapter}{Post Scriptum: Thesis writing}{319}{chapter*.56}
-\contentsline {chapter}{Bibliography}{319}{chapter*.56}
+\contentsline {subsection}{2.2 The inconvenience of data of convenience: computational research beyond post-mortem analyses}{323}{section*.51}
+\contentsline {subsection}{2.3 CV: publications, conferences, courses}{326}{section*.52}
+\contentsline {chapter}{Glossary}{331}{chapter*.53}
+\contentsline {section}{Biological terms}{331}{section*.54}
+\contentsline {section}{Mathematical terms}{331}{section*.55}
+\contentsline {chapter}{Post Scriptum: Thesis writing}{333}{chapter*.56}
+\contentsline {chapter}{Bibliography}{333}{chapter*.56}

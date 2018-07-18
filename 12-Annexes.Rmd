@@ -62,8 +62,7 @@ Paula Michea$^\star$, Floriane Noël$^\star$, Eve Zakine, **Urszula Czerwinska**
 
  $^\star$ $^{_{contributed}}$ $^{_{equally}}$
 
-*Publication accepted in Nature Immunology on 11th May 2018* (Abstract)
-
+*Published in Nature Immunology on 16th July 2018*
 
 
 This project developed by Michea et al. originated in Vassili Soumelis group with interesting quality bulk RNa-seq data on pDC cells subsets in breast cancer. 
@@ -156,7 +155,7 @@ cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/data.pdf}")
 if (is_pdf_output()) {
 cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/CV.pdf}")
 } else {
-    
+    cat("<a href=\"https://github.com/UrszulaCzerwinska/UCzPhDThesis/blob/master/pdf-ext/CV.pdf\" download=\"Download the CV here\">")
 }
 ```
 
