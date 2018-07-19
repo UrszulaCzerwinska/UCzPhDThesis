@@ -41,7 +41,7 @@ The formal documentation of the R package automatically generated. Describes all
  
 
 
-```{r pdfman, echo=FALSE, results='asis', eval=is_pdf_output()}
+```{r pdfman, echo=FALSE, results='asis'}
 if (is_pdf_output()){
 cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/DeconICA.pdf}")
 } else {
@@ -78,7 +78,7 @@ A strategical decision was taken to not to include my part of work in the main s
 
 
 
-```{r pdfDC, echo=FALSE, results='asis', eval=is_pdf_output()}
+```{r pdfDC, echo=FALSE, results='asis'}
 if (is_pdf_output()){
 cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/pDC_Paula_official.pdf}")
 } else{
@@ -121,7 +121,7 @@ All participant of the Idea Dream Challenge co-authored the correspondence to *N
 
 
 
-```{r pdfdata, echo=FALSE, results='asis', eval=is_pdf_output()}
+```{r pdfdata, echo=FALSE, results='asis'}
 if (is_pdf_output()){
 cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/data.pdf}")
 } else {
@@ -151,11 +151,13 @@ cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/data.pdf}")
 
 
 
-```{r pdfcv, echo=FALSE, results='asis', eval=is_pdf_output()}
+```{r pdfcv, echo=FALSE, results='asis'}
 if (is_pdf_output()) {
-cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/CV.pdf}")
+  cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/CV.pdf}")
 } else {
-    cat("<a href=\"https://github.com/UrszulaCzerwinska/UCzPhDThesis/blob/master/pdf-ext/CV.pdf\" download=\"Download the CV here\">")
+  cat(
+    "<a href=\"https://github.com/UrszulaCzerwinska/UCzPhDThesis/raw/master/pdf-ext/CV.pdf\" download=\"CV\">Downlad the CV here</a>"
+  )
 }
 ```
 

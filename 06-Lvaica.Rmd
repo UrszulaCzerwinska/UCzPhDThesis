@@ -50,6 +50,10 @@ In the next chapter, I will show a comparison of this approach with an alternati
 
 
 
-```{r pdf3, echo=FALSE, results='asis', eval=is_pdf_output()}
+```{r pdf3, echo=FALSE, results='asis'}
+if(is_pdf_output()){
 cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/LVAICA_proof.pdf}")
+}else{
+    cat("Article is available online: https://link.springer.com/chapter/10.1007%2F978-3-319-93764-9_46")
+}
 ```

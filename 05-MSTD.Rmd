@@ -54,8 +54,13 @@ The possibility to apply this strategy reproducibly remained unclear. The *unsta
 
 In the next [chapter](#Lvaica), I describe the study where I test the third strategy in multiple cancer transcriptome datasets. 
 
-```{r pdf, echo=FALSE, results='asis', eval=is_pdf_output()}
-cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}")
+```{r pdf, echo=FALSE, results='asis'}
+if (is_pdf_output()){
+    cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/BMCMSTD.pdf}")
+} else {
+    cat("Article is available online: https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-017-4112-9")
+}
+
 ```
 
 

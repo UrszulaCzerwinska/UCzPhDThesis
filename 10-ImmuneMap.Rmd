@@ -57,6 +57,11 @@ We presented here a quite simplistic view of "heterogeneity" focusing on two gro
 In the context of the thesis, this work demonstrated that the deconvolution of single-cell transcriptomes is possible and useful. It represents a deeper *zoom in* level if contrasted with the bulk transcriptome deconvolution performed so far. It demonstrates that ICA (and probably other deconvolution techniques) can also be used with single cell profiles to obtain coarse grain dissection of functional cell space.  
 
 
-```{r pdf2, echo=FALSE, results='asis', eval=is_pdf_output()}
+```{r pdf2, echo=FALSE, results='asis'}
+if (is_pdf_output()){
 cat("\\includepdf[pages={1-}, scale=1]{pdf-ext/MapPaper.pdf}}")
+}else{
+   cat("The article will be shortly available on biorxiv.") 
+}
+
 ```
