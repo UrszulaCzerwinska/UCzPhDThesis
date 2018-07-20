@@ -32,26 +32,167 @@ post Data cleaning
 
 
 ## Results 
+```{r, include= FALSE}
+library(plotly)
+```
 
-Global image with 
+```{r datasetcount, fig.cap='(ref:datasetcount-caption)',fig.scap="Count of the dasets analyzed with DeconICA", out.width='80%', fig.align='center', echo = FALSE}
+load("~/Google Drive/PhDThesis/RData/pl_ds_count.RData")
+if(!is_html_output()){
+  pl_ds_count
+} else{
+  ggplotly(pl_ds_count)
+}
 
+```
+
+(ref:datasetcount-caption)
+
+
+```{r corrgraphfull, fig.cap='(ref:corrgraphfull-caption)',fig.scap="Correlation graph of metagenes", out.width='100%', out.height='50%', fig.align='center', echo = FALSE}
+knitr::include_graphics('figures-ext/full_02_recip_color_annot.png')
+```
+
+(ref:corrgraphfull-caption)
+
+```{r umapplotclean, fig.cap='(ref:umapplotclean-caption)',fig.scap="2D representation of labelled metagenes", out.width='90%', fig.align='center', echo = FALSE}
+load("~/Google Drive/PhDThesis/RData/umap_plot_cleaned.RData")
+if(!is_html_output()){
+  # umap_plot_cleaned <- ggplot(umap_ds_sc_clean, aes(x= X1, y = X2, color = cell ))+
+  # geom_point()+theme_bw()+scale_color_manual(values=c25)+theme(legend.position="bottom",legend.direction="vertical",aspect.ratio=1)
+  # umap_plot_cleaned
+  knitr::include_graphics('figures-ext/umap_plot_cleaned.pdf')
+
+} else{
+  umap_plot_cleaned <- ggplot(umap_ds_sc_clean, aes(x= X1, y = X2, color = cell , label = tumor, label2=dataset))+
+  geom_point()+theme_bw()+scale_color_manual(values=c25)
+  ggplotly(umap_plot_cleaned)
+}
+```
+
+(ref:umapplotclean-caption)
+
+
+
+```{r panel, fig.cap='(ref:panel-caption)',fig.scap="Cell markers expression in the metagenes", out.width='100%', fig.align='center', echo = FALSE}
+if(is_pdf_output()){
+  knitr::include_graphics('figures-ext/panel_markers_labels_gates_legend.pdf')
+} else{
+  knitr::include_graphics('figures-ext/panel_markers_labels_gates_legend.png')
+
+}
+```
+
+(ref:panel-caption)
+
+```{r countdectect, fig.cap='(ref:countdectect-caption)',fig.scap="Cell markers expression in the metagenes", out.width='100%', fig.align='center', echo = FALSE}
+if(is_pdf_output()){
+  knitr::include_graphics('figures-ext/count_detectability_immune_only.pdf')
+} else{
+  knitr::include_graphics('figures-ext/count_detectability_immune_only.png')
+}
+```
+
+(ref:countdectect-caption)
+
+
+```{r corrbar, fig.cap='(ref:corrbar-caption)',fig.scap="Correlation of cell-type metagenes with the refrence profiles", fig.height=10, fig.align='center', echo = FALSE}
+load("/Users/ulala/Google\ Drive/PhDThesis/RData/corr_cell_bar.RData")
+if(is_pdf_output()){
+  corr_cell_bar
+}else{
+
+corr_cell_barplotly
+}
+```
+
+(ref:corrbar-caption)
+
+```{r tcelldiv, out.extra='angle=90',fig.cap='(ref:tcelldiv-caption)', fig.scap="Analysis of T cell diversity", fig.align='center', echo = FALSE, out.width='7.5in', eval=is_pdf_output()}
+#load("/Users/ulala/Google Drive/PhDThesis/RData/plot_pca_tumor.RData")
+  knitr::include_graphics('figures-ext/TcellDiv.pdf')
+
+```
+```{r tcelldiv2,fig.cap='(ref:tcelldiv-caption)', fig.scap="Analysis of T cell diversity", fig.align='center', echo = FALSE, out.width='100%', eval=is_html_output()}
+#load("/Users/ulala/Google Drive/PhDThesis/RData/plot_pca_tumor.RData")
+  knitr::include_graphics('figures-ext/TcellDiv.png')
+
+```
+
+(ref:tcelldiv-caption)
+
+```{r scbulk, fig.cap='(ref:scbulk-caption)',fig.scap="Metagenes from single cell and bulk transcriptome", out.width='7.5in',out.extra='angle=90', fig.align='center', echo = FALSE ,eval =is_pdf_output() }
+
+  knitr::include_graphics('figures-ext/corr_sc_tcell_plot.pdf')
+
+```
+```{r scbulk2,fig.cap='(ref:scbulk-caption)', fig.scap="Metagenes from single cell and bulk transcriptome", fig.align='center', echo = FALSE, out.width='100%', eval=is_html_output()}
+#load("/Users/ulala/Google Drive/PhDThesis/RData/plot_pca_tumor.RData")
+  knitr::include_graphics('figures-ext/corr_sc_tcell_plot.png')
+
+```
 ## Discussion
 
 ## Conclussions 
 
-
+\newpage
 ## Supplementary
 
+### Figures
+
+```{r tsne, fig.cap='(ref:tsne-caption)',fig.scap="Metagenes 2D landscape, parameters testing", out.width='33%', fig.ncol= 3, fig.subcap= c("1", "2", "3"), echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+if(is_pdf_output()){
+  knitr::include_graphics(c("./figures-ext/tsne_clean_P10_D100.pdf", "./figures-ext/tsne_cleaned_P20_D50.pdf", "./figures-ext/tsne-clean_P20_D100.pdf"))}else{
+    knitr::include_graphics(c("./figures-ext/tsne_clean_P10_D100.png", "./figures-ext/tsne_cleaned_P20_D50.png", "./figures-ext/tsne-clean_P20_D100.png"))
+  }
+
+```
+(ref:tsne-caption)
+
+
+```{r umap, fig.cap='(ref:umap-caption)',fig.scap="Metagenes 2D landscape, parameters testing", out.width='33%', fig.ncol= 3, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, fig.subcap= c("1", "2", "3"), eval= is_html_output()}
+
+  knitr::include_graphics(c("./figures-ext/umap_nn5_dist0.2.png", "./figures-ext/umap_nn15_dist0.2.png","./figures-ext/umap_nn20_dist0.2.png"))
+
+```
+
+```{r umap2, fig.cap='(ref:umap-caption)',fig.scap="Metagenes 2D landscape, parameters testing", out.width='2in', fig.ncol= 3, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, fig.subcap= c("1", "2", "3"), eval = is_pdf_output()}
+knitr::include_graphics(c("./figures-ext/umap_nn5_dist0.2.pdf", "./figures-ext/umap_nn15_dist0.2.pdf","./figures-ext/umap_nn20_dist0.2.pdf"))
+```
+
+(ref:umap-caption)
+
+
+```{r ratiodectect, fig.cap='(ref:ratiodectect-caption)',fig.scap="Ratio of detected components by cancer type", out.width='100%', fig.align='center', echo = FALSE, eval =is_pdf_output() }
+
+  knitr::include_graphics('figures-ext/ration_only_immune.pdf')
+
+```
+
+```{r ratiodectect2, fig.cap='(ref:ratiodectect-caption)',fig.scap="Ratio of detected components by cancer type", out.width='100%', fig.align='center', echo = FALSE, eval =is_html_output() }
+  knitr::include_graphics('figures-ext/ration_only_immune.png')
+
+```
+
+(ref:ratiodectect-caption)
+
+
+
 ### Tables 
+
 ```{r bulklistimport, include=FALSE}
 library(readr)
 datasets_sources_phd <- data.frame(read_delim("RData/datasets_sources.csv",";", escape_double = FALSE, trim_ws = TRUE))
 datasets_sources_phd$Cancer.type <- as.factor(datasets_sources_phd$Cancer.type)
 
 ```
+```{r eval=is_html_output(), results="asis", echo = FALSE}
+cat("<table>",paste0("<caption>", "(#tab:bulklist)","<b>", "Caption","</b>", "</caption>"),"</table>", sep ="\n")
+```
+
 ```{r bulklist, echo = FALSE}
 if(is_html_output()){
-cat("<table>",paste0("<caption>", "(#tab:bulklist)","<b>", "Caption","</b>", "</caption>"),"</table>", sep ="\n")
 library(DT)
 sources_bulk <- datatable(datasets_sources_phd, filter = 'top', options = list(
   columnDefs = list(list(width="10em", targets=list(1, 2,5)), list(width = '5em', targets = list(4,6))),
@@ -81,9 +222,11 @@ kable(datasets_sources_phd, format="latex",row.names = FALSE, align = 'c', bookt
 library(readr)
 sc_phd <- data.frame(read_delim("RData/single_cell_src.csv",";", escape_double = FALSE, trim_ws = TRUE))
 ```
+```{r sclisthead, echo = FALSE, results="asis", eval =is_html_output()}
+cat("<table>",paste0("<caption>", "(#tab:sclist)","<b>", "Caption","</b>", "</caption>"),"</table>", sep ="\n")
+```
 ```{r sclist, echo = FALSE}
 if(is_html_output()){
-cat("<table>",paste0("<caption>", "(#tab:sclist)","<b>", "Caption","</b>", "</caption>"),"</table>", sep ="\n")
 library(DT)
 sources_sc <- datatable(sc_phd, filter = 'top', options = list(
   #columnDefs = list(list(width="10em", targets=list(1, 2,5)), list(width = '5em', targets = list(4,6))),
@@ -109,7 +252,7 @@ sources_sc
     escape = TRUE,
     longtable = TRUE,
     caption.short = "List of datasets 2"
-    ) %>% kable_styling(latex_options= c("striped"), full_width =F, font_size = 6 ) %>% landscape()
+    ) %>% kable_styling(latex_options= c("striped"), full_width =F ) %>% landscape()
   #%>%
   #   kable_styling(
   #     latex_options = c("striped", "scale_down"),
@@ -119,3 +262,190 @@ sources_sc
 ```
 
 (ref:sclist-caption) azez
+
+```{r, include= FALSE}
+load("/Users/ulala/Google Drive/PhDThesis/RData/tabeles_genes.RData")
+```
+
+```{r pc1neg, echo = FALSE, results="asis", eval =is_html_output()}
+cat("<table>",paste0("<caption>", "(#tab:pc1negt)","<b>", "Caption","</b>", "</caption>"),"</table>", sep ="\n")
+```
+
+```{r pc1negt, echo = FALSE}
+if(is_html_output()){
+library(DT)
+ 
+pc1neg <- datatable( df_PC1_neg[order(df_PC1_neg[,2]),][1:10,], filter = 'top', options = list(
+  #columnDefs = list(list(width="10em", targets=list(1, 2,5)), list(width = '5em', targets = list(4,6))),
+  pageLength = 20,
+  autoWidth = TRUE,
+  scrollX=TRUE),
+  rownames = FALSE,
+width = '100%',
+caption = NULL,
+escape = FALSE
+)
+pc1neg
+} else {
+
+  library(kableExtra)
+  kable(
+     df_PC1_neg[order(df_PC1_neg[,2]),][1:10,],
+    format = "latex",
+    row.names = FALSE,
+    align = 'c',
+    booktabs = T,
+    caption = '(ref:pc1negt-caption)',
+    escape = TRUE,
+    longtable = TRUE,
+    caption.short = "PC1 neg"
+    ) %>% kable_styling(latex_options= c("striped"), full_width =F ) 
+} 
+```
+
+
+
+
+```{r pc1up, echo = FALSE, results="asis", eval =is_html_output()}
+cat("<table>",paste0("<caption>", "(#tab:pc1upt)","<b>", "Caption","</b>", "</caption>"),"</table>", sep ="\n")
+```
+
+```{r pc1upt, echo = FALSE}
+if(is_html_output()){
+library(DT)
+pc1plus <- datatable(df_PC1_plus[1:10,], filter = 'top', options = list(
+  #columnDefs = list(list(width="10em", targets=list(1, 2,5)), list(width = '5em', targets = list(4,6))),
+  pageLength = 20,
+  autoWidth = TRUE,
+  scrollX=TRUE),
+  rownames = FALSE,
+width = '100%',
+caption = NULL,
+escape = FALSE
+)
+pc1plus
+} else {
+
+  library(kableExtra)
+  kable(
+    df_PC1_plus[1:10,],
+    format = "latex",
+    row.names = FALSE,
+    align = 'c',
+    booktabs = T,
+    caption = '(ref:pc1upt-caption)',
+    escape = TRUE,
+    longtable = TRUE,
+    caption.short = "PC1 plus"
+    ) %>% kable_styling(latex_options= c("striped"), full_width =F )
+} 
+```
+
+```{r pc2up, echo = FALSE, results="asis", eval =is_html_output()}
+cat("<table>",paste0("<caption>", "(#tab:pc2upt)","<b>", "Caption","</b>", "</caption>"),"</table>", sep ="\n")
+```
+
+```{r pc2upt, echo = FALSE}
+if(is_html_output()){
+library(DT)
+ 
+pc2up <- datatable( df_PC2_plus[1:10,], filter = 'top', options = list(
+  #columnDefs = list(list(width="10em", targets=list(1, 2,5)), list(width = '5em', targets = list(4,6))),
+  pageLength = 20,
+  autoWidth = TRUE,
+  scrollX=TRUE),
+  rownames = FALSE,
+width = '100%',
+caption = NULL,
+escape = FALSE
+)
+pc2up
+} else {
+
+  library(kableExtra)
+  kable(
+     df_PC2_plus[1:10,],
+    format = "latex",
+    row.names = FALSE,
+    align = 'c',
+    booktabs = T,
+    caption = '(ref:pc2upt-caption)',
+    escape = TRUE,
+    longtable = TRUE,
+    caption.short = "PC2 up"
+    ) %>% kable_styling(latex_options= c("striped"), full_width =F)
+} 
+```
+
+
+```{r pc2down, echo = FALSE, results="asis", eval =is_html_output()}
+cat("<table>",paste0("<caption>", "(#tab:pc2downt)","<b>", "Caption","</b>", "</caption>"),"</table>", sep ="\n")
+```
+
+```{r pc2downt, echo = FALSE}
+if(is_html_output()){
+library(DT)
+ 
+pc2down <- datatable(  df_PC2_neg[order(df_PC2_neg[,2]),][1:10,], filter = 'top', options = list(
+  #columnDefs = list(list(width="10em", targets=list(1, 2,5)), list(width = '5em', targets = list(4,6))),
+  pageLength = 20,
+  autoWidth = TRUE,
+  scrollX=TRUE),
+  rownames = FALSE,
+width = '100%',
+caption = NULL,
+escape = FALSE
+)
+pc2down
+} else {
+
+  library(kableExtra)
+  kable(
+      df_PC2_neg[order(df_PC2_neg[,2]),][1:10,],
+    format = "latex",
+    row.names = FALSE,
+    align = 'c',
+    booktabs = T,
+    caption = '(ref:pc2downt-caption)',
+    escape = TRUE,
+    longtable = TRUE,
+    caption.short = "PC2 down"
+    ) %>% kable_styling(latex_options= c("striped"), full_width =F ) 
+} 
+```
+
+```{r top, echo = FALSE, results="asis", eval =is_html_output()}
+cat("<table>",paste0("<caption>", "(#tab:topt)","<b>", "Caption","</b>", "</caption>"),"</table>", sep ="\n")
+``` 
+
+```{r topt, echo = FALSE}
+if(is_html_output()){
+library(DT)
+ 
+topt <- datatable(  top, filter = 'top', options = list(
+  #columnDefs = list(list(width="10em", targets=list(1, 2,5)), list(width = '5em', targets = list(4,6))),
+  pageLength = 20,
+  autoWidth = TRUE,
+  scrollX=TRUE),
+  rownames = FALSE,
+width = '100%',
+caption = NULL,
+escape = FALSE
+)
+topt
+} else {
+
+  library(kableExtra)
+  kable(
+      top,
+    format = "latex",
+    row.names = FALSE,
+    align = 'c',
+    booktabs = T,
+    caption = '(ref:topt-caption)',
+    escape = TRUE,
+    longtable = TRUE,
+    caption.short = "top"
+    ) %>% kable_styling(latex_options= c("striped", "scale_down"), full_width =F ) 
+} 
+```

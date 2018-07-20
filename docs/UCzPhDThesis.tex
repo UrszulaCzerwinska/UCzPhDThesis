@@ -2895,7 +2895,7 @@ different people and the musical background (Fig.
 
 }
 
-\caption[illutration of the cocktail party problem]{\textbf{Illustration of the cocktail party
+\caption[Illutration of the cocktail party problem]{\textbf{Illustration of the cocktail party
 problem}. During a cocktail party voices of participants can be recorded
 with a set of microphones and then recovered through blind source
 separation. The illustration purposes only four sources are mixed with
@@ -6081,7 +6081,91 @@ cell}\label{the-deconica-pipeline-on-single-cell}}
 \hypertarget{results-1}{%
 \section{Results}\label{results-1}}
 
-Global image with
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{UCzPhDThesis_files/figure-latex/datasetcount-1} 
+
+}
+
+\caption[Count of the dasets analyzed with DeconICA]{(ref:datasetcount-caption)}\label{fig:datasetcount}
+\end{figure}
+
+(ref:datasetcount-caption)
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth,height=0.5\textheight]{figures-ext/full_02_recip_color_annot} 
+
+}
+
+\caption[Correlation graph of metagenes]{(ref:corrgraphfull-caption)}\label{fig:corrgraphfull}
+\end{figure}
+
+(ref:corrgraphfull-caption)
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{figures-ext/umap_plot_cleaned} 
+
+}
+
+\caption[2D representation of labelled metagenes]{(ref:umapplotclean-caption)}\label{fig:umapplotclean}
+\end{figure}
+
+(ref:umapplotclean-caption)
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures-ext/panel_markers_labels_gates_legend} 
+
+}
+
+\caption[Cell markers expression in the metagenes]{(ref:panel-caption)}\label{fig:panel}
+\end{figure}
+
+(ref:panel-caption)
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures-ext/count_detectability_immune_only} 
+
+}
+
+\caption[Cell markers expression in the metagenes]{(ref:countdectect-caption)}\label{fig:countdectect}
+\end{figure}
+
+(ref:countdectect-caption)
+
+\begin{figure}
+
+{\centering \includegraphics{UCzPhDThesis_files/figure-latex/corrbar-1} 
+
+}
+
+\caption[Correlation of cell-type metagenes with the refrence profiles]{(ref:corrbar-caption)}\label{fig:corrbar}
+\end{figure}
+
+(ref:corrbar-caption)
+
+\begin{figure}
+
+{\centering \includegraphics[width=7.5in,angle=90]{figures-ext/TcellDiv} 
+
+}
+
+\caption[Analysis of T cell diversity]{(ref:tcelldiv-caption)}\label{fig:tcelldiv}
+\end{figure}
+
+(ref:tcelldiv-caption)
+
+\begin{figure}
+
+{\centering \includegraphics[width=7.5in,angle=90]{figures-ext/corr_sc_tcell_plot} 
+
+}
+
+\caption[Metagenes from single cell and bulk transcriptome]{(ref:scbulk-caption)}\label{fig:scbulk}
+\end{figure}
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
@@ -6089,8 +6173,36 @@ Global image with
 \hypertarget{conclussions}{%
 \section{Conclussions}\label{conclussions}}
 
+\newpage
+
 \hypertarget{supplementary}{%
 \section{Supplementary}\label{supplementary}}
+
+\hypertarget{figures}{%
+\subsection{Figures}\label{figures}}
+
+\begin{figure}
+\subfloat[1\label{fig:tsne1}]{\includegraphics[width=0.33\linewidth]{./figures-ext/tsne_clean_P10_D100} }\subfloat[2\label{fig:tsne2}]{\includegraphics[width=0.33\linewidth]{./figures-ext/tsne_cleaned_P20_D50} }\subfloat[3\label{fig:tsne3}]{\includegraphics[width=0.33\linewidth]{./figures-ext/tsne-clean_P20_D100} }\caption[Metagenes 2D landscape, parameters testing]{(ref:tsne-caption)}\label{fig:tsne}
+\end{figure}
+
+(ref:tsne-caption)
+
+\begin{figure}
+\subfloat[1\label{fig:umap1}]{\includegraphics[width=2in]{./figures-ext/umap_nn5_dist0.2} }\subfloat[2\label{fig:umap2}]{\includegraphics[width=2in]{./figures-ext/umap_nn15_dist0.2} }\subfloat[3\label{fig:umap3}]{\includegraphics[width=2in]{./figures-ext/umap_nn20_dist0.2} }\caption[Metagenes 2D landscape, parameters testing]{(ref:umap-caption)}\label{fig:umap}
+\end{figure}
+
+(ref:umap-caption)
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures-ext/ration_only_immune} 
+
+}
+
+\caption[Ratio of detected components by cancer type]{(ref:ratiodectect-caption)}\label{fig:ratiodectect}
+\end{figure}
+
+(ref:ratiodectect-caption)
 
 \hypertarget{tables}{%
 \subsection{Tables}\label{tables}}
@@ -6260,8 +6372,7 @@ ID & Name & Cancer.type & Samples & Genes & Components & Source & Normalization 
 
 
 
-\begin{landscape}\begingroup\fontsize{6}{8}\selectfont
-\rowcolors{2}{white}{gray!6}
+\begin{landscape}\rowcolors{2}{white}{gray!6}
 
 \begin{longtable}[t]{ccccccccccccccc}
 \caption[List of datasets 2]{\label{tab:sclist}azez}\\
@@ -6277,10 +6388,238 @@ Zheng et al. & Liver + PBMC+ Adjacent & 1939 & 3124 & 5063 & 0 & 5063 & 0 & 0 & 
 Sidharth et al. & Head and Neck & 3363 & 2215 & 5902 & 138 & 1237 & 98 & 0 & 120 & 51 & 1440 & 0 & 18 & 29198524\\
 \bottomrule
 \end{longtable}
-\rowcolors{2}{white}{white}\endgroup{}
+\rowcolors{2}{white}{white}
 \end{landscape}
 
 
+
+\rowcolors{2}{white}{gray!6}
+
+\begin{longtable}[t]{ccc}
+\caption[PC1 neg]{\label{tab:pc1negt}(ref:pc1negt-caption)}\\
+\hiderowcolors
+\toprule
+hgnc\_symbol & PC1.loading & description\\
+\midrule
+\showrowcolors
+MIR155HG & -0.0362630 & MIR155 host gene\\
+TRAF3IP3 & -0.0357350 & TRAF3 interacting protein 3\\
+CD48 & -0.0356778 & CD48 molecule\\
+ARHGAP9 & -0.0353338 & Rho GTPase activating protein 9\\
+TTC24 & -0.0351939 & tetratricopeptide repeat domain 24\\
+\addlinespace
+PTPRC & -0.0349510 & protein tyrosine phosphatase, receptor type C\\
+SASH3 & -0.0345074 & SAM and SH3 domain containing 3\\
+NCF1B & -0.0344873 & neutrophil cytosolic factor 1B pseudogene\\
+IL16 & -0.0340726 & interleukin 16\\
+CORO1A & -0.0340213 & coronin 1A\\
+\bottomrule
+\end{longtable}\rowcolors{2}{white}{white}
+
+\rowcolors{2}{white}{gray!6}
+
+\begin{longtable}[t]{ccc}
+\caption[PC1 plus]{\label{tab:pc1upt}(ref:pc1upt-caption)}\\
+\hiderowcolors
+\toprule
+hgnc\_symbol & PC1.loading & description\\
+\midrule
+\showrowcolors
+SNORA4 & 0.0333187 & small nucleolar RNA, H/ACA box 4\\
+SNORD61 & 0.0316536 & small nucleolar RNA, C/D box 61\\
+SNORD63 & 0.0307560 & small nucleolar RNA, C/D box 63\\
+SNORD75 & 0.0288080 & NA\\
+SNORD5 & 0.0283364 & small nucleolar RNA, C/D box 5\\
+\addlinespace
+SNORD116-26 & 0.0280464 & small nucleolar RNA, C/D box 116-26\\
+SNORD77 & 0.0266930 & NA\\
+SNORD29 & 0.0262101 & NA\\
+SNORD62A & 0.0262101 & small nucleolar RNA, C/D box 62A\\
+SNORD81 & 0.0262101 & NA\\
+\bottomrule
+\end{longtable}\rowcolors{2}{white}{white}
+
+\rowcolors{2}{white}{gray!6}
+
+\begin{longtable}[t]{ccc}
+\caption[PC2 up]{\label{tab:pc2upt}(ref:pc2upt-caption)}\\
+\hiderowcolors
+\toprule
+hgnc\_symbol & PC2.loading & description\\
+\midrule
+\showrowcolors
+MS4A1 & 0.1964618 & membrane spanning 4-domains A1\\
+CXCL13 & 0.1707072 & C-X-C motif chemokine ligand 13\\
+CCR7 & 0.0856343 & C-C motif chemokine receptor 7\\
+CD79A & 0.0849372 & CD79a molecule\\
+SELL & 0.0767457 & selectin L\\
+\addlinespace
+POU2AF1 & 0.0736385 & POU class 2 associating factor 1\\
+PTGDS & 0.0726992 & prostaglandin D2 synthase\\
+CD79B & 0.0717050 & CD79b molecule\\
+LTB & 0.0680091 & lymphotoxin beta\\
+P2RX5 & 0.0630145 & purinergic receptor P2X 5\\
+\bottomrule
+\end{longtable}\rowcolors{2}{white}{white}
+
+\rowcolors{2}{white}{gray!6}
+
+\begin{longtable}[t]{ccc}
+\caption[PC2 down]{\label{tab:pc2downt}(ref:pc2downt-caption)}\\
+\hiderowcolors
+\toprule
+hgnc\_symbol & PC1.loading & description\\
+\midrule
+\showrowcolors
+GZMA & -0.1048656 & granzyme A\\
+GZMH & -0.0960732 & granzyme H\\
+CXCL10 & -0.0906670 & C-X-C motif chemokine ligand 10\\
+GNLY & -0.0876746 & granulysin\\
+NKG7 & -0.0845232 & natural killer cell granule protein 7\\
+\addlinespace
+CCL4 & -0.0843869 & C-C motif chemokine ligand 4\\
+GZMB & -0.0828089 & granzyme B\\
+GBP5 & -0.0822878 & guanylate binding protein 5\\
+FCGR3A & -0.0810187 & Fc fragment of IgG receptor IIIa\\
+IFNG & -0.0798791 & interferon gamma\\
+\bottomrule
+\end{longtable}\rowcolors{2}{white}{white}
+
+\begin{verbatim}
+## Warning in styling_latex_scale_down(out, table_info): Longtable cannot be
+## resized.
+\end{verbatim}
+
+\rowcolors{2}{white}{gray!6}
+
+\begin{longtable}[t]{cc}
+\caption[top]{\label{tab:topt}(ref:topt-caption)}\\
+\hiderowcolors
+\toprule
+gene & description\\
+\midrule
+\showrowcolors
+CD3D & CD3d molecule\\
+CD8A & CD8a molecule\\
+CD2 & CD2 molecule\\
+GZMK & granzyme K\\
+KLRB1 & killer cell lectin like receptor B1\\
+\addlinespace
+GZMA & granzyme A\\
+SELL & selectin L\\
+ITK & IL2 inducible T cell kinase\\
+LCK & LCK proto-oncogene, Src family tyrosine kinase\\
+TRAT1 & T cell receptor associated transmembrane adaptor 1\\
+\addlinespace
+CCL5 & C-C motif chemokine ligand 5\\
+GPR171 & G protein-coupled receptor 171\\
+CD52 & CD52 molecule\\
+TBC1D10C & TBC1 domain family member 10C\\
+IL7R & interleukin 7 receptor\\
+\addlinespace
+CD27 & CD27 molecule\\
+THEMIS & thymocyte selection associated\\
+TIGIT & T cell immunoreceptor with Ig and ITIM domains\\
+SH2D1A & SH2 domain containing 1A\\
+CST7 & cystatin F\\
+\addlinespace
+EOMES & eomesodermin\\
+ITGAL & integrin subunit alpha L\\
+LTB & lymphotoxin beta\\
+CD3E & CD3e molecule\\
+ZAP70 & zeta chain of T cell receptor associated protein kinase 70\\
+\addlinespace
+NLRC3 & NLR family CARD domain containing 3\\
+PVRIG & PVR related immunoglobulin domain containing\\
+CD3G & CD3g molecule\\
+TRAF3IP3 & TRAF3 interacting protein 3\\
+STAT4 & signal transducer and activator of transcription 4\\
+\addlinespace
+CXCL13 & C-X-C motif chemokine ligand 13\\
+SCML4 & Scm polycomb group protein like 4\\
+CD247 & CD247 molecule\\
+KLRK1 & killer cell lectin like receptor K1\\
+CD69 & CD69 molecule\\
+\addlinespace
+ICOS & inducible T cell costimulator\\
+CD48 & CD48 molecule\\
+IL2RB & interleukin 2 receptor subunit beta\\
+SIRPG & signal regulatory protein gamma\\
+GPR18 & G protein-coupled receptor 18\\
+\addlinespace
+FAM26F & NA\\
+NKG7 & natural killer cell granule protein 7\\
+BCL11B & B cell CLL/lymphoma 11B\\
+RASGRP1 & RAS guanyl releasing protein 1\\
+CCR5 & C-C motif chemokine receptor 5 (gene/pseudogene)\\
+\addlinespace
+GBP5 & guanylate binding protein 5\\
+PTPN7 & protein tyrosine phosphatase, non-receptor type 7\\
+SEPT1 & septin 1\\
+CD96 & CD96 molecule\\
+PRKCQ & protein kinase C theta\\
+\addlinespace
+HLA-DQA2 & major histocompatibility complex, class II, DQ alpha 2\\
+GIMAP4 & GTPase, IMAP family member 4\\
+RARRES3 & retinoic acid receptor responder 3\\
+BIRC3 & baculoviral IAP repeat containing 3\\
+XCL2 & X-C motif chemokine ligand 2\\
+\addlinespace
+SLAMF1 & signaling lymphocytic activation molecule family member 1\\
+ARHGAP15 & Rho GTPase activating protein 15\\
+PRF1 & perforin 1\\
+BTLA & B and T lymphocyte associated\\
+P2RY10 & P2Y receptor family member 10\\
+\addlinespace
+HLA-DPA1 & major histocompatibility complex, class II, DP alpha 1\\
+PRKCB & protein kinase C beta\\
+IL21R & interleukin 21 receptor\\
+MIR155HG & MIR155 host gene\\
+SPOCK2 & SPARC (osteonectin), cwcv and kazal like domains proteoglycan 2\\
+\addlinespace
+SKAP1 & src kinase associated phosphoprotein 1\\
+CYTIP & cytohesin 1 interacting protein\\
+ITM2A & integral membrane protein 2A\\
+FCRL6 & Fc receptor like 6\\
+MIAT & myocardial infarction associated transcript (non-protein coding)\\
+\addlinespace
+RAC2 & Rac family small GTPase 2\\
+PLAC8 & placenta specific 8\\
+GBP2 & guanylate binding protein 2\\
+SASH3 & SAM and SH3 domain containing 3\\
+GZMH & granzyme H\\
+\addlinespace
+CXCR6 & C-X-C motif chemokine receptor 6\\
+UBASH3A & ubiquitin associated and SH3 domain containing A\\
+EMB & embigin\\
+CD6 & CD6 molecule\\
+EVI2B & ecotropic viral integration site 2B\\
+\addlinespace
+APOBEC3G & apolipoprotein B mRNA editing enzyme catalytic subunit 3G\\
+LCP2 & lymphocyte cytosolic protein 2\\
+AIM2 & absent in melanoma 2\\
+PTPRCAP & protein tyrosine phosphatase, receptor type C associated protein\\
+NCF1B & neutrophil cytosolic factor 1B pseudogene\\
+\addlinespace
+GIMAP6 & GTPase, IMAP family member 6\\
+FYB & NA\\
+CCL4 & C-C motif chemokine ligand 4\\
+HLA-DPB1 & major histocompatibility complex, class II, DP beta 1\\
+SLA2 & Src like adaptor 2\\
+\addlinespace
+HCST & hematopoietic cell signal transducer\\
+ACAP1 & ArfGAP with coiled-coil, ankyrin repeat and PH domains 1\\
+P2RY8 & P2Y receptor family member 8\\
+SP140 & SP140 nuclear body protein\\
+MMP9 & matrix metallopeptidase 9\\
+\addlinespace
+CD5 & CD5 molecule\\
+CCR2 & C-C motif chemokine receptor 2\\
+CXCL10 & C-X-C motif chemokine ligand 10\\
+GIMAP1 & GTPase, IMAP family member 1\\
+CTSW & cathepsin W\\
+\bottomrule
+\end{longtable}\rowcolors{2}{white}{white}
 
 \hypertarget{map}{%
 \chapter{A multiscale signalling network map of innate immune response

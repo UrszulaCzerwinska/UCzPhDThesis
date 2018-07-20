@@ -96,7 +96,7 @@ Alternatively, in plain English:
 
 The similar problem of mixed sources can be encountered in other fields, i.e., signal processing, also known under the name of  "**cocktail party problem**." In the cocktail party problem, at a party with many people and music, sound in recorded with several microphones. Through blind source separation, it is possible to separate the voices of different people and the musical background (Fig. \@ref(fig:cocktailparty)) [@Cherry1953].
 
-```{r cocktailparty, fig.cap='(ref:cocktailparty-caption)',fig.scap="illutration of the cocktail party problem", out.width='100%', fig.align='center', echo = FALSE}
+```{r cocktailparty, fig.cap='(ref:cocktailparty-caption)',fig.scap="Illutration of the cocktail party problem", out.width='100%', fig.align='center', echo = FALSE}
 if (is_pdf_output()) {
   knitr::include_graphics('figures-ext/cocktailparty.pdf')
 } else {
