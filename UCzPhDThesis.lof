@@ -1,0 +1,58 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Symbolic illustration of a sum (multidisciplinarity) versus synergy (interdisciplinarity)}}{19}{figure.caption.8}
+\contentsline {figure}{\numberline {2}{\ignorespaces Interdisciplinarity of different fields.}}{21}{figure.caption.9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of Virchow's cell theory}}{31}{figure.caption.14}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Percentage of publications containing the phrase "tumor immunotherapy" is growing}}{33}{figure.caption.15}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces The microenvironment supports metastatic dissemination and colonization at secondary sites.}}{35}{figure.caption.16}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces From Data to Wisdom}}{40}{figure.caption.17}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Five categories of RNA-seq data analysis.}}{43}{figure.caption.18}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Cancer-immune phenotypes: the immune-desert phenotype, the immune-excluded phenotype and the inflamed phenotype.}}{48}{figure.caption.19}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces This timeline describes short history of FDA approval of checkpoint blocking immunotherapies up to 2017.}}{56}{figure.caption.21}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illutration of the cocktail party problem}}{62}{figure.caption.22}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Principle of the deconvolution applied to transcriptome}}{64}{figure.caption.23}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Distribution of publications of cell-type deconvolution of bulk transcriptome over the years}}{70}{figure.caption.25}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Simple statistics illustrating characteristics of published cell-type deconvolution tools}}{70}{figure.caption.26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {approach type}}}{70}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {supervised/unsupervised}}}{70}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {programming language}}}{70}{subfigure.4.3}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Priciple of the SVR regression}}{72}{figure.caption.27}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Convex hull illustration}}{77}{figure.caption.29}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Fitting gene expression data of mixed populations to a convex hull shape}}{78}{figure.caption.30}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Principle of matrix factorisation of gene expression}}{80}{figure.caption.31}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Simple illustration of matrix factorisation methods}}{86}{figure.caption.32}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces From theory to practice: simplified pipeline of model validation}}{91}{figure.caption.33}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Correlation graph of ICA and NMF multiple decompositions}}{135}{figure.caption.35}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart of DeconICA method}}{139}{figure.caption.36}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Principle of components orienting}}{141}{figure.caption.37}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Example of sucesfull and unsucessful component matching to refrence}}{144}{figure.caption.38}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Accuracy of estimation versus true proporitons in an in silico mixture}}{146}{figure.caption.39}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Accuracy of estimation versus true proporitons in an in vitro mixture}}{146}{figure.caption.40}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Correlation between independent components and reference immune cell-type metagenes}}{148}{figure.caption.41}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Estimation of abundance of immune cell types in PBMC transcriptome of 104 healthy donors}}{149}{figure.caption.42}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Comparison of markers used by different deconvolution methods}}{150}{figure.caption.43}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Count of the dasets analyzed with DeconICA}}{154}{figure.caption.44}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Correlation graph of metagenes}}{155}{figure.caption.45}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces 2D representation of labelled metagenes}}{156}{figure.caption.46}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Cell markers expression in the metagenes}}{157}{figure.caption.47}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Cell markers expression in the metagenes}}{158}{figure.caption.48}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Correlation of cell-type metagenes with the refrence profiles}}{159}{figure.caption.49}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Analysis of T cell diversity}}{160}{figure.caption.50}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Metagenes from single cell and bulk transcriptome}}{161}{figure.caption.51}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Metagenes 2D landscape, parameters testing}}{162}{figure.caption.52}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {1}}}{162}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2}}}{162}{subfigure.9.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {3}}}{162}{subfigure.9.3}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Metagenes 2D landscape, parameters testing}}{170}{figure.caption.53}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {1}}}{170}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2}}}{170}{subfigure.10.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {3}}}{170}{subfigure.10.3}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Ratio of detected components by cancer type}}{171}{figure.caption.54}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
