@@ -272,6 +272,8 @@ Bulk transcriptome data are quite accessible nowadays. They can be obtained from
 
 The main flaw of transcriptomic data is that the reproducibility between different platforms is limited. As a result, direct comparison (direct merging, statistical difference tests) between two datasets produced by different platforms is not advised. There are 12 thousand genes that are matching between four sequencing platforms. Through gene names conversions much information is lost, and bias is introduced.
 
+In bulk transcriptome samples of heterogeneous tissues, different cells cannot be distinguished (Fig. \@ref(fig:screvi)A). 
+
 Different strategies can be adapted to analyze bulk transcriptome.
 
 @Cieslik2017 describes five groups of most popular approaches that can be applied to study transcriptome (Fig. \@ref(fig:transcriptome-methods)). Despite a diversity of bioinformatic and statistical tools, the most popular differential approaches, mainly differential gene expression (DGE) based on the difference between two experimental conditions.
@@ -284,7 +286,21 @@ if (is_pdf_output()) {
 }
 ```
 
-(ref:transcriptome-methods-caption) Five categories of RNA-seq data analysis. Differential analyses: comparing two (or more) conditions, Relative analyses: comparing to an internal reference (average, base level), Compositional analyses: inferring cell types or groups of cell types (i.e., tumor purity), Global analyses: pan-tissue and pan-cancer analyses and Integrative analyses: compiling heterogeneous data types. Reprinted by permission from Springer Nature [@Cieslik2017] © 2018 Macmillian Publishers Limited, part of Springer Nature. All rights reserved.
+(ref:transcriptome-methods-caption) **Five categories of RNA-seq data analysis**. Differential analyses: comparing two (or more) conditions, Relative analyses: comparing to an internal reference (average, base level), Compositional analyses: inferring cell types or groups of cell types (i.e., tumor purity), Global analyses: pan-tissue and pan-cancer analyses and Integrative analyses: compiling heterogeneous data types. Reprinted by permission from Springer Nature [@Cieslik2017] © 2018 Macmillian Publishers Limited, part of Springer Nature. All rights reserved.
+
+
+```{r screvi, fig.cap='(ref:screvi-caption)', fig.scap="Overview of approaches to identify cell types with different technologies", out.width='100%', fig.align='center', echo = FALSE}
+if (is_pdf_output()) {
+  knitr::include_graphics('figures-ext/sing_cell_reiview.pdf')
+} else {
+  knitr::include_graphics('figures-ext/sing_cell_reiview.png')
+}
+```
+
+
+(ref:screvi-caption)  **Overview of approaches to identify cell types with different technologies: bulk transcriptome, scRNA-seq and spatial transcriptomics**. A - Bulk analysis: cell types are mixed in a sample and can be found in the mixture thanks to known refrence cell type profiles, B - In single-cell analysis, tissues are first dissociated to a single-cell suspension and then profiled individually by single-cell RNA sequencing (scRNA-seq). Cell types, including previously unknown cell types, can be identified but no positional information is retained. C -  In spatial analysis, sections are cut from tissue blocks and the position of cell types within the tissue can be identified using marker genes. This technique generates two-dimensional (2D) information but often for only a few genes. Once spatial data are available, scRNA-seq data can be mapped back onto the tissue and it is possible to reconstruct a 2D image of the tissue. Reprinted by permission from Annu. Rev. Biomed. Data Sci. [@Chen2018b] © Copyright 2018. All rights reserved.
+
+
 
 RNA-seq data was proven to be a useful indicator for clinical applications [@Mody2015; @Oberg2016; @Robinson2017]. Its utility for immune profiling was demonstrated in many studies through the use of transcriptomic signatures to predict immunotherapy response or survival [@Chen2016].
 
@@ -294,7 +310,7 @@ In this work transcriptome data analysis falls into multiple categories: Composi
 
 Described above methods of process DNA from hundreds of thousands of cells simultaneously and report averaged gene expression of all cells. In contrast, scRNA-seq technology allows getting results for each cell individually. This is tremendous step forward enhancement of our understanding of cell heterogeneity and opens new avenues of research questions.
 
-Continuous discovery of new immune subtypes has proven that cell surface markers that are used for phenotyping by techniques like FACS and immunohistochemistry cannot capture the full complexity. ScRNA-seq methods allow clustering known cell types in subpopulations based on their genetic features. ScRNA-seq is also able to capture particularly rare cell types as it requires much less of RNA material (1 ng isolated from 100-1000 cells) compared to 'bulk' RNA-seq ( ~ 1 μg of total mRNA transcripts ). It also allows studying cells at high resolution capturing the phenotypes in much more refined scale than previously [@Papalexi2017].
+Continuous discovery of new immune subtypes has proven that cell surface markers that are used for phenotyping by techniques like FACS and immunohistochemistry cannot capture the full complexity. ScRNA-seq methods allow clustering known cell types in subpopulations based on their genetic features (Fig. \@ref(fig:screvi)B). ScRNA-seq is also able to capture particularly rare cell types as it requires much less of RNA material (1 ng isolated from 100-1000 cells) compared to 'bulk' RNA-seq ( ~ 1 μg of total mRNA transcripts ). It also allows studying cells at high resolution capturing the phenotypes in much more refined scale than previously [@Papalexi2017].
 
 This new data type also brings into the field new challenges related to data processing due to the volume, distribution, noise, and biases. Experts highlight as the most "batch effect", "noise" and "dropout effect" [@Perkel2017]. So far, there are no official standards that can be applied which makes data comparison and post-processing even more challenging. Up to date, there are around 70 reported tools and resources for single cell data processing [@Davis2016]. A limited number of single-cell datasets of tumors are made publicly available, and more are to come.
 
@@ -318,7 +334,7 @@ There exist disease-related exome panels that focus on regions with high copy va
 
 > Spatial transcriptomics provides quantitative gene expression data and visualization of the distribution of mRNAs within tissue sections and enables novel types of bioinformatics analyses, valuable in research and diagnostics [@Stahl2016]
 
-It combines RNA-seq technology with spatial labeling which allows having a bulk gene expression of 10-20 cells with given space coordinates within the sample. It allows to localize regions of highest gene expression and perform *Spatially Variable Genes* (@Svensson2018).  Some attempts were already made to combine Spatial Transcriptomics and scRNA-seq [@Moncada2018].  It remains an early-stage technique, and so far it is not widely used, but it might be a future of omics to add spatial information as it can be essential for many research problems. 
+It combines RNA-seq technology with spatial labeling which allows having a bulk gene expression of 10-20 cells with given space coordinates within the sample (Fig. \@ref(fig:screvi)). It allows to localize regions of highest gene expression and perform *Spatially Variable Genes* (@Svensson2018).  Some attempts were already made to combine Spatial Transcriptomics and scRNA-seq [@Moncada2018].  It remains an early-stage technique, and so far it is not widely used, but it might be a future of omics to add spatial information as it can be essential for many research problems. 
 
 ## From cancer phenotyping to immune therapies {#immunotherapies}
 

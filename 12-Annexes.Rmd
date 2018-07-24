@@ -69,7 +69,7 @@ This project developed by Michea et al. originated in Vassili Soumelis group wit
 
 On my side, I worked on an alternative to DGE (presented in this publication) approach aiming to verify if the pDC subsets can be discovered in an unsupervised manner from the data. As there were a number of samples for each subset available, I used ICA to decompose each subset.  With the ICA components I created a correlation network of common and subset-specific signals. 
 
-On the other hand, I computed module activity scores with ROMA software [@Maginetti2017] of each samples using a wide collection of pathways and then used hierarchical clustering to order the samples. 
+On the other hand, I computed module activity scores with ROMA software [@Martignetti2016] of each samples using a wide collection of pathways and then used hierarchical clustering to order the samples. 
 
 In my analysis, some subsets were clearly separated (MMAC, BDCA1pDC) and some not (BDCA1nDC and CD14pDC). 
 
@@ -169,58 +169,79 @@ if (is_pdf_output()) {
 
 **bulk data** - a pooled assay using a weighted average of a bulk cell sample from a particular tissue (i.e., a large population of cells), obscuring cell-to-cell variation 
 
-cancer biopsy
+**cancer biopsy** - the removal of cells or tissues for examination by a pathologist from a cancer patient. The most common types include: (1) incisional biopsy, in which only a sample of tissue is removed; (2) excisional biopsy, in which an entire lump or suspicious area is removed; and (3) needle biopsy, in which a sample of tissue or fluid is removed with a needle. [@biopsy]
 
-cytotoxic
+**cancer subtype** - describes the smaller groups that a type of cancer can be divided into, based on certain characteristics of the cancer cells. These characteristics include how the cancer cells look under a microscope and whether there are certain substances in or on the cells or certain changes to the DNA of the cells. It is important to know the subtype of a cancer in order to plan treatment and determine prognosis. [@cansub]
 
-efectors
+**cytotoxic** - toxic to cells, cell-toxic, cell-killing. Any agent or process that kills cells. Chemotherapy and radiotherapy are forms of cytotoxic therapy. They kill cells. [@cytotoxic]
 
-gene enrichment
+**effectors molecule** - small molecule that selectively binds to a protein and regulates its biological activity. In this manner, effector molecules act as ligands that can increase or decrease enzyme activity, gene expression, or cell signaling. [@Cambronne2006]
 
-gene expression
-genome
-immunosuppresive
-inducers 
-ligands
-liquid tissue
-marker gene
-molecular biology
-omic data
-phenotyping 
-receptors
-solid tissue 
-subtyping
-tumor purity
+**gene enrichment analysis** - a means to characterize biological attributes in a given *gene* set [@analysis]
+
+**gene expression** - the generation of a functional gene product from the information encoded by a gene, through the processes of transcription and translation. Gene products are often proteins, however non-protein coding genes can encode functional RNA, including ribosomal RNA (rRNA), transfer RNA (tRNA) or small nuclear RNA (snRNA). [@geneexprsNature]
+
+**genome** - the full genetic complement of an organism, encoded in either DNA or, in many viruses, RNA. It includes both the genes and non-coding sequences. [@genomeNature]
+
+**immunosuppression** - suppression of the immune system and its ability to fight infection. Immunosuppression may result from certain diseases, such as AIDS or lymphoma, or from certain drugs, such as some of those used to treat cancer. Immunosuppression may also be deliberately induced with drugs, as in preparation for bone marrow or other organ transplantation, to prevent the rejection of a transplant. Also known as immunodepression. [@immunosupp]
+
+**inducers** - a molecule, usually a substrate of a specific enzyme pathway, that combines with and deactivates an active repressor(produced by a regulator gene); this allows an operator gene previously repressed to activate the structural genes controlled by it to result in enzyme production; a homeostatic mechanism for regulating enzyme production in an inducible enzyme system. [@inducer]
+
+**ligand** - a molecule, as an antibody, hormone, or drug, that binds to a receptor. [@ligand]
+
+**liquid tissue** - a collection of similar cell that perform a particular function; liquid  such as blood and lymph, carried food, waste, products, and hormones through the body [@tissue]
+
+**marker gene** - a detectable genetic trait or segment of DNA that can be identified and tracked. A marker gene can serve as a flag for another gene, sometimes called the target gene. A marker gene must be on the same chromosome as the target gene and near enough to it so that the two genes (the marker gene and the target gene) are genetically linked and are usually inherited together. [@marker]
+
+**molecular biology**- the field of biology that studies the composition, structure and interactions of cellular molecules  such as nucleic acids and proteins  that carry out the biological processes essential for the cells functions and maintenance [@biomolNature]
+
+**omics**  - informally refers to a field of study in biology ending in -omics, such as genomics, proteomics or metabolomics. [@omics]
+
+**phenotyping** -  attribution a phenotype; the visible or observable expression of the results of genes, combined with the environmental influence on an organism’s appearance or behavior. [@pheno]
+
+**receptor** - in cell biology, a structure on the surface of a cell (or inside a cell) that selectively receives and binds a specific substance. There are many receptors. There is a receptor for ([insulin](https://www.medicinenet.com/script/main/art.asp?articlekey=3989); there is a receptor for low-density [lipoproteins](https://www.medicinenet.com/script/main/art.asp?articlekey=15389) ([LDL](https://www.medicinenet.com/script/main/art.asp?articlekey=6232)); etc. T  [@receptor]
+
+**subtyping** - describes the smaller groups that a type of cancer can be divided into, based on certain characteristics of the cancer cells. These characteristics include how the cancer cells look under a microscope and whether there are certain substances in or on the cells or certain changes to the DNA of the cells. It is important to know the subtype of a cancer in order to plan treatment and determine prognosis. [@cansub]
+
+**tumor purity** - the proportion of cancer cells in the admixture [@Aran2015]
+
+\newpage
 
 ## Mathematical terms {-}
 
 **basis matrix** - in cell-type deconvolution, the characteristic expression profiles for each of the cell types to be estimated used in the regression-based deconvolution
 
-bayesian
+**Bayes' theorem** - is a formula that describes how to update the probabilities of hypotheses when given evidence [@bayes]
 
-**condition number** - a function with respect to an argument measures how much the output value of the function can change for a small change in the input argument. A problem with a low condition number is said to be **well-conditioned**, while a problem with a high condition number is said to be **ill-conditioned**. In linear regression the condition number can be used as a diagnostic for multicollinearity [@Belsley2005].
+**condition number** - a function with respect to an argument measures how much the output value of the function can change for a small change in the input argument. A problem with a low condition number is said to be **well-conditioned**, while a problem with a high condition number is said to be **ill-conditioned**. In linear regression the condition number can be used as a diagnostic for multicollinearity [@Belsley1980].
 
+**correlation** - a quantity measuring the extent of the interdependence of variable quantities; a mutual relationship or connection between two or more things [@corr]
 
-
-correlation
-
-covariance
+**covariance** - of two variables x and y in a data set measures how the two are linearly related. A positive covariance would indicate a positive linear relationship between the variables, and a negative covariance would indicate the opposite. [@cov]
 
 **deconvolution** -  *Math*:the resolution of a convolution function into the functions from which it was formed in order to separate their effects; *Common*: a process of resolving something into its constituent elements or removing complication [@deconvolution]
 
-diagonal matrix
-dimension reduction
-eigenvalue 
-eigenvector
-matrix
-matrix factorisation
-metagene
-metasample
-monte carlo simulations
+**diagonal matrix** - a matrix having non-zero elements only in the diagonal running from the upper left to the lower right. [@diag]
 
-multicollinearity
+**dimension reduction **- the process of reducing the number of random variables under consideration, by obtaining a set of principal variables. It can be divided into feature selection and feature extraction. [@dimred]
 
-p-value
+**eigenvalue**- a special set of scalars associated with a linear system of equations (i.e., a matrix equation) that are sometimes also known as characteristic roots, characteristic values , proper values, or latent roots. [@Weisstein1]
+
+**eigenvector**- are a special set of vectors associated with a linear system of equations(i.e., a matrix equation) that are sometimes also known as characteristic vectors, proper vectors, or latent vectors. Each eigenvector is paired with a corresponding eigenvalue. [@Weisstein2]
+
+**matrix**  - a rectangular array of quantities or expressions in rows and columns that is treated as a single entity and manipulated according to particular rules. [@matrix]
+
+**matrix factorisation** - to  factorize a matrix, i.e. to find out two (or more) matrices such that when you multiply them you will get back the original matrix. [@factMat]
+
+**metagene** - an aggregate pattern of gene expression [@metag]
+
+**metasample **- an aggregation of values for individual samples 
+
+**monte carlo simulation** - a simulation that takes into account the variability of the inputs; mathematical technique that generates random variables for modelling risk or uncertainty of a certain system. [@monte]
+
+**multicollinearity** - a state of very high intercorrelations or inter-associations among the independent variables. It is therefore a type of disturbance in the data, and if present in the data the statistical inferences made about the data may not be reliable. [@multi]
+
+**p-value** -  the probability of getting a sample similar observation, or more extreme than the tested one if the null hypothesis is true. So, we assume the null hypothesis is true and then determine how different the tested sample really is. If it is not that different (a large p-value) then the null hypothesis not rejected. As the p-value gets smaller, probability that null hypothesis is false increases (and reject the null hypothesis). [@pv]
 
 
 
