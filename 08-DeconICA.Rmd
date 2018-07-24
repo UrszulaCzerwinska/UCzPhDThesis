@@ -137,7 +137,7 @@ In order to compute the scores, a mean of the selected marker genes for each com
 
 ## Validation of the abundance estimation with *DeconICA*  
 
-*Code used to produce the validation, and more extensive description of each step is available as a part of the [online tutorial](https://urszulaczerwinska.github.io/DeconICA/DeconICA_introduction.html) and in Annexe X*
+*Code used to produce the validation, and more extensive description of each step is available as a part of the [online tutorial](https://urszulaczerwinska.github.io/DeconICA/DeconICA_introduction.html) and in Annexes*
 
 ### *In silico*
 

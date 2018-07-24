@@ -372,7 +372,7 @@ According to @Gajewski2006,  the immunogenicity of the tumors can be explained b
 
 ### Scoring the immune infiltration
 
-Experimental techniques and computational tools enabled us to characterize and classify TME with multi-omics data. Here I present **a short list of most recent and influencing** analysis aiming to redefine tumor phenotypes based on the immune infiltration, with a focus on computational techniques.
+Experimental techniques and computational tools enabled us to characterize and classify TME with multi-omics data. Here I present **a short list of most recent and influencial** analysis aiming to redefine tumor phenotypes based on the immune infiltration, with a focus on computational techniques.
 
 #### Immunoscore
 
