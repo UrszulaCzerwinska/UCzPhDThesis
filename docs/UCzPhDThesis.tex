@@ -5416,8 +5416,8 @@ transcriptomes decomposes them to metagenes that are not selectively and
 specifically matching between datasets. In part, this is because NMF
 components are correlated with the average gene expression. Therefore,
 NMF can be sensitive to the normalization. However, even after the
-``removal'' through linear regression, this phenomen persist. It is not
-clear why, from a mathematical perspective, we observe such a
+``average removal'' through linear regression, this phenomena persist.
+It is not clear why, from a mathematical perspective, we observe such a
 discrepancy of interpretation of NMF and ICA components.
 
 It is also possible that using a different method to find correct
@@ -5489,8 +5489,7 @@ i.e., NMF factors, convex-hull derived sources or attractor metagenes
 
 In this section, I will explain the DeconICA pipeline (Fig.
 \ref{fig:deconicaschema}) based on the stabilized fastICA
-overdecomposition protocol as it is resulting from our expertise and
-results are satisfying.
+overdecomposition protocol as it is resulting from our expertise.
 
 \begin{figure}
 
@@ -6124,7 +6123,7 @@ advantage of the protective function of the immune system and aim to
 activate patients immune defense. FDA has accepted the immune therapies
 in specific cancer types \citep{Taube2017a}. One of the problems of the
 checkpoint immune therapies is heterogeneity of response rate, which can
-vary, i.e., from 10--40\% in the case of PD-L1blocking \citep{Zou2016}.
+vary, i.e., from 10--40\% in the case of PD-L1 blocking \citep{Zou2016}.
 To respond to this challenge, a better understanding of the role of
 immune cells in cancer is necessary.
 
@@ -6410,8 +6409,8 @@ ones can characterize all leucocytes.
 To better understand possible T cell signatures diversity in different
 cancers, I used PCA projection. PCA axes can be interpreted through the
 loadings which enable to define variables (genes) that contribute the
-most to the direction. I considered 100 top genes for the positive and
-negative sides of PC1 and PC2 for the interpretation with online
+most to the direction. I considered the top 100 genes for the positive
+and negative sides of PC1 and PC2 for the interpretation with online
 enrichment tool \href{http://amp.pharm.mssm.edu/Enrichr/}{Enrichr}
 \citep{Chen2013}. The top ten genes of each side of PC1 and PC2 can be
 seen in the Supplementary tables \ref{tab:pc1negt}-\ref{tab:pc2downt}. I
@@ -6964,7 +6963,7 @@ loaded via a namespace (and not attached):
 \end{verbatim}
 
 ICA computation was performed with fastICA (fastica++) (distributed with
-\href{https://github.com/LabBandSB/BIODICA}{BIODICA} )toolbox in
+\href{https://github.com/LabBandSB/BIODICA}{BIODICA} ) toolbox in
 MATLAB\_R2016a.
 
 \hypertarget{hardware}{%
@@ -7751,8 +7750,8 @@ sources based (\(k\)) based on previous knowledge
 statistical indexes, such as Akaike information criterion (AICc)
 \citep[proposed initially by][applied to estimation of number of cell
 types by \citet{Liebner2014}]{Hurvich1989}, Minimum Description Length
-\citep[proposed initially by][applied in CAM model by
-\citet{Wang2016}]{Wax1985}, leave-one-out cross-validation (LOOCV)
+{[}proposed initially by \citet{Wax1985}, applied in CAM model by
+\citet{Wang2016}, leave-one-out cross-validation (LOOCV)
 \citep{Lahdesmaki2005} and ~symmetric Kullback-Leibler divergence (SKLD)
 \citep{Zuckerman2013} (when sources are known) or else
 \citet{Moffitt2015} applied a custom method testing many possible

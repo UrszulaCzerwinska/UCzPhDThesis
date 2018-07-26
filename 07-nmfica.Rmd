@@ -54,7 +54,7 @@ I expected to observe a subset of components from different datasets (no matter 
 
 ## Summary
 
-This simple analysis illustrates that NMF applied to cancer transcriptomes decomposes them to metagenes that are not selectively and specifically matching between datasets. In part, this is because NMF components are correlated with the average gene expression. Therefore, NMF can be sensitive to the normalization. However, even after the "removal" through linear regression, this phenomen persist. It is not clear why, from a mathematical perspective, we observe such a discrepancy of interpretation of NMF and ICA components.  
+This simple analysis illustrates that NMF applied to cancer transcriptomes decomposes them to metagenes that are not selectively and specifically matching between datasets. In part, this is because NMF components are correlated with the average gene expression. Therefore, NMF can be sensitive to the normalization. However, even after the "average removal" through linear regression, this phenomena persist. It is not clear why, from a mathematical perspective, we observe such a discrepancy of interpretation of NMF and ICA components.  
 
 It is also possible that using a different method to find correct decomposition dimension ($k$) should be used. Ideally, different NMF implementation should be tested to verify if using different error updates can have an impact on the results. 
 

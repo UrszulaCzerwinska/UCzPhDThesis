@@ -18,7 +18,9 @@ However, I in the presented works, the proposed biological interpretation was no
 
 So far, I have focused on ICA-based decompositions of transcriptomes. In the [chapter 5](#nmfica), I have compared ICA and NMF decompositions concluding that ICA-based decompositions shall be more convenient. In my work, because of my team expertise, the proven computational efficiency, interpretability, and reproducibility, I will use mostly ICA components to deconvolve tumor data (analysis described in the next [chapter 6](#results)). However, the constructed interpretation pipeline can take as input any metagenes, i.e., NMF factors, convex-hull derived sources or attractor metagenes (methods described in [chapter 2](#methods)). 
 
-In this section, I  will explain the DeconICA pipeline (Fig. \@ref(fig:deconicaschema)) based on the stabilized fastICA overdecomposition protocol as it is resulting from our expertise and results are satisfying.  
+In this section, I  will explain the DeconICA pipeline (Fig. \@ref(fig:deconicaschema)) based on the stabilized fastICA overdecomposition protocol as it is resulting from our expertise.
+
+
 
 ```{r deconicaschema, fig.cap='(ref:deconicaschema-caption)',fig.scap="Flowchart of DeconICA method", out.height='80%', fig.align='center', echo = FALSE}
 if (is_pdf_output()) {
